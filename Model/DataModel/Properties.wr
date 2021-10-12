@@ -30,7 +30,7 @@
     <RelationshipRole1 id="Group2Module" name="modules" maxCard="N"/>
     <RelationshipRole2 id="Module2Group" name="groups" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="50" gr:y="550" id="ent1" name="Citt&#224;" duration="persistent" attributeOrder="ent1#att1 ent1#att2 ent1#att3 ent1#att4">
+  <Entity gr:x="115" gr:y="560" id="ent1" name="Citt&#224;" duration="persistent" attributeOrder="ent1#att1 ent1#att2 ent1#att3 ent1#att4">
     <Attribute id="ent1#att1" key="true" name="oid" type="integer"/>
     <Attribute id="ent1#att4" name="nazione" type="string"/>
     <Attribute id="ent1#att3" name="provincia" type="string"/>
@@ -61,7 +61,7 @@
     <RelationshipRole1 id="rel3#role5" name="UserToIndirizzo" maxCard="1"/>
     <RelationshipRole2 id="rel3#role6" name="IndirizzoToUser" maxCard="1"/>
   </Relationship>
-  <Entity gr:x="1305" gr:y="485" id="ent4" name="Prodotto" duration="persistent" attributeOrder="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27">
+  <Entity gr:x="1345" gr:y="430" id="ent4" name="Prodotto" duration="persistent" attributeOrder="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27">
     <Attribute id="ent4#att14" key="true" name="oid" type="integer"/>
     <Attribute id="ent4#att18" name="data inserimento" type="date" key="false"/>
     <Attribute id="ent4#att17" name="prezzo" type="decimal" key="false"/>
@@ -69,7 +69,7 @@
     <Attribute id="ent4#att15" name="nome" type="string" key="false"/>
     <Attribute id="ent4#att27" name="immagine" type="blob"/>
   </Entity>
-  <Entity gr:x="1325" gr:y="790" id="ent5" name="Categoria" duration="persistent" attributeOrder="ent5#att19 ent5#att20 ent5#att21">
+  <Entity gr:x="1705" gr:y="475" id="ent5" name="Categoria" duration="persistent" attributeOrder="ent5#att19 ent5#att20 ent5#att21">
     <Attribute id="ent5#att19" key="true" name="oid" type="integer"/>
     <Attribute id="ent5#att21" name="descrizione" type="string"/>
     <Attribute id="ent5#att20" name="nome" type="string"/>
@@ -78,7 +78,7 @@
     <RelationshipRole1 id="rel4#role7" name="ProdottoToCategoria" maxCard="1"/>
     <RelationshipRole2 id="rel4#role8" name="CategoriaToProdotto" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="985" gr:y="210" id="ent6" name="Promozione" duration="persistent" attributeOrder="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26">
+  <Entity gr:x="1025" gr:y="200" id="ent6" name="Promozione" duration="persistent" attributeOrder="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26">
     <Attribute id="ent6#att22" key="true" name="oid" type="integer"/>
     <Attribute id="ent6#att24" name="scadenza" type="date" key="false"/>
     <Attribute id="ent6#att23" name="sconto" type="integer" key="false"/>
@@ -92,5 +92,55 @@
   <Relationship id="rel6" name="Promozione_Prodotto" sourceEntity="ent6" targetEntity="ent4">
     <RelationshipRole1 id="rel6#role11" name="PromozioneToProdotto" maxCard="1"/>
     <RelationshipRole2 id="rel6#role12" name="ProdottoToPromozione" maxCard="N"/>
+  </Relationship>
+  <Entity gr:x="1110" gr:y="850" id="ent7" name="Riga ordine" duration="persistent" attributeOrder="ent7#att28 ent7#att29">
+    <Attribute id="ent7#att28" key="true" name="oid" type="integer"/>
+    <Attribute id="ent7#att29" name="quantit&#224;" type="integer"/>
+  </Entity>
+  <Entity gr:x="1105" gr:y="675" id="ent8" name="Prodotto online" duration="persistent" attributeOrder="ent8#att31 ent8#att32">
+    <Attribute id="ent8#att31" key="true" name="oid" type="integer"/>
+    <Attribute id="ent8#att32" name="sconto" type="string"/>
+  </Entity>
+  <Relationship id="rel7" name="Prodotto online_Negozio" sourceEntity="ent8" targetEntity="ent3">
+    <RelationshipRole1 id="rel7#role13" name="Prodotto onlineToNegozio" maxCard="1"/>
+    <RelationshipRole2 id="rel7#role14" name="NegozioToProdotto online" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel8" name="Prodotto online_Prodotto" sourceEntity="ent8" targetEntity="ent4">
+    <RelationshipRole1 id="rel8#role15" name="Prodotto onlineToProdotto" maxCard="1"/>
+    <RelationshipRole2 id="rel8#role16" name="ProdottoToProdotto online" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel9" name="Riga ordine_Prodotto online" sourceEntity="ent7" targetEntity="ent8">
+    <RelationshipRole1 id="rel9#role17" name="Riga ordineToProdotto online" maxCard="1"/>
+    <RelationshipRole2 id="rel9#role18" name="Prodotto onlineToRiga ordine" maxCard="N"/>
+  </Relationship>
+  <Entity gr:x="1080" gr:y="1020" id="ent9" name="Spesa" duration="persistent" attributeOrder="ent9#att33 ent9#att34 ent9#att35 ent9#att36">
+    <Attribute id="ent9#att33" key="true" name="oid" type="integer"/>
+    <Attribute id="ent9#att36" name="data di spedizione" type="date"/>
+    <Attribute id="ent9#att35" name="data di creazione" type="date"/>
+    <Attribute id="ent9#att34" name="importo totale" type="decimal"/>
+  </Entity>
+  <Relationship id="rel10" name="Riga ordine_Spesa" sourceEntity="ent7" targetEntity="ent9">
+    <RelationshipRole1 id="rel10#role19" name="Riga ordineToSpesa" maxCard="1"/>
+    <RelationshipRole2 id="rel10#role20" name="SpesaToRiga ordine" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel11" name="Spesa_Negozio" sourceEntity="ent9" targetEntity="ent3" gr:bendpoints="-277,-112,138,318">
+    <RelationshipRole1 id="rel11#role21" name="SpesaToNegozio" maxCard="1"/>
+    <RelationshipRole2 id="rel11#role22" name="NegozioToSpesa" maxCard="N"/>
+  </Relationship>
+  <Entity gr:x="1425" gr:y="1040" id="ent10" name="Stato ordine" duration="persistent" attributeOrder="ent10#att37 ent10#att38">
+    <Attribute id="ent10#att37" key="true" name="oid" type="integer"/>
+    <Attribute id="ent10#att38" name="stato" type="string"/>
+  </Entity>
+  <Relationship id="rel12" name="Spesa_Stato ordine" sourceEntity="ent9" targetEntity="ent10">
+    <RelationshipRole1 id="rel12#role23" name="SpesaToStato ordine" maxCard="1"/>
+    <RelationshipRole2 id="rel12#role24" name="Stato ordineToSpesa" maxCard="1"/>
+  </Relationship>
+  <Relationship id="rel13" name="User_Spesa" sourceEntity="User" targetEntity="ent9" gr:bendpoints="-297,300,-1157,-660;-288,966,-1148,6">
+    <RelationshipRole1 id="rel13#role25" name="UserToSpesa" maxCard="N"/>
+    <RelationshipRole2 id="rel13#role26" name="SpesaToUser" maxCard="1"/>
+  </Relationship>
+  <Relationship id="rel14" name="User_Negozio" sourceEntity="User" targetEntity="ent3">
+    <RelationshipRole1 id="rel14#role27" name="UserToNegozio" maxCard="1"/>
+    <RelationshipRole2 id="rel14#role28" name="NegozioToUser" maxCard="N"/>
   </Relationship>
 </DataModel>
