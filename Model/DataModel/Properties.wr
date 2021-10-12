@@ -143,4 +143,7 @@
     <RelationshipRole1 id="rel14#role27" name="UserToNegozio" maxCard="1"/>
     <RelationshipRole2 id="rel14#role28" name="NegozioToUser" maxCard="N"/>
   </Relationship>
+  <Entity gr:x="1410" gr:y="705" id="ent11" name="Prodotto nuovo" duration="persistent">
+    <Generalization superEntity="ent4"/>
+  </Entity>
 </DataModel>
