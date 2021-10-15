@@ -1,5 +1,5 @@
 <DataModel xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
-  <Entity id="User" name="User" duration="persistent" gr:x="235" gr:y="60" gr:hideAttributes="false" attributeOrder="userOID userName password email">
+  <Entity id="User" name="User" duration="persistent" gr:x="235" gr:y="80" gr:hideAttributes="false" attributeOrder="userOID userName password email">
     <Attribute name="oid" id="userOID" type="integer" key="true"/>
     <Attribute name="userName" id="userName" type="string"/>
     <Attribute name="password" id="password" type="password"/>
@@ -45,7 +45,7 @@
     <RelationshipRole1 id="rel1#role1" name="Citt&#224;ToIndirizzo" maxCard="N"/>
     <RelationshipRole2 id="rel1#role2" name="IndirizzoToCitt&#224;" maxCard="1"/>
   </Relationship>
-  <Entity gr:x="625" gr:y="525" id="ent3" name="Negozio" duration="persistent" attributeOrder="ent3#att8 ent3#att9 ent3#att10 ent3#att11 ent3#att12 ent3#att13">
+  <Entity gr:x="575" gr:y="275" id="ent3" name="Negozio" duration="persistent" attributeOrder="ent3#att8 ent3#att9 ent3#att10 ent3#att11 ent3#att12 ent3#att13">
     <Attribute id="ent3#att8" key="true" name="oid" type="integer"/>
     <Attribute id="ent3#att12" name="fondazione" type="date" key="false"/>
     <Attribute id="ent3#att11" name="massimo ordini giornalieri" type="integer" key="false"/>
