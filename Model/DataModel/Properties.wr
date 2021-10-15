@@ -1,5 +1,5 @@
 <DataModel xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
-  <Entity id="User" name="User" duration="persistent" gr:x="235" gr:y="60" gr:hideAttributes="false" attributeOrder="userOID userName email password">
+  <Entity id="User" name="User" duration="persistent" gr:x="65" gr:y="50" gr:hideAttributes="false" attributeOrder="userOID userName email password">
     <Attribute name="oid" id="userOID" type="integer" key="true"/>
     <Attribute name="userName" id="userName" type="string"/>
     <Attribute name="password" id="password" type="password"/>
@@ -9,7 +9,7 @@
     <Attribute name="oid" id="groupOID" type="integer" key="true"/>
     <Attribute name="groupName" id="groupName" type="string"/>
   </Entity>
-  <Entity id="Module" name="Module" duration="persistent" gr:x="840" gr:y="60" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName">
+  <Entity id="Module" name="Module" duration="persistent" gr:x="840" gr:y="50" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName">
     <Attribute name="oid" id="moduleOID" type="integer" key="true"/>
     <Attribute name="moduleID" id="moduleID" type="string"/>
     <Attribute name="moduleName" id="moduleName" type="string"/>
@@ -45,13 +45,14 @@
     <RelationshipRole1 id="rel1#role1" name="Citt&#224;ToIndirizzo" maxCard="N"/>
     <RelationshipRole2 id="rel1#role2" name="IndirizzoToCitt&#224;" maxCard="1"/>
   </Relationship>
-  <Entity gr:x="525" gr:y="480" id="ent3" name="Negozio" duration="persistent" attributeOrder="ent3#att8 ent3#att9 ent3#att10 ent3#att11 ent3#att12 ent3#att13">
+  <Entity gr:x="525" gr:y="480" id="ent3" name="Negozio" duration="persistent" attributeOrder="ent3#att8 ent3#att9 ent3#att10 ent3#att11 ent3#att12 ent3#att13 ent3#att58">
     <Attribute id="ent3#att8" key="true" name="oid" type="integer"/>
     <Attribute id="ent3#att12" name="fondazione" type="date" key="false"/>
     <Attribute id="ent3#att11" name="massimo ordini giornalieri" type="integer" key="false"/>
     <Attribute id="ent3#att10" name="orari" type="string" key="false"/>
     <Attribute id="ent3#att9" name="nome" type="string" key="false"/>
     <Attribute id="ent3#att13" name="citt&#224;" type="string" derivationQuery="simpleImported::Self.rel2#role3.rel1#role2.ent1#att2"/>
+    <Attribute id="ent3#att58" name="numeroLavoratori" type="integer" derivationQuery="calculated::count(Self.rel14#role28(as Var1))"/>
   </Entity>
   <Relationship id="rel2" name="Negozio_Indirizzo" sourceEntity="ent3" targetEntity="ent2">
     <RelationshipRole1 id="rel2#role3" name="NegozioToIndirizzo" maxCard="1"/>
@@ -94,7 +95,7 @@
     <RelationshipRole1 id="rel6#role11" name="PromozioneToProdotto" maxCard="1"/>
     <RelationshipRole2 id="rel6#role12" name="ProdottoToPromozione" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="1025" gr:y="755" id="ent7" name="Riga ordine" duration="persistent" attributeOrder="ent7#att28 ent7#att29 ent7#att40">
+  <Entity gr:x="995" gr:y="760" id="ent7" name="Riga ordine" duration="persistent" attributeOrder="ent7#att28 ent7#att29 ent7#att40">
     <Attribute id="ent7#att28" key="true" name="oid" type="integer"/>
     <Attribute id="ent7#att29" name="quantit&#224;" type="integer"/>
     <Attribute id="ent7#att40" name="costo" type="decimal"/>
@@ -127,7 +128,7 @@
     <RelationshipRole1 id="rel10#role19" name="Riga ordineToSpesa" maxCard="1"/>
     <RelationshipRole2 id="rel10#role20" name="SpesaToRiga ordine" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="140" gr:y="740" id="ent10" name="Stato ordine" duration="persistent" attributeOrder="ent10#att37 ent10#att38 ent10#att55 ent10#att56">
+  <Entity gr:x="65" gr:y="740" id="ent10" name="Stato ordine" duration="persistent" attributeOrder="ent10#att37 ent10#att38 ent10#att55 ent10#att56">
     <Attribute id="ent10#att37" key="true" name="oid" type="integer"/>
     <Attribute id="ent10#att38" name="stato" type="string"/>
     <Attribute id="ent10#att55" name="utenteEsterno" type="integer" derivationQuery="complexImported::Self.rel12#role24(as Var1).rel13#role26(as Var2).userOID"/>
@@ -148,10 +149,11 @@
   <Entity gr:x="1310" gr:y="665" id="ent11" name="Prodotto nuovo" duration="persistent">
     <Generalization superEntity="ent4"/>
   </Entity>
-  <Entity gr:x="65" gr:y="270" id="ent12" name="Responsabile" duration="persistent" attributeOrder="ent12#att51 ent12#att52">
+  <Entity gr:x="65" gr:y="270" id="ent12" name="Responsabile" duration="persistent" attributeOrder="ent12#att51 ent12#att52 ent12#att57">
     <Generalization superEntity="User"/>
     <Attribute id="ent12#att51" name="nome" type="string"/>
     <Attribute id="ent12#att52" name="cognome" type="string"/>
+    <Attribute id="ent12#att57" name="nomeNegozio" type="string" derivationQuery="simpleImported::Self.rel14#role27.ent3#att9"/>
   </Entity>
   <Entity gr:x="285" gr:y="270" id="ent13" name="Utente esterno registrato" duration="persistent" attributeOrder="ent13#att49 ent13#att50">
     <Generalization superEntity="User"/>
@@ -162,7 +164,7 @@
     <RelationshipRole1 id="rel15#role29" name="NegozioToUtente esterno registrato" maxCard="N"/>
     <RelationshipRole2 id="rel15#role30" name="Utente esterno registratoToNegozio" maxCard="1"/>
   </Relationship>
-  <Entity gr:x="50" gr:y="375" id="ent14" name="Dipendente" duration="persistent" attributeOrder="ent14#att54">
+  <Entity gr:x="65" gr:y="400" id="ent14" name="Dipendente" duration="persistent" attributeOrder="ent14#att54">
     <Generalization superEntity="ent12"/>
     <Attribute id="ent14#att54" name="ordiniGestiti" type="integer" derivationQuery="calculated::count(Self.rel16#role31(as Var1))"/>
   </Entity>
