@@ -62,14 +62,13 @@
     <RelationshipRole1 id="rel3#role5" name="UserToIndirizzo" maxCard="1"/>
     <RelationshipRole2 id="rel3#role6" name="IndirizzoToUser" maxCard="1"/>
   </Relationship>
-  <Entity gr:x="1285" gr:y="472" id="ent4" name="Prodotto" duration="persistent" attributeOrder="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att42">
+  <Entity gr:x="1285" gr:y="472" id="ent4" name="Prodotto" duration="persistent" attributeOrder="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27">
     <Attribute id="ent4#att14" key="true" name="oid" type="integer"/>
     <Attribute id="ent4#att18" name="data inserimento" type="date" key="false"/>
     <Attribute id="ent4#att17" name="prezzo" type="decimal" key="false"/>
     <Attribute id="ent4#att16" name="descrizione" type="string" key="false"/>
     <Attribute id="ent4#att15" name="nome" type="string" key="false"/>
     <Attribute id="ent4#att27" name="immagine" type="blob"/>
-    <Attribute id="ent4#att42" name="oggi" type="time"/>
   </Entity>
   <Entity gr:x="1300" gr:y="315" id="ent5" name="Categoria" duration="persistent" attributeOrder="ent5#att19 ent5#att20 ent5#att21">
     <Attribute id="ent5#att19" key="true" name="oid" type="integer"/>
@@ -80,7 +79,7 @@
     <RelationshipRole1 id="rel4#role7" name="ProdottoToCategoria" maxCard="1"/>
     <RelationshipRole2 id="rel4#role8" name="CategoriaToProdotto" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="960" gr:y="410" id="ent6" name="Promozione" duration="persistent" attributeOrder="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26">
+  <Entity gr:x="965" gr:y="385" id="ent6" name="Promozione" duration="persistent" attributeOrder="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26">
     <Attribute id="ent6#att22" key="true" name="oid" type="integer"/>
     <Attribute id="ent6#att24" name="scadenza" type="date" key="false"/>
     <Attribute id="ent6#att23" name="sconto" type="decimal" key="false"/>
@@ -95,16 +94,13 @@
     <RelationshipRole1 id="rel6#role11" name="PromozioneToProdotto" maxCard="1"/>
     <RelationshipRole2 id="rel6#role12" name="ProdottoToPromozione" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="990" gr:y="750" id="ent7" name="Riga ordine" duration="persistent" attributeOrder="ent7#att28 ent7#att29 ent7#att40">
+  <Entity gr:x="1000" gr:y="795" id="ent7" name="Riga ordine" duration="persistent" attributeOrder="ent7#att28 ent7#att29 ent7#att40">
     <Attribute id="ent7#att28" key="true" name="oid" type="integer"/>
     <Attribute id="ent7#att29" name="quantit&#224;" type="integer"/>
     <Attribute id="ent7#att40" name="costo" type="decimal"/>
   </Entity>
-  <Entity gr:x="980" gr:y="565" id="ent8" name="Prodotto online" duration="persistent" attributeOrder="ent8#att31 ent8#att32 ent8#att30 ent8#att39">
+  <Entity gr:x="990" gr:y="600" id="ent8" name="Prodotto online" duration="persistent" attributeOrder="ent8#att31">
     <Attribute id="ent8#att31" key="true" name="oid" type="integer"/>
-    <Attribute id="ent8#att32" name="sconto" type="decimal" derivationQuery="complexImported::Self.rel8#role15(as Var1).rel6#role12(as Var2).ent6#att23 where Self.ent8#att30 &lt;= Var2.ent6#att24 and Self.ent8#att39 = Var2.rel5#role9.ent3#att8"/>
-    <Attribute id="ent8#att30" name="oggi" type="time"/>
-    <Attribute id="ent8#att39" name="id_negozio" type="integer" derivationQuery="simpleImported::Self.rel7#role13.ent3#att8"/>
   </Entity>
   <Relationship id="rel7" name="Prodotto online_Negozio" sourceEntity="ent8" targetEntity="ent3">
     <RelationshipRole1 id="rel7#role13" name="Prodotto onlineToNegozio" maxCard="1"/>
@@ -146,7 +142,7 @@
     <RelationshipRole1 id="rel14#role27" name="UserToNegozio" maxCard="1"/>
     <RelationshipRole2 id="rel14#role28" name="NegozioToUser" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="1315" gr:y="665" id="ent11" name="Prodotto nuovo" duration="persistent">
+  <Entity gr:x="1310" gr:y="775" id="ent11" name="Prodotto nuovo" duration="persistent">
     <Generalization superEntity="ent4"/>
   </Entity>
   <Entity gr:x="70" gr:y="257" id="ent12" name="Responsabile" duration="persistent" attributeOrder="ent12#att51 ent12#att52 ent12#att57">
