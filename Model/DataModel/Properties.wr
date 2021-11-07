@@ -9,7 +9,7 @@
     <Attribute name="oid" id="groupOID" type="integer" key="true"/>
     <Attribute name="groupName" id="groupName" type="string"/>
   </Entity>
-  <Entity id="Module" name="Module" duration="persistent" gr:x="660" gr:y="60" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName">
+  <Entity id="Module" name="Module" duration="persistent" gr:x="750" gr:y="50" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName">
     <Attribute name="oid" id="moduleOID" type="integer" key="true"/>
     <Attribute name="moduleID" id="moduleID" type="string"/>
     <Attribute name="moduleName" id="moduleName" type="string"/>
@@ -191,5 +191,15 @@
   <Relationship id="rel18" name="Prodotto_Nazione" sourceEntity="ent4" targetEntity="ent19">
     <RelationshipRole1 id="rel18#role35" name="ProdottoToNazione" maxCard="1"/>
     <RelationshipRole2 id="rel18#role36" name="NazioneToProdotto" maxCard="N"/>
+  </Relationship>
+  <Entity gr:x="215" gr:y="530" id="ent20" name="Orario" duration="persistent" attributeOrder="ent20#att43 ent20#att46 ent20#att47 ent20#att48">
+    <Attribute id="ent20#att43" key="true" name="oid" type="integer"/>
+    <Attribute id="ent20#att48" name="ora fine" type="time"/>
+    <Attribute id="ent20#att47" name="ora inizio" type="time"/>
+    <Attribute id="ent20#att46" name="giorno" type="string"/>
+  </Entity>
+  <Relationship id="rel19" name="Orario_Negozio" sourceEntity="ent20" targetEntity="ent3">
+    <RelationshipRole1 id="rel19#role37" name="OrarioToNegozio" maxCard="1"/>
+    <RelationshipRole2 id="rel19#role38" name="NegozioToOrario" maxCard="N"/>
   </Relationship>
 </DataModel>
