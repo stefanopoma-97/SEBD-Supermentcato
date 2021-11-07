@@ -45,7 +45,7 @@
     <RelationshipRole1 id="rel1#role1" name="Citt&#224;ToIndirizzo" maxCard="N"/>
     <RelationshipRole2 id="rel1#role2" name="IndirizzoToCitt&#224;" maxCard="1"/>
   </Relationship>
-  <Entity gr:x="525" gr:y="472" id="ent3" name="Negozio" duration="persistent" attributeOrder="ent3#att8 ent3#att9 ent3#att10 ent3#att11 ent3#att12 ent3#att13 ent3#att58">
+  <Entity gr:x="525" gr:y="472" id="ent3" name="Negozio" duration="persistent" attributeOrder="ent3#att8 ent3#att9 ent3#att10 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
     <Attribute id="ent3#att8" key="true" name="oid" type="integer"/>
     <Attribute id="ent3#att12" name="fondazione" type="date" key="false"/>
     <Attribute id="ent3#att11" name="massimo ordini giornalieri" type="integer" key="false"/>
@@ -53,6 +53,7 @@
     <Attribute id="ent3#att9" name="nome" type="string" key="false"/>
     <Attribute id="ent3#att13" name="citt&#224;" type="string" derivationQuery="simpleImported::Self.rel2#role3.rel1#role2.ent1#att2"/>
     <Attribute id="ent3#att58" name="numeroLavoratori" type="integer" derivationQuery="calculated::count(Self.rel14#role28(as Var1))"/>
+    <Attribute id="ent3#att42" name="volume vendite" type="decimal" derivationQuery="calculated::sum(Self.rel17#role34(as Var1).ent9#att34)"/>
   </Entity>
   <Relationship id="rel2" name="Negozio_Indirizzo" sourceEntity="ent3" targetEntity="ent2">
     <RelationshipRole1 id="rel2#role3" name="NegozioToIndirizzo" maxCard="1"/>
@@ -172,7 +173,7 @@
     <RelationshipRole1 id="rel17#role33" name="SpesaToNegozio" maxCard="1"/>
     <RelationshipRole2 id="rel17#role34" name="NegozioToSpesa" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="1625" gr:y="315" id="ent15" name="Fascia prezzo" duration="persistent" attributeOrder="ent15#att30 ent15#att32">
+  <Entity gr:x="1615" gr:y="305" id="ent15" name="Fascia prezzo" duration="persistent" attributeOrder="ent15#att30 ent15#att32">
     <Attribute id="ent15#att30" key="true" name="oid" type="integer"/>
     <Attribute id="ent15#att32" name="fascia" type="string"/>
   </Entity>
