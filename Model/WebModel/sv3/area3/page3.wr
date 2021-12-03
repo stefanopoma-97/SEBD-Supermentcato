@@ -1,0 +1,5 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area3#page3" name="Home" gr:x="0" gr:y="0" landmark="true">
+  <ContentUnits>
+    <MultiMessageUnit id="sv3#area3#page3#mssu3" name="Message1" gr:x="0" gr:y="0">
+      <Message xml:space="preserve">Home del dipendente
+</Message>    </MultiMessageUnit>  </ContentUnits>  <layout:Grid containerType="grid">    <layout:Row>      <layout:Cell colspan="12">        <layout:Unit unitId="sv3#area3#page3#mssu3"/>      </layout:Cell>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>    </layout:Row>  </layout:Grid></Page>
