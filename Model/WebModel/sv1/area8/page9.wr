@@ -11,15 +11,9 @@
       <SelectionField id="sv1#area8#page9#enu3#sfld2" name="Fascia di prezzo" type="string"/>
       <Link id="sv1#area8#page9#enu3#ln33" name="Filtra" to="sv1#seu11" type="normal" validate="true">
         <LinkParameter id="sv1#area8#page9#enu3#ln33#par17" name="Categoria_Da categoria a prodotti [oid]" source="sv1#area8#page9#enu3#sfld1" target="sv1#seu11#su14#rcond10.ent5#att19"/>
-        <LinkParameter id="sv1#area8#page9#enu3#ln33#par19" name="Fascia di prezzo_Max Results" source="sv1#area8#page9#enu3#sfld2" target="sv1#seu11.maxResults"/>
+        <LinkParameter id="sv1#area8#page9#enu3#ln33#par20" name="Fascia di prezzo_Da fascia a prodotti [oid]" source="sv1#area8#page9#enu3#sfld2" target="sv1#seu11#su14#rcond11.ent15#att30"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit gr:x="0" gr:y="10" id="sv1#area8#page9#seu6" name="Da categoria a prodotto" entity="ent4">
-      <Link id="sv1#area8#page9#seu6#ln22" name="Flow22" to="sv1#area8#page9#inu6" automaticCoupling="true" type="transport" validate="true"/>
-      <Selector id="sv1#area8#page9#seu6#su9" defaultPolicy="fill" booleanOperator="or">
-        <RelationshipRoleCondition id="sv1#area8#page9#seu6#su9#rcond5" name="Da categoria a prodotti" predicate="in" implied="false" role="rel4#role8"/>
-      </Selector>
-    </SelectorUnit>
     <SelectorUnit gr:x="545" gr:y="5" id="sv1#area8#page9#seu7" name="Tutti i prodotti" entity="ent4">
       <Link id="sv1#area8#page9#seu7#ln25" name="Flow25" to="sv1#area8#page9#inu6" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
@@ -66,9 +60,9 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#area8#page9#enu3">
+          <layout:Link link="sv1#area8#page9#enu3#ln33"/>
           <layout:Field field="sv1#area8#page9#enu3#sfld1"/>
           <layout:Field field="sv1#area8#page9#enu3#sfld2"/>
-          <layout:Link link="sv1#area8#page9#enu3#ln33"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

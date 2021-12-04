@@ -225,7 +225,7 @@
       <db:JoinColumn attribute="ent3#att8" name="negozio_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="1310" gr:y="775" id="ent11" name="Prodotto nuovo" duration="persistent" db:database="db1" db:table="prodotto_nuovo">
+  <Entity gr:x="1315" gr:y="820" id="ent11" name="Prodotto nuovo" duration="persistent" db:database="db1" db:table="prodotto_nuovo">
     <Generalization superEntity="ent4">
       <db:JoinColumn attribute="ent4#att14" name="prodotto_oid"/>
     </Generalization>

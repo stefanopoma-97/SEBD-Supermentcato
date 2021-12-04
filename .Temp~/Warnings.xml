@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Warnings> 
+  <Warning error="false" xpath="id('sv1#area8#page9#inu6')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista Prodotti"> 
+    <Message>Sorting attribute are unspecified for the component 'Lista Prodotti'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area8#page9')" rootXPath="id('sv1')" key="" label="Pagina Elenco prodotti"> 
+    <Message>Security Warning: the page 'Pagina Elenco prodotti' is public but no captcha field is configured on its form component</Message> 
+  </Warning> 
+</Warnings>

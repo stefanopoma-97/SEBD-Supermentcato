@@ -1,0 +1,42 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area9#page10" name="Pagina dettaglio promozione">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv1#area9#page10#dau3" name="Dettaglio Promozione" entity="ent6" displayAttributes="ent6#att23 ent6#att24 ent6#att25 ent6#att26 ent6#att39 ent6#att41" linkOrder="sv1#area9#page10#dau3#ln52 sv1#area9#page10#dau3#ln53">
+      <Selector id="sv1#area9#page10#dau3#su16" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area9#page10#dau3#su16#kcond12" name="KeyCondition12" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area9#page10#dau3#ln52" name="Vai al negozio" to="sv1#area10#page13#dau4" type="normal" validate="true">
+        <LinkParameter id="sv1#area9#page10#dau3#ln52#par26" name="PromozioneToNegozio.oid_KeyCondition14 [oid]" source="data.rel5#role9_ent3#att8" target="sv1#area10#page13#dau4#su18#kcond14.ent3#att8"/>
+      </Link>
+      <Link id="sv1#area9#page10#dau3#ln53" name="Vai al prodotto" to="sv1#area8#page8#dau2" type="normal" validate="true" gr:bendpoints="1057,-1078,-1091,362">
+        <LinkParameter id="sv1#area9#page10#dau3#ln53#par27" name="PromozioneToProdotto.oid_KeyCondition6 [oid]" source="data.rel6#role11_ent4#att14" target="sv1#area8#page8#dau2#su6#kcond6.ent4#att14"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area9#page10#dau3">
+          <layout:Attribute attribute="ent6#att23"/>
+          <layout:Attribute attribute="ent6#att24"/>
+          <layout:Attribute attribute="ent6#att25"/>
+          <layout:Attribute attribute="ent6#att26"/>
+          <layout:Attribute attribute="ent6#att39"/>
+          <layout:Attribute attribute="ent6#att41"/>
+          <layout:Link link="sv1#area9#page10#dau3#ln52"/>
+          <layout:Link link="sv1#area9#page10#dau3#ln53"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

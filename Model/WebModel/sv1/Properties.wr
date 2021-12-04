@@ -1,14 +1,42 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="UtenteEsterno" landmarks="sv1#area7 sv1#area8" homePage="sv1#area7#page7">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="UtenteEsterno" landmarks="sv1#area7 sv1#area8 sv1#area9 sv1#area10" homePage="sv1#area7#page7">
   <OperationUnits>
     <LoginUnit gr:x="90" gr:y="115" id="sv1#lgu3" name="Accedi">
       <KOLink id="sv1#lgu3#kln2" name="KOFlow2" to="sv1#area7" automaticCoupling="true" gr:bendpoints="204,-35,-381,-486"/>
     </LoginUnit>
-    <SelectorUnit id="sv1#seu11" name="Filtri ricerca" gr:x="1045" gr:y="1035" entity="ent4">
-      <Link id="sv1#seu11#ln32" name="Flow22" to="sv1#area8#page9#inu6" type="transport" automaticCoupling="true" validate="true"/>
+    <SelectorUnit id="sv1#seu11" name="Filtri ricerca" gr:x="1810" gr:y="950" entity="ent4">
       <Selector id="sv1#seu11#su14" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#seu11#su14#rcond10" name="Da categoria a prodotti" predicate="in" implied="true" role="rel4#role8"/>
-        <RelationshipRoleCondition id="sv1#seu11#su14#rcond11" name="Da fascia a prodotti" predicate="in" implied="true"/>
+        <RelationshipRoleCondition id="sv1#seu11#su14#rcond11" name="Da fascia a prodotti" predicate="in" implied="true" role="rel11#role21"/>
+        <KeyCondition id="sv1#seu11#su14#kcond11" name="Prodotti nuovi" predicate="in" implied="true"/>
       </Selector>
+      <Link id="sv1#seu11#ln35" name="Flow35" to="sv1#area8#page9#inu6" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="510,-129,-55,336"/>
+    </SelectorUnit>
+    <SelectorUnit gr:x="50" gr:y="1955" id="sv1#seu18" name="Filtri" entity="ent6">
+      <Selector id="sv1#seu18#su20" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#seu18#su20#rcond14" name="Da negozi a promozioni" predicate="in" implied="true" role="rel5#role10"/>
+        <AttributesCondition id="sv1#seu18#su20#acond5" name="negozio parola chiave" predicate="contains" booleanOperator="or" implied="true" attributes="ent6#att39"/>
+        <AttributesCondition id="sv1#seu18#su20#acond6" name="prodotto parola chiave" predicate="contains" booleanOperator="or" implied="true" attributes="ent6#att41"/>
+      </Selector>
+      <Link id="sv1#seu18#ln48" name="Flow48" to="sv1#area9#page11#inu10" type="transport" validate="true">
+        <LinkParameter id="sv1#seu18#ln48#par24" name="oid_KeyCondition13 [oid]" source="ent6#att22Array" target="sv1#area9#page11#inu10#su17#kcond13.ent6#att22"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="1680" gr:y="580" id="sv1#seu21" name="Da categoria a prodotto" entity="ent4" linkOrder="sv1#seu21#ln50">
+      <Selector id="sv1#seu21#su21" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#seu21#su21#rcond15" name="Categoria To Prodotto" predicate="in" implied="false" role="rel4#role8"/>
+      </Selector>
+      <Link id="sv1#seu21#ln50" name="Flow50" to="sv1#area8#page9#inu6" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit gr:x="1650" gr:y="780" id="sv1#seu22" name="Da nuovo a prodotto" entity="ent11" linkOrder="sv1#seu22#ln51">
+      <Link id="sv1#seu22#ln51" name="Flow51" to="sv1#area8#page9#inu6" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit gr:x="1260" gr:y="1915" id="sv1#seu23" name="Ordina promozioni per data" entity="ent6" linkOrder="sv1#seu23#ln57">
+      <SortAttribute attribute="ent6#att24" order="ascending"/>
+      <Link id="sv1#seu23#ln57" name="Flow57" to="sv1#area9#page11#inu10" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit gr:x="1290" gr:y="2120" id="sv1#seu24" name="Ordina per sconto" entity="ent6">
+      <Link id="sv1#seu24#ln59" name="Flow59" to="sv1#area9#page11#inu10" automaticCoupling="true" type="transport" validate="true"/>
+      <SortAttribute attribute="ent6#att23" order="ascending"/>
     </SelectorUnit>
   </OperationUnits>
 </SiteView>
