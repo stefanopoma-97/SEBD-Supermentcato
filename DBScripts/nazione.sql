@@ -3,21 +3,19 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Dic 03, 2021 alle 16:33
+-- Creato il: Dic 04, 2021 alle 08:53
 -- Versione del server: 10.4.22-MariaDB
 -- Versione PHP: 8.0.13
 
 
 --
--- Dump dei dati per la tabella `group_module`
+-- Dump dei dati per la tabella `nazione`
 --
 
-INSERT INTO `group_module` (`group_oid`, `module_oid`) VALUES
-(1, 1),
-(2, 2),
-(3, 3),
-(4, 4),
-(5, 5);
+INSERT INTO `nazione` (`oid`, `nome`) VALUES
+(1, 'Italia'),
+(2, 'Spagna'),
+(3, 'Francia');
 
 --
 -- Indici per le tabelle scaricate
