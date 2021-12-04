@@ -52,7 +52,7 @@
     <Attribute id="ent1#att3" name="provincia" type="string" db:column="provincia"/>
     <Attribute id="ent1#att2" name="nome" type="string" db:column="nome"/>
   </Entity>
-  <Entity gr:x="585" gr:y="257" id="ent2" name="Indirizzo" duration="persistent" attributeOrder="ent2#att5 ent2#att6 ent2#att7" db:database="db1" db:table="indirizzo">
+  <Entity gr:x="625" gr:y="250" id="ent2" name="Indirizzo" duration="persistent" attributeOrder="ent2#att5 ent2#att6 ent2#att7" db:database="db1" db:table="indirizzo">
     <Attribute id="ent2#att5" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent2#att7" name="numero" type="integer" db:column="numero"/>
     <Attribute id="ent2#att6" name="via" type="string" db:column="via"/>
@@ -94,13 +94,16 @@
       <db:JoinColumn attribute="ent2#att5" name="oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="1295" gr:y="480" id="ent4" name="Prodotto" duration="persistent" attributeOrder="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27" db:database="db1" db:table="prodotto">
+  <Entity gr:x="1295" gr:y="480" id="ent4" name="Prodotto" duration="persistent" attributeOrder="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" db:database="db1" db:table="prodotto">
     <Attribute id="ent4#att14" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent4#att18" name="data inserimento" type="date" key="false" db:column="data_inserimento"/>
     <Attribute id="ent4#att17" name="prezzo" type="decimal" key="false" db:column="prezzo"/>
     <Attribute id="ent4#att16" name="descrizione" type="string" key="false" db:column="descrizione"/>
     <Attribute id="ent4#att15" name="nome" type="string" key="false" db:column="nome"/>
     <Attribute id="ent4#att27" name="immagine" type="blob" db:column="immagine"/>
+    <Attribute id="ent4#att53" name="fascia" type="string" derivationQuery="simpleImported::Self.rel11#role22.ent15#att32"/>
+    <Attribute id="ent4#att59" name="categoria" type="string" derivationQuery="simpleImported::Self.rel4#role7.ent5#att20"/>
+    <Attribute id="ent4#att60" name="nazione" type="string" derivationQuery="simpleImported::Self.rel18#role35.ent19#att45"/>
   </Entity>
   <Entity gr:x="1285" gr:y="200" id="ent5" name="Categoria" duration="persistent" attributeOrder="ent5#att19 ent5#att20 ent5#att21" db:database="db1" db:table="categoria">
     <Attribute id="ent5#att19" key="true" name="oid" type="integer" db:column="oid"/>
@@ -115,12 +118,14 @@
       <db:JoinColumn attribute="ent5#att19" name="categoria_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="965" gr:y="385" id="ent6" name="Promozione" duration="persistent" attributeOrder="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26" db:database="db1" db:table="promozione">
+  <Entity gr:x="965" gr:y="385" id="ent6" name="Promozione" duration="persistent" attributeOrder="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26 ent6#att39 ent6#att41" db:database="db1" db:table="promozione">
     <Attribute id="ent6#att22" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent6#att24" name="scadenza" type="date" key="false" db:column="scadenza"/>
     <Attribute id="ent6#att23" name="sconto" type="decimal" key="false" db:column="sconto"/>
     <Attribute id="ent6#att26" name="valida online" type="boolean" db:column="valida_online"/>
     <Attribute id="ent6#att25" name="valida in negozio" type="boolean" db:column="valida_in_negozio"/>
+    <Attribute id="ent6#att39" name="negozio" type="string" derivationQuery="simpleImported::Self.rel5#role9.ent3#att9"/>
+    <Attribute id="ent6#att41" name="prodotto" type="string" derivationQuery="simpleImported::Self.rel6#role11.ent4#att15"/>
   </Entity>
   <Relationship id="rel5" name="Promozione_Negozio" sourceEntity="ent6" targetEntity="ent3" db:database="db1" db:table="promozione">
     <RelationshipRole1 id="rel5#role9" name="PromozioneToNegozio" maxCard="1">
