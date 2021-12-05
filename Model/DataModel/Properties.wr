@@ -238,7 +238,7 @@
     <Attribute id="ent12#att52" name="cognome" type="string" db:column="cognome"/>
     <Attribute id="ent12#att57" name="nomeNegozio" type="string" derivationQuery="simpleImported::Self.rel14#role27.ent3#att9"/>
   </Entity>
-  <Entity gr:x="300" gr:y="265" id="ent13" name="Utente esterno registrato" duration="persistent" attributeOrder="ent13#att49 ent13#att50" db:database="db1" db:table="utente_esterno_registrato">
+  <Entity gr:x="320" gr:y="240" id="ent13" name="Utente esterno registrato" duration="persistent" attributeOrder="ent13#att49 ent13#att50" db:database="db1" db:table="utente_esterno_registrato">
     <Generalization superEntity="User">
       <db:JoinColumn attribute="userOID" name="user_oid"/>
     </Generalization>

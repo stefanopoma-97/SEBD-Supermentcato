@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="UtenteEsterno" landmarks="sv1#area7 sv1#area8 sv1#area9 sv1#area10" homePage="sv1#area7#page7">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="UtenteEsterno" landmarks="sv1#area7 sv1#area8 sv1#area9 sv1#area10 sv1#area11" homePage="sv1#area7#page7">
   <OperationUnits>
     <SelectorUnit id="sv1#seu11" name="Filtri ricerca" gr:x="1810" gr:y="950" entity="ent4">
       <Selector id="sv1#seu11#su14" defaultPolicy="fill" booleanOperator="and">

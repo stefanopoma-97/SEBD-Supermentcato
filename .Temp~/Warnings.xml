@@ -1,102 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Warnings> 
-  <Warning xpath="id('sv1#area7#seu29#kln6')" rootXPath="id('sv1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow6"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow6'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv1#seu11')" rootXPath="id('sv1')" error="false" label="Filtri ricerca" key="NO_OUTGOING_OK_LINKS"> 
-    <Message>No outgoing OK flow(s) for the operation 'Filtri ricerca'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#seu11')" rootXPath="id('sv1')" error="false" label="Filtri ricerca" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'Filtri ricerca'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#seu21')" rootXPath="id('sv1')" error="false" label="Da categoria a prodotto" key="NO_OUTGOING_OK_LINKS"> 
-    <Message>No outgoing OK flow(s) for the operation 'Da categoria a prodotto'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#seu21')" rootXPath="id('sv1')" error="false" label="Da categoria a prodotto" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'Da categoria a prodotto'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#seu22')" rootXPath="id('sv1')" error="false" label="Da nuovo a prodotto" key="NO_OUTGOING_OK_LINKS"> 
-    <Message>No outgoing OK flow(s) for the operation 'Da nuovo a prodotto'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#seu22')" rootXPath="id('sv1')" error="false" label="Da nuovo a prodotto" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'Da nuovo a prodotto'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#seu23')" rootXPath="id('sv1')" error="false" label="Ordina promozioni per data" key="NO_OUTGOING_OK_LINKS"> 
-    <Message>No outgoing OK flow(s) for the operation 'Ordina promozioni per data'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#seu23')" rootXPath="id('sv1')" error="false" label="Ordina promozioni per data" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'Ordina promozioni per data'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#seu24')" rootXPath="id('sv1')" error="false" label="Ordina per sconto" key="NO_OUTGOING_OK_LINKS"> 
-    <Message>No outgoing OK flow(s) for the operation 'Ordina per sconto'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#seu24')" rootXPath="id('sv1')" error="false" label="Ordina per sconto" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'Ordina per sconto'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#area7#lgu5')" rootXPath="id('sv1')" error="false" label="Accedi" key="NO_OUTGOING_OK_LINKS"> 
-    <Message>No outgoing OK flow(s) for the operation 'Accedi'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#area9#seu28')" rootXPath="id('sv1')" error="false" label="Filtri" key="NO_OUTGOING_OK_LINKS"> 
-    <Message>No outgoing OK flow(s) for the operation 'Filtri'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#area9#seu28')" rootXPath="id('sv1')" error="false" label="Filtri" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'Filtri'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv1#area7#page7#inu1')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Cerca prodotti per categoria"> 
-    <Message>Sorting attribute are unspecified for the component 'Cerca prodotti per categoria'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv1#area7#page7#inu2')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista prodotti nuovi"> 
-    <Message>Sorting attribute are unspecified for the component 'Lista prodotti nuovi'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv1#area7#page7#inu3')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista promozioni"> 
-    <Message>Sorting attribute are unspecified for the component 'Lista promozioni'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv1#area7#page7#inu4')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista Negozi nuovi"> 
-    <Message>Sorting attribute are unspecified for the component 'Lista Negozi nuovi'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv1#area7#page7#scu2')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Scroller2"> 
-    <Message>Sorting attribute are unspecified for the component 'Scroller2'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#area7#page7#enu5')" rootXPath="id('sv1')" key="MISSING_MANDATORY_OUTPUT_PARAMETER" label="Aggiorna negozi in base a citt&#224;"> 
-    <Message>The mandatory output parameter 'Negozio' is not transported along an outgoing flow from the component 'Aggiorna negozi in base a citt&#224;'</Message> 
-  </Warning>  
   <Warning error="false" xpath="id('sv1#area8#page8#inu7')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Promozioni attive in negozio"> 
     <Message>Sorting attribute are unspecified for the component 'Promozioni attive in negozio'</Message> 
   </Warning>  
   <Warning error="true" xpath="id('sv1#area8#page8#inu7#su7#acond2')" rootXPath="id('sv1')" key="" label="valida in negozio"> 
     <Message>Invalid value '1' specified for the condition 'valida in negozio': 'true' or 'false' must be specified</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv1#area8#page8#inu8')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Promozioni attive online"> 
-    <Message>Sorting attribute are unspecified for the component 'Promozioni attive online'</Message> 
-  </Warning>  
-  <Warning error="true" xpath="id('sv1#area8#page8#inu8#su8#acond3')" rootXPath="id('sv1')" key="" label="valida online"> 
-    <Message>Invalid value '1' specified for the condition 'valida online': 'true' or 'false' must be specified</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv1#area8#page9#inu6')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista Prodotti"> 
-    <Message>Sorting attribute are unspecified for the component 'Lista Prodotti'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv1#area9#page11#inu10')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista Promozioni"> 
-    <Message>Sorting attribute are unspecified for the component 'Lista Promozioni'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv1#area10#page12#inu11')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista Negozi"> 
-    <Message>Sorting attribute are unspecified for the component 'Lista Negozi'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv1#area7#page7#enu2#fld3')" rootXPath="id('sv1')" label="Password"> 
-    <Message>Security Warning: the password field 'Password' does not have any validation to ensure password strength</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.AddMissingValidationRuleResolutionGenerator" validationRuleName="PasswordStrengthValidationRule">Add missing Password Strength validation rule</Resolution> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv1#area8#page9')" rootXPath="id('sv1')" key="" label="Pagina Elenco prodotti"> 
-    <Message>Security Warning: the page 'Pagina Elenco prodotti' is public but no captcha field is configured on its form component</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv1#area7#page7')" rootXPath="id('sv1')" key="" label="Home"> 
-    <Message>Security Warning: the page 'Home' is public but no captcha field is configured on its form component</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv1#area9#page11')" rootXPath="id('sv1')" key="" label="Pagina Promozioni"> 
-    <Message>Security Warning: the page 'Pagina Promozioni' is public but no captcha field is configured on its form component</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv1#area9#page14')" rootXPath="id('sv1')" key="" label="Errori"> 
-    <Message>Security Warning: the page 'Errori' is orphan</Message> 
+  <Warning xpath="id('sv1#area8#page8#inu7')" rootXPath="id('sv1')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Promozioni attive in negozio"> 
+    <Message>The mandatory input parameter 'da prodotto a promozioni [oid]' is not provided to the component 'Promozioni attive in negozio'</Message> 
   </Warning> 
 </Warnings>
