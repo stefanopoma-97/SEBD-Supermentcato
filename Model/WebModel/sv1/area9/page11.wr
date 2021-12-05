@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="210" gr:y="255" id="sv1#area9#page11" name="Pagina Promozioni" linkOrder="sv1#area9#page11#ln55 sv1#area9#page11#ln58">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="375" gr:y="255" id="sv1#area9#page11" name="Pagina Promozioni" linkOrder="sv1#area9#page11#ln55 sv1#area9#page11#ln58">
   <ContentUnits>
     <IndexUnit gr:x="0" gr:y="15" id="sv1#area9#page11#inu10" name="Lista Promozioni" entity="ent6" linkOrder="sv1#area9#page11#inu10#ln40" displayAttributes="ent6#att23 ent6#att39 ent6#att41 ent6#att24">
       <Selector id="sv1#area9#page11#inu10#su17" defaultPolicy="fill" booleanOperator="and">
@@ -11,10 +11,10 @@
     </SelectorUnit>
     <EntryUnit gr:x="265" gr:y="180" id="sv1#area9#page11#enu4" name="Cerca" linkOrder="sv1#area9#page11#enu4#ln47">
       <SelectionField id="sv1#area9#page11#enu4#sfld4" name="Negozio" type="string"/>
-      <Link id="sv1#area9#page11#enu4#ln47" name="Filtra" to="sv1#seu18" type="normal" validate="true">
-        <LinkParameter id="sv1#area9#page11#enu4#ln47#par23" name="Negozio_Da negozi a promozioni [oid]" source="sv1#area9#page11#enu4#sfld4" target="sv1#seu18#su20#rcond14.ent3#att8"/>
-        <LinkParameter id="sv1#area9#page11#enu4#ln47#par25" name="Negozio (parola chiave)_negozio parola chiave" source="sv1#area9#page11#enu4#fld6" target="sv1#seu18#su20#acond5"/>
-        <LinkParameter id="sv1#area9#page11#enu4#ln47#par28" name="Prodotto_prodotto parola chiave" source="sv1#area9#page11#enu4#fld7" target="sv1#seu18#su20#acond6"/>
+      <Link id="sv1#area9#page11#enu4#ln47" name="Filtra" to="sv1#area9#seu28" type="normal" validate="true">
+        <LinkParameter id="sv1#area9#page11#enu4#ln47#par23" name="Negozio_Da negozi a promozioni [oid]" source="sv1#area9#page11#enu4#sfld4" target="sv1#area9#seu28#su23#rcond17.ent3#att8"/>
+        <LinkParameter id="sv1#area9#page11#enu4#ln47#par25" name="Negozio (parola chiave)_negozio parola chiave" source="sv1#area9#page11#enu4#fld6" target="sv1#area9#seu28#su23#acond7"/>
+        <LinkParameter id="sv1#area9#page11#enu4#ln47#par28" name="Prodotto_prodotto parola chiave" source="sv1#area9#page11#enu4#fld7" target="sv1#area9#seu28#su23#acond8"/>
       </Link>
       <Field id="sv1#area9#page11#enu4#fld6" name="Negozio (parola chiave)" type="string" modifiable="true"/>
       <Field id="sv1#area9#page11#enu4#fld7" name="Prodotto" type="string" modifiable="true"/>

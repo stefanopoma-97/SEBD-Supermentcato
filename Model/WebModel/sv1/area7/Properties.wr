@@ -1,3 +1,17 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1#area7" name="Area Home" defaultPage="sv1#area7#page7" landmark="true" gr:x="390" gr:y="165" landmarks="sv1#area7#page7">
-  <OperationUnits/>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1#area7" name="Area Home" defaultPage="sv1#area7#page7" landmark="true" gr:x="35" gr:y="165" landmarks="sv1#area7#page7">
+  <OperationUnits>
+    <LoginUnit gr:x="140" gr:y="65" id="sv1#area7#lgu5" name="Accedi">
+      <KOLink id="sv1#area7#lgu5#kln4" name="KOFlow2" to="sv1#area7#page7" automaticCoupling="true" gr:bendpoints="204,-35,-381,-486"/>
+    </LoginUnit>
+    <SelectorUnit gr:x="0" gr:y="770" id="sv1#area7#seu29" name="Da citt&#224; a negozi" entity="ent3">
+      <Selector id="sv1#area7#seu29#su24" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area7#seu29#su24#rcond18" name="Da citt&#224; a negozi" predicate="in" implied="false" role="rel1#role1.rel2#role4"/>
+      </Selector>
+      <KOLink id="sv1#area7#seu29#kln6" name="KOFlow6" to="sv1#area7#page15#mssu9" automaticCoupling="true"/>
+      <OKLink id="sv1#area7#seu29#oln1" name="OKFlow1" to="sv1#area7#page7#enu5" gr:bendpoints="316,40,-314,-94">
+        <LinkParameter id="sv1#area7#seu29#oln1#par39" name="nome_Negozio [label]" source="ent3#att9Array" target="sv1#area7#page7#enu5#sfld6_label"/>
+        <LinkParameter id="sv1#area7#seu29#oln1#par40" name="oid_Negozio [output]" source="ent3#att8Array" target="sv1#area7#page7#enu5#sfld6_output"/>
+      </OKLink>
+    </SelectorUnit>
+  </OperationUnits>
 </Area>
