@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="375" gr:y="255" id="sv1#area9#page11" name="Pagina Promozioni" linkOrder="sv1#area9#page11#ln55 sv1#area9#page11#ln58">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="385" gr:y="255" id="sv1#area9#page11" name="Pagina Promozioni" linkOrder="sv1#area9#page11#ln55 sv1#area9#page11#ln58">
   <ContentUnits>
     <IndexUnit gr:x="0" gr:y="15" id="sv1#area9#page11#inu10" name="Lista Promozioni" entity="ent6" linkOrder="sv1#area9#page11#inu10#ln40" displayAttributes="ent6#att23 ent6#att39 ent6#att41 ent6#att24">
       <Selector id="sv1#area9#page11#inu10#su17" defaultPolicy="fill" booleanOperator="and">
@@ -18,6 +18,7 @@
       </Link>
       <Field id="sv1#area9#page11#enu4#fld6" name="Negozio (parola chiave)" type="string" modifiable="true"/>
       <Field id="sv1#area9#page11#enu4#fld7" name="Prodotto" type="string" modifiable="true"/>
+      <SelectionField id="sv1#area9#page11#enu4#sfld3" name="Dove" type="string"/>
     </EntryUnit>
     <SelectorUnit gr:x="430" gr:y="300" id="sv1#area9#page11#seu20" name="Negozi" entity="ent3">
       <Link id="sv1#area9#page11#seu20#ln46" name="Flow46" to="sv1#area9#page11#enu4" type="transport" validate="true">
@@ -56,6 +57,7 @@
           <layout:Field field="sv1#area9#page11#enu4#sfld4"/>
           <layout:Field field="sv1#area9#page11#enu4#fld6"/>
           <layout:Field field="sv1#area9#page11#enu4#fld7"/>
+          <layout:Field field="sv1#area9#page11#enu4#sfld3"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -71,7 +73,36 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#area9#page11#alt2#page1">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#area9#page11#alt2#page1#inu9">
+                  <layout:Attribute attribute="ent6#att22"/>
+                  <layout:Attribute attribute="ent6#att23"/>
+                  <layout:Attribute attribute="ent6#att24"/>
+                  <layout:Attribute attribute="ent6#att25"/>
+                  <layout:Attribute attribute="ent6#att26"/>
+                  <layout:Attribute attribute="ent6#att39"/>
+                  <layout:Attribute attribute="ent6#att41"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -85,6 +116,17 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv1#area9#page11#ln55" name="Ordina per scadenza" to="sv1#seu23" automaticCoupling="true" type="normal" validate="true"/>
-  <Link id="sv1#area9#page11#ln58" name="Ordina per sconto" to="sv1#seu24" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#area9#page11#ln55" name="Ordina per scadenza" to="sv1#area9#seu6" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#area9#page11#ln58" name="Ordina per sconto" to="sv1#area9#seu10" automaticCoupling="true" type="normal" validate="true"/>
+  <Alternative gr:x="35" gr:y="235" id="sv1#area9#page11#alt2" name="Prova" defaultPage="sv1#area9#page11#alt2#page1">
+    <Page gr:x="0" gr:y="0" id="sv1#area9#page11#alt2#page1" name="Page 1">
+      <ContentUnits>
+        <IndexUnit gr:x="0" gr:y="0" id="sv1#area9#page11#alt2#page1#inu9" name="Test" entity="ent6" displayAttributes="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26 ent6#att39 ent6#att41">
+          <Selector id="sv1#area9#page11#alt2#page1#inu9#su1" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="sv1#area9#page11#alt2#page1#inu9#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
+          </Selector>
+        </IndexUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
 </Page>

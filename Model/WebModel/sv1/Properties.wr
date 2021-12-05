@@ -17,13 +17,5 @@
     <SelectorUnit gr:x="1650" gr:y="780" id="sv1#seu22" name="Prodotto nuovo" entity="ent11">
       <Link id="sv1#seu22#ln51" name="Flow51" to="sv1#area8#page9#inu6" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="1260" gr:y="1915" id="sv1#seu23" name="Ordina promozioni per data" entity="ent6" linkOrder="sv1#seu23#ln57">
-      <SortAttribute attribute="ent6#att24" order="ascending"/>
-      <Link id="sv1#seu23#ln57" name="Flow57" to="sv1#area9#page11#inu10" automaticCoupling="true" type="transport" validate="true"/>
-    </SelectorUnit>
-    <SelectorUnit gr:x="1290" gr:y="2120" id="sv1#seu24" name="Ordina per sconto" entity="ent6">
-      <Link id="sv1#seu24#ln59" name="Flow59" to="sv1#area9#page11#inu10" automaticCoupling="true" type="transport" validate="true"/>
-      <SortAttribute attribute="ent6#att23" order="ascending"/>
-    </SelectorUnit>
   </OperationUnits>
 </SiteView>

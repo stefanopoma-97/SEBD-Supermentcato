@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="145" gr:y="1505" id="sv1#area9" name="Area Promozioni" landmark="true" defaultPage="sv1#area9#page11">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="135" gr:y="1505" id="sv1#area9" name="Area Promozioni" landmark="true" defaultPage="sv1#area9#page11">
   <OperationUnits>
     <SelectorUnit gr:x="0" gr:y="275" id="sv1#area9#seu28" name="Filtri" entity="ent6">
       <Selector id="sv1#area9#seu28#su23" defaultPolicy="fill" booleanOperator="and">
@@ -9,6 +9,15 @@
       <Link id="sv1#area9#seu28#ln65" name="Flow48" to="sv1#area9#page11#inu10" type="transport" validate="true">
         <LinkParameter id="sv1#area9#seu28#ln65#par34" name="oid_KeyCondition13 [oid]" source="ent6#att22Array" target="sv1#area9#page11#inu10#su17#kcond13.ent6#att22"/>
       </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="30" gr:y="430" id="sv1#area9#seu6" name="Ordina promozioni per data" entity="ent6">
+      <Link id="sv1#area9#seu6#ln1" name="Flow57" to="sv1#area9#page11#inu10" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv1#area9#seu6#ln5" name="Flow5" to="sv1#area9#page11#alt2#page1#inu9" automaticCoupling="true" type="transport" validate="true"/>
+      <SortAttribute attribute="ent6#att24" order="descending"/>
+    </SelectorUnit>
+    <SelectorUnit gr:x="195" gr:y="565" id="sv1#area9#seu10" name="Ordina per sconto" entity="ent6">
+      <Link id="sv1#area9#seu10#ln3" name="Flow59" to="sv1#area9#page11#inu10" automaticCoupling="true" type="transport" validate="true"/>
+      <SortAttribute attribute="ent6#att23" order="ascending"/>
     </SelectorUnit>
   </OperationUnits>
 </Area>

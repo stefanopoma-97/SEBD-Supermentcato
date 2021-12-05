@@ -1,75 +1,105 @@
-[04 dic 2021 09:16:33] DEBUG Executing SQL script
-[04 dic 2021 09:16:33] INFO ================================================================================
-[04 dic 2021 09:16:33] INFO onError= 'stop'
-[04 dic 2021 09:16:33] INFO autoCommit= 'false'
-[04 dic 2021 09:16:33] INFO username= 'admin'
-[04 dic 2021 09:16:33] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.xml'
-[04 dic 2021 09:16:33] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.xml.log'
-[04 dic 2021 09:16:33] INFO encoding= ''
-[04 dic 2021 09:16:33] INFO driverClass= 'com.mysql.jdbc.Driver'
-[04 dic 2021 09:16:33] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.sql'
-[04 dic 2021 09:16:33] INFO eventSocketPort= '53257'
-[04 dic 2021 09:16:33] INFO statementSeparator= ';'
-[04 dic 2021 09:16:33] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
-[04 dic 2021 09:16:33] INFO password= 'admin'
-[04 dic 2021 09:16:33] INFO url= 'jdbc:mysql://localhost:3306/supermercati'
-[04 dic 2021 09:16:33] INFO ================================================================================
-[04 dic 2021 09:16:33] INFO Connecting to the Database...
-[04 dic 2021 09:16:33] INFO Database connection estabilished
-[04 dic 2021 09:16:33] INFO transaction isolation: 4
-[04 dic 2021 09:16:33] DEBUG ================================================================================
-[04 dic 2021 09:16:33] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.sql
-[04 dic 2021 09:16:33] DEBUG Executing statement:  create table `group` ( `oid`  integer  not null, `groupname`  varchar(255), primary key (`oid`) )
-[04 dic 2021 09:16:33] DEBUG Executing statement:    create table `module` ( `oid`  integer  not null, `moduleid`  varchar(255), `modulename`  varchar(255), primary key (`oid`) )
-[04 dic 2021 09:16:33] DEBUG Executing statement:    create table `user` ( `oid`  integer  not null, `username`  varchar(255), `password`  varchar(255), `email`  varchar(255), primary key (`oid`) )
-[04 dic 2021 09:16:33] DEBUG Executing statement:    create table `citta` ( `oid`  integer  not null, `nazione`  varchar(255), `provincia`  varchar(255), `nome`  varchar(255), primary key (`oid`) )
-[04 dic 2021 09:16:33] DEBUG Executing statement:    create table `stato_ordine` ( `oid`  integer  not null, `stato`  varchar(255), primary key (`oid`) )
-[04 dic 2021 09:16:33] DEBUG Executing statement:    create table `prodotto_nuovo` ( `prodotto_oid`  integer  not null, primary key (`prodotto_oid`) )
-[04 dic 2021 09:16:33] DEBUG Executing statement:    create table `responsabile` ( `user_oid`  integer  not null, `nome`  varchar(255), `cognome`  varchar(255), primary key (`user_oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `utente_esterno_registrato` ( `user_oid`  integer  not null, `nome`  varchar(255), `cognome`  varchar(255), primary key (`user_oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `dipendente` ( `responsabile_oid`  integer  not null, primary key (`responsabile_oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `fascia_prezzo` ( `oid`  integer  not null, `fascia`  varchar(255), primary key (`oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `negozio_nuovo` ( `negozio_oid`  integer  not null, primary key (`negozio_oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `nazione` ( `oid`  integer  not null, `nome`  varchar(255), primary key (`oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `indirizzo` ( `oid`  integer  not null, `numero`  integer, `via`  varchar(255), primary key (`oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `orario` ( `oid`  integer  not null, `ora_fine`  time, `ora_inizio`  time, `giorno`  varchar(255), primary key (`oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `negozio` ( `oid`  integer  not null, `fondazione`  date, `massimo_ordini_giornalieri`  integer, `nome`  varchar(255), primary key (`oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `prodotto` ( `oid`  integer  not null, `data_inserimento`  date, `prezzo`  decimal(19,2), `descrizione`  varchar(255), `nome`  varchar(255), `immagine`  varchar(255), primary key (`oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `categoria` ( `oid`  integer  not null, `descrizione`  varchar(255), `nome`  varchar(255), primary key (`oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `promozione` ( `oid`  integer  not null, `scadenza`  date, `sconto`  decimal(19,2), `valida_online`  bit, `valida_in_negozio`  bit, primary key (`oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `riga_ordine` ( `oid`  integer  not null, `quantita`  integer, `costo`  decimal(19,2), primary key (`oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `prodotto_online` ( `oid`  integer  not null, primary key (`oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `spesa` ( `oid`  integer  not null, `data_di_spedizione`  date, `data_di_creazione`  date, primary key (`oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `group`  add column  `module_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `group_module` ( `group_oid`  integer not null, `module_oid`  integer not null, primary key (`group_oid`, `module_oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `user`  add column  `group_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create table `user_group` ( `user_oid`  integer not null, `group_oid`  integer not null, primary key (`user_oid`, `group_oid`) )
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `indirizzo`  add column  `citta_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `riga_ordine`  add column  `spesa_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `prodotto`  add column  `fascia_prezzo_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `stato_ordine`  add column  `spesa_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `spesa`  add column  `utente_esterno_registrato_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `responsabile`  add column  `negozio_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `utente_esterno_registrato`  add column  `negozio_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `stato_ordine`  add column  `dipendente_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `spesa`  add column  `negozio_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `prodotto`  add column  `nazione_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `orario`  add column  `negozio_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `indirizzo`  add column  `negozio_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `indirizzo`  add column  `utente_esterno_registrato_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `prodotto`  add column  `categoria_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `promozione`  add column  `negozio_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `promozione`  add column  `prodotto_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `prodotto_online`  add column  `negozio_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `prodotto_online`  add column  `prodotto_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    alter table `riga_ordine`  add column  `prodotto_online_oid`  integer
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create view `stato_ordine_utenteesterno_vie` as select AL1.`oid` as `oid`, AL3.`oid` as `der_attr` from  `stato_ordine` AL1 left outer join `spesa` AL2 on AL1.`spesa_oid`=AL2.`oid` left outer join `user` AL3 on AL2.`utente_esterno_registrato_oid`=AL3.`oid`
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create view `stato_ordine_dipendente_view` as select AL1.`oid` as `oid`, AL2.`oid` as `der_attr` from  `stato_ordine` AL1 left outer join `user` AL2 on AL1.`dipendente_oid`=AL2.`oid`
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create view `dipendente_ordinigestiti_view` as select AL1.`responsabile_oid` as `responsabile_oid`, count(distinct AL2.`oid`) as `der_attr` from  `dipendente` AL1 left outer join `stato_ordine` AL2 on AL1.`responsabile_oid`=AL2.`dipendente_oid` group by AL1.`responsabile_oid`
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create view `negozio_numerolavoratori_view` as select AL1.`oid` as `oid`, count(distinct AL2.`user_oid`) as `der_attr` from  `negozio` AL1 left outer join `responsabile` AL2 on AL1.`oid`=AL2.`negozio_oid` group by AL1.`oid`
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create view `spesa_importo_totale_view` as select AL1.`oid` as `oid`, sum(AL2.`costo`) as `der_attr` from  `spesa` AL1 left outer join `riga_ordine` AL2 on AL1.`oid`=AL2.`spesa_oid` group by AL1.`oid`
-[04 dic 2021 09:16:34] DEBUG Executing statement:    create view `negozio_volume_vendite_view` as select AL1.`oid` as `oid`, sum(AL3.`der_attr`) as `der_attr` from  `negozio` AL1 left outer join `spesa` AL2 on AL1.`oid`=AL2.`negozio_oid` left outer join `spesa_importo_totale_view` AL3 on AL2.`oid`=AL3.`oid` group by AL1.`oid`
-[04 dic 2021 09:16:34] DEBUG ================================================================================
-[04 dic 2021 09:16:34] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[04 dic 2021 09:16:34] INFO Database connection closed
-[04 dic 2021 09:16:34] DEBUG Total time: 681 milliseconds
+[05 Dec 2021 14:57:11] DEBUG Executing SQL script
+[05 Dec 2021 14:57:11] INFO ================================================================================
+[05 Dec 2021 14:57:11] INFO onError= 'stop'
+[05 Dec 2021 14:57:11] INFO autoCommit= 'false'
+[05 Dec 2021 14:57:11] INFO username= 'admin'
+[05 Dec 2021 14:57:11] INFO outputPath= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.xml'
+[05 Dec 2021 14:57:11] INFO outputLogPath= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.xml.log'
+[05 Dec 2021 14:57:11] INFO encoding= ''
+[05 Dec 2021 14:57:11] INFO driverClass= 'com.mysql.jdbc.Driver'
+[05 Dec 2021 14:57:11] INFO sqlScript= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.sql'
+[05 Dec 2021 14:57:11] INFO eventSocketPort= '40395'
+[05 Dec 2021 14:57:11] INFO statementSeparator= ';'
+[05 Dec 2021 14:57:11] INFO derby.system.home= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/.metadata/.plugins/com.webratio.commons.db/derby'
+[05 Dec 2021 14:57:11] INFO password= 'admin'
+[05 Dec 2021 14:57:11] INFO url= 'jdbc:mysql://localhost:3306/supermercati'
+[05 Dec 2021 14:57:11] INFO ================================================================================
+[05 Dec 2021 14:57:11] INFO Connecting to the Database...
+[05 Dec 2021 14:57:11] INFO Database connection estabilished
+[05 Dec 2021 14:57:11] INFO transaction isolation: 4
+[05 Dec 2021 14:57:11] DEBUG ================================================================================
+[05 Dec 2021 14:57:11] DEBUG Executing SQL script file: /home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.sql
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  create table `group` ( `oid`  integer  not null, `groupname`  varchar(255), primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `module` ( `oid`  integer  not null, `moduleid`  varchar(255), `modulename`  varchar(255), primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `user` ( `oid`  integer  not null, `username`  varchar(255), `password`  varchar(255), `email`  varchar(255), primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `citta` ( `oid`  integer  not null, `nazione`  varchar(255), `provincia`  varchar(255), `nome`  varchar(255), primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `stato_ordine` ( `oid`  integer  not null, `stato`  varchar(255), primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `prodotto_nuovo` ( `prodotto_oid`  integer  not null, primary key (`prodotto_oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `responsabile` ( `user_oid`  integer  not null, `nome`  varchar(255), `cognome`  varchar(255), primary key (`user_oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `utente_esterno_registrato` ( `user_oid`  integer  not null, `nome`  varchar(255), `cognome`  varchar(255), primary key (`user_oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `dipendente` ( `responsabile_oid`  integer  not null, primary key (`responsabile_oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `fascia_prezzo` ( `oid`  integer  not null, `fascia`  varchar(255), primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `negozio_nuovo` ( `negozio_oid`  integer  not null, primary key (`negozio_oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `nazione` ( `oid`  integer  not null, `nome`  varchar(255), primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `indirizzo` ( `oid`  integer  not null, `numero`  integer, `via`  varchar(255), primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `orario` ( `oid`  integer  not null, `ora_fine`  time, `ora_inizio`  time, `giorno`  varchar(255), primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `negozio` ( `oid`  integer  not null, `fondazione`  date, `massimo_ordini_giornalieri`  integer, `nome`  varchar(255), primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `prodotto` ( `oid`  integer  not null, `data_inserimento`  date, `prezzo`  decimal(19,2), `descrizione`  varchar(255), `nome`  varchar(255), `immagine`  varchar(255), primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `categoria` ( `oid`  integer  not null, `descrizione`  varchar(255), `nome`  varchar(255), primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `promozione` ( `oid`  integer  not null, `scadenza`  date, `sconto`  decimal(19,2), `valida_online`  bit, `valida_in_negozio`  bit, primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `riga_ordine` ( `oid`  integer  not null, `quantita`  integer, `costo`  decimal(19,2), primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `prodotto_online` ( `oid`  integer  not null, primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `spesa` ( `oid`  integer  not null, `data_di_spedizione`  date, `data_di_creazione`  date, primary key (`oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `group`  add column  `module_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `group`   add index fk_group_module (`module_oid`), add constraint fk_group_module foreign key (`module_oid`) references `module` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `group_module` ( `group_oid`  integer not null, `module_oid`  integer not null, primary key (`group_oid`, `module_oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_group (`group_oid`), add constraint fk_group_module_group foreign key (`group_oid`) references `group` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_module (`module_oid`), add constraint fk_group_module_module foreign key (`module_oid`) references `module` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `user`  add column  `group_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `user`   add index fk_user_group (`group_oid`), add constraint fk_user_group foreign key (`group_oid`) references `group` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    create table `user_group` ( `user_oid`  integer not null, `group_oid`  integer not null, primary key (`user_oid`, `group_oid`) )
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_user (`user_oid`), add constraint fk_user_group_user foreign key (`user_oid`) references `user` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_group (`group_oid`), add constraint fk_user_group_group foreign key (`group_oid`) references `group` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `indirizzo`  add column  `citta_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `indirizzo`   add index fk_indirizzo_citta (`citta_oid`), add constraint fk_indirizzo_citta foreign key (`citta_oid`) references `citta` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `riga_ordine`  add column  `spesa_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `riga_ordine`   add index fk_riga_ordine_spesa (`spesa_oid`), add constraint fk_riga_ordine_spesa foreign key (`spesa_oid`) references `spesa` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `prodotto`  add column  `fascia_prezzo_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `prodotto`   add index fk_prodotto_fascia_prezzo (`fascia_prezzo_oid`), add constraint fk_prodotto_fascia_prezzo foreign key (`fascia_prezzo_oid`) references `fascia_prezzo` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `stato_ordine`  add column  `spesa_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `stato_ordine`   add index fk_stato_ordine_spesa (`spesa_oid`), add constraint fk_stato_ordine_spesa foreign key (`spesa_oid`) references `spesa` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `spesa`  add column  `utente_esterno_registrato_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `spesa`   add index fk_spesa_utente_esterno_regist (`utente_esterno_registrato_oid`), add constraint fk_spesa_utente_esterno_regist foreign key (`utente_esterno_registrato_oid`) references `utente_esterno_registrato` (`user_oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `responsabile`  add column  `negozio_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `responsabile`   add index fk_responsabile_negozio (`negozio_oid`), add constraint fk_responsabile_negozio foreign key (`negozio_oid`) references `negozio` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `utente_esterno_registrato`  add column  `negozio_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `utente_esterno_registrato`   add index fk_utente_esterno_registrato_n (`negozio_oid`), add constraint fk_utente_esterno_registrato_n foreign key (`negozio_oid`) references `negozio` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `stato_ordine`  add column  `dipendente_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `stato_ordine`   add index fk_stato_ordine_dipendente (`dipendente_oid`), add constraint fk_stato_ordine_dipendente foreign key (`dipendente_oid`) references `dipendente` (`responsabile_oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `spesa`  add column  `negozio_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `spesa`   add index fk_spesa_negozio (`negozio_oid`), add constraint fk_spesa_negozio foreign key (`negozio_oid`) references `negozio` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `prodotto`  add column  `nazione_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `prodotto`   add index fk_prodotto_nazione (`nazione_oid`), add constraint fk_prodotto_nazione foreign key (`nazione_oid`) references `nazione` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `negozio`  add column  `orario_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `negozio`   add index fk_negozio_orario (`orario_oid`), add constraint fk_negozio_orario foreign key (`orario_oid`) references `orario` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `indirizzo`  add column  `negozio_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `indirizzo`   add index fk_indirizzo_negozio (`negozio_oid`), add constraint fk_indirizzo_negozio foreign key (`negozio_oid`) references `negozio` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `indirizzo`  add column  `utente_esterno_registrato_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `indirizzo`   add index fk_indirizzo_utente_esterno_re (`utente_esterno_registrato_oid`), add constraint fk_indirizzo_utente_esterno_re foreign key (`utente_esterno_registrato_oid`) references `utente_esterno_registrato` (`user_oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `prodotto`  add column  `categoria_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `prodotto`   add index fk_prodotto_categoria (`categoria_oid`), add constraint fk_prodotto_categoria foreign key (`categoria_oid`) references `categoria` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `promozione`  add column  `negozio_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `promozione`   add index fk_promozione_negozio (`negozio_oid`), add constraint fk_promozione_negozio foreign key (`negozio_oid`) references `negozio` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `promozione`  add column  `prodotto_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `promozione`   add index fk_promozione_prodotto (`prodotto_oid`), add constraint fk_promozione_prodotto foreign key (`prodotto_oid`) references `prodotto` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `prodotto_online`  add column  `negozio_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `prodotto_online`   add index fk_prodotto_online_negozio (`negozio_oid`), add constraint fk_prodotto_online_negozio foreign key (`negozio_oid`) references `negozio` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `prodotto_online`  add column  `prodotto_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `prodotto_online`   add index fk_prodotto_online_prodotto (`prodotto_oid`), add constraint fk_prodotto_online_prodotto foreign key (`prodotto_oid`) references `prodotto` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `riga_ordine`  add column  `prodotto_online_oid`  integer
+[05 Dec 2021 14:57:11] DEBUG Executing statement:  alter table `riga_ordine`   add index fk_riga_ordine_prodotto_online (`prodotto_online_oid`), add constraint fk_riga_ordine_prodotto_online foreign key (`prodotto_online_oid`) references `prodotto_online` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `prodotto_nuovo`   add index fk_prodotto_nuovo_prodotto (`prodotto_oid`), add constraint fk_prodotto_nuovo_prodotto foreign key (`prodotto_oid`) references `prodotto` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `responsabile`   add index fk_responsabile_user (`user_oid`), add constraint fk_responsabile_user foreign key (`user_oid`) references `user` (`oid`)
+[05 Dec 2021 14:57:11] DEBUG Executing statement:    alter table `utente_esterno_registrato`   add index fk_utente_esterno_registrato_u (`user_oid`), add constraint fk_utente_esterno_registrato_u foreign key (`user_oid`) references `user` (`oid`)
+[05 Dec 2021 14:57:12] DEBUG Executing statement:    alter table `dipendente`   add index fk_dipendente_responsabile (`responsabile_oid`), add constraint fk_dipendente_responsabile foreign key (`responsabile_oid`) references `responsabile` (`user_oid`)
+[05 Dec 2021 14:57:12] DEBUG Executing statement:    alter table `negozio_nuovo`   add index fk_negozio_nuovo_negozio (`negozio_oid`), add constraint fk_negozio_nuovo_negozio foreign key (`negozio_oid`) references `negozio` (`oid`)
+[05 Dec 2021 14:57:12] DEBUG Executing statement:    create view `stato_ordine_utenteesterno_vie` as select AL1.`oid` as `oid`, AL3.`oid` as `der_attr` from  `stato_ordine` AL1 left outer join `spesa` AL2 on AL1.`spesa_oid`=AL2.`oid` left outer join `user` AL3 on AL2.`utente_esterno_registrato_oid`=AL3.`oid`
+[05 Dec 2021 14:57:12] DEBUG Executing statement:    create view `stato_ordine_dipendente_view` as select AL1.`oid` as `oid`, AL2.`oid` as `der_attr` from  `stato_ordine` AL1 left outer join `user` AL2 on AL1.`dipendente_oid`=AL2.`oid`
+[05 Dec 2021 14:57:12] DEBUG Executing statement:    create view `dipendente_ordinigestiti_view` as select AL1.`responsabile_oid` as `responsabile_oid`, count(distinct AL2.`oid`) as `der_attr` from  `dipendente` AL1 left outer join `stato_ordine` AL2 on AL1.`responsabile_oid`=AL2.`dipendente_oid` group by AL1.`responsabile_oid`
+[05 Dec 2021 14:57:12] DEBUG Executing statement:    create view `negozio_numerolavoratori_view` as select AL1.`oid` as `oid`, count(distinct AL2.`user_oid`) as `der_attr` from  `negozio` AL1 left outer join `responsabile` AL2 on AL1.`oid`=AL2.`negozio_oid` group by AL1.`oid`
+[05 Dec 2021 14:57:12] DEBUG Executing statement:    create view `spesa_importo_totale_view` as select AL1.`oid` as `oid`, sum(AL2.`costo`) as `der_attr` from  `spesa` AL1 left outer join `riga_ordine` AL2 on AL1.`oid`=AL2.`spesa_oid` group by AL1.`oid`
+[05 Dec 2021 14:57:12] DEBUG Executing statement:    create view `negozio_volume_vendite_view` as select AL1.`oid` as `oid`, sum(AL3.`der_attr`) as `der_attr` from  `negozio` AL1 left outer join `spesa` AL2 on AL1.`oid`=AL2.`negozio_oid` left outer join `spesa_importo_totale_view` AL3 on AL2.`oid`=AL3.`oid` group by AL1.`oid`
+[05 Dec 2021 14:57:12] DEBUG ================================================================================
+[05 Dec 2021 14:57:12] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[05 Dec 2021 14:57:12] INFO Database connection closed
+[05 Dec 2021 14:57:12] DEBUG Total time: 924 milliseconds
