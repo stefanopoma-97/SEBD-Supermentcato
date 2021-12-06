@@ -1,0 +1,30 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="65" gr:y="180" id="sv1#area9#opg2" name="Filtri" transaction="true">
+  <OperationUnits>
+    <SelectorUnit id="sv1#area9#opg2#seu21" name="Filtri" gr:x="0" gr:y="0" entity="ent6">
+      <Selector id="sv1#area9#opg2#seu21#su20" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area9#opg2#seu21#su20#rcond6" name="Da negozi a promozioni" predicate="in" implied="true" role="rel5#role10"/>
+        <AttributesCondition id="sv1#area9#opg2#seu21#su20#acond4" name="negozio parola chiave" predicate="contains" booleanOperator="or" implied="true" attributes="ent6#att39"/>
+        <AttributesCondition id="sv1#area9#opg2#seu21#su20#acond5" name="prodotto parola chiave" predicate="contains" booleanOperator="or" implied="true" attributes="ent6#att41"/>
+        <AttributesCondition id="sv1#area9#opg2#seu21#su20#acond6" name="Non Scaduta" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
+      </Selector>
+      <KOLink id="sv1#area9#opg2#seu21#kln9" name="KOFlow5" to="sv1#area9#page14" automaticCoupling="true"/>
+      <OKLink id="sv1#area9#opg2#seu21#oln9" name="OKFlow9" to="sv1#area9#opg2#tmu3">
+        <LinkParameter id="sv1#area9#opg2#seu21#oln9#par14" name="oid_PASSING" source="ent6#att22Array" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <TimeUnit id="sv1#area9#opg2#tmu3" name="Data corrente" gr:x="245" gr:y="35" linkOrder="sv1#area9#opg2#tmu3#ln30">
+      <Link id="sv1#area9#opg2#tmu3#ln30" name="Flow30" to="sv1#area9#opg2#seu22" type="transport" validate="true">
+        <LinkParameter id="sv1#area9#opg2#tmu3#ln30#par15" name="Current/Input Date_Non scaduta" source="currentDate" target="sv1#area9#opg2#seu22#su21#acond7"/>
+        <LinkParameter id="sv1#area9#opg2#tmu3#ln30#par16" name="oid_PASSING_KeyCondition4 [oid]" sourceLinkParameter="sv1#area9#opg2#seu21#oln9#par14" target="sv1#area9#opg2#seu22#su21#kcond4.ent6#att22"/>
+      </Link>
+    </TimeUnit>
+    <SelectorUnit gr:x="425" gr:y="35" id="sv1#area9#opg2#seu22" name="Non scadute" entity="ent6">
+      <Selector id="sv1#area9#opg2#seu22#su21" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area9#opg2#seu22#su21#acond7" name="Non scaduta" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
+        <KeyCondition id="sv1#area9#opg2#seu22#su21#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#area9#opg2#seu22#oln10" name="OKFlow10" to="sv1#area9#page11#inu10" automaticCoupling="true"/>
+      <KOLink id="sv1#area9#opg2#seu22#kln10" name="KOFlow10" to="sv1#area9#page14" automaticCoupling="true"/>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>
