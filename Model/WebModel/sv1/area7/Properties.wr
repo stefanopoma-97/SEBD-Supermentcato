@@ -13,7 +13,7 @@
         <LinkParameter id="sv1#area7#seu29#oln1#par40" name="oid_Negozio [output]" source="ent3#att8Array" target="sv1#area7#page7#enu5#sfld6_output"/>
       </OKLink>
     </SelectorUnit>
-    <SelectorUnit gr:x="1505" gr:y="740" id="sv1#area7#seu15" name="Prodotto nuovo" entity="ent11" distinctAttributes="ent4#att59 ent4#att18 ent4#att16 ent4#att53 ent4#att27 ent4#att60 ent4#att15 ent4#att14 ent4#att17">
+    <SelectorUnit gr:x="1505" gr:y="650" id="sv1#area7#seu15" name="Prodotto nuovo" entity="ent11" distinctAttributes="ent4#att59 ent4#att18 ent4#att16 ent4#att53 ent4#att27 ent4#att60 ent4#att15 ent4#att14 ent4#att17">
       <OKLink id="sv1#area7#seu15#oln3" name="OKFlow3" to="sv1#area8#page9#inu6">
         <LinkParameter id="sv1#area7#seu15#oln3#par2" name="oid_KeyCondition7 [oid]" source="ent4#att14Array" target="sv1#area8#page9#inu6#su11#kcond7.ent4#att14"/>
       </OKLink>
@@ -25,6 +25,10 @@
       </Selector>
       <OKLink id="sv1#area7#seu18#oln4" name="OKFlow4" to="sv1#area8#page9#inu6" automaticCoupling="true"/>
       <KOLink id="sv1#area7#seu18#kln2" name="KOFlow2" to="sv1#area7#page6" automaticCoupling="true" gr:bendpoints="-84,249,-133,-201"/>
+    </SelectorUnit>
+    <SelectorUnit gr:x="1510" gr:y="975" id="sv1#area7#seu19" name="Negozi nuovi" entity="ent18">
+      <OKLink id="sv1#area7#seu19#oln6" name="OKFlow6" to="sv1#area10#page12#inu11" automaticCoupling="true" gr:bendpoints="124,472,-267,-398"/>
+      <KOLink id="sv1#area7#seu19#kln3" name="KOFlow3" to="sv1#area7#page6" automaticCoupling="true"/>
     </SelectorUnit>
   </OperationUnits>
 </Area>
