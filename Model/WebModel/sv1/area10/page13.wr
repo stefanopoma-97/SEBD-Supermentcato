@@ -11,7 +11,6 @@
         <RelationshipRoleCondition id="sv1#area10#page13#pwu1#su29#rcond22" role="rel19#role38" predicate="in" implied="false" name="RoleCondition21"/>
       </Selector>
     </PowerIndexUnit>
-    <EventCalendarUnit gr:x="170" gr:y="140" id="sv1#area10#page13#ecu2" name="giorno settimana" shortMonths="false" shortWeekdays="true" entityBased="true" entity="ent20" displayAttributes="ent20#att46 ent20#att48 ent20#att47"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -56,26 +55,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area10#page13#ecu2">
-          <layout:Link link="sv1#area10#page13#ecu2-month-0"/>
-          <layout:Link link="sv1#area10#page13#ecu2-month-1"/>
-          <layout:Link link="sv1#area10#page13#ecu2-month-2"/>
-          <layout:Link link="sv1#area10#page13#ecu2-month-3"/>
-          <layout:Link link="sv1#area10#page13#ecu2-month-4"/>
-          <layout:Link link="sv1#area10#page13#ecu2-month-5"/>
-          <layout:Link link="sv1#area10#page13#ecu2-month-6"/>
-          <layout:Link link="sv1#area10#page13#ecu2-month-7"/>
-          <layout:Link link="sv1#area10#page13#ecu2-month-8"/>
-          <layout:Link link="sv1#area10#page13#ecu2-month-9"/>
-          <layout:Link link="sv1#area10#page13#ecu2-month-10"/>
-          <layout:Link link="sv1#area10#page13#ecu2-month-11"/>
-          <layout:Link link="sv1#area10#page13#ecu2-year"/>
-          <layout:Attribute attribute="ent20#att46"/>
-          <layout:Attribute attribute="ent20#att48"/>
-          <layout:Attribute attribute="ent20#att47"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

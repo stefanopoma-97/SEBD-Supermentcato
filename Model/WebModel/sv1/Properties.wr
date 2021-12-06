@@ -1,21 +1,3 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="UtenteEsterno" landmarks="sv1#area7 sv1#area8 sv1#area9 sv1#area10 sv1#area11" homePage="sv1#area7#page7">
-  <OperationUnits>
-    <SelectorUnit id="sv1#seu11" name="Filtri ricerca" gr:x="1810" gr:y="950" entity="ent4">
-      <Selector id="sv1#seu11#su14" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv1#seu11#su14#rcond10" name="Da categoria a prodotti" predicate="in" implied="true" role="rel4#role8"/>
-        <RelationshipRoleCondition id="sv1#seu11#su14#rcond11" name="Da fascia a prodotti" predicate="in" implied="true" role="rel11#role21"/>
-        <KeyCondition id="sv1#seu11#su14#kcond11" name="Prodotti nuovi" predicate="in" implied="true"/>
-      </Selector>
-      <Link id="sv1#seu11#ln35" name="Flow35" to="sv1#area8#page9#inu6" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="510,-129,-55,336"/>
-    </SelectorUnit>
-    <SelectorUnit gr:x="1680" gr:y="580" id="sv1#seu21" name="Da categoria a prodotto" entity="ent4" linkOrder="sv1#seu21#ln50">
-      <Selector id="sv1#seu21#su21" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv1#seu21#su21#rcond15" name="Categoria To Prodotto" predicate="in" implied="false" role="rel4#role8"/>
-      </Selector>
-      <Link id="sv1#seu21#ln50" name="Flow50" to="sv1#area8#page9#inu6" automaticCoupling="true" type="transport" validate="true"/>
-    </SelectorUnit>
-    <SelectorUnit gr:x="1650" gr:y="780" id="sv1#seu22" name="Prodotto nuovo" entity="ent11">
-      <Link id="sv1#seu22#ln51" name="Flow51" to="sv1#area8#page9#inu6" automaticCoupling="true" type="transport" validate="true"/>
-    </SelectorUnit>
-  </OperationUnits>
+<SiteView id="sv1" name="UtenteEsterno" landmarks="sv1#area7 sv1#area8 sv1#area9 sv1#area10 sv1#area11" homePage="sv1#area7#page7">
+  <OperationUnits/>
 </SiteView>
