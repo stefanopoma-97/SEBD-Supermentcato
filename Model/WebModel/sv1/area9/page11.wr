@@ -1,37 +1,50 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="805" gr:y="290" id="sv1#area9#page11" name="Pagina Promozioni" linkOrder="sv1#area9#page11#ln55 sv1#area9#page11#ln58">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="860" gr:y="240" id="sv1#area9#page11" name="Pagina Promozioni" linkOrder="sv1#area9#page11#ln55 sv1#area9#page11#ln58">
   <ContentUnits>
-    <IndexUnit gr:x="0" gr:y="15" id="sv1#area9#page11#inu10" name="Lista Promozioni" entity="ent6" linkOrder="sv1#area9#page11#inu10#ln40" displayAttributes="ent6#att23 ent6#att39 ent6#att41 ent6#att24">
+    <IndexUnit gr:x="145" gr:y="0" id="sv1#area9#page11#inu10" name="Lista Promozioni" entity="ent6" displayAttributes="ent6#att23 ent6#att39 ent6#att41 ent6#att24 ent6#att25 ent6#att26" linkOrder="sv1#area9#page11#inu10#ln12">
       <Selector id="sv1#area9#page11#inu10#su17" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area9#page11#inu10#su17#kcond13" name="KeyCondition13" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv1#area9#page11#inu10#ln40" name="Flow40" to="sv1#area9#page10#dau3" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv1#area9#page11#inu10#ln12" name="Flow40" to="sv1#area9#page10#dau3" type="normal" automaticCoupling="true" validate="true"/>
     </IndexUnit>
-    <SelectorUnit gr:x="415" gr:y="0" id="sv1#area9#page11#seu16" name="Promozioni attive" entity="ent6">
-      <Link id="sv1#area9#page11#seu16#ln44" name="Flow44" to="sv1#area9#page11#inu10" automaticCoupling="true" type="transport" validate="true"/>
+    <SelectorUnit gr:x="380" gr:y="45" id="sv1#area9#page11#seu16" name="Promozioni attive" entity="ent6">
       <Selector id="sv1#area9#page11#seu16#su15" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv1#area9#page11#seu16#su15#acond1" name="Non scaduta" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
       </Selector>
+      <Link id="sv1#area9#page11#seu16#ln6" name="Flow6" to="sv1#area9#page11#inu10" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <EntryUnit gr:x="265" gr:y="180" id="sv1#area9#page11#enu4" name="Cerca" linkOrder="sv1#area9#page11#enu4#ln29">
+    <EntryUnit gr:x="230" gr:y="225" id="sv1#area9#page11#enu4" name="Cerca" linkOrder="sv1#area9#page11#enu4#ln29">
       <SelectionField id="sv1#area9#page11#enu4#sfld4" name="Negozio" type="string"/>
       <Field id="sv1#area9#page11#enu4#fld6" name="Negozio (parola chiave)" type="string" modifiable="true"/>
       <Field id="sv1#area9#page11#enu4#fld7" name="Prodotto" type="string" modifiable="true"/>
-      <SelectionField id="sv1#area9#page11#enu4#sfld3" name="Dove" type="string"/>
       <Link id="sv1#area9#page11#enu4#ln29" name="Filtra" to="sv1#area9#opg2#seu21" type="normal" validate="true">
         <LinkParameter id="sv1#area9#page11#enu4#ln29#par7" name="Negozio_Da negozi a promozioni [oid]" source="sv1#area9#page11#enu4#sfld4" target="sv1#area9#opg2#seu21#su20#rcond6.ent3#att8"/>
         <LinkParameter id="sv1#area9#page11#enu4#ln29#par8" name="Negozio (parola chiave)_negozio parola chiave" source="sv1#area9#page11#enu4#fld6" target="sv1#area9#opg2#seu21#su20#acond4"/>
         <LinkParameter id="sv1#area9#page11#enu4#ln29#par9" name="Prodotto_prodotto parola chiave" source="sv1#area9#page11#enu4#fld7" target="sv1#area9#opg2#seu21#su20#acond5"/>
+        <LinkParameter id="sv1#area9#page11#enu4#ln29#par4" name="Current/Input Date_PASSING_Non Scaduta" sourceLinkParameter="sv1#area9#page11#tmu2#ln4#par1" target="sv1#area9#opg2#seu21#su20#acond6"/>
+        <LinkParameter id="sv1#area9#page11#enu4#ln29#par28" name="Valida in negozio_Valida in negozio" source="sv1#area9#page11#enu4#msfld3" target="sv1#area9#opg2#seu21#su20#acond8"/>
+        <LinkParameter id="sv1#area9#page11#enu4#ln29#par34" name="Valida online_Valida online" source="sv1#area9#page11#enu4#msfld4" target="sv1#area9#opg2#seu21#su20#acond11"/>
       </Link>
+      <MultiSelectionField id="sv1#area9#page11#enu4#msfld3" name="Valida in negozio" type="string"/>
+      <MultiSelectionField id="sv1#area9#page11#enu4#msfld4" name="Valida online" type="string"/>
     </EntryUnit>
-    <SelectorUnit gr:x="430" gr:y="300" id="sv1#area9#page11#seu20" name="Negozi" entity="ent3">
+    <SelectorUnit gr:x="395" gr:y="345" id="sv1#area9#page11#seu20" name="Negozi" entity="ent3">
       <Link id="sv1#area9#page11#seu20#ln46" name="Flow46" to="sv1#area9#page11#enu4" type="transport" validate="true">
         <LinkParameter id="sv1#area9#page11#seu20#ln46#par21" name="nome_Negozio [label]" source="ent3#att9Array" target="sv1#area9#page11#enu4#sfld4_label"/>
         <LinkParameter id="sv1#area9#page11#seu20#ln46#par22" name="oid_Negozio [output]" source="ent3#att8Array" target="sv1#area9#page11#enu4#sfld4_output"/>
+        <LinkParameter id="sv1#area9#page11#seu20#ln46#par24" name="Negozio_Valida in negozio [label]" sourceValue="Negozio" target="sv1#area9#page11#enu4#msfld3_label"/>
+        <LinkParameter id="sv1#area9#page11#seu20#ln46#par25" name="1_Valida in negozio [output]" sourceValue="1" target="sv1#area9#page11#enu4#msfld3_output"/>
+        <LinkParameter id="sv1#area9#page11#seu20#ln46#par31" name="Online_Valida online [label]" sourceValue="Online" target="sv1#area9#page11#enu4#msfld4_label"/>
+        <LinkParameter id="sv1#area9#page11#seu20#ln46#par32" name="1_Valida online [output]" sourceValue="1" target="sv1#area9#page11#enu4#msfld4_output"/>
       </Link>
     </SelectorUnit>
-    <TimeUnit gr:x="430" gr:y="180" id="sv1#area9#page11#tmu1" name="Data corrente">
+    <TimeUnit gr:x="395" gr:y="225" id="sv1#area9#page11#tmu1" name="Data corrente">
       <Link id="sv1#area9#page11#tmu1#ln25" name="Flow25" to="sv1#area9#page11#seu16" type="transport" validate="true">
         <LinkParameter id="sv1#area9#page11#tmu1#ln25#par3" name="Current/Input Date_Non scaduta" source="currentDate" target="sv1#area9#page11#seu16#su15#acond1"/>
+      </Link>
+    </TimeUnit>
+    <TimeUnit gr:x="250" gr:y="455" id="sv1#area9#page11#tmu2" name="Data corrente">
+      <Link id="sv1#area9#page11#tmu2#ln4" name="Flow4" to="sv1#area9#page11#enu4" type="transport" validate="true">
+        <LinkParameter id="sv1#area9#page11#tmu2#ln4#par1" name="Current/Input Date_PASSING" source="currentDate" passing="true"/>
       </Link>
     </TimeUnit>
   </ContentUnits>
@@ -39,11 +52,13 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#area9#page11#inu10">
-          <layout:Link link="sv1#area9#page11#inu10#ln40"/>
           <layout:Attribute attribute="ent6#att23"/>
           <layout:Attribute attribute="ent6#att39"/>
           <layout:Attribute attribute="ent6#att41"/>
           <layout:Attribute attribute="ent6#att24"/>
+          <layout:Attribute attribute="ent6#att25"/>
+          <layout:Attribute attribute="ent6#att26"/>
+          <layout:Link link="sv1#area9#page11#inu10#ln12"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -61,11 +76,12 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#area9#page11#enu4">
+          <layout:Link link="sv1#area9#page11#enu4#ln29"/>
           <layout:Field field="sv1#area9#page11#enu4#sfld4"/>
           <layout:Field field="sv1#area9#page11#enu4#fld6"/>
           <layout:Field field="sv1#area9#page11#enu4#fld7"/>
-          <layout:Field field="sv1#area9#page11#enu4#sfld3"/>
-          <layout:Link link="sv1#area9#page11#enu4#ln29"/>
+          <layout:Field field="sv1#area9#page11#enu4#msfld3"/>
+          <layout:Field field="sv1#area9#page11#enu4#msfld4"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -81,36 +97,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv1#area9#page11#alt2#page1">
-          <layout:Grid containerType="grid">
-            <layout:Row>
-              <layout:Cell colspan="12">
-                <layout:Unit unitId="sv1#area9#page11#alt2#page1#inu9">
-                  <layout:Attribute attribute="ent6#att22"/>
-                  <layout:Attribute attribute="ent6#att23"/>
-                  <layout:Attribute attribute="ent6#att24"/>
-                  <layout:Attribute attribute="ent6#att25"/>
-                  <layout:Attribute attribute="ent6#att26"/>
-                  <layout:Attribute attribute="ent6#att39"/>
-                  <layout:Attribute attribute="ent6#att41"/>
-                </layout:Unit>
-              </layout:Cell>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-            </layout:Row>
-          </layout:Grid>
-        </layout:SubPage>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -140,15 +127,4 @@
   </layout:Grid>
   <Link id="sv1#area9#page11#ln55" name="Ordina per scadenza" to="sv1#area9#seu6" automaticCoupling="true" type="normal" validate="true"/>
   <Link id="sv1#area9#page11#ln58" name="Ordina per sconto" to="sv1#area9#seu10" automaticCoupling="true" type="normal" validate="true"/>
-  <Alternative gr:x="35" gr:y="235" id="sv1#area9#page11#alt2" name="Prova" defaultPage="sv1#area9#page11#alt2#page1">
-    <Page gr:x="0" gr:y="0" id="sv1#area9#page11#alt2#page1" name="Page 1">
-      <ContentUnits>
-        <IndexUnit gr:x="0" gr:y="0" id="sv1#area9#page11#alt2#page1#inu9" name="Test" entity="ent6" displayAttributes="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26 ent6#att39 ent6#att41">
-          <Selector id="sv1#area9#page11#alt2#page1#inu9#su1" defaultPolicy="fill" booleanOperator="and">
-            <KeyCondition id="sv1#area9#page11#alt2#page1#inu9#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
-          </Selector>
-        </IndexUnit>
-      </ContentUnits>
-    </Page>
-  </Alternative>
 </Page>

@@ -1,16 +1,32 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area10#page13" name="Pagina dettaglio negozio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="305" gr:y="0" id="sv1#area10#page13" name="Pagina dettaglio negozio">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="5" id="sv1#area10#page13#dau4" name="Dettagli negozio" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13">
+    <DataUnit gr:x="0" gr:y="0" id="sv1#area10#page13#dau4" name="Dettagli negozio" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13">
       <Selector id="sv1#area10#page13#dau4#su18" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area10#page13#dau4#su18#kcond14" name="KeyCondition14" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv1#area10#page13#dau4#ln73" name="Flow73" to="sv1#area10#page13#pwu1" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv1#area10#page13#dau4#ln13" name="Flow13" to="sv1#area10#page13#tmu3" type="transport" validate="true">
+        <LinkParameter id="sv1#area10#page13#dau4#ln13#par36" name="oid_PASSING" source="data.ent3#att8" passing="true"/>
+      </Link>
     </DataUnit>
-    <PowerIndexUnit id="sv1#area10#page13#pwu1" entity="ent20" displayAttributes="ent20#att46 ent20#att48 ent20#att47" sortable="true" checkable="false" useCountQuery="false" gr:x="205" gr:y="0" name="Orario">
+    <PowerIndexUnit id="sv1#area10#page13#pwu1" entity="ent20" displayAttributes="ent20#att46 ent20#att48 ent20#att47" sortable="true" checkable="false" useCountQuery="false" gr:x="340" gr:y="0" name="Orario">
       <Selector id="sv1#area10#page13#pwu1#su29" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area10#page13#pwu1#su29#rcond22" role="rel19#role38" predicate="in" implied="false" name="RoleCondition21"/>
       </Selector>
     </PowerIndexUnit>
+    <IndexUnit gr:x="465" gr:y="165" id="sv1#area10#page13#inu13" name="Promozioni attive" entity="ent6" displayAttributes="ent6#att41 ent6#att24 ent6#att23">
+      <Selector id="sv1#area10#page13#inu13#su21" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area10#page13#inu13#su21#rcond1" name="NegozioToPromozione" predicate="in" implied="false" role="rel5#role10"/>
+        <AttributesCondition id="sv1#area10#page13#inu13#su21#acond12" name="Non scaduta" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
+        <AttributesCondition id="sv1#area10#page13#inu13#su21#acond13" name="Valida in negozio" predicate="eq" booleanOperator="or" implied="false" attributes="ent6#att25" value="1"/>
+      </Selector>
+    </IndexUnit>
+    <TimeUnit gr:x="235" gr:y="155" id="sv1#area10#page13#tmu3" name="Data attuale">
+      <Link id="sv1#area10#page13#tmu3#ln26" name="Flow26" to="sv1#area10#page13#inu13" type="transport" validate="true">
+        <LinkParameter id="sv1#area10#page13#tmu3#ln26#par37" name="oid_PASSING_NegozioToPromozione [oid]" sourceLinkParameter="sv1#area10#page13#dau4#ln13#par36" target="sv1#area10#page13#inu13#su21#rcond1.ent3#att8"/>
+        <LinkParameter id="sv1#area10#page13#tmu3#ln26#par38" name="Current/Input Date_Non scaduta" source="currentDate" target="sv1#area10#page13#inu13#su21#acond12"/>
+      </Link>
+    </TimeUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -40,6 +56,26 @@
           <layout:Attribute attribute="ent20#att46"/>
           <layout:Attribute attribute="ent20#att48"/>
           <layout:Attribute attribute="ent20#att47"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area10#page13#inu13">
+          <layout:Attribute attribute="ent6#att41"/>
+          <layout:Attribute attribute="ent6#att24"/>
+          <layout:Attribute attribute="ent6#att23"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
