@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="305" gr:y="0" id="sv1#area10#page13" name="Pagina dettaglio negozio">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv1#area10#page13#dau4" name="Dettagli negozio" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13">
+    <DataUnit gr:x="0" gr:y="20" id="sv1#area10#page13#dau4" name="Dettagli negozio" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13">
       <Selector id="sv1#area10#page13#dau4#su18" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area10#page13#dau4#su18#kcond14" name="KeyCondition14" predicate="in" implied="false"/>
       </Selector>
@@ -9,24 +9,37 @@
         <LinkParameter id="sv1#area10#page13#dau4#ln13#par36" name="oid_PASSING" source="data.ent3#att8" passing="true"/>
       </Link>
     </DataUnit>
-    <PowerIndexUnit id="sv1#area10#page13#pwu1" entity="ent20" displayAttributes="ent20#att46 ent20#att48 ent20#att47" sortable="true" checkable="false" useCountQuery="false" gr:x="340" gr:y="0" name="Orario">
+    <PowerIndexUnit id="sv1#area10#page13#pwu1" entity="ent20" displayAttributes="ent20#att46 ent20#att48 ent20#att47" sortable="true" checkable="false" useCountQuery="false" gr:x="245" gr:y="20" name="Orario">
       <Selector id="sv1#area10#page13#pwu1#su29" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area10#page13#pwu1#su29#rcond22" role="rel19#role38" predicate="in" implied="false" name="RoleCondition21"/>
       </Selector>
     </PowerIndexUnit>
-    <IndexUnit gr:x="465" gr:y="165" id="sv1#area10#page13#inu13" name="Promozioni attive" entity="ent6" displayAttributes="ent6#att41 ent6#att24 ent6#att23">
+    <IndexUnit gr:x="465" gr:y="185" id="sv1#area10#page13#inu13" name=" Promozioni attive in negozio" entity="ent6" displayAttributes="ent6#att41 ent6#att24 ent6#att23" linkOrder="sv1#area10#page13#inu13#ln35">
       <Selector id="sv1#area10#page13#inu13#su21" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area10#page13#inu13#su21#rcond1" name="NegozioToPromozione" predicate="in" implied="false" role="rel5#role10"/>
         <AttributesCondition id="sv1#area10#page13#inu13#su21#acond12" name="Non scaduta" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
         <AttributesCondition id="sv1#area10#page13#inu13#su21#acond13" name="Valida in negozio" predicate="eq" booleanOperator="or" implied="false" attributes="ent6#att25" value="1"/>
       </Selector>
+      <Link id="sv1#area10#page13#inu13#ln35" name="Dettagli" to="sv1#area9#page10#dau3" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
-    <TimeUnit gr:x="235" gr:y="155" id="sv1#area10#page13#tmu3" name="Data attuale">
+    <TimeUnit gr:x="200" gr:y="235" id="sv1#area10#page13#tmu3" name="Data attuale">
       <Link id="sv1#area10#page13#tmu3#ln26" name="Flow26" to="sv1#area10#page13#inu13" type="transport" validate="true">
         <LinkParameter id="sv1#area10#page13#tmu3#ln26#par37" name="oid_PASSING_NegozioToPromozione [oid]" sourceLinkParameter="sv1#area10#page13#dau4#ln13#par36" target="sv1#area10#page13#inu13#su21#rcond1.ent3#att8"/>
         <LinkParameter id="sv1#area10#page13#tmu3#ln26#par38" name="Current/Input Date_Non scaduta" source="currentDate" target="sv1#area10#page13#inu13#su21#acond12"/>
       </Link>
     </TimeUnit>
+    <TimeUnit gr:x="455" gr:y="5" id="sv1#area10#page13#tmu7" name="Giorno attuale">
+      <Link id="sv1#area10#page13#tmu7#ln41" name="Flow41" to="sv1#area10#page13#mssu13" type="transport" validate="true">
+        <LinkParameter id="sv1#area10#page13#tmu7#ln41#par18" name="Hour_Shown Messages" source="currentTime" target="sv1#area10#page13#mssu13.shownMessages"/>
+      </Link>
+    </TimeUnit>
+    <TimeUnit gr:x="465" gr:y="90" id="sv1#area10#page13#tmu8" name="Ora attuale">
+      <Link id="sv1#area10#page13#tmu8#ln44" name="Flow44" to="sv1#area10#page13#mssu14" type="transport" validate="true">
+        <LinkParameter id="sv1#area10#page13#tmu8#ln44#par23" name="Day_Shown Messages" source="day" target="sv1#area10#page13#mssu14.shownMessages"/>
+      </Link>
+    </TimeUnit>
+    <MultiMessageUnit gr:x="670" gr:y="0" id="sv1#area10#page13#mssu13" name="Orario di Oggi"/>
+    <MultiMessageUnit gr:x="655" gr:y="85" id="sv1#area10#page13#mssu14" name="Giorno di oggi"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -76,6 +89,7 @@
           <layout:Attribute attribute="ent6#att41"/>
           <layout:Attribute attribute="ent6#att24"/>
           <layout:Attribute attribute="ent6#att23"/>
+          <layout:Link link="sv1#area10#page13#inu13#ln35"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -91,7 +105,25 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area10#page13#mssu13"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area10#page13#mssu14"/>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

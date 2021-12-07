@@ -2,8 +2,10 @@
   <OperationUnits>
     <SelectorUnit gr:x="360" gr:y="465" id="sv1#area9#seu6" name="Ordina promozioni per data" entity="ent6">
       <SortAttribute attribute="ent6#att24" order="descending"/>
+      <OKLink id="sv1#area9#seu6#oln10" name="OKFlow10" to="sv1#area9#page11#inu10" automaticCoupling="true"/>
+      <KOLink id="sv1#area9#seu6#kln11" name="KOFlow11" to="sv1#area9#page14" automaticCoupling="true"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="290" gr:y="640" id="sv1#area9#seu10" name="Ordina per sconto" entity="ent6">
+    <SelectorUnit gr:x="350" gr:y="655" id="sv1#area9#seu10" name="Ordina per sconto" entity="ent6">
       <SortAttribute attribute="ent6#att23" order="ascending"/>
       <OKLink id="sv1#area9#seu10#oln7" name="OKFlow7" to="sv1#area9#page11#inu10" automaticCoupling="true"/>
       <KOLink id="sv1#area9#seu10#kln5" name="KOFlow5" to="sv1#area9#page14#mssu8" automaticCoupling="true"/>
