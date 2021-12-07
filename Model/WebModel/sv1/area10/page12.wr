@@ -1,21 +1,21 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="385" gr:y="390" id="sv1#area10#page12" name="Pagina negozi">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="385" gr:y="405" id="sv1#area10#page12" name="Pagina negozi" linkOrder="sv1#area10#page12#ln36 sv1#area10#page12#ln39 sv1#area10#page12#ln40">
   <ContentUnits>
-    <IndexUnit gr:x="0" gr:y="0" id="sv1#area10#page12#inu11" name="Lista Negozi" entity="ent3" displayAttributes="ent3#att9 ent3#att12 ent3#att13 rel2#role3.ent2#att6" linkOrder="sv1#area10#page12#inu11#ln42">
-      <Link id="sv1#area10#page12#inu11#ln42" name="Flow42" to="sv1#area10#page13#dau4" automaticCoupling="true" type="normal" validate="true"/>
+    <IndexUnit gr:x="0" gr:y="10" id="sv1#area10#page12#inu11" name="Lista Negozi" entity="ent3" displayAttributes="ent3#att9 ent3#att12 ent3#att13 rel2#role3.ent2#att6" linkOrder="sv1#area10#page12#inu11#ln42">
+      <Link id="sv1#area10#page12#inu11#ln42" name="Dettagli" to="sv1#area10#page13#dau4" automaticCoupling="true" type="normal" validate="true"/>
       <Selector id="sv1#area10#page12#inu11#su19" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area10#page12#inu11#su19#kcond15" name="KeyCondition15" predicate="in" implied="false"/>
       </Selector>
     </IndexUnit>
-    <SelectorUnit gr:x="365" gr:y="20" id="sv1#area10#page12#seu17" name="Negozi" entity="ent3">
+    <SelectorUnit gr:x="390" gr:y="0" id="sv1#area10#page12#seu17" name="Negozi" entity="ent3">
       <Link id="sv1#area10#page12#seu17#ln45" name="Flow45" to="sv1#area10#page12#inu11" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <EntryUnit gr:x="195" gr:y="185" id="sv1#area10#page12#enu1" name="Cerca" linkOrder="sv1#area10#page12#enu1#ln32">
+    <EntryUnit gr:x="195" gr:y="195" id="sv1#area10#page12#enu1" name="Cerca" linkOrder="sv1#area10#page12#enu1#ln32">
       <SelectionField id="sv1#area10#page12#enu1#sfld9" name="Citt&#224;" type="string"/>
       <Link id="sv1#area10#page12#enu1#ln32" name="Flow32" to="sv1#area10#opg3#seu12" type="normal" validate="true">
         <LinkParameter id="sv1#area10#page12#enu1#ln32#par56" name="Citt&#224;_Citt&#224;IndirizzoNegozio [oid]" source="sv1#area10#page12#enu1#sfld9" target="sv1#area10#opg3#seu12#su23#rcond8.ent1#att1"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit gr:x="345" gr:y="220" id="sv1#area10#page12#seu5" name="Citt&#224; con negozi" entity="ent1">
+    <SelectorUnit gr:x="345" gr:y="230" id="sv1#area10#page12#seu5" name="Citt&#224; con negozi" entity="ent1">
       <Selector id="sv1#area10#page12#seu5#su22" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area10#page12#seu5#su22#rcond7" name="NegoziIndirizzoCitt&#224;" role="rel2#role3.rel1#role2" predicate="in" implied="false"/>
       </Selector>
@@ -24,7 +24,7 @@
         <LinkParameter id="sv1#area10#page12#seu5#ln31#par55" name="oid_Citt&#224; [output]" source="ent1#att1Array" target="sv1#area10#page12#enu1#sfld9_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="755" gr:y="330" id="sv1#area10#page12#seu11" name="Negozi" entity="ent3">
+    <SelectorUnit gr:x="645" gr:y="335" id="sv1#area10#page12#seu11" name="Negozi" entity="ent3">
       <Link id="sv1#area10#page12#seu11#ln30" name="Flow30" to="sv1#area10#page12#seu5" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
   </ContentUnits>
@@ -85,4 +85,7 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv1#area10#page12#ln36" name="Ordina per data di fondazione" to="sv1#area10#seu23" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#area10#page12#ln39" name="Negozi aperti" to="sv1#area10#seu24" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#area10#page12#ln40" name="Negozi nuovi" to="sv1#area10#seu25" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

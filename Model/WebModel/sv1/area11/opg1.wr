@@ -1,22 +1,24 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="685" gr:y="200" id="sv1#area11#opg1" name="Creazione utente esterno registrato" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="695" gr:y="65" id="sv1#area11#opg1" name="Creazione utente esterno registrato" transaction="true">
   <OperationUnits>
-    <CreateUnit gr:x="320" gr:y="10" id="sv1#area11#opg1#cru2" name="Crea Indirizzo" entity="ent2">
+    <CreateUnit gr:x="0" gr:y="0" id="sv1#area11#opg1#cru2" name="Crea Indirizzo" entity="ent2">
       <KOLink id="sv1#area11#opg1#cru2#kln8" name="KOFlow8" to="sv1#area11#page19#mssu12">
         <LinkParameter id="sv1#area11#opg1#cru2#kln8#par68" name="via_Shown Messages" target="sv1#area11#page19#mssu12.shownMessages" sourceValue="sbagliato a creare l'indirizzo"/>
       </KOLink>
-      <OKLink id="sv1#area11#opg1#cru2#oln5" name="OKFlow5" to="sv1#area11#page18" gr:bendpoints="-269,-238,551,-173"/>
-    </CreateUnit>
-    <CreateUnit gr:x="0" gr:y="10" id="sv1#area11#opg1#cru3" name="Crea utente" entity="ent13">
-      <OKLink id="sv1#area11#opg1#cru3#oln2" name="OKFlow2" to="sv1#area11#opg1#cru2">
-        <LinkParameter id="sv1#area11#opg1#cru3#oln2#par57" name="oid_PASSING" source="userOIDArray" passing="true"/>
-        <LinkParameter id="sv1#area11#opg1#cru3#oln2#par74" name="Citt&#224;_PASSING_Citt&#224;.oid(IndirizzoToCitt&#224;)" sourceLinkParameter="sv1#area11#page18#enu6#ln78#par51" target="sv1#area11#opg1#cru2.rel1#role2.ent1#att1"/>
-        <LinkParameter id="sv1#area11#opg1#cru3#oln2#par75" name="Numero_PASSING_numero" sourceLinkParameter="sv1#area11#page18#enu6#ln78#par52" target="sv1#area11#opg1#cru2.ent2#att7"/>
-        <LinkParameter id="sv1#area11#opg1#cru3#oln2#par76" name="Via_PASSING_via" sourceLinkParameter="sv1#area11#page18#enu6#ln78#par53" target="sv1#area11#opg1#cru2.ent2#att6"/>
-        <LinkParameter id="sv1#area11#opg1#cru3#oln2#par77" name="oid_Utente esterno registrato.oid(IndirizzoToUser)" source="userOIDArray" target="sv1#area11#opg1#cru2.rel3#role6.userOID"/>
+      <OKLink id="sv1#area11#opg1#cru2#oln20" name="OKFlow20" to="sv1#area11#opg1#cru3">
+        <LinkParameter id="sv1#area11#opg1#cru2#oln20#par117" name="Cognome_PASSING_cognome" sourceLinkParameter="sv1#area11#page18#enu6#ln60#par111" target="sv1#area11#opg1#cru3.ent13#att50"/>
+        <LinkParameter id="sv1#area11#opg1#cru2#oln20#par118" name="Email_PASSING_email" sourceLinkParameter="sv1#area11#page18#enu6#ln60#par112" target="sv1#area11#opg1#cru3.email"/>
+        <LinkParameter id="sv1#area11#opg1#cru2#oln20#par120" name="Negozio preferito_PASSING_Negozio.oid(Utente esterno registratoToNegozio)" sourceLinkParameter="sv1#area11#page18#enu6#ln60#par113" target="sv1#area11#opg1#cru3.rel15#role30.ent3#att8"/>
+        <LinkParameter id="sv1#area11#opg1#cru2#oln20#par121" name="Nome_PASSING_nome" sourceLinkParameter="sv1#area11#page18#enu6#ln60#par114" target="sv1#area11#opg1#cru3.ent13#att49"/>
+        <LinkParameter id="sv1#area11#opg1#cru2#oln20#par122" name="Password_PASSING_password" sourceLinkParameter="sv1#area11#page18#enu6#ln60#par115" target="sv1#area11#opg1#cru3.password"/>
+        <LinkParameter id="sv1#area11#opg1#cru2#oln20#par123" name="UserName_PASSING_userName" sourceLinkParameter="sv1#area11#page18#enu6#ln60#par116" target="sv1#area11#opg1#cru3.userName"/>
+        <LinkParameter id="sv1#area11#opg1#cru2#oln20#par124" name="2_Group.oid(defaultGroup)" sourceValue="2" target="sv1#area11#opg1#cru3.User2DefaultGroup.groupOID"/>
       </OKLink>
+    </CreateUnit>
+    <CreateUnit gr:x="255" gr:y="5" id="sv1#area11#opg1#cru3" name="Crea utente" entity="ent13">
       <KOLink id="sv1#area11#opg1#cru3#kln7" name="KOFlow7" to="sv1#area11#page19#mssu12" customDescriptor="false">
-        <LinkParameter id="sv1#area11#opg1#cru3#kln7#par67" name="userName_Shown Messages" source="userNameArray" target="sv1#area11#page19#mssu12.shownMessages"/>
+        <LinkParameter id="sv1#area11#opg1#cru3#kln7#par67" name="userName_Shown Messages" target="sv1#area11#page19#mssu12.shownMessages" sourceValue="sbagliato a creare l'utente"/>
       </KOLink>
+      <OKLink id="sv1#area11#opg1#cru3#oln21" name="OKFlow21" to="sv1#area11" automaticCoupling="true"/>
     </CreateUnit>
   </OperationUnits>
 </OperationGroup>
