@@ -1,32 +1,84 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="325" gr:y="0" id="sv3#area12#page23" name="Spese">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="300" gr:y="0" id="sv3#area12#page23" name="Spese">
   <ContentUnits>
-    <GetUnit gr:x="0" gr:y="7" id="sv3#area12#page23#gtu6" name="Info Dipendente" contextParameters="UserCtxParam">
-      <Link id="sv3#area12#page23#gtu6#ln48" name="Flow48" to="sv3#area12#page23#seu27" automaticCoupling="true" type="transport" validate="true"/>
-      <Link id="sv3#area12#page23#gtu6#ln65" name="Flow65" to="sv3#area12#cnu1" automaticCoupling="true" type="transport" validate="true"/>
-    </GetUnit>
-    <SelectorUnit gr:x="180" gr:y="130" id="sv3#area12#page23#seu25" name="Seleziona Spese" entity="ent9">
-      <Selector id="sv3#area12#page23#seu25#su33" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv3#area12#page23#seu25#su33#rcond12" name="RoleCondition12" predicate="in" implied="false" role="rel10#role19"/>
-      </Selector>
-      <Link id="sv3#area12#page23#seu25#ln51" name="Flow51" to="sv3#area12#page23#pwu4" automaticCoupling="true" type="transport" validate="true"/>
-    </SelectorUnit>
-    <SelectorUnit gr:x="165" gr:y="2" id="sv3#area12#page23#seu27" name="Seleziona Stati Ordini" entity="ent10">
-      <Link id="sv3#area12#page23#seu27#ln50" name="Flow50" to="sv3#area12#page23#seu25" automaticCoupling="true" type="transport" validate="true"/>
-      <Selector id="sv3#area12#page23#seu27#su32" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv3#area12#page23#seu27#su32#rcond11" name="RoleCondition11" predicate="in" implied="false" role="rel16#role31"/>
+    <SelectorUnit id="sv3#area12#page23#seu34" name="Seleziona Spese" gr:x="265" gr:y="120" entity="ent9">
+      <Link id="sv3#area12#page23#seu34#ln66" name="Flow1" to="sv3#area12#page23#scu5" type="transport" automaticCoupling="true" validate="true"/>
+      <Selector id="sv3#area12#page23#seu34#su42" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#page23#seu34#su42#kcond24" name="SpeseNegozio" predicate="in" implied="false"/>
       </Selector>
     </SelectorUnit>
-    <PowerIndexUnit gr:x="25" gr:y="130" id="sv3#area12#page23#pwu4" name="List4" sortable="true" checkable="false" useCountQuery="false" entity="ent9" linkOrder="sv3#area12#page23#pwu4#ln54 sv3#area12#page23#pwu4#ln61">
-      <Link id="sv3#area12#page23#pwu4#ln54" name="Dettagli spesa" to="sv3#area12#page24#dau7" automaticCoupling="true" type="normal" validate="true"/>
-      <Link id="sv3#area12#page23#pwu4#ln61" name="Flow61" to="sv3#area12#seu33" automaticCoupling="true" type="normal" validate="true"/>
+    <PowerIndexUnit id="sv3#area12#page23#pwu5" name="Lista Spese" gr:x="0" gr:y="120" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att34 ent9#att35 ent9#att36 rel12#role23.ent10#att38" linkOrder="sv3#area12#page23#pwu5#ln79 sv3#area12#page23#pwu5#ln81">
+      <SortAttribute attribute="rel12#role23.ent10#att38" order="ascending"/>
+      <SortAttribute attribute="ent9#att34" order="descending"/>
+      <SortAttribute attribute="ent9#att35" order="ascending"/>
+      <Link id="sv3#area12#page23#pwu5#ln79" name="Flow79" to="sv3#area12#seu33" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv3#area12#page23#pwu5#ln81" name="Flow81" to="sv3#area12#page24#dau7" automaticCoupling="true" type="normal" validate="true"/>
     </PowerIndexUnit>
+    <ScrollerUnit id="sv3#area12#page23#scu5" name="Scroll Spese" linkOrder="sv3#area12#page23#scu5#ln68" gr:x="140" gr:y="125" useCountQuery="false" entity="ent9" blockFactor="5">
+      <Link id="sv3#area12#page23#scu5#ln68" name="Flow3" to="sv3#area12#page23#pwu5" type="automatic" automaticCoupling="true" validate="true"/>
+      <SortAttribute attribute="ent9#att36" order="descending"/>
+      <SortAttribute attribute="ent9#att35" order="descending"/>
+      <SortAttribute attribute="ent9#att34" order="descending"/>
+    </ScrollerUnit>
+    <SelectorUnit id="sv3#area12#page23#seu35" name="Seleziona Negozio" gr:x="170" gr:y="0" entity="ent3">
+      <Selector id="sv3#area12#page23#seu35#su43" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#page23#seu35#su43#kcond25" name="KeyCondition20" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area12#page23#seu35#ln74" name="Flow60" to="sv3#area12#page23#seu34" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <GetUnit id="sv3#area12#page23#gtu8" name="Info Dipendente" gr:x="10" gr:y="10" contextParameters="UserCtxParam">
+      <Link id="sv3#area12#page23#gtu8#ln77" name="Flow59" to="sv3#area12#page23#seu35" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area12#page23#gtu8#ln80" name="Flow80" to="sv3#area12#cnu1" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv3#area12#page23#pwu4">
-          <layout:Link link="sv3#area12#page23#pwu4#ln54"/>
-          <layout:Link link="sv3#area12#page23#pwu4#ln61"/>
+        <layout:Unit unitId="sv3#area12#page23#pwu5">
+          <layout:Attribute attribute="ent9#att34"/>
+          <layout:Attribute attribute="ent9#att35"/>
+          <layout:Attribute attribute="ent9#att36"/>
+          <layout:Attribute attribute="rel12#role23.ent10#att38"/>
+          <layout:Link link="sv3#area12#page23#pwu5#ln79"/>
+          <layout:Link link="sv3#area12#page23#pwu5#ln81"/>
+          <layout:Link link="sv3#area12#page23#pwu5rel12#role23$ent10#att38"/>
+          <layout:Link link="sv3#area12#page23#pwu5ent9#att34"/>
+          <layout:Link link="sv3#area12#page23#pwu5ent9#att35"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page23#scu5">
+          <layout:Link link="sv3#area12#page23#scu5First"/>
+          <layout:Link link="sv3#area12#page23#scu5Previous"/>
+          <layout:Link link="sv3#area12#page23#scu5Block"/>
+          <layout:Link link="sv3#area12#page23#scu5Next"/>
+          <layout:Link link="sv3#area12#page23#scu5Last"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
