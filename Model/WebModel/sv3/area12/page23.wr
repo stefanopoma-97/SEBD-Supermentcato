@@ -2,11 +2,14 @@
   <ContentUnits>
     <GetUnit id="sv3#area12#page23#gtu9" name="Info Dipendente" gr:x="0" gr:y="0" contextParameters="UserCtxParam">
       <Link id="sv3#area12#page23#gtu9#ln85" name="Flow59" to="sv3#area12#page23#seu37" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area12#page23#gtu9#ln91" name="Flow91" to="sv3#area12#cnu1" automaticCoupling="true" type="transport" validate="true"/>
     </GetUnit>
-    <PowerIndexUnit id="sv3#area12#page23#pwu7" name="Lista Spese" gr:x="0" gr:y="105" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att34 ent9#att35 ent9#att36 rel12#role23.ent10#att38">
+    <PowerIndexUnit id="sv3#area12#page23#pwu7" name="Lista Spese" gr:x="0" gr:y="105" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att34 ent9#att35 ent9#att36 rel12#role23.ent10#att38" linkOrder="sv3#area12#page23#pwu7#ln89 sv3#area12#page23#pwu7#ln90">
       <SortAttribute attribute="rel12#role23.ent10#att38" order="ascending"/>
       <SortAttribute attribute="ent9#att34" order="descending"/>
       <SortAttribute attribute="ent9#att35" order="ascending"/>
+      <Link id="sv3#area12#page23#pwu7#ln89" name="Flow89" to="sv3#area12#page24#dau7" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv3#area12#page23#pwu7#ln90" name="Flow90" to="sv3#area12#seu33" automaticCoupling="true" type="normal" validate="true"/>
     </PowerIndexUnit>
     <SelectorUnit id="sv3#area12#page23#seu37" name="Seleziona Negozio" gr:x="160" gr:y="0" entity="ent3">
       <Selector id="sv3#area12#page23#seu37#su46" defaultPolicy="fill" booleanOperator="and">
@@ -35,6 +38,8 @@
           <layout:Attribute attribute="ent9#att35"/>
           <layout:Attribute attribute="ent9#att36"/>
           <layout:Attribute attribute="rel12#role23.ent10#att38"/>
+          <layout:Link link="sv3#area12#page23#pwu7#ln89"/>
+          <layout:Link link="sv3#area12#page23#pwu7#ln90"/>
           <layout:Link link="sv3#area12#page23#pwu7rel12#role23$ent10#att38"/>
           <layout:Link link="sv3#area12#page23#pwu7ent9#att34"/>
           <layout:Link link="sv3#area12#page23#pwu7ent9#att35"/>
