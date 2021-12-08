@@ -1,24 +1,12 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1975" gr:y="65" id="sv1#area8" name="Area Prodotti" landmark="true" defaultPage="sv1#area8#page9">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1970" gr:y="65" id="sv1#area8" name="Area Prodotti" landmark="true" defaultPage="sv1#area8#page9">
   <OperationUnits>
-    <SelectorUnit id="sv1#area8#seu13" name="Filtri ricerca" gr:x="0" gr:y="855" entity="ent4">
+    <SelectorUnit id="sv1#area8#seu13" name="Filtri ricerca" gr:x="5" gr:y="855" entity="ent4">
       <Selector id="sv1#area8#seu13#su10" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area8#seu13#su10#rcond2" name="Da categoria a prodotti" predicate="in" implied="true" role="rel4#role8"/>
         <RelationshipRoleCondition id="sv1#area8#seu13#su10#rcond4" name="Da fascia a prodotti" predicate="in" implied="true" role="rel11#role21"/>
         <KeyCondition id="sv1#area8#seu13#su10#kcond2" name="Prodotti nuovi" predicate="in" implied="true"/>
-        <RelationshipRoleCondition id="sv1#area8#seu13#su10#rcond10" name="NazioneToProdotto" predicate="in" implied="true" role="rel18#role36"/>
-        <AttributesCondition id="sv1#area8#seu13#su10#acond16" name="Nome" predicate="contains" booleanOperator="or" implied="true" attributes="ent4#att15"/>
       </Selector>
-      <OKLink id="sv1#area8#seu13#oln14" name="OKFlow14" to="sv1#area8#page9#inu6" automaticCoupling="true"/>
-      <KOLink id="sv1#area8#seu13#kln15" name="KOFlow15" to="sv1#area8#page23" automaticCoupling="true"/>
-    </SelectorUnit>
-    <SelectorUnit gr:x="1210" gr:y="835" id="sv1#area8#seu27" name="Prodotti nuovi" entity="ent11">
-      <KOLink id="sv1#area8#seu27#kln16" name="KOFlow16" to="sv1#area8#page23" automaticCoupling="true" gr:bendpoints="-370,-499,740,-154"/>
-      <OKLink id="sv1#area8#seu27#oln15" name="OKFlow15" to="sv1#area8#page9#inu6" automaticCoupling="true"/>
-    </SelectorUnit>
-    <SelectorUnit gr:x="1090" gr:y="950" id="sv1#area8#seu28" name="Ordina per prezzo" entity="ent4">
-      <SortAttribute attribute="ent4#att17" order="ascending"/>
-      <OKLink id="sv1#area8#seu28#oln16" name="OKFlow16" to="sv1#area8#page9#inu6" automaticCoupling="true"/>
-      <KOLink id="sv1#area8#seu28#kln17" name="KOFlow17" to="sv1#area8#page23" automaticCoupling="true" gr:bendpoints="-819,252,181,712"/>
+      <Link id="sv1#area8#seu13#ln7" name="Flow35" to="sv1#area8#page9#inu6" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="510,-129,-55,336"/>
     </SelectorUnit>
   </OperationUnits>
 </Area>

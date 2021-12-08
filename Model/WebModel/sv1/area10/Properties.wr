@@ -1,17 +1,3 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1550" gr:y="1640" id="sv1#area10" name="Area Negozi" landmark="true" defaultPage="sv1#area10#page12">
-  <OperationUnits>
-    <SelectorUnit gr:x="1345" gr:y="555" id="sv1#area10#seu23" name="Filtra negozi per data" entity="ent3">
-      <SortAttribute attribute="ent3#att12" order="ascending"/>
-      <OKLink id="sv1#area10#seu23#oln11" name="OKFlow11" to="sv1#area10#page12#inu11" automaticCoupling="true"/>
-      <KOLink id="sv1#area10#seu23#kln12" name="KOFlow12" to="sv1#area10#page1" automaticCoupling="true"/>
-    </SelectorUnit>
-    <SelectorUnit gr:x="1415" gr:y="385" id="sv1#area10#seu24" name="Negozi aperti" entity="ent3">
-      <KOLink id="sv1#area10#seu24#kln13" name="KOFlow13" to="sv1#area10#page1" automaticCoupling="true"/>
-      <OKLink id="sv1#area10#seu24#oln12" name="OKFlow12" to="sv1#area10#page12#inu11" automaticCoupling="true"/>
-    </SelectorUnit>
-    <SelectorUnit gr:x="1325" gr:y="900" id="sv1#area10#seu25" name="Negozi nuovi" entity="ent18">
-      <OKLink id="sv1#area10#seu25#oln13" name="OKFlow13" to="sv1#area10#page12#inu11" automaticCoupling="true"/>
-      <KOLink id="sv1#area10#seu25#kln14" name="KOFlow14" to="sv1#area10#page1" automaticCoupling="true"/>
-    </SelectorUnit>
-  </OperationUnits>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1545" gr:y="1670" id="sv1#area10" name="Area Negozi" landmark="true" defaultPage="sv1#area10#page12">
+  <OperationUnits/>
 </Area>
