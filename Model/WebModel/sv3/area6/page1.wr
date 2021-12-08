@@ -5,7 +5,7 @@
         <KeyCondition id="sv3#area6#page1#dau1#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <GetUnit gr:x="0" gr:y="5" id="sv3#area6#page1#gtu5" name="asd" contextParameters="UserCtxParam">
+    <GetUnit gr:x="0" gr:y="5" id="sv3#area6#page1#gtu5" name="Info dipendente" contextParameters="UserCtxParam">
       <Link id="sv3#area6#page1#gtu5#ln44" name="Flow44" to="sv3#area6#page1#dau1" automaticCoupling="true" type="transport" validate="true"/>
     </GetUnit>
   </ContentUnits>

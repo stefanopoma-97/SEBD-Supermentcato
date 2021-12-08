@@ -1,22 +1,33 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="325" gr:y="305" id="sv3#area12#page24" name="Dettagli Spesa">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="300" gr:y="300" id="sv3#area12#page24" name="Dettagli Spesa">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="2" id="sv3#area12#page24#dau7" name="Dettagli Spesa" entity="ent9" displayAll="true">
+    <DataUnit gr:x="25" gr:y="0" id="sv3#area12#page24#dau7" name="Dettagli Spesa" entity="ent9" displayAll="true">
       <Selector id="sv3#area12#page24#dau7#su34" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area12#page24#dau7#su34#kcond18" name="KeyCondition18" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv3#area12#page24#dau7#ln56" name="Flow56" to="sv3#area12#page24#seu28" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#area12#page24#dau7#ln82" name="Flow82" to="sv3#area12#mfu1" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#area12#page24#dau7#ln83" name="Flow83" to="sv3#area12#page24#seu36" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
-    <SelectorUnit gr:x="170" gr:y="2" id="sv3#area12#page24#seu28" name="Seleziona Stato ordine" entity="ent10">
+    <SelectorUnit gr:x="195" gr:y="0" id="sv3#area12#page24#seu28" name="Seleziona Stato ordine" entity="ent10">
       <Selector id="sv3#area12#page24#seu28#su35" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area12#page24#seu28#su35#rcond13" name="Stato_ordine-spesa" predicate="in" implied="false" role="rel12#role23"/>
       </Selector>
       <Link id="sv3#area12#page24#seu28#ln57" name="Flow57" to="sv3#area12#page24#dau8" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <DataUnit gr:x="175" gr:y="130" id="sv3#area12#page24#dau8" name="Dettagli Stato ordine">
+    <DataUnit gr:x="200" gr:y="125" id="sv3#area12#page24#dau8" name="Dettagli Stato ordine" entity="ent10" displayAll="true">
       <Selector id="sv3#area12#page24#dau8#su36" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area12#page24#dau8#su36#kcond19" name="KeyCondition19" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
+    <SelectorUnit gr:x="0" gr:y="130" id="sv3#area12#page24#seu36" name="Seleziona Riga d'ordine" entity="ent7">
+      <Selector id="sv3#area12#page24#seu36#su45" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#page24#seu36#su45#rcond15" name="RigheSpesa" predicate="in" implied="false" role="rel10#role20"/>
+      </Selector>
+      <Link id="sv3#area12#page24#seu36#ln84" name="Flow84" to="sv3#area12#page24#pwu6" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <PowerIndexUnit gr:x="35" gr:y="250" id="sv3#area12#page24#pwu6" name="Righe d'ordine" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att28 ent7#att29 ent7#att40">
+      <SortAttribute attribute="ent7#att29" order="descending"/>
+    </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -41,7 +52,32 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv3#area12#page24#dau8"/>
+        <layout:Unit unitId="sv3#area12#page24#dau8">
+          <layout:Attribute attribute="ent10#att38"/>
+          <layout:Attribute attribute="ent10#att55"/>
+          <layout:Attribute attribute="ent10#att56"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page24#pwu6">
+          <layout:Attribute attribute="ent7#att28"/>
+          <layout:Attribute attribute="ent7#att29"/>
+          <layout:Attribute attribute="ent7#att40"/>
+          <layout:Link link="sv3#area12#page24#pwu6ent7#att29"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
