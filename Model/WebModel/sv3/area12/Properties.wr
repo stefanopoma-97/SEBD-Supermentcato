@@ -1,3 +1,20 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="700" gr:y="170" id="sv3#area12" name="Spesa" landmark="true" defaultPage="sv3#area12#page23">
-  <OperationUnits/>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="670" gr:y="90" id="sv3#area12" name="Spesa" landmark="true" defaultPage="sv3#area12#page23">
+  <OperationUnits>
+    <ConnectUnit gr:x="0" gr:y="155" id="sv3#area12#cnu1" name="Connect stato_dipendente" relationship="rel16#role32">
+      <SourceSelector id="sv3#area12#cnu1#su39" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#cnu1#su39#kcond22" name="KeyCondition22" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area12#cnu1#su40" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#cnu1#su40#kcond23" name="KeyCondition23" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="sv3#area12#cnu1#kln11" name="KOFlow11" to="sv3#area12#page25#mssu13" automaticCoupling="true"/>
+      <OKLink id="sv3#area12#cnu1#oln10" name="OKFlow10" to="sv3#area12#page23" automaticCoupling="true"/>
+    </ConnectUnit>
+    <SelectorUnit gr:x="5" gr:y="10" id="sv3#area12#seu33" name="Seleziona Stato Ordine" entity="ent10" linkOrder="sv3#area12#seu33#ln64">
+      <Selector id="sv3#area12#seu33#su41" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#seu33#su41#rcond14" name="RoleCondition14" predicate="in" implied="false" role="rel12#role23"/>
+      </Selector>
+      <Link id="sv3#area12#seu33#ln64" name="Flow64" to="sv3#area12#cnu1" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+  </OperationUnits>
 </Area>
