@@ -10,10 +10,14 @@
       <Link id="sv3#area6#page1#gtu5#ln92" name="Flow92" to="sv3#area6#page1#seu39" automaticCoupling="true" type="transport" validate="true"/>
     </GetUnit>
     <DataUnit gr:x="225" gr:y="120" id="sv3#area6#page1#dau9" name="Dettagli negozio" entity="ent3" displayAll="true">
-      <Selector id="sv3#area6#page1#dau9#su48" defaultPolicy="fill" booleanOperator="and"/>
+      <Selector id="sv3#area6#page1#dau9#su48" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area6#page1#dau9#su48#kcond31" name="Negozio" predicate="in" implied="false"/>
+      </Selector>
     </DataUnit>
-    <DataUnit gr:x="250" gr:y="250" id="sv3#area6#page1#dau10" name="Indirizzo" entity="ent2" displayAll="true">
-      <Selector id="sv3#area6#page1#dau10#su49" defaultPolicy="fill" booleanOperator="and"/>
+    <DataUnit gr:x="220" gr:y="240" id="sv3#area6#page1#dau10" name="Indirizzo negozio" entity="ent2" displayAll="true">
+      <Selector id="sv3#area6#page1#dau10#su49" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area6#page1#dau10#su49#kcond32" name="IdIndirizzo" predicate="in" implied="false"/>
+      </Selector>
     </DataUnit>
     <SelectorUnit gr:x="0" gr:y="115" id="sv3#area6#page1#seu39" name="Seleziona negozio" entity="ent3">
       <Selector id="sv3#area6#page1#seu39#su50" defaultPolicy="fill" booleanOperator="and">
@@ -22,7 +26,7 @@
       <Link id="sv3#area6#page1#seu39#ln94" name="Flow94" to="sv3#area6#page1#dau9" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv3#area6#page1#seu39#ln96" name="Flow96" to="sv3#area6#page1#seu40" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="0" gr:y="245" id="sv3#area6#page1#seu40" name="Seleziona indirizzo" entity="ent2">
+    <SelectorUnit gr:x="0" gr:y="235" id="sv3#area6#page1#seu40" name="Seleziona indirizzo" entity="ent2">
       <Link id="sv3#area6#page1#seu40#ln95" name="Flow95" to="sv3#area6#page1#dau10" automaticCoupling="true" type="transport" validate="true"/>
       <Selector id="sv3#area6#page1#seu40#su51" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area6#page1#seu40#su51#rcond27" name="IndirizzoNegozio" predicate="in" implied="false" role="rel2#role3"/>
