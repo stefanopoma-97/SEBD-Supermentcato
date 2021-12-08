@@ -1,0 +1,59 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="305" id="sv3#area12#page24" name="Dettagli Spesa">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="2" id="sv3#area12#page24#dau7" name="Dettagli Spesa" entity="ent9" displayAll="true">
+      <Selector id="sv3#area12#page24#dau7#su34" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#page24#dau7#su34#kcond18" name="KeyCondition18" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area12#page24#dau7#ln56" name="Flow56" to="sv3#area12#page24#seu28" automaticCoupling="true" type="transport" validate="true"/>
+    </DataUnit>
+    <SelectorUnit gr:x="170" gr:y="2" id="sv3#area12#page24#seu28" name="Seleziona Stato ordine" entity="ent10">
+      <Selector id="sv3#area12#page24#seu28#su35" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#page24#seu28#su35#rcond13" name="Stato_ordine-spesa" predicate="in" implied="false" role="rel12#role23"/>
+      </Selector>
+      <Link id="sv3#area12#page24#seu28#ln57" name="Flow57" to="sv3#area12#page24#dau8" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <DataUnit gr:x="175" gr:y="130" id="sv3#area12#page24#dau8" name="Dettagli Stato ordine">
+      <Selector id="sv3#area12#page24#dau8#su36" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#page24#dau8#su36#kcond19" name="KeyCondition19" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page24#dau7">
+          <layout:Attribute attribute="ent9#att34"/>
+          <layout:Attribute attribute="ent9#att35"/>
+          <layout:Attribute attribute="ent9#att36"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page24#dau8"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

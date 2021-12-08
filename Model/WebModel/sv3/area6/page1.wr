@@ -1,36 +1,21 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv3#area6#page1" name="Dettagli Profilo">
   <ContentUnits>
-    <DataUnit gr:x="345" gr:y="0" id="sv3#area6#page1#dau1" name="Dettagli dipendente" entity="ent14">
+    <DataUnit gr:x="205" gr:y="0" id="sv3#area6#page1#dau1" name="Dettagli dipendente" entity="User" displayAll="true">
       <Selector id="sv3#area6#page1#dau1#su1" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area6#page1#dau1#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <SelectorUnit gr:x="140" gr:y="0" id="sv3#area6#page1#seu22" name="Seleziona dipendente" entity="ent14">
-      <Selector id="sv3#area6#page1#seu22#su9" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#area6#page1#seu22#su9#kcond4" name="UserId" predicate="in" implied="false"/>
-      </Selector>
-      <Link id="sv3#area6#page1#seu22#ln8" name="Flow8" to="sv3#area6#page1#dau1" automaticCoupling="true" type="transport" validate="true"/>
-    </SelectorUnit>
-    <GetUnit gr:x="0" gr:y="5" id="sv3#area6#page1#gtu1" name="GetUserId" contextParameters="UserCtxParam">
-      <Link id="sv3#area6#page1#gtu1#ln5" name="Flow5" to="sv3#area6#page1#seu22" automaticCoupling="true" type="transport" validate="true"/>
-      <Link id="sv3#area6#page1#gtu1#ln11" name="Flow11" to="sv3#area6#page1#seu23" automaticCoupling="true" type="transport" validate="true"/>
+    <GetUnit gr:x="0" gr:y="5" id="sv3#area6#page1#gtu5" name="asd" contextParameters="UserCtxParam">
+      <Link id="sv3#area6#page1#gtu5#ln44" name="Flow44" to="sv3#area6#page1#dau1" automaticCoupling="true" type="transport" validate="true"/>
     </GetUnit>
-    <SelectorUnit gr:x="155" gr:y="110" id="sv3#area6#page1#seu23" name="Seleziona negozio" entity="ent3">
-      <Selector id="sv3#area6#page1#seu23#su28" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv3#area6#page1#seu23#su28#rcond9" name="UserToNegozio" predicate="in" implied="false" role="rel14#role27"/>
-      </Selector>
-      <Link id="sv3#area6#page1#seu23#ln34" name="Flow34" to="sv3#area6#page1#dau6" automaticCoupling="true" type="transport" validate="true"/>
-    </SelectorUnit>
-    <DataUnit gr:x="345" gr:y="115" id="sv3#area6#page1#dau6" name="Dettagli negozio">
-      <Selector id="sv3#area6#page1#dau6#su30" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#area6#page1#dau6#su30#kcond11" name="KeyCondition11" predicate="in" implied="false"/>
-      </Selector>
-    </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv3#area6#page1#dau1"/>
+        <layout:Unit unitId="sv3#area6#page1#dau1">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
@@ -45,9 +30,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv3#area6#page1#dau6"/>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
