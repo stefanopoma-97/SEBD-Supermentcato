@@ -1,0 +1,42 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv3#area12#page23" name="Spese">
+  <ContentUnits>
+    <GetUnit gr:x="0" gr:y="7" id="sv3#area12#page23#gtu6" name="Info Dipendente" contextParameters="UserCtxParam">
+      <Link id="sv3#area12#page23#gtu6#ln48" name="Flow48" to="sv3#area12#page23#seu27" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+    <SelectorUnit gr:x="180" gr:y="130" id="sv3#area12#page23#seu25" name="Seleziona Spese" entity="ent9">
+      <Selector id="sv3#area12#page23#seu25#su33" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#page23#seu25#su33#rcond12" name="RoleCondition12" predicate="in" implied="false" role="rel10#role19"/>
+      </Selector>
+      <Link id="sv3#area12#page23#seu25#ln51" name="Flow51" to="sv3#area12#page23#pwu4" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit gr:x="165" gr:y="2" id="sv3#area12#page23#seu27" name="Seleziona Stati Ordini" entity="ent10">
+      <Link id="sv3#area12#page23#seu27#ln50" name="Flow50" to="sv3#area12#page23#seu25" automaticCoupling="true" type="transport" validate="true"/>
+      <Selector id="sv3#area12#page23#seu27#su32" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#page23#seu27#su32#rcond11" name="RoleCondition11" predicate="in" implied="false" role="rel16#role31"/>
+      </Selector>
+    </SelectorUnit>
+    <PowerIndexUnit gr:x="25" gr:y="130" id="sv3#area12#page23#pwu4" name="List4" sortable="true" checkable="false" useCountQuery="false" entity="ent9" linkOrder="sv3#area12#page23#pwu4#ln54">
+      <Link id="sv3#area12#page23#pwu4#ln54" name="Dettagli spesa" to="sv3#area12#page24#dau7" automaticCoupling="true" type="normal" validate="true"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page23#pwu4">
+          <layout:Link link="sv3#area12#page23#pwu4#ln54"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
