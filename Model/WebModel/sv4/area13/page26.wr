@@ -1,0 +1,94 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv4#area13#page26" name="Dettagli profilo">
+  <ContentUnits>
+    <GetUnit gr:x="0" gr:y="5" id="sv4#area13#page26#gtu2" name="Get info responsabile" contextParameters="UserCtxParam">
+      <Link id="sv4#area13#page26#gtu2#ln54" name="Flow54" to="sv4#area13#page26#dau6" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv4#area13#page26#gtu2#ln61" name="Flow61" to="sv4#area13#page26#seu27" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+    <DataUnit gr:x="0" gr:y="115" id="sv4#area13#page26#dau6" name="Dettagli responsabile" entity="ent12">
+      <Selector id="sv4#area13#page26#dau6#su31" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area13#page26#dau6#su31#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <SelectorUnit gr:x="200" gr:y="0" id="sv4#area13#page26#seu27" name="Seleziona negozio del responsabile" entity="ent3">
+      <Selector id="sv4#area13#page26#seu27#su32" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area13#page26#seu27#su32#rcond12" name="NegozioResponsabile" predicate="in" implied="false" role="rel14#role27"/>
+      </Selector>
+      <Link id="sv4#area13#page26#seu27#ln65" name="Flow65" to="sv4#area13#page26#dau11" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv4#area13#page26#seu27#ln68" name="Flow68" to="sv4#area13#page26#dau13" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <DataUnit gr:x="265" gr:y="130" id="sv4#area13#page26#dau11" name="Dettagli negozio" entity="ent3">
+      <Selector id="sv4#area13#page26#dau11#su33" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area13#page26#dau11#su33#kcond11" name="KeyCondition11" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <DataUnit gr:x="490" gr:y="0" id="sv4#area13#page26#dau13" name="Dettagli indirizzo" entity="ent2">
+      <Selector id="sv4#area13#page26#dau13#su42" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area13#page26#dau13#su42#rcond25" name="IndirizzoNegozio" predicate="in" implied="false" role="rel2#role3"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area13#page26#dau6"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area13#page26#dau11"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area13#page26#dau13"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
