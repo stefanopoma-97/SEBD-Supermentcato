@@ -1,0 +1,31 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="740" gr:y="170" id="sv4#area14#page28" name="Dettagli promozione">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv4#area14#page28#dau14" name="Dettagli promozione" entity="ent6" linkOrder="sv4#area14#page28#dau14#ln105">
+      <Selector id="sv4#area14#page28#dau14#su55" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area14#page28#dau14#su55#kcond21" name="KeyCondition21" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#area14#page28#dau14#ln105" name="Modifica" to="sv4#area14#page30#enu9" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv4#area14#page28#dau14#ln108" name="Flow108" to="sv4#area14#dlu1" automaticCoupling="true" type="transport" validate="true"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area14#page28#dau14">
+          <layout:Link link="sv4#area14#page28#dau14#ln105"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,56 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv4#area14#page27" name="Promozioni" linkOrder="sv4#area14#page27#ln82">
+  <ContentUnits>
+    <SelectorUnit id="sv4#area14#page27#seu35" name="Seleziona Negozio del responsabile" gr:x="210" gr:y="0" entity="ent3">
+      <Selector id="sv4#area14#page27#seu35#su52" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area14#page27#seu35#su52#rcond28" name="NegozioResponsabile" predicate="in" implied="false" role="rel14#role27"/>
+      </Selector>
+      <Link id="sv4#area14#page27#seu35#ln77" name="Flow50" to="sv4#area14#page27#seu41" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv4#area14#page27#seu35#ln100" name="Flow100" to="sv4#area14#cnu2" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <GetUnit id="sv4#area14#page27#gtu3" name="Get Info Responsabile" gr:x="0" gr:y="5" contextParameters="UserCtxParam">
+      <Link id="sv4#area14#page27#gtu3#ln79" name="Flow40" to="sv4#area14#page27#seu35" type="transport" automaticCoupling="true" validate="true"/>
+    </GetUnit>
+    <SelectorUnit id="sv4#area14#page27#seu41" name="Seleziona promozioni del negozio" gr:x="505" gr:y="0" entity="ent6">
+      <Selector id="sv4#area14#page27#seu41#su54" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area14#page27#seu41#su54#rcond29" name="PromozioneNegozio" predicate="in" implied="false" role="rel5#role10"/>
+      </Selector>
+      <Link id="sv4#area14#page27#seu41#ln80" name="Flow51" to="sv4#area14#page27#pwu5" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <PowerIndexUnit id="sv4#area14#page27#pwu5" name="Promozioni" gr:x="805" gr:y="5" sortable="true" checkable="false" useCountQuery="false" entity="ent6" displayAttributes="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26 ent6#att41" linkOrder="sv4#area14#page27#pwu5#ln81 sv4#area14#page27#pwu5#ln107">
+      <SortAttribute attribute="ent6#att24" order="descending"/>
+      <SortAttribute attribute="ent6#att23" order="descending"/>
+      <Link id="sv4#area14#page27#pwu5#ln81" name="Dettagli" to="sv4#area14#page28#dau14" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv4#area14#page27#pwu5#ln107" name="Elimina" to="sv4#area14#dlu1" automaticCoupling="true" type="normal" validate="true"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area14#page27#pwu5">
+          <layout:Attribute attribute="ent6#att22"/>
+          <layout:Attribute attribute="ent6#att23"/>
+          <layout:Attribute attribute="ent6#att24"/>
+          <layout:Attribute attribute="ent6#att25"/>
+          <layout:Attribute attribute="ent6#att26"/>
+          <layout:Attribute attribute="ent6#att41"/>
+          <layout:Link link="sv4#area14#page27#pwu5#ln81"/>
+          <layout:Link link="sv4#area14#page27#pwu5#ln107"/>
+          <layout:Link link="sv4#area14#page27#pwu5ent6#att24"/>
+          <layout:Link link="sv4#area14#page27#pwu5ent6#att23"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv4#area14#page27#ln82" name="Crea promozione" to="sv4#area14#page29" automaticCoupling="true" type="normal" validate="true"/>
+</Page>
