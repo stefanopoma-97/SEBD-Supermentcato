@@ -1,29 +1,29 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="300" gr:y="5" id="sv3#area12#page23" name="Spese">
   <ContentUnits>
-    <GetUnit id="sv3#area12#page23#gtu9" name="Info Dipendente" gr:x="0" gr:y="0" contextParameters="UserCtxParam">
+    <GetUnit id="sv3#area12#page23#gtu9" name="Info Dipendente" gr:x="0" gr:y="5" contextParameters="UserCtxParam">
       <Link id="sv3#area12#page23#gtu9#ln85" name="Flow59" to="sv3#area12#page23#seu37" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv3#area12#page23#gtu9#ln91" name="Flow91" to="sv3#area12#cnu1" automaticCoupling="true" type="transport" validate="true"/>
     </GetUnit>
-    <PowerIndexUnit id="sv3#area12#page23#pwu7" name="Lista Spese" gr:x="0" gr:y="105" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att34 ent9#att35 ent9#att36 rel12#role23.ent10#att38" linkOrder="sv3#area12#page23#pwu7#ln89 sv3#area12#page23#pwu7#ln90">
+    <PowerIndexUnit id="sv3#area12#page23#pwu7" name="Lista Spese" gr:x="15" gr:y="107" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att34 ent9#att35 ent9#att36 rel12#role23.ent10#att38" linkOrder="sv3#area12#page23#pwu7#ln89 sv3#area12#page23#pwu7#ln90">
       <SortAttribute attribute="rel12#role23.ent10#att38" order="ascending"/>
       <SortAttribute attribute="ent9#att34" order="descending"/>
       <SortAttribute attribute="ent9#att35" order="ascending"/>
       <Link id="sv3#area12#page23#pwu7#ln89" name="Flow89" to="sv3#area12#page24#dau7" automaticCoupling="true" type="normal" validate="true"/>
       <Link id="sv3#area12#page23#pwu7#ln90" name="Flow90" to="sv3#area12#seu33" automaticCoupling="true" type="normal" validate="true"/>
     </PowerIndexUnit>
-    <SelectorUnit id="sv3#area12#page23#seu37" name="Seleziona Negozio" gr:x="160" gr:y="0" entity="ent3">
+    <SelectorUnit id="sv3#area12#page23#seu37" name="Seleziona Negozio" gr:x="270" gr:y="0" entity="ent3">
       <Selector id="sv3#area12#page23#seu37#su46" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area12#page23#seu37#su46#rcond21" name="NegozioDipendente" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
       <Link id="sv3#area12#page23#seu37#ln86" name="Flow60" to="sv3#area12#page23#seu38" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <SelectorUnit id="sv3#area12#page23#seu38" name="Seleziona Spese" gr:x="265" gr:y="110" entity="ent9">
+    <SelectorUnit id="sv3#area12#page23#seu38" name="Seleziona Spese" gr:x="280" gr:y="107" entity="ent9">
       <Link id="sv3#area12#page23#seu38#ln87" name="Flow1" to="sv3#area12#page23#scu6" type="transport" automaticCoupling="true" validate="true"/>
       <Selector id="sv3#area12#page23#seu38#su47" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area12#page23#seu38#su47#rcond23" name="SpeseNegozio" predicate="in" implied="false" role="rel17#role34"/>
       </Selector>
     </SelectorUnit>
-    <ScrollerUnit id="sv3#area12#page23#scu6" name="Scroll Spese" linkOrder="sv3#area12#page23#scu6#ln88" gr:x="140" gr:y="110" useCountQuery="false" entity="ent9" blockFactor="5">
+    <ScrollerUnit id="sv3#area12#page23#scu6" name="Scroll Spese" linkOrder="sv3#area12#page23#scu6#ln88" gr:x="150" gr:y="115" useCountQuery="false" entity="ent9" blockFactor="5">
       <Link id="sv3#area12#page23#scu6#ln88" name="Flow3" to="sv3#area12#page23#pwu7" type="automatic" automaticCoupling="true" validate="true"/>
       <SortAttribute attribute="ent9#att36" order="descending"/>
       <SortAttribute attribute="ent9#att35" order="descending"/>
