@@ -3,11 +3,93 @@
     <MultiMessageUnit id="sv4#area4#page4#mssu4" name="Message1" gr:x="0" gr:y="0">
       <Message xml:space="preserve">Home del responsabile</Message>
     </MultiMessageUnit>
+    <GetUnit gr:x="115" gr:y="5" id="sv4#area4#page4#gtu1" name="Get Info Responsabile" contextParameters="UserCtxParam">
+      <Link id="sv4#area4#page4#gtu1#ln40" name="Flow40" to="sv4#area4#page4#seu23" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+    <SelectorUnit gr:x="325" gr:y="0" id="sv4#area4#page4#seu23" name="Seleziona Negozio del responsabile" entity="ent3">
+      <Selector id="sv4#area4#page4#seu23#su9" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area4#page4#seu23#su9#rcond9" name="NegozioResponsabile" predicate="in" implied="false" role="rel14#role27"/>
+      </Selector>
+      <Link id="sv4#area4#page4#seu23#ln47" name="Flow47" to="sv4#area4#page4#seu24" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv4#area4#page4#seu23#ln50" name="Flow50" to="sv4#area4#page4#seu25" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit gr:x="610" gr:y="0" id="sv4#area4#page4#seu24" name="Seleziona prodotti online del negozio" entity="ent8">
+      <Selector id="sv4#area4#page4#seu24#su28" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area4#page4#seu24#su28#rcond10" name="ProdottiOnlineNegozio" predicate="in" implied="false" role="rel7#role14"/>
+      </Selector>
+      <Link id="sv4#area4#page4#seu24#ln48" name="Flow48" to="sv4#area4#page4#pwu3" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <PowerIndexUnit gr:x="920" gr:y="0" id="sv4#area4#page4#pwu3" name="Prodotti Online" sortable="true" checkable="false" useCountQuery="false" entity="ent8" displayAttributes="ent8#att31 rel8#role15.ent4#att15 rel8#role15.ent4#att16 rel8#role15.ent4#att17 rel8#role15.ent4#att18 rel8#role15.ent4#att53 rel8#role15.ent4#att59 rel8#role15.ent4#att60">
+      <SortAttribute attribute="rel8#role15.ent4#att18" order="descending"/>
+      <SortAttribute attribute="rel8#role15.ent4#att15" order="ascending"/>
+    </PowerIndexUnit>
+    <SelectorUnit gr:x="625" gr:y="115" id="sv4#area4#page4#seu25" name="Seleziona promozioni del negozio" entity="ent6">
+      <Selector id="sv4#area4#page4#seu25#su30" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area4#page4#seu25#su30#rcond11" name="PromozioneNegozio" predicate="in" implied="false" role="rel5#role10"/>
+      </Selector>
+      <Link id="sv4#area4#page4#seu25#ln51" name="Flow51" to="sv4#area4#page4#pwu4" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <PowerIndexUnit gr:x="935" gr:y="115" id="sv4#area4#page4#pwu4" name="Promozioni" sortable="true" checkable="false" useCountQuery="false" entity="ent6" displayAttributes="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26 ent6#att41">
+      <SortAttribute attribute="ent6#att24" order="descending"/>
+      <SortAttribute attribute="ent6#att23" order="descending"/>
+    </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area4#page4#mssu4"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area4#page4#pwu3">
+          <layout:Attribute attribute="ent8#att31"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att15"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att16"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att17"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att18"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att53"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att59"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att60"/>
+          <layout:Link link="sv4#area4#page4#pwu3rel8#role15$ent4#att18"/>
+          <layout:Link link="sv4#area4#page4#pwu3rel8#role15$ent4#att15"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area4#page4#pwu4">
+          <layout:Attribute attribute="ent6#att22"/>
+          <layout:Attribute attribute="ent6#att23"/>
+          <layout:Attribute attribute="ent6#att24"/>
+          <layout:Attribute attribute="ent6#att25"/>
+          <layout:Attribute attribute="ent6#att26"/>
+          <layout:Attribute attribute="ent6#att41"/>
+          <layout:Link link="sv4#area4#page4#pwu4ent6#att24"/>
+          <layout:Link link="sv4#area4#page4#pwu4ent6#att23"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
