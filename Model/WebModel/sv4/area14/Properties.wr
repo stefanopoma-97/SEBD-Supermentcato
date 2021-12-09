@@ -1,10 +1,10 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1185" gr:y="65" id="sv4#area14" name="Promozioni" landmark="true" defaultPage="sv4#area14#page27">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1205" gr:y="50" id="sv4#area14" name="Promozioni" landmark="true" defaultPage="sv4#area14#page27">
   <OperationUnits>
-    <CreateUnit gr:x="320" gr:y="210" id="sv4#area14#cru1" name="Crea promozione" entity="ent6" linkOrder="sv4#area14#cru1#ln99 sv4#area14#cru1#ln101">
+    <CreateUnit gr:x="665" gr:y="220" id="sv4#area14#cru1" name="Crea promozione" entity="ent6" linkOrder="sv4#area14#cru1#ln99 sv4#area14#cru1#ln101">
       <Link id="sv4#area14#cru1#ln99" name="Flow99" to="sv4#area14#cnu2" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv4#area14#cru1#ln101" name="Flow101" to="sv4#area14#cnu3" automaticCoupling="true" type="transport" validate="true"/>
     </CreateUnit>
-    <ConnectUnit gr:x="485" gr:y="195" id="sv4#area14#cnu2" name="Connetti promozione a negozio" relationship="rel5#role9">
+    <ConnectUnit gr:x="410" gr:y="195" id="sv4#area14#cnu2" name="Connetti promozione a negozio" relationship="rel5#role9">
       <SourceSelector id="sv4#area14#cnu2#su56" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area14#cnu2#su56#kcond24" name="KeyCondition24" predicate="in" implied="false"/>
       </SourceSelector>
@@ -12,7 +12,7 @@
         <KeyCondition id="sv4#area14#cnu2#su57#kcond25" name="KeyCondition25" predicate="in" implied="false"/>
       </TargetSelector>
     </ConnectUnit>
-    <ConnectUnit gr:x="270" gr:y="320" id="sv4#area14#cnu3" name="Connetti promozione a prodotto">
+    <ConnectUnit gr:x="595" gr:y="355" id="sv4#area14#cnu3" name="Connetti promozione a prodotto">
       <SourceSelector id="sv4#area14#cnu3#su58" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area14#cnu3#su58#kcond27" name="KeyCondition27" predicate="in" implied="false"/>
       </SourceSelector>
@@ -20,12 +20,12 @@
         <KeyCondition id="sv4#area14#cnu3#su59#kcond28" name="KeyCondition28" predicate="in" implied="false"/>
       </TargetSelector>
     </ConnectUnit>
-    <ModifyUnit gr:x="545" gr:y="365" id="sv4#area14#mfu2" name="Modifica promozione" entity="ent6">
+    <ModifyUnit gr:x="225" gr:y="345" id="sv4#area14#mfu2" name="Modifica promozione" entity="ent6">
       <Selector id="sv4#area14#mfu2#su60" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area14#mfu2#su60#kcond29" name="KeyCondition29" predicate="in" implied="false"/>
       </Selector>
     </ModifyUnit>
-    <DeleteUnit gr:x="985" gr:y="210" id="sv4#area14#dlu1" name="Elimina promozione" entity="ent6">
+    <DeleteUnit gr:x="230" gr:y="205" id="sv4#area14#dlu1" name="Elimina promozione" entity="ent6">
       <Selector id="sv4#area14#dlu1#su61" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area14#dlu1#su61#kcond33" name="KeyCondition33" predicate="in" implied="false"/>
       </Selector>

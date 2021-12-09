@@ -1,26 +1,27 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="175" id="sv4#area14#page29" name="Crea promozione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="855" gr:y="165" id="sv4#area14#page29" name="Crea promozione">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv4#area14#page29#enu8" name="Inserisci dati promozione" entity="ent6" linkOrder="sv4#area14#page29#enu8#ln97">
+    <EntryUnit gr:x="0" gr:y="0" id="sv4#area14#page29#enu8" name="Inserisci dati promozione" entity="ent6" linkOrder="sv4#area14#page29#enu8#ln97 sv4#area14#page29#enu8#ln110">
       <Field id="sv4#area14#page29#enu8#fld1" name="Sconto" type="decimal" modifiable="true" attribute="ent6#att23"/>
       <Field id="sv4#area14#page29#enu8#fld2" name="Scadenza" type="date" modifiable="true" attribute="ent6#att24"/>
       <Field id="sv4#area14#page29#enu8#fld5" name="Online" type="boolean" modifiable="true" attribute="ent6#att26"/>
       <Link id="sv4#area14#page29#enu8#ln97" name="Aggiungi" to="sv4#area14#cru1" automaticCoupling="true" type="normal" validate="true"/>
       <Field id="sv4#area14#page29#enu8#fld13" name="In negozio" type="boolean" modifiable="true" attribute="ent6#att25"/>
+      <Link id="sv4#area14#page29#enu8#ln110" name="Flow110" to="sv4#area14#cnu3" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
     <SelectorUnit gr:x="20" gr:y="120" id="sv4#area14#page29#seu42" name="Seleziona prodotti" entity="ent4">
       <Link id="sv4#area14#page29#seu42#ln93" name="Flow93" to="sv4#area14#page29#enu8" automaticCoupling="true" type="transport" validate="true"/>
-      <Link id="sv4#area14#page29#seu42#ln102" name="Flow102" to="sv4#area14#cnu3" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area14#page29#enu8">
-          <layout:Link link="sv4#area14#page29#enu8#ln97"/>
           <layout:Field field="sv4#area14#page29#enu8#fld1"/>
           <layout:Field field="sv4#area14#page29#enu8#fld2"/>
           <layout:Field field="sv4#area14#page29#enu8#fld5"/>
           <layout:Field field="sv4#area14#page29#enu8#fld13"/>
+          <layout:Link link="sv4#area14#page29#enu8#ln97"/>
+          <layout:Link link="sv4#area14#page29#enu8#ln110"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

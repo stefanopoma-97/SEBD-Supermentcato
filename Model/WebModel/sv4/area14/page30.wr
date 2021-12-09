@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="740" gr:y="345" id="sv4#area14#page30" name="Modifica promozione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="330" id="sv4#area14#page30" name="Modifica promozione">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv4#area14#page30#enu9" name="Modifica promozione" linkOrder="sv4#area14#page30#enu9#ln106">
       <Field id="sv4#area14#page30#enu9#fld16" name="Sconto" type="decimal" modifiable="true"/>
