@@ -19,9 +19,10 @@
       </Selector>
       <Link id="sv4#area4#page4#seu24#ln48" name="Flow48" to="sv4#area4#page4#pwu3" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <PowerIndexUnit gr:x="920" gr:y="0" id="sv4#area4#page4#pwu3" name="Prodotti Online" sortable="true" checkable="false" useCountQuery="false" entity="ent8" displayAttributes="ent8#att31 rel8#role15.ent4#att15 rel8#role15.ent4#att16 rel8#role15.ent4#att17 rel8#role15.ent4#att18 rel8#role15.ent4#att53 rel8#role15.ent4#att59 rel8#role15.ent4#att60">
+    <PowerIndexUnit gr:x="920" gr:y="0" id="sv4#area4#page4#pwu3" name="Prodotti Online" sortable="true" checkable="false" useCountQuery="false" entity="ent8" displayAttributes="ent8#att31 rel8#role15.ent4#att15 rel8#role15.ent4#att16 rel8#role15.ent4#att17 rel8#role15.ent4#att18 rel8#role15.ent4#att53 rel8#role15.ent4#att59 rel8#role15.ent4#att60" linkOrder="sv4#area4#page4#pwu3#ln115">
       <SortAttribute attribute="rel8#role15.ent4#att18" order="descending"/>
       <SortAttribute attribute="rel8#role15.ent4#att15" order="ascending"/>
+      <Link id="sv4#area4#page4#pwu3#ln115" name="Dettagli" to="sv4#area15#page32#dau15" automaticCoupling="true" type="normal" validate="true"/>
     </PowerIndexUnit>
     <SelectorUnit gr:x="625" gr:y="115" id="sv4#area4#page4#seu25" name="Seleziona promozioni del negozio" entity="ent6">
       <Selector id="sv4#area4#page4#seu25#su30" defaultPolicy="fill" booleanOperator="and">
@@ -63,6 +64,7 @@
           <layout:Attribute attribute="rel8#role15.ent4#att53"/>
           <layout:Attribute attribute="rel8#role15.ent4#att59"/>
           <layout:Attribute attribute="rel8#role15.ent4#att60"/>
+          <layout:Link link="sv4#area4#page4#pwu3#ln115"/>
           <layout:Link link="sv4#area4#page4#pwu3rel8#role15$ent4#att18"/>
           <layout:Link link="sv4#area4#page4#pwu3rel8#role15$ent4#att15"/>
         </layout:Unit>

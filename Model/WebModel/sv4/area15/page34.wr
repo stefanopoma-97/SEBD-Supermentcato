@@ -1,0 +1,39 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="850" gr:y="180" id="sv4#area15#page34" name="Crea prodotto online">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv4#area15#page34#enu11" name="Inserisci dati prodotto online" linkOrder="sv4#area15#page34#enu11#ln121 sv4#area15#page34#enu11#ln126">
+      <SelectionField id="sv4#area15#page34#enu11#sfld11" name="Prodotti" type="string"/>
+      <Link id="sv4#area15#page34#enu11#ln121" name="Flow121" to="sv4#area15#cru4" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv4#area15#page34#enu11#ln126" name="Flow126" to="sv4#area15#cnu5" type="normal" validate="true">
+        <LinkParameter id="sv4#area15#page34#enu11#ln126#par23" name="Prodotti_KeyCondition38 [oid] [Prodotto online] [Source]" source="sv4#area15#page34#enu11#sfld11" target="sv4#area15#cnu5#su68#kcond38.ent8#att31"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit id="sv4#area15#page34#seu45" name="Seleziona prodotti" gr:x="40" gr:y="110" entity="ent4">
+      <Link id="sv4#area15#page34#seu45#ln120" name="Flow120" to="sv4#area15#page34#enu11" type="transport" validate="true">
+        <LinkParameter id="sv4#area15#page34#seu45#ln120#par18" name="nome_Prodotti [label]" source="ent4#att15Array" target="sv4#area15#page34#enu11#sfld11_label"/>
+        <LinkParameter id="sv4#area15#page34#seu45#ln120#par19" name="oid_Prodotti [output]" source="ent4#att14Array" target="sv4#area15#page34#enu11#sfld11_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area15#page34#enu11">
+          <layout:Field field="sv4#area15#page34#enu11#sfld11"/>
+          <layout:Link link="sv4#area15#page34#enu11#ln121"/>
+          <layout:Link link="sv4#area15#page34#enu11#ln126"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
