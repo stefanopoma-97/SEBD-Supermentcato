@@ -1,25 +1,3 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1060" gr:y="70" id="sv3#area12" name="Spesa" landmark="true" defaultPage="sv3#area12#page23">
-  <OperationUnits>
-    <ConnectUnit gr:x="0" gr:y="145" id="sv3#area12#cnu1" name="Connect stato_dipendente" relationship="rel16#role32">
-      <SourceSelector id="sv3#area12#cnu1#su39" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#area12#cnu1#su39#kcond22" name="KeyCondition22" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv3#area12#cnu1#su40" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#area12#cnu1#su40#kcond23" name="KeyCondition23" predicate="in" implied="false"/>
-      </TargetSelector>
-      <KOLink id="sv3#area12#cnu1#kln11" name="KOFlow11" to="sv3#area12#page25#mssu13" automaticCoupling="true"/>
-      <OKLink id="sv3#area12#cnu1#oln10" name="OKFlow10" to="sv3#area12#page23" automaticCoupling="true"/>
-    </ConnectUnit>
-    <SelectorUnit gr:x="10" gr:y="0" id="sv3#area12#seu33" name="Seleziona Stato Ordine" entity="ent10">
-      <Selector id="sv3#area12#seu33#su41" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv3#area12#seu33#su41#rcond14" name="RoleCondition14" predicate="in" implied="false" role="rel12#role23"/>
-      </Selector>
-      <Link id="sv3#area12#seu33#ln64" name="Flow64" to="sv3#area12#cnu1" automaticCoupling="true" type="transport" validate="true"/>
-    </SelectorUnit>
-    <ModifyUnit gr:x="900" gr:y="335" id="sv3#area12#mfu1" name="Update Stato ordine" entity="ent10">
-      <Selector id="sv3#area12#mfu1#su44" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#area12#mfu1#su44#kcond26" name="KeyCondition26" predicate="in" implied="false"/>
-      </Selector>
-    </ModifyUnit>
-  </OperationUnits>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="900" gr:y="-180" id="sv3#area12" name="Spesa" landmark="true" defaultPage="sv3#area12#page23">
+  <OperationUnits/>
 </Area>

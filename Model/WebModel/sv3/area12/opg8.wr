@@ -1,0 +1,39 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="340" id="sv3#area12#opg8" name="Prendi in carico" transaction="true">
+  <OperationUnits>
+    <GetUnit gr:x="0" gr:y="0" id="sv3#area12#opg8#gtu10" name="info dipendente" contextParameters="UserCtxParam">
+      <Link id="sv3#area12#opg8#gtu10#ln204" name="Flow204" to="sv3#area12#opg8#cnu6" type="transport" validate="true">
+        <LinkParameter id="sv3#area12#opg8#gtu10#ln204#par161" name="UserCtxParam.oid_KeyCondition23 [oid] [Dipendente] [Target]" source="sv3#area12#opg8#gtu10.UserCtxParam" target="sv3#area12#opg8#cnu6#su117#kcond67.userOID"/>
+      </Link>
+    </GetUnit>
+    <SelectorUnit id="sv3#area12#opg8#seu80" name="Seleziona Stato Ordine" gr:x="195" gr:y="0" entity="ent10">
+      <Selector id="sv3#area12#opg8#seu80#su115" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#opg8#seu80#su115#rcond48" name="RoleCondition14" predicate="in" implied="false" role="rel12#role23"/>
+      </Selector>
+      <OKLink id="sv3#area12#opg8#seu80#oln22" name="OKFlow22" to="sv3#area12#opg8#cnu6">
+        <LinkParameter id="sv3#area12#opg8#seu80#oln22#par163" name="oid_KeyCondition22 [oid] [Stato ordine] [Source]" source="ent10#att37Array" target="sv3#area12#opg8#cnu6#su116#kcond66.ent10#att37"/>
+        <LinkParameter id="sv3#area12#opg8#seu80#oln22#par164" name="oid_PASSING" source="ent10#att37Array" passing="true"/>
+      </OKLink>
+      <KOLink id="sv3#area12#opg8#seu80#kln34" name="KOFlow34" to="sv3#area12#page25" automaticCoupling="true" gr:bendpoints="158,252,248,-243"/>
+    </SelectorUnit>
+    <ConnectUnit id="sv3#area12#opg8#cnu6" name="Connect stato_dipendente" gr:x="70" gr:y="160" relationship="rel16#role32">
+      <SourceSelector id="sv3#area12#opg8#cnu6#su116" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#opg8#cnu6#su116#kcond66" name="KeyCondition22" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area12#opg8#cnu6#su117" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#opg8#cnu6#su117#kcond67" name="KeyCondition23" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#area12#opg8#cnu6#oln23" name="OKFlow23" to="sv3#area12#opg8#mfu6">
+        <LinkParameter id="sv3#area12#opg8#cnu6#oln23#par165" name="oid_PASSING_KeyCondition69 [oid]" sourceLinkParameter="sv3#area12#opg8#seu80#oln22#par164" target="sv3#area12#opg8#mfu6#su121#kcond69.ent10#att37"/>
+        <LinkParameter id="sv3#area12#opg8#cnu6#oln23#par166" name="Preso in carico_stato" sourceValue="Preso in carico" target="sv3#area12#opg8#mfu6.ent10#att38"/>
+      </OKLink>
+      <KOLink id="sv3#area12#opg8#cnu6#kln35" name="KOFlow35" to="sv3#area12#page25" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ModifyUnit gr:x="70" gr:y="335" id="sv3#area12#opg8#mfu6" name="Modifica stato" entity="ent10">
+      <Selector id="sv3#area12#opg8#mfu6#su121" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#opg8#mfu6#su121#kcond69" name="KeyCondition69" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#area12#opg8#mfu6#oln24" name="OKFlow24" to="sv3#area12#page23" automaticCoupling="true"/>
+      <KOLink id="sv3#area12#opg8#mfu6#kln36" name="KOFlow36" to="sv3#area12#page25" automaticCoupling="true"/>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationGroup>

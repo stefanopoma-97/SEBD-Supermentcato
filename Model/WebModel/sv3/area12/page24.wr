@@ -1,51 +1,46 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="300" gr:y="300" id="sv3#area12#page24" name="Dettagli Spesa">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="450" gr:y="795" id="sv3#area12#page24" name="Dettagli Spesa" linkOrder="sv3#area12#page24#ln199">
   <ContentUnits>
-    <DataUnit gr:x="30" gr:y="0" id="sv3#area12#page24#dau7" name="Dettagli Spesa" entity="ent9" displayAll="true">
+    <DataUnit gr:x="35" gr:y="5" id="sv3#area12#page24#dau7" name="Dettagli Spesa" entity="ent9" displayAttributes="ent9#att35 ent9#att36 ent9#att34 rel17#role33.ent3#att9 rel12#role23.ent10#att38">
       <Selector id="sv3#area12#page24#dau7#su34" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area12#page24#dau7#su34#kcond18" name="KeyCondition18" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv3#area12#page24#dau7#ln56" name="Flow56" to="sv3#area12#page24#seu28" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv3#area12#page24#dau7#ln83" name="Flow83" to="sv3#area12#page24#seu36" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
-    <SelectorUnit gr:x="195" gr:y="0" id="sv3#area12#page24#seu28" name="Seleziona Stato ordine" entity="ent10">
+    <SelectorUnit gr:x="225" gr:y="5" id="sv3#area12#page24#seu28" name="Seleziona Stato ordine" entity="ent10">
       <Selector id="sv3#area12#page24#seu28#su35" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area12#page24#seu28#su35#rcond13" name="Stato_ordine-spesa" predicate="in" implied="false" role="rel12#role23"/>
       </Selector>
       <Link id="sv3#area12#page24#seu28#ln57" name="Flow57" to="sv3#area12#page24#dau8" automaticCoupling="true" type="transport" validate="true"/>
-      <Link id="sv3#area12#page24#seu28#ln35" name="Flow35" to="sv3#area12#page24#enu7" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#area12#page24#seu28#ln198" name="Flow198" to="sv3#area12#opg7#mfu4" type="transport" validate="true">
+        <LinkParameter id="sv3#area12#page24#seu28#ln198#par159" name="oid_KeyCondition64 [oid]" source="ent10#att37Array" target="sv3#area12#opg7#mfu4#su113#kcond65.ent10#att37"/>
+        <LinkParameter id="sv3#area12#page24#seu28#ln198#par160" name="Stato 2_stato" sourceValue="Stato 2" target="sv3#area12#opg7#mfu4.ent10#att38"/>
+      </Link>
     </SelectorUnit>
-    <DataUnit gr:x="200" gr:y="127" id="sv3#area12#page24#dau8" name="Dettagli Stato ordine" entity="ent10" displayAll="true">
+    <DataUnit gr:x="230" gr:y="190" id="sv3#area12#page24#dau8" name="Dettagli Stato ordine" entity="ent10" displayAll="true">
       <Selector id="sv3#area12#page24#dau8#su36" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area12#page24#dau8#su36#kcond19" name="KeyCondition19" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <SelectorUnit gr:x="0" gr:y="127" id="sv3#area12#page24#seu36" name="Seleziona Riga d'ordine" entity="ent7">
+    <SelectorUnit gr:x="0" gr:y="175" id="sv3#area12#page24#seu36" name="Seleziona Riga d'ordine" entity="ent7">
       <Selector id="sv3#area12#page24#seu36#su45" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area12#page24#seu36#su45#rcond15" name="RigheSpesa" predicate="in" implied="false" role="rel10#role20"/>
       </Selector>
       <Link id="sv3#area12#page24#seu36#ln84" name="Flow84" to="sv3#area12#page24#pwu6" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <PowerIndexUnit gr:x="30" gr:y="250" id="sv3#area12#page24#pwu6" name="Righe d'ordine" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att28 ent7#att29 ent7#att40">
+    <PowerIndexUnit gr:x="45" gr:y="310" id="sv3#area12#page24#pwu6" name="Righe d'ordine" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att28 ent7#att29 ent7#att40">
       <SortAttribute attribute="ent7#att29" order="descending"/>
     </PowerIndexUnit>
-    <EntryUnit gr:x="390" gr:y="5" id="sv3#area12#page24#enu7" name="Chiedi nuovo stato" entity="ent10" fieldOrder="sv3#area12#page24#enu7#sfld3" linkOrder="sv3#area12#page24#enu7#ln8">
-      <SelectionField id="sv3#area12#page24#enu7#sfld3" name="Seleziona nuovo stato" type="string" attribute="ent10#att38"/>
-      <Link id="sv3#area12#page24#enu7#ln8" name="Flow8" to="sv3#area12#mfu1" automaticCoupling="true" type="normal" validate="true"/>
-    </EntryUnit>
-    <SelectorUnit gr:x="380" gr:y="132" id="sv3#area12#page24#seu22" name="Seleziona Stati ordine" entity="ent10">
-      <Link id="sv3#area12#page24#seu22#ln39" name="Flow39" to="sv3#area12#page24#enu7" type="transport" validate="true">
-        <LinkParameter id="sv3#area12#page24#seu22#ln39#par15" name="stato_Seleziona nuovo stato [label]" source="ent10#att38Array" target="sv3#area12#page24#enu7#sfld3_label"/>
-        <LinkParameter id="sv3#area12#page24#seu22#ln39#par16" name="oid_Seleziona nuovo stato [output]" source="ent10#att37Array" target="sv3#area12#page24#enu7#sfld3_output"/>
-      </Link>
-    </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv3#area12#page24#dau7">
-          <layout:Attribute attribute="ent9#att34"/>
           <layout:Attribute attribute="ent9#att35"/>
           <layout:Attribute attribute="ent9#att36"/>
+          <layout:Attribute attribute="ent9#att34"/>
+          <layout:Attribute attribute="rel17#role33.ent3#att9"/>
+          <layout:Attribute attribute="rel12#role23.ent10#att38"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -102,12 +97,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv3#area12#page24#enu7">
-          <layout:Field field="sv3#area12#page24#enu7#sfld3"/>
-          <layout:Link link="sv3#area12#page24#enu7#ln8"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -135,4 +125,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv3#area12#page24#ln199" name="Prossimo stato" to="sv3#area12#opg7#mfu4" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="401,-93,-234,77"/>
 </Page>

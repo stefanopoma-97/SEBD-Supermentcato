@@ -3,7 +3,7 @@
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv1#area11#page18#mssu11" name="Messaggio">
       <Message xml:space="preserve">Inserisci tutti i campi richiesti</Message>
     </MultiMessageUnit>
-    <EntryUnit gr:x="350" gr:y="170" id="sv1#area11#page18#enu6" name="Creazione utente" fieldOrder="sv1#area11#page18#enu6#fld10 sv1#area11#page18#enu6#fld11 sv1#area11#page18#enu6#fld8 sv1#area11#page18#enu6#fld9 sv1#area11#page18#enu6#fld12 sv1#area11#page18#enu6#sfld7 sv1#area11#page18#enu6#fld14 sv1#area11#page18#enu6#fld15 sv1#area11#page18#enu6#sfld8" linkOrder="sv1#area11#page18#enu6#ln78">
+    <EntryUnit gr:x="300" gr:y="165" id="sv1#area11#page18#enu6" name="Creazione utente" fieldOrder="sv1#area11#page18#enu6#fld10 sv1#area11#page18#enu6#fld11 sv1#area11#page18#enu6#fld8 sv1#area11#page18#enu6#fld9 sv1#area11#page18#enu6#fld12 sv1#area11#page18#enu6#sfld7 sv1#area11#page18#enu6#fld14 sv1#area11#page18#enu6#fld15 sv1#area11#page18#enu6#sfld8" linkOrder="sv1#area11#page18#enu6#ln78">
       <Field id="sv1#area11#page18#enu6#fld8" name="Nome" type="string" modifiable="true"/>
       <Field id="sv1#area11#page18#enu6#fld9" name="Cognome" type="string" modifiable="true"/>
       <Field id="sv1#area11#page18#enu6#fld10" name="UserName" type="string" modifiable="true"/>

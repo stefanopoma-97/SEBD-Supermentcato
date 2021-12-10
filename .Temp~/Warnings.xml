@@ -1,66 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Warnings> 
-  <Warning xpath="id('sv3#area3#page3#seu30#ln60')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow60"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow60'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv3#area3#page3#gtu7#ln59')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow59"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow59'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv3#area12#page23#seu35#ln74')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow60"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow60'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv3#area12#page23#gtu8#ln77')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow59"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow59'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv3#area12#page23#gtu8#ln80')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow80"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow80'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv3#area12#page24#dau7#ln82')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow82"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow82'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv3#area12#cnu1#kln11')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow11"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow11'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv3#area12#cnu1')" rootXPath="id('sv3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Connect stato_dipendente"> 
-    <Message>The mandatory input parameter 'KeyCondition23 [oid] [Dipendente] [Target]' is not provided to the component 'Connect stato_dipendente'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv3#area12#seu33')" rootXPath="id('sv3')" error="false" label="Seleziona Stato Ordine" key="NO_OUTGOING_OK_LINKS"> 
-    <Message>No outgoing OK flow(s) for the operation 'Seleziona Stato Ordine'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv3#area12#seu33')" rootXPath="id('sv3')" error="false" label="Seleziona Stato Ordine" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'Seleziona Stato Ordine'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv3#area12#mfu1')" rootXPath="id('sv3')" error="false" label="Update Stato ordine" key="NO_OUTGOING_OK_LINKS"> 
-    <Message>No outgoing OK flow(s) for the operation 'Update Stato ordine'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv3#area12#mfu1')" rootXPath="id('sv3')" error="false" label="Update Stato ordine" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'Update Stato ordine'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv3#area12#mfu1')" rootXPath="id('sv3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Update Stato ordine"> 
-    <Message>The mandatory input parameter 'KeyCondition26 [oid]' is not provided to the component 'Update Stato ordine'</Message> 
-  </Warning>
-  <Warning xpath="id('sv3#area3#page3#seu14')" rootXPath="id('sv3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Seleziona Spese"> 
-    <Message>The mandatory input parameter 'SpeseNegozio [oid]' is not provided to the component 'Seleziona Spese'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv3#area3#page3#seu30')" rootXPath="id('sv3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Seleziona Negozio"> 
-    <Message>The mandatory input parameter 'KeyCondition20 [oid]' is not provided to the component 'Seleziona Negozio'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv3#area12#page23#seu34')" rootXPath="id('sv3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Seleziona Spese"> 
-    <Message>The mandatory input parameter 'SpeseNegozio [oid]' is not provided to the component 'Seleziona Spese'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv3#area12#page23#seu35')" rootXPath="id('sv3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Seleziona Negozio"> 
-    <Message>The mandatory input parameter 'KeyCondition20 [oid]' is not provided to the component 'Seleziona Negozio'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv3#area6#page1')" rootXPath="id('sv3')" label="Dettagli Profilo"> 
-    <Message>Security Warning: the public page 'Dettagli Profilo' shows information about the user</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="protected" value="true">Protect the page</Resolution> 
+  <Warning xpath="id('db1')" rootXPath="/WebProject/DataModel" key="DISCONNECTED_DATABASE" tab="mapping" label="supermercati"> 
+    <Message>The database 'supermercati' is not connected: unable to perform a deep analysis</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RefreshDatabaseResolutionGenerator">Refresh the database</Resolution> 
   </Warning> 
 </Warnings>
