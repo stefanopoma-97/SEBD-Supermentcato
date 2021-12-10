@@ -14,12 +14,13 @@
         <RelationshipRoleCondition id="sv4#area15#page31#seu44#su63#rcond31" name="NegozioResponsabile" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
       <Link id="sv4#area15#page31#seu44#ln113" name="Flow47" to="sv4#area15#page31#seu43" type="transport" automaticCoupling="true" validate="true"/>
-      <Link id="sv4#area15#page31#seu44#ln124" name="Flow124" to="sv4#area15#cnu4" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
     <PowerIndexUnit id="sv4#area15#page31#pwu8" name="Prodotti Online" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent8" displayAttributes="ent8#att31 rel8#role15.ent4#att15 rel8#role15.ent4#att16 rel8#role15.ent4#att17 rel8#role15.ent4#att18 rel8#role15.ent4#att53 rel8#role15.ent4#att59 rel8#role15.ent4#att60" linkOrder="sv4#area15#page31#pwu8#ln117">
       <SortAttribute attribute="rel8#role15.ent4#att18" order="descending"/>
       <SortAttribute attribute="rel8#role15.ent4#att15" order="ascending"/>
-      <Link id="sv4#area15#page31#pwu8#ln117" name="Dettagli" to="sv4#area15#page32#dau15" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv4#area15#page31#pwu8#ln117" name="Dettagli" to="sv4#area15#page32#dau15" type="normal" validate="true">
+        <LinkParameter id="sv4#area15#page31#pwu8#ln117#par76" name="Prodotto onlineToProdotto.oid_KeyCondition34 [oid]" source="data[].rel8#role15_ent4#att14" target="sv4#area15#page32#dau15#su64#kcond34.ent4#att14"/>
+      </Link>
     </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

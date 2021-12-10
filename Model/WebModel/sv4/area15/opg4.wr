@@ -1,0 +1,10 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="325" id="sv4#area15#opg4" name="Rimuovi prodotto online" transaction="true">
+  <OperationUnits>
+    <DeleteUnit id="sv4#area15#opg4#dlu3" name="Rimuovi prodotto online" gr:x="0" gr:y="0" entity="ent8">
+      <Selector id="sv4#area15#opg4#dlu3#su44" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area15#opg4#dlu3#su44#rcond23" name="ProdottoOnlineProdotto" predicate="in" implied="false" role="rel8#role16"/>
+      </Selector>
+      <OKLink id="sv4#area15#opg4#dlu3#oln2" name="OKFlow2" to="sv4#area15#page31" automaticCoupling="true"/>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>

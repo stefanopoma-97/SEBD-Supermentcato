@@ -1,17 +1,36 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="850" gr:y="180" id="sv4#area15#page34" name="Crea prodotto online">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="850" gr:y="170" id="sv4#area15#page34" name="Crea prodotto online">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv4#area15#page34#enu11" name="Inserisci dati prodotto online" linkOrder="sv4#area15#page34#enu11#ln121 sv4#area15#page34#enu11#ln126">
+    <EntryUnit gr:x="0" gr:y="10" id="sv4#area15#page34#enu11" name="Inserisci dati prodotto online" linkOrder="sv4#area15#page34#enu11#ln42">
       <SelectionField id="sv4#area15#page34#enu11#sfld11" name="Prodotti" type="string"/>
-      <Link id="sv4#area15#page34#enu11#ln121" name="Flow121" to="sv4#area15#cru4" automaticCoupling="true" type="normal" validate="true"/>
-      <Link id="sv4#area15#page34#enu11#ln126" name="Flow126" to="sv4#area15#cnu5" type="normal" validate="true">
-        <LinkParameter id="sv4#area15#page34#enu11#ln126#par23" name="Prodotti_KeyCondition38 [oid] [Prodotto online] [Source]" source="sv4#area15#page34#enu11#sfld11" target="sv4#area15#cnu5#su68#kcond38.ent8#att31"/>
+      <Link id="sv4#area15#page34#enu11#ln42" name="Metti online" to="sv4#area15#opg9#cru5" type="normal" validate="true">
+        <LinkParameter id="sv4#area15#page34#enu11#ln42#par58" name="Prodotti_PASSING" source="sv4#area15#page34#enu11#sfld11" passing="true"/>
+        <LinkParameter id="sv4#area15#page34#enu11#ln42#par65" name="oid_PASSING" sourceLinkParameter="sv4#area15#page34#seu6#ln62#par64" passing="true"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit id="sv4#area15#page34#seu45" name="Seleziona prodotti" gr:x="40" gr:y="110" entity="ent4">
+    <SelectorUnit id="sv4#area15#page34#seu45" name="Seleziona prodotti" gr:x="40" gr:y="120" entity="ent4">
       <Link id="sv4#area15#page34#seu45#ln120" name="Flow120" to="sv4#area15#page34#enu11" type="transport" validate="true">
         <LinkParameter id="sv4#area15#page34#seu45#ln120#par18" name="nome_Prodotti [label]" source="ent4#att15Array" target="sv4#area15#page34#enu11#sfld11_label"/>
         <LinkParameter id="sv4#area15#page34#seu45#ln120#par19" name="oid_Prodotti [output]" source="ent4#att14Array" target="sv4#area15#page34#enu11#sfld11_output"/>
       </Link>
+      <Selector id="sv4#area15#page34#seu45#su67" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area15#page34#seu45#su67#rcond27" name="ProdottoOnlineProdotto" predicate="notIn" implied="false" role="rel8#role15"/>
+      </Selector>
+    </SelectorUnit>
+    <GetUnit id="sv4#area15#page34#gtu11" name="Get Info Responsabile" gr:x="555" gr:y="5" contextParameters="UserCtxParam">
+      <Link id="sv4#area15#page34#gtu11#ln60" name="Flow40" to="sv4#area15#page34#seu6" type="transport" validate="true">
+        <LinkParameter id="sv4#area15#page34#gtu11#ln60#par77" name="UserCtxParam.oid_NegozioResponsabile [oid]" source="sv4#area15#page34#gtu11.UserCtxParam" target="sv4#area15#page34#seu6#su66#rcond24.userOID"/>
+      </Link>
+    </GetUnit>
+    <SelectorUnit id="sv4#area15#page34#seu6" name="Seleziona Negozio del responsabile" gr:x="255" gr:y="0" entity="ent3">
+      <Selector id="sv4#area15#page34#seu6#su66" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area15#page34#seu6#su66#rcond24" name="NegozioResponsabile" predicate="in" implied="false" role="rel14#role27"/>
+      </Selector>
+      <Link id="sv4#area15#page34#seu6#ln62" name="Flow47" to="sv4#area15#page34#enu11" type="transport" validate="true">
+        <LinkParameter id="sv4#area15#page34#seu6#ln62#par64" name="oid_PASSING" source="ent3#att8Array" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="290" gr:y="115" id="sv4#area15#page34#seu10" name="Seleziona prodotti online" entity="ent8">
+      <Link id="sv4#area15#page34#seu10#ln64" name="Flow64" to="sv4#area15#page34#seu45" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -19,10 +38,23 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area15#page34#enu11">
           <layout:Field field="sv4#area15#page34#enu11#sfld11"/>
-          <layout:Link link="sv4#area15#page34#enu11#ln121"/>
-          <layout:Link link="sv4#area15#page34#enu11#ln126"/>
+          <layout:Link link="sv4#area15#page34#enu11#ln42"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

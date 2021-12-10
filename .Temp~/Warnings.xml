@@ -1,8 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Warnings> 
-  <Warning xpath="id('db1')" rootXPath="/WebProject/DataModel" key="DISCONNECTED_DATABASE" tab="mapping" label="supermercati"> 
-    <Message>The database 'supermercati' is not connected: unable to perform a deep analysis</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.RefreshDatabaseResolutionGenerator">Refresh the database</Resolution> 
+  <Warning xpath="id('sv4#area13#page26#gtu2#ln54')" rootXPath="id('sv4')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow54"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow54'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#area13#page26#gtu2#ln61')" rootXPath="id('sv4')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow61"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow61'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#cru1#ln101')" rootXPath="id('sv4')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow101"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow101'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#page29#enu8#ln110')" rootXPath="id('sv4')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow110"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow110'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#page29#seu42#ln93')" rootXPath="id('sv4')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow93"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow93'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#page30#enu9#ln106')" rootXPath="id('sv4')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow106"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow106'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#page28#dau14#ln105')" rootXPath="id('sv4')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Modifica"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Modifica'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#page27#gtu3#ln79')" rootXPath="id('sv4')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow40"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow40'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#area15#page31#gtu4#ln112')" rootXPath="id('sv4')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow40"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow40'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#area15#page31#pwu8#ln117')" rootXPath="id('sv4')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Dettagli"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Dettagli'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#cru1')" rootXPath="id('sv4')" error="false" label="Crea promozione" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Crea promozione'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#cru1')" rootXPath="id('sv4')" error="false" label="Crea promozione" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Crea promozione'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#cnu2')" rootXPath="id('sv4')" error="false" label="Connetti promozione a negozio" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Connetti promozione a negozio'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#cnu2')" rootXPath="id('sv4')" error="false" label="Connetti promozione a negozio" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Connetti promozione a negozio'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#cnu3')" rootXPath="id('sv4')" error="false" label="Connetti promozione a prodotto" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Connetti promozione a prodotto'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#cnu3')" rootXPath="id('sv4')" error="false" label="Connetti promozione a prodotto" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Connetti promozione a prodotto'</Message> 
+  </Warning>  
+  <Warning error="true" xpath="id('sv4#area14#cnu3')" rootXPath="id('sv4')" key="" label="Connetti promozione a prodotto"> 
+    <Message>The relationship role for the component 'Connetti promozione a prodotto' is unspecified</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#mfu2')" rootXPath="id('sv4')" error="false" label="Modifica promozione" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Modifica promozione'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#mfu2')" rootXPath="id('sv4')" error="false" label="Modifica promozione" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Modifica promozione'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#mfu2')" rootXPath="id('sv4')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Modifica promozione"> 
+    <Message>The mandatory input parameter 'KeyCondition29 [oid]' is not provided to the component 'Modifica promozione'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#dlu1')" rootXPath="id('sv4')" error="false" label="Elimina promozione" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Elimina promozione'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#dlu1')" rootXPath="id('sv4')" error="false" label="Elimina promozione" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Elimina promozione'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area15#opg4#dlu3')" rootXPath="id('sv4')" error="false" label="Rimuovi prodotto online" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Rimuovi prodotto online'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area15#opg9#cru5')" rootXPath="id('sv4')" error="false" label="Crea prodotto online" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Crea prodotto online'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area15#opg9#cnu1')" rootXPath="id('sv4')" error="false" label="Connetti prodotto online a prodotto" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Connetti prodotto online a prodotto'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area15#opg9#cnu4')" rootXPath="id('sv4')" error="false" label="Connetti prodotto online a negozio" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Connetti prodotto online a negozio'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area13#page26#dau6')" rootXPath="id('sv4')" key="NO_DISPLAY_ATTRIBUTES" label="Dettagli responsabile"> 
+    <Message>No attributes to display are specified for the component 'Dettagli responsabile'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area13#page26#dau6')" rootXPath="id('sv4')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Dettagli responsabile"> 
+    <Message>The mandatory input parameter 'KeyCondition4 [oid]' is not provided to the component 'Dettagli responsabile'</Message> 
+  </Warning>
+  <Warning xpath="id('sv4#area13#page26#seu27')" rootXPath="id('sv4')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Seleziona negozio del responsabile"> 
+    <Message>The mandatory input parameter 'NegozioResponsabile [oid]' is not provided to the component 'Seleziona negozio del responsabile'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area13#page26#dau11')" rootXPath="id('sv4')" key="NO_DISPLAY_ATTRIBUTES" label="Dettagli negozio"> 
+    <Message>No attributes to display are specified for the component 'Dettagli negozio'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area13#page26#dau13')" rootXPath="id('sv4')" key="NO_DISPLAY_ATTRIBUTES" label="Dettagli indirizzo"> 
+    <Message>No attributes to display are specified for the component 'Dettagli indirizzo'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#page30#enu9')" rootXPath="id('sv4')" key="MISSING_MANDATORY_OUTPUT_PARAMETER" label="Modifica promozione"> 
+    <Message>The mandatory output parameter 'In negozio' is not transported along an outgoing flow from the component 'Modifica promozione'</Message> 
+  </Warning>
+  <Warning xpath="id('sv4#area14#page30#enu9')" rootXPath="id('sv4')" key="MISSING_MANDATORY_OUTPUT_PARAMETER" label="Modifica promozione"> 
+    <Message>The mandatory output parameter 'Online' is not transported along an outgoing flow from the component 'Modifica promozione'</Message> 
+  </Warning>
+  <Warning xpath="id('sv4#area14#page30#enu9')" rootXPath="id('sv4')" key="MISSING_MANDATORY_OUTPUT_PARAMETER" label="Modifica promozione"> 
+    <Message>The mandatory output parameter 'Scadenza' is not transported along an outgoing flow from the component 'Modifica promozione'</Message> 
+  </Warning>
+  <Warning xpath="id('sv4#area14#page30#enu9')" rootXPath="id('sv4')" key="MISSING_MANDATORY_OUTPUT_PARAMETER" label="Modifica promozione"> 
+    <Message>The mandatory output parameter 'Sconto' is not transported along an outgoing flow from the component 'Modifica promozione'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area14#page28#dau14')" rootXPath="id('sv4')" key="NO_DISPLAY_ATTRIBUTES" label="Dettagli promozione"> 
+    <Message>No attributes to display are specified for the component 'Dettagli promozione'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area14#page27#seu35')" rootXPath="id('sv4')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Seleziona Negozio del responsabile"> 
+    <Message>The mandatory input parameter 'NegozioResponsabile [oid]' is not provided to the component 'Seleziona Negozio del responsabile'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area15#page31#seu44')" rootXPath="id('sv4')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Seleziona Negozio del responsabile"> 
+    <Message>The mandatory input parameter 'NegozioResponsabile [oid]' is not provided to the component 'Seleziona Negozio del responsabile'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area4#page4#scu5')" rootXPath="id('sv4')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Seleziona prodotti online del negozio"> 
+    <Message>Sorting attribute are unspecified for the component 'Seleziona prodotti online del negozio'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area4#page4#scu11')" rootXPath="id('sv4')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Seleziona promozioni del negozio"> 
+    <Message>Sorting attribute are unspecified for the component 'Seleziona promozioni del negozio'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area13#page26')" rootXPath="id('sv4')" label="Dettagli profilo"> 
+    <Message>Security Warning: the public page 'Dettagli profilo' shows information about the user</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="protected" value="true">Protect the page</Resolution> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area14#page30')" rootXPath="id('sv4')" key="" label="Modifica promozione"> 
+    <Message>Security Warning: the page 'Modifica promozione' is public but no captcha field is configured on its form component</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area15#page34')" rootXPath="id('sv4')" key="" label="Crea prodotto online"> 
+    <Message>Security Warning: the page 'Crea prodotto online' is public but no captcha field is configured on its form component</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area14#page29')" rootXPath="id('sv4')" key="" label="Crea promozione"> 
+    <Message>Security Warning: the page 'Crea promozione' is public but no captcha field is configured on its form component</Message> 
   </Warning> 
 </Warnings>

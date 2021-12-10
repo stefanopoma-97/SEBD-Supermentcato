@@ -21,6 +21,9 @@
       <SortAttribute attribute="ent6#att23" order="descending"/>
       <Link id="sv4#area14#page27#pwu5#ln81" name="Dettagli" to="sv4#area14#page28#dau14" automaticCoupling="true" type="normal" validate="true"/>
       <Link id="sv4#area14#page27#pwu5#ln107" name="Elimina" to="sv4#area14#dlu1" automaticCoupling="true" type="normal" validate="true"/>
+      <Selector id="sv4#area14#page27#pwu5#su38" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area14#page27#pwu5#su38#kcond22" name="KeyCondition22" predicate="in" implied="false"/>
+      </Selector>
     </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

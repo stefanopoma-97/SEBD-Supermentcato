@@ -1,19 +1,24 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="160" id="sv4#area15#page32" name="Dettagli prodotto online">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv4#area15#page32#dau15" name="Dettagli prodotto online" entity="ent8" displayAttributes="rel8#role15.ent4#att15 rel8#role15.ent4#att16 rel8#role15.ent4#att17">
+    <DataUnit gr:x="0" gr:y="0" id="sv4#area15#page32#dau15" name="Dettagli prodotto online" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60">
       <Selector id="sv4#area15#page32#dau15#su64" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area15#page32#dau15#su64#kcond34" name="KeyCondition34" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv4#area15#page32#dau15#ln118" name="Rimuovi" to="sv4#area15#dlu2" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv4#area15#page32#dau15#ln36" name="Rimuovi" to="sv4#area15#opg4#dlu3" type="transport" automaticCoupling="true" validate="true"/>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area15#page32#dau15">
-          <layout:Attribute attribute="rel8#role15.ent4#att15"/>
-          <layout:Attribute attribute="rel8#role15.ent4#att16"/>
-          <layout:Attribute attribute="rel8#role15.ent4#att17"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att27"/>
+          <layout:Attribute attribute="ent4#att53"/>
+          <layout:Attribute attribute="ent4#att59"/>
+          <layout:Attribute attribute="ent4#att60"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

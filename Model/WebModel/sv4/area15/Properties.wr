@@ -1,29 +1,3 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1830" gr:y="-225" id="sv4#area15" name="Prodotti online" landmark="true" defaultPage="sv4#area15#page31">
-  <OperationUnits>
-    <DeleteUnit gr:x="10" gr:y="340" id="sv4#area15#dlu2" name="Rimuovi prodotto online" entity="ent8">
-      <Selector id="sv4#area15#dlu2#su65" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv4#area15#dlu2#su65#kcond35" name="KeyCondition35" predicate="in" implied="false"/>
-      </Selector>
-    </DeleteUnit>
-    <CreateUnit gr:x="615" gr:y="190" id="sv4#area15#cru4" name="Crea prodotto online" entity="ent8" linkOrder="sv4#area15#cru4#ln123 sv4#area15#cru4#ln125">
-      <Link id="sv4#area15#cru4#ln123" name="Flow123" to="sv4#area15#cnu4" automaticCoupling="true" type="transport" validate="true"/>
-      <Link id="sv4#area15#cru4#ln125" name="Flow125" to="sv4#area15#cnu5" automaticCoupling="true" type="transport" validate="true"/>
-    </CreateUnit>
-    <ConnectUnit gr:x="300" gr:y="175" id="sv4#area15#cnu4" name="Connetti prodotto online a negozio" relationship="rel7#role13">
-      <SourceSelector id="sv4#area15#cnu4#su66" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv4#area15#cnu4#su66#kcond36" name="KeyCondition36" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv4#area15#cnu4#su67" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv4#area15#cnu4#su67#kcond37" name="KeyCondition37" predicate="in" implied="false"/>
-      </TargetSelector>
-    </ConnectUnit>
-    <ConnectUnit gr:x="535" gr:y="340" id="sv4#area15#cnu5" name="Connetti prodotto online a prodotto" relationship="rel8#role15">
-      <SourceSelector id="sv4#area15#cnu5#su68" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv4#area15#cnu5#su68#kcond38" name="KeyCondition38" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv4#area15#cnu5#su69" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv4#area15#cnu5#su69#kcond39" name="KeyCondition39" predicate="in" implied="false"/>
-      </TargetSelector>
-    </ConnectUnit>
-  </OperationUnits>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1140" gr:y="-485" id="sv4#area15" name="Prodotti online" landmark="true" defaultPage="sv4#area15#page31">
+  <OperationUnits/>
 </Area>
