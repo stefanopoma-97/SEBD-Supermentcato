@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="115" gr:y="865" id="sv3#area12#page25" name="Errore Stato ordine">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="200" id="sv3#area12#page25" name="Errore Stato ordine">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#area12#page25#mssu13" name="Errore stato ordine">
       <Message xml:space="preserve">Impossibile associarsi a questa spesa</Message>

@@ -1,11 +1,11 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv3#area6#page1" name="Dettagli Profilo">
   <ContentUnits>
-    <DataUnit gr:x="280" gr:y="0" id="sv3#area6#page1#dau1" name="Dettagli dipendente" entity="ent14" displayAttributes="userName email ent12#att52 ent12#att51 ent14#att54">
+    <DataUnit gr:x="180" gr:y="0" id="sv3#area6#page1#dau1" name="Dettagli dipendente" entity="ent14" displayAttributes="userName email ent12#att52 ent12#att51 ent14#att54">
       <Selector id="sv3#area6#page1#dau1#su1" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area6#page1#dau1#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <GetUnit gr:x="15" gr:y="10" id="sv3#area6#page1#gtu5" name="Info dipendente" contextParameters="UserCtxParam">
+    <GetUnit gr:x="5" gr:y="5" id="sv3#area6#page1#gtu5" name="Info dipendente" contextParameters="UserCtxParam">
       <Link id="sv3#area6#page1#gtu5#ln44" name="Flow44" to="sv3#area6#page1#dau1" type="transport" validate="true">
         <LinkParameter id="sv3#area6#page1#gtu5#ln44#par150" name="UserCtxParam.oid_KeyCondition1 [oid]" source="sv3#area6#page1#gtu5.UserCtxParam" target="sv3#area6#page1#dau1#su1#kcond1.userOID"/>
       </Link>
@@ -13,17 +13,17 @@
         <LinkParameter id="sv3#area6#page1#gtu5#ln92#par151" name="UserCtxParam.oid_NegozioDipendente [oid]" source="sv3#area6#page1#gtu5.UserCtxParam" target="sv3#area6#page1#seu39#su50#rcond26.userOID"/>
       </Link>
     </GetUnit>
-    <DataUnit gr:x="285" gr:y="155" id="sv3#area6#page1#dau9" name="Dettagli negozio" entity="ent3" displayAll="true">
+    <DataUnit gr:x="195" gr:y="125" id="sv3#area6#page1#dau9" name="Dettagli negozio" entity="ent3" displayAll="true">
       <Selector id="sv3#area6#page1#dau9#su48" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area6#page1#dau9#su48#kcond31" name="Negozio" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <DataUnit gr:x="250" gr:y="300" id="sv3#area6#page1#dau10" name="Indirizzo negozio" entity="ent2" displayAll="true">
+    <DataUnit gr:x="0" gr:y="240" id="sv3#area6#page1#dau10" name="Indirizzo negozio" entity="ent2" displayAll="true">
       <Selector id="sv3#area6#page1#dau10#su49" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area6#page1#dau10#su49#rcond45" name="NegozioToIndirizzo" predicate="in" implied="false" role="rel2#role3"/>
       </Selector>
     </DataUnit>
-    <SelectorUnit gr:x="10" gr:y="150" id="sv3#area6#page1#seu39" name="Seleziona negozio" entity="ent3">
+    <SelectorUnit gr:x="0" gr:y="125" id="sv3#area6#page1#seu39" name="Seleziona negozio" entity="ent3">
       <Selector id="sv3#area6#page1#seu39#su50" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area6#page1#seu39#su50#rcond26" name="NegozioDipendente" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>

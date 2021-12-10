@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="625" gr:y="0" id="sv3#area12#page23" name="Spese">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="735" gr:y="40" id="sv3#area12#page23" name="Spese">
   <ContentUnits>
-    <GetUnit id="sv3#area12#page23#gtu9" name="Info Dipendente" gr:x="50" gr:y="15" contextParameters="UserCtxParam">
+    <GetUnit id="sv3#area12#page23#gtu9" name="Info Dipendente" gr:x="605" gr:y="215" contextParameters="UserCtxParam">
       <Link id="sv3#area12#page23#gtu9#ln85" name="Flow59" to="sv3#area12#page23#seu37" type="transport" validate="true">
         <LinkParameter id="sv3#area12#page23#gtu9#ln85#par167" name="UserCtxParam.oid_NegozioDipendente [oid]" source="sv3#area12#page23#gtu9.UserCtxParam" target="sv3#area12#page23#seu37#su46#rcond21.userOID"/>
       </Link>
@@ -8,7 +8,7 @@
         <LinkParameter id="sv3#area12#page23#gtu9#ln209#par162" name="UserCtxParam.oid_StatoToDipendente [oid]" source="sv3#area12#page23#gtu9.UserCtxParam" target="sv3#area12#page23#seu82#su119#rcond51.userOID"/>
       </Link>
     </GetUnit>
-    <PowerIndexUnit id="sv3#area12#page23#pwu7" name="Lista Spese in attesa" gr:x="5" gr:y="235" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att34 ent9#att35 ent9#att36 rel12#role23.ent10#att38 rel17#role33.ent3#att9" linkOrder="sv3#area12#page23#pwu7#ln202">
+    <PowerIndexUnit id="sv3#area12#page23#pwu7" name="Lista Spese in attesa" gr:x="0" gr:y="150" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att34 ent9#att35 ent9#att36 rel12#role23.ent10#att38 rel17#role33.ent3#att9" linkOrder="sv3#area12#page23#pwu7#ln202">
       <SortAttribute attribute="rel12#role23.ent10#att38" order="ascending"/>
       <SortAttribute attribute="ent9#att34" order="descending"/>
       <SortAttribute attribute="ent9#att35" order="ascending"/>
@@ -17,13 +17,13 @@
         <KeyCondition id="sv3#area12#page23#pwu7#su130#kcond74" name="KeyCondition74" predicate="in" implied="false"/>
       </Selector>
     </PowerIndexUnit>
-    <SelectorUnit id="sv3#area12#page23#seu37" name="Seleziona Negozio" gr:x="310" gr:y="10" entity="ent3">
+    <SelectorUnit id="sv3#area12#page23#seu37" name="Seleziona Negozio" gr:x="395" gr:y="155" entity="ent3">
       <Selector id="sv3#area12#page23#seu37#su46" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area12#page23#seu37#su46#rcond21" name="NegozioDipendente" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
       <Link id="sv3#area12#page23#seu37#ln215" name="Flow215" to="sv3#area12#page23#scu6" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <ScrollerUnit id="sv3#area12#page23#scu6" name="Scroll Spese" linkOrder="sv3#area12#page23#scu6#ln88" gr:x="255" gr:y="220" useCountQuery="false" entity="ent9" blockFactor="5">
+    <ScrollerUnit id="sv3#area12#page23#scu6" name="Scroll Spese" linkOrder="sv3#area12#page23#scu6#ln88" gr:x="210" gr:y="145" useCountQuery="false" entity="ent9" blockFactor="5">
       <Link id="sv3#area12#page23#scu6#ln88" name="Flow3" to="sv3#area12#page23#pwu7" type="automatic" automaticCoupling="true" validate="true"/>
       <SortAttribute attribute="ent9#att36" order="descending"/>
       <SortAttribute attribute="ent9#att35" order="descending"/>
@@ -33,26 +33,26 @@
         <RelationshipRoleCondition id="sv3#area12#page23#scu6#su128#rcond57" name="StatoToSpesa" predicate="in" implied="false" role="rel12#role24"/>
       </Selector>
     </ScrollerUnit>
-    <SelectorUnit gr:x="565" gr:y="0" id="sv3#area12#page23#seu79" name="Stati in attesa" entity="ent10">
+    <SelectorUnit gr:x="220" gr:y="0" id="sv3#area12#page23#seu79" name="Stati in attesa" entity="ent10">
       <Selector id="sv3#area12#page23#seu79#su114" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv3#area12#page23#seu79#su114#acond26" name="AttCondition26" predicate="eq" booleanOperator="and" implied="false" attributes="ent10#att38" value="In attesa"/>
       </Selector>
       <Link id="sv3#area12#page23#seu79#ln216" name="Flow216" to="sv3#area12#page23#scu6" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="555" gr:y="365" id="sv3#area12#page23#seu82" name="Stato Preso in carico" entity="ent10">
+    <SelectorUnit gr:x="390" gr:y="280" id="sv3#area12#page23#seu82" name="Stato Preso in carico" entity="ent10">
       <Link id="sv3#area12#page23#seu82#ln208" name="Flow208" to="sv3#area12#page23#scu10" automaticCoupling="true" type="transport" validate="true"/>
       <Selector id="sv3#area12#page23#seu82#su119" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv3#area12#page23#seu82#su119#acond27" name="AttCondition27" predicate="eq" booleanOperator="or" implied="false" attributes="ent10#att38" value="Preso in carico"/>
         <RelationshipRoleCondition id="sv3#area12#page23#seu82#su119#rcond51" name="StatoToDipendente" predicate="in" implied="false" role="rel16#role31"/>
       </Selector>
     </SelectorUnit>
-    <PowerIndexUnit gr:x="0" gr:y="470" id="sv3#area12#page23#pwu16" name="Lista Spese prese in carico" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att35 ent9#att36 ent9#att34 rel12#role23.ent10#att38 rel12#role23.rel16#role32.ent12#att51 rel17#role33.ent3#att9" linkOrder="sv3#area12#page23#pwu16#ln211">
+    <PowerIndexUnit gr:x="0" gr:y="285" id="sv3#area12#page23#pwu16" name="Lista Spese prese in carico" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att35 ent9#att36 ent9#att34 rel12#role23.ent10#att38 rel12#role23.rel16#role32.ent12#att51 rel17#role33.ent3#att9" linkOrder="sv3#area12#page23#pwu16#ln211">
       <Link id="sv3#area12#page23#pwu16#ln211" name="Dettagli" to="sv3#area12#page24#dau7" automaticCoupling="true" type="normal" validate="true"/>
       <Selector id="sv3#area12#page23#pwu16#su131" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area12#page23#pwu16#su131#kcond75" name="KeyCondition75" predicate="in" implied="false"/>
       </Selector>
     </PowerIndexUnit>
-    <ScrollerUnit id="sv3#area12#page23#scu10" entity="ent9" useCountQuery="false" name="Seleziona Spese" gr:x="275" gr:y="420" blockFactor="2">
+    <ScrollerUnit id="sv3#area12#page23#scu10" entity="ent9" useCountQuery="false" name="Seleziona Spese" gr:x="215" gr:y="290" blockFactor="2">
       <Selector id="sv3#area12#page23#scu10#su129" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area12#page23#scu10#su129#rcond56" role="rel12#role24" predicate="in" implied="false" name="Preso in carico to Spesa"/>
       </Selector>
