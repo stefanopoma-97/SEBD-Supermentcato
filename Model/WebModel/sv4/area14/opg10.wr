@@ -1,0 +1,41 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="720" gr:y="0" id="sv4#area14#opg10" name="Crea promozione" transaction="true">
+  <OperationUnits>
+    <CreateUnit id="sv4#area14#opg10#cru6" name="Crea promozione" gr:x="550" gr:y="15" entity="ent6">
+      <OKLink id="sv4#area14#opg10#cru6#oln12" name="OKFlow12" to="sv4#area14#opg10#cnu5">
+        <LinkParameter id="sv4#area14#opg10#cru6#oln12#par137" name="oid_KeyCondition27 [oid] [Promozione] [Source]" source="ent6#att22Array" target="sv4#area14#opg10#cnu5#su69#kcond38.ent6#att22"/>
+        <LinkParameter id="sv4#area14#opg10#cru6#oln12#par138" name="Prodotto_PASSING_KeyCondition28 [oid] [Prodotto] [Target]" sourceLinkParameter="sv4#area14#page29#enu8#ln87#par102" target="sv4#area14#opg10#cnu5#su72#kcond39.ent4#att14"/>
+        <LinkParameter id="sv4#area14#opg10#cru6#oln12#par139" name="oid_PASSING" sourceLinkParameter="sv4#area14#page29#enu8#ln87#par134" passing="true"/>
+      </OKLink>
+      <KOLink id="sv4#area14#opg10#cru6#kln19" name="KOFlow19" to="sv4#area14#page35#mssu14" gr:bendpoints="-91,77,304,-68">
+        <LinkParameter id="sv4#area14#opg10#cru6#kln19#par91" name="Errore durante creazione promozione_Shown Messages" sourceValue="Errore durante creazione promozione" target="sv4#area14#page35#mssu14.shownMessages"/>
+      </KOLink>
+    </CreateUnit>
+    <ConnectUnit id="sv4#area14#opg10#cnu5" name="Connetti promozione a prodotto" gr:x="270" gr:y="0" relationship="rel6#role11">
+      <SourceSelector id="sv4#area14#opg10#cnu5#su69" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area14#opg10#cnu5#su69#kcond38" name="KeyCondition27" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv4#area14#opg10#cnu5#su72" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area14#opg10#cnu5#su72#kcond39" name="KeyCondition28" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv4#area14#opg10#cnu5#oln13" name="OKFlow13" to="sv4#area14#opg10#cnu7">
+        <LinkParameter id="sv4#area14#opg10#cnu5#oln13#par140" name="Source oid [Promozione]_KeyCondition24 [oid] [Promozione] [Source]" source="sourceent6#att22" target="sv4#area14#opg10#cnu7#su73#kcond42.ent6#att22"/>
+        <LinkParameter id="sv4#area14#opg10#cnu5#oln13#par143" name="oid_PASSING_KeyCondition25 [oid] [Negozio] [Target]" sourceLinkParameter="sv4#area14#opg10#cru6#oln12#par139" target="sv4#area14#opg10#cnu7#su74#kcond43.ent3#att8"/>
+      </OKLink>
+      <KOLink id="sv4#area14#opg10#cnu5#kln18" name="KOFlow18" to="sv4#area14#page35#mssu14">
+        <LinkParameter id="sv4#area14#opg10#cnu5#kln18#par92" name="Errore durante associazione tra promozione e prodotto_Shown Messages" sourceValue="Errore durante associazione tra promozione e prodotto" target="sv4#area14#page35#mssu14.shownMessages"/>
+      </KOLink>
+    </ConnectUnit>
+    <ConnectUnit id="sv4#area14#opg10#cnu7" name="Connetti promozione a negozio" gr:x="0" gr:y="0" relationship="rel5#role9">
+      <SourceSelector id="sv4#area14#opg10#cnu7#su73" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area14#opg10#cnu7#su73#kcond42" name="KeyCondition24" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv4#area14#opg10#cnu7#su74" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area14#opg10#cnu7#su74#kcond43" name="KeyCondition25" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv4#area14#opg10#cnu7#oln14" name="OKFlow14" to="sv4#area14#page27" automaticCoupling="true"/>
+      <KOLink id="sv4#area14#opg10#cnu7#kln16" name="KOFlow16" to="sv4#area14#page35#mssu14">
+        <LinkParameter id="sv4#area14#opg10#cnu7#kln16#par93" name="Errore associazione tra promozione e negozio_Shown Messages" sourceValue="Errore associazione tra promozione e negozio" target="sv4#area14#page35#mssu14.shownMessages"/>
+      </KOLink>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>

@@ -5,6 +5,9 @@
         <RelationshipRoleCondition id="sv4#area15#opg4#dlu3#su44#rcond23" name="ProdottoOnlineProdotto" predicate="in" implied="false" role="rel8#role16"/>
       </Selector>
       <OKLink id="sv4#area15#opg4#dlu3#oln2" name="OKFlow2" to="sv4#area15#page31" automaticCoupling="true"/>
+      <KOLink id="sv4#area15#opg4#dlu3#kln17" name="KOFlow17" to="sv4#area15#page33#mssu2">
+        <LinkParameter id="sv4#area15#opg4#dlu3#kln17#par90" name="Errore durante eliminazione prodotto online_Shown Messages" sourceValue="Errore durante eliminazione prodotto online" target="sv4#area15#page33#mssu2.shownMessages"/>
+      </KOLink>
     </DeleteUnit>
   </OperationUnits>
 </OperationGroup>

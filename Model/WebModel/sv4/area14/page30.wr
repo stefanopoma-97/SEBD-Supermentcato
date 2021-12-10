@@ -1,11 +1,17 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="330" id="sv4#area14#page30" name="Modifica promozione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="220" gr:y="25" id="sv4#area14#page30" name="Modifica promozione">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv4#area14#page30#enu9" name="Modifica promozione" linkOrder="sv4#area14#page30#enu9#ln106">
+    <EntryUnit gr:x="0" gr:y="0" id="sv4#area14#page30#enu9" name="Modifica promozione" linkOrder="sv4#area14#page30#enu9#ln89" entity="ent6">
       <Field id="sv4#area14#page30#enu9#fld16" name="Sconto" type="decimal" modifiable="true"/>
       <Field id="sv4#area14#page30#enu9#fld17" name="In negozio" type="boolean" modifiable="true"/>
       <Field id="sv4#area14#page30#enu9#fld18" name="Online" type="boolean" modifiable="true"/>
       <Field id="sv4#area14#page30#enu9#fld19" name="Scadenza" type="date" modifiable="true"/>
-      <Link id="sv4#area14#page30#enu9#ln106" name="Flow106" to="sv4#area14#mfu2" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv4#area14#page30#enu9#ln89" name="Applica modifiche" to="sv4#area14#opg11#mfu1" type="normal" validate="true">
+        <LinkParameter id="sv4#area14#page30#enu9#ln89#par83" name="oid_PASSING_KeyCondition29 [oid]" sourceLinkParameter="sv4#area14#page28#dau14#ln105#par82" target="sv4#area14#opg11#mfu1#su75#kcond44.ent6#att22"/>
+        <LinkParameter id="sv4#area14#page30#enu9#ln89#par84" name="Scadenza_scadenza" source="sv4#area14#page30#enu9#fld19" target="sv4#area14#opg11#mfu1.ent6#att24"/>
+        <LinkParameter id="sv4#area14#page30#enu9#ln89#par85" name="Sconto_sconto" source="sv4#area14#page30#enu9#fld16" target="sv4#area14#opg11#mfu1.ent6#att23"/>
+        <LinkParameter id="sv4#area14#page30#enu9#ln89#par86" name="In negozio_valida in negozio" source="sv4#area14#page30#enu9#fld17" target="sv4#area14#opg11#mfu1.ent6#att25"/>
+        <LinkParameter id="sv4#area14#page30#enu9#ln89#par87" name="Online_valida online" source="sv4#area14#page30#enu9#fld18" target="sv4#area14#opg11#mfu1.ent6#att26"/>
+      </Link>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -16,7 +22,7 @@
           <layout:Field field="sv4#area14#page30#enu9#fld17"/>
           <layout:Field field="sv4#area14#page30#enu9#fld18"/>
           <layout:Field field="sv4#area14#page30#enu9#fld19"/>
-          <layout:Link link="sv4#area14#page30#enu9#ln106"/>
+          <layout:Link link="sv4#area14#page30#enu9#ln89"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

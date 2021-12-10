@@ -1,0 +1,13 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="445" gr:y="20" id="sv4#area14#opg11" name="Modifica promozione" transaction="true">
+  <OperationUnits>
+    <ModifyUnit id="sv4#area14#opg11#mfu1" name="Modifica promozione" gr:x="0" gr:y="0" entity="ent6">
+      <Selector id="sv4#area14#opg11#mfu1#su75" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area14#opg11#mfu1#su75#kcond44" name="KeyCondition29" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#area14#opg11#mfu1#oln25" name="OKFlow25" to="sv4#area14#page27" automaticCoupling="true"/>
+      <KOLink id="sv4#area14#opg11#mfu1#kln14" name="KOFlow14" to="sv4#area14#page35#mssu14" gr:bendpoints="126,86,-289,-49">
+        <LinkParameter id="sv4#area14#opg11#mfu1#kln14#par88" name="Errore durante la modifica della promozione_Shown Messages" sourceValue="Errore durante la modifica della promozione" target="sv4#area14#page35#mssu14.shownMessages"/>
+      </KOLink>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationGroup>

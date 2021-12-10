@@ -1,11 +1,14 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="165" id="sv4#area14#page28" name="Dettagli promozione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="20" id="sv4#area14#page28" name="Dettagli promozione">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv4#area14#page28#dau14" name="Dettagli promozione" entity="ent6" linkOrder="sv4#area14#page28#dau14#ln105">
+    <DataUnit gr:x="0" gr:y="0" id="sv4#area14#page28#dau14" name="Dettagli promozione" entity="ent6" linkOrder="sv4#area14#page28#dau14#ln105" displayAttributes="ent6#att41 ent6#att23 ent6#att24 ent6#att25 ent6#att26">
       <Selector id="sv4#area14#page28#dau14#su55" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area14#page28#dau14#su55#kcond21" name="KeyCondition21" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv4#area14#page28#dau14#ln105" name="Modifica" to="sv4#area14#page30#enu9" automaticCoupling="true" type="normal" validate="true"/>
-      <Link id="sv4#area14#page28#dau14#ln108" name="Flow108" to="sv4#area14#dlu1" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv4#area14#page28#dau14#ln105" name="Modifica" to="sv4#area14#page30#enu9" type="normal" validate="true">
+        <LinkParameter id="sv4#area14#page28#dau14#ln105#par82" name="oid_PASSING" source="data.ent6#att22" passing="true"/>
+        <LinkParameter id="sv4#area14#page28#dau14#ln105#par94" name="oid_Key Condition [oid]" source="data.ent6#att22" target="sv4#area14#page30#enu9.ent6#att22"/>
+      </Link>
+      <Link id="sv4#area14#page28#dau14#ln90" name="Flow108" to="sv4#area14#opg12#dlu4" type="transport" automaticCoupling="true" validate="true"/>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -13,6 +16,11 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area14#page28#dau14">
           <layout:Link link="sv4#area14#page28#dau14#ln105"/>
+          <layout:Attribute attribute="ent6#att41"/>
+          <layout:Attribute attribute="ent6#att23"/>
+          <layout:Attribute attribute="ent6#att24"/>
+          <layout:Attribute attribute="ent6#att25"/>
+          <layout:Attribute attribute="ent6#att26"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
