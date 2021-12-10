@@ -1,3 +1,3 @@
-<SiteView id="sv3" name="Dipendente" landmarks="sv3#area3 sv3#area6 sv3#area12 sv3#area25" homePage="sv3#area3#page3">
+<SiteView id="sv3" name="Dipendente" landmarks="sv3#area3 sv3#area6 sv3#area12" homePage="sv3#area3#page3">
   <OperationUnits/>
 </SiteView>

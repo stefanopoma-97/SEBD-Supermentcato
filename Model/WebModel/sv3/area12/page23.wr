@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="735" gr:y="40" id="sv3#area12#page23" name="Spese">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="735" gr:y="40" id="sv3#area12#page23" name="Elenco spese">
   <ContentUnits>
     <GetUnit id="sv3#area12#page23#gtu9" name="Info Dipendente" gr:x="605" gr:y="215" contextParameters="UserCtxParam">
       <Link id="sv3#area12#page23#gtu9#ln85" name="Flow59" to="sv3#area12#page23#seu37" type="transport" validate="true">

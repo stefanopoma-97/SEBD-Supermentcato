@@ -1,7 +1,0 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area25" name="Login" defaultPage="sv3#area25#page58" landmark="true" gr:x="2710" gr:y="-90">
-  <OperationUnits>
-    <LoginUnit id="sv3#area25#lgu4" name="Accedi" gr:x="200" gr:y="30">
-      <KOLink id="sv3#area25#lgu4#kln37" name="KOFlow2" to="sv3#area25#page58" automaticCoupling="true" gr:bendpoints="-156,-191,-52,-196"/>
-    </LoginUnit>
-  </OperationUnits>
-</Area>
