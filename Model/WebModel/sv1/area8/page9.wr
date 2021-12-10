@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="350" gr:y="450" id="sv1#area8#page9" name="Pagina Elenco prodotti">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="345" gr:y="470" id="sv1#area8#page9" name="Pagina Elenco prodotti">
   <ContentUnits>
     <EntryUnit gr:x="235" gr:y="415" id="sv1#area8#page9#enu3" name="Cerca" linkOrder="sv1#area8#page9#enu3#ln33">
       <SelectionField id="sv1#area8#page9#enu3#sfld1" name="Categoria" type="string"/>
