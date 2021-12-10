@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv4#area15#page31" name="Prodotti online" linkOrder="sv4#area15#page31#ln127">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="0" id="sv4#area15#page31" name="Prodotti online" linkOrder="sv4#area15#page31#ln127">
   <ContentUnits>
     <SelectorUnit id="sv4#area15#page31#seu43" name="Seleziona prodotti online del negozio" gr:x="175" gr:y="0" entity="ent8">
       <Selector id="sv4#area15#page31#seu43#su62" defaultPolicy="fill" booleanOperator="and">
@@ -7,9 +7,11 @@
       <Link id="sv4#area15#page31#seu43#ln111" name="Flow48" to="sv4#area15#page31#pwu8" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
     <GetUnit id="sv4#area15#page31#gtu4" name="Get Info Responsabile" gr:x="780" gr:y="5" contextParameters="UserCtxParam">
-      <Link id="sv4#area15#page31#gtu4#ln112" name="Flow40" to="sv4#area15#page31#seu44" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv4#area15#page31#gtu4#ln112" name="Flow40" to="sv4#area15#page31#seu44" type="transport" validate="true">
+        <LinkParameter id="sv4#area15#page31#gtu4#ln112#par78" name="UserCtxParam.oid_NegozioResponsabile [oid]" source="sv4#area15#page31#gtu4.UserCtxParam" target="sv4#area15#page31#seu44#su63#rcond31.userOID"/>
+      </Link>
     </GetUnit>
-    <SelectorUnit id="sv4#area15#page31#seu44" name="Seleziona Negozio del responsabile" gr:x="480" gr:y="0" entity="ent3">
+    <SelectorUnit id="sv4#area15#page31#seu44" name="Seleziona negozio del responsabile" gr:x="480" gr:y="0" entity="ent3">
       <Selector id="sv4#area15#page31#seu44#su63" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area15#page31#seu44#su63#rcond31" name="NegozioResponsabile" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
@@ -21,6 +23,9 @@
       <Link id="sv4#area15#page31#pwu8#ln117" name="Dettagli" to="sv4#area15#page32#dau15" type="normal" validate="true">
         <LinkParameter id="sv4#area15#page31#pwu8#ln117#par76" name="Prodotto onlineToProdotto.oid_KeyCondition34 [oid]" source="data[].rel8#role15_ent4#att14" target="sv4#area15#page32#dau15#su64#kcond34.ent4#att14"/>
       </Link>
+      <Selector id="sv4#area15#page31#pwu8#su68" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area15#page31#pwu8#su68#kcond37" name="KeyCondition37" predicate="in" implied="false"/>
+      </Selector>
     </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
