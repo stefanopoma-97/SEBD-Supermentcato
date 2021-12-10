@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1220" gr:y="260" id="sv4#area14" name="Promozioni" landmark="true" defaultPage="sv4#area14#page27">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1575" gr:y="500" id="sv4#area14" name="Promozioni" landmark="true" defaultPage="sv4#area14#page27">
   <OperationUnits>
     <CreateUnit gr:x="665" gr:y="220" id="sv4#area14#cru1" name="Crea promozione" entity="ent6" linkOrder="sv4#area14#cru1#ln99 sv4#area14#cru1#ln101">
       <Link id="sv4#area14#cru1#ln99" name="Flow99" to="sv4#area14#cnu2" automaticCoupling="true" type="transport" validate="true"/>

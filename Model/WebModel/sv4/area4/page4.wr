@@ -3,34 +3,34 @@
     <MultiMessageUnit id="sv4#area4#page4#mssu4" name="Message1" gr:x="0" gr:y="0">
       <Message xml:space="preserve">Home del responsabile</Message>
     </MultiMessageUnit>
-    <GetUnit gr:x="115" gr:y="5" id="sv4#area4#page4#gtu1" name="Get Info Responsabile" contextParameters="UserCtxParam">
+    <GetUnit gr:x="65" gr:y="95" id="sv4#area4#page4#gtu1" name="Get Info Responsabile" contextParameters="UserCtxParam">
       <Link id="sv4#area4#page4#gtu1#ln40" name="Flow40" to="sv4#area4#page4#seu23" automaticCoupling="true" type="transport" validate="true"/>
     </GetUnit>
-    <SelectorUnit gr:x="325" gr:y="0" id="sv4#area4#page4#seu23" name="Seleziona Negozio del responsabile" entity="ent3">
+    <SelectorUnit gr:x="300" gr:y="0" id="sv4#area4#page4#seu23" name="Seleziona Negozio del responsabile" entity="ent3">
       <Selector id="sv4#area4#page4#seu23#su9" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area4#page4#seu23#su9#rcond9" name="NegozioResponsabile" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
       <Link id="sv4#area4#page4#seu23#ln47" name="Flow47" to="sv4#area4#page4#seu24" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv4#area4#page4#seu23#ln50" name="Flow50" to="sv4#area4#page4#seu25" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="610" gr:y="0" id="sv4#area4#page4#seu24" name="Seleziona prodotti online del negozio" entity="ent8">
+    <SelectorUnit gr:x="640" gr:y="50" id="sv4#area4#page4#seu24" name="Seleziona prodotti online del negozio" entity="ent8">
       <Selector id="sv4#area4#page4#seu24#su28" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area4#page4#seu24#su28#rcond10" name="ProdottiOnlineNegozio" predicate="in" implied="false" role="rel7#role14"/>
       </Selector>
       <Link id="sv4#area4#page4#seu24#ln48" name="Flow48" to="sv4#area4#page4#pwu3" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <PowerIndexUnit gr:x="920" gr:y="0" id="sv4#area4#page4#pwu3" name="Prodotti Online" sortable="true" checkable="false" useCountQuery="false" entity="ent8" displayAttributes="ent8#att31 rel8#role15.ent4#att15 rel8#role15.ent4#att16 rel8#role15.ent4#att17 rel8#role15.ent4#att18 rel8#role15.ent4#att53 rel8#role15.ent4#att59 rel8#role15.ent4#att60" linkOrder="sv4#area4#page4#pwu3#ln115">
+    <PowerIndexUnit gr:x="1050" gr:y="5" id="sv4#area4#page4#pwu3" name="Prodotti Online" sortable="true" checkable="false" useCountQuery="false" entity="ent8" displayAttributes="ent8#att31 rel8#role15.ent4#att15 rel8#role15.ent4#att16 rel8#role15.ent4#att17 rel8#role15.ent4#att18 rel8#role15.ent4#att53 rel8#role15.ent4#att59 rel8#role15.ent4#att60" linkOrder="sv4#area4#page4#pwu3#ln115">
       <SortAttribute attribute="rel8#role15.ent4#att18" order="descending"/>
       <SortAttribute attribute="rel8#role15.ent4#att15" order="ascending"/>
       <Link id="sv4#area4#page4#pwu3#ln115" name="Dettagli" to="sv4#area15#page32#dau15" automaticCoupling="true" type="normal" validate="true"/>
     </PowerIndexUnit>
-    <SelectorUnit gr:x="625" gr:y="115" id="sv4#area4#page4#seu25" name="Seleziona promozioni del negozio" entity="ent6">
+    <SelectorUnit gr:x="590" gr:y="230" id="sv4#area4#page4#seu25" name="Seleziona promozioni del negozio" entity="ent6">
       <Selector id="sv4#area4#page4#seu25#su30" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area4#page4#seu25#su30#rcond11" name="PromozioneNegozio" predicate="in" implied="false" role="rel5#role10"/>
       </Selector>
       <Link id="sv4#area4#page4#seu25#ln51" name="Flow51" to="sv4#area4#page4#pwu4" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <PowerIndexUnit gr:x="935" gr:y="115" id="sv4#area4#page4#pwu4" name="Promozioni" sortable="true" checkable="false" useCountQuery="false" entity="ent6" displayAttributes="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26 ent6#att41" linkOrder="sv4#area4#page4#pwu4#ln109">
+    <PowerIndexUnit gr:x="1020" gr:y="220" id="sv4#area4#page4#pwu4" name="Promozioni" sortable="true" checkable="false" useCountQuery="false" entity="ent6" displayAttributes="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26 ent6#att41" linkOrder="sv4#area4#page4#pwu4#ln109">
       <SortAttribute attribute="ent6#att24" order="descending"/>
       <SortAttribute attribute="ent6#att23" order="descending"/>
       <Link id="sv4#area4#page4#pwu4#ln109" name="Dettagli" to="sv4#area14#page28#dau14" automaticCoupling="true" type="normal" validate="true"/>

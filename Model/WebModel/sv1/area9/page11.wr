@@ -1,16 +1,10 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="860" gr:y="240" id="sv1#area9#page11" name="Pagina Promozioni" linkOrder="sv1#area9#page11#ln55 sv1#area9#page11#ln58">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="860" gr:y="240" id="sv1#area9#page11" name="Pagina Promozioni">
   <ContentUnits>
-    <IndexUnit gr:x="145" gr:y="0" id="sv1#area9#page11#inu10" name="Lista Promozioni" entity="ent6" displayAttributes="ent6#att23 ent6#att39 ent6#att41 ent6#att24 ent6#att25 ent6#att26" linkOrder="sv1#area9#page11#inu10#ln12">
-      <Selector id="sv1#area9#page11#inu10#su17" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv1#area9#page11#inu10#su17#kcond13" name="KeyCondition13" predicate="in" implied="false"/>
-      </Selector>
-      <Link id="sv1#area9#page11#inu10#ln12" name="Flow40" to="sv1#area9#page10#dau3" type="normal" automaticCoupling="true" validate="true"/>
-    </IndexUnit>
     <SelectorUnit gr:x="380" gr:y="45" id="sv1#area9#page11#seu16" name="Promozioni attive" entity="ent6">
       <Selector id="sv1#area9#page11#seu16#su15" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv1#area9#page11#seu16#su15#acond1" name="Non scaduta" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
       </Selector>
-      <Link id="sv1#area9#page11#seu16#ln6" name="Flow6" to="sv1#area9#page11#inu10" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv1#area9#page11#seu16#ln6" name="Flow6" to="sv1#area9#page11#pwu9" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
     <EntryUnit gr:x="230" gr:y="225" id="sv1#area9#page11#enu4" name="Cerca" linkOrder="sv1#area9#page11#enu4#ln29">
       <SelectionField id="sv1#area9#page11#enu4#sfld4" name="Negozio" type="string"/>
@@ -47,18 +41,28 @@
         <LinkParameter id="sv1#area9#page11#tmu2#ln4#par1" name="Current/Input Date_PASSING" source="currentDate" passing="true"/>
       </Link>
     </TimeUnit>
+    <PowerIndexUnit id="sv1#area9#page11#pwu9" entity="ent6" displayAttributes="ent6#att23 ent6#att39 ent6#att41 ent6#att24 ent6#att25 ent6#att26" sortable="true" checkable="false" useCountQuery="false" gr:x="145" gr:y="0" name="Lista Promozioni" linkOrder="sv1#area9#page11#pwu9#ln5">
+      <Selector id="sv1#area9#page11#pwu9#su43" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area9#page11#pwu9#su43#kcond20" predicate="in" implied="false" name="KeyCondition13"/>
+      </Selector>
+      <Link id="sv1#area9#page11#pwu9#ln5" name="Flow40" to="sv1#area9#page10#dau3" type="normal" automaticCoupling="true" validate="true"/>
+      <SortAttribute attribute="ent6#att24" order="descending"/>
+      <SortAttribute attribute="ent6#att23" order="descending"/>
+    </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area9#page11#inu10">
+        <layout:Unit unitId="sv1#area9#page11#pwu9">
           <layout:Attribute attribute="ent6#att23"/>
           <layout:Attribute attribute="ent6#att39"/>
           <layout:Attribute attribute="ent6#att41"/>
           <layout:Attribute attribute="ent6#att24"/>
           <layout:Attribute attribute="ent6#att25"/>
           <layout:Attribute attribute="ent6#att26"/>
-          <layout:Link link="sv1#area9#page11#inu10#ln12"/>
+          <layout:Link link="sv1#area9#page11#pwu9#ln5"/>
+          <layout:Link link="sv1#area9#page11#pwu9ent6#att24"/>
+          <layout:Link link="sv1#area9#page11#pwu9ent6#att23"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -125,6 +129,4 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv1#area9#page11#ln55" name="Ordina per scadenza" to="sv1#area9#seu6" automaticCoupling="true" type="normal" validate="true"/>
-  <Link id="sv1#area9#page11#ln58" name="Ordina per sconto" to="sv1#area9#seu10" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

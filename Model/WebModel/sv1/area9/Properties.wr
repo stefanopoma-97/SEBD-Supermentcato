@@ -1,12 +1,3 @@
 <Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-250" gr:y="1645" id="sv1#area9" name="Area Promozioni" landmark="true" defaultPage="sv1#area9#page11">
-  <OperationUnits>
-    <SelectorUnit gr:x="360" gr:y="465" id="sv1#area9#seu6" name="Ordina promozioni per data" entity="ent6">
-      <SortAttribute attribute="ent6#att24" order="descending"/>
-    </SelectorUnit>
-    <SelectorUnit gr:x="290" gr:y="640" id="sv1#area9#seu10" name="Ordina per sconto" entity="ent6">
-      <SortAttribute attribute="ent6#att23" order="ascending"/>
-      <OKLink id="sv1#area9#seu10#oln7" name="OKFlow7" to="sv1#area9#page11#inu10" automaticCoupling="true"/>
-      <KOLink id="sv1#area9#seu10#kln5" name="KOFlow5" to="sv1#area9#page14#mssu8" automaticCoupling="true"/>
-    </SelectorUnit>
-  </OperationUnits>
+  <OperationUnits/>
 </Area>

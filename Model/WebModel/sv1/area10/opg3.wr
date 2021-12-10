@@ -2,7 +2,7 @@
   <OperationUnits>
     <SelectorUnit gr:x="0" gr:y="0" id="sv1#area10#opg3#seu12" name="Filtro" entity="ent3">
       <KOLink id="sv1#area10#opg3#seu12#kln10" name="KOFlow10" to="sv1#area10#page22" automaticCoupling="true"/>
-      <OKLink id="sv1#area10#opg3#seu12#oln9" name="OKFlow9" to="sv1#area10#page12#inu11" automaticCoupling="true"/>
+      <OKLink id="sv1#area10#opg3#seu12#oln9" name="OKFlow9" to="sv1#area10#page12#pwu10" automaticCoupling="true"/>
       <Selector id="sv1#area10#opg3#seu12#su23" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area10#opg3#seu12#su23#rcond8" name="Citt&#224;IndirizzoNegozio" predicate="in" implied="true" role="rel1#role1.rel2#role4"/>
       </Selector>

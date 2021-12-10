@@ -1,0 +1,90 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area22#page54" name="Pagina negozi" gr:x="385" gr:y="390">
+  <ContentUnits>
+    <SelectorUnit id="sv2#area22#page54#seu72" name="Negozi" gr:x="365" gr:y="20" entity="ent3">
+      <Link id="sv2#area22#page54#seu72#ln170" name="Flow45" to="sv2#area22#page54#pwu15" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <EntryUnit id="sv2#area22#page54#enu18" name="Cerca" linkOrder="sv2#area22#page54#enu18#ln171" gr:x="195" gr:y="185">
+      <SelectionField id="sv2#area22#page54#enu18#sfld20" name="Citt&#224;" type="string"/>
+      <Link id="sv2#area22#page54#enu18#ln171" name="Flow32" to="sv2#area22#opg6#seu75" type="normal" validate="true">
+        <LinkParameter id="sv2#area22#page54#enu18#ln171#par131" name="Citt&#224;_Citt&#224;IndirizzoNegozio [oid]" source="sv2#area22#page54#enu18#sfld20" target="sv2#area22#opg6#seu75#su104#rcond44.ent1#att1"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit id="sv2#area22#page54#seu73" name="Citt&#224; con negozi" gr:x="345" gr:y="220" entity="ent1">
+      <Selector id="sv2#area22#page54#seu73#su102" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area22#page54#seu73#su102#rcond43" name="NegoziIndirizzoCitt&#224;" role="rel2#role3.rel1#role2" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area22#page54#seu73#ln172" name="Flow31" to="sv2#area22#page54#enu18" type="transport" validate="true">
+        <LinkParameter id="sv2#area22#page54#seu73#ln172#par132" name="nome_Citt&#224; [label]" source="ent1#att2Array" target="sv2#area22#page54#enu18#sfld20_label"/>
+        <LinkParameter id="sv2#area22#page54#seu73#ln172#par133" name="oid_Citt&#224; [output]" source="ent1#att1Array" target="sv2#area22#page54#enu18#sfld20_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv2#area22#page54#seu74" name="Negozi" gr:x="755" gr:y="330" entity="ent3">
+      <Link id="sv2#area22#page54#seu74#ln173" name="Flow30" to="sv2#area22#page54#seu73" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <PowerIndexUnit id="sv2#area22#page54#pwu15" name="Lista Negozi" linkOrder="sv2#area22#page54#pwu15#ln174" gr:x="0" gr:y="0" entity="ent3" displayAttributes="ent3#att9 ent3#att12 ent3#att13 rel2#role3.ent2#att6" sortable="true" checkable="false" useCountQuery="false">
+      <Selector id="sv2#area22#page54#pwu15#su103" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area22#page54#pwu15#su103#kcond59" name="KeyCondition15" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area22#page54#pwu15#ln174" name="Flow42" to="sv2#area22#page53#dau20" type="normal" automaticCoupling="true" validate="true"/>
+      <SortAttribute attribute="ent3#att12" order="descending"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area22#page54#pwu15">
+          <layout:Attribute attribute="ent3#att9"/>
+          <layout:Attribute attribute="ent3#att12"/>
+          <layout:Attribute attribute="ent3#att13"/>
+          <layout:Attribute attribute="rel2#role3.ent2#att6"/>
+          <layout:Link link="sv2#area22#page54#pwu15#ln174"/>
+          <layout:Link link="sv2#area22#page54#pwu15ent3#att12"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area22#page54#enu18">
+          <layout:Field field="sv2#area22#page54#enu18#sfld20"/>
+          <layout:Link link="sv2#area22#page54#enu18#ln171"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

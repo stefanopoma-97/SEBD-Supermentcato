@@ -1,11 +1,5 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="350" gr:y="450" id="sv1#area8#page9" name="Pagina Elenco prodotti">
   <ContentUnits>
-    <IndexUnit gr:x="185" gr:y="0" id="sv1#area8#page9#inu6" name="Lista Prodotti" entity="ent4" linkOrder="sv1#area8#page9#inu6#ln21" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60">
-      <Link id="sv1#area8#page9#inu6#ln21" name="Flow21" to="sv1#area8#page8#dau2" automaticCoupling="true" type="normal" validate="true"/>
-      <Selector id="sv1#area8#page9#inu6#su11" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv1#area8#page9#inu6#su11#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
-      </Selector>
-    </IndexUnit>
     <EntryUnit gr:x="235" gr:y="415" id="sv1#area8#page9#enu3" name="Cerca" linkOrder="sv1#area8#page9#enu3#ln33">
       <SelectionField id="sv1#area8#page9#enu3#sfld1" name="Categoria" type="string"/>
       <SelectionField id="sv1#area8#page9#enu3#sfld2" name="Fascia di prezzo" type="string"/>
@@ -15,7 +9,7 @@
       </Link>
     </EntryUnit>
     <SelectorUnit gr:x="440" gr:y="5" id="sv1#area8#page9#seu7" name="Tutti i prodotti" entity="ent4">
-      <Link id="sv1#area8#page9#seu7#ln15" name="Flow15" to="sv1#area8#page9#inu6" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv1#area8#page9#seu7#ln15" name="Flow15" to="sv1#area8#page9#pwu11" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
     <SelectorUnit gr:x="40" gr:y="550" id="sv1#area8#page9#seu8" name="Categorie" entity="ent5">
       <Link id="sv1#area8#page9#seu8#ln27" name="Flow27" to="sv1#area8#page9#enu3" type="transport" validate="true">
@@ -29,17 +23,18 @@
         <LinkParameter id="sv1#area8#page9#seu9#ln28#par13" name="oid_Fascia di prezzo [output]" source="ent15#att30Array" target="sv1#area8#page9#enu3#sfld2_output"/>
       </Link>
     </SelectorUnit>
-    <IndexUnit gr:x="0" gr:y="160" id="sv1#area8#page9#inu5" name="Lista aggiornata prodotti" entity="ent4" displayAttributes="ent4#att59 ent4#att18 ent4#att60 ent4#att15 ent4#att17">
-      <Selector id="sv1#area8#page9#inu5#su13" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv1#area8#page9#inu5#su13#kcond3" name="KeyCondition3" predicate="in" implied="false"/>
+    <PowerIndexUnit id="sv1#area8#page9#pwu11" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" sortable="true" checkable="false" useCountQuery="false" gr:x="185" gr:y="0" name="Lista Prodotti" linkOrder="sv1#area8#page9#pwu11#ln12">
+      <Selector id="sv1#area8#page9#pwu11#su71" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area8#page9#pwu11#su71#kcond41" predicate="in" implied="false" name="KeyCondition7"/>
       </Selector>
-    </IndexUnit>
+      <Link id="sv1#area8#page9#pwu11#ln12" name="Flow21" to="sv1#area8#page8#dau2" type="normal" automaticCoupling="true" validate="true"/>
+      <SortAttribute attribute="ent4#att17" order="ascending"/>
+    </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area8#page9#inu6">
-          <layout:Link link="sv1#area8#page9#inu6#ln21"/>
+        <layout:Unit unitId="sv1#area8#page9#pwu11">
           <layout:Attribute attribute="ent4#att15"/>
           <layout:Attribute attribute="ent4#att16"/>
           <layout:Attribute attribute="ent4#att17"/>
@@ -48,6 +43,8 @@
           <layout:Attribute attribute="ent4#att53"/>
           <layout:Attribute attribute="ent4#att59"/>
           <layout:Attribute attribute="ent4#att60"/>
+          <layout:Link link="sv1#area8#page9#pwu11#ln12"/>
+          <layout:Link link="sv1#area8#page9#pwu11ent4#att17"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -83,15 +80,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area8#page9#inu5">
-          <layout:Attribute attribute="ent4#att59"/>
-          <layout:Attribute attribute="ent4#att18"/>
-          <layout:Attribute attribute="ent4#att60"/>
-          <layout:Attribute attribute="ent4#att15"/>
-          <layout:Attribute attribute="ent4#att17"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

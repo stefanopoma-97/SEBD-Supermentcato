@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1220" gr:y="-275" id="sv4#area15" name="Prodotti online" landmark="true" defaultPage="sv4#area15#page31">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1830" gr:y="-225" id="sv4#area15" name="Prodotti online" landmark="true" defaultPage="sv4#area15#page31">
   <OperationUnits>
     <DeleteUnit gr:x="10" gr:y="340" id="sv4#area15#dlu2" name="Rimuovi prodotto online" entity="ent8">
       <Selector id="sv4#area15#dlu2#su65" defaultPolicy="fill" booleanOperator="and">

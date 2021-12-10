@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="670" gr:y="100" id="sv3#area12" name="Spesa" landmark="true" defaultPage="sv3#area12#page23">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1060" gr:y="70" id="sv3#area12" name="Spesa" landmark="true" defaultPage="sv3#area12#page23">
   <OperationUnits>
     <ConnectUnit gr:x="0" gr:y="145" id="sv3#area12#cnu1" name="Connect stato_dipendente" relationship="rel16#role32">
       <SourceSelector id="sv3#area12#cnu1#su39" defaultPolicy="fill" booleanOperator="and">

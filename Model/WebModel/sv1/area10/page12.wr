@@ -1,13 +1,7 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="385" gr:y="390" id="sv1#area10#page12" name="Pagina negozi">
   <ContentUnits>
-    <IndexUnit gr:x="0" gr:y="0" id="sv1#area10#page12#inu11" name="Lista Negozi" entity="ent3" displayAttributes="ent3#att9 ent3#att12 ent3#att13 rel2#role3.ent2#att6" linkOrder="sv1#area10#page12#inu11#ln42">
-      <Link id="sv1#area10#page12#inu11#ln42" name="Flow42" to="sv1#area10#page13#dau4" automaticCoupling="true" type="normal" validate="true"/>
-      <Selector id="sv1#area10#page12#inu11#su19" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv1#area10#page12#inu11#su19#kcond15" name="KeyCondition15" predicate="in" implied="false"/>
-      </Selector>
-    </IndexUnit>
     <SelectorUnit gr:x="365" gr:y="20" id="sv1#area10#page12#seu17" name="Negozi" entity="ent3">
-      <Link id="sv1#area10#page12#seu17#ln45" name="Flow45" to="sv1#area10#page12#inu11" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv1#area10#page12#seu17#ln45" name="Flow45" to="sv1#area10#page12#pwu10" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
     <EntryUnit gr:x="195" gr:y="185" id="sv1#area10#page12#enu1" name="Cerca" linkOrder="sv1#area10#page12#enu1#ln32">
       <SelectionField id="sv1#area10#page12#enu1#sfld9" name="Citt&#224;" type="string"/>
@@ -27,16 +21,24 @@
     <SelectorUnit gr:x="755" gr:y="330" id="sv1#area10#page12#seu11" name="Negozi" entity="ent3">
       <Link id="sv1#area10#page12#seu11#ln30" name="Flow30" to="sv1#area10#page12#seu5" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
+    <PowerIndexUnit id="sv1#area10#page12#pwu10" entity="ent3" displayAttributes="ent3#att9 ent3#att12 ent3#att13 rel2#role3.ent2#att6" sortable="true" checkable="false" useCountQuery="false" gr:x="0" gr:y="0" name="Lista Negozi" linkOrder="sv1#area10#page12#pwu10#ln11">
+      <Selector id="sv1#area10#page12#pwu10#su70" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area10#page12#pwu10#su70#kcond40" predicate="in" implied="false" name="KeyCondition15"/>
+      </Selector>
+      <Link id="sv1#area10#page12#pwu10#ln11" name="Flow42" to="sv1#area10#page13#dau4" type="normal" automaticCoupling="true" validate="true"/>
+      <SortAttribute attribute="ent3#att12" order="descending"/>
+    </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area10#page12#inu11">
-          <layout:Link link="sv1#area10#page12#inu11#ln42"/>
+        <layout:Unit unitId="sv1#area10#page12#pwu10">
           <layout:Attribute attribute="ent3#att9"/>
           <layout:Attribute attribute="ent3#att12"/>
           <layout:Attribute attribute="ent3#att13"/>
           <layout:Attribute attribute="rel2#role3.ent2#att6"/>
+          <layout:Link link="sv1#area10#page12#pwu10#ln11"/>
+          <layout:Link link="sv1#area10#page12#pwu10ent3#att12"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
