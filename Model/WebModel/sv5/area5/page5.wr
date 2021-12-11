@@ -10,13 +10,14 @@
       <SortAttribute attribute="ent3#att58" order="descending"/>
       <SortAttribute attribute="ent3#att42" order="descending"/>
     </PowerIndexUnit>
-    <PowerIndexUnit gr:x="240" gr:y="0" id="sv5#area5#page5#pwu18" name="Elenco prodotti" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att18 ent4#att53 ent4#att59">
+    <PowerIndexUnit gr:x="240" gr:y="0" id="sv5#area5#page5#pwu18" name="Elenco prodotti" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att18 ent4#att53 ent4#att59" linkOrder="sv5#area5#page5#pwu18#ln130">
       <SortAttribute attribute="ent4#att15" order="ascending"/>
       <SortAttribute attribute="ent4#att17" order="ascending"/>
       <SortAttribute attribute="ent4#att53" order="ascending"/>
       <SortAttribute attribute="ent4#att18" order="ascending"/>
       <SortAttribute attribute="ent4#att59" order="ascending"/>
       <SortAttribute attribute="ent4#att60" order="ascending"/>
+      <Link id="sv5#area5#page5#pwu18#ln130" name="Dettagli" to="sv5#area16#page44#dau17" automaticCoupling="true" type="normal" validate="true"/>
     </PowerIndexUnit>
     <PowerIndexUnit gr:x="390" gr:y="0" id="sv5#area5#page5#pwu19" name="Elenco categorie" sortable="true" checkable="false" useCountQuery="false" entity="ent5" displayAttributes="ent5#att20 ent5#att21">
       <SortAttribute attribute="ent5#att20" order="ascending"/>
@@ -75,6 +76,7 @@
           <layout:Attribute attribute="ent4#att18"/>
           <layout:Attribute attribute="ent4#att53"/>
           <layout:Attribute attribute="ent4#att59"/>
+          <layout:Link link="sv5#area5#page5#pwu18#ln130"/>
           <layout:Link link="sv5#area5#page5#pwu18ent4#att15"/>
           <layout:Link link="sv5#area5#page5#pwu18ent4#att53"/>
           <layout:Link link="sv5#area5#page5#pwu18ent4#att18"/>

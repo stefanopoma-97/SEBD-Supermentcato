@@ -1,6 +1,6 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1275" gr:y="340" id="sv5#area16#opg16" name="Crea prodotto" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1395" gr:y="340" id="sv5#area16#opg16" name="Crea prodotto" transaction="true">
   <OperationUnits>
-    <CreateUnit gr:x="40" gr:y="280" id="sv5#area16#opg16#cru7" name="Crea prodotto" entity="ent4">
+    <CreateUnit gr:x="75" gr:y="435" id="sv5#area16#opg16#cru7" name="Crea prodotto" entity="ent4">
       <OKLink id="sv5#area16#opg16#cru7#oln30" name="OKFlow30" to="sv5#area16#opg16#cnu8">
         <LinkParameter id="sv5#area16#opg16#cru7#oln30#par199" name="oid_KeyCondition46 [oid] [Prodotto] [Source]" source="ent4#att14Array" target="sv5#area16#opg16#cnu8#su78#kcond46.ent4#att14"/>
         <LinkParameter id="sv5#area16#opg16#cru7#oln30#par200" name="Categoria_PASSING_KeyCondition51 [oid] [Categoria] [Target]" sourceLinkParameter="sv5#area16#page45#enu12#ln106#par196" target="sv5#area16#opg16#cnu8#su87#kcond51.ent5#att19"/>
@@ -11,7 +11,7 @@
         <LinkParameter id="sv5#area16#opg16#cru7#kln40#par244" name="Errore nella creazione del prodotto_Shown Messages" sourceValue="Errore nella creazione del prodotto" target="sv5#area16#page59#mssu19.shownMessages"/>
       </KOLink>
     </CreateUnit>
-    <ConnectUnit gr:x="270" gr:y="265" id="sv5#area16#opg16#cnu8" name="Connetti prodotto a categoria" relationship="rel4#role7">
+    <ConnectUnit gr:x="20" gr:y="290" id="sv5#area16#opg16#cnu8" name="Connetti prodotto a categoria" relationship="rel4#role7">
       <SourceSelector id="sv5#area16#opg16#cnu8#su78" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#opg16#cnu8#su78#kcond46" name="KeyCondition46" predicate="in" implied="false"/>
       </SourceSelector>
@@ -27,7 +27,7 @@
         <LinkParameter id="sv5#area16#opg16#cnu8#kln41#par245" name="Errore nella connessione del prodotto con la categoria_Shown Messages" sourceValue="Errore nella connessione del prodotto con la categoria" target="sv5#area16#page59#mssu19.shownMessages"/>
       </KOLink>
     </ConnectUnit>
-    <ConnectUnit gr:x="250" gr:y="0" id="sv5#area16#opg16#cnu9" name="Connetti prodotto a fascia di prezzo" relationship="rel11#role22">
+    <ConnectUnit gr:x="0" gr:y="145" id="sv5#area16#opg16#cnu9" name="Connetti prodotto a fascia di prezzo" relationship="rel11#role22">
       <SourceSelector id="sv5#area16#opg16#cnu9#su108" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#opg16#cnu9#su108#kcond61" name="KeyCondition61" predicate="in" implied="false"/>
       </SourceSelector>
@@ -42,7 +42,7 @@
         <LinkParameter id="sv5#area16#opg16#cnu9#kln42#par246" name="Errore nella connessione tra prodotto e fascia di prezzo_Shown Messages" sourceValue="Errore nella connessione tra prodotto e fascia di prezzo" target="sv5#area16#page59#mssu19.shownMessages"/>
       </KOLink>
     </ConnectUnit>
-    <ConnectUnit gr:x="0" gr:y="0" id="sv5#area16#opg16#cnu10" name="Connetti prodotto a nazione" relationship="rel18#role35">
+    <ConnectUnit gr:x="30" gr:y="0" id="sv5#area16#opg16#cnu10" name="Connetti prodotto a nazione" relationship="rel18#role35">
       <SourceSelector id="sv5#area16#opg16#cnu10#su112" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#opg16#cnu10#su112#kcond68" name="KeyCondition68" predicate="in" implied="false"/>
       </SourceSelector>
