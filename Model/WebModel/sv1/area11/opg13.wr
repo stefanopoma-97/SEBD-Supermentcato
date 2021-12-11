@@ -46,12 +46,6 @@
       <TargetSelector id="sv1#area11#opg13#cnu3#su56" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area11#opg13#cnu3#su56#kcond26" name="KeyCondition26" predicate="in" implied="false"/>
       </TargetSelector>
-      <KOLink id="sv1#area11#opg13#cnu3#kln28" name="KOFlow28" to="sv1#area11#page19#mssu12">
-        <LinkParameter id="sv1#area11#opg13#cnu3#kln28#par183" name="errore accoppiamento indirizzo e utente_Shown Messages" sourceValue="errore accoppiamento indirizzo e utente" target="sv1#area11#page19#mssu12.shownMessages"/>
-      </KOLink>
-      <OKLink id="sv1#area11#opg13#cnu3#oln30" name="OKFlow30" to="sv1#area24#page56#mssu15">
-        <LinkParameter id="sv1#area11#opg13#cnu3#oln30#par186" name="Utente creato con successo. Ora puoi effettuare il login._Shown Messages" sourceValue="Utente creato con successo. Ora puoi effettuare il login." target="sv1#area24#page56#mssu15.shownMessages"/>
-      </OKLink>
     </ConnectUnit>
   </OperationUnits>
 </OperationGroup>

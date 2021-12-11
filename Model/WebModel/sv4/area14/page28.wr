@@ -6,7 +6,11 @@
       </Selector>
       <Link id="sv4#area14#page28#dau14#ln105" name="Modifica" to="sv4#area14#page30#enu9" type="normal" validate="true">
         <LinkParameter id="sv4#area14#page28#dau14#ln105#par82" name="oid_PASSING" source="data.ent6#att22" passing="true"/>
-        <LinkParameter id="sv4#area14#page28#dau14#ln105#par94" name="oid_Key Condition [oid]" source="data.ent6#att22" target="sv4#area14#page30#enu9.ent6#att22"/>
+        <LinkParameter id="sv4#area14#page28#dau14#ln105#par16" name="negozio_In negozio" source="data.ent6#att39" target="sv4#area14#page30#enu9#fld17_slot"/>
+        <LinkParameter id="sv4#area14#page28#dau14#ln105#par23" name="oid_Key Condition [oid]" source="data.ent6#att22" target="sv4#area14#page30#enu9.ent6#att22"/>
+        <LinkParameter id="sv4#area14#page28#dau14#ln105#par29" name="valida online_Online" source="data.ent6#att26" target="sv4#area14#page30#enu9#fld18_slot"/>
+        <LinkParameter id="sv4#area14#page28#dau14#ln105#par30" name="scadenza_Scadenza" source="data.ent6#att24" target="sv4#area14#page30#enu9#fld19_slot"/>
+        <LinkParameter id="sv4#area14#page28#dau14#ln105#par59" name="sconto_Sconto" source="data.ent6#att23" target="sv4#area14#page30#enu9#fld16_slot"/>
       </Link>
       <Link id="sv4#area14#page28#dau14#ln90" name="Flow108" to="sv4#area14#opg12#dlu4" type="transport" automaticCoupling="true" validate="true"/>
     </DataUnit>

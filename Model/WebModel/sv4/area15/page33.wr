@@ -1,11 +1,15 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="855" gr:y="165" id="sv4#area15#page33" name="Errore">
   <ContentUnits>
-    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area15#page33#mssu2" name="Errore"/>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area15#page33#mssu2" name="Errore" linkOrder="sv4#area15#page33#mssu2#ln34">
+      <Link id="sv4#area15#page33#mssu2#ln34" name="Torna all'elenco dei prodotti online" to="sv4#area15#page31" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv4#area15#page33#mssu2"/>
+        <layout:Unit unitId="sv4#area15#page33#mssu2">
+          <layout:Link link="sv4#area15#page33#mssu2#ln34"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

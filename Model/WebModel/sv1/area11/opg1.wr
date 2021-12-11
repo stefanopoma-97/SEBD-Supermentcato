@@ -1,0 +1,15 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="685" gr:y="200" id="sv1#area11#opg1" name="Creazione utente esterno registrato" transaction="true">
+  <OperationUnits>
+    <CreateUnit gr:x="320" gr:y="10" id="sv1#area11#opg1#cru2" name="Crea Indirizzo" entity="ent2">
+      <KOLink id="sv1#area11#opg1#cru2#kln8" name="KOFlow8" to="sv1#area11#page19#mssu12">
+        <LinkParameter id="sv1#area11#opg1#cru2#kln8#par68" name="via_Shown Messages" target="sv1#area11#page19#mssu12.shownMessages" sourceValue="sbagliato a creare l'indirizzo"/>
+      </KOLink>
+      <OKLink id="sv1#area11#opg1#cru2#oln5" name="OKFlow5" to="sv1#area11#page18" gr:bendpoints="-269,-238,551,-173"/>
+    </CreateUnit>
+    <CreateUnit gr:x="0" gr:y="10" id="sv1#area11#opg1#cru3" name="Crea utente" entity="ent13">
+      <KOLink id="sv1#area11#opg1#cru3#kln7" name="KOFlow7" to="sv1#area11#page19#mssu12" customDescriptor="false">
+        <LinkParameter id="sv1#area11#opg1#cru3#kln7#par67" name="userName_Shown Messages" target="sv1#area11#page19#mssu12.shownMessages" sourceValue="errore creazione utente"/>
+      </KOLink>
+    </CreateUnit>
+  </OperationUnits>
+</OperationGroup>
