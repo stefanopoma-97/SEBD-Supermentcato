@@ -1,0 +1,15 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="790" id="sv2#area18#opg19" name="Filtri" transaction="true">
+  <OperationUnits>
+    <SelectorUnit id="sv2#area18#opg19#seu85" name="Filtri ricerca" gr:x="10" gr:y="0" entity="ent8">
+      <Selector id="sv2#area18#opg19#seu85#su158" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area18#opg19#seu85#su158#rcond79" name="Da categoria a prodotti" predicate="in" implied="true" role="rel4#role8.rel8#role16"/>
+        <RelationshipRoleCondition id="sv2#area18#opg19#seu85#su158#rcond80" name="Da fascia a prodotti" predicate="in" implied="true" role="rel11#role21.rel8#role16"/>
+        <RelationshipRoleCondition id="sv2#area18#opg19#seu85#su158#rcond81" name="Nazione to Prodotto" predicate="in" implied="true" role="rel18#role36.rel8#role16"/>
+        <AttributesCondition id="sv2#area18#opg19#seu85#su158#acond31" name="Nome" predicate="contains" booleanOperator="or" implied="true" attributes="rel8#role15.ent4#att15"/>
+        <RelationshipRoleCondition id="sv2#area18#opg19#seu85#su158#rcond82" name="Negozio to Prodotto Online" predicate="in" implied="true" role="rel7#role14"/>
+      </Selector>
+      <Link id="sv2#area18#opg19#seu85#ln218" name="Flow35" to="sv2#area18#page45#pwu22" type="transport" automaticCoupling="true" validate="true" gr:bendpoints="510,-129,-55,336"/>
+      <KOLink id="sv2#area18#opg19#seu85#kln47" name="KOFlow46" to="sv2#area18#page58" automaticCoupling="true"/>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

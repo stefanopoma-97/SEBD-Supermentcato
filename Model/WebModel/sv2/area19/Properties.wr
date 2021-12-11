@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area19" name="Area Home" defaultPage="sv2#area19#page43" landmarks="sv2#area19#page43" landmark="true" gr:x="1220" gr:y="5">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area19" name="Area Home" defaultPage="sv2#area19#page43" landmarks="sv2#area19#page43" landmark="true" gr:x="1450" gr:y="0">
   <OperationUnits>
     <SelectorUnit id="sv2#area19#seu57" name="Prodotto nuovo" gr:x="1140" gr:y="650" entity="ent11" distinctAttributes="ent4#att59 ent4#att18 ent4#att16 ent4#att53 ent4#att27 ent4#att60 ent4#att15 ent4#att14 ent4#att17">
       <OKLink id="sv2#area19#seu57#oln15" name="OKFlow3" to="sv2#area21#page51#pwu13">

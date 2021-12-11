@@ -14,12 +14,13 @@
         <RelationshipRoleCondition id="sv1#area10#page13#pwu1#su29#rcond22" role="rel19#role38" predicate="in" implied="false" name="RoleCondition21"/>
       </Selector>
     </PowerIndexUnit>
-    <IndexUnit gr:x="465" gr:y="165" id="sv1#area10#page13#inu13" name="Promozioni attive" entity="ent6" displayAttributes="ent6#att41 ent6#att24 ent6#att23">
+    <IndexUnit gr:x="465" gr:y="165" id="sv1#area10#page13#inu13" name="Promozioni attive" entity="ent6" displayAttributes="ent6#att41 ent6#att24 ent6#att23" linkOrder="sv1#area10#page13#inu13#ln103">
       <Selector id="sv1#area10#page13#inu13#su21" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area10#page13#inu13#su21#rcond1" name="NegozioToPromozione" predicate="in" implied="false" role="rel5#role10"/>
         <AttributesCondition id="sv1#area10#page13#inu13#su21#acond12" name="Non scaduta" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
         <AttributesCondition id="sv1#area10#page13#inu13#su21#acond13" name="Valida in negozio" predicate="eq" booleanOperator="or" implied="false" attributes="ent6#att25" value="1"/>
       </Selector>
+      <Link id="sv1#area10#page13#inu13#ln103" name="Dettagli" to="sv1#area9#page10#dau3" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
     <TimeUnit gr:x="235" gr:y="155" id="sv1#area10#page13#tmu3" name="Data attuale">
       <Link id="sv1#area10#page13#tmu3#ln26" name="Flow26" to="sv1#area10#page13#inu13" type="transport" validate="true">
@@ -76,6 +77,7 @@
           <layout:Attribute attribute="ent6#att41"/>
           <layout:Attribute attribute="ent6#att24"/>
           <layout:Attribute attribute="ent6#att23"/>
+          <layout:Link link="sv1#area10#page13#inu13#ln103"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

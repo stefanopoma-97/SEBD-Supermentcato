@@ -1,35 +1,47 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="345" gr:y="470" id="sv1#area8#page9" name="Pagina Elenco prodotti">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="385" gr:y="470" id="sv1#area8#page9" name="Pagina Elenco prodotti">
   <ContentUnits>
-    <EntryUnit gr:x="235" gr:y="415" id="sv1#area8#page9#enu3" name="Cerca" linkOrder="sv1#area8#page9#enu3#ln33">
+    <EntryUnit gr:x="195" gr:y="415" id="sv1#area8#page9#enu3" name="Cerca" linkOrder="sv1#area8#page9#enu3#ln33">
       <SelectionField id="sv1#area8#page9#enu3#sfld1" name="Categoria" type="string"/>
       <SelectionField id="sv1#area8#page9#enu3#sfld2" name="Fascia di prezzo" type="string"/>
       <Link id="sv1#area8#page9#enu3#ln33" name="Filtra" to="sv1#area8#seu13" type="normal" validate="true">
         <LinkParameter id="sv1#area8#page9#enu3#ln33#par17" name="Categoria_Da categoria a prodotti [oid]" source="sv1#area8#page9#enu3#sfld1" target="sv1#area8#seu13#su10#rcond2.ent5#att19"/>
         <LinkParameter id="sv1#area8#page9#enu3#ln33#par20" name="Fascia di prezzo_Da fascia a prodotti [oid]" source="sv1#area8#page9#enu3#sfld2" target="sv1#area8#seu13#su10#rcond4.ent15#att30"/>
+        <LinkParameter id="sv1#area8#page9#enu3#ln33#par180" name="Nazione_Nazione to Prodotto [oid]" source="sv1#area8#page9#enu3#sfld10" target="sv1#area8#seu13#su10#rcond10.ent19#att44"/>
       </Link>
+      <SelectionField id="sv1#area8#page9#enu3#sfld10" name="Nazione" type="string"/>
     </EntryUnit>
-    <SelectorUnit gr:x="440" gr:y="5" id="sv1#area8#page9#seu7" name="Tutti i prodotti" entity="ent4">
+    <SelectorUnit gr:x="400" gr:y="5" id="sv1#area8#page9#seu7" name="Tutti i prodotti" entity="ent4">
       <Link id="sv1#area8#page9#seu7#ln15" name="Flow15" to="sv1#area8#page9#pwu11" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv1#area8#page9#seu7#ln41" name="Flow41" to="sv1#area8#page9#seu14" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="40" gr:y="550" id="sv1#area8#page9#seu8" name="Categorie" entity="ent5">
+    <SelectorUnit gr:x="0" gr:y="550" id="sv1#area8#page9#seu8" name="Categorie" entity="ent5">
       <Link id="sv1#area8#page9#seu8#ln27" name="Flow27" to="sv1#area8#page9#enu3" type="transport" validate="true">
         <LinkParameter id="sv1#area8#page9#seu8#ln27#par10" name="nome_Categoria [label]" source="ent5#att20Array" target="sv1#area8#page9#enu3#sfld1_label"/>
         <LinkParameter id="sv1#area8#page9#seu8#ln27#par11" name="oid_Categoria [output]" source="ent5#att19Array" target="sv1#area8#page9#enu3#sfld1_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="300" gr:y="555" id="sv1#area8#page9#seu9" name="Fasce di prezzo" entity="ent15">
+    <SelectorUnit gr:x="260" gr:y="555" id="sv1#area8#page9#seu9" name="Fasce di prezzo" entity="ent15">
       <Link id="sv1#area8#page9#seu9#ln28" name="Flow28" to="sv1#area8#page9#enu3" type="transport" validate="true">
         <LinkParameter id="sv1#area8#page9#seu9#ln28#par12" name="fascia_Fascia di prezzo [label]" source="ent15#att32Array" target="sv1#area8#page9#enu3#sfld2_label"/>
         <LinkParameter id="sv1#area8#page9#seu9#ln28#par13" name="oid_Fascia di prezzo [output]" source="ent15#att30Array" target="sv1#area8#page9#enu3#sfld2_output"/>
       </Link>
     </SelectorUnit>
-    <PowerIndexUnit id="sv1#area8#page9#pwu11" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" sortable="true" checkable="false" useCountQuery="false" gr:x="185" gr:y="0" name="Lista Prodotti" linkOrder="sv1#area8#page9#pwu11#ln12">
+    <PowerIndexUnit id="sv1#area8#page9#pwu11" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" sortable="true" checkable="false" useCountQuery="false" gr:x="145" gr:y="0" name="Lista Prodotti" linkOrder="sv1#area8#page9#pwu11#ln12">
       <Selector id="sv1#area8#page9#pwu11#su71" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area8#page9#pwu11#su71#kcond41" predicate="in" implied="false" name="KeyCondition7"/>
       </Selector>
       <Link id="sv1#area8#page9#pwu11#ln12" name="Flow21" to="sv1#area8#page8#dau2" type="normal" automaticCoupling="true" validate="true"/>
       <SortAttribute attribute="ent4#att17" order="ascending"/>
     </PowerIndexUnit>
+    <SelectorUnit gr:x="410" gr:y="335" id="sv1#area8#page9#seu14" name="Nazioni" entity="ent19">
+      <Selector id="sv1#area8#page9#seu14#su57" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area8#page9#seu14#su57#rcond11" name="Prodotti to Nazione" role="rel18#role35" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area8#page9#seu14#ln48" name="Flow48" to="sv1#area8#page9#enu3" type="transport" validate="true">
+        <LinkParameter id="sv1#area8#page9#seu14#ln48#par181" name="nome_Nazione [label]" source="ent19#att45Array" target="sv1#area8#page9#enu3#sfld10_label"/>
+        <LinkParameter id="sv1#area8#page9#seu14#ln48#par184" name="oid_Nazione [output]" source="ent19#att44Array" target="sv1#area8#page9#enu3#sfld10_output"/>
+      </Link>
+    </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -65,6 +77,7 @@
           <layout:Link link="sv1#area8#page9#enu3#ln33"/>
           <layout:Field field="sv1#area8#page9#enu3#sfld1"/>
           <layout:Field field="sv1#area8#page9#enu3#sfld2"/>
+          <layout:Field field="sv1#area8#page9#enu3#sfld10"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

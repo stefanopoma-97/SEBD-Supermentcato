@@ -5,6 +5,7 @@
         <RelationshipRoleCondition id="sv1#area8#seu13#su10#rcond2" name="Da categoria a prodotti" predicate="in" implied="true" role="rel4#role8"/>
         <RelationshipRoleCondition id="sv1#area8#seu13#su10#rcond4" name="Da fascia a prodotti" predicate="in" implied="true" role="rel11#role21"/>
         <KeyCondition id="sv1#area8#seu13#su10#kcond2" name="Prodotti nuovi" predicate="in" implied="true"/>
+        <RelationshipRoleCondition id="sv1#area8#seu13#su10#rcond10" name="Nazione to Prodotto" predicate="in" implied="true" role="rel18#role36"/>
       </Selector>
       <Link id="sv1#area8#seu13#ln7" name="Flow35" to="sv1#area8#page9#pwu11" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="510,-129,-55,336"/>
     </SelectorUnit>

@@ -13,17 +13,17 @@
       <Field id="sv1#area11#page18#enu6#fld14" name="Via" type="string" modifiable="true"/>
       <Field id="sv1#area11#page18#enu6#fld15" name="Numero" type="string" modifiable="true"/>
       <SelectionField id="sv1#area11#page18#enu6#sfld8" name="Citt&#224;" type="string"/>
-      <Link id="sv1#area11#page18#enu6#ln78" name="Flow78" to="sv1#area11#opg1#cru3" type="normal" validate="true">
-        <LinkParameter id="sv1#area11#page18#enu6#ln78#par46" name="Cognome_cognome" source="sv1#area11#page18#enu6#fld9" target="sv1#area11#opg1#cru3.ent13#att50"/>
-        <LinkParameter id="sv1#area11#page18#enu6#ln78#par47" name="Email_email" source="sv1#area11#page18#enu6#fld12" target="sv1#area11#opg1#cru3.email"/>
-        <LinkParameter id="sv1#area11#page18#enu6#ln78#par48" name="Nome_nome" source="sv1#area11#page18#enu6#fld8" target="sv1#area11#opg1#cru3.ent13#att49"/>
-        <LinkParameter id="sv1#area11#page18#enu6#ln78#par49" name="Password_password" source="sv1#area11#page18#enu6#fld11" target="sv1#area11#opg1#cru3.password"/>
-        <LinkParameter id="sv1#area11#page18#enu6#ln78#par50" name="UserName_userName" source="sv1#area11#page18#enu6#fld10" target="sv1#area11#opg1#cru3.userName"/>
+      <Link id="sv1#area11#page18#enu6#ln78" name="Flow78" to="sv1#area11#opg13#cru1" type="normal" validate="true">
         <LinkParameter id="sv1#area11#page18#enu6#ln78#par51" name="Citt&#224;_PASSING" source="sv1#area11#page18#enu6#sfld8" passing="true"/>
         <LinkParameter id="sv1#area11#page18#enu6#ln78#par52" name="Numero_PASSING" source="sv1#area11#page18#enu6#fld15" passing="true"/>
         <LinkParameter id="sv1#area11#page18#enu6#ln78#par53" name="Via_PASSING" source="sv1#area11#page18#enu6#fld14" passing="true"/>
-        <LinkParameter id="sv1#area11#page18#enu6#ln78#par63" name="Negozio preferito_Negozio.oid(Utente esterno registratoToNegozio)" source="sv1#area11#page18#enu6#sfld7" target="sv1#area11#opg1#cru3.rel15#role30.ent3#att8"/>
-        <LinkParameter id="sv1#area11#page18#enu6#ln78#par70" name="2_Group.oid(defaultGroup)" sourceValue="2" target="sv1#area11#opg1#cru3.User2DefaultGroup.groupOID"/>
+        <LinkParameter id="sv1#area11#page18#enu6#ln78#par63" name="Cognome_cognome" source="sv1#area11#page18#enu6#fld9" target="sv1#area11#opg13#cru1.ent13#att50"/>
+        <LinkParameter id="sv1#area11#page18#enu6#ln78#par67" name="Email_email" source="sv1#area11#page18#enu6#fld12" target="sv1#area11#opg13#cru1.email"/>
+        <LinkParameter id="sv1#area11#page18#enu6#ln78#par68" name="Nome_nome" source="sv1#area11#page18#enu6#fld8" target="sv1#area11#opg13#cru1.ent13#att49"/>
+        <LinkParameter id="sv1#area11#page18#enu6#ln78#par70" name="Password_password" source="sv1#area11#page18#enu6#fld11" target="sv1#area11#opg13#cru1.password"/>
+        <LinkParameter id="sv1#area11#page18#enu6#ln78#par94" name="UserName_userName" source="sv1#area11#page18#enu6#fld10" target="sv1#area11#opg13#cru1.userName"/>
+        <LinkParameter id="sv1#area11#page18#enu6#ln78#par104" name="Negozio preferito_PASSING" source="sv1#area11#page18#enu6#sfld7" passing="true"/>
+        <LinkParameter id="sv1#area11#page18#enu6#ln78#par179" name="2_Group.oid(defaultGroup)" sourceValue="2" target="sv1#area11#opg13#cru1.User2DefaultGroup.groupOID"/>
       </Link>
     </EntryUnit>
     <SelectorUnit gr:x="30" gr:y="160" id="sv1#area11#page18#seu31" name="Negozi" entity="ent3">

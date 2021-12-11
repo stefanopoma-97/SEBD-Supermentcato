@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area22#page54" name="Pagina negozi" gr:x="385" gr:y="390">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area22#page54" name="Pagina negozi" gr:x="385" gr:y="525">
   <ContentUnits>
-    <SelectorUnit id="sv2#area22#page54#seu72" name="Negozi" gr:x="365" gr:y="20" entity="ent3">
+    <SelectorUnit id="sv2#area22#page54#seu72" name="Negozi" gr:x="260" gr:y="20" entity="ent3">
       <Link id="sv2#area22#page54#seu72#ln170" name="Flow45" to="sv2#area22#page54#pwu15" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
     <EntryUnit id="sv2#area22#page54#enu18" name="Cerca" linkOrder="sv2#area22#page54#enu18#ln171" gr:x="195" gr:y="185">

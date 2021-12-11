@@ -1,0 +1,60 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area16#opg16" name="Creazione" transaction="true" gr:x="100" gr:y="840">
+  <OperationUnits>
+    <ModifyUnit id="sv2#area16#opg16#mfu3" entity="ent13" name="Modifica" gr:x="145" gr:y="165">
+      <OKLink id="sv2#area16#opg16#mfu3#oln36" name="OKFlow26" to="sv2#area16#opg16#rcnu1">
+        <LinkParameter id="sv2#area16#opg16#mfu3#oln36#par232" name="oid_KeyCondition23 [oid] [Utente esterno registrato] [Source]" source="userOIDArray" target="sv2#area16#opg16#rcnu1#su137#kcond76.userOID"/>
+        <LinkParameter id="sv2#area16#opg16#mfu3#oln36#par237" name="oid_PASSING" source="userOIDArray" passing="true"/>
+        <LinkParameter id="sv2#area16#opg16#mfu3#oln36#par250" name="Negozio preferito_PASSING_KeyCondition24 [oid] [Negozio] [Target]" sourceLinkParameter="sv2#area16#page42#enu12#ln176#par249" target="sv2#area16#opg16#rcnu1#su138#kcond77.ent3#att8"/>
+        <LinkParameter id="sv2#area16#opg16#mfu3#oln36#par251" name="Citt&#224;_PASSING" sourceLinkParameter="sv2#area16#page42#enu12#ln176#par246" passing="true"/>
+        <LinkParameter id="sv2#area16#opg16#mfu3#oln36#par252" name="Numero_PASSING" sourceLinkParameter="sv2#area16#page42#enu12#ln176#par247" passing="true"/>
+        <LinkParameter id="sv2#area16#opg16#mfu3#oln36#par253" name="Via_PASSING" sourceLinkParameter="sv2#area16#page42#enu12#ln176#par248" passing="true"/>
+        <LinkParameter id="sv2#area16#opg16#mfu3#oln36#par288" name="UserToIndirizzo.oid_PASSING" sourceLinkParameter="sv2#area16#page42#enu12#ln176#par287" passing="true"/>
+      </OKLink>
+      <Selector id="sv2#area16#opg16#mfu3#su136" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area16#opg16#mfu3#su136#kcond71" name="KeyCondition71" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv2#area16#opg16#mfu3#kln34" name="KOFlow34" to="sv2#area16#page44#mssu19" automaticCoupling="true"/>
+    </ModifyUnit>
+    <GetUnit gr:x="0" gr:y="0" id="sv2#area16#opg16#gtu18" name="Utente" contextParameters="UserCtxParam" linkOrder="sv2#area16#opg16#gtu18#ln223">
+      <Link id="sv2#area16#opg16#gtu18#ln223" name="Flow223" to="sv2#area16#opg16#mfu3" type="transport" validate="true">
+        <LinkParameter id="sv2#area16#opg16#gtu18#ln223#par285" name="UserCtxParam.oid_KeyCondition71 [oid]" source="sv2#area16#opg16#gtu18.UserCtxParam" target="sv2#area16#opg16#mfu3#su136#kcond71.userOID"/>
+      </Link>
+    </GetUnit>
+    <ReconnectUnit id="sv2#area16#opg16#rcnu1" relationship="rel15#role30" name="Utente Negozio" gr:x="410" gr:y="45">
+      <SourceSelector id="sv2#area16#opg16#rcnu1#su137" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area16#opg16#rcnu1#su137#kcond76" predicate="in" implied="false" name="KeyCondition23"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#area16#opg16#rcnu1#su138" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area16#opg16#rcnu1#su138#kcond77" predicate="in" implied="false" name="KeyCondition24"/>
+      </TargetSelector>
+      <KOLink id="sv2#area16#opg16#rcnu1#kln40" name="KOFlow37" to="sv2#area16#page44#mssu19" automaticCoupling="true"/>
+      <OKLink id="sv2#area16#opg16#rcnu1#oln37" name="OKFlow27" to="sv2#area16#opg16#mfu5">
+        <LinkParameter id="sv2#area16#opg16#rcnu1#oln37#par254" name="oid_PASSING" sourceLinkParameter="sv2#area16#opg16#mfu3#oln36#par237" passing="true"/>
+        <LinkParameter id="sv2#area16#opg16#rcnu1#oln37#par255" name="Citt&#224;_PASSING_Citt&#224;.oid(IndirizzoToCitt&#224;)" sourceLinkParameter="sv2#area16#opg16#mfu3#oln36#par251" target="sv2#area16#opg16#mfu5.rel1#role2.ent1#att1"/>
+        <LinkParameter id="sv2#area16#opg16#rcnu1#oln37#par256" name="Numero_PASSING_numero" sourceLinkParameter="sv2#area16#opg16#mfu3#oln36#par252" target="sv2#area16#opg16#mfu5.ent2#att7"/>
+        <LinkParameter id="sv2#area16#opg16#rcnu1#oln37#par257" name="Via_PASSING_via" sourceLinkParameter="sv2#area16#opg16#mfu3#oln36#par253" target="sv2#area16#opg16#mfu5.ent2#att6"/>
+        <LinkParameter id="sv2#area16#opg16#rcnu1#oln37#par289" name="UserToIndirizzo.oid_PASSING_KeyCondition86 [oid]" sourceLinkParameter="sv2#area16#opg16#mfu3#oln36#par288" target="sv2#area16#opg16#mfu5#su159#kcond86.ent2#att5"/>
+      </OKLink>
+    </ReconnectUnit>
+    <ReconnectUnit id="sv2#area16#opg16#rcnu2" relationship="rel3#role5" name="Indirizzo Utente" gr:x="975" gr:y="135">
+      <SourceSelector id="sv2#area16#opg16#rcnu2#su139" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area16#opg16#rcnu2#su139#kcond78" predicate="in" implied="false" name="KeyCondition25"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#area16#opg16#rcnu2#su140" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area16#opg16#rcnu2#su140#kcond79" predicate="in" implied="false" name="KeyCondition26"/>
+      </TargetSelector>
+      <KOLink id="sv2#area16#opg16#rcnu2#kln41" name="KOFlow39" to="sv2#area16#page44#mssu19" automaticCoupling="true"/>
+      <OKLink id="sv2#area16#opg16#rcnu2#oln38" name="OKFlow38" to="sv2#area16#page36" automaticCoupling="true" gr:bendpoints="-162,-581,578,234"/>
+    </ReconnectUnit>
+    <ModifyUnit id="sv2#area16#opg16#mfu5" entity="ent2" name="Modifica indirizzo" gr:x="750" gr:y="65">
+      <KOLink id="sv2#area16#opg16#mfu5#kln48" name="KOFlow38" to="sv2#area16#page44#mssu19" automaticCoupling="true"/>
+      <OKLink id="sv2#area16#opg16#mfu5#oln43" name="OKFlow28" to="sv2#area16#opg16#rcnu2">
+        <LinkParameter id="sv2#area16#opg16#mfu5#oln43#par283" name="oid_KeyCondition26 [oid] [Indirizzo] [Target]" source="ent2#att5Array" target="sv2#area16#opg16#rcnu2#su140#kcond79.ent2#att5"/>
+        <LinkParameter id="sv2#area16#opg16#mfu5#oln43#par284" name="oid_PASSING_KeyCondition25 [oid] [Utente esterno registrato] [Source]" sourceLinkParameter="sv2#area16#opg16#rcnu1#oln37#par254" target="sv2#area16#opg16#rcnu2#su139#kcond78.userOID"/>
+      </OKLink>
+      <Selector id="sv2#area16#opg16#mfu5#su159" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area16#opg16#mfu5#su159#kcond86" name="KeyCondition86" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationGroup>
