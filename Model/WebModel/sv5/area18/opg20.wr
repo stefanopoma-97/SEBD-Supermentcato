@@ -1,0 +1,20 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="325" gr:y="0" id="sv5#area18#opg20" name="Elimina negozio" transaction="true">
+  <OperationUnits>
+    <DeleteUnit gr:x="255" gr:y="0" id="sv5#area18#opg20#dlu2" name="Elimina negozio" entity="ent3">
+      <Selector id="sv5#area18#opg20#dlu2#su137" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg20#dlu2#su137#kcond85" name="KeyCondition85" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv5#area18#opg20#dlu2#kln47" name="KOFlow47" to="sv5#area18#page66#mssu23"/>
+      <OKLink id="sv5#area18#opg20#dlu2#oln43" name="OKFlow43" to="sv5#area18#opg20#dlu5">
+        <LinkParameter id="sv5#area18#opg20#dlu2#oln43#par279" name="oid_PASSING_IndirizzoNegozio [oid]" sourceLinkParameter="sv5#area18#page62#dau22#ln175#par278" target="sv5#area18#opg20#dlu5#su142#rcond11.ent3#att8"/>
+      </OKLink>
+    </DeleteUnit>
+    <DeleteUnit gr:x="0" gr:y="0" id="sv5#area18#opg20#dlu5" name="Elimina indirizzo" entity="ent2">
+      <Selector id="sv5#area18#opg20#dlu5#su142" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area18#opg20#dlu5#su142#rcond11" name="IndirizzoNegozio" predicate="in" implied="false" role="rel2#role3"/>
+      </Selector>
+      <OKLink id="sv5#area18#opg20#dlu5#oln47" name="OKFlow47" to="sv5#area18#page61" automaticCoupling="true"/>
+      <KOLink id="sv5#area18#opg20#dlu5#kln51" name="KOFlow51" to="sv5#area18#page66#mssu23"/>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>

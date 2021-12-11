@@ -1,0 +1,42 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="945" gr:y="630" id="sv5#area18#opg21" name="Modifica negozio" transaction="true">
+  <OperationUnits>
+    <ModifyUnit gr:x="30" gr:y="0" id="sv5#area18#opg21#mfu5" name="Modifica negozio" entity="ent3">
+      <Selector id="sv5#area18#opg21#mfu5#su143" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg21#mfu5#su143#kcond91" name="KeyCondition91" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv5#area18#opg21#mfu5#oln48" name="OKFlow48" to="sv5#area18#opg21#mfu7">
+        <LinkParameter id="sv5#area18#opg21#mfu5#oln48#par304" name="oid_PASSING_KeyCondition92 [oid]" sourceLinkParameter="sv5#area18#page65#enu15#ln189#par302" target="sv5#area18#opg21#mfu7#su145#kcond92.ent2#att5"/>
+        <LinkParameter id="sv5#area18#opg21#mfu5#oln48#par305" name="Numero_PASSING_numero" sourceLinkParameter="sv5#area18#page65#enu15#ln189#par301" target="sv5#area18#opg21#mfu7.ent2#att7"/>
+        <LinkParameter id="sv5#area18#opg21#mfu5#oln48#par306" name="Via_PASSING_via" sourceLinkParameter="sv5#area18#page65#enu15#ln189#par303" target="sv5#area18#opg21#mfu7.ent2#att6"/>
+        <LinkParameter id="sv5#area18#opg21#mfu5#oln48#par310" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#page65#enu15#ln189#par309" passing="true"/>
+      </OKLink>
+      <KOLink id="sv5#area18#opg21#mfu5#kln52" name="KOFlow52" to="sv5#area18#page64#mssu22">
+        <LinkParameter id="sv5#area18#opg21#mfu5#kln52#par308" name="Errore durante la modifica del negozio_Shown Messages" sourceValue="Errore durante la modifica del negozio" target="sv5#area18#page64#mssu22.shownMessages"/>
+      </KOLink>
+    </ModifyUnit>
+    <ModifyUnit gr:x="30" gr:y="125" id="sv5#area18#opg21#mfu7" name="Modifica indirizzo" entity="ent2">
+      <Selector id="sv5#area18#opg21#mfu7#su145" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg21#mfu7#su145#kcond92" name="KeyCondition92" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv5#area18#opg21#mfu7#oln49" name="OKFlow49" to="sv5#area18#opg21#rcnu4">
+        <LinkParameter id="sv5#area18#opg21#mfu7#oln49#par311" name="oid_KeyCondition94 [oid] [Indirizzo] [ConnectSource]" source="ent2#att5Array" target="sv5#area18#opg21#rcnu4#su147#kcond94.ent2#att5"/>
+        <LinkParameter id="sv5#area18#opg21#mfu7#oln49#par312" name="Citt&#224;_PASSING_KeyCondition95 [oid] [Citt&#224;] [ConnectTarget]" sourceLinkParameter="sv5#area18#opg21#mfu5#oln48#par310" target="sv5#area18#opg21#rcnu4#su148#kcond95.ent1#att1"/>
+      </OKLink>
+      <KOLink id="sv5#area18#opg21#mfu7#kln53" name="KOFlow53" to="sv5#area18#page64#mssu22">
+        <LinkParameter id="sv5#area18#opg21#mfu7#kln53#par307" name="Errore durante la modifica dell'indirizzo_Shown Messages" sourceValue="Errore durante la modifica dell'indirizzo" target="sv5#area18#page64#mssu22.shownMessages"/>
+      </KOLink>
+    </ModifyUnit>
+    <ReconnectUnit gr:x="0" gr:y="250" id="sv5#area18#opg21#rcnu4" name="Riconnetti indirizzo a citt&#224;" relationship="rel1#role2">
+      <SourceSelector id="sv5#area18#opg21#rcnu4#su147" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg21#rcnu4#su147#kcond94" name="KeyCondition94" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area18#opg21#rcnu4#su148" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg21#rcnu4#su148#kcond95" name="KeyCondition95" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area18#opg21#rcnu4#oln50" name="OKFlow50" to="sv5#area18#page62#dau24" automaticCoupling="true"/>
+      <KOLink id="sv5#area18#opg21#rcnu4#kln54" name="KOFlow54" to="sv5#area18#page64#mssu22">
+        <LinkParameter id="sv5#area18#opg21#rcnu4#kln54#par313" name="Errore durante riconnessione tra indirizzo e citt&#224;_Shown Messages" sourceValue="Errore durante riconnessione tra indirizzo e citt&#224;" target="sv5#area18#page64#mssu22.shownMessages"/>
+      </KOLink>
+    </ReconnectUnit>
+  </OperationUnits>
+</OperationGroup>

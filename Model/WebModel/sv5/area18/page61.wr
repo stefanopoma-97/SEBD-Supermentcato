@@ -1,0 +1,77 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="255" gr:y="315" id="sv5#area18#page61" name="Negozi" linkOrder="sv5#area18#page61#ln143">
+  <ContentUnits>
+    <ScrollerUnit gr:x="0" gr:y="5" id="sv5#area18#page61#scu13" name="Scorri negozi" useCountQuery="false" blockFactor="5" entity="ent3" linkOrder="sv5#area18#page61#scu13#ln141">
+      <Link id="sv5#area18#page61#scu13#ln141" name="Flow141" to="sv5#area18#page61#pwu21" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
+    <PowerIndexUnit gr:x="160" gr:y="0" id="sv5#area18#page61#pwu21" name="Elenco negozi" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42" linkOrder="sv5#area18#page61#pwu21#ln142 sv5#area18#page61#pwu21#ln194 sv5#area18#page61#pwu21#ln193">
+      <SortAttribute attribute="ent3#att9" order="ascending"/>
+      <SortAttribute attribute="ent3#att12" order="ascending"/>
+      <SortAttribute attribute="ent3#att13" order="ascending"/>
+      <SortAttribute attribute="ent3#att58" order="ascending"/>
+      <Link id="sv5#area18#page61#pwu21#ln142" name="Dettagli" to="sv5#area18#page62#dau22" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area18#page61#pwu21#ln193" name="Elimina" to="sv5#area18#opg20#dlu2" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area18#page61#pwu21#ln194" name="Modifica" to="sv5#area18#page65#seu50" type="normal" validate="true">
+        <LinkParameter id="sv5#area18#page61#pwu21#ln194#par314" name="oid_IndirizzoNegozio [oid]" source="data[].ent3#att8" target="sv5#area18#page65#seu50#su144#rcond33.ent3#att8"/>
+        <LinkParameter id="sv5#area18#page61#pwu21#ln194#par315" name="fondazione_PASSING" source="data[].ent3#att12" passing="true"/>
+        <LinkParameter id="sv5#area18#page61#pwu21#ln194#par316" name="massimo ordini giornalieri_PASSING" source="data[].ent3#att11" passing="true"/>
+        <LinkParameter id="sv5#area18#page61#pwu21#ln194#par317" name="nome_PASSING" source="data[].ent3#att9" passing="true"/>
+        <LinkParameter id="sv5#area18#page61#pwu21#ln194#par322" name="oid_PASSING" source="data[].ent3#att8" passing="true"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area18#page61#scu13">
+          <layout:Link link="sv5#area18#page61#scu13First"/>
+          <layout:Link link="sv5#area18#page61#scu13Previous"/>
+          <layout:Link link="sv5#area18#page61#scu13Block"/>
+          <layout:Link link="sv5#area18#page61#scu13Next"/>
+          <layout:Link link="sv5#area18#page61#scu13Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area18#page61#pwu21">
+          <layout:Attribute attribute="ent3#att9"/>
+          <layout:Attribute attribute="ent3#att11"/>
+          <layout:Attribute attribute="ent3#att12"/>
+          <layout:Attribute attribute="ent3#att13"/>
+          <layout:Attribute attribute="ent3#att58"/>
+          <layout:Attribute attribute="ent3#att42"/>
+          <layout:Link link="sv5#area18#page61#pwu21#ln142"/>
+          <layout:Link link="sv5#area18#page61#pwu21#ln194"/>
+          <layout:Link link="sv5#area18#page61#pwu21#ln193"/>
+          <layout:Link link="sv5#area18#page61#pwu21ent3#att9"/>
+          <layout:Link link="sv5#area18#page61#pwu21ent3#att12"/>
+          <layout:Link link="sv5#area18#page61#pwu21ent3#att13"/>
+          <layout:Link link="sv5#area18#page61#pwu21ent3#att58"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv5#area18#page61#ln143" name="Crea negozio" to="sv5#area18#page63#enu14" automaticCoupling="true" type="normal" validate="true"/>
+</Page>
