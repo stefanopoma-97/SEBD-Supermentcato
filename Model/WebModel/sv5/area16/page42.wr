@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="925" gr:y="355" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv5#area16#page42#pwu20" name="Elenco prodotti" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60" linkOrder="sv5#area16#page42#pwu20#ln100">
+      <Selector id="sv5#area16#page42#pwu20#su60" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area16#page42#pwu20#su60#rcond10" name="CategoriaProdotto" predicate="in" implied="true" role="rel4#role8"/>
+      </Selector>
+      <Link id="sv5#area16#page42#pwu20#ln100" name="Dettagli" to="sv5#area16#page44#dau17" automaticCoupling="true" type="normal" validate="true"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area16#page42#pwu20">
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att53"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att59"/>
+          <layout:Attribute attribute="ent4#att60"/>
+          <layout:Link link="sv5#area16#page42#pwu20#ln100"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv5#area16#page42#ln104" name="Crea prodotto" to="sv5#area16#page45#enu12" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

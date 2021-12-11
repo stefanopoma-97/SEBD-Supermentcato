@@ -1,0 +1,58 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1275" gr:y="340" id="sv5#area16#opg16" name="Crea prodotto" transaction="true">
+  <OperationUnits>
+    <CreateUnit gr:x="40" gr:y="280" id="sv5#area16#opg16#cru7" name="Crea prodotto" entity="ent4">
+      <OKLink id="sv5#area16#opg16#cru7#oln30" name="OKFlow30" to="sv5#area16#opg16#cnu8">
+        <LinkParameter id="sv5#area16#opg16#cru7#oln30#par199" name="oid_KeyCondition46 [oid] [Prodotto] [Source]" source="ent4#att14Array" target="sv5#area16#opg16#cnu8#su78#kcond46.ent4#att14"/>
+        <LinkParameter id="sv5#area16#opg16#cru7#oln30#par200" name="Categoria_PASSING_KeyCondition51 [oid] [Categoria] [Target]" sourceLinkParameter="sv5#area16#page45#enu12#ln106#par196" target="sv5#area16#opg16#cnu8#su87#kcond51.ent5#att19"/>
+        <LinkParameter id="sv5#area16#opg16#cru7#oln30#par201" name="Fascia di prezzo_PASSING" sourceLinkParameter="sv5#area16#page45#enu12#ln106#par197" passing="true"/>
+        <LinkParameter id="sv5#area16#opg16#cru7#oln30#par202" name="Nazione_PASSING" sourceLinkParameter="sv5#area16#page45#enu12#ln106#par198" passing="true"/>
+      </OKLink>
+      <KOLink id="sv5#area16#opg16#cru7#kln40" name="KOFlow40" to="sv5#area16#page59#mssu19">
+        <LinkParameter id="sv5#area16#opg16#cru7#kln40#par244" name="Errore nella creazione del prodotto_Shown Messages" sourceValue="Errore nella creazione del prodotto" target="sv5#area16#page59#mssu19.shownMessages"/>
+      </KOLink>
+    </CreateUnit>
+    <ConnectUnit gr:x="270" gr:y="265" id="sv5#area16#opg16#cnu8" name="Connetti prodotto a categoria" relationship="rel4#role7">
+      <SourceSelector id="sv5#area16#opg16#cnu8#su78" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg16#cnu8#su78#kcond46" name="KeyCondition46" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area16#opg16#cnu8#su87" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg16#cnu8#su87#kcond51" name="KeyCondition51" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area16#opg16#cnu8#oln33" name="OKFlow33" to="sv5#area16#opg16#cnu9">
+        <LinkParameter id="sv5#area16#opg16#cnu8#oln33#par203" name="Source oid [Prodotto]_KeyCondition61 [oid] [Prodotto] [Source]" source="sourceent4#att14" target="sv5#area16#opg16#cnu9#su108#kcond61.ent4#att14"/>
+        <LinkParameter id="sv5#area16#opg16#cnu8#oln33#par204" name="Fascia di prezzo_PASSING_KeyCondition64 [oid] [Fascia prezzo] [Target]" sourceLinkParameter="sv5#area16#opg16#cru7#oln30#par201" target="sv5#area16#opg16#cnu9#su111#kcond64.ent15#att30"/>
+        <LinkParameter id="sv5#area16#opg16#cnu8#oln33#par205" name="Nazione_PASSING" sourceLinkParameter="sv5#area16#opg16#cru7#oln30#par202" passing="true"/>
+      </OKLink>
+      <KOLink id="sv5#area16#opg16#cnu8#kln41" name="KOFlow41" to="sv5#area16#page59#mssu19">
+        <LinkParameter id="sv5#area16#opg16#cnu8#kln41#par245" name="Errore nella connessione del prodotto con la categoria_Shown Messages" sourceValue="Errore nella connessione del prodotto con la categoria" target="sv5#area16#page59#mssu19.shownMessages"/>
+      </KOLink>
+    </ConnectUnit>
+    <ConnectUnit gr:x="250" gr:y="0" id="sv5#area16#opg16#cnu9" name="Connetti prodotto a fascia di prezzo" relationship="rel11#role22">
+      <SourceSelector id="sv5#area16#opg16#cnu9#su108" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg16#cnu9#su108#kcond61" name="KeyCondition61" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area16#opg16#cnu9#su111" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg16#cnu9#su111#kcond64" name="KeyCondition64" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area16#opg16#cnu9#oln34" name="OKFlow34" to="sv5#area16#opg16#cnu10">
+        <LinkParameter id="sv5#area16#opg16#cnu9#oln34#par206" name="Source oid [Prodotto]_KeyCondition68 [oid] [Prodotto] [Source]" source="sourceent4#att14" target="sv5#area16#opg16#cnu10#su112#kcond68.ent4#att14"/>
+        <LinkParameter id="sv5#area16#opg16#cnu9#oln34#par207" name="Nazione_PASSING_KeyCondition70 [oid] [Nazione] [Target]" sourceLinkParameter="sv5#area16#opg16#cnu8#oln33#par205" target="sv5#area16#opg16#cnu10#su118#kcond70.ent19#att44"/>
+      </OKLink>
+      <KOLink id="sv5#area16#opg16#cnu9#kln42" name="KOFlow42" to="sv5#area16#page59#mssu19">
+        <LinkParameter id="sv5#area16#opg16#cnu9#kln42#par246" name="Errore nella connessione tra prodotto e fascia di prezzo_Shown Messages" sourceValue="Errore nella connessione tra prodotto e fascia di prezzo" target="sv5#area16#page59#mssu19.shownMessages"/>
+      </KOLink>
+    </ConnectUnit>
+    <ConnectUnit gr:x="0" gr:y="0" id="sv5#area16#opg16#cnu10" name="Connetti prodotto a nazione" relationship="rel18#role35">
+      <SourceSelector id="sv5#area16#opg16#cnu10#su112" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg16#cnu10#su112#kcond68" name="KeyCondition68" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area16#opg16#cnu10#su118" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg16#cnu10#su118#kcond70" name="KeyCondition70" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area16#opg16#cnu10#oln35" name="OKFlow35" to="sv5#area16#page42" automaticCoupling="true"/>
+      <KOLink id="sv5#area16#opg16#cnu10#kln43" name="KOFlow43" to="sv5#area16#page59#mssu19">
+        <LinkParameter id="sv5#area16#opg16#cnu10#kln43#par247" name="Errore nella connessione tra prodotto e nazione_Shown Messages" sourceValue="Errore nella connessione tra prodotto e nazione" target="sv5#area16#page59#mssu19.shownMessages"/>
+      </KOLink>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>

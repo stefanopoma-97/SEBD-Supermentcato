@@ -1,0 +1,45 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="690" gr:y="360" id="sv5#area16#page44" name="Dettagli prodotto">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv5#area16#page44#dau17" name="Dettagli prodotto" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" linkOrder="sv5#area16#page44#dau17#ln107">
+      <Selector id="sv5#area16#page44#dau17#su61" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#page44#dau17#su61#kcond33" name="KeyCondition33" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv5#area16#page44#dau17#ln107" name="Modifica" to="sv5#area16#page47#enu13" type="normal" validate="true">
+        <LinkParameter id="sv5#area16#page44#dau17#ln107#par210" name="ProdottoToCategoria.oid_Categoria - Preselection" source="data.rel4#role7_ent5#att19" target="sv5#area16#page47#enu13#sfld16_presel"/>
+        <LinkParameter id="sv5#area16#page44#dau17#ln107#par215" name="ProdottoToFascia prezzo.oid_Fascia di prezzo - Preselection" source="data.rel11#role22_ent15#att30" target="sv5#area16#page47#enu13#sfld14_presel"/>
+        <LinkParameter id="sv5#area16#page44#dau17#ln107#par216" name="ProdottoToNazione.oid_Nazione - Preselection" source="data.rel18#role35_ent19#att44" target="sv5#area16#page47#enu13#sfld15_presel"/>
+        <LinkParameter id="sv5#area16#page44#dau17#ln107#par221" name="descrizione_Descrizione" source="data.ent4#att16" target="sv5#area16#page47#enu13#fld36_slot"/>
+        <LinkParameter id="sv5#area16#page44#dau17#ln107#par222" name="nome_Nome" source="data.ent4#att15" target="sv5#area16#page47#enu13#fld35_slot"/>
+        <LinkParameter id="sv5#area16#page44#dau17#ln107#par223" name="prezzo_Prezzo" source="data.ent4#att17" target="sv5#area16#page47#enu13#fld37_slot"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area16#page44#dau17">
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att27"/>
+          <layout:Attribute attribute="ent4#att53"/>
+          <layout:Attribute attribute="ent4#att59"/>
+          <layout:Attribute attribute="ent4#att60"/>
+          <layout:Link link="sv5#area16#page44#dau17#ln107"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

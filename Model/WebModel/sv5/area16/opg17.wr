@@ -1,0 +1,61 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="105" id="sv5#area16#opg17" name="Modifica prodotto" transaction="true">
+  <OperationUnits>
+    <ModifyUnit gr:x="375" gr:y="10" id="sv5#area16#opg17#mfu3" name="Modifica prodotto" entity="ent4">
+      <Selector id="sv5#area16#opg17#mfu3#su120" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg17#mfu3#su120#kcond71" name="KeyCondition71" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv5#area16#opg17#mfu3#oln36" name="OKFlow36" to="sv5#area16#opg17#rcnu2">
+        <LinkParameter id="sv5#area16#opg17#mfu3#oln36#par230" name="oid_KeyCondition78 [oid] [Prodotto] [ConnectSource]" source="ent4#att14Array" target="sv5#area16#opg17#rcnu2#su125#kcond78.ent4#att14"/>
+        <LinkParameter id="sv5#area16#opg17#mfu3#oln36#par231" name="Categoria_PASSING_KeyCondition79 [oid] [Categoria] [ConnectTarget]" sourceLinkParameter="sv5#area16#page47#enu13#ln116#par224" target="sv5#area16#opg17#rcnu2#su132#kcond79.ent5#att19"/>
+        <LinkParameter id="sv5#area16#opg17#mfu3#oln36#par232" name="Fascia di prezzo_PASSING" sourceLinkParameter="sv5#area16#page47#enu13#ln116#par225" passing="true"/>
+        <LinkParameter id="sv5#area16#opg17#mfu3#oln36#par233" name="Nazione_PASSING" sourceLinkParameter="sv5#area16#page47#enu13#ln116#par226" passing="true"/>
+      </OKLink>
+      <KOLink id="sv5#area16#opg17#mfu3#kln34" name="KOFlow34" to="sv5#area16#page58#mssu16">
+        <LinkParameter id="sv5#area16#opg17#mfu3#kln34#par239" name="Errore nella modifica del prodotto_Shown Messages" sourceValue="Errore nella modifica del prodotto" target="sv5#area16#page58#mssu16.shownMessages"/>
+      </KOLink>
+    </ModifyUnit>
+    <ReconnectUnit gr:x="0" gr:y="250" id="sv5#area16#opg17#rcnu1" name="Riconnetti prodotto a fascia prezzo" relationship="rel11#role22">
+      <SourceSelector id="sv5#area16#opg17#rcnu1#su122" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg17#rcnu1#su122#kcond76" name="KeyCondition76" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area16#opg17#rcnu1#su123" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg17#rcnu1#su123#kcond77" name="KeyCondition77" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area16#opg17#rcnu1#oln38" name="OKFlow38" to="sv5#area16#opg17#rcnu3">
+        <LinkParameter id="sv5#area16#opg17#rcnu1#oln38#par237" name="Source oid [Prodotto]_KeyCondition80 [oid] [Prodotto] [ConnectSource]" source="sourceent4#att14" target="sv5#area16#opg17#rcnu3#su133#kcond80.ent4#att14"/>
+        <LinkParameter id="sv5#area16#opg17#rcnu1#oln38#par238" name="Nazione_PASSING_KeyCondition81 [oid] [Nazione] [ConnectTarget]" sourceLinkParameter="sv5#area16#opg17#rcnu2#oln37#par236" target="sv5#area16#opg17#rcnu3#su134#kcond81.ent19#att44"/>
+      </OKLink>
+      <KOLink id="sv5#area16#opg17#rcnu1#kln38" name="KOFlow38" to="sv5#area16#page58#mssu16">
+        <LinkParameter id="sv5#area16#opg17#rcnu1#kln38#par241" name="Errore nella riconessione con la fascia di prezzo_Shown Messages" sourceValue="Errore nella riconessione con la fascia di prezzo" target="sv5#area16#page58#mssu16.shownMessages"/>
+      </KOLink>
+    </ReconnectUnit>
+    <ReconnectUnit gr:x="10" gr:y="0" id="sv5#area16#opg17#rcnu2" name="Riconnetti prodotto a categoria" relationship="rel4#role7">
+      <SourceSelector id="sv5#area16#opg17#rcnu2#su125" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg17#rcnu2#su125#kcond78" name="KeyCondition78" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area16#opg17#rcnu2#su132" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg17#rcnu2#su132#kcond79" name="KeyCondition79" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area16#opg17#rcnu2#oln37" name="OKFlow37" to="sv5#area16#opg17#rcnu1">
+        <LinkParameter id="sv5#area16#opg17#rcnu2#oln37#par234" name="Source oid [Prodotto]_KeyCondition76 [oid] [Prodotto] [ConnectSource]" source="sourceent4#att14" target="sv5#area16#opg17#rcnu1#su122#kcond76.ent4#att14"/>
+        <LinkParameter id="sv5#area16#opg17#rcnu2#oln37#par235" name="Fascia di prezzo_PASSING_KeyCondition77 [oid] [Fascia prezzo] [ConnectTarget]" sourceLinkParameter="sv5#area16#opg17#mfu3#oln36#par232" target="sv5#area16#opg17#rcnu1#su123#kcond77.ent15#att30"/>
+        <LinkParameter id="sv5#area16#opg17#rcnu2#oln37#par236" name="Nazione_PASSING" sourceLinkParameter="sv5#area16#opg17#mfu3#oln36#par233" passing="true"/>
+      </OKLink>
+      <KOLink id="sv5#area16#opg17#rcnu2#kln37" name="KOFlow37" to="sv5#area16#page58#mssu16">
+        <LinkParameter id="sv5#area16#opg17#rcnu2#kln37#par240" name="Errore nella riconessione con la categoria_Shown Messages" sourceValue="Errore nella riconessione con la categoria" target="sv5#area16#page58#mssu16.shownMessages"/>
+      </KOLink>
+    </ReconnectUnit>
+    <ReconnectUnit gr:x="305" gr:y="245" id="sv5#area16#opg17#rcnu3" name="Riconetti prodotto a nazione" relationship="rel18#role35">
+      <SourceSelector id="sv5#area16#opg17#rcnu3#su133" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg17#rcnu3#su133#kcond80" name="KeyCondition80" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area16#opg17#rcnu3#su134" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg17#rcnu3#su134#kcond81" name="KeyCondition81" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area16#opg17#rcnu3#oln40" name="OKFlow40" to="sv5#area16#page44#dau17" automaticCoupling="true"/>
+      <KOLink id="sv5#area16#opg17#rcnu3#kln39" name="KOFlow39" to="sv5#area16#page58#mssu16">
+        <LinkParameter id="sv5#area16#opg17#rcnu3#kln39#par242" name="Errore nella riconessione con la nazione_Shown Messages" sourceValue="Errore nella riconessione con la nazione" target="sv5#area16#page58#mssu16.shownMessages"/>
+      </KOLink>
+    </ReconnectUnit>
+  </OperationUnits>
+</OperationGroup>

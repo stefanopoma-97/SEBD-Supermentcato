@@ -1,0 +1,84 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="640" gr:y="535" id="sv5#area16#page45" name="Crea prodotto">
+  <ContentUnits>
+    <EntryUnit gr:x="295" gr:y="85" id="sv5#area16#page45#enu12" name="Crea prodotto" entity="ent4" linkOrder="sv5#area16#page45#enu12#ln106">
+      <Field id="sv5#area16#page45#enu12#fld24" name="Nome" type="string" modifiable="true" attribute="ent4#att15"/>
+      <Field id="sv5#area16#page45#enu12#fld25" name="Descrizione" type="string" modifiable="true" preloaded="false" attribute="ent4#att16"/>
+      <Field id="sv5#area16#page45#enu12#fld26" name="Prezzo" type="decimal" modifiable="true" attribute="ent4#att17"/>
+      <Field id="sv5#area16#page45#enu12#fld27" name="Immagine" type="blob" modifiable="true" attribute="ent4#att27"/>
+      <SelectionField id="sv5#area16#page45#enu12#sfld10" type="string" name="Fascia di prezzo"/>
+      <SelectionField id="sv5#area16#page45#enu12#sfld12" type="string" name="Categoria"/>
+      <SelectionField id="sv5#area16#page45#enu12#sfld13" type="string" name="Nazione"/>
+      <Link id="sv5#area16#page45#enu12#ln106" name="Crea prodotto" to="sv5#area16#opg16#cru7" type="normal" validate="true">
+        <LinkParameter id="sv5#area16#page45#enu12#ln106#par196" name="Categoria_PASSING" source="sv5#area16#page45#enu12#sfld12" passing="true"/>
+        <LinkParameter id="sv5#area16#page45#enu12#ln106#par197" name="Fascia di prezzo_PASSING" source="sv5#area16#page45#enu12#sfld10" passing="true"/>
+        <LinkParameter id="sv5#area16#page45#enu12#ln106#par198" name="Nazione_PASSING" source="sv5#area16#page45#enu12#sfld13" passing="true"/>
+        <LinkParameter id="sv5#area16#page45#enu12#ln106#par195" name="Prodotto Object_Prodotto Object" source="entityBean" target="sv5#area16#opg16#cru7.entityBeans"/>
+        <LinkParameter id="sv5#area16#page45#enu12#ln106#par254" name="Current/Input Date_PASSING_data inserimento" sourceLinkParameter="sv5#area16#page45#tmu11#ln123#par253" target="sv5#area16#opg16#cru7.ent4#att18"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="20" gr:y="0" id="sv5#area16#page45#seu25" name="Seleziona categorie" entity="ent5">
+      <Link id="sv5#area16#page45#seu25#ln101" name="Flow101" to="sv5#area16#page45#enu12" type="transport" validate="true">
+        <LinkParameter id="sv5#area16#page45#seu25#ln101#par191" name="nome_Categoria [label]" source="ent5#att20Array" target="sv5#area16#page45#enu12#sfld12_label"/>
+        <LinkParameter id="sv5#area16#page45#seu25#ln101#par192" name="oid_Categoria [output]" source="ent5#att19Array" target="sv5#area16#page45#enu12#sfld12_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="0" gr:y="100" id="sv5#area16#page45#seu34" name="Seleziona fasce di prezzo" entity="ent15">
+      <Link id="sv5#area16#page45#seu34#ln102" name="Flow102" to="sv5#area16#page45#enu12" type="transport" validate="true">
+        <LinkParameter id="sv5#area16#page45#seu34#ln102#par188" name="fascia_Fascia di prezzo [label]" source="ent15#att32Array" target="sv5#area16#page45#enu12#sfld10_label"/>
+        <LinkParameter id="sv5#area16#page45#seu34#ln102#par189" name="oid_Fascia di prezzo [output]" source="ent15#att30Array" target="sv5#area16#page45#enu12#sfld10_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="25" gr:y="195" id="sv5#area16#page45#seu38" name="Seleziona nazioni" entity="ent19">
+      <Link id="sv5#area16#page45#seu38#ln103" name="Flow103" to="sv5#area16#page45#enu12" type="transport" validate="true">
+        <LinkParameter id="sv5#area16#page45#seu38#ln103#par193" name="nome_Nazione [label]" source="ent19#att45Array" target="sv5#area16#page45#enu12#sfld13_label"/>
+        <LinkParameter id="sv5#area16#page45#seu38#ln103#par194" name="oid_Nazione [output]" source="ent19#att44Array" target="sv5#area16#page45#enu12#sfld13_output"/>
+      </Link>
+    </SelectorUnit>
+    <TimeUnit id="sv5#area16#page45#tmu11" name="Data creazione" gr:x="295" gr:y="210">
+      <Link id="sv5#area16#page45#tmu11#ln123" name="Flow119" to="sv5#area16#page45#enu12" type="transport" validate="true">
+        <LinkParameter id="sv5#area16#page45#tmu11#ln123#par253" name="Current/Input Date_PASSING" source="currentDate" passing="true"/>
+      </Link>
+    </TimeUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area16#page45#enu12">
+          <layout:Field field="sv5#area16#page45#enu12#fld24"/>
+          <layout:Field field="sv5#area16#page45#enu12#fld25"/>
+          <layout:Field field="sv5#area16#page45#enu12#fld26"/>
+          <layout:Field field="sv5#area16#page45#enu12#fld27"/>
+          <layout:Field field="sv5#area16#page45#enu12#sfld10"/>
+          <layout:Field field="sv5#area16#page45#enu12#sfld12"/>
+          <layout:Field field="sv5#area16#page45#enu12#sfld13"/>
+          <layout:Link link="sv5#area16#page45#enu12#ln106"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

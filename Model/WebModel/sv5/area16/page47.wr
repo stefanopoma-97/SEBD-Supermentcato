@@ -1,0 +1,88 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="680" gr:y="0" id="sv5#area16#page47" name="Modifica prodotto">
+  <ContentUnits>
+    <EntryUnit gr:x="5" gr:y="120" id="sv5#area16#page47#enu13" name="Modifica prodotto" linkOrder="sv5#area16#page47#enu13#ln116" fieldOrder="sv5#area16#page47#enu13#fld35 sv5#area16#page47#enu13#fld37 sv5#area16#page47#enu13#sfld14 sv5#area16#page47#enu13#sfld16 sv5#area16#page47#enu13#sfld15 sv5#area16#page47#enu13#fld36 sv5#area16#page47#enu13#fld38" entity="ent4">
+      <Field id="sv5#area16#page47#enu13#fld35" name="Nome" type="string" modifiable="true" preloaded="true" attribute="ent4#att15"/>
+      <Field id="sv5#area16#page47#enu13#fld36" name="Descrizione" type="string" modifiable="true" preloaded="true" attribute="ent4#att16"/>
+      <Field id="sv5#area16#page47#enu13#fld37" name="Prezzo" type="decimal" modifiable="true" preloaded="true" attribute="ent4#att17"/>
+      <Field id="sv5#area16#page47#enu13#fld38" name="Immagine" type="blob" modifiable="true" attribute="ent4#att27"/>
+      <SelectionField id="sv5#area16#page47#enu13#sfld14" name="Fascia di prezzo" type="string"/>
+      <SelectionField id="sv5#area16#page47#enu13#sfld15" name="Nazione" type="string"/>
+      <SelectionField id="sv5#area16#page47#enu13#sfld16" name="Categoria" type="string"/>
+      <Link id="sv5#area16#page47#enu13#ln116" name="Applica Modifiche" to="sv5#area16#opg17#mfu3" type="normal" validate="true">
+        <LinkParameter id="sv5#area16#page47#enu13#ln116#par217" name="Descrizione_descrizione" source="sv5#area16#page47#enu13#fld36" target="sv5#area16#opg17#mfu3.ent4#att16"/>
+        <LinkParameter id="sv5#area16#page47#enu13#ln116#par218" name="Immagine_immagine" source="sv5#area16#page47#enu13#fld38" target="sv5#area16#opg17#mfu3.ent4#att27"/>
+        <LinkParameter id="sv5#area16#page47#enu13#ln116#par219" name="Nome_nome" source="sv5#area16#page47#enu13#fld35" target="sv5#area16#opg17#mfu3.ent4#att15"/>
+        <LinkParameter id="sv5#area16#page47#enu13#ln116#par220" name="Prezzo_prezzo" source="sv5#area16#page47#enu13#fld37" target="sv5#area16#opg17#mfu3.ent4#att17"/>
+        <LinkParameter id="sv5#area16#page47#enu13#ln116#par224" name="Categoria_PASSING" source="sv5#area16#page47#enu13#sfld16" passing="true"/>
+        <LinkParameter id="sv5#area16#page47#enu13#ln116#par225" name="Fascia di prezzo_PASSING" source="sv5#area16#page47#enu13#sfld14" passing="true"/>
+        <LinkParameter id="sv5#area16#page47#enu13#ln116#par226" name="Nazione_PASSING" source="sv5#area16#page47#enu13#sfld15" passing="true"/>
+        <LinkParameter id="sv5#area16#page47#enu13#ln116#par228" name="Current/Input Date_PASSING_data inserimento" sourceLinkParameter="sv5#area16#page47#tmu8#ln118#par227" target="sv5#area16#opg17#mfu3.ent4#att18"/>
+        <LinkParameter id="sv5#area16#page47#enu13#ln116#par229" name="Key [oid]_KeyCondition71 [oid]" source="key.ent4#att14" target="sv5#area16#opg17#mfu3#su120#kcond71.ent4#att14"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="0" gr:y="5" id="sv5#area16#page47#seu40" name="Seleziona categorie" entity="ent5">
+      <Link id="sv5#area16#page47#seu40#ln108" name="Flow108" to="sv5#area16#page47#enu13" type="transport" validate="true">
+        <LinkParameter id="sv5#area16#page47#seu40#ln108#par208" name="nome_Categoria [label]" source="ent5#att20Array" target="sv5#area16#page47#enu13#sfld16_label"/>
+        <LinkParameter id="sv5#area16#page47#seu40#ln108#par209" name="oid_Categoria [output]" source="ent5#att19Array" target="sv5#area16#page47#enu13#sfld16_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="200" gr:y="0" id="sv5#area16#page47#seu46" name="Seleziona fasce di prezzo" entity="ent15">
+      <Link id="sv5#area16#page47#seu46#ln110" name="Flow110" to="sv5#area16#page47#enu13" type="transport" validate="true">
+        <LinkParameter id="sv5#area16#page47#seu46#ln110#par211" name="fascia_Fascia di prezzo [label]" source="ent15#att32Array" target="sv5#area16#page47#enu13#sfld14_label"/>
+        <LinkParameter id="sv5#area16#page47#seu46#ln110#par212" name="oid_Fascia di prezzo [output]" source="ent15#att30Array" target="sv5#area16#page47#enu13#sfld14_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="225" gr:y="115" id="sv5#area16#page47#seu47" name="Seleziona nazioni" entity="ent19">
+      <Link id="sv5#area16#page47#seu47#ln114" name="Flow114" to="sv5#area16#page47#enu13" type="transport" validate="true">
+        <LinkParameter id="sv5#area16#page47#seu47#ln114#par213" name="nome_Nazione [label]" source="ent19#att45Array" target="sv5#area16#page47#enu13#sfld15_label"/>
+        <LinkParameter id="sv5#area16#page47#seu47#ln114#par214" name="oid_Nazione [output]" source="ent19#att44Array" target="sv5#area16#page47#enu13#sfld15_output"/>
+      </Link>
+    </SelectorUnit>
+    <TimeUnit gr:x="235" gr:y="210" id="sv5#area16#page47#tmu8" name="Data modifica">
+      <Link id="sv5#area16#page47#tmu8#ln118" name="Flow118" to="sv5#area16#page47#enu13" type="transport" validate="true">
+        <LinkParameter id="sv5#area16#page47#tmu8#ln118#par227" name="Current/Input Date_PASSING" source="currentDate" passing="true"/>
+      </Link>
+    </TimeUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area16#page47#enu13">
+          <layout:Link link="sv5#area16#page47#enu13#ln116"/>
+          <layout:Field field="sv5#area16#page47#enu13#fld35"/>
+          <layout:Field field="sv5#area16#page47#enu13#fld37"/>
+          <layout:Field field="sv5#area16#page47#enu13#sfld14"/>
+          <layout:Field field="sv5#area16#page47#enu13#sfld16"/>
+          <layout:Field field="sv5#area16#page47#enu13#sfld15"/>
+          <layout:Field field="sv5#area16#page47#enu13#fld36"/>
+          <layout:Field field="sv5#area16#page47#enu13#fld38"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
