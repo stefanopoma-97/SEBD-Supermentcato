@@ -1,0 +1,52 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="5" gr:y="845" id="sv5#area18#opg19" name="Crea negozio" transaction="true">
+  <OperationUnits>
+    <CreateUnit gr:x="0" gr:y="15" id="sv5#area18#opg19#cru8" name="Crea negozio" entity="ent3">
+      <OKLink id="sv5#area18#opg19#cru8#oln42" name="OKFlow42" to="sv5#area18#opg19#cru9">
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par262" name="Numero_PASSING_numero" sourceLinkParameter="sv5#area18#page63#enu14#ln145#par259" target="sv5#area18#opg19#cru9.ent2#att7"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par263" name="Via_PASSING_via" sourceLinkParameter="sv5#area18#page63#enu14#ln145#par260" target="sv5#area18#opg19#cru9.ent2#att6"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par264" name="oid_PASSING" source="ent3#att8Array" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par270" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln145#par269" passing="true"/>
+      </OKLink>
+      <KOLink id="sv5#area18#opg19#cru8#kln46" name="KOFlow46" to="sv5#area18#page64#mssu22">
+        <LinkParameter id="sv5#area18#opg19#cru8#kln46#par257" name="Errore nella creazione del negozio_Shown Messages" sourceValue="Errore nella creazione del negozio" target="sv5#area18#page64#mssu22.shownMessages"/>
+      </KOLink>
+    </CreateUnit>
+    <CreateUnit gr:x="145" gr:y="15" id="sv5#area18#opg19#cru9" name="Crea indirizzo" entity="ent2">
+      <OKLink id="sv5#area18#opg19#cru9#oln44" name="OKFlow44" to="sv5#area18#opg19#cnu11">
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par265" name="oid_KeyCondition86 [oid] [Indirizzo] [Source]" source="ent2#att5Array" target="sv5#area18#opg19#cnu11#su138#kcond86.ent2#att5"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par266" name="oid_PASSING_KeyCondition87 [oid] [Negozio] [Target]" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par264" target="sv5#area18#opg19#cnu11#su139#kcond87.ent3#att8"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par271" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par270" passing="true"/>
+      </OKLink>
+      <KOLink id="sv5#area18#opg19#cru9#kln48" name="KOFlow48" to="sv5#area18#page64#mssu22">
+        <LinkParameter id="sv5#area18#opg19#cru9#kln48#par274" name="Errore creazione indirizzo_Shown Messages" sourceValue="Errore creazione indirizzo" target="sv5#area18#page64#mssu22.shownMessages"/>
+      </KOLink>
+    </CreateUnit>
+    <ConnectUnit gr:x="305" gr:y="0" id="sv5#area18#opg19#cnu11" name="Connetti indirizzo a negozio" relationship="rel2#role4">
+      <SourceSelector id="sv5#area18#opg19#cnu11#su138" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu11#su138#kcond86" name="KeyCondition86" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area18#opg19#cnu11#su139" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu11#su139#kcond87" name="KeyCondition87" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area18#opg19#cnu11#oln45" name="OKFlow45" to="sv5#area18#opg19#cnu12">
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par272" name="Source oid [Indirizzo]_KeyCondition88 [oid] [Indirizzo] [Source]" source="sourceent2#att5" target="sv5#area18#opg19#cnu12#su140#kcond88.ent2#att5"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par273" name="Citt&#224;_PASSING_KeyCondition89 [oid] [Citt&#224;] [Target]" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par271" target="sv5#area18#opg19#cnu12#su141#kcond89.ent1#att1"/>
+      </OKLink>
+      <KOLink id="sv5#area18#opg19#cnu11#kln49" name="KOFlow49" to="sv5#area18#page64#mssu22">
+        <LinkParameter id="sv5#area18#opg19#cnu11#kln49#par275" name="Errore connessione tra indirizzo e negozio_Shown Messages" sourceValue="Errore connessione tra indirizzo e negozio" target="sv5#area18#page64#mssu22.shownMessages"/>
+      </KOLink>
+    </ConnectUnit>
+    <ConnectUnit gr:x="550" gr:y="0" id="sv5#area18#opg19#cnu12" name="Connetti indirizzo a citt&#224;" relationship="rel1#role2">
+      <SourceSelector id="sv5#area18#opg19#cnu12#su140" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu12#su140#kcond88" name="KeyCondition88" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area18#opg19#cnu12#su141" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu12#su141#kcond89" name="KeyCondition89" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area18#opg19#cnu12#oln46" name="OKFlow46" to="sv5#area18#page61" automaticCoupling="true"/>
+      <KOLink id="sv5#area18#opg19#cnu12#kln50" name="KOFlow50" to="sv5#area18#page64#mssu22">
+        <LinkParameter id="sv5#area18#opg19#cnu12#kln50#par276" name="Errore connessione indirizzo e citt&#224;_Shown Messages" sourceValue="Errore connessione indirizzo e citt&#224;" target="sv5#area18#page64#mssu22.shownMessages"/>
+      </KOLink>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>

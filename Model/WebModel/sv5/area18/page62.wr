@@ -1,0 +1,71 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="575" gr:y="445" id="sv5#area18#page62" name="Dettagli negozio">
+  <ContentUnits>
+    <DataUnit gr:x="5" gr:y="0" id="sv5#area18#page62#dau22" name="Dettagli negozio" entity="ent3" linkOrder="sv5#area18#page62#dau22#ln175 sv5#area18#page62#dau22#ln181" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
+      <Selector id="sv5#area18#page62#dau22#su136" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#page62#dau22#su136#kcond84" name="KeyCondition84" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv5#area18#page62#dau22#ln175" name="Elimina" to="sv5#area18#opg20#dlu2" type="normal" validate="true">
+        <LinkParameter id="sv5#area18#page62#dau22#ln175#par277" name="oid_KeyCondition85 [oid]" source="data.ent3#att8" target="sv5#area18#opg20#dlu2#su137#kcond85.ent3#att8"/>
+        <LinkParameter id="sv5#area18#page62#dau22#ln175#par278" name="oid_PASSING" source="data.ent3#att8" passing="true"/>
+      </Link>
+      <Link id="sv5#area18#page62#dau22#ln181" name="Modifica" to="sv5#area18#page65#seu50" type="normal" validate="true">
+        <LinkParameter id="sv5#area18#page62#dau22#ln181#par288" name="fondazione_PASSING" source="data.ent3#att12" passing="true"/>
+        <LinkParameter id="sv5#area18#page62#dau22#ln181#par289" name="massimo ordini giornalieri_PASSING" source="data.ent3#att11" passing="true"/>
+        <LinkParameter id="sv5#area18#page62#dau22#ln181#par290" name="nome_PASSING" source="data.ent3#att9" passing="true"/>
+        <LinkParameter id="sv5#area18#page62#dau22#ln181#par291" name="oid_PASSING" source="data.ent3#att8" passing="true"/>
+      </Link>
+      <Link id="sv5#area18#page62#dau22#ln192" name="Flow192" to="sv5#area18#page62#dau24" automaticCoupling="true" type="transport" validate="true"/>
+    </DataUnit>
+    <DataUnit gr:x="0" gr:y="120" id="sv5#area18#page62#dau24" name="Dettagli indirizzo" entity="ent2" displayAttributes="ent2#att6 ent2#att7">
+      <Selector id="sv5#area18#page62#dau24#su146" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area18#page62#dau24#su146#rcond49" name="IndirizzoNegozio" predicate="in" implied="false" role="rel2#role3"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area18#page62#dau22">
+          <layout:Link link="sv5#area18#page62#dau22#ln175"/>
+          <layout:Link link="sv5#area18#page62#dau22#ln181"/>
+          <layout:Attribute attribute="ent3#att9"/>
+          <layout:Attribute attribute="ent3#att11"/>
+          <layout:Attribute attribute="ent3#att12"/>
+          <layout:Attribute attribute="ent3#att13"/>
+          <layout:Attribute attribute="ent3#att58"/>
+          <layout:Attribute attribute="ent3#att42"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area18#page62#dau24">
+          <layout:Attribute attribute="ent2#att6"/>
+          <layout:Attribute attribute="ent2#att7"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
