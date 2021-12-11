@@ -21,7 +21,7 @@
       <Field id="sv1#area11#page18#enu7#fld20" name="Email" type="string" modifiable="true"/>
       <Field id="sv1#area11#page18#enu7#fld21" name="Password" type="string" modifiable="true"/>
       <Field id="sv1#area11#page18#enu7#fld22" name="Username" type="string" modifiable="true"/>
-      <Link id="sv1#area11#page18#enu7#ln41" name="Flow41" to="sv1#area11#opg13#cru1" type="normal" validate="true">
+      <Link id="sv1#area11#page18#enu7#ln41" name="Registrati" to="sv1#area11#opg13#cru1" type="normal" validate="true">
         <LinkParameter id="sv1#area11#page18#enu7#ln41#par16" name="Email_email" source="sv1#area11#page18#enu7#fld20" target="sv1#area11#opg13#cru1.email"/>
         <LinkParameter id="sv1#area11#page18#enu7#ln41#par23" name="2_Group.oid(defaultGroup)" sourceValue="2" target="sv1#area11#opg13#cru1.User2DefaultGroup.groupOID"/>
         <LinkParameter id="sv1#area11#page18#enu7#ln41#par29" name="Password_password" source="sv1#area11#page18#enu7#fld21" target="sv1#area11#opg13#cru1.password"/>

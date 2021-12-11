@@ -316,9 +316,10 @@
     <RelationshipRole1 id="rel19#role37" name="OrarioToNegozio" maxCard="1">
       <db:JoinColumn attribute="ent20#att43" name="oid"/>
     </RelationshipRole1>
-    <RelationshipRole2 id="rel19#role38" name="NegozioToOrario" maxCard="1">
+    <RelationshipRole2 id="rel19#role38" name="NegozioToOrario" maxCard="N">
       <db:JoinColumn attribute="ent3#att8" name="negozio_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="supermercati" type="MySQL" username="admin" cryptedPassword="true" password="YWRtaW4=" url="jdbc:mysql://localhost:3306/supermercati"/>
+  <db:Database id="db1" name="supermercati" type="MySQL" username="admin" cryptedPassword="true" password="YWRtaW4=" url="jdbc:mysql://localhost:3306/supermercati">
+  </db:Database>
 </DataModel>

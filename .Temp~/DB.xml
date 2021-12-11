@@ -3,17 +3,18 @@
 <DBMetaData driverMajorVersion="5" driverMinorVersion="1" driverVersion="mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )" productVersion="5.5.5-10.4.22-MariaDB" identifierQuoteString="`" transactionLevel="Repeatable read" driverName="MySQL Connector Java" productName="MySQL">
   <Table schema="" ignoreIndexes="false" name="categoria" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="descrizione" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="nome" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="descrizione" primaryKey="false" notNull="false"/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="citta" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="nazione" primaryKey="false" notNull="false"/>
-    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="provincia" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="nome" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="provincia" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="nazione" primaryKey="false" notNull="false"/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="dipendente" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="responsabile_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="responsabile_oid" foreignColumnName="user_oid" name="fk_dipendente_responsabile" foreignTableName="responsabile" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="fascia_prezzo" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -23,18 +24,24 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="groupname" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="module_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="module_oid" foreignColumnName="oid" name="fk_group_module" foreignTableName="module" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="group_module" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="module_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="group_oid" foreignColumnName="oid" name="fk_group_module_group" foreignTableName="group" foreignSchemaName=""/>
+    <ForeignKey localColumnName="module_oid" foreignColumnName="oid" name="fk_group_module_module" foreignTableName="module" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="indirizzo" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="numero" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="via" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="numero" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="citta_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="negozio_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="utente_esterno_registrato_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="citta_oid" foreignColumnName="oid" name="fk_indirizzo_citta" foreignTableName="citta" foreignSchemaName=""/>
+    <ForeignKey localColumnName="negozio_oid" foreignColumnName="oid" name="fk_indirizzo_negozio" foreignTableName="negozio" foreignSchemaName=""/>
+    <ForeignKey localColumnName="utente_esterno_registrato_oid" foreignColumnName="user_oid" name="fk_indirizzo_utente_esterno_re" foreignTableName="utente_esterno_registrato" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="module" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -47,53 +54,65 @@
   </Table>
   <Table schema="" ignoreIndexes="false" name="negozio" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="91" indexed="unknown" autoIncrement="false" type="DATE" size="10" decimalDigits="0" name="fondazione" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="massimo_ordini_giornalieri" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="91" indexed="unknown" autoIncrement="false" type="DATE" size="10" decimalDigits="0" name="fondazione" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="nome" primaryKey="false" notNull="false"/>
-    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="orario_oid" primaryKey="false" notNull="false"/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="negozio_nuovo" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="negozio_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="negozio_oid" foreignColumnName="oid" name="fk_negozio_nuovo_negozio" foreignTableName="negozio" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="orario" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="92" indexed="unknown" autoIncrement="false" type="TIME" size="8" decimalDigits="0" name="ora_fine" primaryKey="false" notNull="false"/>
-    <Column sqlTypeId="92" indexed="unknown" autoIncrement="false" type="TIME" size="8" decimalDigits="0" name="ora_inizio" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="giorno" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="92" indexed="unknown" autoIncrement="false" type="TIME" size="8" decimalDigits="0" name="ora_inizio" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="92" indexed="unknown" autoIncrement="false" type="TIME" size="8" decimalDigits="0" name="ora_fine" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="negozio_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="negozio_oid" foreignColumnName="oid" name="fk_orario_negozio" foreignTableName="negozio" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="prodotto" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="91" indexed="unknown" autoIncrement="false" type="DATE" size="10" decimalDigits="0" name="data_inserimento" primaryKey="false" notNull="false"/>
-    <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="19" decimalDigits="2" webMLType="decimal" name="prezzo" primaryKey="false" notNull="false"/>
-    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="descrizione" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="nome" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="descrizione" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="19" decimalDigits="2" webMLType="decimal" name="prezzo" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="91" indexed="unknown" autoIncrement="false" type="DATE" size="10" decimalDigits="0" name="data_inserimento" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="immagine" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="fascia_prezzo_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="nazione_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="categoria_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="categoria_oid" foreignColumnName="oid" name="fk_prodotto_categoria" foreignTableName="categoria" foreignSchemaName=""/>
+    <ForeignKey localColumnName="fascia_prezzo_oid" foreignColumnName="oid" name="fk_prodotto_fascia_prezzo" foreignTableName="fascia_prezzo" foreignSchemaName=""/>
+    <ForeignKey localColumnName="nazione_oid" foreignColumnName="oid" name="fk_prodotto_nazione" foreignTableName="nazione" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="prodotto_nuovo" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="prodotto_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="prodotto_oid" foreignColumnName="oid" name="fk_prodotto_nuovo_prodotto" foreignTableName="prodotto" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="prodotto_online" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="negozio_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="prodotto_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="negozio_oid" foreignColumnName="oid" name="fk_prodotto_online_negozio" foreignTableName="negozio" foreignSchemaName=""/>
+    <ForeignKey localColumnName="prodotto_oid" foreignColumnName="oid" name="fk_prodotto_online_prodotto" foreignTableName="prodotto" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="promozione" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="91" indexed="unknown" autoIncrement="false" type="DATE" size="10" decimalDigits="0" name="scadenza" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="19" decimalDigits="2" webMLType="decimal" name="sconto" primaryKey="false" notNull="false"/>
-    <Column sqlTypeId="-7" indexed="unknown" autoIncrement="false" type="BIT" size="1" decimalDigits="0" name="valida_online" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="91" indexed="unknown" autoIncrement="false" type="DATE" size="10" decimalDigits="0" name="scadenza" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="-7" indexed="unknown" autoIncrement="false" type="BIT" size="1" decimalDigits="0" name="valida_in_negozio" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="-7" indexed="unknown" autoIncrement="false" type="BIT" size="1" decimalDigits="0" name="valida_online" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="negozio_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="prodotto_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="negozio_oid" foreignColumnName="oid" name="fk_promozione_negozio" foreignTableName="negozio" foreignSchemaName=""/>
+    <ForeignKey localColumnName="prodotto_oid" foreignColumnName="oid" name="fk_promozione_prodotto" foreignTableName="prodotto" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="responsabile" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="user_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="nome" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="cognome" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="negozio_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="negozio_oid" foreignColumnName="oid" name="fk_responsabile_negozio" foreignTableName="negozio" foreignSchemaName=""/>
+    <ForeignKey localColumnName="user_oid" foreignColumnName="oid" name="fk_responsabile_user" foreignTableName="user" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="riga_ordine" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -101,65 +120,76 @@
     <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="19" decimalDigits="2" webMLType="decimal" name="costo" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="spesa_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="prodotto_online_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="prodotto_online_oid" foreignColumnName="oid" name="fk_riga_ordine_prodotto_online" foreignTableName="prodotto_online" foreignSchemaName=""/>
+    <ForeignKey localColumnName="spesa_oid" foreignColumnName="oid" name="fk_riga_ordine_spesa" foreignTableName="spesa" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="spesa" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="91" indexed="unknown" autoIncrement="false" type="DATE" size="10" decimalDigits="0" name="data_di_spedizione" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="91" indexed="unknown" autoIncrement="false" type="DATE" size="10" decimalDigits="0" name="data_di_creazione" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="91" indexed="unknown" autoIncrement="false" type="DATE" size="10" decimalDigits="0" name="data_di_spedizione" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="utente_esterno_registrato_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="negozio_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="negozio_oid" foreignColumnName="oid" name="fk_spesa_negozio" foreignTableName="negozio" foreignSchemaName=""/>
+    <ForeignKey localColumnName="utente_esterno_registrato_oid" foreignColumnName="user_oid" name="fk_spesa_utente_esterno_regist" foreignTableName="utente_esterno_registrato" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="stato_ordine" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="stato" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="spesa_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="dipendente_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="dipendente_oid" foreignColumnName="responsabile_oid" name="fk_stato_ordine_dipendente" foreignTableName="dipendente" foreignSchemaName=""/>
+    <ForeignKey localColumnName="spesa_oid" foreignColumnName="oid" name="fk_stato_ordine_spesa" foreignTableName="spesa" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="user" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="username" primaryKey="false" notNull="false"/>
-    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="password" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="email" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="password" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="username" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="group_oid" foreignColumnName="oid" name="fk_user_group" foreignTableName="group" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="user_group" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="user_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="group_oid" foreignColumnName="oid" name="fk_user_group_group" foreignTableName="group" foreignSchemaName=""/>
+    <ForeignKey localColumnName="user_oid" foreignColumnName="oid" name="fk_user_group_user" foreignTableName="user" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="utente_esterno_registrato" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="user_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="nome" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="cognome" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="negozio_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="negozio_oid" foreignColumnName="oid" name="fk_utente_esterno_registrato_n" foreignTableName="negozio" foreignSchemaName=""/>
+    <ForeignKey localColumnName="user_oid" foreignColumnName="oid" name="fk_utente_esterno_registrato_u" foreignTableName="user" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="dipendente_ordinigestiti_view" type="VIEW" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="responsabile_oid" primaryKey="false" notNull="true"/>
     <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="19" decimalDigits="0" webMLType="decimal" name="der_attr" primaryKey="false" notNull="true"/>
-    <SQLDefinition>select `AL1`.`responsabile_oid` AS `responsabile_oid`,count(distinct `AL2`.`oid`) AS `der_attr` from (`dipendente` `AL1` left join `stato_ordine` `AL2` on(`AL1`.`responsabile_oid` = `AL2`.`dipendente_oid`)) group by `AL1`.`responsabile_oid`</SQLDefinition>
+    <SQLDefinition>select `al1`.`responsabile_oid` AS `responsabile_oid`,count(distinct `al2`.`oid`) AS `der_attr` from (`dipendente` `al1` left join `stato_ordine` `al2` on(`al1`.`responsabile_oid` = `al2`.`dipendente_oid`)) group by `al1`.`responsabile_oid`</SQLDefinition>
   </Table>
   <Table schema="" ignoreIndexes="false" name="negozio_numerolavoratori_view" type="VIEW" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="false" notNull="true"/>
     <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="19" decimalDigits="0" webMLType="decimal" name="der_attr" primaryKey="false" notNull="true"/>
-    <SQLDefinition>select `AL1`.`oid` AS `oid`,count(distinct `AL2`.`user_oid`) AS `der_attr` from (`negozio` `AL1` left join `responsabile` `AL2` on(`AL1`.`oid` = `AL2`.`negozio_oid`)) group by `AL1`.`oid`</SQLDefinition>
+    <SQLDefinition>select `al1`.`oid` AS `oid`,count(distinct `al2`.`user_oid`) AS `der_attr` from (`negozio` `al1` left join `responsabile` `al2` on(`al1`.`oid` = `al2`.`negozio_oid`)) group by `al1`.`oid`</SQLDefinition>
   </Table>
   <Table schema="" ignoreIndexes="false" name="negozio_volume_vendite_view" type="VIEW" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="false" notNull="true"/>
     <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="63" decimalDigits="2" webMLType="decimal" name="der_attr" primaryKey="false" notNull="false"/>
-    <SQLDefinition>select `AL1`.`oid` AS `oid`,sum(`AL3`.`der_attr`) AS `der_attr` from ((`negozio` `AL1` left join `spesa` `AL2` on(`AL1`.`oid` = `AL2`.`negozio_oid`)) left join `spesa_importo_totale_view` `AL3` on(`AL2`.`oid` = `AL3`.`oid`)) group by `AL1`.`oid`</SQLDefinition>
+    <SQLDefinition>select `al1`.`oid` AS `oid`,sum(`al3`.`der_attr`) AS `der_attr` from ((`negozio` `al1` left join `spesa` `al2` on(`al1`.`oid` = `al2`.`negozio_oid`)) left join `spesa_importo_totale_view` `al3` on(`al2`.`oid` = `al3`.`oid`)) group by `al1`.`oid`</SQLDefinition>
   </Table>
   <Table schema="" ignoreIndexes="false" name="spesa_importo_totale_view" type="VIEW" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="false" notNull="true"/>
     <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="41" decimalDigits="2" webMLType="decimal" name="der_attr" primaryKey="false" notNull="false"/>
-    <SQLDefinition>select `AL1`.`oid` AS `oid`,sum(`AL2`.`costo`) AS `der_attr` from (`spesa` `AL1` left join `riga_ordine` `AL2` on(`AL1`.`oid` = `AL2`.`spesa_oid`)) group by `AL1`.`oid`</SQLDefinition>
+    <SQLDefinition>select `al1`.`oid` AS `oid`,sum(`al2`.`costo`) AS `der_attr` from (`spesa` `al1` left join `riga_ordine` `al2` on(`al1`.`oid` = `al2`.`spesa_oid`)) group by `al1`.`oid`</SQLDefinition>
   </Table>
   <Table schema="" ignoreIndexes="false" name="stato_ordine_dipendente_view" type="VIEW" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="false" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="der_attr" primaryKey="false" notNull="false"/>
-    <SQLDefinition>select `AL1`.`oid` AS `oid`,`AL2`.`oid` AS `der_attr` from (`stato_ordine` `AL1` left join `user` `AL2` on(`AL1`.`dipendente_oid` = `AL2`.`oid`))</SQLDefinition>
+    <SQLDefinition>select `al1`.`oid` AS `oid`,`al2`.`oid` AS `der_attr` from (`stato_ordine` `al1` left join `user` `al2` on(`al1`.`dipendente_oid` = `al2`.`oid`))</SQLDefinition>
   </Table>
   <Table schema="" ignoreIndexes="false" name="stato_ordine_utenteesterno_vie" type="VIEW" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="false" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="der_attr" primaryKey="false" notNull="false"/>
-    <SQLDefinition>select `AL1`.`oid` AS `oid`,`AL3`.`oid` AS `der_attr` from ((`stato_ordine` `AL1` left join `spesa` `AL2` on(`AL1`.`spesa_oid` = `AL2`.`oid`)) left join `user` `AL3` on(`AL2`.`utente_esterno_registrato_oid` = `AL3`.`oid`))</SQLDefinition>
+    <SQLDefinition>select `al1`.`oid` AS `oid`,`al3`.`oid` AS `der_attr` from ((`stato_ordine` `al1` left join `spesa` `al2` on(`al1`.`spesa_oid` = `al2`.`oid`)) left join `user` `al3` on(`al2`.`utente_esterno_registrato_oid` = `al3`.`oid`))</SQLDefinition>
   </Table>
 </DBMetaData>
