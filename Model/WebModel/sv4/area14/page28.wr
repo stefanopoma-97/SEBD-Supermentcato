@@ -12,7 +12,7 @@
         <LinkParameter id="sv4#area14#page28#dau14#ln105#par30" name="scadenza_Scadenza" source="data.ent6#att24" target="sv4#area14#page30#enu9#fld19_slot"/>
         <LinkParameter id="sv4#area14#page28#dau14#ln105#par59" name="sconto_Sconto" source="data.ent6#att23" target="sv4#area14#page30#enu9#fld16_slot"/>
       </Link>
-      <Link id="sv4#area14#page28#dau14#ln90" name="Flow108" to="sv4#area14#opg12#dlu4" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv4#area14#page28#dau14#ln90" name="Elimina" to="sv4#area14#opg12#dlu4" type="normal" automaticCoupling="true" validate="true"/>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

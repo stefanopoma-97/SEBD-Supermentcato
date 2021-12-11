@@ -17,7 +17,7 @@
       </Selector>
       <Link id="sv4#area14#page27#seu41#ln80" name="Flow51" to="sv4#area14#page27#pwu5" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <PowerIndexUnit id="sv4#area14#page27#pwu5" name="Promozioni" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent6" displayAttributes="ent6#att41 ent6#att23 ent6#att24 ent6#att25 ent6#att26" linkOrder="sv4#area14#page27#pwu5#ln81 sv4#area14#page27#pwu5#ln91 sv4#area14#page27#pwu5#ln51">
+    <PowerIndexUnit id="sv4#area14#page27#pwu5" name="Promozioni" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent6" displayAttributes="ent6#att41 ent6#att23 ent6#att24 ent6#att25 ent6#att26" linkOrder="sv4#area14#page27#pwu5#ln81 sv4#area14#page27#pwu5#ln51 sv4#area14#page27#pwu5#ln91">
       <SortAttribute attribute="ent6#att24" order="descending"/>
       <SortAttribute attribute="ent6#att23" order="descending"/>
       <Link id="sv4#area14#page27#pwu5#ln81" name="Dettagli" to="sv4#area14#page28#dau14" automaticCoupling="true" type="normal" validate="true"/>
@@ -44,8 +44,8 @@
           <layout:Attribute attribute="ent6#att25"/>
           <layout:Attribute attribute="ent6#att26"/>
           <layout:Link link="sv4#area14#page27#pwu5#ln81"/>
-          <layout:Link link="sv4#area14#page27#pwu5#ln91"/>
           <layout:Link link="sv4#area14#page27#pwu5#ln51"/>
+          <layout:Link link="sv4#area14#page27#pwu5#ln91"/>
           <layout:Link link="sv4#area14#page27#pwu5ent6#att24"/>
           <layout:Link link="sv4#area14#page27#pwu5ent6#att23"/>
         </layout:Unit>

@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1245" gr:y="250" id="sv4#area14#page29" name="Crea promozione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1245" gr:y="255" id="sv4#area14#page29" name="Crea promozione">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv4#area14#page29#enu8" name="Inserisci dati promozione" linkOrder="sv4#area14#page29#enu8#ln87">
+    <EntryUnit gr:x="0" gr:y="15" id="sv4#area14#page29#enu8" name="Inserisci dati promozione" linkOrder="sv4#area14#page29#enu8#ln87">
       <Field id="sv4#area14#page29#enu8#fld1" name="Sconto" type="decimal" modifiable="true"/>
       <Field id="sv4#area14#page29#enu8#fld2" name="Scadenza" type="date" modifiable="true"/>
       <Field id="sv4#area14#page29#enu8#fld5" name="Online" type="boolean" modifiable="true"/>
@@ -15,18 +15,18 @@
       </Link>
       <SelectionField id="sv4#area14#page29#enu8#sfld3" name="Prodotto" type="string"/>
     </EntryUnit>
-    <SelectorUnit gr:x="20" gr:y="100" id="sv4#area14#page29#seu42" name="Seleziona prodotti" entity="ent4">
+    <SelectorUnit gr:x="20" gr:y="115" id="sv4#area14#page29#seu42" name="Seleziona prodotti" entity="ent4">
       <Link id="sv4#area14#page29#seu42#ln93" name="Flow93" to="sv4#area14#page29#enu8" type="transport" validate="true">
         <LinkParameter id="sv4#area14#page29#seu42#ln93#par95" name="nome_Prodotto [label]" source="ent4#att15Array" target="sv4#area14#page29#enu8#sfld3_label"/>
         <LinkParameter id="sv4#area14#page29#seu42#ln93#par96" name="oid_Prodotto [output]" source="ent4#att14Array" target="sv4#area14#page29#enu8#sfld3_output"/>
       </Link>
     </SelectorUnit>
-    <GetUnit id="sv4#area14#page29#gtu12" name="Get Info Responsabile" gr:x="520" gr:y="10" contextParameters="UserCtxParam">
+    <GetUnit id="sv4#area14#page29#gtu12" name="Get Info Responsabile" gr:x="520" gr:y="5" contextParameters="UserCtxParam">
       <Link id="sv4#area14#page29#gtu12#ln95" name="Flow40" to="sv4#area14#page29#seu22" type="transport" validate="true">
         <LinkParameter id="sv4#area14#page29#gtu12#ln95#par103" name="UserCtxParam.oid_NegozioResponsabile [oid]" source="sv4#area14#page29#gtu12.UserCtxParam" target="sv4#area14#page29#seu22#su77#rcond32.userOID"/>
       </Link>
     </GetUnit>
-    <SelectorUnit id="sv4#area14#page29#seu22" name="Seleziona negozio del responsabile" gr:x="215" gr:y="5" entity="ent3">
+    <SelectorUnit id="sv4#area14#page29#seu22" name="Seleziona negozio del responsabile" gr:x="225" gr:y="0" entity="ent3">
       <Selector id="sv4#area14#page29#seu22#su77" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area14#page29#seu22#su77#rcond32" name="NegozioResponsabile" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
