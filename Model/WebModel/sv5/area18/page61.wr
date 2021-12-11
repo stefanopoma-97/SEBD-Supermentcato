@@ -15,7 +15,7 @@
         <LinkParameter id="sv5#area18#page61#pwu21#ln194#par315" name="fondazione_PASSING" source="data[].ent3#att12" passing="true"/>
         <LinkParameter id="sv5#area18#page61#pwu21#ln194#par316" name="massimo ordini giornalieri_PASSING" source="data[].ent3#att11" passing="true"/>
         <LinkParameter id="sv5#area18#page61#pwu21#ln194#par317" name="nome_PASSING" source="data[].ent3#att9" passing="true"/>
-        <LinkParameter id="sv5#area18#page61#pwu21#ln194#par318" name="oid_PASSING" source="data[].ent3#att8" passing="true"/>
+        <LinkParameter id="sv5#area18#page61#pwu21#ln194#par322" name="oid_PASSING" source="data[].ent3#att8" passing="true"/>
       </Link>
     </PowerIndexUnit>
   </ContentUnits>

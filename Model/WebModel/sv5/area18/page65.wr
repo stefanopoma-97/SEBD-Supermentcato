@@ -34,8 +34,15 @@
         <LinkParameter id="sv5#area18#page65#seu50#ln184#par296" name="massimo ordini giornalieri_PASSING_Numero massimo di ordini giornalieri" sourceLinkParameter="sv5#area18#page62#dau22#ln181#par289" target="sv5#area18#page65#enu15#fld45_slot"/>
         <LinkParameter id="sv5#area18#page65#seu50#ln184#par297" name="via_Via" source="ent2#att6Array" target="sv5#area18#page65#enu15#fld47_slot"/>
         <LinkParameter id="sv5#area18#page65#seu50#ln184#par298" name="oid_PASSING" source="ent2#att5Array" passing="true"/>
+        <LinkParameter id="sv5#area18#page65#seu50#ln184#par319" name="IndirizzoToCitt&#224;.oid_Citt&#224; - Preselection" source="rel1#role2_ent1#att1Array" target="sv5#area18#page65#enu15#sfld22_presel"/>
       </Link>
+      <Link id="sv5#area18#page65#seu50#ln195" name="Flow195" to="sv5#area18#page65#dau26" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
+    <DataUnit gr:x="10" gr:y="15" id="sv5#area18#page65#dau26" name="Dettagli indirizzo" entity="ent2" displayAll="true">
+      <Selector id="sv5#area18#page65#dau26#su149" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#page65#dau26#su149#kcond96" name="KeyCondition96" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -63,7 +70,12 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area18#page65#dau26">
+          <layout:Attribute attribute="ent2#att6"/>
+          <layout:Attribute attribute="ent2#att7"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
