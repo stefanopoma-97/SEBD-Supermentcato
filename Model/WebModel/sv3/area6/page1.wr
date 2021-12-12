@@ -57,9 +57,9 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv3#area6#page1#dau9">
-          <layout:Attribute attribute="ent3#att9"/>
-          <layout:Attribute attribute="ent3#att11"/>
           <layout:Attribute attribute="ent3#att12"/>
+          <layout:Attribute attribute="ent3#att11"/>
+          <layout:Attribute attribute="ent3#att9"/>
           <layout:Attribute attribute="ent3#att13"/>
           <layout:Attribute attribute="ent3#att58"/>
           <layout:Attribute attribute="ent3#att42"/>
@@ -80,8 +80,8 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv3#area6#page1#dau10">
-          <layout:Attribute attribute="ent2#att6"/>
           <layout:Attribute attribute="ent2#att7"/>
+          <layout:Attribute attribute="ent2#att6"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

@@ -143,10 +143,11 @@
       <db:JoinColumn attribute="ent4#att14" name="prodotto_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="1000" gr:y="795" id="ent7" name="Riga ordine" duration="persistent" attributeOrder="ent7#att28 ent7#att29 ent7#att40" db:database="db1" db:table="riga_ordine">
+  <Entity gr:x="1000" gr:y="795" id="ent7" name="Riga ordine" duration="persistent" attributeOrder="ent7#att28 ent7#att29 ent7#att40 ent7#att10" db:database="db1" db:table="riga_ordine">
     <Attribute id="ent7#att28" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent7#att29" name="quantit&#224;" type="integer" db:column="quantita"/>
     <Attribute id="ent7#att40" name="costo" type="decimal" db:column="costo"/>
+    <Attribute id="ent7#att10" name="sconto" type="decimal" db:column="sconto"/>
   </Entity>
   <Entity gr:x="995" gr:y="635" id="ent8" name="Prodotto online" duration="persistent" attributeOrder="ent8#att31" db:database="db1" db:table="prodotto_online">
     <Attribute id="ent8#att31" key="true" name="oid" type="integer" db:column="oid"/>
@@ -179,7 +180,7 @@
     <Attribute id="ent9#att33" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent9#att36" name="data di spedizione" type="date" db:column="data_di_spedizione"/>
     <Attribute id="ent9#att35" name="data di creazione" type="date" db:column="data_di_creazione"/>
-    <Attribute id="ent9#att34" name="importo totale" type="decimal" derivationQuery="calculated::sum(Self.rel10#role20(as Var1).ent7#att40)" db:table="spesa_importo_totale_view" storageType="file" db:column="der_attr">
+    <Attribute id="ent9#att34" name="importo totale" type="decimal" storageType="file" derivationQuery="calculated::sum(Self.rel10#role20(as Var1).ent7#att40)" db:table="spesa_importo_totale_view" db:column="der_attr">
       <db:JoinColumn attribute="ent9#att33" name="oid"/>
     </Attribute>
   </Entity>
@@ -320,5 +321,6 @@
       <db:JoinColumn attribute="ent3#att8" name="negozio_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="supermercati" type="MySQL" username="admin" cryptedPassword="true" password="YWRtaW4=" url="jdbc:mysql://localhost:3306/supermercati"/>
+  <db:Database id="db1" name="supermercati" type="MySQL" username="admin" cryptedPassword="true" password="YWRtaW4=" url="jdbc:mysql://localhost:3306/supermercati">
+  </db:Database>
 </DataModel>

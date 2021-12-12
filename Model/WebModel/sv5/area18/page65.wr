@@ -72,8 +72,8 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area18#page65#dau26">
-          <layout:Attribute attribute="ent2#att6"/>
           <layout:Attribute attribute="ent2#att7"/>
+          <layout:Attribute attribute="ent2#att6"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

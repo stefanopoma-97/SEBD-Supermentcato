@@ -97,9 +97,9 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area20#page48#enu16">
           <layout:Link link="sv2#area20#page48#enu16#ln150"/>
-          <layout:Field field="sv2#area20#page48#enu16#sfld17"/>
           <layout:Field field="sv2#area20#page48#enu16#fld31"/>
           <layout:Field field="sv2#area20#page48#enu16#fld32"/>
+          <layout:Field field="sv2#area20#page48#enu16#sfld17"/>
           <layout:Field field="sv2#area20#page48#enu16#msfld1"/>
           <layout:Field field="sv2#area20#page48#enu16#msfld2"/>
           <layout:Field field="sv2#area20#page48#enu16#msfld5"/>

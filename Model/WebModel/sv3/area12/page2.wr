@@ -10,10 +10,10 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv3#area12#page2#dau12">
-          <layout:Attribute attribute="ent4#att15"/>
-          <layout:Attribute attribute="ent4#att16"/>
-          <layout:Attribute attribute="ent4#att17"/>
           <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att15"/>
           <layout:Attribute attribute="ent4#att27"/>
           <layout:Attribute attribute="ent4#att53"/>
           <layout:Attribute attribute="ent4#att59"/>

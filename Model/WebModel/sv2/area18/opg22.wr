@@ -1,0 +1,35 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="185" gr:y="720" id="sv2#area18#opg22" name="Crea spesa" transaction="true">
+  <OperationUnits>
+    <SetUnit gr:x="905" gr:y="135" id="sv2#area18#opg22#stu2" name="Crea spesa" contextParameters="ctx1"/>
+    <GetUnit gr:x="0" gr:y="130" id="sv2#area18#opg22#gtu8" name="Utente" contextParameters="UserCtxParam">
+      <Link id="sv2#area18#opg22#gtu8#ln197" name="Flow197" to="sv2#area18#opg22#seu56" type="transport" validate="true">
+        <LinkParameter id="sv2#area18#opg22#gtu8#ln197#par50" name="UserCtxParam.oid_KeyCondition93 [oid]" source="sv2#area18#opg22#gtu8.UserCtxParam" target="sv2#area18#opg22#seu56#su151#kcond93.userOID"/>
+      </Link>
+    </GetUnit>
+    <TimeUnit gr:x="515" gr:y="150" id="sv2#area18#opg22#tmu9" name="Data attuale">
+      <OKLink id="sv2#area18#opg22#tmu9#oln51" name="OKFlow51" to="sv2#area18#opg22#cru3">
+        <LinkParameter id="sv2#area18#opg22#tmu9#oln51#par261" name="Current/Input Date_data di creazione" source="currentDate" target="sv2#area18#opg22#cru3.ent9#att35"/>
+        <LinkParameter id="sv2#area18#opg22#tmu9#oln51#par280" name="Utente esterno registratoToNegozio.oid_PASSING_Negozio.oid(SpesaToNegozio)" sourceLinkParameter="sv2#area18#opg22#seu56#oln39#par158" target="sv2#area18#opg22#cru3.rel17#role33.ent3#att8"/>
+        <LinkParameter id="sv2#area18#opg22#tmu9#oln51#par281" name="oid_PASSING_Utente esterno registrato.oid(SpesaToUser)" sourceLinkParameter="sv2#area18#opg22#seu56#oln39#par144" target="sv2#area18#opg22#cru3.rel13#role26.userOID"/>
+      </OKLink>
+      <KOLink id="sv2#area18#opg22#tmu9#kln57" name="KOFlow57" to="sv2#area18#page67" automaticCoupling="true"/>
+    </TimeUnit>
+    <SelectorUnit gr:x="245" gr:y="125" id="sv2#area18#opg22#seu56" name="Utente" entity="ent13">
+      <Selector id="sv2#area18#opg22#seu56#su151" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area18#opg22#seu56#su151#kcond93" name="KeyCondition93" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area18#opg22#seu56#oln39" name="OKFlow39" to="sv2#area18#opg22#tmu9">
+        <LinkParameter id="sv2#area18#opg22#seu56#oln39#par144" name="oid_PASSING" source="userOIDArray" passing="true"/>
+        <LinkParameter id="sv2#area18#opg22#seu56#oln39#par158" name="Utente esterno registratoToNegozio.oid_PASSING" source="rel15#role30_ent3#att8Array" passing="true"/>
+      </OKLink>
+      <KOLink id="sv2#area18#opg22#seu56#kln58" name="KOFlow58" to="sv2#area18#page67" automaticCoupling="true"/>
+    </SelectorUnit>
+    <CreateUnit id="sv2#area18#opg22#cru3" entity="ent9" gr:x="700" gr:y="145" name="Crea spesa">
+      <Link id="sv2#area18#opg22#cru3#ln206" name="Flow200" to="sv2#area18#opg22#stu2" type="transport" validate="true">
+        <LinkParameter id="sv2#area18#opg22#cru3#ln206#par324" name="oid_SpesaAttuale.oid" source="ent9#att33Array" target="sv2#area18#opg22#stu2.ctx1.ent9#att33"/>
+      </Link>
+      <OKLink id="sv2#area18#opg22#cru3#oln53" name="OKFlow52" to="sv2#area18#page47" automaticCoupling="true" gr:bendpoints="412,-199,292,407"/>
+      <KOLink id="sv2#area18#opg22#cru3#kln56" name="KOFlow56" to="sv2#area18#page67" automaticCoupling="true"/>
+    </CreateUnit>
+  </OperationUnits>
+</OperationGroup>
