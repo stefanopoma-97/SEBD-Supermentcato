@@ -3,7 +3,7 @@
     <EntryUnit gr:x="0" gr:y="0" id="sv5#area26#page75#enu22" name="Modifica categoria" entity="ent5" linkOrder="sv5#area26#page75#enu22#ln236">
       <Field id="sv5#area26#page75#enu22#fld51" name="Nome" type="string" modifiable="true" preloaded="true" attribute="ent5#att20"/>
       <Field id="sv5#area26#page75#enu22#fld52" name="Descrizione" type="string" modifiable="true" attribute="ent5#att21" preloaded="true"/>
-      <Link id="sv5#area26#page75#enu22#ln236" name="Flow236" to="sv5#area26#opg30#mfu8" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area26#page75#enu22#ln236" name="Applica modifiche" to="sv5#area26#opg30#mfu8" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
