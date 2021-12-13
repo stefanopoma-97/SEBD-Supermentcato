@@ -1,0 +1,9 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="sv5#area26#opg31" name="Elimina categoria" transaction="true">
+  <OperationUnits>
+    <DeleteUnit gr:x="0" gr:y="0" id="sv5#area26#opg31#dlu10" name="Elimina categoria" entity="ent5">
+      <Selector id="sv5#area26#opg31#dlu10#su154" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area26#opg31#dlu10#su154#kcond99" name="KeyCondition99" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>

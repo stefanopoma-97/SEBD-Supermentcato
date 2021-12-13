@@ -9,7 +9,6 @@
       <Selector id="sv2#area18#opg25#mfu9#su161" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area18#opg25#mfu9#su161#kcond101" name="KeyCondition101" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="sv2#area18#opg25#mfu9#oln57" name="OKFlow57" to="sv2#area25#page69#dau27" automaticCoupling="true"/>
     </ModifyUnit>
     <GetUnit id="sv2#area18#opg25#gtu25" name="Utente" gr:x="10" gr:y="130" contextParameters="UserCtxParam" linkOrder="sv2#area18#opg25#gtu25#ln235">
       <Link id="sv2#area18#opg25#gtu25#ln235" name="Flow235" to="sv2#area18#opg25#mfu9" automaticCoupling="true" type="transport" validate="true"/>
