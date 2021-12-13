@@ -1,0 +1,79 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="370" gr:y="525" id="sv5#area27#page80" name="Associa responsabile">
+  <ContentUnits>
+    <SelectorUnit gr:x="0" gr:y="130" id="sv5#area27#page80#seu81" name="Seleziona negozi con responsabile" entity="ent3">
+      <Selector id="sv5#area27#page80#seu81#su170" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area27#page80#seu81#su170#rcond66" name="ResponsabileNotNegozio" predicate="in" implied="false" role="rel14#role27"/>
+      </Selector>
+      <Link id="sv5#area27#page80#seu81#ln282" name="Flow282" to="sv5#area27#page80#seu92" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit id="sv5#area27#page80#seu87" name="Seleziona responsabili" gr:x="40" gr:y="10" entity="ent12">
+      <Link id="sv5#area27#page80#seu87#ln270" name="Flow270" to="sv5#area27#page80#seu81" automaticCoupling="true" type="transport" validate="true"/>
+      <Selector id="sv5#area27#page80#seu87#su179" defaultPolicy="fill" booleanOperator="and"/>
+    </SelectorUnit>
+    <EntryUnit gr:x="345" gr:y="0" id="sv5#area27#page80#enu25" name="Associa responsabile" entity="ent12" linkOrder="sv5#area27#page80#enu25#ln274">
+      <SelectionField id="sv5#area27#page80#enu25#sfld25" name="Negozio" type="string"/>
+      <Link id="sv5#area27#page80#enu25#ln274" name="Associa" to="sv5#area27#opg35#cnu14" type="normal" validate="true">
+        <LinkParameter id="sv5#area27#page80#enu25#ln274#par348" name="Key [oid]_KeyCondition106 [oid] [Responsabile] [Source]" source="key.userOID" target="sv5#area27#opg35#cnu14#su171#kcond106.userOID"/>
+        <LinkParameter id="sv5#area27#page80#enu25#ln274#par349" name="Negozio_KeyCondition107 [oid] [Negozio] [Target]" source="sv5#area27#page80#enu25#sfld25" target="sv5#area27#opg35#cnu14#su172#kcond107.ent3#att8"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="295" gr:y="130" id="sv5#area27#page80#seu92" name="Seleziona negozi senza responsabile" entity="ent3">
+      <Selector id="sv5#area27#page80#seu92#su180" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area27#page80#seu92#su180#kcond116" name="SenzaResponsabile" predicate="notIn" implied="false"/>
+      </Selector>
+      <Link id="sv5#area27#page80#seu92#ln283" name="Flow271" to="sv5#area27#page80#enu25" type="transport" validate="true">
+        <LinkParameter id="sv5#area27#page80#seu92#ln283#par353" name="nome_Negozio [label]" source="ent3#att9Array" target="sv5#area27#page80#enu25#sfld25_label"/>
+        <LinkParameter id="sv5#area27#page80#seu92#ln283#par354" name="oid_Negozio [output]" source="ent3#att8Array" target="sv5#area27#page80#enu25#sfld25_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area27#page80#enu25">
+          <layout:Field field="sv5#area27#page80#enu25#sfld25"/>
+          <layout:Link link="sv5#area27#page80#enu25#ln274"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

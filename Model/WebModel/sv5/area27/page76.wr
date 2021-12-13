@@ -1,0 +1,107 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="385" gr:y="305" id="sv5#area27#page76" name="Responsabili" linkOrder="sv5#area27#page76#ln263">
+  <ContentUnits>
+    <ScrollerUnit gr:x="185" gr:y="5" id="sv5#area27#page76#scu15" name="Scorri responsabili" useCountQuery="false" entity="ent12" blockFactor="5" linkOrder="sv5#area27#page76#scu15#ln261">
+      <Link id="sv5#area27#page76#scu15#ln261" name="Flow261" to="sv5#area27#page76#pwu28" automaticCoupling="true" type="automatic" validate="true"/>
+      <Selector id="sv5#area27#page76#scu15#su173" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area27#page76#scu15#su173#kcond109" predicate="notIn" implied="false" name="NotDipendente"/>
+      </Selector>
+    </ScrollerUnit>
+    <PowerIndexUnit gr:x="395" gr:y="0" id="sv5#area27#page76#pwu28" name="Elenco responsabili" sortable="true" checkable="false" useCountQuery="false" entity="ent12" linkOrder="sv5#area27#page76#pwu28#ln262 sv5#area27#page76#pwu28#ln266 sv5#area27#page76#pwu28#ln269 sv5#area27#page76#pwu28#ln272" displayAttributes="userName ent12#att51 ent12#att52 ent12#att57">
+      <Link id="sv5#area27#page76#pwu28#ln262" name="Dettagli" to="sv5#area27#page77#dau31" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area27#page76#pwu28#ln266" name="Modifica" to="sv5#area27#page79#enu24" type="normal" validate="true">
+        <LinkParameter id="sv5#area27#page76#pwu28#ln266#par336" name="cognome_Cognome" source="data[].ent12#att52" target="sv5#area27#page79#enu24#fld61_slot"/>
+        <LinkParameter id="sv5#area27#page76#pwu28#ln266#par337" name="email_Email" source="data[].email" target="sv5#area27#page79#enu24#fld62_slot"/>
+        <LinkParameter id="sv5#area27#page76#pwu28#ln266#par342" name="oid_Key Condition [oid]" source="data[].userOID" target="sv5#area27#page79#enu24.userOID"/>
+        <LinkParameter id="sv5#area27#page76#pwu28#ln266#par343" name="nome_Nome" source="data[].ent12#att51" target="sv5#area27#page79#enu24#fld60_slot"/>
+        <LinkParameter id="sv5#area27#page76#pwu28#ln266#par344" name="password_Password" source="data[].password" target="sv5#area27#page79#enu24#fld59_slot"/>
+        <LinkParameter id="sv5#area27#page76#pwu28#ln266#par345" name="userName_Username" source="data[].userName" target="sv5#area27#page79#enu24#fld58_slot"/>
+      </Link>
+      <Link id="sv5#area27#page76#pwu28#ln269" name="Elimina" to="sv5#area27#opg34#dlu11" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area27#page76#pwu28#ln272" name="Associa ad un negozio" to="sv5#area27#page80#enu25" automaticCoupling="true" type="normal" validate="true"/>
+      <Selector id="sv5#area27#page76#pwu28#su177" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area27#page76#pwu28#su177#kcond113" name="KeyCondition113" predicate="in" implied="false"/>
+      </Selector>
+    </PowerIndexUnit>
+    <SelectorUnit gr:x="0" gr:y="5" id="sv5#area27#page76#seu90" name="Seleziona dipendenti" entity="ent14">
+      <Link id="sv5#area27#page76#seu90#ln275" name="Flow275" to="sv5#area27#page76#scu15" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area27#page76#scu15">
+          <layout:Link link="sv5#area27#page76#scu15First"/>
+          <layout:Link link="sv5#area27#page76#scu15Previous"/>
+          <layout:Link link="sv5#area27#page76#scu15Block"/>
+          <layout:Link link="sv5#area27#page76#scu15Next"/>
+          <layout:Link link="sv5#area27#page76#scu15Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area27#page76#pwu28">
+          <layout:Link link="sv5#area27#page76#pwu28#ln262"/>
+          <layout:Link link="sv5#area27#page76#pwu28#ln266"/>
+          <layout:Link link="sv5#area27#page76#pwu28#ln269"/>
+          <layout:Link link="sv5#area27#page76#pwu28#ln272"/>
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="ent12#att51"/>
+          <layout:Attribute attribute="ent12#att52"/>
+          <layout:Attribute attribute="ent12#att57"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv5#area27#page76#ln263" name="Aggiungi responsabile" to="sv5#area27#page78#enu23" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

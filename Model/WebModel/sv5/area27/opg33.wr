@@ -1,0 +1,9 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1035" gr:y="0" id="sv5#area27#opg33" name="Modifica responsabile" transaction="true">
+  <OperationUnits>
+    <ModifyUnit gr:x="0" gr:y="0" id="sv5#area27#opg33#mfu10" name="Modifica responsabile" entity="ent12">
+      <Selector id="sv5#area27#opg33#mfu10#su168" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area27#opg33#mfu10#su168#kcond104" name="KeyCondition104" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationGroup>

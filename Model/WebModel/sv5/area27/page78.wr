@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="785" gr:y="110" id="sv5#area27#page78" name="Crea responsabile">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv5#area27#page78#enu23" name="Crea responsabile" entity="ent12" linkOrder="sv5#area27#page78#enu23#ln264">
+      <Field id="sv5#area27#page78#enu23#fld53" name="Username" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv5#area27#page78#enu23#fld54" name="Email" type="string" modifiable="true" attribute="email"/>
+      <Field id="sv5#area27#page78#enu23#fld55" name="Nome" type="string" modifiable="true" attribute="ent12#att51"/>
+      <Field id="sv5#area27#page78#enu23#fld56" name="Cognome" type="string" modifiable="true" attribute="ent12#att52"/>
+      <Field id="sv5#area27#page78#enu23#fld57" name="Password" type="password" modifiable="true" attribute="password"/>
+      <Link id="sv5#area27#page78#enu23#ln264" name="Crea responsabile" to="sv5#area27#opg32#cru11" automaticCoupling="true" type="normal" validate="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area27#page78#enu23">
+          <layout:Field field="sv5#area27#page78#enu23#fld53"/>
+          <layout:Field field="sv5#area27#page78#enu23#fld54"/>
+          <layout:Field field="sv5#area27#page78#enu23#fld55"/>
+          <layout:Field field="sv5#area27#page78#enu23#fld56"/>
+          <layout:Field field="sv5#area27#page78#enu23#fld57"/>
+          <layout:Link link="sv5#area27#page78#enu23#ln264"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

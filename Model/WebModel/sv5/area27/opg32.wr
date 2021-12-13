@@ -1,0 +1,7 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="555" gr:y="110" id="sv5#area27#opg32" name="Crea responsabile" transaction="true">
+  <OperationUnits>
+    <CreateUnit gr:x="0" gr:y="0" id="sv5#area27#opg32#cru11" name="Crea responsabile" entity="ent12">
+      <OKLink id="sv5#area27#opg32#cru11#oln65" name="OKFlow65" to="sv5#area27#page76" automaticCoupling="true"/>
+    </CreateUnit>
+  </OperationUnits>
+</OperationGroup>
