@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1040" gr:y="515" id="sv5#area27#opg34" name="Elimina responsabile" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="10" gr:y="195" id="sv5#area27#opg34" name="Elimina responsabile" transaction="true">
   <OperationUnits>
     <DeleteUnit gr:x="0" gr:y="0" id="sv5#area27#opg34#dlu11" name="Elimina responsabile" entity="ent12">
       <Selector id="sv5#area27#opg34#dlu11#su169" defaultPolicy="fill" booleanOperator="and">

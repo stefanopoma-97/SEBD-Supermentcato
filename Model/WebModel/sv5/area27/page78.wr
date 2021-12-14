@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="785" gr:y="110" id="sv5#area27#page78" name="Crea responsabile">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="320" gr:y="0" id="sv5#area27#page78" name="Crea responsabile">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv5#area27#page78#enu23" name="Crea responsabile" entity="ent12" linkOrder="sv5#area27#page78#enu23#ln264">
       <Field id="sv5#area27#page78#enu23#fld53" name="Username" type="string" modifiable="true" attribute="userName"/>
