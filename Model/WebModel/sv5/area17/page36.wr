@@ -1,0 +1,71 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv5#area17#page36" name="Dipendenti">
+  <ContentUnits>
+    <ScrollerUnit gr:x="0" gr:y="15" id="sv5#area17#page36#scu7" name="Scorri dipendenti" useCountQuery="false" entity="ent14" blockFactor="5">
+      <Link id="sv5#area17#page36#scu7#ln66" name="Flow66" to="sv5#area17#page36#pwu12" automaticCoupling="true" type="transport" validate="true"/>
+    </ScrollerUnit>
+    <PowerIndexUnit gr:x="200" gr:y="0" id="sv5#area17#page36#pwu12" name="Elenco dipendenti" sortable="true" checkable="false" useCountQuery="false" entity="ent14" displayAttributes="ent12#att51 ent12#att52 email ent12#att57">
+      <Selector id="sv5#area17#page36#pwu12#su82" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area17#page36#pwu12#su82#kcond49" name="KeyCondition49" predicate="in" implied="false"/>
+      </Selector>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area17#page36#scu7">
+          <layout:Link link="sv5#area17#page36#scu7First"/>
+          <layout:Link link="sv5#area17#page36#scu7Previous"/>
+          <layout:Link link="sv5#area17#page36#scu7Block"/>
+          <layout:Link link="sv5#area17#page36#scu7Next"/>
+          <layout:Link link="sv5#area17#page36#scu7Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area17#page36#pwu12">
+          <layout:Attribute attribute="ent12#att51"/>
+          <layout:Attribute attribute="ent12#att52"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="ent12#att57"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
