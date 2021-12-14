@@ -1,26 +1,27 @@
-[12 dic 2021 10:25:22] DEBUG Executing SQL script
-[12 dic 2021 10:25:22] INFO ================================================================================
-[12 dic 2021 10:25:22] INFO onError= 'stop'
-[12 dic 2021 10:25:22] INFO autoCommit= 'false'
-[12 dic 2021 10:25:22] INFO username= 'admin'
-[12 dic 2021 10:25:22] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.xml'
-[12 dic 2021 10:25:22] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.xml.log'
-[12 dic 2021 10:25:22] INFO encoding= ''
-[12 dic 2021 10:25:22] INFO driverClass= 'com.mysql.jdbc.Driver'
-[12 dic 2021 10:25:22] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.sql'
-[12 dic 2021 10:25:22] INFO eventSocketPort= '51818'
-[12 dic 2021 10:25:22] INFO statementSeparator= ';'
-[12 dic 2021 10:25:22] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
-[12 dic 2021 10:25:22] INFO password= 'admin'
-[12 dic 2021 10:25:22] INFO url= 'jdbc:mysql://localhost:3306/supermercati'
-[12 dic 2021 10:25:22] INFO ================================================================================
-[12 dic 2021 10:25:22] INFO Connecting to the Database...
-[12 dic 2021 10:25:22] INFO Database connection estabilished
-[12 dic 2021 10:25:22] INFO transaction isolation: 4
-[12 dic 2021 10:25:22] DEBUG ================================================================================
-[12 dic 2021 10:25:22] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.sql
-[12 dic 2021 10:25:22] DEBUG Executing statement:  alter table `riga_ordine`  add column  `sconto`  decimal(19,2)
-[12 dic 2021 10:25:22] DEBUG ================================================================================
-[12 dic 2021 10:25:22] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[12 dic 2021 10:25:22] INFO Database connection closed
-[12 dic 2021 10:25:22] DEBUG Total time: 162 milliseconds
+[14 dic 2021 16:14:23] DEBUG Executing SQL script
+[14 dic 2021 16:14:23] INFO ================================================================================
+[14 dic 2021 16:14:23] INFO onError= 'stop'
+[14 dic 2021 16:14:23] INFO autoCommit= 'false'
+[14 dic 2021 16:14:23] INFO username= 'admin'
+[14 dic 2021 16:14:23] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.xml'
+[14 dic 2021 16:14:23] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.xml.log'
+[14 dic 2021 16:14:23] INFO encoding= ''
+[14 dic 2021 16:14:23] INFO driverClass= 'com.mysql.jdbc.Driver'
+[14 dic 2021 16:14:23] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.sql'
+[14 dic 2021 16:14:23] INFO eventSocketPort= '50348'
+[14 dic 2021 16:14:23] INFO statementSeparator= ';'
+[14 dic 2021 16:14:23] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[14 dic 2021 16:14:23] INFO password= 'admin'
+[14 dic 2021 16:14:23] INFO url= 'jdbc:mysql://localhost:3306/supermercati'
+[14 dic 2021 16:14:23] INFO ================================================================================
+[14 dic 2021 16:14:23] INFO Connecting to the Database...
+[14 dic 2021 16:14:23] INFO Database connection estabilished
+[14 dic 2021 16:14:23] INFO transaction isolation: 4
+[14 dic 2021 16:14:23] DEBUG ================================================================================
+[14 dic 2021 16:14:23] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.sql
+[14 dic 2021 16:14:23] DEBUG Executing statement:  drop view `negozio_volume_vendite_view`
+[14 dic 2021 16:14:23] DEBUG Executing statement:  create view `negozio_volume_vendite_view` as select AL1.`oid` as `oid`, sum(AL3.`der_attr`) as `der_attr` from  `negozio` AL1 left outer join `spesa` AL2 on AL1.`oid`=AL2.`negozio_oid` left outer join `spesa_importo_totale_view` AL3 on AL2.`oid`=AL3.`oid` group by AL1.`oid`
+[14 dic 2021 16:14:23] DEBUG ================================================================================
+[14 dic 2021 16:14:23] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[14 dic 2021 16:14:23] INFO Database connection closed
+[14 dic 2021 16:14:23] DEBUG Total time: 165 milliseconds

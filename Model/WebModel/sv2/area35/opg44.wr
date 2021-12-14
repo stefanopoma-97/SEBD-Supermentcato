@@ -1,0 +1,11 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area35#opg44" name="Filtra" transaction="true" gr:x="0" gr:y="780">
+  <OperationUnits>
+    <SelectorUnit id="sv2#area35#opg44#seu125" name="Filtro" gr:x="0" gr:y="0" entity="ent3">
+      <KOLink id="sv2#area35#opg44#seu125#kln92" name="KOFlow10" to="sv2#area35#page102" automaticCoupling="true"/>
+      <OKLink id="sv2#area35#opg44#seu125#oln91" name="OKFlow9" to="sv2#area35#page103#pwu32" automaticCoupling="true"/>
+      <Selector id="sv2#area35#opg44#seu125#su229" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area35#opg44#seu125#su229#rcond99" name="Citt&#224;IndirizzoNegozio" predicate="in" implied="true" role="rel1#role1.rel2#role4"/>
+      </Selector>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

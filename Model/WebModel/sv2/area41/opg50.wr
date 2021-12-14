@@ -1,0 +1,17 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area41#opg50" name="Filtri" transaction="true" gr:x="145" gr:y="145">
+  <OperationUnits>
+    <SelectorUnit id="sv2#area41#opg50#seu144" name="Filtri" gr:x="0" gr:y="0" entity="ent6">
+      <Selector id="sv2#area41#opg50#seu144#su276" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area41#opg50#seu144#su276#rcond120" name="Da negozi a promozioni" predicate="in" implied="true" role="rel5#role10"/>
+        <AttributesCondition id="sv2#area41#opg50#seu144#su276#acond53" name="negozio parola chiave" predicate="contains" booleanOperator="or" implied="true" attributes="ent6#att39"/>
+        <AttributesCondition id="sv2#area41#opg50#seu144#su276#acond54" name="prodotto parola chiave" predicate="contains" booleanOperator="or" implied="true" attributes="ent6#att41"/>
+        <AttributesCondition id="sv2#area41#opg50#seu144#su276#acond55" name="Non Scaduta" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
+        <AttributesCondition id="sv2#area41#opg50#seu144#su276#acond56" name="Valida in negozio" predicate="eq" booleanOperator="or" implied="true" attributes="ent6#att25"/>
+        <AttributesCondition id="sv2#area41#opg50#seu144#su276#acond57" name="Valida online" predicate="eq" booleanOperator="or" implied="true" attributes="ent6#att26"/>
+        <RelationshipRoleCondition id="sv2#area41#opg50#seu144#su276#rcond121" name="Negozio preferito" predicate="in" implied="true" role="rel5#role10"/>
+      </Selector>
+      <KOLink id="sv2#area41#opg50#seu144#kln105" name="KOFlow5" to="sv2#area41#page118" automaticCoupling="true"/>
+      <OKLink id="sv2#area41#opg50#seu144#oln106" name="OKFlow8" to="sv2#area41#page116#pwu42" automaticCoupling="true"/>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>
