@@ -1,0 +1,10 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="15" gr:y="455" id="sv5#area17#opg6" name="Modifica dipendente" transaction="true">
+  <OperationUnits>
+    <ModifyUnit gr:x="0" gr:y="0" id="sv5#area17#opg6#mfu9" name="Modifica dipendente" entity="ent14">
+      <Selector id="sv5#area17#opg6#mfu9#su84" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area17#opg6#mfu9#su84#kcond52" name="KeyCondition52" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv5#area17#opg6#mfu9#oln16" name="OKFlow16" to="sv5#area17#page39#dau18" automaticCoupling="true"/>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationGroup>

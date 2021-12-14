@@ -1,0 +1,38 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="295" gr:y="640" id="sv5#area17#page46" name="Associa dipendente">
+  <ContentUnits>
+    <SelectorUnit gr:x="275" gr:y="0" id="sv5#area17#page46#seu26" name="Seleziona negozi" entity="ent3">
+      <Link id="sv5#area17#page46#seu26#ln136" name="Flow136" to="sv5#area17#page46#enu17" type="transport" validate="true">
+        <LinkParameter id="sv5#area17#page46#seu26#ln136#par110" name="nome_Negozi [label]" source="ent3#att9Array" target="sv5#area17#page46#enu17#sfld17_label"/>
+        <LinkParameter id="sv5#area17#page46#seu26#ln136#par111" name="oid_Negozi [output]" source="ent3#att8Array" target="sv5#area17#page46#enu17#sfld17_output"/>
+      </Link>
+    </SelectorUnit>
+    <EntryUnit gr:x="0" gr:y="0" id="sv5#area17#page46#enu17" name="Associa dipendente a negozio" entity="ent14" linkOrder="sv5#area17#page46#enu17#ln137">
+      <SelectionField id="sv5#area17#page46#enu17#sfld17" name="Negozio" type="string"/>
+      <Link id="sv5#area17#page46#enu17#ln137" name="Assegna" to="sv5#area17#opg22#cnu13" type="normal" validate="true">
+        <LinkParameter id="sv5#area17#page46#enu17#ln137#par112" name="Key [oid]_KeyCondition54 [oid] [Responsabile] [Source]" source="key.userOID" target="sv5#area17#opg22#cnu13#su86#kcond54.userOID"/>
+        <LinkParameter id="sv5#area17#page46#enu17#ln137#par113" name="Negozi_KeyCondition55 [oid] [Negozio] [Target]" source="sv5#area17#page46#enu17#sfld17" target="sv5#area17#opg22#cnu13#su88#kcond55.ent3#att8"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area17#page46#enu17">
+          <layout:Field field="sv5#area17#page46#enu17#sfld17"/>
+          <layout:Link link="sv5#area17#page46#enu17#ln137"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

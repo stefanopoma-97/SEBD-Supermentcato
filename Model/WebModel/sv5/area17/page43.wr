@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="295" id="sv5#area17#page43" name="Modifica dipendente">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv5#area17#page43#enu16" name="Modifica dipendente" entity="ent14" linkOrder="sv5#area17#page43#enu16#ln132">
+      <Field id="sv5#area17#page43#enu16#fld31" name="Username" type="string" modifiable="true" attribute="userName" preloaded="true"/>
+      <Field id="sv5#area17#page43#enu16#fld32" name="Password" type="password" modifiable="true" attribute="password" preloaded="true"/>
+      <Field id="sv5#area17#page43#enu16#fld63" name="Nome" type="string" modifiable="true" attribute="ent12#att51" preloaded="true"/>
+      <Field id="sv5#area17#page43#enu16#fld64" name="Cognome" type="string" modifiable="true" attribute="ent12#att52" preloaded="true"/>
+      <Field id="sv5#area17#page43#enu16#fld65" name="Email" type="string" modifiable="true" attribute="email" preloaded="true"/>
+      <Link id="sv5#area17#page43#enu16#ln132" name="Applica modifiche" to="sv5#area17#opg6#mfu9" automaticCoupling="true" type="normal" validate="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area17#page43#enu16">
+          <layout:Field field="sv5#area17#page43#enu16#fld31"/>
+          <layout:Field field="sv5#area17#page43#enu16#fld32"/>
+          <layout:Field field="sv5#area17#page43#enu16#fld63"/>
+          <layout:Field field="sv5#area17#page43#enu16#fld64"/>
+          <layout:Field field="sv5#area17#page43#enu16#fld65"/>
+          <layout:Link link="sv5#area17#page43#enu16#ln132"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

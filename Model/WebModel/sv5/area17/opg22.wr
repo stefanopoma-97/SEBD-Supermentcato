@@ -1,0 +1,15 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="630" id="sv5#area17#opg22" name="Associa dipendente" transaction="true">
+  <OperationUnits>
+    <ConnectUnit gr:x="0" gr:y="0" id="sv5#area17#opg22#cnu13" name="Connetti dipendente a negozio" relationship="rel14#role27">
+      <SourceSelector id="sv5#area17#opg22#cnu13#su86" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area17#opg22#cnu13#su86#kcond54" name="KeyCondition54" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area17#opg22#cnu13#su88" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area17#opg22#cnu13#su88#kcond55" name="KeyCondition55" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area17#opg22#cnu13#oln19" name="OKFlow19" to="sv5#area17#page39#dau18">
+        <LinkParameter id="sv5#area17#opg22#cnu13#oln19#par116" name="Source oid [Responsabile]_KeyCondition50 [oid]" source="sourceuserOID" target="sv5#area17#page39#dau18#su83#kcond50.userOID"/>
+      </OKLink>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>
