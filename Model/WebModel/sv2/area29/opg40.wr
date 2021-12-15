@@ -1,0 +1,97 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area29#opg40" name="Crea riga e spesa" transaction="true" gr:x="800" gr:y="1570">
+  <OperationUnits>
+    <GetUnit id="sv2#area29#opg40#gtu20" name="Prendi spesa" gr:x="0" gr:y="45" contextParameters="ctx1">
+      <Link id="sv2#area29#opg40#gtu20#ln291" name="Flow258" to="sv2#area29#opg40#seu93" type="transport" validate="true">
+        <LinkParameter id="sv2#area29#opg40#gtu20#ln291#par415" name="SpesaAttuale.oid_KeyCondition27 [oid]" source="sv2#area29#opg40#gtu20.ctx1.ent9#att33" target="sv2#area29#opg40#seu93#su211#kcond137.ent9#att33"/>
+      </Link>
+    </GetUnit>
+    <GetUnit id="sv2#area29#opg40#gtu21" name="Prendi totale" gr:x="550" gr:y="0">
+      <Link id="sv2#area29#opg40#gtu21#ln292" name="Flow261" to="sv2#area29#opg40#cru12" type="transport" validate="true">
+        <LinkParameter id="sv2#area29#opg40#gtu21#ln292#par416" name="Totale riga ordine_totale" source="sv2#area29#opg40#gtu21.ctx2" target="sv2#area29#opg40#cru12.ent7#att61"/>
+      </Link>
+      <Link id="sv2#area29#opg40#gtu21#ln293" name="Flow261" to="sv2#area29#opg40#cru14" type="transport" validate="true">
+        <LinkParameter id="sv2#area29#opg40#gtu21#ln293#par417" name="Totale riga ordine_totale" source="sv2#area29#opg40#gtu21.ctx2" target="sv2#area29#opg40#cru14.ent7#att61"/>
+      </Link>
+    </GetUnit>
+    <GetUnit id="sv2#area29#opg40#gtu22" name="Utente" gr:x="365" gr:y="520" contextParameters="UserCtxParam">
+      <Link id="sv2#area29#opg40#gtu22#ln294" name="Flow264" to="sv2#area29#opg40#seu91" type="transport" validate="true">
+        <LinkParameter id="sv2#area29#opg40#gtu22#ln294#par418" name="UserCtxParam.oid_KeyCondition93 [oid]" source="sv2#area29#opg40#gtu22.UserCtxParam" target="sv2#area29#opg40#seu91#su210#kcond136.userOID"/>
+      </Link>
+    </GetUnit>
+    <IsNotNullUnit id="sv2#area29#opg40#inn3" name="Spesa presente" gr:x="470" gr:y="160">
+      <OKLink id="sv2#area29#opg40#inn3#oln76" name="OKFlow73" to="sv2#area29#opg40#cru12">
+        <LinkParameter id="sv2#area29#opg40#inn3#oln76#par419" name="Prodotto onlineToProdotto.prezzo_PASSING_costo" sourceLinkParameter="sv2#area29#page90#enu30#ln307#par474" target="sv2#area29#opg40#cru12.ent7#att40"/>
+        <LinkParameter id="sv2#area29#opg40#inn3#oln76#par420" name="Quantit&#224;_PASSING_quantit&#224;" sourceLinkParameter="sv2#area29#page90#enu30#ln307#par475" target="sv2#area29#opg40#cru12.ent7#att29"/>
+        <LinkParameter id="sv2#area29#opg40#inn3#oln76#par421" name="sconto_PASSING_sconto" sourceLinkParameter="sv2#area29#page90#enu30#ln307#par476" target="sv2#area29#opg40#cru12.ent7#att10"/>
+        <LinkParameter id="sv2#area29#opg40#inn3#oln76#par422" name="oid_PASSING" sourceLinkParameter="sv2#area29#page90#enu30#ln307#par473" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#inn3#oln76#par423" name="Prodotto onlineToProdotto.prezzo_PASSING" sourceLinkParameter="sv2#area29#page90#enu30#ln307#par474" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#inn3#oln76#par424" name="Quantit&#224;_PASSING" sourceLinkParameter="sv2#area29#page90#enu30#ln307#par475" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#inn3#oln76#par425" name="sconto_PASSING" sourceLinkParameter="sv2#area29#page90#enu30#ln307#par476" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#inn3#oln76#par426" name="Input Value_Spesa.oid(Riga ordineToSpesa)" source="inputValue" target="sv2#area29#opg40#cru12.rel10#role19.ent9#att33"/>
+        <LinkParameter id="sv2#area29#opg40#inn3#oln76#par427" name="oid_PASSING_Prodotto online.oid(Riga ordineToProdotto online)" sourceLinkParameter="sv2#area29#page90#enu30#ln307#par473" target="sv2#area29#opg40#cru12.rel9#role17.ent8#att31"/>
+      </OKLink>
+      <KOLink id="sv2#area29#opg40#inn3#kln65" name="KOFlow75" to="sv2#area29#opg40#seu91">
+        <LinkParameter id="sv2#area29#opg40#inn3#kln65#par428" name="oid_PASSING" sourceLinkParameter="sv2#area29#page90#enu30#ln307#par473" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#inn3#kln65#par429" name="Prodotto onlineToProdotto.prezzo_PASSING" sourceLinkParameter="sv2#area29#page90#enu30#ln307#par474" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#inn3#kln65#par430" name="Quantit&#224;_PASSING" sourceLinkParameter="sv2#area29#page90#enu30#ln307#par475" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#inn3#kln65#par431" name="sconto_PASSING" sourceLinkParameter="sv2#area29#page90#enu30#ln307#par476" passing="true"/>
+      </KOLink>
+    </IsNotNullUnit>
+    <CreateUnit id="sv2#area29#opg40#cru12" name="Riga Ordine" gr:x="730" gr:y="135" entity="ent7">
+      <OKLink id="sv2#area29#opg40#cru12#oln77" name="OKFlow54" to="sv2#area29#page90" automaticCoupling="true"/>
+      <KOLink id="sv2#area29#opg40#cru12#kln66" name="KOFlow55" to="sv2#area29#page89" automaticCoupling="true"/>
+    </CreateUnit>
+    <SelectorUnit id="sv2#area29#opg40#seu91" name="Utente" gr:x="615" gr:y="275" entity="ent13">
+      <Selector id="sv2#area29#opg40#seu91#su210" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area29#opg40#seu91#su210#kcond136" name="KeyCondition93" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv2#area29#opg40#seu91#kln67" name="KOFlow58" to="sv2#area29#page89" automaticCoupling="true"/>
+      <OKLink id="sv2#area29#opg40#seu91#oln78" name="OKFlow76" to="sv2#area29#opg40#tmu10">
+        <LinkParameter id="sv2#area29#opg40#seu91#oln78#par432" name="oid_PASSING" source="userOIDArray" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#seu91#oln78#par433" name="Utente esterno registratoToNegozio.oid_PASSING" source="rel15#role30_ent3#att8Array" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#seu91#oln78#par434" name="oid_PASSING" sourceLinkParameter="sv2#area29#opg40#inn3#kln65#par428" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#seu91#oln78#par435" name="Prodotto onlineToProdotto.prezzo_PASSING" sourceLinkParameter="sv2#area29#opg40#inn3#kln65#par429" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#seu91#oln78#par436" name="Quantit&#224;_PASSING" sourceLinkParameter="sv2#area29#opg40#inn3#kln65#par430" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#seu91#oln78#par437" name="sconto_PASSING" sourceLinkParameter="sv2#area29#opg40#inn3#kln65#par431" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <TimeUnit id="sv2#area29#opg40#tmu10" name="Data attuale" gr:x="905" gr:y="295">
+      <KOLink id="sv2#area29#opg40#tmu10#kln68" name="KOFlow57" to="sv2#area29#page89" automaticCoupling="true"/>
+      <OKLink id="sv2#area29#opg40#tmu10#oln79" name="OKFlow78" to="sv2#area29#opg40#cru13">
+        <LinkParameter id="sv2#area29#opg40#tmu10#oln79#par438" name="Current/Input Date_data di creazione" source="currentDate" target="sv2#area29#opg40#cru13.ent9#att35"/>
+        <LinkParameter id="sv2#area29#opg40#tmu10#oln79#par439" name="Utente esterno registratoToNegozio.oid_PASSING_Negozio.oid(SpesaToNegozio)" sourceLinkParameter="sv2#area29#opg40#seu91#oln78#par433" target="sv2#area29#opg40#cru13.rel17#role33.ent3#att8"/>
+        <LinkParameter id="sv2#area29#opg40#tmu10#oln79#par440" name="oid_PASSING_Utente esterno registrato.oid(SpesaToUser)" sourceLinkParameter="sv2#area29#opg40#seu91#oln78#par432" target="sv2#area29#opg40#cru13.rel13#role26.userOID"/>
+        <LinkParameter id="sv2#area29#opg40#tmu10#oln79#par441" name="oid_PASSING" sourceLinkParameter="sv2#area29#opg40#seu91#oln78#par434" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#tmu10#oln79#par442" name="Prodotto onlineToProdotto.prezzo_PASSING" sourceLinkParameter="sv2#area29#opg40#seu91#oln78#par435" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#tmu10#oln79#par443" name="Quantit&#224;_PASSING" sourceLinkParameter="sv2#area29#opg40#seu91#oln78#par436" passing="true"/>
+        <LinkParameter id="sv2#area29#opg40#tmu10#oln79#par444" name="sconto_PASSING" sourceLinkParameter="sv2#area29#opg40#seu91#oln78#par437" passing="true"/>
+      </OKLink>
+    </TimeUnit>
+    <CreateUnit id="sv2#area29#opg40#cru13" name="Crea spesa" gr:x="1110" gr:y="300" entity="ent9">
+      <KOLink id="sv2#area29#opg40#cru13#kln69" name="KOFlow56" to="sv2#area29#page89" automaticCoupling="true"/>
+      <Link id="sv2#area29#opg40#cru13#ln295" name="Flow200" to="sv2#area29#opg40#stu6" type="transport" validate="true">
+        <LinkParameter id="sv2#area29#opg40#cru13#ln295#par445" name="oid_SpesaAttuale.oid" source="ent9#att33Array" target="sv2#area29#opg40#stu6.ctx1.ent9#att33"/>
+      </Link>
+      <OKLink id="sv2#area29#opg40#cru13#oln80" name="OKFlow80" to="sv2#area29#opg40#cru14">
+        <LinkParameter id="sv2#area29#opg40#cru13#oln80#par446" name="Prodotto onlineToProdotto.prezzo_PASSING_costo" sourceLinkParameter="sv2#area29#opg40#tmu10#oln79#par442" target="sv2#area29#opg40#cru14.ent7#att40"/>
+        <LinkParameter id="sv2#area29#opg40#cru13#oln80#par447" name="Quantit&#224;_PASSING_quantit&#224;" sourceLinkParameter="sv2#area29#opg40#tmu10#oln79#par443" target="sv2#area29#opg40#cru14.ent7#att29"/>
+        <LinkParameter id="sv2#area29#opg40#cru13#oln80#par448" name="sconto_PASSING_sconto" sourceLinkParameter="sv2#area29#opg40#tmu10#oln79#par444" target="sv2#area29#opg40#cru14.ent7#att10"/>
+        <LinkParameter id="sv2#area29#opg40#cru13#oln80#par449" name="oid_Spesa.oid(Riga ordineToSpesa)" source="ent9#att33Array" target="sv2#area29#opg40#cru14.rel10#role19.ent9#att33"/>
+        <LinkParameter id="sv2#area29#opg40#cru13#oln80#par450" name="oid_PASSING_Prodotto online.oid(Riga ordineToProdotto online)" sourceLinkParameter="sv2#area29#opg40#tmu10#oln79#par441" target="sv2#area29#opg40#cru14.rel9#role17.ent8#att31"/>
+      </OKLink>
+    </CreateUnit>
+    <SetUnit id="sv2#area29#opg40#stu6" name="Crea spesa" gr:x="1040" gr:y="70" contextParameters="ctx1"/>
+    <CreateUnit id="sv2#area29#opg40#cru14" name="Riga Ordine" gr:x="1295" gr:y="260" entity="ent7">
+      <OKLink id="sv2#area29#opg40#cru14#oln81" name="OKFlow54" to="sv2#area29#page90" automaticCoupling="true"/>
+      <KOLink id="sv2#area29#opg40#cru14#kln70" name="KOFlow55" to="sv2#area29#page89" automaticCoupling="true"/>
+    </CreateUnit>
+    <SelectorUnit id="sv2#area29#opg40#seu93" name="Spesa" gr:x="235" gr:y="20" entity="ent9">
+      <Selector id="sv2#area29#opg40#seu93#su211" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area29#opg40#seu93#su211#kcond137" name="KeyCondition27" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area29#opg40#seu93#ln296" name="Flow133" to="sv2#area29#opg40#inn3" type="transport" validate="true">
+        <LinkParameter id="sv2#area29#opg40#seu93#ln296#par451" name="oid_Input" source="ent9#att33Array" target="sv2#area29#opg40#inn3.isnotnull"/>
+      </Link>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

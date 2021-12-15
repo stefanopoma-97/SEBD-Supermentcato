@@ -1,0 +1,11 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area29#opg42" name="Crea riga d'ordine" transaction="true" gr:x="1445" gr:y="1345">
+  <OperationUnits>
+    <GetUnit id="sv2#area29#opg42#gtu25" name="Prendi spesa" gr:x="0" gr:y="5" contextParameters="ctx1">
+      <Link id="sv2#area29#opg42#gtu25#ln312" name="Flow220" to="sv2#area29#opg42#cru16" type="transport" automaticCoupling="true" validate="true"/>
+    </GetUnit>
+    <CreateUnit id="sv2#area29#opg42#cru16" name="Riga Ordine" gr:x="210" gr:y="0" entity="ent7">
+      <OKLink id="sv2#area29#opg42#cru16#oln85" name="OKFlow54" to="sv2#area29#page90" automaticCoupling="true"/>
+      <KOLink id="sv2#area29#opg42#cru16#kln74" name="KOFlow55" to="sv2#area29#page89" automaticCoupling="true"/>
+    </CreateUnit>
+  </OperationUnits>
+</OperationGroup>

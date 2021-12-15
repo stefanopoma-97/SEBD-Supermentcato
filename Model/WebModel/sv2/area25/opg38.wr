@@ -1,0 +1,23 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area25#opg38" name="Negozi vicini" transaction="true" gr:x="750" gr:y="1110">
+  <OperationUnits>
+    <SelectorUnit id="sv2#area25#opg38#seu72" name="Negozi vicini" gr:x="0" gr:y="270" entity="ent3">
+      <Selector id="sv2#area25#opg38#seu72#su193" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area25#opg38#seu72#su193#rcond60" name="Citt&#224;ToNegozi" predicate="in" implied="false" role="rel1#role1.rel2#role4"/>
+      </Selector>
+      <OKLink id="sv2#area25#opg38#seu72#oln73" name="OKFlow31" to="sv2#area23#page81#pwu29" automaticCoupling="true"/>
+      <KOLink id="sv2#area25#opg38#seu72#kln62" name="KOFlow29" to="sv2#area25#page82" automaticCoupling="true" gr:bendpoints="346,-163,236,422"/>
+    </SelectorUnit>
+    <GetUnit id="sv2#area25#opg38#gtu18" name="Utente" gr:x="165" gr:y="0" contextParameters="UserCtxParam">
+      <Link id="sv2#area25#opg38#gtu18#ln244" name="Flow96" to="sv2#area25#opg38#seu73" type="transport" validate="true">
+        <LinkParameter id="sv2#area25#opg38#gtu18#ln244#par391" name="UserCtxParam.oid_UtenteIndirizzoCitt&#224; [oid]" source="sv2#area25#opg38#gtu18.UserCtxParam" target="sv2#area25#opg38#seu73#su194#rcond61.userOID"/>
+      </Link>
+    </GetUnit>
+    <SelectorUnit id="sv2#area25#opg38#seu73" name="Da utente a citt&#224;" gr:x="5" gr:y="125" entity="ent1">
+      <Selector id="sv2#area25#opg38#seu73#su194" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area25#opg38#seu73#su194#rcond61" name="UtenteIndirizzoCitt&#224;" role="rel3#role5.rel1#role2" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv2#area25#opg38#seu73#kln63" name="KOFlow30" to="sv2#area25#page82" automaticCoupling="true" gr:bendpoints="391,-107,276,333"/>
+      <OKLink id="sv2#area25#opg38#seu73#oln74" name="OKFlow32" to="sv2#area25#opg38#seu72" automaticCoupling="true" gr:bendpoints="-13,72,-18,-73"/>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

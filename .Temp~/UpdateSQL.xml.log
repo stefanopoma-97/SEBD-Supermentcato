@@ -1,27 +1,75 @@
-[14 dic 2021 16:14:23] DEBUG Executing SQL script
-[14 dic 2021 16:14:23] INFO ================================================================================
-[14 dic 2021 16:14:23] INFO onError= 'stop'
-[14 dic 2021 16:14:23] INFO autoCommit= 'false'
-[14 dic 2021 16:14:23] INFO username= 'admin'
-[14 dic 2021 16:14:23] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.xml'
-[14 dic 2021 16:14:23] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.xml.log'
-[14 dic 2021 16:14:23] INFO encoding= ''
-[14 dic 2021 16:14:23] INFO driverClass= 'com.mysql.jdbc.Driver'
-[14 dic 2021 16:14:23] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.sql'
-[14 dic 2021 16:14:23] INFO eventSocketPort= '50348'
-[14 dic 2021 16:14:23] INFO statementSeparator= ';'
-[14 dic 2021 16:14:23] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
-[14 dic 2021 16:14:23] INFO password= 'admin'
-[14 dic 2021 16:14:23] INFO url= 'jdbc:mysql://localhost:3306/supermercati'
-[14 dic 2021 16:14:23] INFO ================================================================================
-[14 dic 2021 16:14:23] INFO Connecting to the Database...
-[14 dic 2021 16:14:23] INFO Database connection estabilished
-[14 dic 2021 16:14:23] INFO transaction isolation: 4
-[14 dic 2021 16:14:23] DEBUG ================================================================================
-[14 dic 2021 16:14:23] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.sql
-[14 dic 2021 16:14:23] DEBUG Executing statement:  drop view `negozio_volume_vendite_view`
-[14 dic 2021 16:14:23] DEBUG Executing statement:  create view `negozio_volume_vendite_view` as select AL1.`oid` as `oid`, sum(AL3.`der_attr`) as `der_attr` from  `negozio` AL1 left outer join `spesa` AL2 on AL1.`oid`=AL2.`negozio_oid` left outer join `spesa_importo_totale_view` AL3 on AL2.`oid`=AL3.`oid` group by AL1.`oid`
-[14 dic 2021 16:14:23] DEBUG ================================================================================
-[14 dic 2021 16:14:23] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[14 dic 2021 16:14:23] INFO Database connection closed
-[14 dic 2021 16:14:23] DEBUG Total time: 165 milliseconds
+[15 dic 2021 11:41:02] DEBUG Executing SQL script
+[15 dic 2021 11:41:02] INFO ================================================================================
+[15 dic 2021 11:41:02] INFO onError= 'stop'
+[15 dic 2021 11:41:02] INFO autoCommit= 'false'
+[15 dic 2021 11:41:02] INFO username= 'admin'
+[15 dic 2021 11:41:02] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.xml'
+[15 dic 2021 11:41:02] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.xml.log'
+[15 dic 2021 11:41:02] INFO encoding= ''
+[15 dic 2021 11:41:02] INFO driverClass= 'com.mysql.jdbc.Driver'
+[15 dic 2021 11:41:02] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.sql'
+[15 dic 2021 11:41:02] INFO eventSocketPort= '63021'
+[15 dic 2021 11:41:02] INFO statementSeparator= ';'
+[15 dic 2021 11:41:02] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[15 dic 2021 11:41:02] INFO password= 'admin'
+[15 dic 2021 11:41:02] INFO url= 'jdbc:mysql://localhost:3306/supermercati'
+[15 dic 2021 11:41:02] INFO ================================================================================
+[15 dic 2021 11:41:02] INFO Connecting to the Database...
+[15 dic 2021 11:41:02] INFO Database connection estabilished
+[15 dic 2021 11:41:02] INFO transaction isolation: 4
+[15 dic 2021 11:41:02] DEBUG ================================================================================
+[15 dic 2021 11:41:02] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.sql
+[15 dic 2021 11:41:02] DEBUG Executing statement:  create table `group` ( `oid`  integer  not null, `groupname`  varchar(255), primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `module` ( `oid`  integer  not null, `moduleid`  varchar(255), `modulename`  varchar(255), primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `user` ( `oid`  integer  not null, `username`  varchar(255), `password`  varchar(255), `email`  varchar(255), primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `citta` ( `oid`  integer  not null, `nazione`  varchar(255), `provincia`  varchar(255), `nome`  varchar(255), primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `stato_ordine` ( `oid`  integer  not null, `stato`  varchar(255), primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `prodotto_nuovo` ( `prodotto_oid`  integer  not null, primary key (`prodotto_oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `responsabile` ( `user_oid`  integer  not null, `nome`  varchar(255), `cognome`  varchar(255), primary key (`user_oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `utente_esterno_registrato` ( `user_oid`  integer  not null, `nome`  varchar(255), `cognome`  varchar(255), primary key (`user_oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `dipendente` ( `responsabile_oid`  integer  not null, primary key (`responsabile_oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `fascia_prezzo` ( `oid`  integer  not null, `fascia`  varchar(255), primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `negozio_nuovo` ( `negozio_oid`  integer  not null, primary key (`negozio_oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `nazione` ( `oid`  integer  not null, `nome`  varchar(255), primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `indirizzo` ( `oid`  integer  not null, `numero`  integer, `via`  varchar(255), primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `orario` ( `oid`  integer  not null, `ora_fine`  time, `ora_inizio`  time, `giorno`  varchar(255), primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `negozio` ( `oid`  integer  not null, `fondazione`  date, `massimo_ordini_giornalieri`  integer, `nome`  varchar(255), primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `prodotto` ( `oid`  integer  not null, `data_inserimento`  date, `prezzo`  decimal(19,2), `descrizione`  varchar(255), `nome`  varchar(255), `immagine`  varchar(255), primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `categoria` ( `oid`  integer  not null, `descrizione`  varchar(255), `nome`  varchar(255), primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `promozione` ( `oid`  integer  not null, `scadenza`  date, `sconto`  decimal(19,2), `valida_online`  bit, `valida_in_negozio`  bit, primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `riga_ordine` ( `oid`  integer  not null, `quantita`  integer, `costo`  decimal(19,2), `sconto`  decimal(19,2), `sub_totale`  decimal(19,2), primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `prodotto_online` ( `oid`  integer  not null, primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `spesa` ( `oid`  integer  not null, `data_di_spedizione`  date, `data_di_creazione`  date, primary key (`oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `group`  add column  `module_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `group_module` ( `group_oid`  integer not null, `module_oid`  integer not null, primary key (`group_oid`, `module_oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `user`  add column  `group_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create table `user_group` ( `user_oid`  integer not null, `group_oid`  integer not null, primary key (`user_oid`, `group_oid`) )
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `indirizzo`  add column  `citta_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `riga_ordine`  add column  `spesa_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `prodotto`  add column  `fascia_prezzo_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `stato_ordine`  add column  `spesa_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `spesa`  add column  `utente_esterno_registrato_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `responsabile`  add column  `negozio_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `utente_esterno_registrato`  add column  `negozio_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `stato_ordine`  add column  `dipendente_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `spesa`  add column  `negozio_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `prodotto`  add column  `nazione_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `orario`  add column  `negozio_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `indirizzo`  add column  `negozio_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `indirizzo`  add column  `utente_esterno_registrato_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `prodotto`  add column  `categoria_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `promozione`  add column  `negozio_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `promozione`  add column  `prodotto_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `prodotto_online`  add column  `negozio_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `prodotto_online`  add column  `prodotto_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    alter table `riga_ordine`  add column  `prodotto_online_oid`  integer
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create view `stato_ordine_utenteesterno_vie` as select AL1.`oid` as `oid`, AL3.`oid` as `der_attr` from  `stato_ordine` AL1 left outer join `spesa` AL2 on AL1.`spesa_oid`=AL2.`oid` left outer join `user` AL3 on AL2.`utente_esterno_registrato_oid`=AL3.`oid`
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create view `stato_ordine_dipendente_view` as select AL1.`oid` as `oid`, AL2.`oid` as `der_attr` from  `stato_ordine` AL1 left outer join `user` AL2 on AL1.`dipendente_oid`=AL2.`oid`
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create view `dipendente_ordinigestiti_view` as select AL1.`responsabile_oid` as `responsabile_oid`, count(distinct AL2.`oid`) as `der_attr` from  `dipendente` AL1 left outer join `stato_ordine` AL2 on AL1.`responsabile_oid`=AL2.`dipendente_oid` group by AL1.`responsabile_oid`
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create view `negozio_numerolavoratori_view` as select AL1.`oid` as `oid`, count(distinct AL2.`user_oid`) as `der_attr` from  `negozio` AL1 left outer join `responsabile` AL2 on AL1.`oid`=AL2.`negozio_oid` group by AL1.`oid`
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create view `spesa_importo_totale_view` as select AL1.`oid` as `oid`, sum(AL2.`sub_totale`) as `der_attr` from  `spesa` AL1 left outer join `riga_ordine` AL2 on AL1.`oid`=AL2.`spesa_oid` group by AL1.`oid`
+[15 dic 2021 11:41:02] DEBUG Executing statement:    create view `negozio_volume_vendite_view` as select AL1.`oid` as `oid`, sum(AL3.`der_attr`) as `der_attr` from  `negozio` AL1 left outer join `spesa` AL2 on AL1.`oid`=AL2.`negozio_oid` left outer join `spesa_importo_totale_view` AL3 on AL2.`oid`=AL3.`oid` group by AL1.`oid`
+[15 dic 2021 11:41:02] DEBUG ================================================================================
+[15 dic 2021 11:41:02] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[15 dic 2021 11:41:02] INFO Database connection closed
+[15 dic 2021 11:41:02] DEBUG Total time: 628 milliseconds

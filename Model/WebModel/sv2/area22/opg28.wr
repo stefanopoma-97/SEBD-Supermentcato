@@ -1,0 +1,11 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area22#opg28" name="Cancella riga ordine" transaction="true" gr:x="655" gr:y="705">
+  <OperationUnits>
+    <DeleteUnit id="sv2#area22#opg28#dlu15" name="Elimina riga d'ordine" gr:x="0" gr:y="0" entity="ent7">
+      <Selector id="sv2#area22#opg28#dlu15#su174" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area22#opg28#dlu15#su174#kcond120" name="KeyCondition100" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area22#opg28#dlu15#oln64" name="OKFlow55" to="sv2#area22#page68" automaticCoupling="true"/>
+      <KOLink id="sv2#area22#opg28#dlu15#kln56" name="KOFlow61" to="sv2#area22#page60#mssu24" automaticCoupling="true"/>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>

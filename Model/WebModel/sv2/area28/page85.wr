@@ -1,0 +1,124 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area28#page85" name="Pagina Elenco prodotti" gr:x="395" gr:y="760">
+  <ContentUnits>
+    <EntryUnit id="sv2#area28#page85#enu28" name="Cerca" linkOrder="sv2#area28#page85#enu28#ln257" gr:x="235" gr:y="415">
+      <SelectionField id="sv2#area28#page85#enu28#sfld26" name="Categoria" type="string"/>
+      <SelectionField id="sv2#area28#page85#enu28#sfld27" name="Fascia di prezzo" type="string"/>
+      <Link id="sv2#area28#page85#enu28#ln257" name="Filtra" to="sv2#area28#seu74" type="normal" validate="true">
+        <LinkParameter id="sv2#area28#page85#enu28#ln257#par394" name="Categoria_Da categoria a prodotti [oid]" source="sv2#area28#page85#enu28#sfld26" target="sv2#area28#seu74#su195#rcond62.ent5#att19"/>
+        <LinkParameter id="sv2#area28#page85#enu28#ln257#par395" name="Fascia di prezzo_Da fascia a prodotti [oid]" source="sv2#area28#page85#enu28#sfld27" target="sv2#area28#seu74#su195#rcond63.ent15#att30"/>
+        <LinkParameter id="sv2#area28#page85#enu28#ln257#par396" name="Nazione_Nazione to Prodotto [oid]" source="sv2#area28#page85#enu28#sfld28" target="sv2#area28#seu74#su195#rcond64.ent19#att44"/>
+      </Link>
+      <SelectionField id="sv2#area28#page85#enu28#sfld28" name="Nazione" type="string"/>
+    </EntryUnit>
+    <SelectorUnit id="sv2#area28#page85#seu75" name="Tutti i prodotti" gr:x="440" gr:y="5" entity="ent4">
+      <Link id="sv2#area28#page85#seu75#ln258" name="Flow15" to="sv2#area28#page85#pwu31" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area28#page85#seu75#ln259" name="Flow55" to="sv2#area28#page85#seu83" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit id="sv2#area28#page85#seu76" name="Categorie" gr:x="40" gr:y="550" entity="ent5">
+      <Link id="sv2#area28#page85#seu76#ln260" name="Flow27" to="sv2#area28#page85#enu28" type="transport" validate="true">
+        <LinkParameter id="sv2#area28#page85#seu76#ln260#par397" name="nome_Categoria [label]" source="ent5#att20Array" target="sv2#area28#page85#enu28#sfld26_label"/>
+        <LinkParameter id="sv2#area28#page85#seu76#ln260#par398" name="oid_Categoria [output]" source="ent5#att19Array" target="sv2#area28#page85#enu28#sfld26_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv2#area28#page85#seu78" name="Fasce di prezzo" gr:x="300" gr:y="555" entity="ent15">
+      <Link id="sv2#area28#page85#seu78#ln271" name="Flow28" to="sv2#area28#page85#enu28" type="transport" validate="true">
+        <LinkParameter id="sv2#area28#page85#seu78#ln271#par399" name="fascia_Fascia di prezzo [label]" source="ent15#att32Array" target="sv2#area28#page85#enu28#sfld27_label"/>
+        <LinkParameter id="sv2#area28#page85#seu78#ln271#par400" name="oid_Fascia di prezzo [output]" source="ent15#att30Array" target="sv2#area28#page85#enu28#sfld27_output"/>
+      </Link>
+    </SelectorUnit>
+    <PowerIndexUnit id="sv2#area28#page85#pwu31" name="Lista Prodotti" linkOrder="sv2#area28#page85#pwu31#ln272" gr:x="185" gr:y="0" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" sortable="true" checkable="false" useCountQuery="false">
+      <Selector id="sv2#area28#page85#pwu31#su203" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area28#page85#pwu31#su203#kcond133" name="KeyCondition7" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area28#page85#pwu31#ln272" name="Flow21" to="sv2#area28#page84#dau34" type="normal" automaticCoupling="true" validate="true"/>
+      <SortAttribute attribute="ent4#att17" order="ascending"/>
+    </PowerIndexUnit>
+    <SelectorUnit id="sv2#area28#page85#seu83" name="Nazioni" gr:x="476" gr:y="370" entity="ent19">
+      <Selector id="sv2#area28#page85#seu83#su204" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area28#page85#seu83#su204#rcond69" name="Prodotti to Nazione" role="rel18#role35" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area28#page85#seu83#ln276" name="Flow66" to="sv2#area28#page85#enu28" type="transport" validate="true">
+        <LinkParameter id="sv2#area28#page85#seu83#ln276#par401" name="nome_Nazione [label]" source="ent19#att45Array" target="sv2#area28#page85#enu28#sfld28_label"/>
+        <LinkParameter id="sv2#area28#page85#seu83#ln276#par402" name="oid_Nazione [output]" source="ent19#att44Array" target="sv2#area28#page85#enu28#sfld28_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area28#page85#pwu31">
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att27"/>
+          <layout:Attribute attribute="ent4#att53"/>
+          <layout:Attribute attribute="ent4#att59"/>
+          <layout:Attribute attribute="ent4#att60"/>
+          <layout:Link link="sv2#area28#page85#pwu31#ln272"/>
+          <layout:Link link="sv2#area28#page85#pwu31ent4#att17"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area28#page85#enu28">
+          <layout:Link link="sv2#area28#page85#enu28#ln257"/>
+          <layout:Field field="sv2#area28#page85#enu28#sfld26"/>
+          <layout:Field field="sv2#area28#page85#enu28#sfld27"/>
+          <layout:Field field="sv2#area28#page85#enu28#sfld28"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
