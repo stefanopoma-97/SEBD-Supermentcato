@@ -25,7 +25,7 @@
       <Selector id="sv2#area23#page81#pwu29#su186" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area23#page81#pwu29#su186#kcond123" name="KeyCondition15" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv2#area23#page81#pwu29#ln224" name="Flow42" to="sv2#area23#page71#dau33" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area23#page81#pwu29#ln224" name="Dettagli" to="sv2#area23#page71#dau33" type="normal" automaticCoupling="true" validate="true"/>
       <SortAttribute attribute="ent3#att12" order="descending"/>
     </PowerIndexUnit>
   </ContentUnits>

@@ -47,7 +47,7 @@
       <Selector id="sv2#area20#page52#pwu13#su104" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area20#page52#pwu13#su104#kcond108" name="KeyCondition13" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv2#area20#page52#pwu13#ln163" name="Flow40" to="sv2#area20#page51#dau27" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area20#page52#pwu13#ln163" name="Dettagli" to="sv2#area20#page51#dau27" type="normal" automaticCoupling="true" validate="true"/>
       <SortAttribute attribute="ent6#att24" order="descending"/>
       <SortAttribute attribute="ent6#att23" order="descending"/>
     </PowerIndexUnit>

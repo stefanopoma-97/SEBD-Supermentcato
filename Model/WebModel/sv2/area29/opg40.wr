@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area29#opg40" name="Crea riga e spesa" transaction="true" gr:x="800" gr:y="1570">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area29#opg40" name="Crea riga e spesa" transaction="true" gr:x="835" gr:y="1330">
   <OperationUnits>
     <GetUnit id="sv2#area29#opg40#gtu20" name="Prendi spesa" gr:x="0" gr:y="45" contextParameters="ctx1">
       <Link id="sv2#area29#opg40#gtu20#ln291" name="Flow258" to="sv2#area29#opg40#seu93" type="transport" validate="true">

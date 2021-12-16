@@ -8,15 +8,17 @@
       <Link id="sv2#area28#page84#dau34#ln248" name="Flow19" to="sv2#area28#page84#scu17" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv2#area28#page84#dau34#ln249" name="Flow19" to="sv2#area28#page84#scu18" type="transport" automaticCoupling="true" validate="true"/>
     </DataUnit>
-    <IndexUnit id="sv2#area28#page84#inu12" name="Promozioni attive in negozio" gr:x="640" gr:y="170" entity="ent6" displayAttributes="ent6#att23 ent6#att24 ent6#att39 ent6#att41">
+    <IndexUnit id="sv2#area28#page84#inu12" name="Promozioni attive in negozio" gr:x="640" gr:y="170" entity="ent6" displayAttributes="ent6#att23 ent6#att24 ent6#att39 ent6#att41" linkOrder="sv2#area28#page84#inu12#ln336">
       <Selector id="sv2#area28#page84#inu12#su197" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area28#page84#inu12#su197#kcond130" name="KeyCondition97" predicate="in" implied="false"/>
       </Selector>
+      <Link id="sv2#area28#page84#inu12#ln336" name="Vai alla promozione" to="sv2#area20#page51#dau27" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
-    <IndexUnit id="sv2#area28#page84#inu14" name="Promozioni attive online" gr:x="645" gr:y="20" entity="ent6" displayAttributes="ent6#att23 ent6#att24 ent6#att39 ent6#att41">
+    <IndexUnit id="sv2#area28#page84#inu14" name="Promozioni attive online" gr:x="645" gr:y="20" entity="ent6" displayAttributes="ent6#att23 ent6#att24 ent6#att39 ent6#att41" linkOrder="sv2#area28#page84#inu14#ln335">
       <Selector id="sv2#area28#page84#inu14#su198" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area28#page84#inu14#su198#kcond131" name="KeyCondition16" predicate="in" implied="false"/>
       </Selector>
+      <Link id="sv2#area28#page84#inu14#ln335" name="Vai alla promozione" to="sv2#area20#page51#dau27" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
     <ScrollerUnit id="sv2#area28#page84#scu16" name="Scroll promozioni online" linkOrder="sv2#area28#page84#scu16#ln251" gr:x="365" gr:y="0" useCountQuery="false" entity="ent6" blockFactor="2">
       <Selector id="sv2#area28#page84#scu16#su199" defaultPolicy="fill" booleanOperator="and">
@@ -79,6 +81,7 @@
           <layout:Attribute attribute="ent6#att24"/>
           <layout:Attribute attribute="ent6#att39"/>
           <layout:Attribute attribute="ent6#att41"/>
+          <layout:Link link="sv2#area28#page84#inu12#ln336"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -100,6 +103,7 @@
           <layout:Attribute attribute="ent6#att24"/>
           <layout:Attribute attribute="ent6#att39"/>
           <layout:Attribute attribute="ent6#att41"/>
+          <layout:Link link="sv2#area28#page84#inu14#ln335"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

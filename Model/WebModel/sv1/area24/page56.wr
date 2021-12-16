@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area24#page56" name="Login">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area24#page56" name="Login" linkOrder="sv1#area24#page56#ln324">
   <ContentUnits>
     <EntryUnit id="sv1#area24#page56#enu19" name="Login" gr:x="0" gr:y="0" fieldOrder="sv1#area24#page56#enu19#fld34 sv1#area24#page56#enu19#fld33" linkOrder="sv1#area24#page56#enu19#ln183">
       <Field id="sv1#area24#page56#enu19#fld33" name="Password" type="password" modifiable="true"/>
@@ -48,4 +48,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv1#area24#page56#ln324" name="Registrati" to="sv1#area11#page18" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

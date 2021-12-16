@@ -25,7 +25,7 @@
           <MandatoryValidationRule id="sv2#area22#page68#enu26#sfld23#mnd10" name="Mandatory25"/>
         </VRules>
       </SelectionField>
-      <Link id="sv2#area22#page68#enu26#ln173" name="Flow246" to="sv2#area22#opg27#mfu17" type="normal" validate="true">
+      <Link id="sv2#area22#page68#enu26#ln173" name="Conferma" to="sv2#area22#opg27#mfu17" type="normal" validate="true">
         <LinkParameter id="sv2#area22#page68#enu26#ln173#par376" name="Data_data di spedizione" source="sv2#area22#page68#enu26#sfld23" target="sv2#area22#opg27#mfu17.ent9#att36"/>
         <LinkParameter id="sv2#area22#page68#enu26#ln173#par377" name="oid_PASSING_KeyCondition106 [oid]" sourceLinkParameter="sv2#area22#page68#dau30#ln170#par373" target="sv2#area22#opg27#mfu17#su156#kcond112.ent9#att33"/>
       </Link>

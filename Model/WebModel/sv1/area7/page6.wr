@@ -1,8 +1,12 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1520" gr:y="805" id="sv1#area7#page6" name="Errore link">
-  <ContentUnits/>
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv1#area7#page6#mssu28" name="Errore"/>
+  </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area7#page6#mssu28"/>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

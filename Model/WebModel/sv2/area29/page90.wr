@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area29#page90" name="Pagina prodotto online" linkOrder="sv2#area29#page90#ln311" ajaxEnabled="true" gr:x="575" gr:y="480">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area29#page90" name="Pagina prodotto online" linkOrder="sv2#area29#page90#ln345" ajaxEnabled="true" gr:x="775" gr:y="480">
   <ContentUnits>
     <DataUnit id="sv2#area29#page90#dau35" name="Dettagli prodotto" linkOrder="sv2#area29#page90#dau35#ln300 sv2#area29#page90#dau35#ln301 sv2#area29#page90#dau35#ln303" ajaxTooltipEnabled="false" ajaxTooltipElement="row" computationMode="execute" ajaxEnableExpandedLinks="false" gr:x="0" gr:y="20" entity="ent8" displayAttributes="rel8#role15.ent4#att15 rel8#role15.ent4#att17 rel8#role15.ent4#att16 rel8#role15.ent4#att18 rel8#role15.ent4#att60 rel8#role15.ent4#att59 rel7#role13.ent3#att9">
       <Selector id="sv2#area29#page90#dau35#su213" defaultPolicy="fill" booleanOperator="and">
@@ -320,7 +320,6 @@
       </ContentUnits>
     </Page>
   </Alternative>
-  <Link id="sv2#area29#page90#ln311" name="Conferma spesa" to="sv2#area29#opg43#seu96" type="normal" automaticCoupling="true" validate="true"/>
   <Alternative id="sv2#area29#page90#alt3" name="Totale" defaultPage="sv2#area29#page90#alt3#page92" gr:x="725" gr:y="0">
     <Page id="sv2#area29#page90#alt3#page92" name="Pagina totale esterno" gr:x="0" gr:y="0">
       <ContentUnits>
@@ -328,4 +327,5 @@
       </ContentUnits>
     </Page>
   </Alternative>
+  <Link id="sv2#area29#page90#ln345" name="Conferma spesa" to="sv2#area29#opg49#seu109" type="normal" automaticCoupling="true" validate="true"/>
 </Page>

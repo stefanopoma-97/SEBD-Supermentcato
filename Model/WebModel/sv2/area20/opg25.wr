@@ -10,7 +10,7 @@
         <AttributesCondition id="sv2#area20#opg25#seu53#su102#acond16" name="Valida online" predicate="eq" booleanOperator="or" implied="true" attributes="ent6#att26"/>
         <RelationshipRoleCondition id="sv2#area20#opg25#seu53#su102#rcond38" name="Negozio preferito" predicate="in" implied="true" role="rel5#role10"/>
       </Selector>
-      <KOLink id="sv2#area20#opg25#seu53#kln25" name="KOFlow5" to="sv2#area20#page53" automaticCoupling="true"/>
+      <KOLink id="sv2#area20#opg25#seu53#kln25" name="KOFlow5" to="sv2#area20#page53#mssu18" automaticCoupling="true"/>
       <OKLink id="sv2#area20#opg25#seu53#oln54" name="OKFlow8" to="sv2#area20#page52#pwu13" automaticCoupling="true"/>
     </SelectorUnit>
   </OperationUnits>

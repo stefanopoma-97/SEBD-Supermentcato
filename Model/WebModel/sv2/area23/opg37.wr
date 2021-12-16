@@ -2,7 +2,7 @@
   <OperationUnits>
     <SelectorUnit id="sv2#area23#opg37#seu63" name="Negozi nuovi" gr:x="0" gr:y="0" entity="ent18">
       <OKLink id="sv2#area23#opg37#seu63#oln69" name="OKFlow5" to="sv2#area23#page81#pwu29" automaticCoupling="true"/>
-      <KOLink id="sv2#area23#opg37#seu63#kln58" name="KOFlow7" to="sv2#area23#page72" automaticCoupling="true"/>
+      <KOLink id="sv2#area23#opg37#seu63#kln58" name="KOFlow7" to="sv2#area23#page72#mssu33" automaticCoupling="true"/>
     </SelectorUnit>
   </OperationUnits>
 </OperationGroup>

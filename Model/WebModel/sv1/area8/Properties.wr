@@ -7,7 +7,8 @@
         <KeyCondition id="sv1#area8#seu13#su10#kcond2" name="Prodotti nuovi" predicate="in" implied="true"/>
         <RelationshipRoleCondition id="sv1#area8#seu13#su10#rcond10" name="Nazione to Prodotto" predicate="in" implied="true" role="rel18#role36"/>
       </Selector>
-      <Link id="sv1#area8#seu13#ln7" name="Flow35" to="sv1#area8#page9#pwu11" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="510,-129,-55,336"/>
+      <KOLink id="sv1#area8#seu13#kln85" name="KOFlow85" to="sv1#area8#page94#mssu29" automaticCoupling="true"/>
+      <OKLink id="sv1#area8#seu13#oln96" name="Flow35" to="sv1#area8#page9#pwu11" gr:bendpoints="510,-129,-55,336" automaticCoupling="true"/>
     </SelectorUnit>
   </OperationUnits>
 </Area>

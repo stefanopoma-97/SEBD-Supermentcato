@@ -9,8 +9,8 @@
         <AttributesCondition id="sv1#area9#opg2#seu21#su20#acond8" name="Valida in negozio" predicate="eq" booleanOperator="or" implied="true" attributes="ent6#att25"/>
         <AttributesCondition id="sv1#area9#opg2#seu21#su20#acond11" name="Valida online" predicate="eq" booleanOperator="or" implied="true" attributes="ent6#att26"/>
       </Selector>
-      <KOLink id="sv1#area9#opg2#seu21#kln9" name="KOFlow5" to="sv1#area9#page14" automaticCoupling="true"/>
-      <OKLink id="sv1#area9#opg2#seu21#oln8" name="OKFlow8" to="sv1#area9#page11#pwu9" automaticCoupling="true"/>
+      <KOLink id="sv1#area9#opg2#seu21#kln9" name="KOFlow5" to="sv1#area9#page14#mssu8" automaticCoupling="true"/>
+      <OKLink id="sv1#area9#opg2#seu21#oln8" name="OKFlow8" to="sv1#area9#page11#alt4#page93#pwu34" automaticCoupling="true"/>
     </SelectorUnit>
   </OperationUnits>
 </OperationGroup>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area29#page88" name="Pagina Elenco prodotti online" linkOrder="sv2#area29#page88#ln290" gr:x="870" gr:y="2270">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area29#page88" name="Pagina Elenco prodotti online" linkOrder="sv2#area29#page88#ln290" gr:x="1070" gr:y="2270">
   <ContentUnits>
     <EntryUnit id="sv2#area29#page88#enu29" name="Cerca" linkOrder="sv2#area29#page88#enu29#ln277" gr:x="180" gr:y="355">
       <SelectionField id="sv2#area29#page88#enu29#sfld29" name="Categoria" type="string"/>
@@ -35,7 +35,7 @@
       <Selector id="sv2#area29#page88#pwu32#su207" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area29#page88#pwu32#su207#kcond135" name="KeyCondition7" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv2#area29#page88#pwu32#ln285" name="Flow21" to="sv2#area29#page90#dau35" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area29#page88#pwu32#ln285" name="Dettagli" to="sv2#area29#page90#dau35" type="normal" automaticCoupling="true" validate="true"/>
       <SortAttribute attribute="rel8#role15.ent4#att59" order="descending"/>
       <SortAttribute attribute="rel8#role15.ent4#att15" order="descending"/>
       <SortAttribute attribute="rel8#role15.ent4#att17" order="descending"/>
@@ -141,5 +141,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv2#area29#page88#ln290" name="Prodotti nuovi" to="sv2#area29#opg46#seu100" type="normal" automaticCoupling="true" validate="true"/>
+  <Link id="sv2#area29#page88#ln290" name="Prodotti nuovi" to="sv2#area29#opg46#seu108" type="normal" automaticCoupling="true" validate="true"/>
 </Page>
