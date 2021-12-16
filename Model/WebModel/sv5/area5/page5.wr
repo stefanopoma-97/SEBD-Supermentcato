@@ -1,16 +1,17 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area5#page5" name="Home" gr:x="0" gr:y="0" landmark="true">
   <ContentUnits>
-    <MultiMessageUnit id="sv5#area5#page5#mssu5" name="Message1" gr:x="0" gr:y="0">
+    <MultiMessageUnit id="sv5#area5#page5#mssu5" name="Benvenuto" gr:x="0" gr:y="15">
       <Message xml:space="preserve">Home del dirigente</Message>
     </MultiMessageUnit>
-    <PowerIndexUnit gr:x="110" gr:y="0" id="sv5#area5#page5#pwu17" name="Elenco negozi" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
+    <PowerIndexUnit gr:x="105" gr:y="0" id="sv5#area5#page5#pwu17" name="Elenco negozi" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att9 ent3#att13 ent3#att42" linkOrder="sv5#area5#page5#pwu17#ln7">
       <SortAttribute attribute="ent3#att9" order="ascending"/>
       <SortAttribute attribute="ent3#att11" order="ascending"/>
       <SortAttribute attribute="ent3#att12" order="descending"/>
       <SortAttribute attribute="ent3#att58" order="descending"/>
       <SortAttribute attribute="ent3#att42" order="descending"/>
+      <Link id="sv5#area5#page5#pwu17#ln7" name="Dettagli" to="sv5#area18#page62#dau22" automaticCoupling="true" type="normal" validate="true"/>
     </PowerIndexUnit>
-    <PowerIndexUnit gr:x="240" gr:y="0" id="sv5#area5#page5#pwu18" name="Elenco prodotti" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att18 ent4#att53 ent4#att59" linkOrder="sv5#area5#page5#pwu18#ln130">
+    <PowerIndexUnit gr:x="235" gr:y="0" id="sv5#area5#page5#pwu18" name="Elenco prodotti" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att18 ent4#att53 ent4#att59" linkOrder="sv5#area5#page5#pwu18#ln130">
       <SortAttribute attribute="ent4#att15" order="ascending"/>
       <SortAttribute attribute="ent4#att17" order="ascending"/>
       <SortAttribute attribute="ent4#att53" order="ascending"/>
@@ -19,7 +20,7 @@
       <SortAttribute attribute="ent4#att60" order="ascending"/>
       <Link id="sv5#area5#page5#pwu18#ln130" name="Dettagli" to="sv5#area16#page44#dau17" automaticCoupling="true" type="normal" validate="true"/>
     </PowerIndexUnit>
-    <PowerIndexUnit gr:x="390" gr:y="0" id="sv5#area5#page5#pwu19" name="Elenco categorie" sortable="true" checkable="false" useCountQuery="false" entity="ent5" displayAttributes="ent5#att20 ent5#att21" linkOrder="sv5#area5#page5#pwu19#ln253">
+    <PowerIndexUnit gr:x="385" gr:y="0" id="sv5#area5#page5#pwu19" name="Elenco categorie" sortable="true" checkable="false" useCountQuery="false" entity="ent5" displayAttributes="ent5#att20 ent5#att21" linkOrder="sv5#area5#page5#pwu19#ln253">
       <SortAttribute attribute="ent5#att20" order="ascending"/>
       <SortAttribute attribute="ent5#att21" order="ascending"/>
       <Link id="sv5#area5#page5#pwu19#ln253" name="Dettagli" to="sv5#area26#page73#dau29" automaticCoupling="true" type="normal" validate="true"/>
@@ -46,15 +47,10 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area5#page5#pwu17">
           <layout:Attribute attribute="ent3#att9"/>
-          <layout:Attribute attribute="ent3#att11"/>
-          <layout:Attribute attribute="ent3#att12"/>
           <layout:Attribute attribute="ent3#att13"/>
-          <layout:Attribute attribute="ent3#att58"/>
           <layout:Attribute attribute="ent3#att42"/>
+          <layout:Link link="sv5#area5#page5#pwu17#ln7"/>
           <layout:Link link="sv5#area5#page5#pwu17ent3#att9"/>
-          <layout:Link link="sv5#area5#page5#pwu17ent3#att11"/>
-          <layout:Link link="sv5#area5#page5#pwu17ent3#att12"/>
-          <layout:Link link="sv5#area5#page5#pwu17ent3#att58"/>
           <layout:Link link="sv5#area5#page5#pwu17ent3#att42"/>
         </layout:Unit>
       </layout:Cell>

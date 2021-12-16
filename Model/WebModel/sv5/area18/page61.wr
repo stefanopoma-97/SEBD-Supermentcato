@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="255" gr:y="315" id="sv5#area18#page61" name="Negozi" linkOrder="sv5#area18#page61#ln143">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="220" gr:y="295" id="sv5#area18#page61" name="Negozi" linkOrder="sv5#area18#page61#ln143">
   <ContentUnits>
     <ScrollerUnit gr:x="0" gr:y="5" id="sv5#area18#page61#scu13" name="Scorri negozi" useCountQuery="false" blockFactor="5" entity="ent3" linkOrder="sv5#area18#page61#scu13#ln141">
       <Link id="sv5#area18#page61#scu13#ln141" name="Flow141" to="sv5#area18#page61#pwu21" automaticCoupling="true" type="automatic" validate="true"/>

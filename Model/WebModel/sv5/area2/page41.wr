@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="85" gr:y="190" id="sv5#area2#page41" name="Errore">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="85" gr:y="170" id="sv5#area2#page41" name="Errore">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv5#area2#page41#mssu15" name="Errore utente" linkOrder="sv5#area2#page41#mssu15#ln99">
       <Message xml:space="preserve">Errore durante la modifica dei dati dell'utente</Message>
