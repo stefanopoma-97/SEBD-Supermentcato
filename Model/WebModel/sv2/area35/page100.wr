@@ -1,0 +1,100 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area35#page100" name="Dettagli Profilo" linkOrder="sv2#area35#page100#ln312" gr:x="0" gr:y="0">
+  <ContentUnits>
+    <DataUnit id="sv2#area35#page100#dau40" name="Dettagli utente" gr:x="340" gr:y="0" entity="ent13" displayAttributes="userName email ent13#att50 ent13#att49 rel3#role5.ent2#att7 rel3#role5.ent2#att6 rel3#role5.rel1#role2.ent1#att2">
+      <Selector id="sv2#area35#page100#dau40#su246" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area35#page100#dau40#su246#kcond148" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <GetUnit id="sv2#area35#page100#gtu24" name="Info utente" gr:x="5" gr:y="15" contextParameters="UserCtxParam">
+      <Link id="sv2#area35#page100#gtu24#ln310" name="Flow44" to="sv2#area35#page100#dau40" type="transport" validate="true">
+        <LinkParameter id="sv2#area35#page100#gtu24#ln310#par470" name="UserCtxParam.oid_KeyCondition1 [oid]" source="sv2#area35#page100#gtu24.UserCtxParam" target="sv2#area35#page100#dau40#su246#kcond148.userOID"/>
+      </Link>
+      <Link id="sv2#area35#page100#gtu24#ln311" name="Flow122" to="sv2#area35#page100#dau41" type="transport" validate="true" gr:bendpoints="86,175,-309,-15">
+        <LinkParameter id="sv2#area35#page100#gtu24#ln311#par471" name="UserCtxParam.oid_Utento to Negozio preferito [oid]" source="sv2#area35#page100#gtu24.UserCtxParam" target="sv2#area35#page100#dau41#su247#rcond95.userOID"/>
+      </Link>
+    </GetUnit>
+    <DataUnit id="sv2#area35#page100#dau41" name="Dettagli negozio preferito" gr:x="345" gr:y="185" entity="ent3" displayAttributes="ent3#att13 ent3#att12 ent3#att11 ent3#att9 rel2#role3.ent2#att7 rel2#role3.ent2#att6">
+      <Selector id="sv2#area35#page100#dau41#su247" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area35#page100#dau41#su247#rcond95" name="Utento to Negozio preferito" predicate="in" implied="false" role="rel15#role30"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area35#page100#dau40">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="ent13#att50"/>
+          <layout:Attribute attribute="ent13#att49"/>
+          <layout:Attribute attribute="rel3#role5.ent2#att7"/>
+          <layout:Attribute attribute="rel3#role5.ent2#att6"/>
+          <layout:Attribute attribute="rel3#role5.rel1#role2.ent1#att2"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area35#page100#dau41">
+          <layout:Attribute attribute="ent3#att13"/>
+          <layout:Attribute attribute="ent3#att12"/>
+          <layout:Attribute attribute="ent3#att11"/>
+          <layout:Attribute attribute="ent3#att9"/>
+          <layout:Attribute attribute="rel2#role3.ent2#att7"/>
+          <layout:Attribute attribute="rel2#role3.ent2#att6"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv2#area35#page100#ln312" name="Modifica dati" to="sv2#area35#page101" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="17,224,-33,-121"/>
+</Page>

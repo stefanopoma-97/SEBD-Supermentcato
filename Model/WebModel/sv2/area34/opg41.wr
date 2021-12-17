@@ -1,0 +1,39 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area34#opg41" name="Elimina spesa" transaction="true" gr:x="720" gr:y="970">
+  <OperationUnits>
+    <SelectorUnit id="sv2#area34#opg41#seu106" name="Righe" gr:x="0" gr:y="0" entity="ent7">
+      <Selector id="sv2#area34#opg41#seu106#su237" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area34#opg41#seu106#su237#rcond93" name="RoleCondition67" predicate="in" implied="false" role="rel10#role20"/>
+      </Selector>
+      <KOLink id="sv2#area34#opg41#seu106#kln71" name="KOFlow66" to="sv2#area34#page97#mssu36" automaticCoupling="true"/>
+      <OKLink id="sv2#area34#opg41#seu106#oln82" name="OKFlow61" to="sv2#area34#opg41#lpu1">
+        <LinkParameter id="sv2#area34#opg41#seu106#oln82#par462" name="oid_Input Array" source="ent7#att28Array" target="sv2#area34#opg41#lpu1.array"/>
+        <LinkParameter id="sv2#area34#opg41#seu106#oln82#par463" name="oid_PASSING" sourceLinkParameter="sv2#area34#page96#dau38#ln299#par458" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <LoopUnit id="sv2#area34#opg41#lpu1" name="Loop1" gr:x="230" gr:y="25">
+      <OKLink id="sv2#area34#opg41#lpu1#oln83" name="OKFlow65" to="sv2#area34#opg41#dlu7" code="next" gr:bendpoints="77,40,-143,45">
+        <LinkParameter id="sv2#area34#opg41#lpu1#oln83#par464" name="Next Element_KeyCondition100 [oid]" source="next" target="sv2#area34#opg41#dlu7#su238#kcond140.ent7#att28"/>
+      </OKLink>
+      <OKLink id="sv2#area34#opg41#lpu1#oln84" name="OKFlow66" to="sv2#area34#opg41#dlu8" code="end">
+        <LinkParameter id="sv2#area34#opg41#lpu1#oln84#par465" name="oid_PASSING_KeyCondition110 [oid]" sourceLinkParameter="sv2#area34#opg41#seu106#oln82#par463" target="sv2#area34#opg41#dlu8#su239#kcond141.ent9#att33"/>
+      </OKLink>
+    </LoopUnit>
+    <DeleteUnit id="sv2#area34#opg41#dlu7" name="Elimina riga d'ordine" gr:x="395" gr:y="0" entity="ent7">
+      <Selector id="sv2#area34#opg41#dlu7#su238" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area34#opg41#dlu7#su238#kcond140" name="KeyCondition100" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area34#opg41#dlu7#oln85" name="OKFlow55" to="sv2#area34#opg41#lpu1" automaticCoupling="true" gr:bendpoints="-140,-19,80,-24"/>
+      <KOLink id="sv2#area34#opg41#dlu7#kln72" name="KOFlow61" to="sv2#area34#page97#mssu36" automaticCoupling="true" gr:bendpoints="-319,-145,381,-65"/>
+    </DeleteUnit>
+    <DeleteUnit id="sv2#area34#opg41#dlu8" name="Elimina spesa" gr:x="345" gr:y="185" entity="ent9">
+      <Selector id="sv2#area34#opg41#dlu8#su239" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area34#opg41#dlu8#su239#kcond141" name="KeyCondition110" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area34#opg41#dlu8#oln86" name="OKFlow67" to="sv2#area34#opg41#rstu1" automaticCoupling="true" gr:bendpoints="-163,12,162,17"/>
+      <KOLink id="sv2#area34#opg41#dlu8#kln73" name="KOFlow69" to="sv2#area34#page97#mssu36" automaticCoupling="true"/>
+    </DeleteUnit>
+    <ResetUnit id="sv2#area34#opg41#rstu1" name="Resetta spesa" gr:x="20" gr:y="190" contextParameters="ctx1">
+      <OKLink id="sv2#area34#opg41#rstu1#oln87" name="OKFlow32" to="sv2#area34#page98" automaticCoupling="true"/>
+    </ResetUnit>
+  </OperationUnits>
+</OperationGroup>

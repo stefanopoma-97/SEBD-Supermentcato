@@ -1,0 +1,15 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area42#opg51" name="Prodotti nuovi" transaction="true" gr:x="45" gr:y="2380">
+  <OperationUnits>
+    <SelectorUnit id="sv2#area42#opg51#seu135" name="Prodotti online nuovi" gr:x="0" gr:y="0" entity="ent8">
+      <Selector id="sv2#area42#opg51#seu135#su287" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area42#opg51#seu135#su287#rcond115" name="Prodotto to Prodotto online" predicate="in" implied="false" role="rel8#role16"/>
+      </Selector>
+      <KOLink id="sv2#area42#opg51#seu135#kln93" name="KOFlow44" to="sv2#area42#page115" automaticCoupling="true"/>
+      <OKLink id="sv2#area42#opg51#seu135#oln108" name="OKFlow42" to="sv2#area42#page116#pwu31" automaticCoupling="true"/>
+    </SelectorUnit>
+    <SelectorUnit id="sv2#area42#opg51#seu136" name="Prodotti nuovi" gr:x="350" gr:y="25" entity="ent11">
+      <OKLink id="sv2#area42#opg51#seu136#oln109" name="OKFlow39" to="sv2#area42#opg51#seu135" automaticCoupling="true"/>
+      <KOLink id="sv2#area42#opg51#seu136#kln94" name="KOFlow45" to="sv2#area42#page115" automaticCoupling="true"/>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

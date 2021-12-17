@@ -1,0 +1,34 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area34#opg42" name="Conferma spesa" transaction="true" gr:x="0" gr:y="1170">
+  <OperationUnits>
+    <ModifyUnit id="sv2#area34#opg42#mfu11" name="Modifica spesa" gr:x="0" gr:y="0" entity="ent9">
+      <Selector id="sv2#area34#opg42#mfu11#su240" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area34#opg42#mfu11#su240#kcond142" name="KeyCondition106" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area34#opg42#mfu11#oln88" name="OKFlow58" to="sv2#area34#opg42#cru15">
+        <LinkParameter id="sv2#area34#opg42#mfu11#oln88#par466" name="In attesa_stato" target="sv2#area34#opg42#cru15.ent10#att38" sourceValue="In attesa"/>
+        <LinkParameter id="sv2#area34#opg42#mfu11#oln88#par467" name="oid_PASSING" source="ent9#att33Array" passing="true"/>
+      </OKLink>
+      <KOLink id="sv2#area34#opg42#mfu11#kln74" name="KOFlow62" to="sv2#area34#page97#mssu36" automaticCoupling="true"/>
+    </ModifyUnit>
+    <CreateUnit id="sv2#area34#opg42#cru15" name="Stato In Attesa" gr:x="230" gr:y="10" entity="ent10">
+      <KOLink id="sv2#area34#opg42#cru15#kln75" name="KOFlow64" to="sv2#area34#page97#mssu36" automaticCoupling="true"/>
+      <OKLink id="sv2#area34#opg42#cru15#oln89" name="OKFlow59" to="sv2#area34#opg42#cnu16">
+        <LinkParameter id="sv2#area34#opg42#cru15#oln89#par468" name="oid_KeyCondition107 [oid] [Stato ordine] [Source]" source="ent10#att37Array" target="sv2#area34#opg42#cnu16#su241#kcond143.ent10#att37"/>
+        <LinkParameter id="sv2#area34#opg42#cru15#oln89#par469" name="oid_PASSING_KeyCondition108 [oid] [Spesa] [Target]" sourceLinkParameter="sv2#area34#opg42#mfu11#oln88#par467" target="sv2#area34#opg42#cnu16#su242#kcond145.ent9#att33"/>
+      </OKLink>
+    </CreateUnit>
+    <ConnectUnit id="sv2#area34#opg42#cnu16" name="Spesa-Stato" gr:x="460" gr:y="20" relationship="rel12#role24">
+      <SourceSelector id="sv2#area34#opg42#cnu16#su241" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area34#opg42#cnu16#su241#kcond143" name="KeyCondition107" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#area34#opg42#cnu16#su242" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area34#opg42#cnu16#su242#kcond145" name="KeyCondition108" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="sv2#area34#opg42#cnu16#kln76" name="KOFlow65" to="sv2#area34#page97#mssu36" automaticCoupling="true"/>
+      <OKLink id="sv2#area34#opg42#cnu16#oln90" name="OKFlow60" to="sv2#area34#opg42#rstu2" gr:bendpoints="-138,103,127,-62"/>
+    </ConnectUnit>
+    <ResetUnit id="sv2#area34#opg42#rstu2" name="reset" gr:x="220" gr:y="205" contextParameters="ctx1">
+      <OKLink id="sv2#area34#opg42#rstu2#oln91" name="OKFlow39" to="sv2#area34#page98" automaticCoupling="true"/>
+    </ResetUnit>
+  </OperationUnits>
+</OperationGroup>
