@@ -1,6 +1,6 @@
 <OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="5" gr:y="825" id="sv5#area18#opg19" name="Crea negozio" transaction="true">
   <OperationUnits>
-    <CreateUnit gr:x="0" gr:y="15" id="sv5#area18#opg19#cru8" name="Crea negozio" entity="ent3">
+    <CreateUnit gr:x="0" gr:y="15" id="sv5#area18#opg19#cru8" name="Crea negozio" entity="ent18">
       <OKLink id="sv5#area18#opg19#cru8#oln42" name="OKFlow42" to="sv5#area18#opg19#cru9">
         <LinkParameter id="sv5#area18#opg19#cru8#oln42#par262" name="Numero_PASSING_numero" sourceLinkParameter="sv5#area18#page63#enu14#ln145#par259" target="sv5#area18#opg19#cru9.ent2#att7"/>
         <LinkParameter id="sv5#area18#opg19#cru8#oln42#par263" name="Via_PASSING_via" sourceLinkParameter="sv5#area18#page63#enu14#ln145#par260" target="sv5#area18#opg19#cru9.ent2#att6"/>

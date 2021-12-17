@@ -1,8 +1,16 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="340" gr:y="5" id="sv5#area2#page38" name="Modifica dati utente">
   <ContentUnits>
     <EntryUnit id="sv5#area2#page38#enu10" name="Modifica dati" gr:x="0" gr:y="0" entity="User" linkOrder="sv5#area2#page38#enu10#ln86">
-      <Field id="sv5#area2#page38#enu10#fld22" name="Username" type="string" modifiable="true" attribute="userName" preloaded="true"/>
-      <Field id="sv5#area2#page38#enu10#fld23" name="Email" type="string" modifiable="true" attribute="email" preloaded="true"/>
+      <Field id="sv5#area2#page38#enu10#fld22" name="Username" type="string" modifiable="true" attribute="userName" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area2#page38#enu10#fld22#mnd23" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area2#page38#enu10#fld23" name="Email" type="string" modifiable="true" attribute="email" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area2#page38#enu10#fld23#mnd22" name="Mandatory22"/>
+        </VRules>
+      </Field>
       <Link id="sv5#area2#page38#enu10#ln86" name="Applica modifiche" to="sv5#area2#opg15#mfu2" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
   </ContentUnits>

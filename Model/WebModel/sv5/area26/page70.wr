@@ -11,6 +11,9 @@
         <LinkParameter id="sv5#area26#page70#pwu27#ln252#par323" name="oid_Key Condition [oid]" source="data[].ent5#att19" target="sv5#area26#page75#enu22.ent5#att19"/>
         <LinkParameter id="sv5#area26#page70#pwu27#ln252#par328" name="descrizione_Nome" source="data[].ent5#att20" target="sv5#area26#page75#enu22#fld51_slot"/>
       </Link>
+      <Selector id="sv5#area26#page70#pwu27#su229" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area26#page70#pwu27#su229#kcond20" name="KeyCondition20" predicate="in" implied="false"/>
+      </Selector>
     </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
