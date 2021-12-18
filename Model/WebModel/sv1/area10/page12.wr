@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="395" gr:y="390" id="sv1#area10#page12" name="Pagina negozi" linkOrder="sv1#area10#page12#ln323">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="395" gr:y="695" id="sv1#area10#page12" name="Pagina negozi" linkOrder="sv1#area10#page12#ln323 sv1#area10#page12#ln442">
   <ContentUnits>
     <SelectorUnit gr:x="365" gr:y="20" id="sv1#area10#page12#seu17" name="Negozi" entity="ent3">
       <Link id="sv1#area10#page12#seu17#ln45" name="Flow45" to="sv1#area10#page12#pwu10" automaticCoupling="true" type="transport" validate="true"/>
@@ -88,4 +88,5 @@
     </layout:Row>
   </layout:Grid>
   <Link id="sv1#area10#page12#ln323" name="Negozi nuovi" to="sv1#area10#opg48#seu104" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#area10#page12#ln442" name="Negozi aperti" to="sv1#area10#opg59#tmu27" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

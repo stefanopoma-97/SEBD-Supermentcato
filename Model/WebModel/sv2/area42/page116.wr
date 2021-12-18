@@ -35,7 +35,7 @@
       <Selector id="sv2#area42#page116#pwu31#su293" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area42#page116#pwu31#su293#kcond174" name="KeyCondition7" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv2#area42#page116#pwu31#ln392" name="Flow21" to="sv2#area42#page117#dau45" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area42#page116#pwu31#ln392" name="Dettagli" to="sv2#area42#page117#dau45" type="normal" automaticCoupling="true" validate="true"/>
       <SortAttribute attribute="rel8#role15.ent4#att59" order="descending"/>
       <SortAttribute attribute="rel8#role15.ent4#att15" order="descending"/>
       <SortAttribute attribute="rel8#role15.ent4#att17" order="descending"/>
