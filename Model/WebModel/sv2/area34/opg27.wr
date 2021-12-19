@@ -1,0 +1,13 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1055" gr:y="230" id="sv2#area34#opg27" name="Calcolo totale" transaction="true">
+  <OperationUnits>
+    <ScriptUnit gr:x="265" gr:y="15" id="sv2#area34#opg27#scu33" name="Calcolo">
+      <ScriptUnitText xml:space="preserve">#input Double[] list
+#output Double totale
+
+def Double totale = 0
+for(item in list){
+    totale = totale + item
+}
+
+return [ "totale": totale ]
+</ScriptUnitText>      <KOLink id="sv2#area34#opg27#scu33#kln27" name="KOFlow27" to="sv2#area34#page97#mssu36" gr:bendpoints="49,291,154,-235">        <LinkParameter id="sv2#area34#opg27#scu33#kln27#par261" name="Errore calcolo totale_Shown Messages" sourceValue="Errore calcolo totale" target="sv2#area34#page97#mssu36.shownMessages"/>      </KOLink>      <OKLink id="sv2#area34#opg27#scu33#oln58" name="OKFlow58" to="sv2#area34#page99#mssu24" gr:bendpoints="7,224,156,-102">        <LinkParameter id="sv2#area34#opg27#scu33#oln58#par280" name="totale_Shown Messages" source="result(totale)" target="sv2#area34#page99#mssu24.shownMessages"/>      </OKLink>    </ScriptUnit>    <SelectorUnit gr:x="0" gr:y="0" id="sv2#area34#opg27#seu55" name="Righe" entity="ent7">      <Selector id="sv2#area34#opg27#seu55#su103" defaultPolicy="fill" booleanOperator="and">        <RelationshipRoleCondition id="sv2#area34#opg27#seu55#su103#rcond39" name="RoleCondition39" predicate="in" implied="false" role="rel10#role20"/>      </Selector>      <OKLink id="sv2#area34#opg27#seu55#oln59" name="OKFlow59" to="sv2#area34#opg27#scu33">        <LinkParameter id="sv2#area34#opg27#seu55#oln59#par285" name="calcolo totale_list" source="ent7#att62Array" target="sv2#area34#opg27#scu33.list"/>      </OKLink>      <KOLink id="sv2#area34#opg27#seu55#kln29" name="KOFlow29" to="sv2#area34#page97#mssu36" automaticCoupling="true"/>    </SelectorUnit>  </OperationUnits></OperationGroup>
