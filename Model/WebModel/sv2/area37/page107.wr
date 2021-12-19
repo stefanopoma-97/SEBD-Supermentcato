@@ -1,14 +1,14 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area37#page107" name="Pagina negozi" linkOrder="sv2#area37#page107#ln351" gr:x="615" gr:y="1130">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area37#page107" name="Pagina negozi" linkOrder="sv2#area37#page107#ln351 sv2#area37#page107#ln197" gr:x="615" gr:y="1130">
   <ContentUnits>
     <SelectorUnit id="sv2#area37#page107#seu116" name="Negozi" gr:x="260" gr:y="20" entity="ent3">
       <Link id="sv2#area37#page107#seu116#ln346" name="Flow45" to="sv2#area37#page107#pwu26" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
     <EntryUnit id="sv2#area37#page107#enu34" name="Cerca" linkOrder="sv2#area37#page107#enu34#ln347 sv2#area37#page107#enu34#ln169" gr:x="195" gr:y="185">
       <SelectionField id="sv2#area37#page107#enu34#sfld36" name="Citt&#224;" type="string"/>
-      <Link id="sv2#area37#page107#enu34#ln347" name="Flow32" to="sv2#area37#opg46#seu115" type="normal" validate="true">
+      <Link id="sv2#area37#page107#enu34#ln347" name="Cerca" to="sv2#area37#opg46#seu115" type="normal" validate="true">
         <LinkParameter id="sv2#area37#page107#enu34#ln347#par540" name="Citt&#224;_Citt&#224;IndirizzoNegozio [oid]" source="sv2#area37#page107#enu34#sfld36" target="sv2#area37#opg46#seu115#su266#rcond103.ent1#att1"/>
       </Link>
-      <Link id="sv2#area37#page107#enu34#ln169" name="Reset" to="sv2#area37#page107" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv2#area37#page107#enu34#ln169" name="Reset" to="sv2#area37#page107" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-133,142,-333,162"/>
     </EntryUnit>
     <SelectorUnit id="sv2#area37#page107#seu117" name="Citt&#224; con negozi" gr:x="345" gr:y="220" entity="ent1">
       <Selector id="sv2#area37#page107#seu117#su267" defaultPolicy="fill" booleanOperator="and">
@@ -90,4 +90,5 @@
     </layout:Row>
   </layout:Grid>
   <Link id="sv2#area37#page107#ln351" name="Negozi nuovi" to="sv2#area37#opg49#seu119" type="normal" automaticCoupling="true" validate="true"/>
+  <Link id="sv2#area37#page107#ln197" name="Negozi aperti" to="sv2#area37#opg25#tmu15" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

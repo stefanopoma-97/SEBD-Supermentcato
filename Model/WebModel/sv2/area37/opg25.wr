@@ -1,0 +1,45 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area37#opg25" name="Negozi aperti" transaction="true" gr:x="1700" gr:y="1095">
+  <OperationUnits>
+    <TimeUnit id="sv2#area37#opg25#tmu15" name="Data ora" gr:x="0" gr:y="5">
+      <OKLink id="sv2#area37#opg25#tmu15#oln54" name="Flow440" to="sv2#area37#opg25#scu32">
+        <LinkParameter id="sv2#area37#opg25#tmu15#oln54#par243" name="Current/Input Date_inputDate" source="currentDate" target="sv2#area37#opg25#scu32.inputDate"/>
+        <LinkParameter id="sv2#area37#opg25#tmu15#oln54#par248" name="Current/Input Time_PASSING" source="currentTime" passing="true"/>
+      </OKLink>
+      <KOLink id="sv2#area37#opg25#tmu15#kln23" name="KOFlow23" to="sv2#area37#page108#mssu21" automaticCoupling="true"/>
+    </TimeUnit>
+    <ScriptUnit id="sv2#area37#opg25#scu32" name="Giorno della settimana" gr:x="215" gr:y="0">
+      <ScriptUnitText xml:space="preserve">#input Date inputDate
+#output String dayOfWeek
+
+def day = inputDate[Calendar.DAY_OF_WEEK]
+def giorno
+giorno = "prova"
+if(day == 1){
+day = 7
+} else{
+day = day-1
+}
+dayOfWeek = day
+if (dayOfWeek == 1){
+	giorno = "Luned&#236;"
+}
+if (dayOfWeek == 2){
+	giorno = "Marted&#236;"
+}
+if (dayOfWeek == 3){
+	giorno = "Mercoled&#236;"
+}
+if (dayOfWeek == 4){
+	giorno = "Gioved&#236;"
+}
+if (dayOfWeek == 5){
+	giorno = "Venerd&#236;"
+}
+if (dayOfWeek == 6){
+	giorno = "Sabato"
+}
+if (dayOfWeek == 7){
+	giorno = "Domenica"
+}
+return [ "dayOfWeek": giorno ]
+</ScriptUnitText>      <OKLink id="sv2#area37#opg25#scu32#oln55" name="Flow441" to="sv2#area37#opg25#seu53">        <LinkParameter id="sv2#area37#opg25#scu32#oln55#par249" name="dayOfWeek_giorno" source="result(dayOfWeek)" target="sv2#area37#opg25#seu53#su101#acond28"/>        <LinkParameter id="sv2#area37#opg25#scu32#oln55#par250" name="Current/Input Time_PASSING_Ora fine" sourceLinkParameter="sv2#area37#opg25#tmu15#oln54#par248" target="sv2#area37#opg25#seu53#su101#acond30"/>        <LinkParameter id="sv2#area37#opg25#scu32#oln55#par251" name="Current/Input Time_PASSING_Ora inizio" sourceLinkParameter="sv2#area37#opg25#tmu15#oln54#par248" target="sv2#area37#opg25#seu53#su101#acond29"/>      </OKLink>      <KOLink id="sv2#area37#opg25#scu32#kln24" name="KOFlow24" to="sv2#area37#page108#mssu21" automaticCoupling="true"/>    </ScriptUnit>    <SelectorUnit id="sv2#area37#opg25#seu53" name="Orari di oggi" gr:x="515" gr:y="10" entity="ent20">      <Selector id="sv2#area37#opg25#seu53#su101" defaultPolicy="fill" booleanOperator="and">        <AttributesCondition id="sv2#area37#opg25#seu53#su101#acond28" name="giorno" predicate="eq" booleanOperator="or" implied="false" attributes="ent20#att46"/>        <AttributesCondition id="sv2#area37#opg25#seu53#su101#acond29" name="Ora inizio" predicate="lteq" booleanOperator="or" implied="false" attributes="ent20#att47"/>        <AttributesCondition id="sv2#area37#opg25#seu53#su101#acond30" name="Ora fine" predicate="gteq" booleanOperator="or" implied="false" attributes="ent20#att48"/>      </Selector>      <OKLink id="sv2#area37#opg25#seu53#oln56" name="OKFlow131" to="sv2#area37#opg25#seu54" automaticCoupling="true"/>      <KOLink id="sv2#area37#opg25#seu53#kln25" name="KOFlow25" to="sv2#area37#page108#mssu21" automaticCoupling="true"/>    </SelectorUnit>    <SelectorUnit id="sv2#area37#opg25#seu54" name="Negozi" gr:x="270" gr:y="150" entity="ent3">      <Selector id="sv2#area37#opg25#seu54#su102" defaultPolicy="fill" booleanOperator="and">        <RelationshipRoleCondition id="sv2#area37#opg25#seu54#su102#rcond38" name="Orario to Negozio" predicate="in" implied="false" role="rel19#role37"/>      </Selector>      <OKLink id="sv2#area37#opg25#seu54#oln57" name="OKFlow57" to="sv2#area37#page107#pwu26" automaticCoupling="true"/>      <KOLink id="sv2#area37#opg25#seu54#kln26" name="KOFlow26" to="sv2#area37#page108#mssu21" automaticCoupling="true"/>    </SelectorUnit>  </OperationUnits></OperationGroup>
