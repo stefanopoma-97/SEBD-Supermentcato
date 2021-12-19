@@ -1,15 +1,15 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="395" gr:y="695" id="sv1#area10#page12" name="Pagina negozi" linkOrder="sv1#area10#page12#ln323 sv1#area10#page12#ln442">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="645" gr:y="960" id="sv1#area10#page12" name="Pagina negozi" linkOrder="sv1#area10#page12#ln323 sv1#area10#page12#ln442">
   <ContentUnits>
-    <SelectorUnit gr:x="365" gr:y="20" id="sv1#area10#page12#seu17" name="Negozi" entity="ent3">
+    <SelectorUnit gr:x="205" gr:y="0" id="sv1#area10#page12#seu17" name="Negozi" entity="ent3">
       <Link id="sv1#area10#page12#seu17#ln45" name="Flow45" to="sv1#area10#page12#pwu10" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <EntryUnit gr:x="185" gr:y="250" id="sv1#area10#page12#enu1" name="Cerca" linkOrder="sv1#area10#page12#enu1#ln32">
+    <EntryUnit gr:x="75" gr:y="230" id="sv1#area10#page12#enu1" name="Cerca" linkOrder="sv1#area10#page12#enu1#ln32">
       <SelectionField id="sv1#area10#page12#enu1#sfld9" name="Citt&#224;" type="string"/>
       <Link id="sv1#area10#page12#enu1#ln32" name="Flow32" to="sv1#area10#opg3#seu12" type="normal" validate="true">
         <LinkParameter id="sv1#area10#page12#enu1#ln32#par56" name="Citt&#224;_Citt&#224;IndirizzoNegozio [oid]" source="sv1#area10#page12#enu1#sfld9" target="sv1#area10#opg3#seu12#su23#rcond8.ent1#att1"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit gr:x="345" gr:y="220" id="sv1#area10#page12#seu5" name="Citt&#224; con negozi" entity="ent1">
+    <SelectorUnit gr:x="185" gr:y="190" id="sv1#area10#page12#seu5" name="Citt&#224; con negozi" entity="ent1">
       <Selector id="sv1#area10#page12#seu5#su22" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area10#page12#seu5#su22#rcond7" name="NegoziIndirizzoCitt&#224;" role="rel2#role3.rel1#role2" predicate="in" implied="false"/>
       </Selector>
@@ -18,10 +18,10 @@
         <LinkParameter id="sv1#area10#page12#seu5#ln31#par55" name="oid_Citt&#224; [output]" source="ent1#att1Array" target="sv1#area10#page12#enu1#sfld9_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="755" gr:y="330" id="sv1#area10#page12#seu11" name="Negozi" entity="ent3">
+    <SelectorUnit gr:x="505" gr:y="195" id="sv1#area10#page12#seu11" name="Negozi" entity="ent3">
       <Link id="sv1#area10#page12#seu11#ln30" name="Flow30" to="sv1#area10#page12#seu5" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <PowerIndexUnit id="sv1#area10#page12#pwu10" entity="ent3" displayAttributes="ent3#att9 ent3#att12 ent3#att13 rel2#role3.ent2#att6" sortable="true" checkable="false" useCountQuery="false" gr:x="0" gr:y="0" name="Lista Negozi" linkOrder="sv1#area10#page12#pwu10#ln11">
+    <PowerIndexUnit id="sv1#area10#page12#pwu10" entity="ent3" displayAttributes="ent3#att9 ent3#att12 ent3#att13 rel2#role3.ent2#att6" sortable="true" checkable="false" useCountQuery="false" gr:x="0" gr:y="30" name="Lista Negozi" linkOrder="sv1#area10#page12#pwu10#ln11">
       <Selector id="sv1#area10#page12#pwu10#su70" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area10#page12#pwu10#su70#kcond40" predicate="in" implied="false" name="KeyCondition15"/>
       </Selector>

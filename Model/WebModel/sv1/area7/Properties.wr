@@ -1,9 +1,9 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1#area7" name="Area Home" landmark="true" gr:x="35" gr:y="70" landmarks="sv1#area7#page7" defaultPage="sv1#area7#page7">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1#area7" name="Area Home" landmark="true" gr:x="35" gr:y="65" landmarks="sv1#area7#page7" defaultPage="sv1#area7#page7">
   <OperationUnits>
-    <LoginUnit gr:x="140" gr:y="160" id="sv1#area7#lgu5" name="Accedi">
+    <LoginUnit gr:x="140" gr:y="165" id="sv1#area7#lgu5" name="Accedi">
       <KOLink id="sv1#area7#lgu5#kln4" name="KOFlow2" to="sv1#area7#page7" automaticCoupling="true" gr:bendpoints="99,-121,-586,-636"/>
     </LoginUnit>
-    <SelectorUnit gr:x="0" gr:y="865" id="sv1#area7#seu29" name="Da citt&#224; a negozi" entity="ent3">
+    <SelectorUnit gr:x="0" gr:y="870" id="sv1#area7#seu29" name="Da citt&#224; a negozi" entity="ent3">
       <Selector id="sv1#area7#seu29#su24" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area7#seu29#su24#rcond18" name="Da citt&#224; a negozi" predicate="in" implied="false" role="rel1#role1.rel2#role4"/>
       </Selector>
@@ -13,20 +13,20 @@
         <LinkParameter id="sv1#area7#seu29#oln1#par40" name="oid_Negozio [output]" source="ent3#att8Array" target="sv1#area7#page7#enu5#sfld6_output"/>
       </OKLink>
     </SelectorUnit>
-    <SelectorUnit gr:x="1505" gr:y="745" id="sv1#area7#seu15" name="Prodotto nuovo" entity="ent11" distinctAttributes="ent4#att59 ent4#att18 ent4#att16 ent4#att53 ent4#att27 ent4#att60 ent4#att15 ent4#att14 ent4#att17">
+    <SelectorUnit gr:x="1505" gr:y="750" id="sv1#area7#seu15" name="Prodotto nuovo" entity="ent11" distinctAttributes="ent4#att59 ent4#att18 ent4#att16 ent4#att53 ent4#att27 ent4#att60 ent4#att15 ent4#att14 ent4#att17">
       <OKLink id="sv1#area7#seu15#oln3" name="OKFlow3" to="sv1#area8#page9#pwu11">
         <LinkParameter id="sv1#area7#seu15#oln3#par2" name="oid_KeyCondition7 [oid]" source="ent4#att14Array" target="sv1#area8#page9#pwu11#su71#kcond41.ent4#att14"/>
       </OKLink>
       <KOLink id="sv1#area7#seu15#kln1" name="KOFlow1" to="sv1#area7#page6#mssu28" automaticCoupling="true"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="1420" gr:y="580" id="sv1#area7#seu18" name="Da categoria a prodotto" entity="ent4">
+    <SelectorUnit gr:x="1420" gr:y="585" id="sv1#area7#seu18" name="Da categoria a prodotto" entity="ent4">
       <Selector id="sv1#area7#seu18#su14" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area7#seu18#su14#rcond5" name="Categoria To Prodotto" predicate="in" implied="false" role="rel4#role8"/>
       </Selector>
       <OKLink id="sv1#area7#seu18#oln4" name="OKFlow4" to="sv1#area8#page9#pwu11" automaticCoupling="true"/>
       <KOLink id="sv1#area7#seu18#kln2" name="KOFlow2" to="sv1#area7#page6#mssu28" automaticCoupling="true" gr:bendpoints="-84,249,-133,-201"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="1510" gr:y="1070" id="sv1#area7#seu19" name="Negozi nuovi" entity="ent18">
+    <SelectorUnit gr:x="1510" gr:y="1075" id="sv1#area7#seu19" name="Negozi nuovi" entity="ent18">
       <OKLink id="sv1#area7#seu19#oln6" name="OKFlow6" to="sv1#area10#page12#pwu10" automaticCoupling="true" gr:bendpoints="124,472,-267,-398"/>
       <KOLink id="sv1#area7#seu19#kln3" name="KOFlow3" to="sv1#area7#page6#mssu28" automaticCoupling="true"/>
     </SelectorUnit>

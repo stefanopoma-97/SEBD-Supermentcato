@@ -1,12 +1,12 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="885" gr:y="240" id="sv1#area9#page11" name="Pagina Promozioni">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="375" gr:y="315" id="sv1#area9#page11" name="Pagina Promozioni">
   <ContentUnits>
-    <SelectorUnit gr:x="355" gr:y="45" id="sv1#area9#page11#seu16" name="Promozioni attive" entity="ent6">
+    <SelectorUnit gr:x="335" gr:y="75" id="sv1#area9#page11#seu16" name="Promozioni attive" entity="ent6">
       <Selector id="sv1#area9#page11#seu16#su15" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv1#area9#page11#seu16#su15#acond1" name="Non scaduta" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
       </Selector>
       <Link id="sv1#area9#page11#seu16#ln319" name="Flow6" to="sv1#area9#page11#alt4#page93#pwu34" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <EntryUnit gr:x="205" gr:y="225" id="sv1#area9#page11#enu4" name="Cerca" linkOrder="sv1#area9#page11#enu4#ln29">
+    <EntryUnit gr:x="25" gr:y="270" id="sv1#area9#page11#enu4" name="Cerca" linkOrder="sv1#area9#page11#enu4#ln29">
       <SelectionField id="sv1#area9#page11#enu4#sfld4" name="Negozio" type="string"/>
       <Field id="sv1#area9#page11#enu4#fld6" name="Negozio (parola chiave)" type="string" modifiable="true"/>
       <Field id="sv1#area9#page11#enu4#fld7" name="Prodotto" type="string" modifiable="true"/>
@@ -21,7 +21,7 @@
       <MultiSelectionField id="sv1#area9#page11#enu4#msfld3" name="Valida in negozio" type="string"/>
       <MultiSelectionField id="sv1#area9#page11#enu4#msfld4" name="Valida online" type="string"/>
     </EntryUnit>
-    <SelectorUnit gr:x="370" gr:y="345" id="sv1#area9#page11#seu20" name="Negozi" entity="ent3">
+    <SelectorUnit gr:x="150" gr:y="265" id="sv1#area9#page11#seu20" name="Negozi" entity="ent3">
       <Link id="sv1#area9#page11#seu20#ln46" name="Flow46" to="sv1#area9#page11#enu4" type="transport" validate="true">
         <LinkParameter id="sv1#area9#page11#seu20#ln46#par21" name="nome_Negozio [label]" source="ent3#att9Array" target="sv1#area9#page11#enu4#sfld4_label"/>
         <LinkParameter id="sv1#area9#page11#seu20#ln46#par22" name="oid_Negozio [output]" source="ent3#att8Array" target="sv1#area9#page11#enu4#sfld4_output"/>
@@ -31,12 +31,12 @@
         <LinkParameter id="sv1#area9#page11#seu20#ln46#par32" name="1_Valida online [output]" sourceValue="1" target="sv1#area9#page11#enu4#msfld4_output"/>
       </Link>
     </SelectorUnit>
-    <TimeUnit gr:x="370" gr:y="225" id="sv1#area9#page11#tmu1" name="Data corrente">
+    <TimeUnit gr:x="355" gr:y="255" id="sv1#area9#page11#tmu1" name="Data corrente">
       <Link id="sv1#area9#page11#tmu1#ln25" name="Flow25" to="sv1#area9#page11#seu16" type="transport" validate="true">
         <LinkParameter id="sv1#area9#page11#tmu1#ln25#par3" name="Current/Input Date_Non scaduta" source="currentDate" target="sv1#area9#page11#seu16#su15#acond1"/>
       </Link>
     </TimeUnit>
-    <TimeUnit gr:x="225" gr:y="455" id="sv1#area9#page11#tmu2" name="Data corrente">
+    <TimeUnit gr:x="0" gr:y="375" id="sv1#area9#page11#tmu2" name="Data corrente">
       <Link id="sv1#area9#page11#tmu2#ln4" name="Flow4" to="sv1#area9#page11#enu4" type="transport" validate="true">
         <LinkParameter id="sv1#area9#page11#tmu2#ln4#par1" name="Current/Input Date_PASSING" source="currentDate" passing="true"/>
       </Link>
@@ -140,7 +140,7 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Alternative gr:x="0" gr:y="100" id="sv1#area9#page11#alt4" name="Lista" defaultPage="sv1#area9#page11#alt4#page93">
+  <Alternative gr:x="0" gr:y="0" id="sv1#area9#page11#alt4" name="Lista" defaultPage="sv1#area9#page11#alt4#page93">
     <Page gr:x="0" gr:y="0" id="sv1#area9#page11#alt4#page93" name="Lista promozioni">
       <ContentUnits>
         <PowerIndexUnit id="sv1#area9#page11#alt4#page93#pwu34" name="Lista Promozioni" linkOrder="sv1#area9#page11#alt4#page93#pwu34#ln318" gr:x="0" gr:y="0" entity="ent6" displayAttributes="ent6#att23 ent6#att39 ent6#att41 ent6#att24 ent6#att25 ent6#att26" sortable="true" checkable="false" useCountQuery="false">

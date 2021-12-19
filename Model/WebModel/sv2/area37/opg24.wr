@@ -1,0 +1,29 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area37#opg24" name="Aperto" transaction="true" gr:x="545" gr:y="0">
+  <OperationUnits>
+    <SelectorUnit id="sv2#area37#opg24#seu33" name="aperto" gr:x="315" gr:y="0" entity="ent20">
+      <Selector id="sv2#area37#opg24#seu33#su96" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area37#opg24#seu33#su96#kcond58" name="KeyCondition182" predicate="in" implied="false"/>
+        <AttributesCondition id="sv2#area37#opg24#seu33#su96#acond20" name="orario &gt; apertura" predicate="lteq" booleanOperator="or" implied="false" attributes="ent20#att47"/>
+        <AttributesCondition id="sv2#area37#opg24#seu33#su96#acond21" name="orario &lt; chiusura" predicate="gteq" booleanOperator="or" implied="false" attributes="ent20#att48"/>
+      </Selector>
+      <OKLink id="sv2#area37#opg24#seu33#oln32" name="OKFlow126" to="sv2#area37#opg24#inn4">
+        <LinkParameter id="sv2#area37#opg24#seu33#oln32#par131" name="oid_Input" source="ent20#att43Array" target="sv2#area37#opg24#inn4.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <TimeUnit id="sv2#area37#opg24#tmu14" name="Orario" gr:x="0" gr:y="40">
+      <OKLink id="sv2#area37#opg24#tmu14#oln39" name="OKFlow124" to="sv2#area37#opg24#seu33">
+        <LinkParameter id="sv2#area37#opg24#tmu14#oln39#par132" name="oid_PASSING_KeyCondition182 [oid]" sourceLinkParameter="sv2#area37#page106#pwu36#ln162#par136" target="sv2#area37#opg24#seu33#su96#kcond58.ent20#att43"/>
+        <LinkParameter id="sv2#area37#opg24#tmu14#oln39#par133" name="Current/Input Time_orario &lt; chiusura" source="currentTime" target="sv2#area37#opg24#seu33#su96#acond21"/>
+        <LinkParameter id="sv2#area37#opg24#tmu14#oln39#par135" name="Current/Input Time_orario &gt; apperture" source="currentTime" target="sv2#area37#opg24#seu33#su96#acond20"/>
+      </OKLink>
+    </TimeUnit>
+    <IsNotNullUnit id="sv2#area37#opg24#inn4" name="Is Not Null3" gr:x="580" gr:y="40">
+      <OKLink id="sv2#area37#opg24#inn4#oln51" name="OKFlow51" to="sv2#area37#page106#mssu20">
+        <LinkParameter id="sv2#area37#opg24#inn4#oln51#par144" name="Aperto_Shown Messages" sourceValue="Aperto" target="sv2#area37#page106#mssu20.shownMessages"/>
+      </OKLink>
+      <KOLink id="sv2#area37#opg24#inn4#kln7" name="KOFlow7" to="sv2#area37#page106#mssu20" gr:bendpoints="249,68,-11,-202">
+        <LinkParameter id="sv2#area37#opg24#inn4#kln7#par158" name="Chiuso_Shown Messages" sourceValue="Chiuso" target="sv2#area37#page106#mssu20.shownMessages"/>
+      </KOLink>
+    </IsNotNullUnit>
+  </OperationUnits>
+</OperationGroup>

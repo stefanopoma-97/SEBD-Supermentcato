@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1465" gr:y="775" id="sv1#area10#opg59" name="Negozi aperti" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1430" gr:y="775" id="sv1#area10#opg59" name="Negozi aperti" transaction="true">
   <OperationUnits>
     <TimeUnit id="sv1#area10#opg59#tmu27" name="Data ora" gr:x="0" gr:y="5">
       <OKLink id="sv1#area10#opg59#tmu27#oln129" name="Flow440" to="sv1#area10#opg59#scu29">
