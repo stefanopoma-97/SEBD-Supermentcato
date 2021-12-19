@@ -3,11 +3,12 @@
     <SelectorUnit gr:x="205" gr:y="0" id="sv1#area10#page12#seu17" name="Negozi" entity="ent3">
       <Link id="sv1#area10#page12#seu17#ln45" name="Flow45" to="sv1#area10#page12#pwu10" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <EntryUnit gr:x="75" gr:y="230" id="sv1#area10#page12#enu1" name="Cerca" linkOrder="sv1#area10#page12#enu1#ln32">
+    <EntryUnit gr:x="75" gr:y="230" id="sv1#area10#page12#enu1" name="Cerca" linkOrder="sv1#area10#page12#enu1#ln32 sv1#area10#page12#enu1#ln167">
       <SelectionField id="sv1#area10#page12#enu1#sfld9" name="Citt&#224;" type="string"/>
       <Link id="sv1#area10#page12#enu1#ln32" name="Flow32" to="sv1#area10#opg3#seu12" type="normal" validate="true">
         <LinkParameter id="sv1#area10#page12#enu1#ln32#par56" name="Citt&#224;_Citt&#224;IndirizzoNegozio [oid]" source="sv1#area10#page12#enu1#sfld9" target="sv1#area10#opg3#seu12#su23#rcond8.ent1#att1"/>
       </Link>
+      <Link id="sv1#area10#page12#enu1#ln167" name="Reset" to="sv1#area10#page12" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
     <SelectorUnit gr:x="185" gr:y="190" id="sv1#area10#page12#seu5" name="Citt&#224; con negozi" entity="ent1">
       <Selector id="sv1#area10#page12#seu5#su22" defaultPolicy="fill" booleanOperator="and">
@@ -58,6 +59,7 @@
         <layout:Unit unitId="sv1#area10#page12#enu1">
           <layout:Field field="sv1#area10#page12#enu1#sfld9"/>
           <layout:Link link="sv1#area10#page12#enu1#ln32"/>
+          <layout:Link link="sv1#area10#page12#enu1#ln167"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

@@ -11,15 +11,17 @@
         <LinkParameter id="sv2#area40#page113#dau44#ln164#par190" name="oid_KeyCondition62 [oid]" source="data.ent4#att14" target="sv2#area40#page113#seu51#su98#kcond60.ent4#att14"/>
       </Link>
     </DataUnit>
-    <IndexUnit id="sv2#area40#page113#inu21" name="Promozioni attive in negozio" gr:x="860" gr:y="170" entity="ent6" displayAttributes="ent6#att23 ent6#att24 ent6#att39 ent6#att41">
+    <IndexUnit id="sv2#area40#page113#inu21" name="Promozioni attive in negozio" gr:x="860" gr:y="170" entity="ent6" displayAttributes="ent6#att23 ent6#att24 ent6#att39 ent6#att41" linkOrder="sv2#area40#page113#inu21#ln179">
       <Selector id="sv2#area40#page113#inu21#su279" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area40#page113#inu21#su279#kcond167" name="KeyCondition97" predicate="in" implied="false"/>
       </Selector>
+      <Link id="sv2#area40#page113#inu21#ln179" name="Dettagli" to="sv2#area36#page105#dau42" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
-    <IndexUnit id="sv2#area40#page113#inu22" name="Promozioni attive online" gr:x="865" gr:y="20" entity="ent6" displayAttributes="ent6#att23 ent6#att24 ent6#att39 ent6#att41">
+    <IndexUnit id="sv2#area40#page113#inu22" name="Promozioni attive online" gr:x="865" gr:y="20" entity="ent6" displayAttributes="ent6#att23 ent6#att24 ent6#att39 ent6#att41" linkOrder="sv2#area40#page113#inu22#ln178">
       <Selector id="sv2#area40#page113#inu22#su280" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area40#page113#inu22#su280#kcond168" name="KeyCondition16" predicate="in" implied="false"/>
       </Selector>
+      <Link id="sv2#area40#page113#inu22#ln178" name="Dettagli" to="sv2#area36#page105#dau42" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
     <ScrollerUnit id="sv2#area40#page113#scu21" name="Scroll promozioni online" linkOrder="sv2#area40#page113#scu21#ln373" gr:x="585" gr:y="0" useCountQuery="false" entity="ent6" blockFactor="2">
       <Selector id="sv2#area40#page113#scu21#su281" defaultPolicy="fill" booleanOperator="and">
@@ -93,6 +95,7 @@
           <layout:Attribute attribute="ent6#att24"/>
           <layout:Attribute attribute="ent6#att39"/>
           <layout:Attribute attribute="ent6#att41"/>
+          <layout:Link link="sv2#area40#page113#inu21#ln179"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -114,6 +117,7 @@
           <layout:Attribute attribute="ent6#att24"/>
           <layout:Attribute attribute="ent6#att39"/>
           <layout:Attribute attribute="ent6#att41"/>
+          <layout:Link link="sv2#area40#page113#inu22#ln178"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

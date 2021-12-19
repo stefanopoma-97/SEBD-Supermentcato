@@ -6,7 +6,7 @@
       </Selector>
       <Link id="sv1#area9#page11#seu16#ln319" name="Flow6" to="sv1#area9#page11#alt4#page93#pwu34" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <EntryUnit gr:x="25" gr:y="270" id="sv1#area9#page11#enu4" name="Cerca" linkOrder="sv1#area9#page11#enu4#ln29">
+    <EntryUnit gr:x="25" gr:y="270" id="sv1#area9#page11#enu4" name="Cerca" linkOrder="sv1#area9#page11#enu4#ln29 sv1#area9#page11#enu4#ln165">
       <SelectionField id="sv1#area9#page11#enu4#sfld4" name="Negozio" type="string"/>
       <Field id="sv1#area9#page11#enu4#fld6" name="Negozio (parola chiave)" type="string" modifiable="true"/>
       <Field id="sv1#area9#page11#enu4#fld7" name="Prodotto" type="string" modifiable="true"/>
@@ -20,6 +20,7 @@
       </Link>
       <MultiSelectionField id="sv1#area9#page11#enu4#msfld3" name="Valida in negozio" type="string"/>
       <MultiSelectionField id="sv1#area9#page11#enu4#msfld4" name="Valida online" type="string"/>
+      <Link id="sv1#area9#page11#enu4#ln165" name="Reset" to="sv1#area9#page11" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
     <SelectorUnit gr:x="150" gr:y="265" id="sv1#area9#page11#seu20" name="Negozi" entity="ent3">
       <Link id="sv1#area9#page11#seu20#ln46" name="Flow46" to="sv1#area9#page11#enu4" type="transport" validate="true">
@@ -60,12 +61,13 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#area9#page11#enu4">
-          <layout:Link link="sv1#area9#page11#enu4#ln29"/>
           <layout:Field field="sv1#area9#page11#enu4#sfld4"/>
           <layout:Field field="sv1#area9#page11#enu4#fld6"/>
           <layout:Field field="sv1#area9#page11#enu4#fld7"/>
           <layout:Field field="sv1#area9#page11#enu4#msfld3"/>
           <layout:Field field="sv1#area9#page11#enu4#msfld4"/>
+          <layout:Link link="sv1#area9#page11#enu4#ln29"/>
+          <layout:Link link="sv1#area9#page11#enu4#ln165"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

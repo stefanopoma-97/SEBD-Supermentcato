@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="385" gr:y="470" id="sv1#area8#page9" name="Pagina Elenco prodotti" linkOrder="sv1#area8#page9#ln322">
   <ContentUnits>
-    <EntryUnit gr:x="195" gr:y="415" id="sv1#area8#page9#enu3" name="Cerca" linkOrder="sv1#area8#page9#enu3#ln33">
+    <EntryUnit gr:x="195" gr:y="415" id="sv1#area8#page9#enu3" name="Cerca" linkOrder="sv1#area8#page9#enu3#ln33 sv1#area8#page9#enu3#ln166">
       <SelectionField id="sv1#area8#page9#enu3#sfld1" name="Categoria" type="string"/>
       <SelectionField id="sv1#area8#page9#enu3#sfld2" name="Fascia di prezzo" type="string"/>
       <Link id="sv1#area8#page9#enu3#ln33" name="Filtra" to="sv1#area8#seu13" type="normal" validate="true">
@@ -9,6 +9,7 @@
         <LinkParameter id="sv1#area8#page9#enu3#ln33#par180" name="Nazione_Nazione to Prodotto [oid]" source="sv1#area8#page9#enu3#sfld10" target="sv1#area8#seu13#su10#rcond10.ent19#att44"/>
       </Link>
       <SelectionField id="sv1#area8#page9#enu3#sfld10" name="Nazione" type="string"/>
+      <Link id="sv1#area8#page9#enu3#ln166" name="Reset" to="sv1#area8#page9" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
     <SelectorUnit gr:x="400" gr:y="5" id="sv1#area8#page9#seu7" name="Tutti i prodotti" entity="ent4">
       <Link id="sv1#area8#page9#seu7#ln15" name="Flow15" to="sv1#area8#page9#pwu11" automaticCoupling="true" type="transport" validate="true"/>
@@ -74,10 +75,11 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#area8#page9#enu3">
-          <layout:Link link="sv1#area8#page9#enu3#ln33"/>
           <layout:Field field="sv1#area8#page9#enu3#sfld1"/>
           <layout:Field field="sv1#area8#page9#enu3#sfld2"/>
           <layout:Field field="sv1#area8#page9#enu3#sfld10"/>
+          <layout:Link link="sv1#area8#page9#enu3#ln33"/>
+          <layout:Link link="sv1#area8#page9#enu3#ln166"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

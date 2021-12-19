@@ -6,7 +6,7 @@
       </Selector>
       <Link id="sv2#area36#page103#seu111#ln329" name="Flow6" to="sv2#area36#page103#pwu23" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <EntryUnit id="sv2#area36#page103#enu33" name="Cerca" linkOrder="sv2#area36#page103#enu33#ln330" gr:x="325" gr:y="225">
+    <EntryUnit id="sv2#area36#page103#enu33" name="Cerca" linkOrder="sv2#area36#page103#enu33#ln330 sv2#area36#page103#enu33#ln170" gr:x="325" gr:y="225">
       <SelectionField id="sv2#area36#page103#enu33#sfld35" name="Negozio" type="string"/>
       <Field id="sv2#area36#page103#enu33#fld84" name="Negozio (parola chiave)" type="string" modifiable="true"/>
       <Field id="sv2#area36#page103#enu33#fld85" name="Prodotto" type="string" modifiable="true"/>
@@ -22,6 +22,7 @@
       <MultiSelectionField id="sv2#area36#page103#enu33#msfld6" name="Valida in negozio" type="string"/>
       <MultiSelectionField id="sv2#area36#page103#enu33#msfld7" name="Valida online" type="string"/>
       <MultiSelectionField id="sv2#area36#page103#enu33#msfld8" name="Valida nel mio negozio preferito" type="string"/>
+      <Link id="sv2#area36#page103#enu33#ln170" name="Reset" to="sv2#area36#page103" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
     <SelectorUnit id="sv2#area36#page103#seu112" name="Negozi" gr:x="490" gr:y="345" entity="ent3">
       <Link id="sv2#area36#page103#seu112#ln331" name="Flow46" to="sv2#area36#page103#enu33" type="transport" validate="true">
@@ -96,13 +97,14 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area36#page103#enu33">
-          <layout:Link link="sv2#area36#page103#enu33#ln330"/>
           <layout:Field field="sv2#area36#page103#enu33#sfld35"/>
           <layout:Field field="sv2#area36#page103#enu33#fld84"/>
           <layout:Field field="sv2#area36#page103#enu33#fld85"/>
           <layout:Field field="sv2#area36#page103#enu33#msfld6"/>
           <layout:Field field="sv2#area36#page103#enu33#msfld7"/>
           <layout:Field field="sv2#area36#page103#enu33#msfld8"/>
+          <layout:Link link="sv2#area36#page103#enu33#ln330"/>
+          <layout:Link link="sv2#area36#page103#enu33#ln170"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

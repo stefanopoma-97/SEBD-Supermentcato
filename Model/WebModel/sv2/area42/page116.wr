@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area42#page116" name="Pagina Elenco prodotti online" linkOrder="sv2#area42#page116#ln397" gr:x="870" gr:y="2270">
   <ContentUnits>
-    <EntryUnit id="sv2#area42#page116#enu36" name="Cerca" linkOrder="sv2#area42#page116#enu36#ln387" gr:x="180" gr:y="355">
+    <EntryUnit id="sv2#area42#page116#enu36" name="Cerca" linkOrder="sv2#area42#page116#enu36#ln387 sv2#area42#page116#enu36#ln171" gr:x="180" gr:y="355">
       <SelectionField id="sv2#area42#page116#enu36#sfld40" name="Categoria" type="string"/>
       <SelectionField id="sv2#area42#page116#enu36#sfld41" name="Fascia di prezzo" type="string"/>
       <SelectionField id="sv2#area42#page116#enu36#sfld42" name="Nazione" type="string"/>
@@ -11,6 +11,7 @@
         <LinkParameter id="sv2#area42#page116#enu36#ln387#par564" name="Nazione_Nazione to Prodotto [oid]" source="sv2#area42#page116#enu36#sfld42" target="sv2#area42#opg52#seu137#su288#rcond118.ent19#att44"/>
         <LinkParameter id="sv2#area42#page116#enu36#ln387#par565" name="Nome_Nome" source="sv2#area42#page116#enu36#fld86" target="sv2#area42#opg52#seu137#su288#acond49"/>
       </Link>
+      <Link id="sv2#area42#page116#enu36#ln171" name="Reset" to="sv2#area42#page116" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
     <SelectorUnit id="sv2#area42#page116#seu139" name="Tutti i prodotti" gr:x="610" gr:y="0" entity="ent8">
       <Link id="sv2#area42#page116#seu139#ln388" name="Flow15" to="sv2#area42#page116#pwu31" type="transport" automaticCoupling="true" validate="true"/>
@@ -93,11 +94,12 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area42#page116#enu36">
-          <layout:Link link="sv2#area42#page116#enu36#ln387"/>
           <layout:Field field="sv2#area42#page116#enu36#sfld40"/>
           <layout:Field field="sv2#area42#page116#enu36#sfld41"/>
           <layout:Field field="sv2#area42#page116#enu36#sfld42"/>
           <layout:Field field="sv2#area42#page116#enu36#fld86"/>
+          <layout:Link link="sv2#area42#page116#enu36#ln387"/>
+          <layout:Link link="sv2#area42#page116#enu36#ln171"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
