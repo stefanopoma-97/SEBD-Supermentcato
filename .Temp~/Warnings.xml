@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Warnings> 
-  <Warning xpath="id('password')" rootXPath="/WebProject/DataModel" label="password" tab="mapping"> 
-    <Message>Security Warning: the 'password' attribute is not encrypted</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="db:cryptAlgorithm" value="com.webratio.rtx.core.PBKDF2WithHmacSHA1CryptImplementation">Set the 'Crypt Algorithm' property to 'PBKDF2WithHmacSHA1'</Resolution> 
+  <Warning xpath="id('sv2#area39#page111#seu148')" rootXPath="id('sv2')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Spese in spedizione oggi"> 
+    <Message>The mandatory input parameter 'data spedizione' is not provided to the component 'Spese in spedizione oggi'</Message> 
   </Warning>
-  <Warning xpath="id('ent10#att55')" rootXPath="/WebProject/DataModel" label="utenteEsterno" key="DERIVED_SIMPLE_IMPORTED_ATTRIBUTE"> 
-    <Message>The attribute 'utenteEsterno' should be converted into a simple imported attribute</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeToSimpleImportedAttributeResolutionGenerator" attribute="derivationQuery" value="simpleImported::Self.rel12#role24.rel13#role26.userOID">Transform the complex imported attribute into a simple imported attribute</Resolution> 
-  </Warning>
-  <Warning xpath="id('ent10#att56')" rootXPath="/WebProject/DataModel" label="dipendente" key="DERIVED_SIMPLE_IMPORTED_ATTRIBUTE"> 
-    <Message>The attribute 'dipendente' should be converted into a simple imported attribute</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeToSimpleImportedAttributeResolutionGenerator" attribute="derivationQuery" value="simpleImported::Self.rel16#role32.userOID">Transform the complex imported attribute into a simple imported attribute</Resolution> 
-  </Warning>
-  <Warning xpath="id('ent3#att58')" rootXPath="/WebProject/DataModel" error="false" label="numeroLavoratori" key="INCOMPATIBLE_TYPE_WARNING"> 
-    <Message>The expected type of the attribute 'numeroLavoratori' is 'decimal', but found 'integer' for the database type 'NUMERIC'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="type" value="decimal">Set attribute type to 'decimal'</Resolution> 
-  </Warning>
-  <Warning xpath="id('ent14#att54')" rootXPath="/WebProject/DataModel" error="false" label="ordiniGestiti" key="INCOMPATIBLE_TYPE_WARNING"> 
-    <Message>The expected type of the attribute 'ordiniGestiti' is 'decimal', but found 'integer' for the database type 'NUMERIC'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="type" value="decimal">Set attribute type to 'decimal'</Resolution> 
-  </Warning>  
   <Warning xpath="/WebProject" rootXPath="/WebProject" key="DUPLICATED_IDS" label="WebProject"> 
-    <Message>The following elements have duplicated final ids: Scorri negozi, Scorri prodotti, Scroll prodotti venduti online, Scroll prodotto online, sv2#area16#opg16#mfu3#su136, sv2#area16#opg16#rcnu1#su137, sv2#area16#opg16#rcnu1#su138, sv2#area16#opg16#rcnu2#su139, sv2#area16#page42#seu49#su125, sv2#area1...</Message>  
+    <Message>The following elements have duplicated final ids: Dettagli, Errore, Fascia di prezzo, Flow103, IndirizzoNegozio, Info, Nazione, OKFlow30, OKFlow30, Prodotti to Nazione</Message>  
     <Resolution class="com.webratio.ide.ui.resources.RemoveIdsDuplicationResolutionGenerator">Change ids</Resolution> 
   </Warning> 
 </Warnings>
