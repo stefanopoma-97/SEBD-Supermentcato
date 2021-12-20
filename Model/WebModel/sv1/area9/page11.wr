@@ -20,7 +20,7 @@
       </Link>
       <MultiSelectionField id="sv1#area9#page11#enu4#msfld3" name="Valida in negozio" type="string"/>
       <MultiSelectionField id="sv1#area9#page11#enu4#msfld4" name="Valida online" type="string"/>
-      <Link id="sv1#area9#page11#enu4#ln165" name="Reset" to="sv1#area9#page11" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv1#area9#page11#enu4#ln165" name="Reset" to="sv1#area9#page11#alt4#page93" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
     <SelectorUnit gr:x="185" gr:y="485" id="sv1#area9#page11#seu20" name="Negozi" entity="ent3">
       <Link id="sv1#area9#page11#seu20#ln46" name="Flow46" to="sv1#area9#page11#enu4" type="transport" validate="true">

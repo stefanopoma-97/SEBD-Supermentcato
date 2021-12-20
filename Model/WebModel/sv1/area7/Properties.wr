@@ -14,21 +14,19 @@
       </OKLink>
     </SelectorUnit>
     <SelectorUnit gr:x="1505" gr:y="750" id="sv1#area7#seu15" name="Prodotto nuovo" entity="ent11" distinctAttributes="ent4#att59 ent4#att18 ent4#att16 ent4#att53 ent4#att27 ent4#att60 ent4#att15 ent4#att14 ent4#att17">
-      <OKLink id="sv1#area7#seu15#oln3" name="OKFlow3" to="sv1#area8#page9#pwu11">
-        <LinkParameter id="sv1#area7#seu15#oln3#par2" name="oid_KeyCondition7 [oid]" source="ent4#att14Array" target="sv1#area8#page9#pwu11#su71#kcond41.ent4#att14"/>
-      </OKLink>
       <KOLink id="sv1#area7#seu15#kln1" name="KOFlow1" to="sv1#area7#page6#mssu28" automaticCoupling="true"/>
+      <OKLink id="sv1#area7#seu15#oln68" name="OKFlow3" to="sv1#area8#page9#alt3#page52#pwu40"/>
     </SelectorUnit>
     <SelectorUnit gr:x="1420" gr:y="585" id="sv1#area7#seu18" name="Da categoria a prodotto" entity="ent4">
       <Selector id="sv1#area7#seu18#su14" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area7#seu18#su14#rcond5" name="Categoria To Prodotto" predicate="in" implied="false" role="rel4#role8"/>
       </Selector>
-      <OKLink id="sv1#area7#seu18#oln4" name="OKFlow4" to="sv1#area8#page9#pwu11" automaticCoupling="true"/>
       <KOLink id="sv1#area7#seu18#kln2" name="KOFlow2" to="sv1#area7#page6#mssu28" automaticCoupling="true" gr:bendpoints="-84,249,-133,-201"/>
+      <OKLink id="sv1#area7#seu18#oln64" name="OKFlow4" to="sv1#area8#page9#alt3#page52#pwu40" automaticCoupling="true"/>
     </SelectorUnit>
     <SelectorUnit gr:x="1510" gr:y="1075" id="sv1#area7#seu19" name="Negozi nuovi" entity="ent18">
-      <OKLink id="sv1#area7#seu19#oln6" name="OKFlow6" to="sv1#area10#page12#pwu10" automaticCoupling="true" gr:bendpoints="124,472,-267,-398"/>
       <KOLink id="sv1#area7#seu19#kln3" name="KOFlow3" to="sv1#area7#page6#mssu28" automaticCoupling="true"/>
+      <OKLink id="sv1#area7#seu19#oln9" name="OKFlow6" to="sv1#area10#page12#alt2#page50#pwu37" automaticCoupling="true" gr:bendpoints="124,472,-267,-398"/>
     </SelectorUnit>
   </OperationUnits>
 </Area>
