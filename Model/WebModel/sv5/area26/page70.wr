@@ -1,11 +1,11 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="355" gr:y="20" id="sv5#area26#page70" name="Categorie" linkOrder="sv5#area26#page70#ln203">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="630" gr:y="40" id="sv5#area26#page70" name="Categorie" linkOrder="sv5#area26#page70#ln203">
   <ContentUnits>
     <ScrollerUnit gr:x="0" gr:y="0" id="sv5#area26#page70#scu14" name="Scorri categorie" useCountQuery="false" entity="ent5" blockFactor="5" linkOrder="sv5#area26#page70#scu14#ln199">
       <Link id="sv5#area26#page70#scu14#ln199" name="Flow199" to="sv5#area26#page70#pwu27" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
-    <PowerIndexUnit gr:x="0" gr:y="135" id="sv5#area26#page70#pwu27" name="Elenco categorie" sortable="true" checkable="false" useCountQuery="false" entity="ent5" linkOrder="sv5#area26#page70#pwu27#ln205 sv5#area26#page70#pwu27#ln252 sv5#area26#page70#pwu27#ln250" displayAttributes="ent5#att20">
+    <PowerIndexUnit gr:x="0" gr:y="135" id="sv5#area26#page70#pwu27" name="Elenco categorie" sortable="true" checkable="false" useCountQuery="false" entity="ent5" linkOrder="sv5#area26#page70#pwu27#ln205 sv5#area26#page70#pwu27#ln252 sv5#area26#page70#pwu27#ln250 sv5#area26#page70#pwu27#ln227 sv5#area26#page70#pwu27#ln230" displayAttributes="ent5#att20">
       <Link id="sv5#area26#page70#pwu27#ln205" name="Dettagli" to="sv5#area26#page73#dau29" automaticCoupling="true" type="normal" validate="true"/>
-      <Link id="sv5#area26#page70#pwu27#ln250" name="Elimina" to="sv5#area26#opg31#seu58" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area26#page70#pwu27#ln250" name="Elimina" to="sv5#area26#opg31#seu58" type="normal" validate="true" automaticCoupling="true"/>
       <Link id="sv5#area26#page70#pwu27#ln252" name="Modifica" to="sv5#area26#page75#enu22" type="normal" validate="true">
         <LinkParameter id="sv5#area26#page70#pwu27#ln252#par321" name="descrizione_Descrizione" source="data[].ent5#att21" target="sv5#area26#page75#enu22#fld52_slot"/>
         <LinkParameter id="sv5#area26#page70#pwu27#ln252#par323" name="oid_Key Condition [oid]" source="data[].ent5#att19" target="sv5#area26#page75#enu22.ent5#att19"/>
@@ -14,6 +14,11 @@
       <Selector id="sv5#area26#page70#pwu27#su229" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area26#page70#pwu27#su229#kcond20" name="KeyCondition20" predicate="in" implied="false"/>
       </Selector>
+      <Link id="sv5#area26#page70#pwu27#ln227" name="Elimina" to="sv5#area26#opg37#seu60" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv5#area26#page70#pwu27#ln230" name="Elimina" to="sv5#area26#opg37#seu60" type="normal" validate="true">
+        <LinkParameter id="sv5#area26#page70#pwu27#ln230#par381" name="oid_CategoriaProdotti [oid]" source="data[].ent5#att19" target="sv5#area26#opg37#seu60#su166#rcond52.ent5#att19"/>
+        <LinkParameter id="sv5#area26#page70#pwu27#ln230#par383" name="oid_PASSING" source="data[].ent5#att19" passing="true"/>
+      </Link>
     </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -42,10 +47,12 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area26#page70#pwu27">
+          <layout:Attribute attribute="ent5#att20"/>
           <layout:Link link="sv5#area26#page70#pwu27#ln205"/>
           <layout:Link link="sv5#area26#page70#pwu27#ln252"/>
           <layout:Link link="sv5#area26#page70#pwu27#ln250"/>
-          <layout:Attribute attribute="ent5#att20"/>
+          <layout:Link link="sv5#area26#page70#pwu27#ln227"/>
+          <layout:Link link="sv5#area26#page70#pwu27#ln230"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

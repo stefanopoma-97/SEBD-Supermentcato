@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="10" gr:y="0" id="sv5#area26#page73" name="Dettagli categoria">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="5" id="sv5#area26#page73#dau29" name="Dettagli categoria" entity="ent5" displayAttributes="ent5#att20 ent5#att21" linkOrder="sv5#area26#page73#dau29#ln234 sv5#area26#page73#dau29#ln247">
+    <DataUnit gr:x="0" gr:y="0" id="sv5#area26#page73#dau29" name="Dettagli categoria" entity="ent5" displayAttributes="ent5#att20 ent5#att21" linkOrder="sv5#area26#page73#dau29#ln234 sv5#area26#page73#dau29#ln247">
       <Selector id="sv5#area26#page73#dau29#su152" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area26#page73#dau29#su152#kcond97" name="KeyCondition97" predicate="in" implied="false"/>
       </Selector>
@@ -9,10 +9,13 @@
         <LinkParameter id="sv5#area26#page73#dau29#ln234#par49" name="oid_Key Condition [oid]" source="data.ent5#att19" target="sv5#area26#page75#enu22.ent5#att19"/>
         <LinkParameter id="sv5#area26#page73#dau29#ln234#par318" name="nome_Nome" source="data.ent5#att20" target="sv5#area26#page75#enu22#fld51_slot"/>
       </Link>
-      <Link id="sv5#area26#page73#dau29#ln247" name="Elimina" to="sv5#area26#opg31#seu58" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area26#page73#dau29#ln247" name="Elimina" to="sv5#area26#opg31#seu58" type="normal" validate="true">
+        <LinkParameter id="sv5#area26#page73#dau29#ln247#par329" name="oid_CategoriaProdotti [oid]" source="data.ent5#att19" target="sv5#area26#opg31#seu58#su161#rcond47.ent5#att19"/>
+        <LinkParameter id="sv5#area26#page73#dau29#ln247#par330" name="oid_PASSING" source="data.ent5#att19" passing="true"/>
+      </Link>
       <Link id="sv5#area26#page73#dau29#ln235" name="Flow235" to="sv5#area26#page73#pwu10" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
-    <PowerIndexUnit gr:x="170" gr:y="0" id="sv5#area26#page73#pwu10" name="Prodotti" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att53 ent4#att60">
+    <PowerIndexUnit gr:x="250" gr:y="0" id="sv5#area26#page73#pwu10" name="Prodotti" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att53 ent4#att60">
       <Selector id="sv5#area26#page73#pwu10#su162" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv5#area26#page73#pwu10#su162#rcond50" name="CategoriaProdotti" predicate="in" implied="false" role="rel4#role8"/>
       </Selector>
