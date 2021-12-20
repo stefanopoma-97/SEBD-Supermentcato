@@ -1,7 +1,10 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="425" gr:y="85" id="sv5#area26#opg29" name="Crea categoria" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="550" gr:y="260" id="sv5#area26#opg29" name="Crea categoria" transaction="true">
   <OperationUnits>
     <CreateUnit gr:x="0" gr:y="0" id="sv5#area26#opg29#cru2" name="Crea categoria" entity="ent5">
       <OKLink id="sv5#area26#opg29#cru2#oln52" name="OKFlow52" to="sv5#area26#page70" automaticCoupling="true"/>
+      <KOLink id="sv5#area26#opg29#cru2#kln55" name="KOFlow55" to="sv5#area26#page71#mssu18">
+        <LinkParameter id="sv5#area26#opg29#cru2#kln55#par362" name="Errore durante la creazione della categoria_Shown Messages" sourceValue="Errore durante la creazione della categoria" target="sv5#area26#page71#mssu18.shownMessages"/>
+      </KOLink>
     </CreateUnit>
   </OperationUnits>
 </OperationGroup>

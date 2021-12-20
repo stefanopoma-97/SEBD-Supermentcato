@@ -1,0 +1,56 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1905" gr:y="40" id="sv5#area16#opg36" name="Filtra prodotti" transaction="true">
+  <OperationUnits>
+    <SwitchUnit gr:x="0" gr:y="5" id="sv5#area16#opg36#switch2" name="Promozione?">
+      <Case value="yes"/>
+      <Case value="no"/>
+      <OKLink id="sv5#area16#opg36#switch2#oln6" name="OKFlow6" to="sv5#area16#opg36#switch3" code="yes">
+        <LinkParameter id="sv5#area16#opg36#switch2#oln6#par287" name="Categoria_PASSING" sourceLinkParameter="sv5#area16#page42#enu20#ln225#par252" passing="true"/>
+        <LinkParameter id="sv5#area16#opg36#switch2#oln6#par324" name="Fascia di prezzo_PASSING" sourceLinkParameter="sv5#area16#page42#enu20#ln225#par255" passing="true"/>
+        <LinkParameter id="sv5#area16#opg36#switch2#oln6#par325" name="Nazione_PASSING" sourceLinkParameter="sv5#area16#page42#enu20#ln225#par281" passing="true"/>
+        <LinkParameter id="sv5#area16#opg36#switch2#oln6#par356" name="Nuovo_PASSING_Switch" sourceLinkParameter="sv5#area16#page42#enu20#ln225#par286" target="sv5#area16#opg36#switch3.switch"/>
+      </OKLink>
+      <OKLink id="sv5#area16#opg36#switch2#oln77" name="OKFlow77" to="sv5#area16#opg36#seu56" code="no">
+        <LinkParameter id="sv5#area16#opg36#switch2#oln77#par357" name="Categoria_PASSING_ProdottoCategoria [oid]" sourceLinkParameter="sv5#area16#page42#enu20#ln225#par252" target="sv5#area16#opg36#seu56#su159#rcond44.ent5#att19"/>
+        <LinkParameter id="sv5#area16#opg36#switch2#oln77#par358" name="Fascia di prezzo_PASSING_ProdottoFasciaPrezzo [oid]" sourceLinkParameter="sv5#area16#page42#enu20#ln225#par255" target="sv5#area16#opg36#seu56#su159#rcond43.ent15#att30"/>
+        <LinkParameter id="sv5#area16#opg36#switch2#oln77#par359" name="Nazione_PASSING_ProdottoNazione [oid]" sourceLinkParameter="sv5#area16#page42#enu20#ln225#par281" target="sv5#area16#opg36#seu56#su159#rcond42.ent19#att44"/>
+      </OKLink>
+    </SwitchUnit>
+    <SelectorUnit gr:x="405" gr:y="125" id="sv5#area16#opg36#seu52" name="Promozioni" entity="ent6" linkOrder="sv5#area16#opg36#seu52#ln228">
+      <Link id="sv5#area16#opg36#seu52#ln228" name="Flow228" to="sv5#area16#opg36#seu56" type="transport" validate="true">
+        <LinkParameter id="sv5#area16#opg36#seu52#ln228#par327" name="oid_ProdottiInPromozione [oid]" source="ent6#att22Array" target="sv5#area16#opg36#seu56#su159#rcond41.ent6#att22"/>
+        <LinkParameter id="sv5#area16#opg36#seu52#ln228#par333" name="oid_PASSING_ProdottoNuovo [oid]" sourceLinkParameter="sv5#area16#opg36#seu57#ln229#par332" target="sv5#area16#opg36#seu56#su159#kcond118.ent4#att14"/>
+        <LinkParameter id="sv5#area16#opg36#seu52#ln228#par350" name="Categoria_PASSING_ProdottoCategoria [oid]" sourceLinkParameter="sv5#area16#opg36#seu57#ln229#par340" target="sv5#area16#opg36#seu56#su159#rcond44.ent5#att19"/>
+        <LinkParameter id="sv5#area16#opg36#seu52#ln228#par351" name="Fascia di prezzo_PASSING_ProdottoFasciaPrezzo [oid]" sourceLinkParameter="sv5#area16#opg36#seu57#ln229#par341" target="sv5#area16#opg36#seu56#su159#rcond43.ent15#att30"/>
+        <LinkParameter id="sv5#area16#opg36#seu52#ln228#par352" name="Nazione_PASSING_ProdottoNazione [oid]" sourceLinkParameter="sv5#area16#opg36#seu57#ln229#par346" target="sv5#area16#opg36#seu56#su159#rcond42.ent19#att44"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="55" gr:y="150" id="sv5#area16#opg36#seu56" name="Filtro" entity="ent4">
+      <Selector id="sv5#area16#opg36#seu56#su159" defaultPolicy="fill" booleanOperator="or">
+        <RelationshipRoleCondition id="sv5#area16#opg36#seu56#su159#rcond41" name="ProdottiInPromozione" predicate="in" implied="true" role="rel6#role11"/>
+        <RelationshipRoleCondition id="sv5#area16#opg36#seu56#su159#rcond42" name="ProdottoNazione" predicate="in" implied="true" role="rel18#role36"/>
+        <RelationshipRoleCondition id="sv5#area16#opg36#seu56#su159#rcond43" name="ProdottoFasciaPrezzo" predicate="in" implied="true" role="rel11#role21"/>
+        <RelationshipRoleCondition id="sv5#area16#opg36#seu56#su159#rcond44" name="ProdottoCategoria" predicate="in" implied="true" role="rel4#role8"/>
+        <KeyCondition id="sv5#area16#opg36#seu56#su159#kcond118" name="ProdottoNuovo" predicate="in" implied="true"/>
+      </Selector>
+      <Link id="sv5#area16#opg36#seu56#ln231" name="Flow231" to="sv5#area16#page42#pwu20" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <SwitchUnit gr:x="145" gr:y="10" id="sv5#area16#opg36#switch3" name="Nuovo?">
+      <Case value="yes"/>
+      <Case value="no"/>
+      <OKLink id="sv5#area16#opg36#switch3#oln57" name="OKFlow57" to="sv5#area16#opg36#seu57" code="yes">
+        <LinkParameter id="sv5#area16#opg36#switch3#oln57#par334" name="Categoria_PASSING" sourceLinkParameter="sv5#area16#opg36#switch2#oln6#par287" passing="true"/>
+        <LinkParameter id="sv5#area16#opg36#switch3#oln57#par335" name="Fascia di prezzo_PASSING" sourceLinkParameter="sv5#area16#opg36#switch2#oln6#par324" passing="true"/>
+        <LinkParameter id="sv5#area16#opg36#switch3#oln57#par338" name="Nazione_PASSING" sourceLinkParameter="sv5#area16#opg36#switch2#oln6#par325" passing="true"/>
+      </OKLink>
+      <OKLink id="sv5#area16#opg36#switch3#oln76" name="OKFlow76" to="sv5#area16#opg36#seu52" automaticCoupling="true" code="no"/>
+    </SwitchUnit>
+    <SelectorUnit gr:x="270" gr:y="0" id="sv5#area16#opg36#seu57" name="Prodotti nuovi" entity="ent11" linkOrder="sv5#area16#opg36#seu57#ln229">
+      <Link id="sv5#area16#opg36#seu57#ln229" name="Flow229" to="sv5#area16#opg36#seu52" type="transport" validate="true">
+        <LinkParameter id="sv5#area16#opg36#seu57#ln229#par332" name="oid_PASSING" source="ent4#att14Array" passing="true"/>
+        <LinkParameter id="sv5#area16#opg36#seu57#ln229#par340" name="Categoria_PASSING" sourceLinkParameter="sv5#area16#opg36#switch3#oln57#par334" passing="true"/>
+        <LinkParameter id="sv5#area16#opg36#seu57#ln229#par341" name="Fascia di prezzo_PASSING" sourceLinkParameter="sv5#area16#opg36#switch3#oln57#par335" passing="true"/>
+        <LinkParameter id="sv5#area16#opg36#seu57#ln229#par346" name="Nazione_PASSING" sourceLinkParameter="sv5#area16#opg36#switch3#oln57#par338" passing="true"/>
+      </Link>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

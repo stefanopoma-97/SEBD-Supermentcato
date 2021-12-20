@@ -6,14 +6,14 @@
     <Property name="applicationServer">Tomcat</Property>
     <Property name="cloudDeploy">false</Property>
     <Property name="commonsLibDir">/home/tosti/Downloads/WebRatio_Platform_University_Student_Edition_7.2.18.Linux/WebRatio/plugins/com.webratio.commons.libs_7.2.18.201903231300/lib</Property>
-    <Property name="dbConfigPath">/tmp/WRDBConfig1396373703321652733.xml</Property>
+    <Property name="dbConfigPath">/tmp/WRDBConfig531357978385247711.xml</Property>
     <Property name="defaultEncoding"></Property>
     <Property name="deployCorePluginDir">/home/tosti/Downloads/WebRatio_Platform_University_Student_Edition_7.2.18.Linux/WebRatio/configuration/org.eclipse.osgi/bundles/49/1/.cp</Property>
     <Property name="derbySystemHome">/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/.metadata/.plugins/com.webratio.commons.db/derby</Property>
     <Property name="enterpriseProjectDir"></Property>
-    <Property name="eventSocketPort">35701</Property>
+    <Property name="eventSocketPort">33483</Property>
     <Property name="excludedProjects" type="list"></Property>
-    <Property name="generationTime">202112201550</Property>
+    <Property name="generationTime">202112201700</Property>
     <Property name="helpersPluginDir">/home/tosti/Downloads/WebRatio_Platform_University_Student_Edition_7.2.18.Linux/WebRatio/plugins/com.webratio.generator.helpers_7.2.18.201903231300</Property>
     <Property name="hostAlwaysAllowed">false</Property>
     <Property name="i18nBundleKeysFile" type="file"></Property>
@@ -25,14 +25,14 @@
     <Property name="phases">All</Property>
     <Property name="projectDir">/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato</Property>
     <Property name="projectName">SEBD-Supermentcato</Property>
-    <Property name="projectPath">/tmp/Project5561413580982693117.wr</Property>
+    <Property name="projectPath">/tmp/Project8255126726023735001.wr</Property>
     <Property name="projectType">WEBPROJECT</Property>
     <Property name="rootModuleName"></Property>
     <Property name="uiPluginDir">/home/tosti/Downloads/WebRatio_Platform_University_Student_Edition_7.2.18.Linux/WebRatio/plugins/com.webratio.ide.ui_7.2.18.201903231300</Property>
     <Property name="webappPluginDir">/home/tosti/Downloads/WebRatio_Platform_University_Student_Edition_7.2.18.Linux/WebRatio/plugins/com.webratio.generator.webapp_7.2.18.201903231300</Property>
     <Property name="wrBuildId">201903231300</Property>
     <Property name="wrGenerateOldValidationRules">false</Property>
-    <Property name="wrModelStatistics">pages=91|units=425</Property>
+    <Property name="wrModelStatistics">pages=93|units=447</Property>
     <Property name="wrVersion">7.2.18</Property>
   </Properties>
   <Plugins>
