@@ -1,0 +1,29 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="165" id="sv4#area22#page68" name="Modifica informazioni negozio">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv4#area22#page68#enu18" name="Modifica massimo ordini" entity="ent3" linkOrder="sv4#area22#page68#enu18#ln12">
+      <Field id="sv4#area22#page68#enu18#fld66" name="Numero massimo di ordini giornalieri" type="integer" modifiable="true" attribute="ent3#att11"/>
+      <Link id="sv4#area22#page68#enu18#ln12" name="Applica modifica" to="sv4#area22#opg28#mfu15" automaticCoupling="true" type="normal" validate="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area22#page68#enu18">
+          <layout:Field field="sv4#area22#page68#enu18#fld66"/>
+          <layout:Link link="sv4#area22#page68#enu18#ln12"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
