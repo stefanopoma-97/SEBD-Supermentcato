@@ -4,8 +4,8 @@
       <Selector id="sv2#area39#opg50#seu123#su270" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area39#opg50#seu123#su270#rcond106" name="Citt&#224;ToNegozi" predicate="in" implied="false" role="rel1#role1.rel2#role4"/>
       </Selector>
-      <OKLink id="sv2#area39#opg50#seu123#oln106" name="OKFlow31" to="sv2#area37#page107#pwu26" automaticCoupling="true"/>
       <KOLink id="sv2#area39#opg50#seu123#kln91" name="KOFlow29" to="sv2#area39#page112" automaticCoupling="true" gr:bendpoints="346,-163,236,422"/>
+      <OKLink id="sv2#area39#opg50#seu123#oln75" name="OKFlow31" to="sv2#area37#page107#alt8#page60#pwu43" automaticCoupling="true"/>
     </SelectorUnit>
     <GetUnit id="sv2#area39#opg50#gtu28" name="Utente" gr:x="165" gr:y="0" contextParameters="UserCtxParam">
       <Link id="sv2#area39#opg50#gtu28#ln352" name="Flow96" to="sv2#area39#opg50#seu124" type="transport" validate="true">
