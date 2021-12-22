@@ -6,7 +6,7 @@
         <LinkParameter id="sv5#area17#opg5#cru3#oln15#par347" name="3_KeyCondition123 [oid] [Group] [Target]" sourceValue="3" target="sv5#area17#opg5#cnu17#su179#kcond123.groupOID"/>
       </OKLink>
     </CreateUnit>
-    <ConnectUnit gr:x="0" gr:y="105" id="sv5#area17#opg5#cnu17" name="Associa gruppo" relationship="User2Group">
+    <ConnectUnit gr:x="0" gr:y="105" id="sv5#area17#opg5#cnu17" name="Associa gruppo" relationship="User2DefaultGroup">
       <SourceSelector id="sv5#area17#opg5#cnu17#su178" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area17#opg5#cnu17#su178#kcond122" name="KeyCondition122" predicate="in" implied="false"/>
       </SourceSelector>
