@@ -1,0 +1,17 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="mov1#opm1" name="Action 1">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#opm1#icu1" name="Input Port">
+      <InputCollectorParameter id="mov1#opm1#icu1#icp1" name="RoleCondition39 [oid]"/>
+      <OKLink id="mov1#opm1#icu1#oln80" to="mov1#opm1#opg26#seu59" validate="true" name="Calcola totale">
+        <LinkParameter id="mov1#opm1#icu1#oln80#par368" source="mov1#opm1#icu1#icp1" name="oid_RoleCondition39 [oid]" target="mov1#opm1#opg26#seu59#su174#rcond58.ent9#att33"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="1105" gr:y="0" id="mov1#opm1#okcu1" name="OK Port1">
+      <OutputCollectorParameter id="mov1#opm1#okcu1#ocp1" name="totale"/>
+    </OKCollectorUnit>
+    <KOCollectorUnit gr:x="1105" gr:y="600" id="mov1#opm1#kocu2" name="KO Port2"/>
+    <KOCollectorUnit gr:x="1105" gr:y="305" id="mov1#opm1#kocu1" name="KO Port1">
+      <OutputCollectorParameter id="mov1#opm1#kocu1#ocp2" name="Errore calcolo totale_Shown Messages"/>
+    </KOCollectorUnit>
+  </OperationUnits>
+</OperationModule>

@@ -1,0 +1,22 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="879" id="mov1#opm2" name="Risparmio da Spesa">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#opm2#icu2" name="Input Port">
+      <InputCollectorParameter id="mov1#opm2#icu2#icp2" name="RoleCondition39 [oid]"/>
+      <OKLink id="mov1#opm2#icu2#oln133" to="mov1#opm2#opg38#seu62" validate="true" name="senza sconto">
+        <LinkParameter id="mov1#opm2#icu2#oln133#par401" name="oid_RoleCondition39 [oid]" source="mov1#opm2#icu2#icp2" target="mov1#opm2#opg38#seu62#su176#rcond60.ent9#att33"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <KOCollectorUnit gr:x="700" gr:y="300" id="mov1#opm2#kocu3" name="KO Port3">
+      <OutputCollectorParameter id="mov1#opm2#kocu3#ocp3" name="$$NULL$$_Shown Messages"/>
+    </KOCollectorUnit>
+    <KOCollectorUnit gr:x="700" gr:y="600" id="mov1#opm2#kocu4" name="KO Port4">
+      <OutputCollectorParameter id="mov1#opm2#kocu4#ocp4" name="Errore calcolo_Shown Messages"/>
+    </KOCollectorUnit>
+    <OKCollectorUnit gr:x="700" gr:y="0" id="mov1#opm2#okcu2" name="OK Port2">
+      <OutputCollectorParameter id="mov1#opm2#okcu2#ocp5" name="Input Value"/>
+    </OKCollectorUnit>
+    <KOCollectorUnit gr:x="700" gr:y="900" id="mov1#opm2#kocu5" name="KO Port5">
+      <OutputCollectorParameter id="mov1#opm2#kocu5#ocp6" name="Errore righe_Shown Messages"/>
+    </KOCollectorUnit>
+  </OperationUnits>
+</OperationModule>

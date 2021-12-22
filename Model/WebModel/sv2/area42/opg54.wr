@@ -1,11 +1,11 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area42#opg54" name="Conferma spesa" transaction="true" gr:x="2170" gr:y="1035">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area42#opg54" name="Conferma spesa" transaction="true" gr:x="2170" gr:y="900">
   <OperationUnits>
     <GetUnit id="sv2#area42#opg54#gtu30" name="Spesa attuale" gr:x="0" gr:y="5" contextParameters="ctx1">
       <Link id="sv2#area42#opg54#gtu30#ln385" name="Flow201" to="sv2#area42#opg54#seu138" type="transport" validate="true">
         <LinkParameter id="sv2#area42#opg54#gtu30#ln385#par558" name="SpesaAttuale.oid_KeyCondition102 [oid]" source="sv2#area42#opg54#gtu30.ctx1.ent9#att33" target="sv2#area42#opg54#seu138#su291#kcond173.ent9#att33"/>
       </Link>
     </GetUnit>
-    <ModifyUnit id="sv2#area42#opg54#mfu14" name="Spesa" gr:x="390" gr:y="65" entity="ent9">
+    <ModifyUnit id="sv2#area42#opg54#mfu14" name="Spesa" gr:x="530" gr:y="55" entity="ent9">
       <Selector id="sv2#area42#opg54#mfu14#su290" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area42#opg54#mfu14#su290#kcond172" name="KeyCondition101" predicate="in" implied="false"/>
       </Selector>
@@ -18,12 +18,35 @@
       <Selector id="sv2#area42#opg54#seu138#su291" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area42#opg54#seu138#su291#kcond173" name="KeyCondition102" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="sv2#area42#opg54#seu138#oln112" name="OKFlow56" to="sv2#area42#opg54#mfu14">
-        <LinkParameter id="sv2#area42#opg54#seu138#oln112#par559" name="data di creazione_data di creazione" source="ent9#att35Array" target="sv2#area42#opg54#mfu14.ent9#att35"/>
-        <LinkParameter id="sv2#area42#opg54#seu138#oln112#par560" name="oid_KeyCondition101 [oid]" source="ent9#att33Array" target="sv2#area42#opg54#mfu14#su290#kcond172.ent9#att33"/>
-        <LinkParameter id="sv2#area42#opg54#seu138#oln112#par561" name="SpesaToNegozio.oid_Negozio.oid(SpesaToNegozio)" source="rel17#role33_ent3#att8Array" target="sv2#area42#opg54#mfu14.rel17#role33.ent3#att8"/>
+      <OKLink id="sv2#area42#opg54#seu138#oln112" name="OKFlow56" to="sv2#area42#opg54#seu63">
+        <LinkParameter id="sv2#area42#opg54#seu138#oln112#par438" name="data di creazione_PASSING" source="ent9#att35Array" passing="true"/>
+        <LinkParameter id="sv2#area42#opg54#seu138#oln112#par439" name="oid_PASSING" source="ent9#att33Array" passing="true"/>
+        <LinkParameter id="sv2#area42#opg54#seu138#oln112#par440" name="SpesaToNegozio.oid_PASSING" source="rel17#role33_ent3#att8Array" passing="true"/>
+        <LinkParameter id="sv2#area42#opg54#seu138#oln112#par441" name="oid_RoleCondition61 [oid]" source="ent9#att33Array" target="sv2#area42#opg54#seu63#su183#rcond61.ent9#att33"/>
       </OKLink>
       <KOLink id="sv2#area42#opg54#seu138#kln97" name="KOFlow59" to="sv2#area42#page120" automaticCoupling="true"/>
     </SelectorUnit>
+    <SelectorUnit gr:x="250" gr:y="190" id="sv2#area42#opg54#seu63" name="Righe" entity="ent7">
+      <Selector id="sv2#area42#opg54#seu63#su183" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area42#opg54#seu63#su183#rcond61" name="RoleCondition61" predicate="in" implied="false" role="rel10#role20"/>
+      </Selector>
+      <OKLink id="sv2#area42#opg54#seu63#oln142" name="OKFlow142" to="sv2#area42#opg54#inn9">
+        <LinkParameter id="sv2#area42#opg54#seu63#oln142#par442" name="oid_Input" source="ent7#att28Array" target="sv2#area42#opg54#inn9.isnotnull"/>
+        <LinkParameter id="sv2#area42#opg54#seu63#oln142#par443" name="data di creazione_PASSING" sourceLinkParameter="sv2#area42#opg54#seu138#oln112#par438" passing="true"/>
+        <LinkParameter id="sv2#area42#opg54#seu63#oln142#par444" name="oid_PASSING" sourceLinkParameter="sv2#area42#opg54#seu138#oln112#par439" passing="true"/>
+        <LinkParameter id="sv2#area42#opg54#seu63#oln142#par445" name="SpesaToNegozio.oid_PASSING" sourceLinkParameter="sv2#area42#opg54#seu138#oln112#par440" passing="true"/>
+      </OKLink>
+      <KOLink id="sv2#area42#opg54#seu63#kln130" name="KOFlow130" to="sv2#area42#page120" automaticCoupling="true"/>
+    </SelectorUnit>
+    <IsNotNullUnit gr:x="485" gr:y="215" id="sv2#area42#opg54#inn9" name="Is Not Null9">
+      <OKLink id="sv2#area42#opg54#inn9#oln143" name="OKFlow143" to="sv2#area42#opg54#mfu14">
+        <LinkParameter id="sv2#area42#opg54#inn9#oln143#par446" name="data di creazione_PASSING_data di creazione" sourceLinkParameter="sv2#area42#opg54#seu63#oln142#par443" target="sv2#area42#opg54#mfu14.ent9#att35"/>
+        <LinkParameter id="sv2#area42#opg54#inn9#oln143#par447" name="oid_PASSING_KeyCondition101 [oid]" sourceLinkParameter="sv2#area42#opg54#seu63#oln142#par444" target="sv2#area42#opg54#mfu14#su290#kcond172.ent9#att33"/>
+        <LinkParameter id="sv2#area42#opg54#inn9#oln143#par448" name="SpesaToNegozio.oid_PASSING_Negozio.oid(SpesaToNegozio)" sourceLinkParameter="sv2#area42#opg54#seu63#oln142#par445" target="sv2#area42#opg54#mfu14.rel17#role33.ent3#att8"/>
+      </OKLink>
+      <KOLink id="sv2#area42#opg54#inn9#kln131" name="KOFlow131" to="sv2#area42#page117#alt9#page81#mssu31">
+        <LinkParameter id="sv2#area42#opg54#inn9#kln131#par449" name="Inserisci almeno una riga d'ordine_Shown Messages" sourceValue="Inserisci almeno una riga d'ordine" target="sv2#area42#page117#alt9#page81#mssu31.shownMessages"/>
+      </KOLink>
+    </IsNotNullUnit>
   </OperationUnits>
 </OperationGroup>

@@ -1,0 +1,14 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="879" id="mov1#opm3" name="Diminuisci quantit&#224;">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#opm3#icu3" name="Input Port">
+      <InputCollectorParameter id="mov1#opm3#icu3#icp3" name="oid_PASSING"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp4" name="quantita"/>
+      <OKLink id="mov1#opm3#icu3#oln150" to="mov1#opm3#opg61#scu45" validate="true" name="-">
+        <LinkParameter id="mov1#opm3#icu3#oln150#par663" source="mov1#opm3#icu3#icp3" name="oid_PASSING" passing="true"/>
+        <LinkParameter id="mov1#opm3#icu3#oln150#par662" source="mov1#opm3#icu3#icp4" name="quantit&#224;_quantita" target="mov1#opm3#opg61#scu45.quantita"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <KOCollectorUnit gr:x="700" gr:y="300" id="mov1#opm3#kocu6" name="KO Port6"/>
+    <OKCollectorUnit gr:x="700" gr:y="0" id="mov1#opm3#okcu3" name="OK Port3"/>
+  </OperationUnits>
+</OperationModule>

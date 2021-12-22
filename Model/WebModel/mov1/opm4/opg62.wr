@@ -1,0 +1,25 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm4#opg62" name="Aggiungi quantit&#224;" transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <ModifyUnit id="mov1#opm4#opg62#mfu21" name="Aggiungi quantit&#224;" gr:x="240" gr:y="0" entity="ent7">
+      <Selector id="mov1#opm4#opg62#mfu21#su187" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm4#opg62#mfu21#su187#kcond127" name="KeyCondition123" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="mov1#opm4#opg62#mfu21#kln141" to="mov1#opm4#kocu7" name="KOFlow133"/>
+      <OKLink id="mov1#opm4#opg62#mfu21#oln159" to="mov1#opm4#okcu4" name="OKFlow141"/>
+    </ModifyUnit>
+    <ScriptUnit id="mov1#opm4#opg62#scu46" name="Aggiungi quantit&#224;" gr:x="0" gr:y="110">
+      <ScriptUnitText xml:space="preserve">#input int quantita
+#output int risultato
+
+risultato=quantita+1
+if(risultato==6){
+risultato=5}
+
+return [ "risultato": risultato ]</ScriptUnitText>
+      <OKLink id="mov1#opm4#opg62#scu46#oln158" name="OKFlow145" to="mov1#opm4#opg62#mfu21">
+        <LinkParameter id="mov1#opm4#opg62#scu46#oln158#par673" name="oid_PASSING_KeyCondition123 [oid]" sourceLinkParameter="mov1#opm4#icu4#oln155#par667" target="mov1#opm4#opg62#mfu21#su187#kcond127.ent7#att28"/>
+        <LinkParameter id="mov1#opm4#opg62#scu46#oln158#par674" name="risultato_quantit&#224;" source="result(risultato)" target="mov1#opm4#opg62#mfu21.ent7#att29"/>
+      </OKLink>
+    </ScriptUnit>
+  </OperationUnits>
+</OperationGroup>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area34#page98" name="Spese" gr:x="30" gr:y="0">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area34#page98" name="Spese" gr:x="295" gr:y="0">
   <ContentUnits>
     <GetUnit id="sv2#area34#page98#gtu23" name="Utente" gr:x="0" gr:y="15" contextParameters="UserCtxParam">
       <Link id="sv2#area34#page98#gtu23#ln302" name="Flow196" to="sv2#area34#page98#seu105" type="transport" validate="true">
