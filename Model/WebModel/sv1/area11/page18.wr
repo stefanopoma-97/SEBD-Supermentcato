@@ -3,7 +3,7 @@
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv1#area11#page18#mssu11" name="Messaggio">
       <Message xml:space="preserve">Inserisci tutti i campi richiesti</Message>
     </MultiMessageUnit>
-    <EntryUnit gr:x="210" gr:y="150" id="sv1#area11#page18#enu6" name="Creazione utente" fieldOrder="sv1#area11#page18#enu6#fld10 sv1#area11#page18#enu6#fld11 sv1#area11#page18#enu6#fld8 sv1#area11#page18#enu6#fld9 sv1#area11#page18#enu6#fld12 sv1#area11#page18#enu6#sfld7 sv1#area11#page18#enu6#fld14 sv1#area11#page18#enu6#fld15 sv1#area11#page18#enu6#sfld8" linkOrder="sv1#area11#page18#enu6#ln78">
+    <EntryUnit gr:x="100" gr:y="70" id="sv1#area11#page18#enu6" name="Creazione utente" fieldOrder="sv1#area11#page18#enu6#fld10 sv1#area11#page18#enu6#fld11 sv1#area11#page18#enu6#fld8 sv1#area11#page18#enu6#fld9 sv1#area11#page18#enu6#fld12 sv1#area11#page18#enu6#sfld7 sv1#area11#page18#enu6#fld14 sv1#area11#page18#enu6#fld15 sv1#area11#page18#enu6#sfld8" linkOrder="sv1#area11#page18#enu6#ln78">
       <Field id="sv1#area11#page18#enu6#fld8" name="Nome" type="string" modifiable="true">
         <VRules>
           <MandatoryValidationRule id="sv1#area11#page18#enu6#fld8#mnd17" name="Mandatory13"/>
@@ -62,14 +62,14 @@
         <LinkParameter id="sv1#area11#page18#enu6#ln78#par179" name="2_Group.oid(defaultGroup)" sourceValue="2" target="sv1#area11#opg13#cru1.User2DefaultGroup.groupOID"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit gr:x="25" gr:y="125" id="sv1#area11#page18#seu31" name="Negozi" entity="ent3">
+    <SelectorUnit gr:x="0" gr:y="70" id="sv1#area11#page18#seu31" name="Negozi" entity="ent3">
       <Link id="sv1#area11#page18#seu31#ln75" name="Flow75" to="sv1#area11#page18#enu6" type="transport" validate="true">
         <LinkParameter id="sv1#area11#page18#seu31#ln75#par42" name="nome_Negozio preferito [label]" source="ent3#att9Array" target="sv1#area11#page18#enu6#sfld7_label"/>
         <LinkParameter id="sv1#area11#page18#seu31#ln75#par43" name="oid_Negozio preferito [output]" source="ent3#att8Array" target="sv1#area11#page18#enu6#sfld7_output"/>
         <LinkParameter id="sv1#area11#page18#seu31#ln75#par72" name="nome_Negozio preferito - Preselection" target="sv1#area11#page18#enu6#sfld7_presel" sourceValue="1"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="25" gr:y="245" id="sv1#area11#page18#seu32" name="Citt&#224;" entity="ent1">
+    <SelectorUnit gr:x="0" gr:y="165" id="sv1#area11#page18#seu32" name="Citt&#224;" entity="ent1">
       <Link id="sv1#area11#page18#seu32#ln76" name="Flow76" to="sv1#area11#page18#enu6" type="transport" validate="true">
         <LinkParameter id="sv1#area11#page18#seu32#ln76#par44" name="nome_Citt&#224; [label]" source="ent1#att2Array" target="sv1#area11#page18#enu6#sfld8_label"/>
         <LinkParameter id="sv1#area11#page18#seu32#ln76#par45" name="oid_Citt&#224; [output]" source="ent1#att1Array" target="sv1#area11#page18#enu6#sfld8_output"/>

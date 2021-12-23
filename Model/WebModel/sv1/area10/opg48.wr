@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="35" gr:y="1035" id="sv1#area10#opg48" name="Negozi nuovi" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="10" gr:y="815" id="sv1#area10#opg48" name="Negozi nuovi" transaction="true">
   <OperationUnits>
     <SelectorUnit gr:x="0" gr:y="0" id="sv1#area10#opg48#seu104" name="Negozi nuovi" entity="ent18">
       <KOLink id="sv1#area10#opg48#seu104#kln86" name="KOFlow86" to="sv1#area10#page22#mssu30" automaticCoupling="true" gr:bendpoints="-190,-263,-134,257"/>

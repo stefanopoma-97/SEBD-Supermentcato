@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="270" gr:y="35" id="sv1#area1#page21" name="Informazioni servizio spesa da casa" linkOrder="sv1#area1#page21#ln22" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="195" gr:y="0" id="sv1#area1#page21" name="Informazioni servizio spesa da casa" linkOrder="sv1#area1#page21#ln22" landmark="true">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv1#area1#page21#mssu6" name="Message6">
       <Message xml:space="preserve">Informazioni servizio spesa da casa
