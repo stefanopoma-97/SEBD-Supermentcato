@@ -44,8 +44,8 @@
         <LinkParameter id="sv2#area42#opg54#inn9#oln143#par447" name="oid_PASSING_KeyCondition101 [oid]" sourceLinkParameter="sv2#area42#opg54#seu63#oln142#par444" target="sv2#area42#opg54#mfu14#su290#kcond172.ent9#att33"/>
         <LinkParameter id="sv2#area42#opg54#inn9#oln143#par448" name="SpesaToNegozio.oid_PASSING_Negozio.oid(SpesaToNegozio)" sourceLinkParameter="sv2#area42#opg54#seu63#oln142#par445" target="sv2#area42#opg54#mfu14.rel17#role33.ent3#att8"/>
       </OKLink>
-      <KOLink id="sv2#area42#opg54#inn9#kln131" name="KOFlow131" to="sv2#area42#page117#alt9#page81#mssu31">
-        <LinkParameter id="sv2#area42#opg54#inn9#kln131#par449" name="Inserisci almeno una riga d'ordine_Shown Messages" sourceValue="Inserisci almeno una riga d'ordine" target="sv2#area42#page117#alt9#page81#mssu31.shownMessages"/>
+      <KOLink id="sv2#area42#opg54#inn9#kln167" name="KOFlow131" to="sv2#area42#page87#mssu43">
+        <LinkParameter id="sv2#area42#opg54#inn9#kln167#par850" name="Inserisci almeno una riga d'ordine_Shown Messages" target="sv2#area42#page87#mssu43.shownMessages" sourceValue="Inserisci almeno una riga d'ordine"/>
       </KOLink>
     </IsNotNullUnit>
   </OperationUnits>

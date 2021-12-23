@@ -2,7 +2,7 @@
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area34#page82#mssu32" name="Errore" linkOrder="sv2#area34#page82#mssu32#ln259">
       <Message xml:space="preserve">Hai eliminato tutte le righe d'ordine della spesa. Non &#232; possibile confermare la spesa.
-Puoi tornare nella sezione "Prodotto online" per aggiungere nuove righe d'ordine.</Message>
+Puoi tornare nella sezione "Prodotti online" per aggiungere nuove righe d'ordine.</Message>
       <Link id="sv2#area34#page82#mssu32#ln259" name="Prodotti online" to="sv2#area42" automaticCoupling="true" type="normal" validate="true"/>
     </MultiMessageUnit>
   </ContentUnits>

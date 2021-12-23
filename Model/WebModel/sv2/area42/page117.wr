@@ -195,28 +195,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv2#area42#page117#alt9#page81">
-          <layout:Grid containerType="grid">
-            <layout:Row>
-              <layout:Cell colspan="12">
-                <layout:Unit unitId="sv2#area42#page117#alt9#page81#mssu31"/>
-              </layout:Cell>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-            </layout:Row>
-          </layout:Grid>
-        </layout:SubPage>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -262,8 +241,6 @@
               <layout:Cell colspan="12">
                 <layout:Unit unitId="sv2#area42#page117#alt5#page118#dau47">
                   <layout:Attribute attribute="ent9#att35"/>
-                  <layout:Attribute attribute="ent9#att36"/>
-                  <layout:Attribute attribute="ent9#att63"/>
                 </layout:Unit>
               </layout:Cell>
               <layout:Cell/>
@@ -367,7 +344,7 @@
             <LinkParameter id="sv2#area42#page117#alt5#page118#pwu32#ln255#par659" name="oid_PASSING" source="data[].ent7#att28" target="sv2#area42#miu5.mov1#opm3#icu3#icp3"/>
           </Link>
         </PowerIndexUnit>
-        <DataUnit id="sv2#area42#page117#alt5#page118#dau47" name="Spesa" gr:x="0" gr:y="115" entity="ent9" displayAll="true">
+        <DataUnit id="sv2#area42#page117#alt5#page118#dau47" name="Spesa" gr:x="0" gr:y="115" entity="ent9" displayAttributes="ent9#att35">
           <Selector id="sv2#area42#page117#alt5#page118#dau47#su300" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv2#area42#page117#alt5#page118#dau47#su300#kcond177" name="KeyCondition60" predicate="in" implied="false"/>
           </Selector>
@@ -384,13 +361,6 @@
     <Page id="sv2#area42#page117#alt6#page119" name="Pagina totale esterno" gr:x="0" gr:y="0">
       <ContentUnits>
         <MultiMessageUnit id="sv2#area42#page117#alt6#page119#mssu44" name="Costo totale del prodotto (applicando le promozioni)" gr:x="50" gr:y="0"/>
-      </ContentUnits>
-    </Page>
-  </Alternative>
-  <Alternative gr:x="340" gr:y="235" id="sv2#area42#page117#alt9" name="Messaggi" defaultPage="sv2#area42#page117#alt9#page81">
-    <Page gr:x="0" gr:y="0" id="sv2#area42#page117#alt9#page81" name="Errore">
-      <ContentUnits>
-        <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area42#page117#alt9#page81#mssu31" name="Messaggio"/>
       </ContentUnits>
     </Page>
   </Alternative>
