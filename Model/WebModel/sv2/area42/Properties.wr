@@ -1,10 +1,10 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area42" name="Area Prodotti online" defaultPage="sv2#area42#page116" landmark="true" gr:x="7215" gr:y="825">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area42" name="Area Prodotti online" defaultPage="sv2#area42#page116" landmark="true" gr:x="7315" gr:y="825">
   <OperationUnits>
-    <ModuleInstanceUnit gr:x="2275" gr:y="50" id="sv2#area42#miu5" moduleId="mov1#opm3">
+    <ModuleInstanceUnit gr:x="2175" gr:y="50" id="sv2#area42#miu5" moduleId="mov1#opm3">
       <OKLink id="sv2#area42#miu5#oln151" to="sv2#area42#page117" name="OKFlow141"/>
       <KOLink id="sv2#area42#miu5#kln136" to="sv2#area42#page120" name="KOFlow133"/>
     </ModuleInstanceUnit>
-    <ModuleInstanceUnit gr:x="2360" gr:y="275" id="sv2#area42#miu6" moduleId="mov1#opm4">
+    <ModuleInstanceUnit gr:x="2260" gr:y="275" id="sv2#area42#miu6" moduleId="mov1#opm4">
       <KOLink id="sv2#area42#miu6#kln139" to="sv2#area42#page120" name="KOFlow133"/>
       <OKLink id="sv2#area42#miu6#oln156" to="sv2#area42#page117" name="OKFlow141"/>
     </ModuleInstanceUnit>

@@ -175,6 +175,32 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area9#page11#alt4#page48#pwu38">
+          <layout:Attribute attribute="ent6#att23"/>
+          <layout:Attribute attribute="ent6#att39"/>
+          <layout:Attribute attribute="ent6#att41"/>
+          <layout:Attribute attribute="ent6#att24"/>
+          <layout:Attribute attribute="ent6#att25"/>
+          <layout:Attribute attribute="ent6#att26"/>
+          <layout:Link link="sv1#area9#page11#alt4#page48#pwu38#ln14"/>
+          <layout:Link link="sv1#area9#page11#alt4#page48#pwu38ent6#att24"/>
+          <layout:Link link="sv1#area9#page11#alt4#page48#pwu38ent6#att23"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
       <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
@@ -189,19 +215,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area9#page11#alt4#page48#pwu38">
-          <layout:Attribute attribute="ent6#att23"/>
-          <layout:Attribute attribute="ent6#att39"/>
-          <layout:Attribute attribute="ent6#att41"/>
-          <layout:Attribute attribute="ent6#att24"/>
-          <layout:Attribute attribute="ent6#att25"/>
-          <layout:Attribute attribute="ent6#att26"/>
-          <layout:Link link="sv1#area9#page11#alt4#page48#pwu38#ln14"/>
-          <layout:Link link="sv1#area9#page11#alt4#page48#pwu38ent6#att24"/>
-          <layout:Link link="sv1#area9#page11#alt4#page48#pwu38ent6#att23"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -230,7 +244,7 @@
     </Page>
     <Page gr:x="5" gr:y="180" id="sv1#area9#page11#alt4#page48" name="Filtro">
       <ContentUnits>
-        <PowerIndexUnit id="sv1#area9#page11#alt4#page48#pwu38" name="Lista Promozioni" linkOrder="sv1#area9#page11#alt4#page48#pwu38#ln14" gr:x="0" gr:y="0" entity="ent6" displayAttributes="ent6#att23 ent6#att39 ent6#att41 ent6#att24 ent6#att25 ent6#att26" sortable="true" checkable="false" useCountQuery="false">
+        <PowerIndexUnit id="sv1#area9#page11#alt4#page48#pwu38" name="Lista Promozioni filtrata" linkOrder="sv1#area9#page11#alt4#page48#pwu38#ln14" gr:x="0" gr:y="0" entity="ent6" displayAttributes="ent6#att23 ent6#att39 ent6#att41 ent6#att24 ent6#att25 ent6#att26" sortable="true" checkable="false" useCountQuery="false">
           <Selector id="sv1#area9#page11#alt4#page48#pwu38#su105" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv1#area9#page11#alt4#page48#pwu38#su105#kcond102" name="KeyCondition13" predicate="in" implied="false"/>
           </Selector>
