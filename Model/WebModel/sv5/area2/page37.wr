@@ -8,6 +8,7 @@
         <LinkParameter id="sv5#area2#page37#dau16#ln74#par174" name="email_Email" source="data.email" target="sv5#area2#page38#enu10#fld23_slot"/>
         <LinkParameter id="sv5#area2#page37#dau16#ln74#par183" name="oid_Key Condition [oid]" source="data.userOID" target="sv5#area2#page38#enu10.userOID"/>
         <LinkParameter id="sv5#area2#page37#dau16#ln74#par186" name="userName_Username" source="data.userName" target="sv5#area2#page38#enu10#fld22_slot"/>
+        <LinkParameter id="sv5#area2#page37#dau16#ln74#par17" name="password_Password" source="data.password" target="sv5#area2#page38#enu10#fld69_slot"/>
       </Link>
     </DataUnit>
     <GetUnit id="sv5#area2#page37#gtu15" name="Info dirigente" gr:x="0" gr:y="5" contextParameters="UserCtxParam">

@@ -1,10 +1,26 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1245" gr:y="245" id="sv4#area14#page29" name="Crea promozione">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="15" id="sv4#area14#page29#enu8" name="Inserisci dati promozione" linkOrder="sv4#area14#page29#enu8#ln87">
-      <Field id="sv4#area14#page29#enu8#fld1" name="Sconto" type="decimal" modifiable="true"/>
-      <Field id="sv4#area14#page29#enu8#fld2" name="Scadenza" type="date" modifiable="true"/>
-      <Field id="sv4#area14#page29#enu8#fld5" name="Online" type="boolean" modifiable="true"/>
-      <Field id="sv4#area14#page29#enu8#fld13" name="In negozio" type="boolean" modifiable="true"/>
+    <EntryUnit gr:x="0" gr:y="10" id="sv4#area14#page29#enu8" name="Inserisci dati promozione" linkOrder="sv4#area14#page29#enu8#ln87">
+      <Field id="sv4#area14#page29#enu8#fld1" name="Sconto" type="decimal" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area14#page29#enu8#fld1#mnd81" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area14#page29#enu8#fld2" name="Scadenza" type="date" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area14#page29#enu8#fld2#mnd80" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area14#page29#enu8#fld5" name="Online" type="boolean" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area14#page29#enu8#fld5#mnd78" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area14#page29#enu8#fld13" name="In negozio" type="boolean" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area14#page29#enu8#fld13#mnd77" name="Mandatory22"/>
+        </VRules>
+      </Field>
       <Link id="sv4#area14#page29#enu8#ln87" name="Aggiungi" to="sv4#area14#opg10#cru6" type="normal" validate="true">
         <LinkParameter id="sv4#area14#page29#enu8#ln87#par97" name="Scadenza_scadenza" source="sv4#area14#page29#enu8#fld2" target="sv4#area14#opg10#cru6.ent6#att24"/>
         <LinkParameter id="sv4#area14#page29#enu8#ln87#par98" name="Sconto_sconto" source="sv4#area14#page29#enu8#fld1" target="sv4#area14#opg10#cru6.ent6#att23"/>
@@ -13,7 +29,11 @@
         <LinkParameter id="sv4#area14#page29#enu8#ln87#par102" name="Prodotto_PASSING" source="sv4#area14#page29#enu8#sfld3" passing="true"/>
         <LinkParameter id="sv4#area14#page29#enu8#ln87#par134" name="oid_PASSING" sourceLinkParameter="sv4#area14#page29#seu22#ln97#par105" passing="true"/>
       </Link>
-      <SelectionField id="sv4#area14#page29#enu8#sfld3" name="Prodotto" type="string"/>
+      <SelectionField id="sv4#area14#page29#enu8#sfld3" name="Prodotto" type="string">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area14#page29#enu8#sfld3#mnd79" name="Mandatory22"/>
+        </VRules>
+      </SelectionField>
     </EntryUnit>
     <SelectorUnit gr:x="20" gr:y="115" id="sv4#area14#page29#seu42" name="Seleziona prodotti" entity="ent4">
       <Link id="sv4#area14#page29#seu42#ln93" name="Flow93" to="sv4#area14#page29#enu8" type="transport" validate="true">

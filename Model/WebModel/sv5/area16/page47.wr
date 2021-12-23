@@ -1,13 +1,39 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="485" gr:y="105" id="sv5#area16#page47" name="Modifica prodotto">
   <ContentUnits>
     <EntryUnit gr:x="2" gr:y="120" id="sv5#area16#page47#enu13" name="Modifica prodotto" linkOrder="sv5#area16#page47#enu13#ln116" fieldOrder="sv5#area16#page47#enu13#fld35 sv5#area16#page47#enu13#fld37 sv5#area16#page47#enu13#sfld14 sv5#area16#page47#enu13#sfld16 sv5#area16#page47#enu13#sfld15 sv5#area16#page47#enu13#fld36 sv5#area16#page47#enu13#fld38" entity="ent4">
-      <Field id="sv5#area16#page47#enu13#fld35" name="Nome" type="string" modifiable="true" preloaded="true" attribute="ent4#att15"/>
-      <Field id="sv5#area16#page47#enu13#fld36" name="Descrizione" type="string" modifiable="true" preloaded="true" attribute="ent4#att16"/>
-      <Field id="sv5#area16#page47#enu13#fld37" name="Prezzo" type="decimal" modifiable="true" preloaded="true" attribute="ent4#att17"/>
-      <Field id="sv5#area16#page47#enu13#fld38" name="Immagine" type="blob" modifiable="true" attribute="ent4#att27"/>
-      <SelectionField id="sv5#area16#page47#enu13#sfld14" name="Fascia di prezzo" type="string"/>
-      <SelectionField id="sv5#area16#page47#enu13#sfld15" name="Nazione" type="string"/>
-      <SelectionField id="sv5#area16#page47#enu13#sfld16" name="Categoria" type="string"/>
+      <Field id="sv5#area16#page47#enu13#fld35" name="Nome" type="string" modifiable="true" preloaded="true" attribute="ent4#att15">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area16#page47#enu13#fld35#mnd63" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area16#page47#enu13#fld36" name="Descrizione" type="string" modifiable="true" preloaded="true" attribute="ent4#att16">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area16#page47#enu13#fld36#mnd59" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area16#page47#enu13#fld37" name="Prezzo" type="decimal" modifiable="true" preloaded="true" attribute="ent4#att17">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area16#page47#enu13#fld37#mnd64" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area16#page47#enu13#fld38" name="Immagine" type="blob" modifiable="true" attribute="ent4#att27">
+        <VRules/>
+      </Field>
+      <SelectionField id="sv5#area16#page47#enu13#sfld14" name="Fascia di prezzo" type="string">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area16#page47#enu13#sfld14#mnd60" name="Mandatory22"/>
+        </VRules>
+      </SelectionField>
+      <SelectionField id="sv5#area16#page47#enu13#sfld15" name="Nazione" type="string">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area16#page47#enu13#sfld15#mnd62" name="Mandatory22"/>
+        </VRules>
+      </SelectionField>
+      <SelectionField id="sv5#area16#page47#enu13#sfld16" name="Categoria" type="string">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area16#page47#enu13#sfld16#mnd58" name="Mandatory22"/>
+        </VRules>
+      </SelectionField>
       <Link id="sv5#area16#page47#enu13#ln116" name="Applica Modifiche" to="sv5#area16#opg17#mfu3" type="normal" validate="true">
         <LinkParameter id="sv5#area16#page47#enu13#ln116#par217" name="Descrizione_descrizione" source="sv5#area16#page47#enu13#fld36" target="sv5#area16#opg17#mfu3.ent4#att16"/>
         <LinkParameter id="sv5#area16#page47#enu13#ln116#par218" name="Immagine_immagine" source="sv5#area16#page47#enu13#fld38" target="sv5#area16#opg17#mfu3.ent4#att27"/>

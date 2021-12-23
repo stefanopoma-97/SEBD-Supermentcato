@@ -12,15 +12,21 @@
         </VRules>
       </Field>
       <Link id="sv5#area2#page38#enu10#ln86" name="Applica modifiche" to="sv5#area2#opg15#mfu2" automaticCoupling="true" type="normal" validate="true"/>
+      <Field id="sv5#area2#page38#enu10#fld69" name="Password" type="password" modifiable="true" attribute="password" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area2#page38#enu10#fld69#mnd24" name="Mandatory22"/>
+        </VRules>
+      </Field>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area2#page38#enu10">
+          <layout:Link link="sv5#area2#page38#enu10#ln86"/>
           <layout:Field field="sv5#area2#page38#enu10#fld22"/>
           <layout:Field field="sv5#area2#page38#enu10#fld23"/>
-          <layout:Link link="sv5#area2#page38#enu10#ln86"/>
+          <layout:Field field="sv5#area2#page38#enu10#fld69"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

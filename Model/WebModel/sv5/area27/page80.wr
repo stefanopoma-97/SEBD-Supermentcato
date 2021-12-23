@@ -1,7 +1,11 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="315" gr:y="775" id="sv5#area27#page80" name="Associa responsabile">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv5#area27#page80#enu25" name="Associa responsabile" entity="ent12" linkOrder="sv5#area27#page80#enu25#ln274">
-      <SelectionField id="sv5#area27#page80#enu25#sfld25" name="Negozio" type="string"/>
+      <SelectionField id="sv5#area27#page80#enu25#sfld25" name="Negozio" type="string">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area27#page80#enu25#sfld25#mnd35" name="Mandatory22"/>
+        </VRules>
+      </SelectionField>
       <Link id="sv5#area27#page80#enu25#ln274" name="Associa" to="sv5#area27#opg35#cnu14" type="normal" validate="true">
         <LinkParameter id="sv5#area27#page80#enu25#ln274#par348" name="Key [oid]_KeyCondition106 [oid] [Responsabile] [Source]" source="key.userOID" target="sv5#area27#opg35#cnu14#su171#kcond106.userOID"/>
         <LinkParameter id="sv5#area27#page80#enu25#ln274#par349" name="Negozio_KeyCondition107 [oid] [Negozio] [Target]" source="sv5#area27#page80#enu25#sfld25" target="sv5#area27#opg35#cnu14#su172#kcond107.ent3#att8"/>

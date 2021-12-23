@@ -1,7 +1,11 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1120" gr:y="0" id="sv4#area15#page34" name="Crea prodotto online">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="20" id="sv4#area15#page34#enu11" name="Inserisci dati prodotto online" linkOrder="sv4#area15#page34#enu11#ln42">
-      <SelectionField id="sv4#area15#page34#enu11#sfld11" name="Prodotti" type="string"/>
+      <SelectionField id="sv4#area15#page34#enu11#sfld11" name="Prodotti" type="string">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area15#page34#enu11#sfld11#mnd86" name="Mandatory22"/>
+        </VRules>
+      </SelectionField>
       <Link id="sv4#area15#page34#enu11#ln42" name="Metti online" to="sv4#area15#opg9#cru5" type="normal" validate="true">
         <LinkParameter id="sv4#area15#page34#enu11#ln42#par58" name="Prodotti_PASSING" source="sv4#area15#page34#enu11#sfld11" passing="true"/>
         <LinkParameter id="sv4#area15#page34#enu11#ln42#par65" name="oid_PASSING" sourceLinkParameter="sv4#area15#page34#seu6#ln62#par64" passing="true"/>

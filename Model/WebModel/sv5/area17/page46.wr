@@ -7,7 +7,11 @@
       </Link>
     </SelectorUnit>
     <EntryUnit gr:x="0" gr:y="0" id="sv5#area17#page46#enu17" name="Associa dipendente a negozio" entity="ent14" linkOrder="sv5#area17#page46#enu17#ln137">
-      <SelectionField id="sv5#area17#page46#enu17#sfld17" name="Negozio" type="string"/>
+      <SelectionField id="sv5#area17#page46#enu17#sfld17" name="Negozio" type="string">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area17#page46#enu17#sfld17#mnd46" name="Mandatory22"/>
+        </VRules>
+      </SelectionField>
       <Link id="sv5#area17#page46#enu17#ln137" name="Assegna" to="sv5#area17#opg22#cnu13" type="normal" validate="true">
         <LinkParameter id="sv5#area17#page46#enu17#ln137#par112" name="Key [oid]_KeyCondition54 [oid] [Responsabile] [Source]" source="key.userOID" target="sv5#area17#opg22#cnu13#su86#kcond54.userOID"/>
         <LinkParameter id="sv5#area17#page46#enu17#ln137#par113" name="Negozi_KeyCondition55 [oid] [Negozio] [Target]" source="sv5#area17#page46#enu17#sfld17" target="sv5#area17#opg22#cnu13#su88#kcond55.ent3#att8"/>
