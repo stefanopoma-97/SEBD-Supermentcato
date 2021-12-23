@@ -1,0 +1,49 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="979" id="mov1#opm5" name="Orari aperti oggi">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="160" id="mov1#opm5#icu5" name="Input Port">
+      <InputCollectorParameter id="mov1#opm5#icu5#icp7" name="Citt&#224;_PASSING"/>
+      <OKLink id="mov1#opm5#icu5#oln171" to="mov1#opm5#tmu22" name="OKFlow169">
+        <LinkParameter id="mov1#opm5#icu5#oln171#par752" name="Citt&#224;_PASSING" passing="true" source="mov1#opm5#icu5#icp7"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <KOCollectorUnit gr:x="1015" gr:y="0" id="mov1#opm5#kocu8" name="KO Port8"/>
+    <OKCollectorUnit gr:x="1015" gr:y="300" id="mov1#opm5#okcu5" name="OK Port5">
+      <OutputCollectorParameter id="mov1#opm5#okcu5#ocp7" name="Citt&#224;_PASSING"/>
+      <OutputCollectorParameter id="mov1#opm5#okcu5#ocp8" name="oid"/>
+    </OKCollectorUnit>
+    <ScriptUnit id="mov1#opm5#scu37" name="Giorno della settimana" gr:x="430" gr:y="20">
+      <ScriptUnitText xml:space="preserve">#input Date inputDate
+#output String dayOfWeek
+
+def day = inputDate[Calendar.DAY_OF_WEEK]
+def giorno
+giorno = "prova"
+if(day == 1){
+day = 7
+} else{
+day = day-1
+}
+dayOfWeek = day
+if (dayOfWeek == 1){
+	giorno = "Luned&#236;"
+}
+if (dayOfWeek == 2){
+	giorno = "Marted&#236;"
+}
+if (dayOfWeek == 3){
+	giorno = "Mercoled&#236;"
+}
+if (dayOfWeek == 4){
+	giorno = "Gioved&#236;"
+}
+if (dayOfWeek == 5){
+	giorno = "Venerd&#236;"
+}
+if (dayOfWeek == 6){
+	giorno = "Sabato"
+}
+if (dayOfWeek == 7){
+	giorno = "Domenica"
+}
+return [ "dayOfWeek": giorno ]
+</ScriptUnitText>      <OKLink id="mov1#opm5#scu37#oln174" name="Flow441" to="mov1#opm5#seu71">        <LinkParameter id="mov1#opm5#scu37#oln174#par759" name="dayOfWeek_giorno" source="result(dayOfWeek)" target="mov1#opm5#seu71#su194#acond18"/>        <LinkParameter id="mov1#opm5#scu37#oln174#par760" name="Current/Input Time_PASSING_Ora fine" sourceLinkParameter="mov1#opm5#tmu22#oln175#par764" target="mov1#opm5#seu71#su194#acond32"/>        <LinkParameter id="mov1#opm5#scu37#oln174#par761" name="Current/Input Time_PASSING_Ora inizio" sourceLinkParameter="mov1#opm5#tmu22#oln175#par764" target="mov1#opm5#seu71#su194#acond31"/>        <LinkParameter id="mov1#opm5#scu37#oln174#par762" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm5#tmu22#oln175#par765" passing="true"/>      </OKLink>      <KOLink id="mov1#opm5#scu37#kln135" to="mov1#opm5#kocu8" name="KOFlow114" gr:bendpoints="0,-20"/>    </ScriptUnit>    <TimeUnit id="mov1#opm5#tmu22" name="Data ora" gr:x="300" gr:y="20">      <OKLink id="mov1#opm5#tmu22#oln175" name="Flow440" to="mov1#opm5#scu37">        <LinkParameter id="mov1#opm5#tmu22#oln175#par763" name="Current/Input Date_inputDate" source="currentDate" target="mov1#opm5#scu37.inputDate"/>        <LinkParameter id="mov1#opm5#tmu22#oln175#par764" name="Current/Input Time_PASSING" source="currentTime" passing="true"/>        <LinkParameter id="mov1#opm5#tmu22#oln175#par765" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm5#icu5#oln171#par752" passing="true"/>      </OKLink>      <KOLink id="mov1#opm5#tmu22#kln137" to="mov1#opm5#kocu8" name="KOFlow113"/>    </TimeUnit>    <SelectorUnit id="mov1#opm5#seu71" name="Orari di oggi" gr:x="615" gr:y="0" entity="ent20">      <Selector id="mov1#opm5#seu71#su194" defaultPolicy="fill" booleanOperator="and">        <AttributesCondition id="mov1#opm5#seu71#su194#acond18" name="giorno" predicate="eq" booleanOperator="or" implied="false" attributes="ent20#att46"/>        <AttributesCondition id="mov1#opm5#seu71#su194#acond31" name="Ora inizio" predicate="lteq" booleanOperator="or" implied="false" attributes="ent20#att47"/>        <AttributesCondition id="mov1#opm5#seu71#su194#acond32" name="Ora fine" predicate="gteq" booleanOperator="or" implied="false" attributes="ent20#att48"/>      </Selector>      <OKLink id="mov1#opm5#seu71#oln176" to="mov1#opm5#okcu5" name="OKFlow131">        <LinkParameter id="mov1#opm5#seu71#oln176#par766" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm5#scu37#oln174#par762" target="mov1#opm5#okcu5#ocp7"/>        <LinkParameter id="mov1#opm5#seu71#oln176#par767" source="ent20#att43Array" name="oid_PASSING" target="mov1#opm5#okcu5#ocp8"/>      </OKLink>      <KOLink id="mov1#opm5#seu71#kln140" to="mov1#opm5#kocu8" name="KOFlow115" gr:bendpoints="0,40"/>    </SelectorUnit>  </OperationUnits></OperationModule>
