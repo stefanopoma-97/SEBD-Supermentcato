@@ -1,6 +1,6 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area42#opg52" name="Filtri" transaction="true" gr:x="0" gr:y="2480">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area42#opg52" name="Filtri" transaction="true" gr:x="40" gr:y="2310">
   <OperationUnits>
-    <SelectorUnit id="sv2#area42#opg52#seu137" name="Filtri ricerca" gr:x="50" gr:y="0" entity="ent8">
+    <SelectorUnit id="sv2#area42#opg52#seu137" name="Filtri ricerca" gr:x="290" gr:y="0" entity="ent8">
       <Selector id="sv2#area42#opg52#seu137#su288" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area42#opg52#seu137#su288#rcond116" name="Da categoria a prodotti" predicate="in" implied="true" role="rel4#role8.rel8#role16"/>
         <RelationshipRoleCondition id="sv2#area42#opg52#seu137#su288#rcond117" name="Da fascia a prodotti" predicate="in" implied="true" role="rel11#role21.rel8#role16"/>
@@ -12,10 +12,7 @@
       <KOLink id="sv2#area42#opg52#seu137#kln95" name="KOFlow46" to="sv2#area42#page115" automaticCoupling="true"/>
       <OKLink id="sv2#area42#opg52#seu137#oln95" name="Flow35" to="sv2#area42#page116#alt10#page83#pwu26" gr:bendpoints="475,-101,-420,-71" automaticCoupling="true"/>
     </SelectorUnit>
-    <SwitchUnit gr:x="430" gr:y="270" id="sv2#area42#opg52#switch1" name="nuovo?">
-      <Case value="Nuovo"/>
-    </SwitchUnit>
-    <SelectorUnit id="sv2#area42#opg52#seu55" name="Prodotti nuovi" gr:x="255" gr:y="310" entity="ent11">
+    <SelectorUnit id="sv2#area42#opg52#seu55" name="Prodotti nuovi" gr:x="15" gr:y="235" entity="ent11">
       <OKLink id="sv2#area42#opg52#seu55#oln124" name="OKFlow39" to="sv2#area42#opg52#seu61">
         <LinkParameter id="sv2#area42#opg52#seu55#oln124#par402" name="oid_Prodotto to Prodotto online [oid]" source="ent4#att14Array" target="sv2#area42#opg52#seu61#su191#rcond39.ent4#att14"/>
         <LinkParameter id="sv2#area42#opg52#seu55#oln124#par437" name="Categoria_PASSING" sourceLinkParameter="sv2#area42#opg52#inn5#oln140#par432" passing="true"/>
@@ -26,7 +23,7 @@
       </OKLink>
       <KOLink id="sv2#area42#opg52#seu55#kln27" name="KOFlow45" to="sv2#area42#page115" automaticCoupling="true"/>
     </SelectorUnit>
-    <SelectorUnit id="sv2#area42#opg52#seu61" name="Prodotti online nuovi" gr:x="0" gr:y="330" entity="ent8">
+    <SelectorUnit id="sv2#area42#opg52#seu61" name="Prodotti online nuovi" gr:x="195" gr:y="230" entity="ent8">
       <Selector id="sv2#area42#opg52#seu61#su191" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area42#opg52#seu61#su191#rcond39" name="Prodotto to Prodotto online" predicate="in" implied="false" role="rel8#role16"/>
       </Selector>
@@ -40,7 +37,7 @@
         <LinkParameter id="sv2#area42#opg52#seu61#oln135#par618" name="Nome_PASSING_Nome" sourceLinkParameter="sv2#area42#opg52#seu55#oln124#par459" target="sv2#area42#opg52#seu137#su288#acond49"/>
       </OKLink>
     </SelectorUnit>
-    <IsNotNullUnit gr:x="380" gr:y="130" id="sv2#area42#opg52#inn5" name="Is Not Null online">
+    <IsNotNullUnit gr:x="0" gr:y="10" id="sv2#area42#opg52#inn5" name="Is Not Null online">
       <OKLink id="sv2#area42#opg52#inn5#oln140" name="OKFlow132" to="sv2#area42#opg52#seu55">
         <LinkParameter id="sv2#area42#opg52#inn5#oln140#par432" name="Categoria_PASSING" sourceLinkParameter="sv2#area42#page116#enu36#ln387#par371" passing="true"/>
         <LinkParameter id="sv2#area42#opg52#inn5#oln140#par433" name="Fascia di prezzo_PASSING" sourceLinkParameter="sv2#area42#page116#enu36#ln387#par373" passing="true"/>

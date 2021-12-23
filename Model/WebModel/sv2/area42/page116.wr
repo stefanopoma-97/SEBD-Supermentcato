@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area42#page116" name="Pagina Elenco prodotti online" gr:x="825" gr:y="2240">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area42#page116" name="Pagina Elenco prodotti online" gr:x="0" gr:y="1625">
   <ContentUnits>
-    <EntryUnit id="sv2#area42#page116#enu36" name="Cerca" linkOrder="sv2#area42#page116#enu36#ln387 sv2#area42#page116#enu36#ln171" gr:x="110" gr:y="420">
+    <EntryUnit id="sv2#area42#page116#enu36" name="Cerca" linkOrder="sv2#area42#page116#enu36#ln387 sv2#area42#page116#enu36#ln171" gr:x="115" gr:y="420">
       <SelectionField id="sv2#area42#page116#enu36#sfld40" name="Categoria" type="string"/>
       <SelectionField id="sv2#area42#page116#enu36#sfld41" name="Fascia di prezzo" type="string"/>
       <SelectionField id="sv2#area42#page116#enu36#sfld42" name="Nazione" type="string"/>
@@ -16,26 +16,26 @@
       <Link id="sv2#area42#page116#enu36#ln171" name="Reset" to="sv2#area42#page116#alt10#page72" automaticCoupling="true" type="normal" validate="true"/>
       <MultiSelectionField id="sv2#area42#page116#enu36#msfld1" type="string" name="Prodotto nuovo"/>
     </EntryUnit>
-    <SelectorUnit id="sv2#area42#page116#seu139" name="Tutti i prodotti" gr:x="730" gr:y="25" entity="ent8">
+    <SelectorUnit id="sv2#area42#page116#seu139" name="Tutti i prodotti" gr:x="460" gr:y="15" entity="ent8">
       <Link id="sv2#area42#page116#seu139#ln389" name="Flow55" to="sv2#area42#page116#seu142" type="transport" automaticCoupling="true" validate="true"/>
       <Selector id="sv2#area42#page116#seu139#su292" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area42#page116#seu139#su292#rcond120" name="Negozio to ProdottoOnline" predicate="in" implied="false" role="rel7#role14"/>
       </Selector>
       <Link id="sv2#area42#page116#seu139#ln246" name="Flow15" to="sv2#area42#page116#alt10#page72#pwu23" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <SelectorUnit id="sv2#area42#page116#seu140" name="Categorie" gr:x="0" gr:y="535" entity="ent5">
+    <SelectorUnit id="sv2#area42#page116#seu140" name="Categorie" gr:x="30" gr:y="525" entity="ent5">
       <Link id="sv2#area42#page116#seu140#ln390" name="Flow27" to="sv2#area42#page116#enu36" type="transport" validate="true">
         <LinkParameter id="sv2#area42#page116#seu140#ln390#par566" name="nome_Categoria [label]" source="ent5#att20Array" target="sv2#area42#page116#enu36#sfld40_label"/>
         <LinkParameter id="sv2#area42#page116#seu140#ln390#par567" name="oid_Categoria [output]" source="ent5#att19Array" target="sv2#area42#page116#enu36#sfld40_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit id="sv2#area42#page116#seu141" name="Fasce di prezzo" gr:x="215" gr:y="545" entity="ent15">
+    <SelectorUnit id="sv2#area42#page116#seu141" name="Fasce di prezzo" gr:x="215" gr:y="520" entity="ent15">
       <Link id="sv2#area42#page116#seu141#ln391" name="Flow28" to="sv2#area42#page116#enu36" type="transport" validate="true">
         <LinkParameter id="sv2#area42#page116#seu141#ln391#par568" name="fascia_Fascia di prezzo [label]" source="ent15#att32Array" target="sv2#area42#page116#enu36#sfld41_label"/>
         <LinkParameter id="sv2#area42#page116#seu141#ln391#par569" name="oid_Fascia di prezzo [output]" source="ent15#att30Array" target="sv2#area42#page116#enu36#sfld41_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit id="sv2#area42#page116#seu142" name="Nazioni" gr:x="530" gr:y="245" entity="ent19">
+    <SelectorUnit id="sv2#area42#page116#seu142" name="Nazioni" gr:x="435" gr:y="175" entity="ent19">
       <Selector id="sv2#area42#page116#seu142#su294" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area42#page116#seu142#su294#rcond121" name="Prodotti to Nazione" role="rel8#role15.rel18#role35" predicate="in" implied="false"/>
       </Selector>
@@ -45,16 +45,16 @@
         <LinkParameter id="sv2#area42#page116#seu142#ln393#par430" name="Nuovo_Prodotto nuovo [label]" sourceValue="Nuovo" target="sv2#area42#page116#enu36#msfld1_label"/>
       </Link>
     </SelectorUnit>
-    <GetUnit id="sv2#area42#page116#gtu32" name="Info utente" gr:x="1215" gr:y="365" contextParameters="UserCtxParam">
-      <Link id="sv2#area42#page116#gtu32#ln394" name="Flow122" to="sv2#area42#page116#seu143" type="transport" validate="true" gr:bendpoints="86,175,-309,-15">
+    <GetUnit id="sv2#area42#page116#gtu32" name="Info utente" gr:x="825" gr:y="230" contextParameters="UserCtxParam">
+      <Link id="sv2#area42#page116#gtu32#ln394" name="Flow122" to="sv2#area42#page116#seu143" type="transport" validate="true" gr:bendpoints="-25,-85,60,120">
         <LinkParameter id="sv2#area42#page116#gtu32#ln394#par572" name="UserCtxParam.oid_Utento to Negozio preferito [oid]" source="sv2#area42#page116#gtu32.UserCtxParam" target="sv2#area42#page116#seu143#su295#rcond122.userOID"/>
       </Link>
     </GetUnit>
-    <SelectorUnit id="sv2#area42#page116#seu143" name="Dettagli negozio preferito" gr:x="995" gr:y="135" entity="ent3" distinctAttributes="ent3#att13 ent3#att12 ent3#att11 ent3#att9 rel2#role3.ent2#att7 rel2#role3.ent2#att6">
+    <SelectorUnit id="sv2#area42#page116#seu143" name="Dettagli negozio preferito" gr:x="775" gr:y="30" entity="ent3" distinctAttributes="ent3#att13 ent3#att12 ent3#att11 ent3#att9 rel2#role3.ent2#att7 rel2#role3.ent2#att6">
       <Selector id="sv2#area42#page116#seu143#su295" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area42#page116#seu143#su295#rcond122" name="Utento to Negozio preferito" role="rel15#role30" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv2#area42#page116#seu143#ln395" name="Flow220" to="sv2#area42#page116#enu36" type="transport" validate="true" gr:bendpoints="-380,405,570,141">
+      <Link id="sv2#area42#page116#seu143#ln395" name="Flow220" to="sv2#area42#page116#enu36" type="transport" validate="true" gr:bendpoints="-308,366,416,-4">
         <LinkParameter id="sv2#area42#page116#seu143#ln395#par573" name="oid_PASSING" source="ent3#att8Array" passing="true"/>
       </Link>
       <Link id="sv2#area42#page116#seu143#ln396" name="Flow229" to="sv2#area42#page116#seu139" type="transport" automaticCoupling="true" validate="true"/>
@@ -216,7 +216,7 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Alternative gr:x="75" gr:y="0" id="sv2#area42#page116#alt10" name="Liste" defaultPage="sv2#area42#page116#alt10#page72">
+  <Alternative gr:x="0" gr:y="0" id="sv2#area42#page116#alt10" name="Liste" defaultPage="sv2#area42#page116#alt10#page72">
     <Page gr:x="0" gr:y="0" id="sv2#area42#page116#alt10#page72" name="Lista">
       <ContentUnits>
         <PowerIndexUnit id="sv2#area42#page116#alt10#page72#pwu23" name="Lista Prodotti online del tuo negozio preferito" linkOrder="sv2#area42#page116#alt10#page72#pwu23#ln242" gr:x="0" gr:y="0" entity="ent8" sortable="true" checkable="false" useCountQuery="false" displayAttributes="rel8#role15.ent4#att15 rel8#role15.ent4#att59 rel8#role15.ent4#att17 rel8#role15.ent4#att53">

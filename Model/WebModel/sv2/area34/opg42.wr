@@ -1,6 +1,6 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area34#opg42" name="Conferma spesa" transaction="true" gr:x="0" gr:y="1620">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area34#opg42" name="Conferma spesa" transaction="true" gr:x="20" gr:y="1375">
   <OperationUnits>
-    <ModifyUnit id="sv2#area34#opg42#mfu11" name="Modifica spesa" gr:x="295" gr:y="0" entity="ent9">
+    <ModifyUnit id="sv2#area34#opg42#mfu11" name="Modifica spesa" gr:x="200" gr:y="0" entity="ent9">
       <Selector id="sv2#area34#opg42#mfu11#su240" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area34#opg42#mfu11#su240#kcond142" name="KeyCondition106" predicate="in" implied="false"/>
       </Selector>
@@ -10,14 +10,14 @@
       </OKLink>
       <KOLink id="sv2#area34#opg42#mfu11#kln74" name="KOFlow62" to="sv2#area34#page97#mssu36" automaticCoupling="true"/>
     </ModifyUnit>
-    <CreateUnit id="sv2#area34#opg42#cru15" name="Stato In Attesa" gr:x="525" gr:y="10" entity="ent10">
+    <CreateUnit id="sv2#area34#opg42#cru15" name="Stato In Attesa" gr:x="360" gr:y="5" entity="ent10">
       <KOLink id="sv2#area34#opg42#cru15#kln75" name="KOFlow64" to="sv2#area34#page97#mssu36" automaticCoupling="true"/>
       <OKLink id="sv2#area34#opg42#cru15#oln89" name="OKFlow59" to="sv2#area34#opg42#cnu16">
         <LinkParameter id="sv2#area34#opg42#cru15#oln89#par468" name="oid_KeyCondition107 [oid] [Stato ordine] [Source]" source="ent10#att37Array" target="sv2#area34#opg42#cnu16#su241#kcond143.ent10#att37"/>
         <LinkParameter id="sv2#area34#opg42#cru15#oln89#par469" name="oid_PASSING_KeyCondition108 [oid] [Spesa] [Target]" sourceLinkParameter="sv2#area34#opg42#mfu11#oln88#par467" target="sv2#area34#opg42#cnu16#su242#kcond145.ent9#att33"/>
       </OKLink>
     </CreateUnit>
-    <ConnectUnit id="sv2#area34#opg42#cnu16" name="Spesa-Stato" gr:x="755" gr:y="20" relationship="rel12#role24">
+    <ConnectUnit id="sv2#area34#opg42#cnu16" name="Spesa-Stato" gr:x="515" gr:y="0" relationship="rel12#role24">
       <SourceSelector id="sv2#area34#opg42#cnu16#su241" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area34#opg42#cnu16#su241#kcond143" name="KeyCondition107" predicate="in" implied="false"/>
       </SourceSelector>
@@ -27,10 +27,10 @@
       <KOLink id="sv2#area34#opg42#cnu16#kln76" name="KOFlow65" to="sv2#area34#page97#mssu36" automaticCoupling="true"/>
       <OKLink id="sv2#area34#opg42#cnu16#oln90" name="OKFlow60" to="sv2#area34#opg42#rstu2" gr:bendpoints="-138,103,127,-62"/>
     </ConnectUnit>
-    <ResetUnit id="sv2#area34#opg42#rstu2" name="reset" gr:x="515" gr:y="205" contextParameters="ctx1">
+    <ResetUnit id="sv2#area34#opg42#rstu2" name="reset" gr:x="695" gr:y="20" contextParameters="ctx1">
       <OKLink id="sv2#area34#opg42#rstu2#oln91" name="OKFlow39" to="sv2#area34#page98" automaticCoupling="true"/>
     </ResetUnit>
-    <SelectorUnit gr:x="0" gr:y="145" id="sv2#area34#opg42#seu64" name="Righe" entity="ent7">
+    <SelectorUnit gr:x="0" gr:y="135" id="sv2#area34#opg42#seu64" name="Righe" entity="ent7">
       <Selector id="sv2#area34#opg42#seu64#su188" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area34#opg42#seu64#su188#rcond62" name="RoleCondition62" predicate="in" implied="false" role="rel10#role20"/>
       </Selector>
@@ -40,7 +40,7 @@
         <LinkParameter id="sv2#area34#opg42#seu64#oln162#par685" name="oid_PASSING" sourceLinkParameter="sv2#area34#page96#enu31#ln258#par682" passing="true"/>
       </OKLink>
     </SelectorUnit>
-    <IsNotNullUnit gr:x="245" gr:y="170" id="sv2#area34#opg42#inn10" name="Is Not Null10">
+    <IsNotNullUnit gr:x="175" gr:y="150" id="sv2#area34#opg42#inn10" name="Is Not Null10">
       <OKLink id="sv2#area34#opg42#inn10#oln163" name="OKFlow163" to="sv2#area34#opg42#mfu11">
         <LinkParameter id="sv2#area34#opg42#inn10#oln163#par686" name="Data_PASSING_data di spedizione" sourceLinkParameter="sv2#area34#opg42#seu64#oln162#par684" target="sv2#area34#opg42#mfu11.ent9#att36"/>
         <LinkParameter id="sv2#area34#opg42#inn10#oln163#par687" name="oid_PASSING_KeyCondition106 [oid]" sourceLinkParameter="sv2#area34#opg42#seu64#oln162#par685" target="sv2#area34#opg42#mfu11#su240#kcond142.ent9#att33"/>

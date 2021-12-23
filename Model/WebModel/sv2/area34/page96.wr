@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area34#page96" name="Conferma spesa" gr:x="295" gr:y="440" linkOrder="sv2#area34#page96#ln244" layout:layoutManager="grid">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area34#page96" name="Conferma spesa" gr:x="35" gr:y="405" linkOrder="sv2#area34#page96#ln244" layout:layoutManager="grid">
   <ContentUnits>
-    <DataUnit id="sv2#area34#page96#dau38" name="Spesa" linkOrder="sv2#area34#page96#dau38#ln299 sv2#area34#page96#dau38#ln240 sv2#area34#page96#dau38#ln243" gr:x="70" gr:y="0" entity="ent9" displayAttributes="ent9#att35 rel13#role26.userName rel17#role33.ent3#att9">
+    <DataUnit id="sv2#area34#page96#dau38" name="Spesa" linkOrder="sv2#area34#page96#dau38#ln299 sv2#area34#page96#dau38#ln240 sv2#area34#page96#dau38#ln243" gr:x="10" gr:y="0" entity="ent9" displayAttributes="ent9#att35 rel13#role26.userName rel17#role33.ent3#att9">
       <Selector id="sv2#area34#page96#dau38#su231" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area34#page96#dau38#su231#kcond138" name="KeyCondition103" predicate="in" implied="false"/>
       </Selector>
@@ -25,7 +25,7 @@
         <LinkParameter id="sv2#area34#page96#dau38#ln243#par428" name="oid_RoleCondition39 [oid]" source="data.ent9#att33" target="sv2#area34#miu4.mov1#opm2#icu2#icp2"/>
       </Link>
     </DataUnit>
-    <PowerIndexUnit id="sv2#area34#page96#pwu9" name="Righe d'ordine" linkOrder="sv2#area34#page96#pwu9#ln300 sv2#area34#page96#pwu9#ln256 sv2#area34#page96#pwu9#ln257" gr:x="265" gr:y="5" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att40 ent7#att29 ent7#att10 ent7#att61 rel9#role17.rel8#role15.ent4#att15 ent7#att62">
+    <PowerIndexUnit id="sv2#area34#page96#pwu9" name="Righe d'ordine" linkOrder="sv2#area34#page96#pwu9#ln300 sv2#area34#page96#pwu9#ln256 sv2#area34#page96#pwu9#ln257" gr:x="190" gr:y="5" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att40 ent7#att29 ent7#att10 ent7#att61 rel9#role17.rel8#role15.ent4#att15 ent7#att62">
       <Selector id="sv2#area34#page96#pwu9#su232" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area34#page96#pwu9#su232#rcond89" name="RoleCondition63" predicate="in" implied="false" role="rel10#role20"/>
       </Selector>
@@ -39,7 +39,7 @@
         <LinkParameter id="sv2#area34#page96#pwu9#ln257#par678" name="quantit&#224;_quantita" source="data[].ent7#att29" target="sv2#area34#miu9.mov1#opm3#icu3#icp4"/>
       </Link>
     </PowerIndexUnit>
-    <EntryUnit id="sv2#area34#page96#enu31" name="Conferma" linkOrder="sv2#area34#page96#enu31#ln258" gr:x="0" gr:y="310" entity="ent9">
+    <EntryUnit id="sv2#area34#page96#enu31" name="Conferma" linkOrder="sv2#area34#page96#enu31#ln258" gr:x="0" gr:y="315" entity="ent9">
       <Field id="sv2#area34#page96#enu31#fld76" name="Data" type="date" modifiable="true" attribute="ent9#att36"/>
       <Link id="sv2#area34#page96#enu31#ln258" name="Flow258" to="sv2#area34#opg42#seu64" type="normal" validate="true">
         <LinkParameter id="sv2#area34#page96#enu31#ln258#par680" name="Key [oid]_RoleCondition62 [oid]" source="key.ent9#att33" target="sv2#area34#opg42#seu64#su188#rcond62.ent9#att33"/>
@@ -47,18 +47,18 @@
         <LinkParameter id="sv2#area34#page96#enu31#ln258#par682" name="oid_PASSING" sourceLinkParameter="sv2#area34#page96#dau38#ln298#par456" passing="true"/>
       </Link>
     </EntryUnit>
-    <DataUnit id="sv2#area34#page96#dau30" name="Indirizzo di spedizione" gr:x="190" gr:y="230" entity="ent2" displayAttributes="ent2#att7 ent2#att6 rel1#role2.ent1#att2">
+    <DataUnit id="sv2#area34#page96#dau30" name="Indirizzo di spedizione" gr:x="175" gr:y="160" entity="ent2" displayAttributes="ent2#att7 ent2#att6 rel1#role2.ent1#att2">
       <Selector id="sv2#area34#page96#dau30#su167" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area34#page96#dau30#su167#rcond55" name="User to Indirizzo" predicate="in" implied="false" role="rel3#role5"/>
       </Selector>
     </DataUnit>
-    <DataUnit id="sv2#area34#page96#dau33" name="Negozio scelto" gr:x="30" gr:y="165" entity="ent3" displayAttributes="ent3#att13 ent3#att12 ent3#att9">
+    <DataUnit id="sv2#area34#page96#dau33" name="Negozio scelto" gr:x="30" gr:y="170" entity="ent3" displayAttributes="ent3#att13 ent3#att12 ent3#att9">
       <Selector id="sv2#area34#page96#dau33#su170" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area34#page96#dau33#su170#kcond120" name="KeyCondition41" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <MultiMessageUnit gr:x="400" gr:y="140" id="sv2#area34#page96#mssu25" name="Totale"/>
-    <MultiMessageUnit gr:x="450" gr:y="280" id="sv2#area34#page96#mssu27" name="Stai risparmiando"/>
+    <MultiMessageUnit gr:x="405" gr:y="30" id="sv2#area34#page96#mssu25" name="Totale"/>
+    <MultiMessageUnit gr:x="400" gr:y="135" id="sv2#area34#page96#mssu27" name="Stai risparmiando"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

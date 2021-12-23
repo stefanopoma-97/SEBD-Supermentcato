@@ -1,6 +1,6 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area34" name="Area spese" defaultPage="sv2#area34#page98" landmark="true" gr:x="10180" gr:y="915">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area34" name="Area spese" defaultPage="sv2#area34#page98" landmark="true" gr:x="7865" gr:y="770">
   <OperationUnits>
-    <ModuleInstanceUnit gr:x="1395" gr:y="1015" id="sv2#area34#miu1" moduleId="mov1#opm1" name="Totale da ID Spesa">
+    <ModuleInstanceUnit gr:x="1300" gr:y="990" id="sv2#area34#miu1" moduleId="mov1#opm1" name="Totale da ID Spesa">
       <KOLink id="sv2#area34#miu1#kln58" to="sv2#area34#page97#mssu36" name="KOFlow27" codeRef="mov1#opm1#kocu1">
         <LinkParameter id="sv2#area34#miu1#kln58#par372" name="Errore calcolo totale_Shown Messages" target="sv2#area34#page97#mssu36.shownMessages" source="mov1#opm1#kocu1#ocp2"/>
       </KOLink>
@@ -9,7 +9,7 @@
         <LinkParameter id="sv2#area34#miu1#oln81#par370" source="mov1#opm1#okcu1#ocp1" name="totale_Shown Messages" target="sv2#area34#page99#mssu24.shownMessages"/>
       </OKLink>
     </ModuleInstanceUnit>
-    <ModuleInstanceUnit id="sv2#area34#miu2" gr:x="610" gr:y="1200" moduleId="mov1#opm1" name="Totale da ID Spesa">
+    <ModuleInstanceUnit id="sv2#area34#miu2" gr:x="420" gr:y="915" moduleId="mov1#opm1" name="Totale da ID Spesa">
       <KOLink id="sv2#area34#miu2#kln67" name="KOFlow27" to="sv2#area34#page97#mssu36" codeRef="mov1#opm1#kocu1">
         <LinkParameter id="sv2#area34#miu2#kln67#par382" name="Errore calcolo totale_Shown Messages" source="mov1#opm1#kocu1#ocp2" target="sv2#area34#page97#mssu36.shownMessages"/>
       </KOLink>
@@ -18,7 +18,7 @@
         <LinkParameter id="sv2#area34#miu2#oln105#par679" name="totale_Shown Messages" source="mov1#opm1#okcu1#ocp1" target="sv2#area34#page96#mssu25.shownMessages"/>
       </OKLink>
     </ModuleInstanceUnit>
-    <ModuleInstanceUnit gr:x="1725" gr:y="1075" id="sv2#area34#miu3" moduleId="mov1#opm2">
+    <ModuleInstanceUnit gr:x="1625" gr:y="1150" id="sv2#area34#miu3" moduleId="mov1#opm2">
       <KOLink id="sv2#area34#miu3#kln118" to="sv2#area34#page97#mssu36" name="KOFlow70" codeRef="mov1#opm2#kocu4">
         <LinkParameter id="sv2#area34#miu3#kln118#par407" name="Errore calcolo_Shown Messages" target="sv2#area34#page97#mssu36.shownMessages" source="mov1#opm2#kocu4#ocp4"/>
       </KOLink>
@@ -32,7 +32,7 @@
         <LinkParameter id="sv2#area34#miu3#kln119#par409" name="Errore righe_Shown Messages" target="sv2#area34#page97#mssu36.shownMessages" source="mov1#opm2#kocu5#ocp6"/>
       </KOLink>
     </ModuleInstanceUnit>
-    <ModuleInstanceUnit id="sv2#area34#miu4" gr:x="250" gr:y="1095" moduleId="mov1#opm2">
+    <ModuleInstanceUnit id="sv2#area34#miu4" gr:x="100" gr:y="925" moduleId="mov1#opm2">
       <KOLink id="sv2#area34#miu4#kln126" name="KOFlow70" to="sv2#area34#page97#mssu36" codeRef="mov1#opm2#kocu4">
         <LinkParameter id="sv2#area34#miu4#kln126#par423" name="Errore calcolo_Shown Messages" source="mov1#opm2#kocu4#ocp4" target="sv2#area34#page97#mssu36.shownMessages"/>
       </KOLink>
@@ -46,11 +46,11 @@
         <LinkParameter id="sv2#area34#miu4#kln128#par426" name="Errore righe_Shown Messages" source="mov1#opm2#kocu5#ocp6" target="sv2#area34#page97#mssu36.shownMessages"/>
       </KOLink>
     </ModuleInstanceUnit>
-    <ModuleInstanceUnit gr:x="1010" gr:y="610" id="sv2#area34#miu8" action="true" moduleId="mov1#opm4">
+    <ModuleInstanceUnit gr:x="855" gr:y="595" id="sv2#area34#miu8" action="true" moduleId="mov1#opm4">
       <KOLink id="sv2#area34#miu8#kln142" name="KOFlow142" to="sv2#area34#page97#mssu36" automaticCoupling="true"/>
       <OKLink id="sv2#area34#miu8#oln160" name="OKFlow160" to="sv2#area34#page96" automaticCoupling="true"/>
     </ModuleInstanceUnit>
-    <ModuleInstanceUnit gr:x="1055" gr:y="750" id="sv2#area34#miu9" action="true" moduleId="mov1#opm3">
+    <ModuleInstanceUnit gr:x="730" gr:y="745" id="sv2#area34#miu9" action="true" moduleId="mov1#opm3">
       <KOLink id="sv2#area34#miu9#kln143" name="KOFlow143" to="sv2#area34#page97#mssu36" automaticCoupling="true"/>
       <OKLink id="sv2#area34#miu9#oln161" name="OKFlow161" to="sv2#area34#page96" automaticCoupling="true"/>
     </ModuleInstanceUnit>
