@@ -6,14 +6,14 @@
     <Property name="applicationServer">Tomcat</Property>
     <Property name="cloudDeploy">false</Property>
     <Property name="commonsLibDir">D:\WebRatio\WebRatio\plugins\com.webratio.commons.libs_7.2.18.201903231300\lib</Property>
-    <Property name="dbConfigPath">C:\Users\stefa\AppData\Local\Temp\WRDBConfig3885806922700363447.xml</Property>
+    <Property name="dbConfigPath">C:\Users\stefa\AppData\Local\Temp\WRDBConfig4556682015778644763.xml</Property>
     <Property name="defaultEncoding"></Property>
     <Property name="deployCorePluginDir">D:\WebRatio\WebRatio\configuration\org.eclipse.osgi\bundles\49\1\.cp</Property>
     <Property name="derbySystemHome">D:\WebRatio\workspace\.metadata\.plugins\com.webratio.commons.db\derby</Property>
     <Property name="enterpriseProjectDir"></Property>
-    <Property name="eventSocketPort">49950</Property>
+    <Property name="eventSocketPort">49996</Property>
     <Property name="excludedProjects" type="list"></Property>
-    <Property name="generationTime">202112231209</Property>
+    <Property name="generationTime">202112231216</Property>
     <Property name="helpersPluginDir">D:\WebRatio\WebRatio\plugins\com.webratio.generator.helpers_7.2.18.201903231300</Property>
     <Property name="hostAlwaysAllowed">false</Property>
     <Property name="i18nBundleKeysFile" type="file"></Property>
@@ -25,7 +25,7 @@
     <Property name="phases">All</Property>
     <Property name="projectDir">D:\WebRatio\workspace\SEBD-Supermentcato</Property>
     <Property name="projectName">SEBD-Supermentcato</Property>
-    <Property name="projectPath">C:\Users\stefa\AppData\Local\Temp\Project6278996246382962393.wr</Property>
+    <Property name="projectPath">C:\Users\stefa\AppData\Local\Temp\Project7496011179742874447.wr</Property>
     <Property name="projectType">WEBPROJECT</Property>
     <Property name="rootModuleName"></Property>
     <Property name="uiPluginDir">D:\WebRatio\WebRatio\plugins\com.webratio.ide.ui_7.2.18.201903231300</Property>

@@ -13,7 +13,7 @@
     </SelectorUnit>
     <SelectorUnit id="sv2#area39#seu122" name="Negozi nuovi" gr:x="570" gr:y="615" entity="ent18">
       <KOLink id="sv2#area39#seu122#kln90" name="KOFlow3" to="sv2#area39#page112" automaticCoupling="true"/>
-      <OKLink id="sv2#area39#seu122#oln73" name="OKFlow6" to="sv2#area37#page107#alt8#page60#pwu43" automaticCoupling="true" gr:bendpoints="124,472,-267,-398"/>
+      <OKLink id="sv2#area39#seu122#oln73" name="OKFlow6" to="sv2#area37#page107#alt8#page67#pwu44" automaticCoupling="true" gr:bendpoints="124,472,-267,-398"/>
     </SelectorUnit>
   </OperationUnits>
 </Area>

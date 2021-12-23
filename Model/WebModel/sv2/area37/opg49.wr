@@ -1,8 +1,0 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area37#opg49" name="Negozi nuovi" transaction="true" gr:x="295" gr:y="1350">
-  <OperationUnits>
-    <SelectorUnit id="sv2#area37#opg49#seu119" name="Negozi nuovi" gr:x="0" gr:y="0" entity="ent18">
-      <KOLink id="sv2#area37#opg49#seu119#kln87" name="KOFlow7" to="sv2#area37#page108#mssu21" automaticCoupling="true"/>
-      <OKLink id="sv2#area37#opg49#seu119#oln72" name="OKFlow5" to="sv2#area37#page107#alt8#page67#pwu44" automaticCoupling="true"/>
-    </SelectorUnit>
-  </OperationUnits>
-</OperationGroup>
