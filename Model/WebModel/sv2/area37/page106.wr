@@ -42,7 +42,7 @@
     <PowerIndexUnit id="sv2#area37#page106#pwu35" name="Orario" gr:x="395" gr:y="145" entity="ent20" displayAttributes="ent20#att46 ent20#att48 ent20#att47" sortable="true" checkable="false" useCountQuery="false">
       <Selector id="sv2#area37#page106#pwu35#su94" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area37#page106#pwu35#su94#rcond36" name="RoleCondition21" role="rel19#role38" predicate="in" implied="false"/>
-        <KeyCondition id="sv2#area37#page106#pwu35#su94#kcond48" name="KeyCondition181" predicate="notIn" implied="false"/>
+        <KeyCondition id="sv2#area37#page106#pwu35#su94#kcond48" name="KeyCondition181" predicate="notIn" implied="true"/>
       </Selector>
     </PowerIndexUnit>
     <PowerIndexUnit id="sv2#area37#page106#pwu36" name="Orario oggi" gr:x="720" gr:y="150" entity="ent20" displayAttributes="ent20#att46 ent20#att48 ent20#att47" sortable="true" checkable="false" useCountQuery="false" linkOrder="sv2#area37#page106#pwu36#ln162">

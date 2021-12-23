@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="75" gr:y="210" id="sv1#area10#page13" name="Pagina dettaglio negozio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="75" gr:y="230" id="sv1#area10#page13" name="Pagina dettaglio negozio">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv1#area10#page13#dau4" name="Dettagli negozio" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13">
       <Selector id="sv1#area10#page13#dau4#su18" defaultPolicy="fill" booleanOperator="and">
@@ -13,7 +13,7 @@
     <PowerIndexUnit id="sv1#area10#page13#pwu1" entity="ent20" displayAttributes="ent20#att46 ent20#att48 ent20#att47" sortable="true" checkable="false" useCountQuery="false" gr:x="305" gr:y="135" name="Orario">
       <Selector id="sv1#area10#page13#pwu1#su29" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area10#page13#pwu1#su29#rcond22" role="rel19#role38" predicate="in" implied="false" name="RoleCondition21"/>
-        <KeyCondition id="sv1#area10#page13#pwu1#su29#kcond181" name="KeyCondition181" predicate="notIn" implied="false"/>
+        <KeyCondition id="sv1#area10#page13#pwu1#su29#kcond181" name="KeyCondition181" predicate="notIn" implied="true"/>
       </Selector>
     </PowerIndexUnit>
     <IndexUnit gr:x="125" gr:y="100" id="sv1#area10#page13#inu13" name="Promozioni attive" entity="ent6" displayAttributes="ent6#att41 ent6#att24 ent6#att23" linkOrder="sv1#area10#page13#inu13#ln103">
