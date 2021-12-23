@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area39#opg50" name="Negozi vicini" transaction="true" gr:x="745" gr:y="1500">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area39#opg50" name="Negozi vicini" transaction="true" gr:x="535" gr:y="730">
   <OperationUnits>
     <SelectorUnit id="sv2#area39#opg50#seu123" name="Negozi vicini" gr:x="0" gr:y="270" entity="ent3">
       <Selector id="sv2#area39#opg50#seu123#su270" defaultPolicy="fill" booleanOperator="and">

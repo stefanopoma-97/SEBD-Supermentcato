@@ -1,0 +1,17 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="1079" id="mov1#opm6" name="Aperto dato un orario">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#opm6#icu6" name="Input Port">
+      <InputCollectorParameter id="mov1#opm6#icu6#icp8" name="oid_PASSING"/>
+      <OKLink id="mov1#opm6#icu6#oln179" to="mov1#opm6#opg39#tmu23" validate="true" name="&#232; aperto?">
+        <LinkParameter id="mov1#opm6#icu6#oln179#par775" source="mov1#opm6#icu6#icp8" name="oid_PASSING" passing="true"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="700" gr:y="0" id="mov1#opm6#okcu6" name="OK Port6">
+      <OutputCollectorParameter id="mov1#opm6#okcu6#ocp9" name="Aperto_Shown Messages"/>
+    </OKCollectorUnit>
+    <KOCollectorUnit gr:x="700" gr:y="600" id="mov1#opm6#kocu10" name="KO Port10"/>
+    <KOCollectorUnit gr:x="700" gr:y="300" id="mov1#opm6#kocu9" name="KO Port9">
+      <OutputCollectorParameter id="mov1#opm6#kocu9#ocp10" name="Chiuso_Shown Messages"/>
+    </KOCollectorUnit>
+  </OperationUnits>
+</OperationModule>

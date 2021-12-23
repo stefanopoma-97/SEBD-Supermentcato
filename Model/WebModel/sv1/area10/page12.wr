@@ -1,9 +1,9 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="575" id="sv1#area10#page12" name="Pagina negozi">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="560" id="sv1#area10#page12" name="Pagina negozi">
   <ContentUnits>
-    <SelectorUnit gr:x="315" gr:y="35" id="sv1#area10#page12#seu17" name="Negozi" entity="ent3">
+    <SelectorUnit gr:x="305" gr:y="35" id="sv1#area10#page12#seu17" name="Negozi" entity="ent3">
       <Link id="sv1#area10#page12#seu17#ln10" name="Flow45" to="sv1#area10#page12#alt2#page49#pwu24" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <EntryUnit gr:x="370" gr:y="425" id="sv1#area10#page12#enu1" name="Cerca" linkOrder="sv1#area10#page12#enu1#ln32 sv1#area10#page12#enu1#ln167">
+    <EntryUnit gr:x="360" gr:y="425" id="sv1#area10#page12#enu1" name="Cerca" linkOrder="sv1#area10#page12#enu1#ln32 sv1#area10#page12#enu1#ln167">
       <SelectionField id="sv1#area10#page12#enu1#sfld9" name="Citt&#224;" type="string"/>
       <Link id="sv1#area10#page12#enu1#ln32" name="Cerca" to="sv1#area10#opg3#inn13" type="normal" validate="true">
         <LinkParameter id="sv1#area10#page12#enu1#ln32#par722" name="Negozio nuovo_Input" source="sv1#area10#page12#enu1#msfld5" target="sv1#area10#opg3#inn13.isnotnull"/>
@@ -14,7 +14,7 @@
       <MultiSelectionField id="sv1#area10#page12#enu1#msfld5" name="Negozio nuovo" type="string"/>
       <MultiSelectionField id="sv1#area10#page12#enu1#msfld9" name="Orario" type="string"/>
     </EntryUnit>
-    <SelectorUnit gr:x="135" gr:y="405" id="sv1#area10#page12#seu5" name="Citt&#224; con negozi" entity="ent1">
+    <SelectorUnit gr:x="125" gr:y="405" id="sv1#area10#page12#seu5" name="Citt&#224; con negozi" entity="ent1">
       <Selector id="sv1#area10#page12#seu5#su22" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area10#page12#seu5#su22#rcond7" name="NegoziIndirizzoCitt&#224;" role="rel2#role3.rel1#role2" predicate="in" implied="false"/>
       </Selector>
@@ -27,7 +27,7 @@
         <LinkParameter id="sv1#area10#page12#seu5#ln31#par729" name="Aperto_Aperto [output]" sourceValue="Aperto" target="sv1#area10#page12#enu1#msfld9_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="0" gr:y="405" id="sv1#area10#page12#seu11" name="Negozi" entity="ent3">
+    <SelectorUnit gr:x="0" gr:y="425" id="sv1#area10#page12#seu11" name="Negozi" entity="ent3">
       <Link id="sv1#area10#page12#seu11#ln30" name="Flow30" to="sv1#area10#page12#seu5" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
   </ContentUnits>
@@ -181,7 +181,7 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Alternative gr:x="40" gr:y="0" id="sv1#area10#page12#alt2" name="Liste" defaultPage="sv1#area10#page12#alt2#page49">
+  <Alternative gr:x="30" gr:y="0" id="sv1#area10#page12#alt2" name="Liste" defaultPage="sv1#area10#page12#alt2#page49">
     <Page gr:x="0" gr:y="0" id="sv1#area10#page12#alt2#page49" name="Lista principale">
       <ContentUnits>
         <PowerIndexUnit id="sv1#area10#page12#alt2#page49#pwu24" name="Lista Negozi" linkOrder="sv1#area10#page12#alt2#page49#pwu24#ln9" gr:x="0" gr:y="0" entity="ent3" displayAttributes="ent3#att9 ent3#att12 ent3#att13 rel2#role3.ent2#att6" sortable="true" checkable="false" useCountQuery="false">

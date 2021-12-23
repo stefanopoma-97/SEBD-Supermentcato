@@ -1,12 +1,12 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area36#page103" name="Pagina Promozioni" gr:x="640" gr:y="250">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area36#page103" name="Pagina Promozioni" gr:x="220" gr:y="190">
   <ContentUnits>
-    <SelectorUnit id="sv2#area36#page103#seu111" name="Promozioni attive" gr:x="600" gr:y="35" entity="ent6">
+    <SelectorUnit id="sv2#area36#page103#seu111" name="Promozioni attive" gr:x="245" gr:y="5" entity="ent6">
       <Selector id="sv2#area36#page103#seu111#su256" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv2#area36#page103#seu111#su256#acond39" name="Non scaduta" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
       </Selector>
       <Link id="sv2#area36#page103#seu111#ln155" name="Flow6" to="sv2#area36#page103#alt7#page53#pwu41" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <EntryUnit id="sv2#area36#page103#enu33" name="Cerca" linkOrder="sv2#area36#page103#enu33#ln330 sv2#area36#page103#enu33#ln170" gr:x="120" gr:y="415">
+    <EntryUnit id="sv2#area36#page103#enu33" name="Cerca" linkOrder="sv2#area36#page103#enu33#ln330 sv2#area36#page103#enu33#ln170" gr:x="0" gr:y="415">
       <SelectionField id="sv2#area36#page103#enu33#sfld35" name="Negozio" type="string"/>
       <Field id="sv2#area36#page103#enu33#fld84" name="Negozio (parola chiave)" type="string" modifiable="true"/>
       <Field id="sv2#area36#page103#enu33#fld85" name="Prodotto" type="string" modifiable="true"/>
@@ -24,7 +24,7 @@
       <MultiSelectionField id="sv2#area36#page103#enu33#msfld8" name="Valida nel mio negozio preferito" type="string"/>
       <Link id="sv2#area36#page103#enu33#ln170" name="Reset" to="sv2#area36#page103#alt7#page53" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
-    <SelectorUnit id="sv2#area36#page103#seu112" name="Negozi" gr:x="365" gr:y="520" entity="ent3">
+    <SelectorUnit id="sv2#area36#page103#seu112" name="Negozi" gr:x="255" gr:y="405" entity="ent3">
       <Link id="sv2#area36#page103#seu112#ln331" name="Flow46" to="sv2#area36#page103#enu33" type="transport" validate="true">
         <LinkParameter id="sv2#area36#page103#seu112#ln331#par523" name="nome_Negozio [label]" source="ent3#att9Array" target="sv2#area36#page103#enu33#sfld35_label"/>
         <LinkParameter id="sv2#area36#page103#seu112#ln331#par524" name="oid_Negozio [output]" source="ent3#att8Array" target="sv2#area36#page103#enu33#sfld35_output"/>
@@ -34,22 +34,22 @@
         <LinkParameter id="sv2#area36#page103#seu112#ln331#par528" name="1_Valida online [output]" target="sv2#area36#page103#enu33#msfld7_output" sourceValue="1"/>
       </Link>
     </SelectorUnit>
-    <TimeUnit id="sv2#area36#page103#tmu16" name="Data corrente" gr:x="615" gr:y="215">
+    <TimeUnit id="sv2#area36#page103#tmu16" name="Data corrente" gr:x="250" gr:y="130">
       <Link id="sv2#area36#page103#tmu16#ln332" name="Flow25" to="sv2#area36#page103#seu111" type="transport" validate="true">
         <LinkParameter id="sv2#area36#page103#tmu16#ln332#par529" name="Current/Input Date_Non scaduta" source="currentDate" target="sv2#area36#page103#seu111#su256#acond39"/>
       </Link>
     </TimeUnit>
-    <TimeUnit id="sv2#area36#page103#tmu17" name="Data corrente" gr:x="305" gr:y="670">
+    <TimeUnit id="sv2#area36#page103#tmu17" name="Data corrente" gr:x="255" gr:y="505">
       <Link id="sv2#area36#page103#tmu17#ln333" name="Flow4" to="sv2#area36#page103#enu33" type="transport" validate="true">
         <LinkParameter id="sv2#area36#page103#tmu17#ln333#par530" name="Current/Input Date_PASSING" source="currentDate" passing="true"/>
       </Link>
     </TimeUnit>
-    <GetUnit id="sv2#area36#page103#gtu27" name="Utente" gr:x="110" gr:y="710" contextParameters="UserCtxParam">
+    <GetUnit id="sv2#area36#page103#gtu27" name="Utente" gr:x="5" gr:y="640" contextParameters="UserCtxParam">
       <Link id="sv2#area36#page103#gtu27#ln335" name="Flow106" to="sv2#area36#page103#seu113" type="transport" validate="true">
         <LinkParameter id="sv2#area36#page103#gtu27#ln335#par531" name="UserCtxParam.oid_RoleCondition55 [oid]" source="sv2#area36#page103#gtu27.UserCtxParam" target="sv2#area36#page103#seu113#su258#rcond97.userOID"/>
       </Link>
     </GetUnit>
-    <SelectorUnit id="sv2#area36#page103#seu113" name="Negozio preferito" gr:x="0" gr:y="550" entity="ent3">
+    <SelectorUnit id="sv2#area36#page103#seu113" name="Negozio preferito" gr:x="0" gr:y="520" entity="ent3">
       <Selector id="sv2#area36#page103#seu113#su258" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area36#page103#seu113#su258#rcond97" name="RoleCondition55" predicate="in" implied="false" role="rel15#role30"/>
       </Selector>
@@ -218,7 +218,7 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Alternative gr:x="240" gr:y="0" id="sv2#area36#page103#alt7" name="Liste" defaultPage="sv2#area36#page103#alt7#page53">
+  <Alternative gr:x="5" gr:y="0" id="sv2#area36#page103#alt7" name="Liste" defaultPage="sv2#area36#page103#alt7#page53">
     <Page gr:x="0" gr:y="0" id="sv2#area36#page103#alt7#page53" name="Lista principale">
       <ContentUnits>
         <PowerIndexUnit id="sv2#area36#page103#alt7#page53#pwu41" name="Lista Promozioni" linkOrder="sv2#area36#page103#alt7#page53#pwu41#ln151" gr:x="0" gr:y="0" entity="ent6" displayAttributes="ent6#att23 ent6#att39 ent6#att41 ent6#att24 ent6#att25 ent6#att26" sortable="true" checkable="false" useCountQuery="false">

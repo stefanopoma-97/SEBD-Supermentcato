@@ -1,0 +1,31 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm6#opg39" name="Aperto" transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <SelectorUnit id="mov1#opm6#opg39#seu72" name="aperto" gr:x="105" gr:y="0" entity="ent20">
+      <Selector id="mov1#opm6#opg39#seu72#su195" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm6#opg39#seu72#su195#kcond133" name="KeyCondition182" predicate="in" implied="false"/>
+        <AttributesCondition id="mov1#opm6#opg39#seu72#su195#acond33" name="orario &gt; apertura" predicate="lteq" booleanOperator="or" implied="false" attributes="ent20#att47"/>
+        <AttributesCondition id="mov1#opm6#opg39#seu72#su195#acond34" name="orario &lt; chiusura" predicate="gteq" booleanOperator="or" implied="false" attributes="ent20#att48"/>
+      </Selector>
+      <OKLink id="mov1#opm6#opg39#seu72#oln182" name="OKFlow126" to="mov1#opm6#opg39#inn16">
+        <LinkParameter id="mov1#opm6#opg39#seu72#oln182#par782" name="oid_Input" source="ent20#att43Array" target="mov1#opm6#opg39#inn16.isnotnull"/>
+      </OKLink>
+      <KOLink id="mov1#opm6#opg39#seu72#kln152" to="mov1#opm6#kocu10" name="KOFlow110" gr:bendpoints="0,-20"/>
+    </SelectorUnit>
+    <TimeUnit id="mov1#opm6#opg39#tmu23" name="Orario" gr:x="0" gr:y="0">
+      <OKLink id="mov1#opm6#opg39#tmu23#oln183" name="OKFlow124" to="mov1#opm6#opg39#seu72">
+        <LinkParameter id="mov1#opm6#opg39#tmu23#oln183#par783" name="oid_PASSING_KeyCondition182 [oid]" sourceLinkParameter="mov1#opm6#icu6#oln179#par775" target="mov1#opm6#opg39#seu72#su195#kcond133.ent20#att43"/>
+        <LinkParameter id="mov1#opm6#opg39#tmu23#oln183#par784" name="Current/Input Time_orario &lt; chiusura" source="currentTime" target="mov1#opm6#opg39#seu72#su195#acond34"/>
+        <LinkParameter id="mov1#opm6#opg39#tmu23#oln183#par785" name="Current/Input Time_orario &gt; apperture" source="currentTime" target="mov1#opm6#opg39#seu72#su195#acond33"/>
+      </OKLink>
+      <KOLink id="mov1#opm6#opg39#tmu23#kln153" to="mov1#opm6#kocu10" name="KOFlow109"/>
+    </TimeUnit>
+    <IsNotNullUnit id="mov1#opm6#opg39#inn16" name="Is Not Null3" gr:x="245" gr:y="0">
+      <KOLink id="mov1#opm6#opg39#inn16#kln154" to="mov1#opm6#kocu9" name="KOFlow111">
+        <LinkParameter id="mov1#opm6#opg39#inn16#kln154#par786" sourceValue="Chiuso" name="Chiuso_Shown Messages" target="mov1#opm6#kocu9#ocp10"/>
+      </KOLink>
+      <OKLink id="mov1#opm6#opg39#inn16#oln184" to="mov1#opm6#okcu6" name="OKFlow127">
+        <LinkParameter id="mov1#opm6#opg39#inn16#oln184#par787" sourceValue="Aperto" name="Aperto_Shown Messages" target="mov1#opm6#okcu6#ocp9"/>
+      </OKLink>
+    </IsNotNullUnit>
+  </OperationUnits>
+</OperationGroup>

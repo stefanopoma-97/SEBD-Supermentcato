@@ -1,0 +1,35 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area40#opg40" name="Filtri" transaction="true" gr:x="675" gr:y="425">
+  <OperationUnits>
+    <SelectorUnit id="sv2#area40#opg40#seu73" name="Filtri ricerca" gr:x="275" gr:y="0" entity="ent4">
+      <Selector id="sv2#area40#opg40#seu73#su198" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area40#opg40#seu73#su198#rcond67" name="Da categoria a prodotti" predicate="in" implied="true" role="rel4#role8"/>
+        <RelationshipRoleCondition id="sv2#area40#opg40#seu73#su198#rcond68" name="Da fascia a prodotti" predicate="in" implied="true" role="rel11#role21"/>
+        <KeyCondition id="sv2#area40#opg40#seu73#su198#kcond136" name="Prodotti nuovi" predicate="in" implied="true"/>
+        <RelationshipRoleCondition id="sv2#area40#opg40#seu73#su198#rcond69" name="Nazione to Prodotto" predicate="in" implied="true" role="rel18#role36"/>
+      </Selector>
+      <KOLink id="sv2#area40#opg40#seu73#kln157" name="KOFlow157" to="sv2#area40#page86#mssu33" automaticCoupling="true"/>
+      <OKLink id="sv2#area40#opg40#seu73#oln189" name="OKFlow189" to="sv2#area40#page114#alt11#page85#pwu45" automaticCoupling="true"/>
+    </SelectorUnit>
+    <IsNotNullUnit id="sv2#area40#opg40#inn17" name="Is Not Null12" gr:x="0" gr:y="10">
+      <KOLink id="sv2#area40#opg40#inn17#kln155" name="KOFlow69" to="sv2#area40#opg40#seu73">
+        <LinkParameter id="sv2#area40#opg40#inn17#kln155#par789" name="Categoria_PASSING_Da categoria a prodotti [oid]" sourceLinkParameter="sv2#area40#page114#enu35#ln377#par802" target="sv2#area40#opg40#seu73#su198#rcond67.ent5#att19"/>
+        <LinkParameter id="sv2#area40#opg40#inn17#kln155#par790" name="Fascia di prezzo_PASSING_Da fascia a prodotti [oid]" sourceLinkParameter="sv2#area40#page114#enu35#ln377#par803" target="sv2#area40#opg40#seu73#su198#rcond68.ent15#att30"/>
+        <LinkParameter id="sv2#area40#opg40#inn17#kln155#par791" name="Nazione_PASSING_Nazione to Prodotto [oid]" sourceLinkParameter="sv2#area40#page114#enu35#ln377#par804" target="sv2#area40#opg40#seu73#su198#rcond69.ent19#att44"/>
+      </KOLink>
+      <OKLink id="sv2#area40#opg40#inn17#oln187" name="OKFlow145" to="sv2#area40#opg40#seu74">
+        <LinkParameter id="sv2#area40#opg40#inn17#oln187#par805" name="Categoria_PASSING" sourceLinkParameter="sv2#area40#page114#enu35#ln377#par802" passing="true"/>
+        <LinkParameter id="sv2#area40#opg40#inn17#oln187#par806" name="Fascia di prezzo_PASSING" sourceLinkParameter="sv2#area40#page114#enu35#ln377#par803" passing="true"/>
+        <LinkParameter id="sv2#area40#opg40#inn17#oln187#par807" name="Nazione_PASSING" sourceLinkParameter="sv2#area40#page114#enu35#ln377#par804" passing="true"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <SelectorUnit id="sv2#area40#opg40#seu74" name="Prodotti nuovi" gr:x="50" gr:y="130" entity="ent11">
+      <OKLink id="sv2#area40#opg40#seu74#oln188" name="OKFlow146" to="sv2#area40#opg40#seu73">
+        <LinkParameter id="sv2#area40#opg40#seu74#oln188#par798" name="oid_Prodotti nuovi [oid]" source="ent4#att14Array" target="sv2#area40#opg40#seu73#su198#kcond136.ent4#att14"/>
+        <LinkParameter id="sv2#area40#opg40#seu74#oln188#par808" name="Categoria_PASSING_Da categoria a prodotti [oid]" sourceLinkParameter="sv2#area40#opg40#inn17#oln187#par805" target="sv2#area40#opg40#seu73#su198#rcond67.ent5#att19"/>
+        <LinkParameter id="sv2#area40#opg40#seu74#oln188#par809" name="Fascia di prezzo_PASSING_Da fascia a prodotti [oid]" sourceLinkParameter="sv2#area40#opg40#inn17#oln187#par806" target="sv2#area40#opg40#seu73#su198#rcond68.ent15#att30"/>
+        <LinkParameter id="sv2#area40#opg40#seu74#oln188#par810" name="Nazione_PASSING_Nazione to Prodotto [oid]" sourceLinkParameter="sv2#area40#opg40#inn17#oln187#par807" target="sv2#area40#opg40#seu73#su198#rcond69.ent19#att44"/>
+      </OKLink>
+      <KOLink id="sv2#area40#opg40#seu74#kln156" name="KOFlow156" to="sv2#area40#page86#mssu33" automaticCoupling="true"/>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

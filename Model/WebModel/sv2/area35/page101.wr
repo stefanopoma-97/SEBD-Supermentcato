@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area35#page101" name="Modifica profilo" linkOrder="sv2#area35#page101#ln327" gr:x="105" gr:y="445">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area35#page101" name="Modifica profilo" linkOrder="sv2#area35#page101#ln327" gr:x="20" gr:y="360">
   <ContentUnits>
     <GetUnit id="sv2#area35#page101#gtu25" name="Info utente" gr:x="0" gr:y="0" contextParameters="UserCtxParam">
       <Link id="sv2#area35#page101#gtu25#ln313" name="Flow125" to="sv2#area35#page101#seu107" type="transport" validate="true">
@@ -8,7 +8,7 @@
         <LinkParameter id="sv2#area35#page101#gtu25#ln314#par473" name="UserCtxParam.oid_RoleCondition64 [oid]" source="sv2#area35#page101#gtu25.UserCtxParam" target="sv2#area35#page101#seu110#su249#rcond96.userOID"/>
       </Link>
     </GetUnit>
-    <SelectorUnit id="sv2#area35#page101#seu107" name="Utente" gr:x="180" gr:y="5" entity="ent13">
+    <SelectorUnit id="sv2#area35#page101#seu107" name="Utente" gr:x="145" gr:y="0" entity="ent13">
       <Link id="sv2#area35#page101#seu107#ln315" name="Flow130" to="sv2#area35#page101#enu32" type="transport" validate="true">
         <LinkParameter id="sv2#area35#page101#seu107#ln315#par474" name="cognome_Cognome" source="ent13#att50Array" target="sv2#area35#page101#enu32#fld78_slot"/>
         <LinkParameter id="sv2#area35#page101#seu107#ln315#par475" name="defaultGroup.oid_Email" source="emailArray" target="sv2#area35#page101#enu32#fld81_slot"/>
@@ -22,7 +22,7 @@
         <KeyCondition id="sv2#area35#page101#seu107#su248#kcond149" name="KeyCondition80" predicate="in" implied="false"/>
       </Selector>
     </SelectorUnit>
-    <EntryUnit id="sv2#area35#page101#enu32" name="Modifica profilo" linkOrder="sv2#area35#page101#enu32#ln316" gr:x="450" gr:y="25" fieldOrder="sv2#area35#page101#enu32#fld79 sv2#area35#page101#enu32#fld80 sv2#area35#page101#enu32#fld77 sv2#area35#page101#enu32#fld78 sv2#area35#page101#enu32#fld81 sv2#area35#page101#enu32#sfld33 sv2#area35#page101#enu32#fld82 sv2#area35#page101#enu32#fld83 sv2#area35#page101#enu32#sfld34">
+    <EntryUnit id="sv2#area35#page101#enu32" name="Modifica profilo" linkOrder="sv2#area35#page101#enu32#ln316" gr:x="360" gr:y="5" fieldOrder="sv2#area35#page101#enu32#fld79 sv2#area35#page101#enu32#fld80 sv2#area35#page101#enu32#fld77 sv2#area35#page101#enu32#fld78 sv2#area35#page101#enu32#fld81 sv2#area35#page101#enu32#sfld33 sv2#area35#page101#enu32#fld82 sv2#area35#page101#enu32#fld83 sv2#area35#page101#enu32#sfld34">
       <Field id="sv2#area35#page101#enu32#fld77" name="Nome" type="string" modifiable="true" preloaded="true">
         <VRules>
           <MandatoryValidationRule id="sv2#area35#page101#enu32#fld77#mnd1" name="Mandatory3"/>
@@ -82,19 +82,19 @@
         <LinkParameter id="sv2#area35#page101#enu32#ln316#par491" name="UserToIndirizzo.oid_PASSING" sourceLinkParameter="sv2#area35#page101#seu107#ln315#par480" passing="true"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit id="sv2#area35#page101#seu108" name="Citt&#224;" gr:x="320" gr:y="170" entity="ent1">
+    <SelectorUnit id="sv2#area35#page101#seu108" name="Citt&#224;" gr:x="165" gr:y="135" entity="ent1">
       <Link id="sv2#area35#page101#seu108#ln317" name="Flow131" to="sv2#area35#page101#enu32" type="transport" validate="true">
         <LinkParameter id="sv2#area35#page101#seu108#ln317#par492" name="nome_Citt&#224; [label]" source="ent1#att2Array" target="sv2#area35#page101#enu32#sfld34_label"/>
         <LinkParameter id="sv2#area35#page101#seu108#ln317#par493" name="oid_Citt&#224; [output]" source="ent1#att1Array" target="sv2#area35#page101#enu32#sfld34_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit id="sv2#area35#page101#seu109" name="Negozi" gr:x="415" gr:y="215" entity="ent3">
+    <SelectorUnit id="sv2#area35#page101#seu109" name="Negozi" gr:x="275" gr:y="135" entity="ent3">
       <Link id="sv2#area35#page101#seu109#ln325" name="Flow142" to="sv2#area35#page101#enu32" type="transport" validate="true">
         <LinkParameter id="sv2#area35#page101#seu109#ln325#par494" name="nome_Negozio preferito [label]" source="ent3#att9Array" target="sv2#area35#page101#enu32#sfld33_label"/>
         <LinkParameter id="sv2#area35#page101#seu109#ln325#par497" name="oid_Negozio preferito [output]" source="ent3#att8Array" target="sv2#area35#page101#enu32#sfld33_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit id="sv2#area35#page101#seu110" name="Indirizzo" gr:x="65" gr:y="145" entity="ent2">
+    <SelectorUnit id="sv2#area35#page101#seu110" name="Indirizzo" gr:x="0" gr:y="115" entity="ent2">
       <Selector id="sv2#area35#page101#seu110#su249" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area35#page101#seu110#su249#rcond96" name="RoleCondition64" predicate="in" implied="false" role="rel3#role5"/>
       </Selector>

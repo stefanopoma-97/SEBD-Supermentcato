@@ -1,6 +1,6 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area35#opg44" name="Creazione" transaction="true" gr:x="100" gr:y="840">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area35#opg44" name="Creazione" transaction="true" gr:x="20" gr:y="660">
   <OperationUnits>
-    <ModifyUnit id="sv2#area35#opg44#mfu12" name="Modifica" gr:x="145" gr:y="165" entity="ent13">
+    <ModifyUnit id="sv2#area35#opg44#mfu12" name="Modifica" gr:x="5" gr:y="110" entity="ent13">
       <OKLink id="sv2#area35#opg44#mfu12#oln93" name="OKFlow26" to="sv2#area35#opg44#rcnu5">
         <LinkParameter id="sv2#area35#opg44#mfu12#oln93#par501" name="oid_KeyCondition23 [oid] [Utente esterno registrato] [Source]" source="userOIDArray" target="sv2#area35#opg44#rcnu5#su251#kcond151.userOID"/>
         <LinkParameter id="sv2#area35#opg44#mfu12#oln93#par502" name="oid_PASSING" source="userOIDArray" passing="true"/>
@@ -20,7 +20,7 @@
         <LinkParameter id="sv2#area35#opg44#gtu26#ln328#par508" name="UserCtxParam.oid_KeyCondition71 [oid]" source="sv2#area35#opg44#gtu26.UserCtxParam" target="sv2#area35#opg44#mfu12#su250#kcond150.userOID"/>
       </Link>
     </GetUnit>
-    <ReconnectUnit id="sv2#area35#opg44#rcnu5" name="Utente Negozio" gr:x="410" gr:y="45" relationship="rel15#role30">
+    <ReconnectUnit id="sv2#area35#opg44#rcnu5" name="Utente Negozio" gr:x="175" gr:y="110" relationship="rel15#role30">
       <SourceSelector id="sv2#area35#opg44#rcnu5#su251" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area35#opg44#rcnu5#su251#kcond151" name="KeyCondition23" predicate="in" implied="false"/>
       </SourceSelector>
@@ -36,7 +36,7 @@
         <LinkParameter id="sv2#area35#opg44#rcnu5#oln94#par513" name="UserToIndirizzo.oid_PASSING_KeyCondition86 [oid]" sourceLinkParameter="sv2#area35#opg44#mfu12#oln93#par507" target="sv2#area35#opg44#mfu13#su255#kcond155.ent2#att5"/>
       </OKLink>
     </ReconnectUnit>
-    <ReconnectUnit id="sv2#area35#opg44#rcnu6" name="Indirizzo Utente" gr:x="975" gr:y="135" relationship="rel3#role5">
+    <ReconnectUnit id="sv2#area35#opg44#rcnu6" name="Indirizzo Utente" gr:x="545" gr:y="120" relationship="rel3#role5">
       <SourceSelector id="sv2#area35#opg44#rcnu6#su253" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area35#opg44#rcnu6#su253#kcond153" name="KeyCondition25" predicate="in" implied="false"/>
       </SourceSelector>
@@ -46,7 +46,7 @@
       <KOLink id="sv2#area35#opg44#rcnu6#kln80" name="KOFlow39" to="sv2#area35#page102#mssu37" automaticCoupling="true"/>
       <OKLink id="sv2#area35#opg44#rcnu6#oln98" name="OKFlow38" to="sv2#area35#page100" automaticCoupling="true" gr:bendpoints="-162,-581,578,234"/>
     </ReconnectUnit>
-    <ModifyUnit id="sv2#area35#opg44#mfu13" name="Modifica indirizzo" gr:x="750" gr:y="65" entity="ent2">
+    <ModifyUnit id="sv2#area35#opg44#mfu13" name="Modifica indirizzo" gr:x="395" gr:y="115" entity="ent2">
       <KOLink id="sv2#area35#opg44#mfu13#kln81" name="KOFlow38" to="sv2#area35#page102#mssu37" automaticCoupling="true"/>
       <OKLink id="sv2#area35#opg44#mfu13#oln99" name="OKFlow28" to="sv2#area35#opg44#rcnu6">
         <LinkParameter id="sv2#area35#opg44#mfu13#oln99#par514" name="oid_KeyCondition26 [oid] [Indirizzo] [Target]" source="ent2#att5Array" target="sv2#area35#opg44#rcnu6#su254#kcond154.ent2#att5"/>
