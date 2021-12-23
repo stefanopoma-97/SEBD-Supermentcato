@@ -1,0 +1,140 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="sv1#area7#opg48" name="Check prodotti nuovi" transaction="true">
+  <OperationUnits>
+    <SelectorUnit gr:x="0" gr:y="15" id="sv1#area7#opg48#seu81" name="prodotti nuovi" entity="ent11">
+      <OKLink id="sv1#area7#opg48#seu81#oln199" name="OKFlow199" to="sv1#area7#opg48#lpu2">
+        <LinkParameter id="sv1#area7#opg48#seu81#oln199#par851" name="oid_Input Array" source="ent4#att14Array" target="sv1#area7#opg48#lpu2.array"/>
+      </OKLink>
+    </SelectorUnit>
+    <LoopUnit gr:x="140" gr:y="30" id="sv1#area7#opg48#lpu2" name="Loop2">
+      <OKLink id="sv1#area7#opg48#lpu2#oln200" name="OKFlow200" to="sv1#area7#opg48#seu83" code="next">
+        <LinkParameter id="sv1#area7#opg48#lpu2#oln200#par852" name="Next Element_KeyCondition156 [oid]" source="next" target="sv1#area7#opg48#seu83#su200#kcond156.ent4#att14"/>
+      </OKLink>
+      <OKLink id="sv1#area7#opg48#lpu2#oln206" name="OKFlow206" to="sv1#area7#page7" automaticCoupling="true" code="end" gr:bendpoints="328,195,-906,-255"/>
+    </LoopUnit>
+    <SelectorUnit gr:x="270" gr:y="0" id="sv1#area7#opg48#seu83" name="Prodotto nuovo" entity="ent11">
+      <Selector id="sv1#area7#opg48#seu83#su200" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area7#opg48#seu83#su200#kcond156" name="KeyCondition156" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#area7#opg48#seu83#oln201" name="OKFlow201" to="sv1#area7#opg48#tmu25">
+        <LinkParameter id="sv1#area7#opg48#seu83#oln201#par855" name="data inserimento_PASSING" source="ent4#att18Array" passing="true"/>
+        <LinkParameter id="sv1#area7#opg48#seu83#oln201#par858" name="oid_PASSING" source="ent4#att14Array" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <ScriptUnit gr:x="515" gr:y="15" id="sv1#area7#opg48#scu38" name="Non &#232; nuovo">
+      <ScriptUnitText xml:space="preserve">#input Date inserimento, Date oggi
+#output boolean risultato
+
+def Date date = inserimento.plus(30)
+def boolean risultato = null
+if (date &lt; oggi){
+	risultato = true
+}
+return [ "risultato": risultato ]</ScriptUnitText>
+      <OKLink id="sv1#area7#opg48#scu38#oln203" name="OKFlow203" to="sv1#area7#opg48#inn21">
+        <LinkParameter id="sv1#area7#opg48#scu38#oln203#par860" name="risultato_Input" source="result(risultato)" target="sv1#area7#opg48#inn21.isnotnull"/>
+        <LinkParameter id="sv1#area7#opg48#scu38#oln203#par861" name="oid_PASSING" sourceLinkParameter="sv1#area7#opg48#tmu25#oln202#par859" passing="true"/>
+      </OKLink>
+    </ScriptUnit>
+    <TimeUnit gr:x="410" gr:y="15" id="sv1#area7#opg48#tmu25" name="Oggi">
+      <OKLink id="sv1#area7#opg48#tmu25#oln202" name="OKFlow202" to="sv1#area7#opg48#scu38">
+        <LinkParameter id="sv1#area7#opg48#tmu25#oln202#par856" name="data inserimento_PASSING_inserimento" sourceLinkParameter="sv1#area7#opg48#seu83#oln201#par855" target="sv1#area7#opg48#scu38.inserimento"/>
+        <LinkParameter id="sv1#area7#opg48#tmu25#oln202#par857" name="Current/Input Date_oggi" source="currentDate" target="sv1#area7#opg48#scu38.oggi"/>
+        <LinkParameter id="sv1#area7#opg48#tmu25#oln202#par859" name="oid_PASSING" sourceLinkParameter="sv1#area7#opg48#seu83#oln201#par858" passing="true"/>
+      </OKLink>
+    </TimeUnit>
+    <IsNotNullUnit gr:x="635" gr:y="15" id="sv1#area7#opg48#inn21" name="Is Not Null21">
+      <OKLink id="sv1#area7#opg48#inn21#oln204" name="OKFlow204" to="sv1#area7#opg48#seu84">
+        <LinkParameter id="sv1#area7#opg48#inn21#oln204#par863" name="oid_PASSING_KeyCondition165 [oid]" sourceLinkParameter="sv1#area7#opg48#scu38#oln203#par861" target="sv1#area7#opg48#seu84#su202#kcond165.ent4#att14"/>
+      </OKLink>
+      <KOLink id="sv1#area7#opg48#inn21#kln168" name="KOFlow168" to="sv1#area7#opg48#lpu2" automaticCoupling="true" gr:bendpoints="-267,95,238,80;-382,80,123,65"/>
+    </IsNotNullUnit>
+    <SelectorUnit gr:x="480" gr:y="100" id="sv1#area7#opg48#seu84" name="prodotto nuovo" entity="ent4">
+      <Selector id="sv1#area7#opg48#seu84#su202" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area7#opg48#seu84#su202#kcond165" name="KeyCondition165" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#area7#opg48#seu84#oln207" name="OKFlow207" to="sv1#area7#opg48#dlu15">
+        <LinkParameter id="sv1#area7#opg48#seu84#oln207#par865" name="categoria_PASSING" source="ent4#att59Array" passing="true"/>
+        <LinkParameter id="sv1#area7#opg48#seu84#oln207#par866" name="data inserimento_PASSING" source="ent4#att18Array" passing="true"/>
+        <LinkParameter id="sv1#area7#opg48#seu84#oln207#par867" name="descrizione_PASSING" source="ent4#att16Array" passing="true"/>
+        <LinkParameter id="sv1#area7#opg48#seu84#oln207#par868" name="fascia_PASSING" source="ent4#att53Array" passing="true"/>
+        <LinkParameter id="sv1#area7#opg48#seu84#oln207#par869" name="immagine_PASSING" source="ent4#att27Array" passing="true"/>
+        <LinkParameter id="sv1#area7#opg48#seu84#oln207#par870" name="nazione_PASSING" source="ent4#att60Array" passing="true"/>
+        <LinkParameter id="sv1#area7#opg48#seu84#oln207#par871" name="nome_PASSING" source="ent4#att15Array" passing="true"/>
+        <LinkParameter id="sv1#area7#opg48#seu84#oln207#par872" name="oid_PASSING" source="ent4#att14Array" passing="true"/>
+        <LinkParameter id="sv1#area7#opg48#seu84#oln207#par873" name="prezzo_PASSING" source="ent4#att17Array" passing="true"/>
+        <LinkParameter id="sv1#area7#opg48#seu84#oln207#par874" name="ProdottoToCategoria.oid_PASSING" source="rel4#role7_ent5#att19Array" passing="true"/>
+        <LinkParameter id="sv1#area7#opg48#seu84#oln207#par875" name="ProdottoToFascia prezzo.oid_PASSING" source="rel11#role22_ent15#att30Array" passing="true"/>
+        <LinkParameter id="sv1#area7#opg48#seu84#oln207#par876" name="ProdottoToNazione.oid_PASSING" source="rel18#role35_ent19#att44Array" passing="true"/>
+        <LinkParameter id="sv1#area7#opg48#seu84#oln207#par897" name="oid_KeyCondition179 [oid]" source="ent4#att14Array" target="sv1#area7#opg48#dlu15#su205#kcond179.ent4#att14"/>
+      </OKLink>
+    </SelectorUnit>
+    <DeleteUnit gr:x="455" gr:y="230" id="sv1#area7#opg48#dlu15" name="Cancella prodotto nuovo" entity="ent11">
+      <Selector id="sv1#area7#opg48#dlu15#su205" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area7#opg48#dlu15#su205#kcond179" name="KeyCondition179" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#area7#opg48#dlu15#oln211" name="KOFlow170" to="sv1#area7#opg48#cru12">
+        <LinkParameter id="sv1#area7#opg48#dlu15#oln211#par898" name="categoria_PASSING_Categoria.oid(ProdottoToCategoria)" sourceLinkParameter="sv1#area7#opg48#seu84#oln207#par874" target="sv1#area7#opg48#cru12.rel4#role7.ent5#att19"/>
+        <LinkParameter id="sv1#area7#opg48#dlu15#oln211#par899" name="data inserimento_PASSING_data inserimento" sourceLinkParameter="sv1#area7#opg48#seu84#oln207#par866" target="sv1#area7#opg48#cru12.ent4#att18"/>
+        <LinkParameter id="sv1#area7#opg48#dlu15#oln211#par900" name="descrizione_PASSING_descrizione" sourceLinkParameter="sv1#area7#opg48#seu84#oln207#par867" target="sv1#area7#opg48#cru12.ent4#att16"/>
+        <LinkParameter id="sv1#area7#opg48#dlu15#oln211#par901" name="fascia_PASSING_Fascia prezzo.oid(ProdottoToFascia prezzo)" sourceLinkParameter="sv1#area7#opg48#seu84#oln207#par875" target="sv1#area7#opg48#cru12.rel11#role22.ent15#att30"/>
+        <LinkParameter id="sv1#area7#opg48#dlu15#oln211#par902" name="immagine_PASSING_immagine" sourceLinkParameter="sv1#area7#opg48#seu84#oln207#par869" target="sv1#area7#opg48#cru12.ent4#att27"/>
+        <LinkParameter id="sv1#area7#opg48#dlu15#oln211#par903" name="nazione_PASSING_Nazione.oid(ProdottoToNazione)" sourceLinkParameter="sv1#area7#opg48#seu84#oln207#par876" target="sv1#area7#opg48#cru12.rel18#role35.ent19#att44"/>
+        <LinkParameter id="sv1#area7#opg48#dlu15#oln211#par904" name="nome_PASSING_nome" sourceLinkParameter="sv1#area7#opg48#seu84#oln207#par871" target="sv1#area7#opg48#cru12.ent4#att15"/>
+        <LinkParameter id="sv1#area7#opg48#dlu15#oln211#par905" name="oid_PASSING_oid" sourceLinkParameter="sv1#area7#opg48#seu84#oln207#par872" target="sv1#area7#opg48#cru12.ent4#att14"/>
+        <LinkParameter id="sv1#area7#opg48#dlu15#oln211#par906" name="prezzo_PASSING_prezzo" sourceLinkParameter="sv1#area7#opg48#seu84#oln207#par873" target="sv1#area7#opg48#cru12.ent4#att17"/>
+        <LinkParameter id="sv1#area7#opg48#dlu15#oln211#par912" name="oid_PASSING" sourceLinkParameter="sv1#area7#opg48#seu84#oln207#par872" passing="true"/>
+      </OKLink>
+    </DeleteUnit>
+    <CreateUnit gr:x="505" gr:y="365" id="sv1#area7#opg48#cru12" name="Crea" entity="ent4">
+      <OKLink id="sv1#area7#opg48#cru12#oln212" name="OKFlow212" to="sv1#area7#opg48#seu85">
+        <LinkParameter id="sv1#area7#opg48#cru12#oln212#par913" name="oid_PASSING" sourceLinkParameter="sv1#area7#opg48#dlu15#oln211#par912" passing="true"/>
+      </OKLink>
+    </CreateUnit>
+    <SelectorUnit gr:x="435" gr:y="490" id="sv1#area7#opg48#seu85" name="Prodotti online" entity="ent8">
+      <Selector id="sv1#area7#opg48#seu85#su206" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area7#opg48#seu85#su206#acond54" name="riferimento a prodotto" predicate="null" booleanOperator="or" implied="false" attributes="ent8#att31 rel8#role15.ent4#att14"/>
+      </Selector>
+      <OKLink id="sv1#area7#opg48#seu85#oln213" name="OKFlow213" to="sv1#area7#opg48#lpu3">
+        <LinkParameter id="sv1#area7#opg48#seu85#oln213#par908" name="oid_Input Array" source="ent8#att31Array" target="sv1#area7#opg48#lpu3.array"/>
+        <LinkParameter id="sv1#area7#opg48#seu85#oln213#par914" name="oid_PASSING" sourceLinkParameter="sv1#area7#opg48#cru12#oln212#par913" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <LoopUnit gr:x="710" gr:y="515" id="sv1#area7#opg48#lpu3" name="Loop3">
+      <OKLink id="sv1#area7#opg48#lpu3#oln214" name="OKFlow214" to="sv1#area7#opg48#mfu18" code="next">
+        <LinkParameter id="sv1#area7#opg48#lpu3#oln214#par910" name="Next Element_KeyCondition182 [oid]" source="next" target="sv1#area7#opg48#mfu18#su207#kcond182.ent8#att31"/>
+        <LinkParameter id="sv1#area7#opg48#lpu3#oln214#par915" name="oid_PASSING_Prodotto.oid(Prodotto onlineToProdotto)" sourceLinkParameter="sv1#area7#opg48#seu85#oln213#par914" target="sv1#area7#opg48#mfu18.rel8#role15.ent4#att14"/>
+      </OKLink>
+      <OKLink id="sv1#area7#opg48#lpu3#oln216" name="OKFlow216" to="sv1#area7#opg48#seu86" code="end">
+        <LinkParameter id="sv1#area7#opg48#lpu3#oln216#par916" name="oid_PASSING" sourceLinkParameter="sv1#area7#opg48#seu85#oln213#par914" passing="true"/>
+      </OKLink>
+    </LoopUnit>
+    <ModifyUnit gr:x="825" gr:y="495" id="sv1#area7#opg48#mfu18" name="Update18" entity="ent8">
+      <Selector id="sv1#area7#opg48#mfu18#su207" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area7#opg48#mfu18#su207#kcond182" name="KeyCondition182" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#area7#opg48#mfu18#oln215" name="OKFlow215" to="sv1#area7#opg48#lpu3" automaticCoupling="true" gr:bendpoints="-78,15,57,15"/>
+    </ModifyUnit>
+    <SelectorUnit gr:x="445" gr:y="620" id="sv1#area7#opg48#seu86" name="Promozioni" entity="ent6">
+      <Selector id="sv1#area7#opg48#seu86#su208" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area7#opg48#seu86#su208#acond56" name="AttCondition56" predicate="null" booleanOperator="or" implied="false" attributes="rel6#role11.ent4#att14"/>
+      </Selector>
+      <OKLink id="sv1#area7#opg48#seu86#oln217" name="OKFlow217" to="sv1#area7#opg48#lpu4">
+        <LinkParameter id="sv1#area7#opg48#seu86#oln217#par917" name="oid_Input Array" source="ent6#att22Array" target="sv1#area7#opg48#lpu4.array"/>
+        <LinkParameter id="sv1#area7#opg48#seu86#oln217#par918" name="oid_PASSING" sourceLinkParameter="sv1#area7#opg48#lpu3#oln216#par916" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <LoopUnit gr:x="695" gr:y="645" id="sv1#area7#opg48#lpu4" name="Loop4">
+      <OKLink id="sv1#area7#opg48#lpu4#oln218" name="OKFlow218" to="sv1#area7#opg48#mfu19" code="next">
+        <LinkParameter id="sv1#area7#opg48#lpu4#oln218#par919" name="Next Element_KeyCondition183 [oid]" source="next" target="sv1#area7#opg48#mfu19#su209#kcond183.ent6#att22"/>
+        <LinkParameter id="sv1#area7#opg48#lpu4#oln218#par920" name="oid_PASSING_Prodotto.oid(PromozioneToProdotto)" sourceLinkParameter="sv1#area7#opg48#seu86#oln217#par918" target="sv1#area7#opg48#mfu19.rel6#role11.ent4#att14"/>
+      </OKLink>
+      <OKLink id="sv1#area7#opg48#lpu4#oln220" name="OKFlow220" to="sv1#area7#opg48#lpu2" automaticCoupling="true" gr:bendpoints="-214,128,341,743;-570,2,-15,617" code="end"/>
+    </LoopUnit>
+    <ModifyUnit gr:x="815" gr:y="630" id="sv1#area7#opg48#mfu19" name="Update19" entity="ent6">
+      <Selector id="sv1#area7#opg48#mfu19#su209" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area7#opg48#mfu19#su209#kcond183" name="KeyCondition183" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#area7#opg48#mfu19#oln219" name="OKFlow219" to="sv1#area7#opg48#lpu4" automaticCoupling="true" gr:bendpoints="-72,12,58,17"/>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationGroup>
