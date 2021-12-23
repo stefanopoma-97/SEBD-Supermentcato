@@ -44,7 +44,7 @@
         <LinkParameter id="sv2#area42#opg54#inn9#oln143#par447" name="oid_PASSING_KeyCondition101 [oid]" sourceLinkParameter="sv2#area42#opg54#seu63#oln142#par444" target="sv2#area42#opg54#mfu14#su290#kcond172.ent9#att33"/>
         <LinkParameter id="sv2#area42#opg54#inn9#oln143#par448" name="SpesaToNegozio.oid_PASSING_Negozio.oid(SpesaToNegozio)" sourceLinkParameter="sv2#area42#opg54#seu63#oln142#par445" target="sv2#area42#opg54#mfu14.rel17#role33.ent3#att8"/>
       </OKLink>
-      <KOLink id="sv2#area42#opg54#inn9#kln167" name="KOFlow131" to="sv2#area42#page87#mssu43">
+      <KOLink id="sv2#area42#opg54#inn9#kln167" name="KOFlow131" to="sv2#area42#page87#mssu43" ajaxOpenWindow="false">
         <LinkParameter id="sv2#area42#opg54#inn9#kln167#par850" name="Inserisci almeno una riga d'ordine_Shown Messages" target="sv2#area42#page87#mssu43.shownMessages" sourceValue="Inserisci almeno una riga d'ordine"/>
       </KOLink>
     </IsNotNullUnit>

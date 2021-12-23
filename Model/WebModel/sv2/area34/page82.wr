@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="95" gr:y="1745" id="sv2#area34#page82" name="Errore">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="95" gr:y="1745" id="sv2#area34#page82" name="Errore" ajaxEnabled="false" ignoreMasterPage="false" layout:pageLayout="WebRatio/Basic">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area34#page82#mssu32" name="Errore" linkOrder="sv2#area34#page82#mssu32#ln259">
       <Message xml:space="preserve">Hai eliminato tutte le righe d'ordine della spesa. Non &#232; possibile confermare la spesa.

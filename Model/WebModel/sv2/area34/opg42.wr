@@ -45,7 +45,7 @@
         <LinkParameter id="sv2#area34#opg42#inn10#oln163#par686" name="Data_PASSING_data di spedizione" sourceLinkParameter="sv2#area34#opg42#seu64#oln162#par684" target="sv2#area34#opg42#mfu11.ent9#att36"/>
         <LinkParameter id="sv2#area34#opg42#inn10#oln163#par687" name="oid_PASSING_KeyCondition106 [oid]" sourceLinkParameter="sv2#area34#opg42#seu64#oln162#par685" target="sv2#area34#opg42#mfu11#su240#kcond142.ent9#att33"/>
       </OKLink>
-      <KOLink id="sv2#area34#opg42#inn10#kln144" name="KOFlow144" to="sv2#area34#page82#mssu32" automaticCoupling="true"/>
+      <KOLink id="sv2#area34#opg42#inn10#kln144" name="KOFlow144" to="sv2#area34#page82#mssu32" automaticCoupling="true" ajaxOpenWindow="false"/>
     </IsNotNullUnit>
   </OperationUnits>
 </OperationGroup>
