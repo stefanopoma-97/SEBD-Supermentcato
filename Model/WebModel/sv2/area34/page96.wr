@@ -42,7 +42,7 @@
     <EntryUnit id="sv2#area34#page96#enu31" name="Conferma" linkOrder="sv2#area34#page96#enu31#ln258" gr:x="0" gr:y="315" entity="ent9">
       <Field id="sv2#area34#page96#enu31#fld76" name="Data" type="date" modifiable="true" attribute="ent9#att36"/>
       <Link id="sv2#area34#page96#enu31#ln258" name="Conferma spesa" to="sv2#area34#opg42#seu64" type="normal" validate="true">
-        <LinkParameter id="sv2#area34#page96#enu31#ln258#par680" name="Key [oid]_RoleCondition62 [oid]" source="key.ent9#att33" target="sv2#area34#opg42#seu64#su188#rcond62.ent9#att33"/>
+        <LinkParameter id="sv2#area34#page96#enu31#ln258#par680" name="Key [oid]_RoleCondition62 [oid]" target="sv2#area34#opg42#seu64#su188#rcond62.ent9#att33" sourceLinkParameter="sv2#area34#page96#dau38#ln298#par456"/>
         <LinkParameter id="sv2#area34#page96#enu31#ln258#par681" name="Data_PASSING" source="sv2#area34#page96#enu31#fld76" passing="true"/>
         <LinkParameter id="sv2#area34#page96#enu31#ln258#par682" name="oid_PASSING" sourceLinkParameter="sv2#area34#page96#dau38#ln298#par456" passing="true"/>
       </Link>
