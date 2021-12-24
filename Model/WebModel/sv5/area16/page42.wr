@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="980" gr:y="0" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="840" gr:y="0" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104">
   <ContentUnits>
     <EntryUnit gr:x="235" gr:y="120" id="sv5#area16#page42#enu20" name="Filtra i prodotti" linkOrder="sv5#area16#page42#enu20#ln294">
       <SelectionField id="sv5#area16#page42#enu20#sfld18" type="string" name="Categoria"/>
@@ -65,10 +65,10 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area16#page42#enu20">
           <layout:Link link="sv5#area16#page42#enu20#ln294"/>
+          <layout:Field field="sv5#area16#page42#enu20#fld67"/>
           <layout:Field field="sv5#area16#page42#enu20#sfld18"/>
           <layout:Field field="sv5#area16#page42#enu20#sfld19"/>
           <layout:Field field="sv5#area16#page42#enu20#sfld23"/>
-          <layout:Field field="sv5#area16#page42#enu20#fld67"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

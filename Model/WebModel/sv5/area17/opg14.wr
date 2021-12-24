@@ -1,10 +1,13 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="15" gr:y="90" id="sv5#area17#opg14" name="Elimina dipendente" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="15" gr:y="135" id="sv5#area17#opg14" name="Elimina dipendente" transaction="true">
   <OperationUnits>
-    <DeleteUnit gr:x="0" gr:y="0" id="sv5#area17#opg14#dlu6" name="Elimina dipendente" entity="ent14">
-      <Selector id="sv5#area17#opg14#dlu6#su85" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv5#area17#opg14#dlu6#su85#kcond53" name="KeyCondition53" predicate="in" implied="false"/>
+    <ModifyUnit gr:x="0" gr:y="0" id="sv5#area17#opg14#mfu16" name="Licenzia dipendente" entity="ent14">
+      <Selector id="sv5#area17#opg14#mfu16#su10" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area17#opg14#mfu16#su10#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="sv5#area17#opg14#dlu6#oln17" name="OKFlow17" to="sv5#area17#page36" automaticCoupling="true"/>
-    </DeleteUnit>
+      <OKLink id="sv5#area17#opg14#mfu16#oln6" name="OKFlow6" to="sv5#area17#page36" automaticCoupling="true"/>
+      <KOLink id="sv5#area17#opg14#mfu16#kln109" name="KOFlow109" to="sv5#area17#page95#mssu45">
+        <LinkParameter id="sv5#area17#opg14#mfu16#kln109#par133" name="Errore durante la modifica del dipendente_Shown Messages" sourceValue="Errore durante la modifica del dipendente" target="sv5#area17#page95#mssu45.shownMessages"/>
+      </KOLink>
+    </ModifyUnit>
   </OperationUnits>
 </OperationGroup>

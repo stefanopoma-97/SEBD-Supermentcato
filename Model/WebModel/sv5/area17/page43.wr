@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="295" id="sv5#area17#page43" name="Modifica dipendente">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="295" id="sv5#area17#page43" name="Modifica dipendente">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv5#area17#page43#enu16" name="Modifica dipendente" entity="ent14" linkOrder="sv5#area17#page43#enu16#ln132">
       <Field id="sv5#area17#page43#enu16#fld31" name="Username" type="string" modifiable="true" attribute="userName" preloaded="true">

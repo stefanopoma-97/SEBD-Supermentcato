@@ -1,27 +1,26 @@
-[17 dic 2021 16:43:47] DEBUG Executing SQL script
-[17 dic 2021 16:43:47] INFO ================================================================================
-[17 dic 2021 16:43:47] INFO onError= 'stop'
-[17 dic 2021 16:43:47] INFO autoCommit= 'false'
-[17 dic 2021 16:43:47] INFO username= 'admin'
-[17 dic 2021 16:43:47] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.xml'
-[17 dic 2021 16:43:47] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.xml.log'
-[17 dic 2021 16:43:47] INFO encoding= ''
-[17 dic 2021 16:43:47] INFO driverClass= 'com.mysql.jdbc.Driver'
-[17 dic 2021 16:43:47] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.sql'
-[17 dic 2021 16:43:47] INFO eventSocketPort= '51863'
-[17 dic 2021 16:43:47] INFO statementSeparator= ';'
-[17 dic 2021 16:43:47] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
-[17 dic 2021 16:43:47] INFO password= 'admin'
-[17 dic 2021 16:43:47] INFO url= 'jdbc:mysql://localhost:3306/supermercati'
-[17 dic 2021 16:43:47] INFO ================================================================================
-[17 dic 2021 16:43:47] INFO Connecting to the Database...
-[17 dic 2021 16:43:48] INFO Database connection estabilished
-[17 dic 2021 16:43:48] INFO transaction isolation: 4
-[17 dic 2021 16:43:48] DEBUG ================================================================================
-[17 dic 2021 16:43:48] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\SEBN_Supermercato\.Temp~\UpdateSQL.sql
-[17 dic 2021 16:43:48] DEBUG Executing statement:  drop view `spesa_importo_totale_view`
-[17 dic 2021 16:43:48] DEBUG Executing statement:  create view `spesa_importo_totale_view` as select AL1.`oid` as `oid`, sum(AL2.`sub_totale`) as `der_attr` from  `spesa` AL1 left outer join `riga_ordine` AL2 on AL1.`oid`=AL2.`spesa_oid` group by AL1.`oid`
-[17 dic 2021 16:43:48] DEBUG ================================================================================
-[17 dic 2021 16:43:48] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[17 dic 2021 16:43:48] INFO Database connection closed
-[17 dic 2021 16:43:48] DEBUG Total time: 197 milliseconds
+[24 Dec 2021 12:40:59] DEBUG Executing SQL script
+[24 Dec 2021 12:40:59] INFO ================================================================================
+[24 Dec 2021 12:40:59] INFO onError= 'stop'
+[24 Dec 2021 12:40:59] INFO autoCommit= 'false'
+[24 Dec 2021 12:40:59] INFO username= 'admin'
+[24 Dec 2021 12:40:59] INFO outputPath= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.xml'
+[24 Dec 2021 12:40:59] INFO outputLogPath= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.xml.log'
+[24 Dec 2021 12:40:59] INFO encoding= ''
+[24 Dec 2021 12:40:59] INFO driverClass= 'com.mysql.jdbc.Driver'
+[24 Dec 2021 12:40:59] INFO sqlScript= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.sql'
+[24 Dec 2021 12:40:59] INFO eventSocketPort= '41545'
+[24 Dec 2021 12:40:59] INFO statementSeparator= ';'
+[24 Dec 2021 12:40:59] INFO derby.system.home= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/.metadata/.plugins/com.webratio.commons.db/derby'
+[24 Dec 2021 12:40:59] INFO password= 'admin'
+[24 Dec 2021 12:40:59] INFO url= 'jdbc:mysql://localhost:3306/supermercati'
+[24 Dec 2021 12:40:59] INFO ================================================================================
+[24 Dec 2021 12:40:59] INFO Connecting to the Database...
+[24 Dec 2021 12:40:59] INFO Database connection estabilished
+[24 Dec 2021 12:40:59] INFO transaction isolation: 4
+[24 Dec 2021 12:40:59] DEBUG ================================================================================
+[24 Dec 2021 12:40:59] DEBUG Executing SQL script file: /home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.sql
+[24 Dec 2021 12:40:59] DEBUG Executing statement:  alter table `responsabile`  add column  `licenziato`  bit
+[24 Dec 2021 12:40:59] DEBUG ================================================================================
+[24 Dec 2021 12:40:59] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[24 Dec 2021 12:40:59] INFO Database connection closed
+[24 Dec 2021 12:40:59] DEBUG Total time: 164 milliseconds

@@ -3,7 +3,7 @@
     <ScrollerUnit gr:x="0" gr:y="0" id="sv5#area17#page36#scu7" name="Scorri dipendenti" useCountQuery="false" entity="ent14" blockFactor="5">
       <Link id="sv5#area17#page36#scu7#ln66" name="Flow66" to="sv5#area17#page36#pwu12" automaticCoupling="true" type="transport" validate="true"/>
     </ScrollerUnit>
-    <PowerIndexUnit gr:x="10" gr:y="110" id="sv5#area17#page36#pwu12" name="Elenco dipendenti" sortable="true" checkable="false" useCountQuery="false" entity="ent14" displayAttributes="ent12#att51 ent12#att52 email ent12#att57" linkOrder="sv5#area17#page36#pwu12#ln119 sv5#area17#page36#pwu12#ln126 sv5#area17#page36#pwu12#ln133">
+    <PowerIndexUnit gr:x="10" gr:y="110" id="sv5#area17#page36#pwu12" name="Elenco dipendenti" sortable="true" checkable="false" useCountQuery="false" entity="ent14" displayAttributes="ent12#att51 ent12#att52 email ent12#att57" linkOrder="sv5#area17#page36#pwu12#ln119 sv5#area17#page36#pwu12#ln126 sv5#area17#page36#pwu12#ln125">
       <Selector id="sv5#area17#page36#pwu12#su82" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area17#page36#pwu12#su82#kcond49" name="KeyCondition49" predicate="in" implied="false"/>
       </Selector>
@@ -16,7 +16,10 @@
         <LinkParameter id="sv5#area17#page36#pwu12#ln126#par108" name="password_Password" source="data[].password" target="sv5#area17#page43#enu16#fld32_slot"/>
         <LinkParameter id="sv5#area17#page36#pwu12#ln126#par109" name="userName_Username" source="data[].userName" target="sv5#area17#page43#enu16#fld31_slot"/>
       </Link>
-      <Link id="sv5#area17#page36#pwu12#ln133" name="Elimina" to="sv5#area17#opg14#dlu6" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area17#page36#pwu12#ln125" name="Elimina" to="sv5#area17#opg14#mfu16" type="normal" validate="true">
+        <LinkParameter id="sv5#area17#page36#pwu12#ln125#par20" name="oid_KeyCondition2 [oid]" source="data[].userOID" target="sv5#area17#opg14#mfu16#su10#kcond2.userOID"/>
+        <LinkParameter id="sv5#area17#page36#pwu12#ln125#par56" name="true_licenziato" sourceValue="1" target="sv5#area17#opg14#mfu16.ent12#att34"/>
+      </Link>
     </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -51,7 +54,7 @@
           <layout:Attribute attribute="ent12#att57"/>
           <layout:Link link="sv5#area17#page36#pwu12#ln119"/>
           <layout:Link link="sv5#area17#page36#pwu12#ln126"/>
-          <layout:Link link="sv5#area17#page36#pwu12#ln133"/>
+          <layout:Link link="sv5#area17#page36#pwu12#ln125"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

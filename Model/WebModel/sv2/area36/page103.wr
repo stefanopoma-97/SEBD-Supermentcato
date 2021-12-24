@@ -77,14 +77,14 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area36#page103#enu33">
-          <layout:Field field="sv2#area36#page103#enu33#sfld35"/>
+          <layout:Link link="sv2#area36#page103#enu33#ln330"/>
+          <layout:Link link="sv2#area36#page103#enu33#ln170"/>
           <layout:Field field="sv2#area36#page103#enu33#fld84"/>
           <layout:Field field="sv2#area36#page103#enu33#fld85"/>
+          <layout:Field field="sv2#area36#page103#enu33#sfld35"/>
           <layout:Field field="sv2#area36#page103#enu33#msfld6"/>
           <layout:Field field="sv2#area36#page103#enu33#msfld7"/>
           <layout:Field field="sv2#area36#page103#enu33#msfld8"/>
-          <layout:Link link="sv2#area36#page103#enu33#ln330"/>
-          <layout:Link link="sv2#area36#page103#enu33#ln170"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

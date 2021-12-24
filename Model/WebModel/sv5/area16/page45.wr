@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="495" gr:y="1155" id="sv5#area16#page45" name="Crea prodotto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="715" gr:y="965" id="sv5#area16#page45" name="Crea prodotto">
   <ContentUnits>
-    <EntryUnit gr:x="330" gr:y="70" id="sv5#area16#page45#enu12" name="Crea prodotto" entity="ent11" linkOrder="sv5#area16#page45#enu12#ln106">
+    <EntryUnit gr:x="265" gr:y="70" id="sv5#area16#page45#enu12" name="Crea prodotto" entity="ent11" linkOrder="sv5#area16#page45#enu12#ln106">
       <Field id="sv5#area16#page45#enu12#fld24" name="Nome" type="string" modifiable="true" attribute="ent4#att15">
         <VRules>
           <MandatoryValidationRule id="sv5#area16#page45#enu12#fld24#mnd56" name="Mandatory22"/>
@@ -60,7 +60,7 @@
         <LinkParameter id="sv5#area16#page45#seu38#ln103#par194" name="oid_Nazione [output]" source="ent19#att44Array" target="sv5#area16#page45#enu12#sfld13_output"/>
       </Link>
     </SelectorUnit>
-    <TimeUnit id="sv5#area16#page45#tmu11" name="Data creazione" gr:x="240" gr:y="210">
+    <TimeUnit id="sv5#area16#page45#tmu11" name="Data creazione" gr:x="275" gr:y="210">
       <Link id="sv5#area16#page45#tmu11#ln123" name="Flow119" to="sv5#area16#page45#enu12" type="transport" validate="true">
         <LinkParameter id="sv5#area16#page45#tmu11#ln123#par253" name="Current/Input Date_PASSING" source="currentDate" passing="true"/>
       </Link>

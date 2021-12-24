@@ -1,10 +1,9 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="325" gr:y="455" id="sv5#area17#page39" name="Dettagli dipendente">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv5#area17#page39#dau18" name="Dettagli dipendente" entity="ent14" displayAttributes="ent12#att51 password email userName ent12#att52 ent12#att57 ent14#att54" linkOrder="sv5#area17#page39#dau18#ln140 sv5#area17#page39#dau18#ln134 sv5#area17#page39#dau18#ln135 sv5#area17#page39#dau18#ln138">
+    <DataUnit gr:x="0" gr:y="0" id="sv5#area17#page39#dau18" name="Dettagli dipendente" entity="ent14" displayAttributes="ent12#att51 password email userName ent12#att52 ent12#att57 ent14#att54" linkOrder="sv5#area17#page39#dau18#ln140 sv5#area17#page39#dau18#ln135 sv5#area17#page39#dau18#ln138 sv5#area17#page39#dau18#ln133">
       <Selector id="sv5#area17#page39#dau18#su83" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area17#page39#dau18#su83#kcond50" name="KeyCondition50" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv5#area17#page39#dau18#ln134" name="Elimina" to="sv5#area17#opg14#dlu6" automaticCoupling="true" type="normal" validate="true"/>
       <Link id="sv5#area17#page39#dau18#ln135" name="Assegna a negozio" to="sv5#area17#page46#enu17" automaticCoupling="true" type="normal" validate="true"/>
       <Link id="sv5#area17#page39#dau18#ln138" name="Dissocia dal negozio" to="sv5#area17#opg23#dcnu2" type="normal" validate="true">
         <LinkParameter id="sv5#area17#page39#dau18#ln138#par114" name="oid_KeyCondition56 [oid] [Responsabile] [Source]" source="data.userOID" target="sv5#area17#opg23#dcnu2#su89#kcond56.userOID"/>
@@ -12,6 +11,10 @@
       </Link>
       <Link id="sv5#area17#page39#dau18#ln139" name="Flow139" to="sv5#area17#page39#dau19" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv5#area17#page39#dau18#ln140" name="Modifica" to="sv5#area17#page43#enu16" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area17#page39#dau18#ln133" name="Elimina (licenzia)" to="sv5#area17#opg14#mfu16" type="normal" validate="true">
+        <LinkParameter id="sv5#area17#page39#dau18#ln133#par131" name="oid_KeyCondition2 [oid]" source="data.userOID" target="sv5#area17#opg14#mfu16#su10#kcond2.userOID"/>
+        <LinkParameter id="sv5#area17#page39#dau18#ln133#par132" name="1_licenziato" sourceValue="1" target="sv5#area17#opg14#mfu16.ent12#att34"/>
+      </Link>
     </DataUnit>
     <DataUnit gr:x="220" gr:y="0" id="sv5#area17#page39#dau19" name="Dettagli negozio" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13">
       <Selector id="sv5#area17#page39#dau19#su91" defaultPolicy="fill" booleanOperator="and">
@@ -31,9 +34,9 @@
           <layout:Attribute attribute="ent12#att57"/>
           <layout:Attribute attribute="ent14#att54"/>
           <layout:Link link="sv5#area17#page39#dau18#ln140"/>
-          <layout:Link link="sv5#area17#page39#dau18#ln134"/>
           <layout:Link link="sv5#area17#page39#dau18#ln135"/>
           <layout:Link link="sv5#area17#page39#dau18#ln138"/>
+          <layout:Link link="sv5#area17#page39#dau18#ln133"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
