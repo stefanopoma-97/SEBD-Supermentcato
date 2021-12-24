@@ -1,4 +1,4 @@
--- Responsabile [ent12]
-alter table `responsabile`  add column  `licenziato`  bit;
+-- Prodotto [ent4]
+alter table `prodotto`  add column  `vendibile`  bit;
 
 

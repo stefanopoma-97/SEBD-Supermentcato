@@ -22,6 +22,7 @@
       </Link>
       <Selector id="sv5#area27#page76#pwu28#su177" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area27#page76#pwu28#su177#kcond113" name="KeyCondition113" predicate="in" implied="false"/>
+        <AttributesCondition id="sv5#area27#page76#pwu28#su177#acond17" name="NonLicenziato" predicate="eq" booleanOperator="or" implied="false" attributes="ent12#att34" value="0"/>
       </Selector>
     </PowerIndexUnit>
     <SelectorUnit gr:x="0" gr:y="0" id="sv5#area27#page76#seu90" name="Seleziona dipendenti" entity="ent14">

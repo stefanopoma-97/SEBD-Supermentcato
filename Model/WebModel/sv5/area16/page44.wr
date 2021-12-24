@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="715" gr:y="620" id="sv5#area16#page44" name="Dettagli prodotto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="670" gr:y="620" id="sv5#area16#page44" name="Dettagli prodotto">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv5#area16#page44#dau17" name="Dettagli prodotto" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" linkOrder="sv5#area16#page44#dau17#ln107 sv5#area16#page44#dau17#ln124">
+    <DataUnit gr:x="0" gr:y="0" id="sv5#area16#page44#dau17" name="Dettagli prodotto" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" linkOrder="sv5#area16#page44#dau17#ln107 sv5#area16#page44#dau17#ln124 sv5#area16#page44#dau17#ln134">
       <Selector id="sv5#area16#page44#dau17#su61" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#page44#dau17#su61#kcond33" name="KeyCondition33" predicate="in" implied="false"/>
       </Selector>
@@ -13,6 +13,10 @@
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par223" name="prezzo_Prezzo" source="data.ent4#att17" target="sv5#area16#page47#enu13#fld37_slot"/>
       </Link>
       <Link id="sv5#area16#page44#dau17#ln124" name="Elimina" to="sv5#area16#opg18#dlu1" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area16#page44#dau17#ln134" name="Nascondi" to="sv5#area16#opg24#mfu23" type="normal" validate="true">
+        <LinkParameter id="sv5#area16#page44#dau17#ln134#par243" name="oid_KeyCondition105 [oid]" source="data.ent4#att14" target="sv5#area16#opg24#mfu23#su159#kcond105.ent4#att14"/>
+        <LinkParameter id="sv5#area16#page44#dau17#ln134#par248" name="0_vendibile" sourceValue="0" target="sv5#area16#opg24#mfu23.ent4#att64"/>
+      </Link>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -29,6 +33,7 @@
           <layout:Attribute attribute="ent4#att60"/>
           <layout:Link link="sv5#area16#page44#dau17#ln107"/>
           <layout:Link link="sv5#area16#page44#dau17#ln124"/>
+          <layout:Link link="sv5#area16#page44#dau17#ln134"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

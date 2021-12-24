@@ -94,7 +94,7 @@
       <db:JoinColumn attribute="ent2#att5" name="oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="1170" gr:y="475" id="ent4" name="Prodotto" duration="persistent" attributeOrder="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" db:database="db1" db:table="prodotto">
+  <Entity gr:x="1170" gr:y="475" id="ent4" name="Prodotto" duration="persistent" attributeOrder="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60 ent4#att64" db:database="db1" db:table="prodotto">
     <Attribute id="ent4#att14" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent4#att18" name="data inserimento" type="date" key="false" db:column="data_inserimento"/>
     <Attribute id="ent4#att17" name="prezzo" type="decimal" key="false" db:column="prezzo"/>
@@ -104,6 +104,9 @@
     <Attribute id="ent4#att53" name="fascia" type="string" derivationQuery="simpleImported::Self.rel11#role22.ent15#att32"/>
     <Attribute id="ent4#att59" name="categoria" type="string" derivationQuery="simpleImported::Self.rel4#role7.ent5#att20"/>
     <Attribute id="ent4#att60" name="nazione" type="string" derivationQuery="simpleImported::Self.rel18#role35.ent19#att45"/>
+    <Attribute id="ent4#att64" name="vendibile" type="boolean" db:column="vendibile" key="false">
+      <Property id="ent4#att64#prop1" name="DefaultVendibile" value="1"/>
+    </Attribute>
   </Entity>
   <Entity gr:x="1385" gr:y="340" id="ent5" name="Categoria" duration="persistent" attributeOrder="ent5#att19 ent5#att20 ent5#att21" db:database="db1" db:table="categoria">
     <Attribute id="ent5#att19" key="true" name="oid" type="integer" db:column="oid"/>

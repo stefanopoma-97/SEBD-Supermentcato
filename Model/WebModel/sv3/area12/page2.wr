@@ -18,6 +18,7 @@
           <layout:Attribute attribute="ent4#att53"/>
           <layout:Attribute attribute="ent4#att59"/>
           <layout:Attribute attribute="ent4#att60"/>
+          <layout:Attribute attribute="ent4#att64"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

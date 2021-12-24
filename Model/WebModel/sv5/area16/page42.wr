@@ -127,6 +127,7 @@
           <layout:Attribute attribute="ent4#att60"/>
           <layout:Link link="sv5#area16#page42#alt9#page81#pwu11#ln33"/>
           <layout:Link link="sv5#area16#page42#alt9#page81#pwu11#ln100"/>
+          <layout:Link link="sv5#area16#page42#alt9#page81#pwu11#ln141"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -185,6 +186,7 @@
           <layout:Attribute attribute="ent4#att60"/>
           <layout:Link link="sv5#area16#page42#alt9#page88#pwu20#ln131"/>
           <layout:Link link="sv5#area16#page42#alt9#page88#pwu20#ln197"/>
+          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20#ln142"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -260,14 +262,16 @@
   </layout:Grid>
   <Link id="sv5#area16#page42#ln104" name="Crea prodotto" to="sv5#area16#page45#enu12" automaticCoupling="true" type="normal" validate="true"/>
   <Alternative gr:x="0" gr:y="205" id="sv5#area16#page42#alt9" name="Liste" defaultPage="sv5#area16#page42#alt9#page81">
-    <Page gr:x="0" gr:y="10" id="sv5#area16#page42#alt9#page81" name="Elenco prodotti">
+    <Page gr:x="0" gr:y="0" id="sv5#area16#page42#alt9#page81" name="Elenco prodotti">
       <ContentUnits>
-        <PowerIndexUnit id="sv5#area16#page42#alt9#page81#pwu11" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page81#pwu11#ln33 sv5#area16#page42#alt9#page81#pwu11#ln100" gr:x="0" gr:y="105" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60">
+        <PowerIndexUnit id="sv5#area16#page42#alt9#page81#pwu11" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page81#pwu11#ln33 sv5#area16#page42#alt9#page81#pwu11#ln100 sv5#area16#page42#alt9#page81#pwu11#ln141" gr:x="0" gr:y="105" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60">
           <Selector id="sv5#area16#page42#alt9#page81#pwu11#su60" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv5#area16#page42#alt9#page81#pwu11#su60#kcond58" name="KeyCondition" predicate="in" implied="true"/>
+            <AttributesCondition id="sv5#area16#page42#alt9#page81#pwu11#su60#acond20" name="InVendita" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64" value="1"/>
           </Selector>
           <Link id="sv5#area16#page42#alt9#page81#pwu11#ln33" name="Dettagli" to="sv5#area16#page44#dau17" type="normal" automaticCoupling="true" validate="true"/>
           <Link id="sv5#area16#page42#alt9#page81#pwu11#ln100" name="Elimina" to="sv5#area16#opg18#dlu1" type="normal" automaticCoupling="true" validate="true"/>
+          <Link id="sv5#area16#page42#alt9#page81#pwu11#ln141" name="Nascondi" to="sv5#area16#opg24#mfu23" automaticCoupling="true" type="normal" validate="true"/>
         </PowerIndexUnit>
         <ScrollerUnit id="sv5#area16#page42#alt9#page81#scu32" name="Scorri prodotti" linkOrder="sv5#area16#page42#alt9#page81#scu32#ln239" gr:x="5" gr:y="0" useCountQuery="false" entity="ent4" blockFactor="5">
           <Selector id="sv5#area16#page42#alt9#page81#scu32#su102" defaultPolicy="fill" booleanOperator="and"/>
@@ -277,12 +281,14 @@
     </Page>
     <Page gr:x="210" gr:y="0" id="sv5#area16#page42#alt9#page88" name="Elenco prodotti">
       <ContentUnits>
-        <PowerIndexUnit id="sv5#area16#page42#alt9#page88#pwu20" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page88#pwu20#ln131 sv5#area16#page42#alt9#page88#pwu20#ln197" gr:x="0" gr:y="120" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60">
+        <PowerIndexUnit id="sv5#area16#page42#alt9#page88#pwu20" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page88#pwu20#ln131 sv5#area16#page42#alt9#page88#pwu20#ln197 sv5#area16#page42#alt9#page88#pwu20#ln142" gr:x="0" gr:y="120" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60">
           <Selector id="sv5#area16#page42#alt9#page88#pwu20#su96" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv5#area16#page42#alt9#page88#pwu20#su96#kcond83" name="KeyCondition" predicate="in" implied="true"/>
+            <AttributesCondition id="sv5#area16#page42#alt9#page88#pwu20#su96#acond21" name="InVendita" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64" value="1"/>
           </Selector>
           <Link id="sv5#area16#page42#alt9#page88#pwu20#ln131" name="Dettagli" to="sv5#area16#page44#dau17" type="normal" automaticCoupling="true" validate="true"/>
           <Link id="sv5#area16#page42#alt9#page88#pwu20#ln197" name="Elimina" to="sv5#area16#opg18#dlu1" type="normal" automaticCoupling="true" validate="true"/>
+          <Link id="sv5#area16#page42#alt9#page88#pwu20#ln142" name="Nascondi" to="sv5#area16#opg24#mfu23" automaticCoupling="true" type="normal" validate="true"/>
         </PowerIndexUnit>
         <ScrollerUnit id="sv5#area16#page42#alt9#page88#scu33" name="Scorri prodotti" linkOrder="sv5#area16#page42#alt9#page88#scu33#ln248" gr:x="5" gr:y="0" useCountQuery="false" entity="ent4" blockFactor="5">
           <Selector id="sv5#area16#page42#alt9#page88#scu33#su182" defaultPolicy="fill" booleanOperator="and">

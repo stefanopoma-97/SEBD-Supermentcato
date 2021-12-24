@@ -1,26 +1,26 @@
-[24 Dec 2021 12:40:59] DEBUG Executing SQL script
-[24 Dec 2021 12:40:59] INFO ================================================================================
-[24 Dec 2021 12:40:59] INFO onError= 'stop'
-[24 Dec 2021 12:40:59] INFO autoCommit= 'false'
-[24 Dec 2021 12:40:59] INFO username= 'admin'
-[24 Dec 2021 12:40:59] INFO outputPath= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.xml'
-[24 Dec 2021 12:40:59] INFO outputLogPath= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.xml.log'
-[24 Dec 2021 12:40:59] INFO encoding= ''
-[24 Dec 2021 12:40:59] INFO driverClass= 'com.mysql.jdbc.Driver'
-[24 Dec 2021 12:40:59] INFO sqlScript= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.sql'
-[24 Dec 2021 12:40:59] INFO eventSocketPort= '41545'
-[24 Dec 2021 12:40:59] INFO statementSeparator= ';'
-[24 Dec 2021 12:40:59] INFO derby.system.home= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/.metadata/.plugins/com.webratio.commons.db/derby'
-[24 Dec 2021 12:40:59] INFO password= 'admin'
-[24 Dec 2021 12:40:59] INFO url= 'jdbc:mysql://localhost:3306/supermercati'
-[24 Dec 2021 12:40:59] INFO ================================================================================
-[24 Dec 2021 12:40:59] INFO Connecting to the Database...
-[24 Dec 2021 12:40:59] INFO Database connection estabilished
-[24 Dec 2021 12:40:59] INFO transaction isolation: 4
-[24 Dec 2021 12:40:59] DEBUG ================================================================================
-[24 Dec 2021 12:40:59] DEBUG Executing SQL script file: /home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.sql
-[24 Dec 2021 12:40:59] DEBUG Executing statement:  alter table `responsabile`  add column  `licenziato`  bit
-[24 Dec 2021 12:40:59] DEBUG ================================================================================
-[24 Dec 2021 12:40:59] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[24 Dec 2021 12:40:59] INFO Database connection closed
-[24 Dec 2021 12:40:59] DEBUG Total time: 164 milliseconds
+[24 Dec 2021 13:34:22] DEBUG Executing SQL script
+[24 Dec 2021 13:34:22] INFO ================================================================================
+[24 Dec 2021 13:34:22] INFO onError= 'stop'
+[24 Dec 2021 13:34:22] INFO autoCommit= 'false'
+[24 Dec 2021 13:34:22] INFO username= 'admin'
+[24 Dec 2021 13:34:22] INFO outputPath= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.xml'
+[24 Dec 2021 13:34:22] INFO outputLogPath= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.xml.log'
+[24 Dec 2021 13:34:22] INFO encoding= ''
+[24 Dec 2021 13:34:22] INFO driverClass= 'com.mysql.jdbc.Driver'
+[24 Dec 2021 13:34:22] INFO sqlScript= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.sql'
+[24 Dec 2021 13:34:22] INFO eventSocketPort= '33605'
+[24 Dec 2021 13:34:22] INFO statementSeparator= ';'
+[24 Dec 2021 13:34:22] INFO derby.system.home= '/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/.metadata/.plugins/com.webratio.commons.db/derby'
+[24 Dec 2021 13:34:22] INFO password= 'admin'
+[24 Dec 2021 13:34:22] INFO url= 'jdbc:mysql://localhost:3306/supermercati'
+[24 Dec 2021 13:34:22] INFO ================================================================================
+[24 Dec 2021 13:34:22] INFO Connecting to the Database...
+[24 Dec 2021 13:34:22] INFO Database connection estabilished
+[24 Dec 2021 13:34:22] INFO transaction isolation: 4
+[24 Dec 2021 13:34:22] DEBUG ================================================================================
+[24 Dec 2021 13:34:22] DEBUG Executing SQL script file: /home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato/.Temp~/UpdateSQL.sql
+[24 Dec 2021 13:34:22] DEBUG Executing statement:  alter table `prodotto`  add column  `vendibile`  bit
+[24 Dec 2021 13:34:22] DEBUG ================================================================================
+[24 Dec 2021 13:34:22] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[24 Dec 2021 13:34:22] INFO Database connection closed
+[24 Dec 2021 13:34:22] DEBUG Total time: 172 milliseconds

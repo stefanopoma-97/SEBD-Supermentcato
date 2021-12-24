@@ -1,0 +1,13 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="840" gr:y="815" id="sv5#area16#opg24" name="Nascondi prodotto" transaction="true">
+  <OperationUnits>
+    <ModifyUnit gr:x="0" gr:y="0" id="sv5#area16#opg24#mfu23" name="Nascondi prodotto" entity="ent4">
+      <Selector id="sv5#area16#opg24#mfu23#su159" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg24#mfu23#su159#kcond105" name="KeyCondition105" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv5#area16#opg24#mfu23#oln17" name="OKFlow17" to="sv5#area16#page42" automaticCoupling="true"/>
+      <KOLink id="sv5#area16#opg24#mfu23#kln110" name="KOFlow110" to="sv5#area16#page59#mssu19">
+        <LinkParameter id="sv5#area16#opg24#mfu23#kln110#par249" name="Errore durante l'occultazione del prodotto_Shown Messages" sourceValue="Errore durante l'occultazione del prodotto" target="sv5#area16#page59#mssu19.shownMessages"/>
+      </KOLink>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationGroup>
