@@ -12,7 +12,9 @@
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par222" name="nome_Nome" source="data.ent4#att15" target="sv5#area16#page47#enu13#fld35_slot"/>
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par223" name="prezzo_Prezzo" source="data.ent4#att17" target="sv5#area16#page47#enu13#fld37_slot"/>
       </Link>
-      <Link id="sv5#area16#page44#dau17#ln124" name="Elimina" to="sv5#area16#opg18#dlu1" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area16#page44#dau17#ln124" name="Elimina" to="sv5#area16#miu17" type="normal" validate="true">
+        <LinkParameter id="sv5#area16#page44#dau17#ln124#par281" name="oid_ProdottoOnline [oid]" source="data.ent4#att14" target="sv5#area16#miu17.mov1#opm7#icu7#icp10"/>
+      </Link>
       <Link id="sv5#area16#page44#dau17#ln134" name="Nascondi" to="sv5#area16#opg24#mfu23" type="normal" validate="true">
         <LinkParameter id="sv5#area16#page44#dau17#ln134#par243" name="oid_KeyCondition105 [oid]" source="data.ent4#att14" target="sv5#area16#opg24#mfu23#su159#kcond105.ent4#att14"/>
         <LinkParameter id="sv5#area16#page44#dau17#ln134#par248" name="0_vendibile" sourceValue="0" target="sv5#area16#opg24#mfu23.ent4#att64"/>

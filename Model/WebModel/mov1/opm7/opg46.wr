@@ -1,0 +1,68 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm7#opg46" name="Elimina prodotto" transaction="true" gr:x="360" gr:y="15">
+  <OperationUnits>
+    <DeleteUnit id="mov1#opm7#opg46#dlu16" name="Elimina prodotto" gr:x="395" gr:y="145" entity="ent4">
+      <Selector id="mov1#opm7#opg46#dlu16#su213" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm7#opg46#dlu16#su213#kcond188" name="KeyCondition82" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm7#opg46#dlu16#oln57" to="mov1#opm7#okcu7" name="OKFlow41"/>
+      <KOLink id="mov1#opm7#opg46#dlu16#kln113" to="mov1#opm7#kocu11" name="KOFlow45">
+        <LinkParameter id="mov1#opm7#opg46#dlu16#kln113#par346" sourceValue="Errore durante eliminazione del prodotto" name="Errore durante eliminazione del prodotto_Shown Messages" target="mov1#opm7#kocu11#ocp11"/>
+      </KOLink>
+    </DeleteUnit>
+    <SelectorUnit id="mov1#opm7#opg46#seu53" name="ProdottiOnline" gr:x="0" gr:y="0" entity="ent8">
+      <Selector id="mov1#opm7#opg46#seu53#su219" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm7#opg46#seu53#su219#rcond38" name="ProdottoOnline" predicate="in" implied="false" role="rel8#role16"/>
+      </Selector>
+      <OKLink id="mov1#opm7#opg46#seu53#oln63" name="OKFlow63" to="mov1#opm7#opg46#seu56">
+        <LinkParameter id="mov1#opm7#opg46#seu53#oln63#par350" name="oid_RigheConProdotto [oid]" source="ent8#att31Array" target="mov1#opm7#opg46#seu56#su221#rcond41.ent8#att31"/>
+        <LinkParameter id="mov1#opm7#opg46#seu53#oln63#par356" name="id_prodotto_PASSING" sourceLinkParameter="mov1#opm7#icu7#oln32#par355" passing="true"/>
+        <LinkParameter id="mov1#opm7#opg46#seu53#oln63#par364" name="oid_PASSING" source="ent8#att31Array" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <DeleteUnit id="mov1#opm7#opg46#dlu17" name="Elimina prodotti online" gr:x="205" gr:y="285" entity="ent8">
+      <Selector id="mov1#opm7#opg46#dlu17#su220" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm7#opg46#dlu17#su220#kcond189" name="KeyCondition118" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm7#opg46#dlu17#oln77" name="OKFlow77" to="mov1#opm7#opg46#seu57">
+        <LinkParameter id="mov1#opm7#opg46#dlu17#oln77#par394" name="id_prodotto_PASSING_PromozioniProdotto [oid]" sourceLinkParameter="mov1#opm7#opg46#dlu18#oln69#par393" target="mov1#opm7#opg46#seu57#su225#rcond42.ent4#att14"/>
+        <LinkParameter id="mov1#opm7#opg46#dlu17#oln77#par395" name="id_prodotto_PASSING" sourceLinkParameter="mov1#opm7#opg46#dlu18#oln69#par393" passing="true"/>
+      </OKLink>
+    </DeleteUnit>
+    <SelectorUnit id="mov1#opm7#opg46#seu56" name="Righe d'ordine" gr:x="0" gr:y="140" entity="ent7">
+      <Selector id="mov1#opm7#opg46#seu56#su221" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm7#opg46#seu56#su221#rcond41" name="RigheConProdotto" predicate="in" implied="false" role="rel9#role18"/>
+      </Selector>
+      <OKLink id="mov1#opm7#opg46#seu56#oln66" name="OKFlow66" to="mov1#opm7#opg46#dlu18">
+        <LinkParameter id="mov1#opm7#opg46#seu56#oln66#par365" name="oid_KeyCondition124 [oid]" source="ent7#att28Array" target="mov1#opm7#opg46#dlu18#su222#kcond190.ent7#att28"/>
+        <LinkParameter id="mov1#opm7#opg46#seu56#oln66#par369" name="id_prodotto_PASSING" sourceLinkParameter="mov1#opm7#opg46#seu53#oln63#par356" passing="true"/>
+        <LinkParameter id="mov1#opm7#opg46#seu56#oln66#par391" name="oid_PASSING" sourceLinkParameter="mov1#opm7#opg46#seu53#oln63#par364" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <DeleteUnit id="mov1#opm7#opg46#dlu18" name="Elimina righe d'ordine" gr:x="0" gr:y="285" entity="ent7">
+      <Selector id="mov1#opm7#opg46#dlu18#su222" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm7#opg46#dlu18#su222#kcond190" name="KeyCondition124" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm7#opg46#dlu18#oln69" name="OKFlow69" to="mov1#opm7#opg46#dlu17">
+        <LinkParameter id="mov1#opm7#opg46#dlu18#oln69#par392" name="oid_PASSING_KeyCondition118 [oid]" sourceLinkParameter="mov1#opm7#opg46#seu56#oln66#par391" target="mov1#opm7#opg46#dlu17#su220#kcond189.ent8#att31"/>
+        <LinkParameter id="mov1#opm7#opg46#dlu18#oln69#par393" name="id_prodotto_PASSING" sourceLinkParameter="mov1#opm7#opg46#seu56#oln66#par369" passing="true"/>
+      </OKLink>
+    </DeleteUnit>
+    <SelectorUnit id="mov1#opm7#opg46#seu57" name="Promozioni" gr:x="215" gr:y="145" entity="ent6">
+      <Selector id="mov1#opm7#opg46#seu57#su225" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm7#opg46#seu57#su225#rcond42" name="PromozioniProdotto" predicate="in" implied="false" role="rel6#role12"/>
+      </Selector>
+      <OKLink id="mov1#opm7#opg46#seu57#oln127" name="OKFlow127" to="mov1#opm7#opg46#dlu19">
+        <LinkParameter id="mov1#opm7#opg46#seu57#oln127#par396" name="oid_KeyCondition191 [oid]" source="ent6#att22Array" target="mov1#opm7#opg46#dlu19#su226#kcond191.ent6#att22"/>
+        <LinkParameter id="mov1#opm7#opg46#seu57#oln127#par413" name="id_prodotto_PASSING" sourceLinkParameter="mov1#opm7#opg46#dlu17#oln77#par395" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <DeleteUnit gr:x="215" gr:y="0" id="mov1#opm7#opg46#dlu19" name="Elimina promozioni" entity="ent6">
+      <Selector id="mov1#opm7#opg46#dlu19#su226" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm7#opg46#dlu19#su226#kcond191" name="KeyCondition191" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm7#opg46#dlu19#oln128" name="OKFlow128" to="mov1#opm7#opg46#dlu16">
+        <LinkParameter id="mov1#opm7#opg46#dlu19#oln128#par427" name="id_prodotto_PASSING_KeyCondition82 [oid]" sourceLinkParameter="mov1#opm7#opg46#seu57#oln127#par413" target="mov1#opm7#opg46#dlu16#su213#kcond188.ent4#att14"/>
+      </OKLink>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>

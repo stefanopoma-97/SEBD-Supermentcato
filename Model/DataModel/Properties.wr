@@ -327,6 +327,5 @@
       <db:JoinColumn attribute="ent3#att8" name="negozio_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="supermercati" type="MySQL" username="admin" password="YWRtaW4=" url="jdbc:mysql://localhost:3306/supermercati" cryptedPassword="true">
-  </db:Database>
+  <db:Database id="db1" name="supermercati" type="MySQL" username="admin" password="YWRtaW4=" url="jdbc:mysql://localhost:3306/supermercati" cryptedPassword="true"/>
 </DataModel>

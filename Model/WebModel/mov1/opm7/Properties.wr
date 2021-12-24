@@ -1,0 +1,15 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="1179" id="mov1#opm7" name="Elimina prodotto e associazioni">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#opm7#icu7">
+      <OKLink id="mov1#opm7#icu7#oln32" to="mov1#opm7#opg46#seu53" validate="true" name="Start">
+        <LinkParameter id="mov1#opm7#icu7#oln32#par355" name="id_prodotto_PASSING" source="mov1#opm7#icu7#icp12" passing="true"/>
+        <LinkParameter id="mov1#opm7#icu7#oln32#par449" name="id_prodotto_ProdottoOnline [oid]" source="mov1#opm7#icu7#icp12" target="mov1#opm7#opg46#seu53#su219#rcond38.ent4#att14"/>
+      </OKLink>
+      <InputCollectorParameter id="mov1#opm7#icu7#icp12" name="id_prodotto"/>
+    </InputCollectorUnit>
+    <KOCollectorUnit gr:x="1010" gr:y="300" id="mov1#opm7#kocu11" name="KO Port11">
+      <OutputCollectorParameter id="mov1#opm7#kocu11#ocp11" name="Errore durante eliminazione del prodotto_Shown Messages"/>
+    </KOCollectorUnit>
+    <OKCollectorUnit gr:x="1010" gr:y="20" id="mov1#opm7#okcu7" name="OK Port7"/>
+  </OperationUnits>
+</OperationModule>
