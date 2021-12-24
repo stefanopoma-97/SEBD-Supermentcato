@@ -1,10 +1,10 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="10" gr:y="195" id="sv5#area27#opg34" name="Elimina responsabile" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="5" gr:y="250" id="sv5#area27#opg34" name="Elimina responsabile" transaction="true">
   <OperationUnits>
-    <DeleteUnit gr:x="0" gr:y="0" id="sv5#area27#opg34#dlu11" name="Elimina responsabile" entity="ent12">
-      <Selector id="sv5#area27#opg34#dlu11#su169" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv5#area27#opg34#dlu11#su169#kcond105" name="KeyCondition105" predicate="in" implied="false"/>
+    <ModifyUnit gr:x="0" gr:y="0" id="sv5#area27#opg34#mfu17" name="Licenzia responsabile" entity="ent12">
+      <Selector id="sv5#area27#opg34#mfu17#su85" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area27#opg34#mfu17#su85#kcond53" name="KeyCondition53" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="sv5#area27#opg34#dlu11#oln66" name="OKFlow66" to="sv5#area27#page76" automaticCoupling="true"/>
-    </DeleteUnit>
+      <OKLink id="sv5#area27#opg34#mfu17#oln8" name="OKFlow66" to="sv5#area27#page76" automaticCoupling="true"/>
+    </ModifyUnit>
   </OperationUnits>
 </OperationGroup>

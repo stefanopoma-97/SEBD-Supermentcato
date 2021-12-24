@@ -16,7 +16,10 @@
         <LinkParameter id="sv5#area27#page76#pwu28#ln266#par344" name="password_Password" source="data[].password" target="sv5#area27#page79#enu24#fld59_slot"/>
         <LinkParameter id="sv5#area27#page76#pwu28#ln266#par345" name="userName_Username" source="data[].userName" target="sv5#area27#page79#enu24#fld58_slot"/>
       </Link>
-      <Link id="sv5#area27#page76#pwu28#ln269" name="Elimina" to="sv5#area27#opg34#dlu11" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area27#page76#pwu28#ln269" name="Elimina" to="sv5#area27#opg34#mfu17" type="normal" validate="true">
+        <LinkParameter id="sv5#area27#page76#pwu28#ln269#par135" name="oid_KeyCondition53 [oid]" source="data[].userOID" target="sv5#area27#opg34#mfu17#su85#kcond53.userOID"/>
+        <LinkParameter id="sv5#area27#page76#pwu28#ln269#par144" name="1_licenziato" sourceValue="1" target="sv5#area27#opg34#mfu17.ent12#att34"/>
+      </Link>
       <Selector id="sv5#area27#page76#pwu28#su177" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area27#page76#pwu28#su177#kcond113" name="KeyCondition113" predicate="in" implied="false"/>
       </Selector>
