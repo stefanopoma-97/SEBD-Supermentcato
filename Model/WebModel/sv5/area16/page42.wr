@@ -1,17 +1,15 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="980" gr:y="0" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104">
   <ContentUnits>
-    <EntryUnit gr:x="235" gr:y="120" id="sv5#area16#page42#enu20" name="Filtra i prodotti" linkOrder="sv5#area16#page42#enu20#ln225">
+    <EntryUnit gr:x="235" gr:y="120" id="sv5#area16#page42#enu20" name="Filtra i prodotti" linkOrder="sv5#area16#page42#enu20#ln294">
       <SelectionField id="sv5#area16#page42#enu20#sfld18" type="string" name="Categoria"/>
       <SelectionField id="sv5#area16#page42#enu20#sfld19" name="Fascia di prezzo" type="string"/>
       <SelectionField id="sv5#area16#page42#enu20#sfld23" name="Nazione" type="string"/>
       <Field id="sv5#area16#page42#enu20#fld67" name="Nuovi/Tutti" type="boolean" modifiable="true"/>
-      <Field id="sv5#area16#page42#enu20#fld68" name="In promozione" type="boolean" modifiable="true"/>
-      <Link id="sv5#area16#page42#enu20#ln225" name="Filtra" to="sv5#area16#opg36#switch2" type="normal" validate="true">
-        <LinkParameter id="sv5#area16#page42#enu20#ln225#par252" name="Categoria_PASSING" source="sv5#area16#page42#enu20#sfld18" passing="true"/>
-        <LinkParameter id="sv5#area16#page42#enu20#ln225#par255" name="Fascia di prezzo_PASSING" source="sv5#area16#page42#enu20#sfld19" passing="true"/>
-        <LinkParameter id="sv5#area16#page42#enu20#ln225#par281" name="Nazione_PASSING" source="sv5#area16#page42#enu20#sfld23" passing="true"/>
-        <LinkParameter id="sv5#area16#page42#enu20#ln225#par286" name="Nuovo_PASSING" source="sv5#area16#page42#enu20#fld67" passing="true"/>
-        <LinkParameter id="sv5#area16#page42#enu20#ln225#par355" name="In promozione_Switch" source="sv5#area16#page42#enu20#fld68" target="sv5#area16#opg36#switch2.switch"/>
+      <Link id="sv5#area16#page42#enu20#ln294" name="Filtra" to="sv5#area16#opg36#switch1" type="normal" validate="true">
+        <LinkParameter id="sv5#area16#page42#enu20#ln294#par726" name="Categoria_PASSING" source="sv5#area16#page42#enu20#sfld18" passing="true"/>
+        <LinkParameter id="sv5#area16#page42#enu20#ln294#par734" name="Fascia di prezzo_PASSING" source="sv5#area16#page42#enu20#sfld19" passing="true"/>
+        <LinkParameter id="sv5#area16#page42#enu20#ln294#par736" name="Nazione_PASSING" source="sv5#area16#page42#enu20#sfld23" passing="true"/>
+        <LinkParameter id="sv5#area16#page42#enu20#ln294#par753" name="Nuovi/Tutti_Switch" source="sv5#area16#page42#enu20#fld67" target="sv5#area16#opg36#switch1.switch"/>
       </Link>
     </EntryUnit>
     <SelectorUnit gr:x="45" gr:y="0" id="sv5#area16#page42#seu1" name="Categorie" entity="ent5">
@@ -66,12 +64,11 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area16#page42#enu20">
+          <layout:Link link="sv5#area16#page42#enu20#ln294"/>
           <layout:Field field="sv5#area16#page42#enu20#sfld18"/>
           <layout:Field field="sv5#area16#page42#enu20#sfld19"/>
           <layout:Field field="sv5#area16#page42#enu20#sfld23"/>
           <layout:Field field="sv5#area16#page42#enu20#fld67"/>
-          <layout:Field field="sv5#area16#page42#enu20#fld68"/>
-          <layout:Link link="sv5#area16#page42#enu20#ln225"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

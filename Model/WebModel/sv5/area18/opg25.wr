@@ -1,0 +1,71 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5#area18#opg25" name="Filtra" transaction="true" gr:x="0" gr:y="0">
+  <OperationUnits>
+    <SelectorUnit id="sv5#area18#opg25#seu89" name="Filtro" gr:x="435" gr:y="0" entity="ent3">
+      <Selector id="sv5#area18#opg25#seu89#su215" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area18#opg25#seu89#su215#rcond82" name="Citt&#224;IndirizzoNegozio" predicate="in" implied="true" role="rel1#role1.rel2#role4"/>
+        <KeyCondition id="sv5#area18#opg25#seu89#su215#kcond174" name="Negozi nuovi" predicate="in" implied="true"/>
+        <RelationshipRoleCondition id="sv5#area18#opg25#seu89#su215#rcond83" name="Orario to negozio" predicate="in" implied="true" role="rel19#role37"/>
+      </Selector>
+      <KOLink id="sv5#area18#opg25#seu89#kln7" name="KOFlow162" to="sv5#area18#page92#mssu31" automaticCoupling="true"/>
+      <OKLink id="sv5#area18#opg25#seu89#oln125" name="OKFlow125" to="sv5#area18#page61#alt12#page91#scu13" automaticCoupling="true"/>
+    </SelectorUnit>
+    <IsNotNullUnit id="sv5#area18#opg25#inn3" name="Is Not Null13" gr:x="0" gr:y="55">
+      <KOLink id="sv5#area18#opg25#inn3#kln23" name="KOFlow84" to="sv5#area18#opg25#inn4">
+        <LinkParameter id="sv5#area18#opg25#inn3#kln23#par412" name="Orario_PASSING_Input" sourceLinkParameter="sv5#area18#page61#enu27#ln293#par672" target="sv5#area18#opg25#inn4.isnotnull"/>
+        <LinkParameter id="sv5#area18#opg25#inn3#kln23#par754" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#page61#enu27#ln293#par670" passing="true"/>
+      </KOLink>
+      <OKLink id="sv5#area18#opg25#inn3#oln71" name="OKFlow148" to="sv5#area18#opg25#inn22" gr:bendpoints="30,85,-160,-25">
+        <LinkParameter id="sv5#area18#opg25#inn3#oln71#par425" name="Orario_PASSING_Input" sourceLinkParameter="sv5#area18#page61#enu27#ln293#par672" target="sv5#area18#opg25#inn22.isnotnull"/>
+        <LinkParameter id="sv5#area18#opg25#inn3#oln71#par757" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#page61#enu27#ln293#par670" passing="true"/>
+        <LinkParameter id="sv5#area18#opg25#inn3#oln71#par758" name="Negozio nuovo_PASSING" sourceLinkParameter="sv5#area18#page61#enu27#ln293#par671" passing="true"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <SelectorUnit id="sv5#area18#opg25#seu91" name="Negozi nuovi" gr:x="315" gr:y="245" entity="ent18">
+      <OKLink id="sv5#area18#opg25#seu91#oln76" name="OKFlow149" to="sv5#area18#opg25#seu89">
+        <LinkParameter id="sv5#area18#opg25#seu91#oln76#par540" name="oid_Negozi nuovi [oid]" source="ent3#att8Array" target="sv5#area18#opg25#seu89#su215#kcond174.ent3#att8"/>
+        <LinkParameter id="sv5#area18#opg25#seu91#oln76#par781" name="Citt&#224;_PASSING_Citt&#224;IndirizzoNegozio [oid]" sourceLinkParameter="sv5#area18#opg25#inn22#kln26#par780" target="sv5#area18#opg25#seu89#su215#rcond82.ent1#att1"/>
+      </OKLink>
+      <KOLink id="sv5#area18#opg25#seu91#kln24" name="KOFlow163" to="sv5#area18#page92#mssu31" automaticCoupling="true"/>
+    </SelectorUnit>
+    <IsNotNullUnit id="sv5#area18#opg25#inn4" name="Is Not Null Orario" gr:x="215" gr:y="35">
+      <KOLink id="sv5#area18#opg25#inn4#kln25" name="KOFlow86" to="sv5#area18#opg25#seu89">
+        <LinkParameter id="sv5#area18#opg25#inn4#kln25#par778" name="Citt&#224;_PASSING_Citt&#224;IndirizzoNegozio [oid]" sourceLinkParameter="sv5#area18#opg25#inn3#kln23#par754" target="sv5#area18#opg25#seu89#su215#rcond82.ent1#att1"/>
+      </KOLink>
+      <OKLink id="sv5#area18#opg25#inn4#oln103" name="OKFlow178" to="sv5#area18#opg25#miu16">
+        <LinkParameter id="sv5#area18#opg25#inn4#oln103#par788" name="Citt&#224;_PASSING_Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#opg25#inn3#kln23#par754" target="sv5#area18#opg25#miu16.mov1#opm5#icu5#icp7"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <IsNotNullUnit id="sv5#area18#opg25#inn22" name="Is Not Null Orario" gr:x="145" gr:y="245">
+      <KOLink id="sv5#area18#opg25#inn22#kln26" name="KOFlow94" to="sv5#area18#opg25#seu91">
+        <LinkParameter id="sv5#area18#opg25#inn22#kln26#par780" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#opg25#inn3#oln71#par757" passing="true"/>
+      </KOLink>
+      <OKLink id="sv5#area18#opg25#inn22#oln104" name="OKFlow169" to="sv5#area18#opg25#miu12" gr:bendpoints="-77,116,-137,-94">
+        <LinkParameter id="sv5#area18#opg25#inn22#oln104#par776" name="Citt&#224;_PASSING_Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#opg25#inn3#oln71#par757" target="sv5#area18#opg25#miu12.mov1#opm5#icu5#icp7"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <SelectorUnit id="sv5#area18#opg25#seu93" name="Negozi nuovi" gr:x="500" gr:y="375" entity="ent18">
+      <OKLink id="sv5#area18#opg25#seu93#oln106" name="OKFlow149" to="sv5#area18#opg25#seu89">
+        <LinkParameter id="sv5#area18#opg25#seu93#oln106#par644" name="oid_Negozi nuovi [oid]" source="ent3#att8Array" target="sv5#area18#opg25#seu89#su215#kcond174.ent3#att8"/>
+        <LinkParameter id="sv5#area18#opg25#seu93#oln106#par645" name="Citt&#224;_PASSING_Citt&#224;IndirizzoNegozio [oid]" sourceLinkParameter="sv5#area18#opg25#miu12#oln108#par655" target="sv5#area18#opg25#seu89#su215#rcond82.ent1#att1"/>
+        <LinkParameter id="sv5#area18#opg25#seu93#oln106#par653" name="oid_PASSING_Orario to negozio [oid]" sourceLinkParameter="sv5#area18#opg25#miu12#oln108#par654" target="sv5#area18#opg25#seu89#su215#rcond83.ent20#att43"/>
+      </OKLink>
+      <KOLink id="sv5#area18#opg25#seu93#kln83" name="KOFlow164" to="sv5#area18#page92#mssu31" automaticCoupling="true"/>
+    </SelectorUnit>
+    <ModuleInstanceUnit id="sv5#area18#opg25#miu12" gr:x="175" gr:y="385" moduleId="mov1#opm5">
+      <OKLink id="sv5#area18#opg25#miu12#oln108" name="OKFlow131" to="sv5#area18#opg25#seu93">
+        <LinkParameter id="sv5#area18#opg25#miu12#oln108#par654" name="oid_PASSING" source="mov1#opm5#okcu5#ocp8" passing="true"/>
+        <LinkParameter id="sv5#area18#opg25#miu12#oln108#par655" name="Citt&#224;_PASSING" source="mov1#opm5#okcu5#ocp7" passing="true"/>
+      </OKLink>
+      <KOLink id="sv5#area18#opg25#miu12#kln87" name="KOFlow166" to="sv5#area18#page92#mssu31" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit id="sv5#area18#opg25#miu16" gr:x="185" gr:y="135" moduleId="mov1#opm5">
+      <OKLink id="sv5#area18#opg25#miu16#oln109" name="OKFlow131" to="sv5#area18#opg25#seu89">
+        <LinkParameter id="sv5#area18#opg25#miu16#oln109#par657" name="oid_PASSING" source="mov1#opm5#okcu5#ocp8" passing="true"/>
+        <LinkParameter id="sv5#area18#opg25#miu16#oln109#par660" name="Citt&#224;_PASSING" source="mov1#opm5#okcu5#ocp7" passing="true"/>
+        <LinkParameter id="sv5#area18#opg25#miu16#oln109#par661" name="Citt&#224;_PASSING_Citt&#224;IndirizzoNegozio [oid]" source="mov1#opm5#okcu5#ocp7" target="sv5#area18#opg25#seu89#su215#rcond82.ent1#att1"/>
+        <LinkParameter id="sv5#area18#opg25#miu16#oln109#par668" name="oid_Orario to negozio [oid]" source="mov1#opm5#okcu5#ocp8" target="sv5#area18#opg25#seu89#su215#rcond83.ent20#att43"/>
+      </OKLink>
+      <KOLink id="sv5#area18#opg25#miu16#kln93" name="KOFlow165" to="sv5#area18#page92#mssu31" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+  </OperationUnits>
+</OperationGroup>
