@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="525" gr:y="315" id="sv4#area15#opg9" name="Crea prodotto online" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="525" gr:y="310" id="sv4#area15#opg9" name="Crea prodotto online" transaction="true">
   <OperationUnits>
     <CreateUnit id="sv4#area15#opg9#cru5" name="Crea prodotto online" gr:x="625" gr:y="20" entity="ent8">
       <KOLink id="sv4#area15#opg9#cru5#kln11" name="KOFlow11" to="sv4#area15#page33#mssu2">
@@ -7,7 +7,7 @@
       <OKLink id="sv4#area15#opg9#cru5#oln7" name="OKFlow7" to="sv4#area15#opg9#cnu1">
         <LinkParameter id="sv4#area15#opg9#cru5#oln7#par66" name="oid_KeyCondition38 [oid] [Prodotto online] [Source]" source="ent8#att31Array" target="sv4#area15#opg9#cnu1#su47#kcond30.ent8#att31"/>
         <LinkParameter id="sv4#area15#opg9#cru5#oln7#par69" name="Prodotti_PASSING_KeyCondition39 [oid] [Prodotto] [Target]" sourceLinkParameter="sv4#area15#page34#enu11#ln42#par58" target="sv4#area15#opg9#cnu1#su51#kcond32.ent4#att14"/>
-        <LinkParameter id="sv4#area15#opg9#cru5#oln7#par71" name="oid_PASSING" sourceLinkParameter="sv4#area15#page34#enu11#ln42#par65" passing="true"/>
+        <LinkParameter id="sv4#area15#opg9#cru5#oln7#par952" name="oid_PASSING" sourceLinkParameter="sv4#area15#page34#enu11#ln42#par951" passing="true"/>
       </OKLink>
     </CreateUnit>
     <ConnectUnit id="sv4#area15#opg9#cnu1" name="Connetti prodotto online a prodotto" gr:x="305" gr:y="5" relationship="rel8#role15">
@@ -22,7 +22,7 @@
       </KOLink>
       <OKLink id="sv4#area15#opg9#cnu1#oln10" name="OKFlow10" to="sv4#area15#opg9#cnu4">
         <LinkParameter id="sv4#area15#opg9#cnu1#oln10#par74" name="Source oid [Prodotto online]_KeyCondition36 [oid] [Prodotto online] [Source]" source="sourceent8#att31" target="sv4#area15#opg9#cnu4#su53#kcond35.ent8#att31"/>
-        <LinkParameter id="sv4#area15#opg9#cnu1#oln10#par75" name="oid_PASSING_KeyCondition37 [oid] [Negozio] [Target]" sourceLinkParameter="sv4#area15#opg9#cru5#oln7#par71" target="sv4#area15#opg9#cnu4#su65#kcond36.ent3#att8"/>
+        <LinkParameter id="sv4#area15#opg9#cnu1#oln10#par953" name="oid_PASSING_KeyCondition37 [oid] [Negozio] [Target]" sourceLinkParameter="sv4#area15#opg9#cru5#oln7#par952" target="sv4#area15#opg9#cnu4#su65#kcond36.ent3#att8"/>
       </OKLink>
     </ConnectUnit>
     <ConnectUnit id="sv4#area15#opg9#cnu4" name="Connetti prodotto online a negozio" gr:x="0" gr:y="5" relationship="rel7#role13">

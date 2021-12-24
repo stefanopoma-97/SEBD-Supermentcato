@@ -1,0 +1,17 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="2011" id="mov1#opm9" name="Elimina categoria">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#opm9#icu9" name="Input Port">
+      <InputCollectorParameter id="mov1#opm9#icu9#icp11" name="CategoriaProdotti [oid]"/>
+      <InputCollectorParameter id="mov1#opm9#icu9#icp13" name="oid_PASSING"/>
+      <OKLink id="mov1#opm9#icu9#oln144" to="mov1#opm9#opg49#seu4" validate="true" name="Elimina">
+        <LinkParameter id="mov1#opm9#icu9#oln144#par543" source="mov1#opm9#icu9#icp11" name="oid_CategoriaProdotti [oid]" target="mov1#opm9#opg49#seu4#su193#rcond4.ent5#att19"/>
+        <LinkParameter id="mov1#opm9#icu9#oln144#par549" source="mov1#opm9#icu9#icp13" name="oid_PASSING" passing="true"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="700" gr:y="600" id="mov1#opm9#okcu11" name="OK Port11">
+      <OutputCollectorParameter id="mov1#opm9#okcu11#ocp13" name="Ci sono prodotti associati alla categoria. Impossibile eliminare la categoria_Shown Messages"/>
+    </OKCollectorUnit>
+    <KOCollectorUnit gr:x="700" gr:y="300" id="mov1#opm9#kocu13" name="KO Port13"/>
+    <OKCollectorUnit gr:x="700" gr:y="0" id="mov1#opm9#okcu10" name="OK Port10"/>
+  </OperationUnits>
+</OperationModule>

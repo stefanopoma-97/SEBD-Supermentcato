@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="705" gr:y="310" id="sv5#area18#opg20" name="Elimina negozio" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="865" gr:y="130" id="sv5#area18#opg20" name="Elimina negozio" transaction="true">
   <OperationUnits>
     <DeleteUnit gr:x="255" gr:y="0" id="sv5#area18#opg20#dlu2" name="Elimina negozio" entity="ent3">
       <Selector id="sv5#area18#opg20#dlu2#su137" defaultPolicy="fill" booleanOperator="and">

@@ -1,0 +1,29 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm9#opg49" name="Elimina categoria" transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <DeleteUnit id="mov1#opm9#opg49#dlu6" name="Elimina categoria" gr:x="30" gr:y="295" entity="ent5">
+      <Selector id="mov1#opm9#opg49#dlu6#su169" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm9#opg49#dlu6#su169#kcond118" name="KeyCondition99" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="mov1#opm9#opg49#dlu6#kln134" to="mov1#opm9#kocu13" name="KOFlow56" gr:bendpoints="0,-20"/>
+      <OKLink id="mov1#opm9#opg49#dlu6#oln181" to="mov1#opm9#okcu10" name="OKFlow4"/>
+    </DeleteUnit>
+    <SelectorUnit id="mov1#opm9#opg49#seu4" name="Prodotti" gr:x="0" gr:y="0" entity="ent4">
+      <Selector id="mov1#opm9#opg49#seu4#su193" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm9#opg49#seu4#su193#rcond4" name="CategoriaProdotti" predicate="in" implied="false" role="rel4#role8"/>
+      </Selector>
+      <OKLink id="mov1#opm9#opg49#seu4#oln173" name="Flow232" to="mov1#opm9#opg49#inn24">
+        <LinkParameter id="mov1#opm9#opg49#seu4#oln173#par792" name="oid_Input" source="ent4#att14Array" target="mov1#opm9#opg49#inn24.isnotnull"/>
+        <LinkParameter id="mov1#opm9#opg49#seu4#oln173#par793" name="oid_PASSING" sourceLinkParameter="mov1#opm9#icu9#oln144#par549" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm9#opg49#seu4#kln149" to="mov1#opm9#kocu13" name="KOFlow57"/>
+    </SelectorUnit>
+    <IsNotNullUnit id="mov1#opm9#opg49#inn24" name="Almeno un prodotto" gr:x="0" gr:y="165">
+      <KOLink id="mov1#opm9#opg49#inn24#kln133" name="KOFlow30" to="mov1#opm9#opg49#dlu6">
+        <LinkParameter id="mov1#opm9#opg49#inn24#kln133#par794" name="oid_PASSING_KeyCondition99 [oid]" sourceLinkParameter="mov1#opm9#opg49#seu4#oln173#par793" target="mov1#opm9#opg49#dlu6#su169#kcond118.ent5#att19"/>
+      </KOLink>
+      <OKLink id="mov1#opm9#opg49#inn24#oln205" to="mov1#opm9#okcu11" name="OKFlow78">
+        <LinkParameter id="mov1#opm9#opg49#inn24#oln205#par795" sourceValue="Ci sono prodotti associati alla categoria. Impossibile eliminare la categoria" name="Ci sono prodotti associati alla categoria. Impossibile eliminare la categoria_Shown Messages" target="mov1#opm9#okcu11#ocp13"/>
+      </OKLink>
+    </IsNotNullUnit>
+  </OperationUnits>
+</OperationGroup>
