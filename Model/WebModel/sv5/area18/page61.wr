@@ -30,14 +30,7 @@
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv5#area18#page61#enu27">
-          <layout:Field field="sv5#area18#page61#enu27#sfld27"/>
-          <layout:Field field="sv5#area18#page61#enu27#msfld14"/>
-          <layout:Field field="sv5#area18#page61#enu27#msfld15"/>
-          <layout:Link link="sv5#area18#page61#enu27#ln293"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -198,6 +191,28 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area18#page61#alt12#page91#scu13">
+          <layout:Link link="sv5#area18#page61#alt12#page91#scu13First"/>
+          <layout:Link link="sv5#area18#page61#alt12#page91#scu13Previous"/>
+          <layout:Link link="sv5#area18#page61#alt12#page91#scu13Block"/>
+          <layout:Link link="sv5#area18#page61#alt12#page91#scu13Next"/>
+          <layout:Link link="sv5#area18#page61#alt12#page91#scu13Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area18#page61#alt12#page91#pwu46">
           <layout:Attribute attribute="ent3#att9"/>
           <layout:Attribute attribute="ent3#att11"/>
@@ -228,42 +243,13 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv5#area18#page61#alt12#page91#scu13">
-          <layout:Link link="sv5#area18#page61#alt12#page91#scu13First"/>
-          <layout:Link link="sv5#area18#page61#alt12#page91#scu13Previous"/>
-          <layout:Link link="sv5#area18#page61#alt12#page91#scu13Block"/>
-          <layout:Link link="sv5#area18#page61#alt12#page91#scu13Next"/>
-          <layout:Link link="sv5#area18#page61#alt12#page91#scu13Last"/>
+        <layout:Unit unitId="sv5#area18#page61#enu27">
+          <layout:Field field="sv5#area18#page61#enu27#sfld27"/>
+          <layout:Field field="sv5#area18#page61#enu27#msfld14"/>
+          <layout:Field field="sv5#area18#page61#enu27#msfld15"/>
+          <layout:Link link="sv5#area18#page61#enu27#ln293"/>
         </layout:Unit>
       </layout:Cell>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-    </layout:Row>
-    <layout:Row>
-      <layout:Cell colspan="12"/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-    </layout:Row>
-    <layout:Row>
-      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -279,7 +265,7 @@
   </layout:Grid>
   <Link id="sv5#area18#page61#ln143" name="Crea negozio" to="sv5#area18#page63#enu14" automaticCoupling="true" type="normal" validate="true"/>
   <Alternative gr:x="280" gr:y="0" id="sv5#area18#page61#alt12" name="Elenco negozi" defaultPage="sv5#area18#page61#alt12#page90">
-    <Page gr:x="0" gr:y="160" id="sv5#area18#page61#alt12#page90" name="Elenco">
+    <Page gr:x="0" gr:y="160" id="sv5#area18#page61#alt12#page90" name="Page 90">
       <ContentUnits>
         <PowerIndexUnit id="sv5#area18#page61#alt12#page90#pwu30" name="Elenco negozi" linkOrder="sv5#area18#page61#alt12#page90#pwu30#ln228 sv5#area18#page61#alt12#page90#pwu30#ln231 sv5#area18#page61#alt12#page90#pwu30#ln229" gr:x="160" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
           <SortAttribute attribute="ent3#att9" order="ascending"/>

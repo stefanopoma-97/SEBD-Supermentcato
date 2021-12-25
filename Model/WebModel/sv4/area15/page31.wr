@@ -29,13 +29,18 @@
       <SortAttribute attribute="rel8#role15.ent4#att17" order="ascending"/>
       <SortAttribute attribute="rel8#role15.ent4#att59" order="ascending"/>
       <SortAttribute attribute="rel8#role15.ent4#att60" order="ascending"/>
-      <SortAttribute attribute="rel8#role15.ent4#att53" order="ascending"/>
     </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area15#page31#pwu8">
+          <layout:Link link="sv4#area15#page31#pwu8#ln117"/>
+          <layout:Link link="sv4#area15#page31#pwu8rel8#role15$ent4#att18"/>
+          <layout:Link link="sv4#area15#page31#pwu8rel8#role15$ent4#att15"/>
+          <layout:Link link="sv4#area15#page31#pwu8rel8#role15$ent4#att17"/>
+          <layout:Link link="sv4#area15#page31#pwu8rel8#role15$ent4#att59"/>
+          <layout:Link link="sv4#area15#page31#pwu8rel8#role15$ent4#att60"/>
           <layout:Attribute attribute="rel8#role15.ent4#att15"/>
           <layout:Attribute attribute="rel8#role15.ent4#att18"/>
           <layout:Attribute attribute="rel8#role15.ent4#att17"/>
@@ -43,13 +48,6 @@
           <layout:Attribute attribute="rel8#role15.ent4#att59"/>
           <layout:Attribute attribute="rel8#role15.ent4#att60"/>
           <layout:Attribute attribute="rel8#role15.ent4#att16"/>
-          <layout:Link link="sv4#area15#page31#pwu8#ln117"/>
-          <layout:Link link="sv4#area15#page31#pwu8rel8#role15$ent4#att18"/>
-          <layout:Link link="sv4#area15#page31#pwu8rel8#role15$ent4#att15"/>
-          <layout:Link link="sv4#area15#page31#pwu8rel8#role15$ent4#att17"/>
-          <layout:Link link="sv4#area15#page31#pwu8rel8#role15$ent4#att59"/>
-          <layout:Link link="sv4#area15#page31#pwu8rel8#role15$ent4#att60"/>
-          <layout:Link link="sv4#area15#page31#pwu8rel8#role15$ent4#att53"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

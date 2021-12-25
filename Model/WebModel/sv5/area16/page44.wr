@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="700" gr:y="795" id="sv5#area16#page44" name="Dettagli prodotto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="865" gr:y="970" id="sv5#area16#page44" name="Dettagli prodotto">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv5#area16#page44#dau17" name="Dettagli prodotto" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" linkOrder="sv5#area16#page44#dau17#ln107 sv5#area16#page44#dau17#ln134">
       <Selector id="sv5#area16#page44#dau17#su61" defaultPolicy="fill" booleanOperator="and">
@@ -11,7 +11,6 @@
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par221" name="descrizione_Descrizione" source="data.ent4#att16" target="sv5#area16#page47#enu13#fld36_slot"/>
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par222" name="nome_Nome" source="data.ent4#att15" target="sv5#area16#page47#enu13#fld35_slot"/>
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par223" name="prezzo_Prezzo" source="data.ent4#att17" target="sv5#area16#page47#enu13#fld37_slot"/>
-        <LinkParameter id="sv5#area16#page44#dau17#ln107#par252" name="oid_Key Condition [oid]" source="data.ent4#att14" target="sv5#area16#page47#enu13.ent4#att14"/>
       </Link>
       <Link id="sv5#area16#page44#dau17#ln134" name="Nascondi" to="sv5#area16#opg24#mfu23" type="normal" validate="true">
         <LinkParameter id="sv5#area16#page44#dau17#ln134#par243" name="oid_KeyCondition105 [oid]" source="data.ent4#att14" target="sv5#area16#opg24#mfu23#su159#kcond105.ent4#att14"/>

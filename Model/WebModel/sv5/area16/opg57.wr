@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="795" gr:y="0" id="sv5#area16#opg57" name="Elimina righe d'ordine" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="760" gr:y="0" id="sv5#area16#opg57" name="Elimina righe d'ordine" transaction="true">
   <OperationUnits>
     <SelectorUnit gr:x="0" gr:y="0" id="sv5#area16#opg57#seu60" name="ProdottoOnline" entity="ent8">
       <Selector id="sv5#area16#opg57#seu60#su262" defaultPolicy="fill" booleanOperator="and">
