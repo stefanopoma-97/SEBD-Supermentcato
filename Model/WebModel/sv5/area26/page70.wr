@@ -17,6 +17,7 @@
         <LinkParameter id="sv5#area26#page70#pwu27#ln230#par381" name="oid_CategoriaProdotti [oid]" source="data[].ent5#att19" target="sv5#area26#miu19.mov1#opm9#icu9#icp11"/>
         <LinkParameter id="sv5#area26#page70#pwu27#ln230#par383" name="oid_PASSING" source="data[].ent5#att19" target="sv5#area26#miu19.mov1#opm9#icu9#icp13"/>
       </Link>
+      <SortAttribute attribute="ent5#att20" order="ascending"/>
     </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -49,6 +50,7 @@
           <layout:Link link="sv5#area26#page70#pwu27#ln205"/>
           <layout:Link link="sv5#area26#page70#pwu27#ln252"/>
           <layout:Link link="sv5#area26#page70#pwu27#ln230"/>
+          <layout:Link link="sv5#area26#page70#pwu27ent5#att20"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

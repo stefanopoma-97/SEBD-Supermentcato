@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="910" gr:y="1315" id="sv5#area16#page45" name="Crea prodotto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="990" gr:y="1315" id="sv5#area16#page45" name="Crea prodotto">
   <ContentUnits>
     <EntryUnit gr:x="265" gr:y="70" id="sv5#area16#page45#enu12" name="Crea prodotto" entity="ent11" linkOrder="sv5#area16#page45#enu12#ln106">
       <Field id="sv5#area16#page45#enu12#fld24" name="Nome" type="string" modifiable="true" attribute="ent4#att15">

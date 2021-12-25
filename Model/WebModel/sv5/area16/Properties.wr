@@ -1,6 +1,6 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="655" gr:y="-1850" id="sv5#area16" name="Gestione prodotti" landmark="true" defaultPage="sv5#area16#page42">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="520" gr:y="-1555" id="sv5#area16" name="Gestione prodotti" landmark="true" defaultPage="sv5#area16#page42">
   <OperationUnits>
-    <ModuleInstanceUnit gr:x="415" gr:y="1195" id="sv5#area16#miu17" moduleId="mov1#opm7">
+    <ModuleInstanceUnit gr:x="750" gr:y="1035" id="sv5#area16#miu17" moduleId="mov1#opm7">
       <OKLink id="sv5#area16#miu17#oln53" to="sv5#area16#page42" name="OKFlow41"/>
       <KOLink id="sv5#area16#miu17#kln111" to="sv5#area16#page59#mssu19" name="KOFlow45">
         <LinkParameter id="sv5#area16#miu17#kln111#par334" name="Errore durante eliminazione del prodotto_Shown Messages" target="sv5#area16#page59#mssu19.shownMessages" source="mov1#opm7#kocu11#ocp11"/>

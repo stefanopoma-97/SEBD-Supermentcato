@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1235" gr:y="290" id="sv4#area14#page29" name="Crea promozione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1235" gr:y="285" id="sv4#area14#page29" name="Crea promozione">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="10" id="sv4#area14#page29#enu8" name="Inserisci dati promozione" linkOrder="sv4#area14#page29#enu8#ln87">
+    <EntryUnit gr:x="0" gr:y="15" id="sv4#area14#page29#enu8" name="Inserisci dati promozione" linkOrder="sv4#area14#page29#enu8#ln87">
       <Field id="sv4#area14#page29#enu8#fld1" name="Sconto" type="decimal" modifiable="true">
         <VRules>
           <MandatoryValidationRule id="sv4#area14#page29#enu8#fld1#mnd81" name="Mandatory22"/>
@@ -35,7 +35,7 @@
         </VRules>
       </SelectionField>
     </EntryUnit>
-    <SelectorUnit gr:x="20" gr:y="115" id="sv4#area14#page29#seu42" name="Seleziona prodotti" entity="ent4">
+    <SelectorUnit gr:x="20" gr:y="120" id="sv4#area14#page29#seu42" name="Seleziona prodotti" entity="ent4">
       <Link id="sv4#area14#page29#seu42#ln93" name="Flow93" to="sv4#area14#page29#enu8" type="transport" validate="true">
         <LinkParameter id="sv4#area14#page29#seu42#ln93#par95" name="nome_Prodotto [label]" source="ent4#att15Array" target="sv4#area14#page29#enu8#sfld3_label"/>
         <LinkParameter id="sv4#area14#page29#seu42#ln93#par96" name="oid_Prodotto [output]" source="ent4#att14Array" target="sv4#area14#page29#enu8#sfld3_output"/>
@@ -44,12 +44,12 @@
         <RelationshipRoleCondition id="sv4#area14#page29#seu42#su212#rcond88" name="ProdottiSenzaPromozione" predicate="notIn" implied="false" role="rel6#role11"/>
       </Selector>
     </SelectorUnit>
-    <GetUnit id="sv4#area14#page29#gtu12" name="Get Info Responsabile" gr:x="520" gr:y="5" contextParameters="UserCtxParam">
+    <GetUnit id="sv4#area14#page29#gtu12" name="Get Info Responsabile" gr:x="540" gr:y="5" contextParameters="UserCtxParam">
       <Link id="sv4#area14#page29#gtu12#ln95" name="Flow40" to="sv4#area14#page29#seu22" type="transport" validate="true">
         <LinkParameter id="sv4#area14#page29#gtu12#ln95#par103" name="UserCtxParam.oid_NegozioResponsabile [oid]" source="sv4#area14#page29#gtu12.UserCtxParam" target="sv4#area14#page29#seu22#su77#rcond32.userOID"/>
       </Link>
     </GetUnit>
-    <SelectorUnit id="sv4#area14#page29#seu22" name="Seleziona negozio del responsabile" gr:x="225" gr:y="0" entity="ent3">
+    <SelectorUnit id="sv4#area14#page29#seu22" name="Seleziona negozio del responsabile" gr:x="245" gr:y="0" entity="ent3">
       <Selector id="sv4#area14#page29#seu22#su77" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area14#page29#seu22#su77#rcond32" name="NegozioResponsabile" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
@@ -57,13 +57,13 @@
         <LinkParameter id="sv4#area14#page29#seu22#ln97#par105" name="oid_PASSING" source="ent3#att8Array" passing="true"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="230" gr:y="115" id="sv4#area14#page29#seu94" name="Seleziona promozioni non scadute" entity="ent6">
+    <SelectorUnit gr:x="250" gr:y="120" id="sv4#area14#page29#seu94" name="Seleziona promozioni non scadute" entity="ent6">
       <Selector id="sv4#area14#page29#seu94#su43" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv4#area14#page29#seu94#su43#acond35" name="NonScaduta" predicate="gt" booleanOperator="or" implied="false" attributes="ent6#att24"/>
       </Selector>
       <Link id="sv4#area14#page29#seu94#ln245" name="Flow245" to="sv4#area14#page29#seu42" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <TimeUnit gr:x="570" gr:y="130" id="sv4#area14#page29#tmu12" name="Ora">
+    <TimeUnit gr:x="590" gr:y="135" id="sv4#area14#page29#tmu12" name="Ora">
       <Link id="sv4#area14#page29#tmu12#ln6" name="Flow6" to="sv4#area14#page29#seu94" type="transport" validate="true">
         <LinkParameter id="sv4#area14#page29#tmu12#ln6#par452" name="Current/Input Date_NonScaduta" source="currentDate" target="sv4#area14#page29#seu94#su43#acond35"/>
       </Link>

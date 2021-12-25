@@ -1,9 +1,11 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="40" gr:y="10" id="sv4#area22#page55" name="Informazioni negozio">
   <ContentUnits>
     <GetUnit gr:x="155" gr:y="5" id="sv4#area22#page55#gtu6" name="Get info responsabile" contextParameters="UserCtxParam">
-      <Link id="sv4#area22#page55#gtu6#ln17" name="Flow17" to="sv4#area22#page55#dau21" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv4#area22#page55#gtu6#ln17" name="Flow17" to="sv4#area22#page55#dau21" type="transport" validate="true">
+        <LinkParameter id="sv4#area22#page55#gtu6#ln17#par71" name="UserCtxParam.oid_NegozioResponsabile [oid]" source="sv4#area22#page55#gtu6.UserCtxParam" target="sv4#area22#page55#dau21#su155#rcond40.userOID"/>
+      </Link>
     </GetUnit>
-    <DataUnit gr:x="0" gr:y="0" id="sv4#area22#page55#dau21" name="Dettagli negozio" entity="ent3" linkOrder="sv4#area22#page55#dau21#ln206">
+    <DataUnit gr:x="0" gr:y="0" id="sv4#area22#page55#dau21" name="Dettagli negozio" entity="ent3" linkOrder="sv4#area22#page55#dau21#ln206" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
       <Selector id="sv4#area22#page55#dau21#su155" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area22#page55#dau21#su155#rcond40" name="NegozioResponsabile" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
@@ -15,6 +17,12 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area22#page55#dau21">
           <layout:Link link="sv4#area22#page55#dau21#ln206"/>
+          <layout:Attribute attribute="ent3#att9"/>
+          <layout:Attribute attribute="ent3#att11"/>
+          <layout:Attribute attribute="ent3#att12"/>
+          <layout:Attribute attribute="ent3#att13"/>
+          <layout:Attribute attribute="ent3#att58"/>
+          <layout:Attribute attribute="ent3#att42"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
