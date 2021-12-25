@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="525" gr:y="310" id="sv4#area15#opg9" name="Crea prodotto online" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="525" gr:y="315" id="sv4#area15#opg9" name="Crea prodotto online" transaction="true">
   <OperationUnits>
     <CreateUnit id="sv4#area15#opg9#cru5" name="Crea prodotto online" gr:x="625" gr:y="20" entity="ent8">
       <KOLink id="sv4#area15#opg9#cru5#kln11" name="KOFlow11" to="sv4#area15#page33#mssu2">

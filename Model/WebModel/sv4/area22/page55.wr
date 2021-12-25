@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="30" gr:y="5" id="sv4#area22#page55" name="Informazioni negozio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="40" gr:y="10" id="sv4#area22#page55" name="Informazioni negozio">
   <ContentUnits>
     <GetUnit gr:x="155" gr:y="5" id="sv4#area22#page55#gtu6" name="Get info responsabile" contextParameters="UserCtxParam">
       <Link id="sv4#area22#page55#gtu6#ln17" name="Flow17" to="sv4#area22#page55#dau21" automaticCoupling="true" type="transport" validate="true"/>
