@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="295" gr:y="640" id="sv5#area17#page46" name="Associa dipendente">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="285" gr:y="645" id="sv5#area17#page46" name="Associa dipendente">
   <ContentUnits>
     <SelectorUnit gr:x="275" gr:y="0" id="sv5#area17#page46#seu26" name="Seleziona negozi" entity="ent3">
       <Link id="sv5#area17#page46#seu26#ln136" name="Flow136" to="sv5#area17#page46#enu17" type="transport" validate="true">

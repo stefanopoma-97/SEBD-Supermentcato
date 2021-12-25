@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="530" gr:y="270" id="sv5#area17#opg23" name="Dissocia dipendente" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="525" gr:y="280" id="sv5#area17#opg23" name="Dissocia dipendente" transaction="true">
   <OperationUnits>
     <DisconnectUnit gr:x="0" gr:y="0" id="sv5#area17#opg23#dcnu2" name="Disconnetti dipendente dal negozio" relationship="rel14#role27">
       <SourceSelector id="sv5#area17#opg23#dcnu2#su89" defaultPolicy="fill" booleanOperator="and">

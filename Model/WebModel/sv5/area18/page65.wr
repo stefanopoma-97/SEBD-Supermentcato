@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1075" gr:y="605" id="sv5#area18#page65" name="Modifica negozio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="950" gr:y="600" id="sv5#area18#page65" name="Modifica negozio">
   <ContentUnits>
-    <EntryUnit gr:x="195" gr:y="135" id="sv5#area18#page65#enu15" name="Modifica negozio" entity="ent3" linkOrder="sv5#area18#page65#enu15#ln189">
+    <EntryUnit gr:x="195" gr:y="120" id="sv5#area18#page65#enu15" name="Modifica negozio" entity="ent3" linkOrder="sv5#area18#page65#enu15#ln189">
       <Field id="sv5#area18#page65#enu15#fld44" name="Nome" type="string" modifiable="true" attribute="ent3#att9" preloaded="true">
         <VRules>
           <MandatoryValidationRule id="sv5#area18#page65#enu15#fld44#mnd67" name="Mandatory22"/>
@@ -40,13 +40,13 @@
         <LinkParameter id="sv5#area18#page65#enu15#ln189#par309" name="Citt&#224;_PASSING" source="sv5#area18#page65#enu15#sfld22" passing="true"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit gr:x="205" gr:y="0" id="sv5#area18#page65#seu49" name="Seleziona citt&#224;" entity="ent1">
+    <SelectorUnit gr:x="210" gr:y="5" id="sv5#area18#page65#seu49" name="Seleziona citt&#224;" entity="ent1">
       <Link id="sv5#area18#page65#seu49#ln182" name="Flow182" to="sv5#area18#page65#enu15" type="transport" validate="true">
         <LinkParameter id="sv5#area18#page65#seu49#ln182#par282" name="nome_Citt&#224; [label]" source="ent1#att2Array" target="sv5#area18#page65#enu15#sfld22_label"/>
         <LinkParameter id="sv5#area18#page65#seu49#ln182#par283" name="oid_Citt&#224; [output]" source="ent1#att1Array" target="sv5#area18#page65#enu15#sfld22_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="0" gr:y="130" id="sv5#area18#page65#seu50" name="Seleziona indirizzo" entity="ent2">
+    <SelectorUnit gr:x="0" gr:y="115" id="sv5#area18#page65#seu50" name="Seleziona indirizzo" entity="ent2">
       <Selector id="sv5#area18#page65#seu50#su144" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv5#area18#page65#seu50#su144#rcond33" name="IndirizzoNegozio" predicate="in" implied="false" role="rel2#role3"/>
       </Selector>
@@ -62,7 +62,7 @@
       </Link>
       <Link id="sv5#area18#page65#seu50#ln195" name="Flow195" to="sv5#area18#page65#dau26" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <DataUnit gr:x="10" gr:y="15" id="sv5#area18#page65#dau26" name="Dettagli indirizzo" entity="ent2" displayAll="true">
+    <DataUnit gr:x="10" gr:y="0" id="sv5#area18#page65#dau26" name="Dettagli indirizzo" entity="ent2" displayAttributes="ent2#att6 ent2#att7">
       <Selector id="sv5#area18#page65#dau26#su149" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area18#page65#dau26#su149#kcond96" name="KeyCondition96" predicate="in" implied="false"/>
       </Selector>
@@ -96,8 +96,8 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area18#page65#dau26">
-          <layout:Attribute attribute="ent2#att7"/>
           <layout:Attribute attribute="ent2#att6"/>
+          <layout:Attribute attribute="ent2#att7"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
