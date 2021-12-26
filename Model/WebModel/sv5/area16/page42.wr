@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1035" gr:y="155" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1075" gr:y="155" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104">
   <ContentUnits>
-    <EntryUnit gr:x="235" gr:y="315" id="sv5#area16#page42#enu20" name="Filtra i prodotti" linkOrder="sv5#area16#page42#enu20#ln294">
+    <EntryUnit gr:x="195" gr:y="315" id="sv5#area16#page42#enu20" name="Filtra i prodotti" linkOrder="sv5#area16#page42#enu20#ln294">
       <SelectionField id="sv5#area16#page42#enu20#sfld18" type="string" name="Categoria"/>
       <SelectionField id="sv5#area16#page42#enu20#sfld19" name="Fascia di prezzo" type="string"/>
       <SelectionField id="sv5#area16#page42#enu20#sfld23" name="Nazione" type="string"/>
@@ -12,20 +12,20 @@
         <LinkParameter id="sv5#area16#page42#enu20#ln294#par753" name="Nuovi/Tutti_Switch" source="sv5#area16#page42#enu20#fld67" target="sv5#area16#opg36#switch1.switch"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit gr:x="45" gr:y="195" id="sv5#area16#page42#seu1" name="Categorie" entity="ent5">
+    <SelectorUnit gr:x="5" gr:y="195" id="sv5#area16#page42#seu1" name="Categorie" entity="ent5">
       <SortAttribute attribute="ent5#att20" order="ascending"/>
       <Link id="sv5#area16#page42#seu1#ln221" name="Flow221" to="sv5#area16#page42#enu20" type="transport" validate="true">
         <LinkParameter id="sv5#area16#page42#seu1#ln221#par117" name="nome_ [label]" source="ent5#att20Array" target="sv5#area16#page42#enu20#sfld18_label"/>
         <LinkParameter id="sv5#area16#page42#seu1#ln221#par118" name="oid_ [output]" source="ent5#att19Array" target="sv5#area16#page42#enu20#sfld18_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="245" gr:y="195" id="sv5#area16#page42#seu2" name="Fascia Prezzo" entity="ent15">
+    <SelectorUnit gr:x="205" gr:y="195" id="sv5#area16#page42#seu2" name="Fascia Prezzo" entity="ent15">
       <Link id="sv5#area16#page42#seu2#ln222" name="Flow222" to="sv5#area16#page42#enu20" type="transport" validate="true">
         <LinkParameter id="sv5#area16#page42#seu2#ln222#par119" name="fascia_Fascia di prezzo [label]" source="ent15#att32Array" target="sv5#area16#page42#enu20#sfld19_label"/>
         <LinkParameter id="sv5#area16#page42#seu2#ln222#par122" name="oid_Fascia di prezzo [output]" source="ent15#att30Array" target="sv5#area16#page42#enu20#sfld19_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="50" gr:y="305" id="sv5#area16#page42#seu24" name="Nazione" entity="ent19">
+    <SelectorUnit gr:x="10" gr:y="305" id="sv5#area16#page42#seu24" name="Nazione" entity="ent19">
       <Link id="sv5#area16#page42#seu24#ln224" name="Flow224" to="sv5#area16#page42#enu20" type="transport" validate="true">
         <LinkParameter id="sv5#area16#page42#seu24#ln224#par123" name="nome_Nazione [label]" source="ent19#att45Array" target="sv5#area16#page42#enu20#sfld23_label"/>
         <LinkParameter id="sv5#area16#page42#seu24#ln224#par125" name="oid_Nazione [output]" source="ent19#att44Array" target="sv5#area16#page42#enu20#sfld23_output"/>
@@ -293,7 +293,7 @@
     </layout:Row>
   </layout:Grid>
   <Link id="sv5#area16#page42#ln104" name="Crea prodotto" to="sv5#area16#page45#enu12" automaticCoupling="true" type="normal" validate="true"/>
-  <Alternative gr:x="0" gr:y="400" id="sv5#area16#page42#alt9" name="Liste" defaultPage="sv5#area16#page42#alt9#page81">
+  <Alternative gr:x="0" gr:y="395" id="sv5#area16#page42#alt9" name="Liste" defaultPage="sv5#area16#page42#alt9#page81">
     <Page gr:x="0" gr:y="0" id="sv5#area16#page42#alt9#page81" name="Elenco prodotti">
       <ContentUnits>
         <PowerIndexUnit id="sv5#area16#page42#alt9#page81#pwu11" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page81#pwu11#ln33 sv5#area16#page42#alt9#page81#pwu11#ln100 sv5#area16#page42#alt9#page81#pwu11#ln141 sv5#area16#page42#alt9#page81#pwu11#ln194 sv5#area16#page42#alt9#page81#pwu11#ln225" gr:x="0" gr:y="105" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60">
@@ -354,7 +354,7 @@
       </ContentUnits>
     </Page>
   </Alternative>
-  <Alternative gr:x="320" gr:y="0" id="sv5#area16#page42#alt13" name="Alternative13" defaultPage="sv5#area16#page42#alt13#page123">
+  <Alternative gr:x="280" gr:y="0" id="sv5#area16#page42#alt13" name="Alternative13" defaultPage="sv5#area16#page42#alt13#page123">
     <Page gr:x="0" gr:y="0" id="sv5#area16#page42#alt13#page123" name="Page 123">
       <ContentUnits>
         <MultiDataUnit gr:x="0" gr:y="0" id="sv5#area16#page42#alt13#page123#mdu1" name="MultipleDetails1" entity="ent7">

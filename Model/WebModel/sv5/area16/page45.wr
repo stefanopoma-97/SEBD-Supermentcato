@@ -40,6 +40,7 @@
         <LinkParameter id="sv5#area16#page45#enu12#ln106#par198" name="Nazione_PASSING" source="sv5#area16#page45#enu12#sfld13" passing="true"/>
         <LinkParameter id="sv5#area16#page45#enu12#ln106#par195" name="Prodotto Object_Prodotto Object" source="entityBean" target="sv5#area16#opg16#cru7.entityBeans"/>
         <LinkParameter id="sv5#area16#page45#enu12#ln106#par254" name="Current/Input Date_PASSING_data inserimento" sourceLinkParameter="sv5#area16#page45#tmu11#ln123#par253" target="sv5#area16#opg16#cru7.ent4#att18"/>
+        <LinkParameter id="sv5#area16#page45#enu12#ln106#par71" name="1_vendibile" sourceValue="1" target="sv5#area16#opg16#cru7.ent4#att64"/>
       </Link>
     </EntryUnit>
     <SelectorUnit gr:x="20" gr:y="0" id="sv5#area16#page45#seu25" name="Seleziona categorie" entity="ent5">

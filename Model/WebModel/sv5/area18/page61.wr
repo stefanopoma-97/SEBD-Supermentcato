@@ -193,8 +193,6 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-<<<<<<< Updated upstream
-=======
         <layout:Unit unitId="sv5#area18#page61#alt12#page91#pwu46">
           <layout:Attribute attribute="ent3#att9"/>
           <layout:Attribute attribute="ent3#att11"/>
@@ -226,8 +224,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
->>>>>>> Stashed changes
+      <layout:Cell colspan="12">&gt;&gt;&gt;&gt;&gt;&gt;&gt; Stashed changes
         <layout:Unit unitId="sv5#area18#page61#alt12#page91#scu13">
           <layout:Link link="sv5#area18#page61#alt12#page91#scu13First"/>
           <layout:Link link="sv5#area18#page61#alt12#page91#scu13Previous"/>
