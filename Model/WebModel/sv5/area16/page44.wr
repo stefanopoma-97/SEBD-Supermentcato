@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="855" gr:y="970" id="sv5#area16#page44" name="Dettagli prodotto">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv5#area16#page44#dau17" name="Dettagli prodotto" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" linkOrder="sv5#area16#page44#dau17#ln107 sv5#area16#page44#dau17#ln134">
+    <DataUnit gr:x="0" gr:y="0" id="sv5#area16#page44#dau17" name="Dettagli prodotto" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60 ent4#att64" linkOrder="sv5#area16#page44#dau17#ln107 sv5#area16#page44#dau17#ln134">
       <Selector id="sv5#area16#page44#dau17#su61" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#page44#dau17#su61#kcond33" name="KeyCondition33" predicate="in" implied="false"/>
       </Selector>
@@ -22,6 +22,8 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area16#page44#dau17">
+          <layout:Link link="sv5#area16#page44#dau17#ln107"/>
+          <layout:Link link="sv5#area16#page44#dau17#ln134"/>
           <layout:Attribute attribute="ent4#att15"/>
           <layout:Attribute attribute="ent4#att16"/>
           <layout:Attribute attribute="ent4#att17"/>
@@ -30,8 +32,7 @@
           <layout:Attribute attribute="ent4#att53"/>
           <layout:Attribute attribute="ent4#att59"/>
           <layout:Attribute attribute="ent4#att60"/>
-          <layout:Link link="sv5#area16#page44#dau17#ln107"/>
-          <layout:Link link="sv5#area16#page44#dau17#ln134"/>
+          <layout:Attribute attribute="ent4#att64"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
