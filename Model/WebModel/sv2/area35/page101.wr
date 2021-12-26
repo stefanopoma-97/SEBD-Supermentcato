@@ -22,7 +22,7 @@
         <KeyCondition id="sv2#area35#page101#seu107#su248#kcond149" name="KeyCondition80" predicate="in" implied="false"/>
       </Selector>
     </SelectorUnit>
-    <EntryUnit id="sv2#area35#page101#enu32" name="Modifica profilo" linkOrder="sv2#area35#page101#enu32#ln316" gr:x="360" gr:y="5" fieldOrder="sv2#area35#page101#enu32#fld79 sv2#area35#page101#enu32#fld80 sv2#area35#page101#enu32#fld77 sv2#area35#page101#enu32#fld78 sv2#area35#page101#enu32#fld81 sv2#area35#page101#enu32#sfld33 sv2#area35#page101#enu32#fld82 sv2#area35#page101#enu32#fld83 sv2#area35#page101#enu32#sfld34">
+    <EntryUnit id="sv2#area35#page101#enu32" name="Modifica profilo" linkOrder="sv2#area35#page101#enu32#ln316" gr:x="450" gr:y="50" fieldOrder="sv2#area35#page101#enu32#fld79 sv2#area35#page101#enu32#fld80 sv2#area35#page101#enu32#fld77 sv2#area35#page101#enu32#fld78 sv2#area35#page101#enu32#fld81 sv2#area35#page101#enu32#sfld33 sv2#area35#page101#enu32#fld82 sv2#area35#page101#enu32#fld83 sv2#area35#page101#enu32#sfld34">
       <Field id="sv2#area35#page101#enu32#fld77" name="Nome" type="string" modifiable="true" preloaded="true">
         <VRules>
           <MandatoryValidationRule id="sv2#area35#page101#enu32#fld77#mnd1" name="Mandatory3"/>
