@@ -18,7 +18,7 @@
         <LinkParameter id="sv2#area34#page99#dau39#ln241#par414" name="oid_RoleCondition39 [oid]" source="data.ent9#att33" target="sv2#area34#miu3.mov1#opm2#icu2#icp2"/>
       </Link>
     </DataUnit>
-    <PowerIndexUnit id="sv2#area34#page99#pwu22" name="Righe d'ordine" gr:x="310" gr:y="5" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att40 ent7#att29 ent7#att10 rel9#role17.rel8#role15.ent4#att15 ent7#att62">
+    <PowerIndexUnit id="sv2#area34#page99#pwu22" name="Righe d'ordine" gr:x="310" gr:y="5" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att40 ent7#att29 ent7#att10 ent7#att62 rel9#role17.ent4#att15">
       <Selector id="sv2#area34#page99#pwu22#su244" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area34#page99#pwu22#su244#rcond94" name="RoleCondition63" predicate="in" implied="false" role="rel10#role20"/>
       </Selector>
@@ -99,8 +99,8 @@
           <layout:Attribute attribute="ent7#att40"/>
           <layout:Attribute attribute="ent7#att29"/>
           <layout:Attribute attribute="ent7#att10"/>
-          <layout:Attribute attribute="rel9#role17.rel8#role15.ent4#att15"/>
           <layout:Attribute attribute="ent7#att62"/>
+          <layout:Attribute attribute="rel9#role17.ent4#att15"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

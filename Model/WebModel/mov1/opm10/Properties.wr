@@ -1,0 +1,46 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="3124" id="mov1#opm10" name="Elimina prodotto">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#opm10#icu10" name="Input Port">
+      <InputCollectorParameter id="mov1#opm10#icu10#icp9" name="oid_PASSING"/>
+      <InputCollectorParameter id="mov1#opm10#icu10#icp10" name="RigheConProdotto [oid]"/>
+      <OKLink id="mov1#opm10#icu10#oln289" to="mov1#opm10#opg31#seu150" validate="true" name="Elimina">
+        <LinkParameter id="mov1#opm10#icu10#oln289#par1073" source="mov1#opm10#icu10#icp10" name="oid_RigheConProdotto [oid]" target="mov1#opm10#opg31#seu150#su324#rcond109.ent4#att14"/>
+        <LinkParameter id="mov1#opm10#icu10#oln289#par1072" source="mov1#opm10#icu10#icp9" name="oid_PASSING" passing="true"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <KOCollectorUnit gr:x="1485" gr:y="1200" id="mov1#opm10#kocu17" name="KO Port17">
+      <OutputCollectorParameter id="mov1#opm10#kocu17#ocp12" name="cancella stato_Shown Messages"/>
+    </KOCollectorUnit>
+    <KOCollectorUnit gr:x="1485" gr:y="475" id="mov1#opm10#kocu14" name="KO Port14">
+      <OutputCollectorParameter id="mov1#opm10#kocu14#ocp14" name="seleziono spese_Shown Messages"/>
+    </KOCollectorUnit>
+    <KOCollectorUnit gr:x="1485" gr:y="3300" id="mov1#opm10#kocu24" name="KO Port24">
+      <OutputCollectorParameter id="mov1#opm10#kocu24#ocp15" name="Impossibile recuperare il prodotto online associato_Shown Messages"/>
+    </KOCollectorUnit>
+    <KOCollectorUnit gr:x="1485" gr:y="2100" id="mov1#opm10#kocu20" name="KO Port20">
+      <OutputCollectorParameter id="mov1#opm10#kocu20#ocp16" name="cancella spesa_Shown Messages"/>
+    </KOCollectorUnit>
+    <KOCollectorUnit gr:x="1485" gr:y="1800" id="mov1#opm10#kocu19" name="KO Port19">
+      <OutputCollectorParameter id="mov1#opm10#kocu19#ocp17" name="errore elimina prodotto_Shown Messages"/>
+    </KOCollectorUnit>
+    <KOCollectorUnit gr:x="1485" gr:y="1500" id="mov1#opm10#kocu18" name="KO Port18">
+      <OutputCollectorParameter id="mov1#opm10#kocu18#ocp18" name="Impossibile recuperare le righe d'ordine associate al prodotto_Shown Messages"/>
+    </KOCollectorUnit>
+    <KOCollectorUnit gr:x="1485" gr:y="600" id="mov1#opm10#kocu15" name="KO Port15">
+      <OutputCollectorParameter id="mov1#opm10#kocu15#ocp19" name="righe da spese_Shown Messages"/>
+    </KOCollectorUnit>
+    <KOCollectorUnit gr:x="1485" gr:y="3000" id="mov1#opm10#kocu23" name="KO Port23">
+      <OutputCollectorParameter id="mov1#opm10#kocu23#ocp20" name="Errore durante eliminazione riga d'ordine_Shown Messages"/>
+    </KOCollectorUnit>
+    <KOCollectorUnit gr:x="1485" gr:y="2700" id="mov1#opm10#kocu22" name="KO Port22">
+      <OutputCollectorParameter id="mov1#opm10#kocu22#ocp21" name="Errore durante eliminazione prodotto online_Shown Messages"/>
+    </KOCollectorUnit>
+    <KOCollectorUnit gr:x="1485" gr:y="2400" id="mov1#opm10#kocu21" name="KO Port21">
+      <OutputCollectorParameter id="mov1#opm10#kocu21#ocp22" name="Impossibile recuperare le promozioni associate al prodotto_Shown Messages"/>
+    </KOCollectorUnit>
+    <KOCollectorUnit gr:x="1485" gr:y="900" id="mov1#opm10#kocu16" name="KO Port16">
+      <OutputCollectorParameter id="mov1#opm10#kocu16#ocp23" name="Errore durante eliminazione promozioni associate_Shown Messages"/>
+    </KOCollectorUnit>
+    <OKCollectorUnit gr:x="1485" gr:y="0" id="mov1#opm10#okcu9" name="OK Port9"/>
+  </OperationUnits>
+</OperationModule>

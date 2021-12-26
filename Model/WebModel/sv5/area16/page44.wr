@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1505" gr:y="970" id="sv5#area16#page44" name="Dettagli prodotto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="970" gr:y="970" id="sv5#area16#page44" name="Dettagli prodotto">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv5#area16#page44#dau17" name="Dettagli prodotto" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60 ent4#att64" linkOrder="sv5#area16#page44#dau17#ln107 sv5#area16#page44#dau17#ln134">
+    <DataUnit gr:x="0" gr:y="0" id="sv5#area16#page44#dau17" name="Dettagli prodotto" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60 ent4#att64" linkOrder="sv5#area16#page44#dau17#ln107 sv5#area16#page44#dau17#ln134 sv5#area16#page44#dau17#ln287 sv5#area16#page44#dau17#ln295 sv5#area16#page44#dau17#ln301">
       <Selector id="sv5#area16#page44#dau17#su61" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#page44#dau17#su61#kcond33" name="KeyCondition33" predicate="in" implied="false"/>
       </Selector>
@@ -11,19 +11,35 @@
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par221" name="descrizione_Descrizione" source="data.ent4#att16" target="sv5#area16#page47#enu13#fld36_slot"/>
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par222" name="nome_Nome" source="data.ent4#att15" target="sv5#area16#page47#enu13#fld35_slot"/>
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par223" name="prezzo_Prezzo" source="data.ent4#att17" target="sv5#area16#page47#enu13#fld37_slot"/>
+        <LinkParameter id="sv5#area16#page44#dau17#ln107#par1149" name="vendibile_Vendibile - Preselection" source="data.ent4#att64" target="sv5#area16#page47#enu13#sfld20_presel"/>
+        <LinkParameter id="sv5#area16#page44#dau17#ln107#par1150" name="vendibile_Vendibile [label]" source="data.ent4#att64" target="sv5#area16#page47#enu13#sfld20_label"/>
+        <LinkParameter id="sv5#area16#page44#dau17#ln107#par1151" name="vendibile_Vendibile [output]" source="data.ent4#att64" target="sv5#area16#page47#enu13#sfld20_output"/>
       </Link>
       <Link id="sv5#area16#page44#dau17#ln134" name="Nascondi" to="sv5#area16#opg24#seu99" type="normal" validate="true">
         <LinkParameter id="sv5#area16#page44#dau17#ln134#par894" name="oid_KeyCondition195 [oid]" source="data.ent4#att14" target="sv5#area16#opg24#seu99#su166#kcond195.ent4#att14"/>
         <LinkParameter id="sv5#area16#page44#dau17#ln134#par935" name="oid_PASSING" source="data.ent4#att14" passing="true"/>
       </Link>
+      <Link id="sv5#area16#page44#dau17#ln282" name="Flow282" to="sv5#area16#page44#seu148" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv5#area16#page44#dau17#ln287" name="indietro" to="sv5#area16" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area16#page44#dau17#ln295" name="Elimina" to="sv5#area16#miu22" type="normal" validate="true">
+        <LinkParameter id="sv5#area16#page44#dau17#ln295#par1140" name="oid_oid_PASSING" source="data.ent4#att14" target="sv5#area16#miu22.mov1#opm10#icu10#icp9"/>
+        <LinkParameter id="sv5#area16#page44#dau17#ln295#par1141" name="oid_RigheConProdotto [oid]" source="data.ent4#att14" target="sv5#area16#miu22.mov1#opm10#icu10#icp10"/>
+      </Link>
+      <Link id="sv5#area16#page44#dau17#ln301" name="Rendi vendibile" to="sv5#area16#opg37#seu155" automaticCoupling="true" type="normal" validate="true"/>
+    </DataUnit>
+    <SelectorUnit gr:x="0" gr:y="130" id="sv5#area16#page44#seu148" name="prodotto nuovo" entity="ent11">
+      <Link id="sv5#area16#page44#seu148#ln286" name="Flow286" to="sv5#area16#page44#dau34" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <DataUnit gr:x="130" gr:y="135" id="sv5#area16#page44#dau34" name="Nuovo" entity="ent11" displayAttributes="ent4#att15 ent4#att18">
+      <Selector id="sv5#area16#page44#dau34#su319" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#page44#dau34#su319#kcond207" name="KeyCondition207" predicate="in" implied="false"/>
+      </Selector>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area16#page44#dau17">
-          <layout:Link link="sv5#area16#page44#dau17#ln107"/>
-          <layout:Link link="sv5#area16#page44#dau17#ln134"/>
           <layout:Attribute attribute="ent4#att15"/>
           <layout:Attribute attribute="ent4#att16"/>
           <layout:Attribute attribute="ent4#att17"/>
@@ -33,6 +49,30 @@
           <layout:Attribute attribute="ent4#att59"/>
           <layout:Attribute attribute="ent4#att60"/>
           <layout:Attribute attribute="ent4#att64"/>
+          <layout:Link link="sv5#area16#page44#dau17#ln107"/>
+          <layout:Link link="sv5#area16#page44#dau17#ln134"/>
+          <layout:Link link="sv5#area16#page44#dau17#ln287"/>
+          <layout:Link link="sv5#area16#page44#dau17#ln295"/>
+          <layout:Link link="sv5#area16#page44#dau17#ln301"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area16#page44#dau34">
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att18"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

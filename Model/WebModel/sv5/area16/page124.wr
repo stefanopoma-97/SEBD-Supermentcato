@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1975" gr:y="1185" id="sv5#area16#page124" name="Errore">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="590" gr:y="1645" id="sv5#area16#page124" name="Errore">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv5#area16#page124#mssu48" name="Errore" linkOrder="sv5#area16#page124#mssu48#ln254">
       <Link id="sv5#area16#page124#mssu48#ln254" name="Torna alla gestione prodotti" to="sv5#area16#page42" automaticCoupling="true" type="normal" validate="true"/>

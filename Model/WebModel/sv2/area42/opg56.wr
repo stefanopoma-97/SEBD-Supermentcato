@@ -23,19 +23,19 @@
     </GetUnit>
     <IsNotNullUnit id="sv2#area42#opg56#inn2" name="Spesa presente" gr:x="160" gr:y="155">
       <OKLink id="sv2#area42#opg56#inn2#oln118" name="OKFlow73" to="sv2#area42#opg56#seu65">
-        <LinkParameter id="sv2#area42#opg56#inn2#oln118#par614" name="oid_PASSING" sourceLinkParameter="sv2#area42#page117#enu37#ln406#par588" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#inn2#oln118#par615" name="Prodotto onlineToProdotto.prezzo_PASSING" sourceLinkParameter="sv2#area42#page117#enu37#ln406#par589" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#inn2#oln118#par616" name="Quantit&#224;_PASSING" sourceLinkParameter="sv2#area42#page117#enu37#ln406#par590" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#inn2#oln118#par617" name="sconto_PASSING" sourceLinkParameter="sv2#area42#page117#enu37#ln406#par591" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#inn2#oln118#par688" name="Input Value_PASSING" source="inputValue" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#inn2#oln118#par696" name="Input Value_Spesa to Riga [oid]" source="inputValue" target="sv2#area42#opg56#seu65#su189#rcond63.ent9#att33"/>
-        <LinkParameter id="sv2#area42#opg56#inn2#oln118#par708" name="oid_PASSING_Id prodotto" sourceLinkParameter="sv2#area42#page117#enu37#ln406#par588" target="sv2#area42#opg56#seu65#su189#acond3"/>
+        <LinkParameter id="sv2#area42#opg56#inn2#oln118#par1048" name="Prodotto onlineToProdotto.oid_PASSING_Id prodotto" sourceLinkParameter="sv2#area42#page117#enu37#ln406#par1047" target="sv2#area42#opg56#seu65#su189#acond3"/>
+        <LinkParameter id="sv2#area42#opg56#inn2#oln118#par1049" name="Prodotto onlineToProdotto.oid_PASSING" sourceLinkParameter="sv2#area42#page117#enu37#ln406#par1047" passing="true"/>
       </OKLink>
       <KOLink id="sv2#area42#opg56#inn2#kln103" name="KOFlow75" to="sv2#area42#opg56#seu146">
-        <LinkParameter id="sv2#area42#opg56#inn2#kln103#par620" name="oid_PASSING" sourceLinkParameter="sv2#area42#page117#enu37#ln406#par588" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#inn2#kln103#par621" name="Prodotto onlineToProdotto.prezzo_PASSING" sourceLinkParameter="sv2#area42#page117#enu37#ln406#par589" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#inn2#kln103#par622" name="Quantit&#224;_PASSING" sourceLinkParameter="sv2#area42#page117#enu37#ln406#par590" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#inn2#kln103#par623" name="sconto_PASSING" sourceLinkParameter="sv2#area42#page117#enu37#ln406#par591" passing="true"/>
+        <LinkParameter id="sv2#area42#opg56#inn2#kln103#par1052" name="Prodotto onlineToProdotto.oid_PASSING" sourceLinkParameter="sv2#area42#page117#enu37#ln406#par1047" passing="true"/>
       </KOLink>
     </IsNotNullUnit>
     <CreateUnit id="sv2#area42#opg56#cru16" name="Riga Ordine" gr:x="825" gr:y="155" entity="ent7">
@@ -50,10 +50,10 @@
       <OKLink id="sv2#area42#opg56#seu146#oln120" name="OKFlow76" to="sv2#area42#opg56#tmu21">
         <LinkParameter id="sv2#area42#opg56#seu146#oln120#par624" name="oid_PASSING" source="userOIDArray" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#seu146#oln120#par625" name="Utente esterno registratoToNegozio.oid_PASSING" source="rel15#role30_ent3#att8Array" passing="true"/>
-        <LinkParameter id="sv2#area42#opg56#seu146#oln120#par626" name="oid_PASSING" sourceLinkParameter="sv2#area42#opg56#inn2#kln103#par620" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#seu146#oln120#par627" name="Prodotto onlineToProdotto.prezzo_PASSING" sourceLinkParameter="sv2#area42#opg56#inn2#kln103#par621" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#seu146#oln120#par628" name="Quantit&#224;_PASSING" sourceLinkParameter="sv2#area42#opg56#inn2#kln103#par622" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#seu146#oln120#par629" name="sconto_PASSING" sourceLinkParameter="sv2#area42#opg56#inn2#kln103#par623" passing="true"/>
+        <LinkParameter id="sv2#area42#opg56#seu146#oln120#par1053" name="Prodotto onlineToProdotto.oid_PASSING" sourceLinkParameter="sv2#area42#opg56#inn2#kln103#par1052" passing="true"/>
       </OKLink>
     </SelectorUnit>
     <TimeUnit id="sv2#area42#opg56#tmu21" name="Data attuale" gr:x="600" gr:y="360">
@@ -62,10 +62,10 @@
         <LinkParameter id="sv2#area42#opg56#tmu21#oln121#par630" name="Current/Input Date_data di creazione" source="currentDate" target="sv2#area42#opg56#cru17.ent9#att35"/>
         <LinkParameter id="sv2#area42#opg56#tmu21#oln121#par631" name="Utente esterno registratoToNegozio.oid_PASSING_Negozio.oid(SpesaToNegozio)" sourceLinkParameter="sv2#area42#opg56#seu146#oln120#par625" target="sv2#area42#opg56#cru17.rel17#role33.ent3#att8"/>
         <LinkParameter id="sv2#area42#opg56#tmu21#oln121#par632" name="oid_PASSING_Utente esterno registrato.oid(SpesaToUser)" sourceLinkParameter="sv2#area42#opg56#seu146#oln120#par624" target="sv2#area42#opg56#cru17.rel13#role26.userOID"/>
-        <LinkParameter id="sv2#area42#opg56#tmu21#oln121#par633" name="oid_PASSING" sourceLinkParameter="sv2#area42#opg56#seu146#oln120#par626" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#tmu21#oln121#par634" name="Prodotto onlineToProdotto.prezzo_PASSING" sourceLinkParameter="sv2#area42#opg56#seu146#oln120#par627" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#tmu21#oln121#par635" name="Quantit&#224;_PASSING" sourceLinkParameter="sv2#area42#opg56#seu146#oln120#par628" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#tmu21#oln121#par636" name="sconto_PASSING" sourceLinkParameter="sv2#area42#opg56#seu146#oln120#par629" passing="true"/>
+        <LinkParameter id="sv2#area42#opg56#tmu21#oln121#par1054" name="Prodotto onlineToProdotto.oid_PASSING" sourceLinkParameter="sv2#area42#opg56#seu146#oln120#par1053" passing="true"/>
       </OKLink>
     </TimeUnit>
     <CreateUnit id="sv2#area42#opg56#cru17" name="Crea spesa" gr:x="840" gr:y="340" entity="ent9">
@@ -78,7 +78,7 @@
         <LinkParameter id="sv2#area42#opg56#cru17#oln122#par639" name="Quantit&#224;_PASSING_quantit&#224;" sourceLinkParameter="sv2#area42#opg56#tmu21#oln121#par635" target="sv2#area42#opg56#cru18.ent7#att29"/>
         <LinkParameter id="sv2#area42#opg56#cru17#oln122#par640" name="sconto_PASSING_sconto" sourceLinkParameter="sv2#area42#opg56#tmu21#oln121#par636" target="sv2#area42#opg56#cru18.ent7#att10"/>
         <LinkParameter id="sv2#area42#opg56#cru17#oln122#par641" name="oid_Spesa.oid(Riga ordineToSpesa)" source="ent9#att33Array" target="sv2#area42#opg56#cru18.rel10#role19.ent9#att33"/>
-        <LinkParameter id="sv2#area42#opg56#cru17#oln122#par642" name="oid_PASSING_Prodotto online.oid(Riga ordineToProdotto online)" sourceLinkParameter="sv2#area42#opg56#tmu21#oln121#par633" target="sv2#area42#opg56#cru18.rel9#role17.ent8#att31"/>
+        <LinkParameter id="sv2#area42#opg56#cru17#oln122#par1055" name="Prodotto onlineToProdotto.oid_PASSING_Prodotto.oid(Riga ordineToProdotto)" sourceLinkParameter="sv2#area42#opg56#tmu21#oln121#par1054" target="sv2#area42#opg56#cru18.rel9#role17.ent4#att14"/>
       </OKLink>
     </CreateUnit>
     <SetUnit id="sv2#area42#opg56#stu2" name="Crea spesa" gr:x="1020" gr:y="505" contextParameters="ctx1"/>
@@ -98,7 +98,7 @@
         <LinkParameter id="sv2#area42#opg56#seu65#oln164#par698" name="Prodotto onlineToProdotto.prezzo_PASSING" sourceLinkParameter="sv2#area42#opg56#inn2#oln118#par615" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#seu65#oln164#par699" name="Quantit&#224;_PASSING" sourceLinkParameter="sv2#area42#opg56#inn2#oln118#par616" passing="true"/>
         <LinkParameter id="sv2#area42#opg56#seu65#oln164#par700" name="sconto_PASSING" sourceLinkParameter="sv2#area42#opg56#inn2#oln118#par617" passing="true"/>
-        <LinkParameter id="sv2#area42#opg56#seu65#oln164#par705" name="oid_PASSING" sourceLinkParameter="sv2#area42#opg56#inn2#oln118#par614" passing="true"/>
+        <LinkParameter id="sv2#area42#opg56#seu65#oln164#par1050" name="Prodotto onlineToProdotto.oid_PASSING" sourceLinkParameter="sv2#area42#opg56#inn2#oln118#par1049" passing="true"/>
       </OKLink>
     </SelectorUnit>
     <IsNotNullUnit gr:x="610" gr:y="65" id="sv2#area42#opg56#inn11" name="Is Not Null11">
@@ -111,8 +111,8 @@
         <LinkParameter id="sv2#area42#opg56#inn11#kln145#par702" name="Prodotto onlineToProdotto.prezzo_PASSING_costo" sourceLinkParameter="sv2#area42#opg56#seu65#oln164#par698" target="sv2#area42#opg56#cru16.ent7#att40"/>
         <LinkParameter id="sv2#area42#opg56#inn11#kln145#par703" name="Quantit&#224;_PASSING_quantit&#224;" sourceLinkParameter="sv2#area42#opg56#seu65#oln164#par699" target="sv2#area42#opg56#cru16.ent7#att29"/>
         <LinkParameter id="sv2#area42#opg56#inn11#kln145#par704" name="sconto_PASSING_sconto" sourceLinkParameter="sv2#area42#opg56#seu65#oln164#par700" target="sv2#area42#opg56#cru16.ent7#att10"/>
-        <LinkParameter id="sv2#area42#opg56#inn11#kln145#par706" name="oid_PASSING_Prodotto online.oid(Riga ordineToProdotto online)" sourceLinkParameter="sv2#area42#opg56#seu65#oln164#par705" target="sv2#area42#opg56#cru16.rel9#role17.ent8#att31"/>
         <LinkParameter id="sv2#area42#opg56#inn11#kln145#par707" name="Input Value_PASSING_Spesa.oid(Riga ordineToSpesa)" sourceLinkParameter="sv2#area42#opg56#seu65#oln164#par697" target="sv2#area42#opg56#cru16.rel10#role19.ent9#att33"/>
+        <LinkParameter id="sv2#area42#opg56#inn11#kln145#par1051" name="Prodotto onlineToProdotto.oid_PASSING_Prodotto.oid(Riga ordineToProdotto)" sourceLinkParameter="sv2#area42#opg56#seu65#oln164#par1050" target="sv2#area42#opg56#cru16.rel9#role17.ent4#att14"/>
       </KOLink>
     </IsNotNullUnit>
     <ModifyUnit gr:x="1030" gr:y="0" id="sv2#area42#opg56#mfu22" name="Modifica riga" entity="ent7">

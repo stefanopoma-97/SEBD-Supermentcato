@@ -3,7 +3,7 @@
     <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#opm8#icu8" name="Input Port">
       <OKLink id="mov1#opm8#icu8#oln243" to="mov1#opm8#opg18#seu115" validate="true" name="Flow292"/>
     </InputCollectorUnit>
-    <KOCollectorUnit gr:x="700" gr:y="300" id="mov1#opm8#kocu12" name="KO Port12"/>
-    <OKCollectorUnit gr:x="700" gr:y="0" id="mov1#opm8#okcu8" name="OK Port8"/>
+    <KOCollectorUnit gr:x="1430" gr:y="300" id="mov1#opm8#kocu12" name="KO Port12"/>
+    <OKCollectorUnit gr:x="1430" gr:y="70" id="mov1#opm8#okcu8" name="OK Port8"/>
   </OperationUnits>
 </OperationModule>

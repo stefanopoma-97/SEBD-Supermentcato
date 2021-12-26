@@ -28,10 +28,10 @@
       </Selector>
       <Link id="sv3#area12#page24#seu36#ln84" name="Flow84" to="sv3#area12#page24#pwu6" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <PowerIndexUnit gr:x="30" gr:y="270" id="sv3#area12#page24#pwu6" name="Righe d'ordine" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="rel9#role17.rel8#role15.ent4#att15 rel9#role17.rel8#role15.ent4#att59 ent7#att29 ent7#att40" linkOrder="sv3#area12#page24#pwu6#ln8">
+    <PowerIndexUnit gr:x="30" gr:y="270" id="sv3#area12#page24#pwu6" name="Righe d'ordine" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att29 ent7#att40 rel9#role17.ent4#att15" linkOrder="sv3#area12#page24#pwu6#ln8">
       <SortAttribute attribute="ent7#att29" order="descending"/>
       <Link id="sv3#area12#page24#pwu6#ln8" name="Dettagli" to="sv3#area12#page2#dau12" type="normal" validate="true">
-        <LinkParameter id="sv3#area12#page24#pwu6#ln8#par14" name="oid_KeyCondition3 [oid]" source="data[].ent7#att28" target="sv3#area12#page2#dau12#su11#kcond3.ent4#att14"/>
+        <LinkParameter id="sv3#area12#page24#pwu6#ln8#par14" name="oid_KeyCondition3 [oid]" source="data[].rel9#role17_ent4#att14" target="sv3#area12#page2#dau12#su11#kcond3.ent4#att14"/>
       </Link>
       <Selector id="sv3#area12#page24#pwu6#su13" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area12#page24#pwu6#su13#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
@@ -85,10 +85,9 @@
         <layout:Unit unitId="sv3#area12#page24#pwu6">
           <layout:Link link="sv3#area12#page24#pwu6#ln8"/>
           <layout:Link link="sv3#area12#page24#pwu6ent7#att29"/>
-          <layout:Attribute attribute="rel9#role17.rel8#role15.ent4#att15"/>
-          <layout:Attribute attribute="rel9#role17.rel8#role15.ent4#att59"/>
           <layout:Attribute attribute="ent7#att29"/>
           <layout:Attribute attribute="ent7#att40"/>
+          <layout:Attribute attribute="rel9#role17.ent4#att15"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

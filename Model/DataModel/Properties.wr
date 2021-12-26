@@ -104,7 +104,7 @@
     <Attribute id="ent4#att53" name="fascia" type="string" derivationQuery="simpleImported::Self.rel11#role22.ent15#att32"/>
     <Attribute id="ent4#att59" name="categoria" type="string" derivationQuery="simpleImported::Self.rel4#role7.ent5#att20"/>
     <Attribute id="ent4#att60" name="nazione" type="string" derivationQuery="simpleImported::Self.rel18#role35.ent19#att45"/>
-    <Attribute id="ent4#att64" name="vendibile" type="boolean" db:column="vendibile" key="false">
+    <Attribute id="ent4#att64" name="vendibile" type="boolean" key="false" db:column="vendibile">
       <Property id="ent4#att64#prop1" name="DefaultVendibile" value="1"/>
     </Attribute>
   </Entity>
@@ -173,12 +173,12 @@
       <db:JoinColumn attribute="ent4#att14" name="prodotto_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Relationship id="rel9" name="Riga ordine_Prodotto online" sourceEntity="ent7" targetEntity="ent8" db:database="db1" db:table="riga_ordine">
-    <RelationshipRole1 id="rel9#role17" name="Riga ordineToProdotto online" maxCard="1">
+  <Relationship id="rel9" name="Riga ordine_Prodotto" sourceEntity="ent7" targetEntity="ent4" db:database="db1" db:table="riga_ordine">
+    <RelationshipRole1 id="rel9#role17" name="Riga ordineToProdotto" maxCard="1">
       <db:JoinColumn attribute="ent7#att28" name="oid"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel9#role18" name="Prodotto onlineToRiga ordine" maxCard="N">
-      <db:JoinColumn attribute="ent8#att31" name="prodotto_online_oid"/>
+      <db:JoinColumn attribute="ent4#att14" name="prodotto_oid"/>
     </RelationshipRole2>
   </Relationship>
   <Entity gr:x="540" gr:y="830" id="ent9" name="Spesa" duration="persistent" attributeOrder="ent9#att33 ent9#att35 ent9#att36 ent9#att63" db:database="db1" db:table="spesa">
@@ -231,7 +231,7 @@
       <db:JoinColumn attribute="ent3#att8" name="negozio_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="1200" gr:y="715" id="ent11" name="Prodotto nuovo" duration="persistent" db:database="db1" db:table="prodotto_nuovo">
+  <Entity gr:x="1205" gr:y="740" id="ent11" name="Prodotto nuovo" duration="persistent" db:database="db1" db:table="prodotto_nuovo">
     <Generalization superEntity="ent4">
       <db:JoinColumn attribute="ent4#att14" name="prodotto_oid"/>
     </Generalization>
@@ -327,5 +327,6 @@
       <db:JoinColumn attribute="ent3#att8" name="negozio_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="supermercati" type="MySQL" username="admin" password="YWRtaW4=" url="jdbc:mysql://localhost:3306/supermercati" cryptedPassword="true"/>
+  <db:Database id="db1" name="supermercati" type="MySQL" username="admin" password="YWRtaW4=" url="jdbc:mysql://localhost:3306/supermercati" cryptedPassword="true">
+  </db:Database>
 </DataModel>

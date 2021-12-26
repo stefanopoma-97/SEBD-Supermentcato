@@ -1,14 +1,50 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="15" gr:y="-1850" id="sv5#area16" name="Gestione prodotti" landmark="true" defaultPage="sv5#area16#page42">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="550" gr:y="-1850" id="sv5#area16" name="Gestione prodotti" landmark="true" defaultPage="sv5#area16#page42">
   <OperationUnits>
-    <ModuleInstanceUnit gr:x="1035" gr:y="1230" id="sv5#area16#miu17" moduleId="mov1#opm7">
+    <ModuleInstanceUnit gr:x="560" gr:y="55" id="sv5#area16#miu17" moduleId="mov1#opm7">
       <OKLink id="sv5#area16#miu17#oln53" to="sv5#area16#page42" name="OKFlow41"/>
       <KOLink id="sv5#area16#miu17#kln111" to="sv5#area16#page59#mssu19" name="KOFlow45">
         <LinkParameter id="sv5#area16#miu17#kln111#par334" name="Errore durante eliminazione del prodotto_Shown Messages" target="sv5#area16#page59#mssu19.shownMessages" source="mov1#opm7#kocu11#ocp11"/>
       </KOLink>
     </ModuleInstanceUnit>
-    <ModuleInstanceUnit gr:x="2270" gr:y="50" id="sv5#area16#miu21" action="true" moduleId="mov1#opm8">
+    <ModuleInstanceUnit gr:x="1735" gr:y="50" id="sv5#area16#miu21" action="true" moduleId="mov1#opm8">
       <OKLink id="sv5#area16#miu21#oln264" name="OKFlow264" to="sv5#area16#page42" automaticCoupling="true" gr:bendpoints="-99,126,326,-329"/>
       <KOLink id="sv5#area16#miu21#kln206" name="KOFlow206" to="sv5#area16#page125" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="60" gr:y="1285" id="sv5#area16#miu22" moduleId="mov1#opm10">
+      <KOLink id="sv5#area16#miu22#kln225" to="sv5#area16#page122#mssu47" name="KOFlow151" gr:bendpoints="0,-180" codeRef="mov1#opm10#kocu23">
+        <LinkParameter id="sv5#area16#miu22#kln225#par1093" name="Errore durante eliminazione riga d'ordine_Shown Messages" target="sv5#area16#page122#mssu47.shownMessages" source="mov1#opm10#kocu23#ocp20"/>
+      </KOLink>
+      <KOLink id="sv5#area16#miu22#kln217" to="sv5#area16#page122#mssu47" name="KOFlow112" gr:bendpoints="0,-20" codeRef="mov1#opm10#kocu15">
+        <LinkParameter id="sv5#area16#miu22#kln217#par1077" name="righe da spese_Shown Messages" target="sv5#area16#page122#mssu47.shownMessages" source="mov1#opm10#kocu15#ocp19"/>
+      </KOLink>
+      <KOLink id="sv5#area16#miu22#kln221" to="sv5#area16#page122#mssu47" name="KOFlow62" gr:bendpoints="0,-100" codeRef="mov1#opm10#kocu19">
+        <LinkParameter id="sv5#area16#miu22#kln221#par1085" name="errore elimina prodotto_Shown Messages" target="sv5#area16#page122#mssu47.shownMessages" source="mov1#opm10#kocu19#ocp17"/>
+      </KOLink>
+      <KOLink id="sv5#area16#miu22#kln220" to="sv5#area16#page122#mssu47" name="KOFlow172" gr:bendpoints="0,80" codeRef="mov1#opm10#kocu18">
+        <LinkParameter id="sv5#area16#miu22#kln220#par1083" name="Impossibile recuperare le righe d'ordine associate al prodotto_Shown Messages" target="sv5#area16#page122#mssu47.shownMessages" source="mov1#opm10#kocu18#ocp18"/>
+      </KOLink>
+      <KOLink id="sv5#area16#miu22#kln219" to="sv5#area16#page122#mssu47" name="KOFlow114" gr:bendpoints="0,-60" codeRef="mov1#opm10#kocu17">
+        <LinkParameter id="sv5#area16#miu22#kln219#par1081" name="cancella stato_Shown Messages" target="sv5#area16#page122#mssu47.shownMessages" source="mov1#opm10#kocu17#ocp12"/>
+      </KOLink>
+      <KOLink id="sv5#area16#miu22#kln218" to="sv5#area16#page122#mssu47" name="KOFlow170" gr:bendpoints="0,40" codeRef="mov1#opm10#kocu16">
+        <LinkParameter id="sv5#area16#miu22#kln218#par1079" name="Errore durante eliminazione promozioni associate_Shown Messages" target="sv5#area16#page122#mssu47.shownMessages" source="mov1#opm10#kocu16#ocp23"/>
+      </KOLink>
+      <KOLink id="sv5#area16#miu22#kln223" to="sv5#area16#page122#mssu47" name="KOFlow173" gr:bendpoints="0,-140" codeRef="mov1#opm10#kocu21">
+        <LinkParameter id="sv5#area16#miu22#kln223#par1089" name="Impossibile recuperare le promozioni associate al prodotto_Shown Messages" target="sv5#area16#page122#mssu47.shownMessages" source="mov1#opm10#kocu21#ocp22"/>
+      </KOLink>
+      <KOLink id="sv5#area16#miu22#kln224" to="sv5#area16#page122#mssu47" name="KOFlow169" gr:bendpoints="0,160" codeRef="mov1#opm10#kocu22">
+        <LinkParameter id="sv5#area16#miu22#kln224#par1091" name="Errore durante eliminazione prodotto online_Shown Messages" target="sv5#area16#page122#mssu47.shownMessages" source="mov1#opm10#kocu22#ocp21"/>
+      </KOLink>
+      <KOLink id="sv5#area16#miu22#kln222" to="sv5#area16#page122#mssu47" name="KOFlow115" gr:bendpoints="0,120" codeRef="mov1#opm10#kocu20">
+        <LinkParameter id="sv5#area16#miu22#kln222#par1087" name="cancella spesa_Shown Messages" target="sv5#area16#page122#mssu47.shownMessages" source="mov1#opm10#kocu20#ocp16"/>
+      </KOLink>
+      <KOLink id="sv5#area16#miu22#kln216" to="sv5#area16#page122#mssu47" name="KOFlow63" codeRef="mov1#opm10#kocu14">
+        <LinkParameter id="sv5#area16#miu22#kln216#par1075" name="seleziono spese_Shown Messages" target="sv5#area16#page122#mssu47.shownMessages" source="mov1#opm10#kocu14#ocp14"/>
+      </KOLink>
+      <KOLink id="sv5#area16#miu22#kln226" to="sv5#area16#page122#mssu47" name="KOFlow171" gr:bendpoints="0,200" codeRef="mov1#opm10#kocu24">
+        <LinkParameter id="sv5#area16#miu22#kln226#par1095" name="Impossibile recuperare il prodotto online associato_Shown Messages" target="sv5#area16#page122#mssu47.shownMessages" source="mov1#opm10#kocu24#ocp15"/>
+      </KOLink>
+      <OKLink id="sv5#area16#miu22#oln290" to="sv5#area16#page42" code="end" name="OKFlow242"/>
     </ModuleInstanceUnit>
   </OperationUnits>
 </Area>

@@ -25,7 +25,7 @@
         <LinkParameter id="sv2#area34#page96#dau38#ln243#par428" name="oid_RoleCondition39 [oid]" source="data.ent9#att33" target="sv2#area34#miu4.mov1#opm2#icu2#icp2"/>
       </Link>
     </DataUnit>
-    <PowerIndexUnit id="sv2#area34#page96#pwu9" name="Righe d'ordine" linkOrder="sv2#area34#page96#pwu9#ln300 sv2#area34#page96#pwu9#ln256 sv2#area34#page96#pwu9#ln257" gr:x="190" gr:y="5" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att40 ent7#att29 ent7#att10 ent7#att61 rel9#role17.rel8#role15.ent4#att15 ent7#att62">
+    <PowerIndexUnit id="sv2#area34#page96#pwu9" name="Righe d'ordine" linkOrder="sv2#area34#page96#pwu9#ln300 sv2#area34#page96#pwu9#ln256 sv2#area34#page96#pwu9#ln257" gr:x="190" gr:y="5" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att40 ent7#att29 ent7#att10 ent7#att61 ent7#att62 rel9#role17.ent4#att15">
       <Selector id="sv2#area34#page96#pwu9#su232" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area34#page96#pwu9#su232#rcond89" name="RoleCondition63" predicate="in" implied="false" role="rel10#role20"/>
       </Selector>
@@ -119,15 +119,15 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area34#page96#pwu9">
+          <layout:Link link="sv2#area34#page96#pwu9#ln300"/>
+          <layout:Link link="sv2#area34#page96#pwu9#ln256"/>
+          <layout:Link link="sv2#area34#page96#pwu9#ln257"/>
           <layout:Attribute attribute="ent7#att40"/>
           <layout:Attribute attribute="ent7#att29"/>
           <layout:Attribute attribute="ent7#att10"/>
           <layout:Attribute attribute="ent7#att61"/>
-          <layout:Attribute attribute="rel9#role17.rel8#role15.ent4#att15"/>
           <layout:Attribute attribute="ent7#att62"/>
-          <layout:Link link="sv2#area34#page96#pwu9#ln300"/>
-          <layout:Link link="sv2#area34#page96#pwu9#ln256"/>
-          <layout:Link link="sv2#area34#page96#pwu9#ln257"/>
+          <layout:Attribute attribute="rel9#role17.ent4#att15"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

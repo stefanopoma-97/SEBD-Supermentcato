@@ -10,7 +10,7 @@
       <OKLink id="mov1#opm8#opg18#lpu13#oln247" name="OKFlow200" to="mov1#opm8#opg18#seu119" code="next">
         <LinkParameter id="mov1#opm8#opg18#lpu13#oln247#par972" name="Next Element_KeyCondition156 [oid]" source="next" target="mov1#opm8#opg18#seu119#su287#kcond198.ent4#att14"/>
       </OKLink>
-      <OKLink id="mov1#opm8#opg18#lpu13#oln263" to="mov1#opm8#okcu8" code="end" name="OKFlow206"/>
+      <OKLink id="mov1#opm8#opg18#lpu13#oln263" to="mov1#opm8#okcu8" code="end" name="OKFlow206" gr:bendpoints="483,-112,-567,-127"/>
     </LoopUnit>
     <SelectorUnit id="mov1#opm8#opg18#seu119" name="Prodotto nuovo" gr:x="270" gr:y="0" entity="ent11">
       <Selector id="mov1#opm8#opg18#seu119#su287" defaultPolicy="fill" booleanOperator="and">
@@ -70,10 +70,11 @@ return [ "risultato": risultato ]</ScriptUnitText>
         <LinkParameter id="mov1#opm8#opg18#seu125#oln252#par991" name="ProdottoToFascia prezzo.oid_PASSING" source="rel11#role22_ent15#att30Array" passing="true"/>
         <LinkParameter id="mov1#opm8#opg18#seu125#oln252#par992" name="ProdottoToNazione.oid_PASSING" source="rel18#role35_ent19#att44Array" passing="true"/>
         <LinkParameter id="mov1#opm8#opg18#seu125#oln252#par993" name="oid_KeyCondition179 [oid]" source="ent4#att14Array" target="mov1#opm8#opg18#dlu21#su303#kcond200.ent4#att14"/>
+        <LinkParameter id="mov1#opm8#opg18#seu125#oln252#par1056" name="vendibile_PASSING" source="ent4#att64Array" passing="true"/>
       </OKLink>
       <KOLink id="mov1#opm8#opg18#seu125#kln199" to="mov1#opm8#kocu12" name="KOFlow174" gr:bendpoints="0,80"/>
     </SelectorUnit>
-    <DeleteUnit id="mov1#opm8#opg18#dlu21" name="Cancella prodotto nuovo" gr:x="455" gr:y="230" entity="ent11">
+    <DeleteUnit id="mov1#opm8#opg18#dlu21" name="Cancella prodotto nuovo" gr:x="695" gr:y="225" entity="ent11">
       <Selector id="mov1#opm8#opg18#dlu21#su303" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov1#opm8#opg18#dlu21#su303#kcond200" name="KeyCondition179" predicate="in" implied="false"/>
       </Selector>
@@ -88,6 +89,7 @@ return [ "risultato": risultato ]</ScriptUnitText>
         <LinkParameter id="mov1#opm8#opg18#dlu21#oln253#par1001" name="oid_PASSING_oid" sourceLinkParameter="mov1#opm8#opg18#seu125#oln252#par988" target="mov1#opm8#opg18#cru10.ent4#att14"/>
         <LinkParameter id="mov1#opm8#opg18#dlu21#oln253#par1002" name="prezzo_PASSING_prezzo" sourceLinkParameter="mov1#opm8#opg18#seu125#oln252#par989" target="mov1#opm8#opg18#cru10.ent4#att17"/>
         <LinkParameter id="mov1#opm8#opg18#dlu21#oln253#par1003" name="oid_PASSING" sourceLinkParameter="mov1#opm8#opg18#seu125#oln252#par988" passing="true"/>
+        <LinkParameter id="mov1#opm8#opg18#dlu21#oln253#par1057" name="vendibile_PASSING_vendibile" sourceLinkParameter="mov1#opm8#opg18#seu125#oln252#par1056" target="mov1#opm8#opg18#cru10.ent4#att64"/>
       </OKLink>
       <KOLink id="mov1#opm8#opg18#dlu21#kln200" to="mov1#opm8#kocu12" name="KOFlow176" gr:bendpoints="0,-100"/>
     </DeleteUnit>
@@ -138,7 +140,9 @@ return [ "risultato": risultato ]</ScriptUnitText>
         <LinkParameter id="mov1#opm8#opg18#lpu15#oln260#par1012" name="Next Element_KeyCondition183 [oid]" source="next" target="mov1#opm8#opg18#mfu25#su309#kcond202.ent6#att22"/>
         <LinkParameter id="mov1#opm8#opg18#lpu15#oln260#par1013" name="oid_PASSING_Prodotto.oid(PromozioneToProdotto)" sourceLinkParameter="mov1#opm8#opg18#seu127#oln259#par1011" target="mov1#opm8#opg18#mfu25.rel6#role11.ent4#att14"/>
       </OKLink>
-      <OKLink id="mov1#opm8#opg18#lpu15#oln261" name="OKFlow220" to="mov1#opm8#opg18#lpu13" code="end" automaticCoupling="true" gr:bendpoints="-214,128,341,743;-570,2,-15,617"/>
+      <OKLink id="mov1#opm8#opg18#lpu15#oln261" name="OKFlow220" to="mov1#opm8#opg18#seu149" code="end" gr:bendpoints="-64,92,121,-18;-81,96,104,-14">
+        <LinkParameter id="mov1#opm8#opg18#lpu15#oln261#par1058" name="oid_PASSING" sourceLinkParameter="mov1#opm8#opg18#seu127#oln259#par1011" passing="true"/>
+      </OKLink>
     </LoopUnit>
     <ModifyUnit id="mov1#opm8#opg18#mfu25" name="Update19" gr:x="815" gr:y="630" entity="ent6">
       <Selector id="mov1#opm8#opg18#mfu25#su309" defaultPolicy="fill" booleanOperator="and">
@@ -146,6 +150,28 @@ return [ "risultato": risultato ]</ScriptUnitText>
       </Selector>
       <OKLink id="mov1#opm8#opg18#mfu25#oln262" name="OKFlow219" to="mov1#opm8#opg18#lpu15" automaticCoupling="true" gr:bendpoints="-72,12,58,17"/>
       <KOLink id="mov1#opm8#opg18#mfu25#kln205" to="mov1#opm8#kocu12" name="KOFlow181" gr:bendpoints="0,200"/>
+    </ModifyUnit>
+    <SelectorUnit gr:x="415" gr:y="740" id="mov1#opm8#opg18#seu149" name="Righe" entity="ent7">
+      <Selector id="mov1#opm8#opg18#seu149#su320" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="mov1#opm8#opg18#seu149#su320#acond71" name="AttCondition71" predicate="null" booleanOperator="or" implied="false" attributes="rel9#role17.ent4#att14"/>
+      </Selector>
+      <OKLink id="mov1#opm8#opg18#seu149#oln285" name="OKFlow285" to="mov1#opm8#opg18#lpu20">
+        <LinkParameter id="mov1#opm8#opg18#seu149#oln285#par1059" name="oid_Input Array" source="ent7#att28Array" target="mov1#opm8#opg18#lpu20.array"/>
+        <LinkParameter id="mov1#opm8#opg18#seu149#oln285#par1060" name="oid_PASSING" sourceLinkParameter="mov1#opm8#opg18#lpu15#oln261#par1058" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <LoopUnit gr:x="695" gr:y="785" id="mov1#opm8#opg18#lpu20" name="Loop20">
+      <OKLink id="mov1#opm8#opg18#lpu20#oln286" name="OKFlow286" to="mov1#opm8#opg18#mfu26" code="next">
+        <LinkParameter id="mov1#opm8#opg18#lpu20#oln286#par1061" name="oid_PASSING_Prodotto.oid(Riga ordineToProdotto)" sourceLinkParameter="mov1#opm8#opg18#seu149#oln285#par1060" target="mov1#opm8#opg18#mfu26.rel9#role17.ent4#att14"/>
+        <LinkParameter id="mov1#opm8#opg18#lpu20#oln286#par1062" name="Next Element_KeyCondition208 [oid]" source="next" target="mov1#opm8#opg18#mfu26#su321#kcond208.ent7#att28"/>
+      </OKLink>
+      <OKLink id="mov1#opm8#opg18#lpu20#oln288" name="OKFlow288" to="mov1#opm8#opg18#seu115" automaticCoupling="true" gr:bendpoints="-599,52,76,812" code="end"/>
+    </LoopUnit>
+    <ModifyUnit gr:x="830" gr:y="775" id="mov1#opm8#opg18#mfu26" name="Update26" entity="ent7">
+      <Selector id="mov1#opm8#opg18#mfu26#su321" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm8#opg18#mfu26#su321#kcond208" name="KeyCondition208" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm8#opg18#mfu26#oln287" name="OKFlow287" to="mov1#opm8#opg18#lpu20" automaticCoupling="true" gr:bendpoints="-94,9,66,19"/>
     </ModifyUnit>
   </OperationUnits>
 </OperationGroup>

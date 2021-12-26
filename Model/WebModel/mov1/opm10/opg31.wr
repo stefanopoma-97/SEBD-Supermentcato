@@ -1,0 +1,156 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm10#opg31" name="Elimina prodotto" transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <DeleteUnit id="mov1#opm10#opg31#dlu26" name="Elimina prodotto" gr:x="400" gr:y="150" entity="ent4">
+      <Selector id="mov1#opm10#opg31#dlu26#su322" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm10#opg31#dlu26#su322#kcond209" name="KeyCondition82" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm10#opg31#dlu26#oln292" name="OKFlow128" to="mov1#opm10#opg31#seu153" automaticCoupling="true"/>
+      <KOLink id="mov1#opm10#opg31#dlu26#kln239" to="mov1#opm10#kocu19" name="KOFlow62">
+        <LinkParameter id="mov1#opm10#opg31#dlu26#kln239#par1129" sourceValue="errore elimina prodotto" name="errore elimina prodotto_Shown Messages" target="mov1#opm10#kocu19#ocp17"/>
+      </KOLink>
+    </DeleteUnit>
+    <DeleteUnit id="mov1#opm10#opg31#dlu27" name="Elimina prodotti online" gr:x="380" gr:y="425" entity="ent8">
+      <Selector id="mov1#opm10#opg31#dlu27#su323" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm10#opg31#dlu27#su323#kcond210" name="KeyCondition118" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm10#opg31#dlu27#oln293" name="OKFlow225" to="mov1#opm10#opg31#lpu22" automaticCoupling="true" gr:bendpoints="-106,57,84,-18"/>
+      <KOLink id="mov1#opm10#opg31#dlu27#kln240" to="mov1#opm10#kocu22" name="KOFlow169">
+        <LinkParameter id="mov1#opm10#opg31#dlu27#kln240#par1130" sourceValue="Errore durante eliminazione prodotto online" name="Errore durante eliminazione prodotto online_Shown Messages" target="mov1#opm10#kocu22#ocp21"/>
+      </KOLink>
+    </DeleteUnit>
+    <SelectorUnit id="mov1#opm10#opg31#seu150" name="Righe d'ordine" gr:x="0" gr:y="145" entity="ent7">
+      <Selector id="mov1#opm10#opg31#seu150#su324" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm10#opg31#seu150#su324#rcond109" name="RigheConProdotto" predicate="in" implied="false" role="rel9#role18"/>
+      </Selector>
+      <OKLink id="mov1#opm10#opg31#seu150#oln294" name="OKFlow66" to="mov1#opm10#opg31#lpu21">
+        <LinkParameter id="mov1#opm10#opg31#seu150#oln294#par1107" name="oid_Input Array" source="ent7#att28Array" target="mov1#opm10#opg31#lpu21.array"/>
+        <LinkParameter id="mov1#opm10#opg31#seu150#oln294#par1108" name="oid_PASSING" sourceLinkParameter="mov1#opm10#icu10#oln289#par1072" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm10#opg31#seu150#kln241" to="mov1#opm10#kocu18" name="KOFlow172">
+        <LinkParameter id="mov1#opm10#opg31#seu150#kln241#par1131" sourceValue="Impossibile recuperare le righe d'ordine associate al prodotto" name="Impossibile recuperare le righe d'ordine associate al prodotto_Shown Messages" target="mov1#opm10#kocu18#ocp18"/>
+      </KOLink>
+    </SelectorUnit>
+    <DeleteUnit id="mov1#opm10#opg31#dlu28" name="Elimina righe d'ordine" gr:x="0" gr:y="470" entity="ent7">
+      <Selector id="mov1#opm10#opg31#dlu28#su325" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm10#opg31#dlu28#su325#kcond211" name="KeyCondition124" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm10#opg31#dlu28#oln295" name="OKFlow222" to="mov1#opm10#opg31#lpu21" automaticCoupling="true" gr:bendpoints="-42,-78,8,72"/>
+      <KOLink id="mov1#opm10#opg31#dlu28#kln242" to="mov1#opm10#kocu23" name="KOFlow151">
+        <LinkParameter id="mov1#opm10#opg31#dlu28#kln242#par1132" sourceValue="Errore durante eliminazione riga d'ordine" name="Errore durante eliminazione riga d'ordine_Shown Messages" target="mov1#opm10#kocu23#ocp20"/>
+      </KOLink>
+    </DeleteUnit>
+    <SelectorUnit id="mov1#opm10#opg31#seu151" name="Promozioni" gr:x="200" gr:y="280" entity="ent6">
+      <Selector id="mov1#opm10#opg31#seu151#su326" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm10#opg31#seu151#su326#rcond110" name="PromozioniProdotto" predicate="in" implied="false" role="rel6#role12"/>
+      </Selector>
+      <OKLink id="mov1#opm10#opg31#seu151#oln296" name="OKFlow127" to="mov1#opm10#opg31#lpu23">
+        <LinkParameter id="mov1#opm10#opg31#seu151#oln296#par1109" name="oid_Input Array" source="ent6#att22Array" target="mov1#opm10#opg31#lpu23.array"/>
+        <LinkParameter id="mov1#opm10#opg31#seu151#oln296#par1110" name="oid_PASSING" sourceLinkParameter="mov1#opm10#opg31#lpu22#oln300#par1115" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm10#opg31#seu151#kln243" to="mov1#opm10#kocu21" name="KOFlow173">
+        <LinkParameter id="mov1#opm10#opg31#seu151#kln243#par1133" sourceValue="Impossibile recuperare le promozioni associate al prodotto" name="Impossibile recuperare le promozioni associate al prodotto_Shown Messages" target="mov1#opm10#kocu21#ocp22"/>
+      </KOLink>
+    </SelectorUnit>
+    <DeleteUnit id="mov1#opm10#opg31#dlu29" name="Elimina promozioni" gr:x="195" gr:y="5" entity="ent6">
+      <Selector id="mov1#opm10#opg31#dlu29#su327" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm10#opg31#dlu29#su327#kcond212" name="KeyCondition191" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm10#opg31#dlu29#oln297" name="OKFlow39" to="mov1#opm10#opg31#lpu23" automaticCoupling="true" gr:bendpoints="-47,78,-52,-62"/>
+      <KOLink id="mov1#opm10#opg31#dlu29#kln244" to="mov1#opm10#kocu16" name="KOFlow170">
+        <LinkParameter id="mov1#opm10#opg31#dlu29#kln244#par1134" sourceValue="Errore durante eliminazione promozioni associate" name="Errore durante eliminazione promozioni associate_Shown Messages" target="mov1#opm10#kocu16#ocp23"/>
+      </KOLink>
+    </DeleteUnit>
+    <LoopUnit id="mov1#opm10#opg31#lpu21" name="LoopRighe" gr:x="40" gr:y="315">
+      <OKLink id="mov1#opm10#opg31#lpu21#oln298" name="OKFlow69" to="mov1#opm10#opg31#seu152" code="end">
+        <LinkParameter id="mov1#opm10#opg31#lpu21#oln298#par1111" name="oid_PASSING_ProdottoOnline [oid]" sourceLinkParameter="mov1#opm10#opg31#seu150#oln294#par1108" target="mov1#opm10#opg31#seu152#su328#rcond115.ent4#att14"/>
+        <LinkParameter id="mov1#opm10#opg31#lpu21#oln298#par1112" name="oid_PASSING" sourceLinkParameter="mov1#opm10#opg31#seu150#oln294#par1108" passing="true"/>
+      </OKLink>
+      <OKLink id="mov1#opm10#opg31#lpu21#oln299" name="OKFlow221" to="mov1#opm10#opg31#dlu28" code="next">
+        <LinkParameter id="mov1#opm10#opg31#lpu21#oln299#par1113" name="Index_KeyCondition124 [oid]" source="next" target="mov1#opm10#opg31#dlu28#su325#kcond211.ent7#att28"/>
+      </OKLink>
+    </LoopUnit>
+    <LoopUnit id="mov1#opm10#opg31#lpu22" name="LoopProdotti" gr:x="210" gr:y="445">
+      <OKLink id="mov1#opm10#opg31#lpu22#oln300" name="OKFlow77" to="mov1#opm10#opg31#seu151" code="end">
+        <LinkParameter id="mov1#opm10#opg31#lpu22#oln300#par1114" name="oid_PASSING_PromozioniProdotto [oid]" sourceLinkParameter="mov1#opm10#opg31#seu152#oln304#par1120" target="mov1#opm10#opg31#seu151#su326#rcond110.ent4#att14"/>
+        <LinkParameter id="mov1#opm10#opg31#lpu22#oln300#par1115" name="oid_PASSING" sourceLinkParameter="mov1#opm10#opg31#seu152#oln304#par1120" passing="true"/>
+      </OKLink>
+      <OKLink id="mov1#opm10#opg31#lpu22#oln301" name="OKFlow224" to="mov1#opm10#opg31#dlu27" code="next">
+        <LinkParameter id="mov1#opm10#opg31#lpu22#oln301#par1116" name="Next Element_KeyCondition118 [oid]" source="next" target="mov1#opm10#opg31#dlu27#su323#kcond210.ent8#att31"/>
+      </OKLink>
+    </LoopUnit>
+    <LoopUnit id="mov1#opm10#opg31#lpu23" name="LoopPromo" gr:x="220" gr:y="165">
+      <OKLink id="mov1#opm10#opg31#lpu23#oln302" name="OKFlow226" to="mov1#opm10#opg31#dlu29" code="next">
+        <LinkParameter id="mov1#opm10#opg31#lpu23#oln302#par1117" name="Next Element_KeyCondition191 [oid]" source="next" target="mov1#opm10#opg31#dlu29#su327#kcond212.ent6#att22"/>
+      </OKLink>
+      <OKLink id="mov1#opm10#opg31#lpu23#oln303" name="OKFlow128" to="mov1#opm10#opg31#dlu26" code="end">
+        <LinkParameter id="mov1#opm10#opg31#lpu23#oln303#par1118" name="oid_PASSING_KeyCondition82 [oid]" sourceLinkParameter="mov1#opm10#opg31#seu151#oln296#par1110" target="mov1#opm10#opg31#dlu26#su322#kcond209.ent4#att14"/>
+      </OKLink>
+    </LoopUnit>
+    <SelectorUnit id="mov1#opm10#opg31#seu152" name="ProdottiOnline" gr:x="180" gr:y="575" entity="ent8">
+      <Selector id="mov1#opm10#opg31#seu152#su328" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm10#opg31#seu152#su328#rcond115" name="ProdottoOnline" predicate="in" implied="false" role="rel8#role16"/>
+      </Selector>
+      <OKLink id="mov1#opm10#opg31#seu152#oln304" name="OKFlow63" to="mov1#opm10#opg31#lpu22">
+        <LinkParameter id="mov1#opm10#opg31#seu152#oln304#par1119" name="oid_Input Array" source="ent8#att31Array" target="mov1#opm10#opg31#lpu22.array"/>
+        <LinkParameter id="mov1#opm10#opg31#seu152#oln304#par1120" name="oid_PASSING" sourceLinkParameter="mov1#opm10#opg31#lpu21#oln298#par1112" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm10#opg31#seu152#kln245" to="mov1#opm10#kocu24" name="KOFlow171">
+        <LinkParameter id="mov1#opm10#opg31#seu152#kln245#par1135" sourceValue="Impossibile recuperare il prodotto online associato" name="Impossibile recuperare il prodotto online associato_Shown Messages" target="mov1#opm10#kocu24#ocp15"/>
+      </KOLink>
+    </SelectorUnit>
+    <SelectorUnit id="mov1#opm10#opg31#seu153" name="Spese" gr:x="405" gr:y="10" entity="ent9">
+      <OKLink id="mov1#opm10#opg31#seu153#oln305" name="OKFlow129" to="mov1#opm10#opg31#lpu24">
+        <LinkParameter id="mov1#opm10#opg31#seu153#oln305#par1121" name="oid_Input Array" source="ent9#att33Array" target="mov1#opm10#opg31#lpu24.array"/>
+      </OKLink>
+      <KOLink id="mov1#opm10#opg31#seu153#kln246" to="mov1#opm10#kocu14" name="KOFlow63">
+        <LinkParameter id="mov1#opm10#opg31#seu153#kln246#par1136" sourceValue="seleziono spese" name="seleziono spese_Shown Messages" target="mov1#opm10#kocu14#ocp14"/>
+      </KOLink>
+    </SelectorUnit>
+    <SelectorUnit id="mov1#opm10#opg31#seu154" name="righe della spesa" gr:x="655" gr:y="0" entity="ent7">
+      <Selector id="mov1#opm10#opg31#seu154#su329" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm10#opg31#seu154#su329#rcond128" name="SpesaToRighe" predicate="in" implied="false" role="rel10#role20"/>
+      </Selector>
+      <OKLink id="mov1#opm10#opg31#seu154#oln306" name="OKFlow130" to="mov1#opm10#opg31#inn27">
+        <LinkParameter id="mov1#opm10#opg31#seu154#oln306#par1122" name="oid_Input" source="ent7#att28Array" target="mov1#opm10#opg31#inn27.isnotnull"/>
+        <LinkParameter id="mov1#opm10#opg31#seu154#oln306#par1123" name="Next Element_PASSING" sourceLinkParameter="mov1#opm10#opg31#lpu24#oln308#par1127" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm10#opg31#seu154#kln247" to="mov1#opm10#kocu15" name="KOFlow112">
+        <LinkParameter id="mov1#opm10#opg31#seu154#kln247#par1137" sourceValue="righe da spese" name="righe da spese_Shown Messages" target="mov1#opm10#kocu15#ocp19"/>
+      </KOLink>
+    </SelectorUnit>
+    <IsNotNullUnit id="mov1#opm10#opg31#inn27" name="Is Not Null7" gr:x="815" gr:y="15">
+      <OKLink id="mov1#opm10#opg31#inn27#oln307" name="OKFlow132" to="mov1#opm10#opg31#lpu24" automaticCoupling="true" gr:bendpoints="-167,-128,133,-133"/>
+      <KOLink id="mov1#opm10#opg31#inn27#kln238" name="KOFlow61" to="mov1#opm10#opg31#dlu30">
+        <LinkParameter id="mov1#opm10#opg31#inn27#kln238#par1124" name="Input Value_RoleCondition79 [oid]" sourceLinkParameter="mov1#opm10#opg31#seu154#oln306#par1123" target="mov1#opm10#opg31#dlu30#su330#rcond130.ent9#att33"/>
+        <LinkParameter id="mov1#opm10#opg31#inn27#kln238#par1125" name="Next Element_PASSING" sourceLinkParameter="mov1#opm10#opg31#seu154#oln306#par1123" passing="true"/>
+      </KOLink>
+    </IsNotNullUnit>
+    <LoopUnit id="mov1#opm10#opg31#lpu24" name="Loop11" gr:x="525" gr:y="20">
+      <OKLink id="mov1#opm10#opg31#lpu24#oln308" name="OKFlow131" to="mov1#opm10#opg31#seu154" code="next">
+        <LinkParameter id="mov1#opm10#opg31#lpu24#oln308#par1126" name="Next Element_SpesaToRighe [oid]" source="next" target="mov1#opm10#opg31#seu154#su329#rcond128.ent9#att33"/>
+        <LinkParameter id="mov1#opm10#opg31#lpu24#oln308#par1127" name="Next Element_PASSING" source="next" passing="true"/>
+      </OKLink>
+      <OKLink id="mov1#opm10#opg31#lpu24#oln311" to="mov1#opm10#okcu9" code="end" name="OKFlow242"/>
+    </LoopUnit>
+    <DeleteUnit id="mov1#opm10#opg31#dlu30" name="Cancella stato" gr:x="805" gr:y="110" entity="ent10">
+      <Selector id="mov1#opm10#opg31#dlu30#su330" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm10#opg31#dlu30#su330#rcond130" name="RoleCondition79" predicate="in" implied="false" role="rel12#role23"/>
+      </Selector>
+      <OKLink id="mov1#opm10#opg31#dlu30#oln309" name="OKFlow157" to="mov1#opm10#opg31#dlu31">
+        <LinkParameter id="mov1#opm10#opg31#dlu30#oln309#par1128" name="Next Element_PASSING_KeyCondition197 [oid]" sourceLinkParameter="mov1#opm10#opg31#inn27#kln238#par1125" target="mov1#opm10#opg31#dlu31#su331#kcond213.ent9#att33"/>
+      </OKLink>
+      <KOLink id="mov1#opm10#opg31#dlu30#kln248" to="mov1#opm10#kocu17" name="KOFlow114">
+        <LinkParameter id="mov1#opm10#opg31#dlu30#kln248#par1138" sourceValue="cancella stato" name="cancella stato_Shown Messages" target="mov1#opm10#kocu17#ocp12"/>
+      </KOLink>
+    </DeleteUnit>
+    <DeleteUnit id="mov1#opm10#opg31#dlu31" name="Cancella spesa" gr:x="825" gr:y="240" entity="ent9">
+      <Selector id="mov1#opm10#opg31#dlu31#su331" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm10#opg31#dlu31#su331#kcond213" name="KeyCondition197" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm10#opg31#dlu31#oln310" name="OKFlow168" to="mov1#opm10#opg31#lpu24" automaticCoupling="true"/>
+      <KOLink id="mov1#opm10#opg31#dlu31#kln249" to="mov1#opm10#kocu20" name="KOFlow115">
+        <LinkParameter id="mov1#opm10#opg31#dlu31#kln249#par1139" sourceValue="cancella spesa" name="cancella spesa_Shown Messages" target="mov1#opm10#kocu20#ocp16"/>
+      </KOLink>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>

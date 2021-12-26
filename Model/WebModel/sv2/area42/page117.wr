@@ -18,8 +18,8 @@
       <Link id="sv2#area42#page117#dau45#ln401" name="Flow207" to="sv2#area42#page117#enu37" type="transport" validate="true">
         <LinkParameter id="sv2#area42#page117#dau45#ln401#par579" name="1|2|3|4|5_Quantit&#224; [label]" target="sv2#area42#page117#enu37#sfld43_label" sourceValue="1|2|3|4|5"/>
         <LinkParameter id="sv2#area42#page117#dau45#ln401#par580" name="1|2|3|4|5_Quantit&#224; [output]" target="sv2#area42#page117#enu37#sfld43_output" sourceValue="1|2|3|4|5"/>
-        <LinkParameter id="sv2#area42#page117#dau45#ln401#par581" name="oid_PASSING" source="data.ent8#att31" passing="true"/>
         <LinkParameter id="sv2#area42#page117#dau45#ln401#par582" name="Prodotto onlineToProdotto.prezzo_PASSING" source="data.rel8#role15$ent4#att17" passing="true"/>
+        <LinkParameter id="sv2#area42#page117#dau45#ln401#par1046" name="Prodotto onlineToProdotto.oid_PASSING" source="data.rel8#role15_ent4#att14" passing="true"/>
       </Link>
       <Link id="sv2#area42#page117#dau45#ln402" name="Calcola totale" to="sv2#area42#opg55#tmu20" type="normal" validate="true" ajaxEnabled="true">
         <LinkParameter id="sv2#area42#page117#dau45#ln402#par583" name="Prodotto onlineToNegozio.oid_PASSING" source="data.rel7#role13_ent3#att8" passing="true"/>
@@ -57,10 +57,10 @@
         </VRules>
       </SelectionField>
       <Link id="sv2#area42#page117#enu37#ln406" name="Aggiungi al carrello" to="sv2#area42#opg56#inn2" type="normal" validate="true">
-        <LinkParameter id="sv2#area42#page117#enu37#ln406#par588" name="oid_PASSING" sourceLinkParameter="sv2#area42#page117#dau45#ln401#par581" passing="true"/>
         <LinkParameter id="sv2#area42#page117#enu37#ln406#par589" name="Prodotto onlineToProdotto.prezzo_PASSING" sourceLinkParameter="sv2#area42#page117#dau45#ln401#par582" passing="true"/>
         <LinkParameter id="sv2#area42#page117#enu37#ln406#par590" name="Quantit&#224;_PASSING" source="sv2#area42#page117#enu37#sfld43" passing="true"/>
         <LinkParameter id="sv2#area42#page117#enu37#ln406#par591" name="sconto_PASSING" sourceLinkParameter="sv2#area42#page117#seu144#ln405#par587" passing="true"/>
+        <LinkParameter id="sv2#area42#page117#enu37#ln406#par1047" name="Prodotto onlineToProdotto.oid_PASSING" sourceLinkParameter="sv2#area42#page117#dau45#ln401#par1046" passing="true"/>
       </Link>
     </EntryUnit>
   </ContentUnits>
@@ -215,14 +215,14 @@
             <layout:Row>
               <layout:Cell colspan="12">
                 <layout:Unit unitId="sv2#area42#page117#alt5#page118#pwu32">
-                  <layout:Attribute attribute="ent7#att40"/>
-                  <layout:Attribute attribute="ent7#att29"/>
-                  <layout:Attribute attribute="rel9#role17.rel8#role15.ent4#att15"/>
-                  <layout:Attribute attribute="ent7#att10"/>
-                  <layout:Attribute attribute="ent7#att62"/>
                   <layout:Link link="sv2#area42#page117#alt5#page118#pwu32#ln407"/>
                   <layout:Link link="sv2#area42#page117#alt5#page118#pwu32#ln251"/>
                   <layout:Link link="sv2#area42#page117#alt5#page118#pwu32#ln255"/>
+                  <layout:Attribute attribute="ent7#att40"/>
+                  <layout:Attribute attribute="ent7#att29"/>
+                  <layout:Attribute attribute="ent7#att10"/>
+                  <layout:Attribute attribute="ent7#att62"/>
+                  <layout:Attribute attribute="rel9#role17.ent4#att15"/>
                 </layout:Unit>
               </layout:Cell>
               <layout:Cell/>
@@ -330,7 +330,7 @@
   <Alternative id="sv2#area42#page117#alt5" name="Spesa" defaultPage="sv2#area42#page117#alt5#page118" gr:x="1060" gr:y="5">
     <Page id="sv2#area42#page117#alt5#page118" name="Spesa" gr:x="0" gr:y="0">
       <ContentUnits>
-        <PowerIndexUnit id="sv2#area42#page117#alt5#page118#pwu32" name="Righe d'ordine" linkOrder="sv2#area42#page117#alt5#page118#pwu32#ln407 sv2#area42#page117#alt5#page118#pwu32#ln251 sv2#area42#page117#alt5#page118#pwu32#ln255" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att40 ent7#att29 rel9#role17.rel8#role15.ent4#att15 ent7#att10 ent7#att62">
+        <PowerIndexUnit id="sv2#area42#page117#alt5#page118#pwu32" name="Righe d'ordine" linkOrder="sv2#area42#page117#alt5#page118#pwu32#ln407 sv2#area42#page117#alt5#page118#pwu32#ln251 sv2#area42#page117#alt5#page118#pwu32#ln255" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att40 ent7#att29 ent7#att10 ent7#att62 rel9#role17.ent4#att15">
           <Selector id="sv2#area42#page117#alt5#page118#pwu32#su299" defaultPolicy="fill" booleanOperator="and">
             <RelationshipRoleCondition id="sv2#area42#page117#alt5#page118#pwu32#su299#rcond125" name="Spesa To Riga Ordine" predicate="in" implied="false" role="rel10#role20"/>
           </Selector>

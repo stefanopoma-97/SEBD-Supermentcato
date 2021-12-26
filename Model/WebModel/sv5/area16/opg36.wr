@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="2230" gr:y="320" id="sv5#area16#opg36" name="Filtra prodotti" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1695" gr:y="320" id="sv5#area16#opg36" name="Filtra prodotti" transaction="true">
   <OperationUnits>
     <SwitchUnit gr:x="15" gr:y="0" id="sv5#area16#opg36#switch1" name="Nuovo?">
       <Case value="true"/>
