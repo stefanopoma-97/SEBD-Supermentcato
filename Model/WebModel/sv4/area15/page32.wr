@@ -1,25 +1,28 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="345" id="sv4#area15#page32" name="Dettagli prodotto online">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="120" id="sv4#area15#page32" name="Dettagli prodotto online">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv4#area15#page32#dau15" name="Dettagli prodotto online" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" linkOrder="sv4#area15#page32#dau15#ln36">
+    <DataUnit gr:x="0" gr:y="0" id="sv4#area15#page32#dau15" name="Dettagli prodotto online" entity="ent8" displayAttributes="rel8#role15.ent4#att15 rel8#role15.ent4#att16 rel8#role15.ent4#att17 rel8#role15.ent4#att18 rel8#role15.ent4#att53 rel8#role15.ent4#att59 rel8#role15.ent4#att60" linkOrder="sv4#area15#page32#dau15#ln322">
       <Selector id="sv4#area15#page32#dau15#su64" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area15#page32#dau15#su64#kcond34" name="KeyCondition34" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv4#area15#page32#dau15#ln36" name="Rimuovi prodotto da online" to="sv4#area15#opg4#dlu3" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv4#area15#page32#dau15#ln322" name="Elimina" to="sv4#area15#opg4#tmu15" type="normal" validate="true">
+        <LinkParameter id="sv4#area15#page32#dau15#ln322#par619" name="oid_PASSING" source="data.ent8#att31" passing="true"/>
+        <LinkParameter id="sv4#area15#page32#dau15#ln322#par620" name="Prodotto onlineToNegozio.oid_PASSING" source="data.rel7#role13_ent3#att8" passing="true"/>
+        <LinkParameter id="sv4#area15#page32#dau15#ln322#par626" name="Prodotto onlineToProdotto.oid_PASSING" source="data.rel8#role15_ent4#att14" passing="true"/>
+      </Link>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area15#page32#dau15">
-          <layout:Attribute attribute="ent4#att15"/>
-          <layout:Attribute attribute="ent4#att16"/>
-          <layout:Attribute attribute="ent4#att17"/>
-          <layout:Attribute attribute="ent4#att18"/>
-          <layout:Attribute attribute="ent4#att27"/>
-          <layout:Attribute attribute="ent4#att53"/>
-          <layout:Attribute attribute="ent4#att59"/>
-          <layout:Attribute attribute="ent4#att60"/>
-          <layout:Link link="sv4#area15#page32#dau15#ln36"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att15"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att16"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att17"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att18"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att53"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att59"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att60"/>
+          <layout:Link link="sv4#area15#page32#dau15#ln322"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -34,5 +37,67 @@
       <layout:Cell/>
       <layout:Cell/>
     </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv4#area15#page32#alt13#page91">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv4#area15#page32#alt13#page91#mssu46">
+                  <layout:Link link="sv4#area15#page32#alt13#page91#mssu46#ln323"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
   </layout:Grid>
+  <Alternative gr:x="5" gr:y="190" id="sv4#area15#page32#alt13" name="promozione" defaultPage="sv4#area15#page32#alt13#page91">
+    <Page gr:x="0" gr:y="0" id="sv4#area15#page32#alt13#page91" name="promozione">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area15#page32#alt13#page91#mssu46" name="Attenzione" linkOrder="sv4#area15#page32#alt13#page91#mssu46#ln323">
+          <Link id="sv4#area15#page32#alt13#page91#mssu46#ln323" name="Dettagli promozione" to="sv4#area14#page28#dau14" type="normal" validate="true">
+            <LinkParameter id="sv4#area15#page32#alt13#page91#mssu46#ln323#par745" name="Input Value_PASSING_KeyCondition21 [oid]" sourceLinkParameter="sv4#area15#opg4#inn21#oln53#par744" target="sv4#area14#page28#dau14#su55#kcond21.ent6#att22"/>
+          </Link>
+        </MultiMessageUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
 </Page>

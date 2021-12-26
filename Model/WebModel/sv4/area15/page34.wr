@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1115" gr:y="0" id="sv4#area15#page34" name="Crea prodotto online">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1665" gr:y="0" id="sv4#area15#page34" name="Crea prodotto online">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="35" id="sv4#area15#page34#enu11" name="Inserisci dati prodotto online" linkOrder="sv4#area15#page34#enu11#ln42">
       <SelectionField id="sv4#area15#page34#enu11#sfld11" name="Prodotti" type="string">
