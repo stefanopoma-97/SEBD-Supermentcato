@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1715" gr:y="155" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1715" gr:y="155" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104 sv5#area16#page42#ln270">
   <ContentUnits>
     <EntryUnit gr:x="195" gr:y="315" id="sv5#area16#page42#enu20" name="Filtra i prodotti" linkOrder="sv5#area16#page42#enu20#ln294">
       <SelectionField id="sv5#area16#page42#enu20#sfld18" type="string" name="Categoria"/>
@@ -189,13 +189,6 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area16#page42#alt9#page88#pwu20">
-          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20#ln131"/>
-          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20#ln142"/>
-          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att15"/>
-          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att17"/>
-          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att60"/>
-          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att53"/>
-          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att59"/>
           <layout:Attribute attribute="ent4#att15"/>
           <layout:Attribute attribute="ent4#att53"/>
           <layout:Attribute attribute="ent4#att17"/>
@@ -203,6 +196,14 @@
           <layout:Attribute attribute="ent4#att59"/>
           <layout:Attribute attribute="ent4#att60"/>
           <layout:Attribute attribute="ent4#att64"/>
+          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20#ln131"/>
+          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20#ln142"/>
+          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20#ln271"/>
+          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att15"/>
+          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att17"/>
+          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att60"/>
+          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att53"/>
+          <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att59"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -334,7 +335,7 @@
     </Page>
     <Page gr:x="210" gr:y="0" id="sv5#area16#page42#alt9#page88" name="Elenco prodotti">
       <ContentUnits>
-        <PowerIndexUnit id="sv5#area16#page42#alt9#page88#pwu20" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page88#pwu20#ln131 sv5#area16#page42#alt9#page88#pwu20#ln142" gr:x="0" gr:y="120" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60 ent4#att64">
+        <PowerIndexUnit id="sv5#area16#page42#alt9#page88#pwu20" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page88#pwu20#ln131 sv5#area16#page42#alt9#page88#pwu20#ln142 sv5#area16#page42#alt9#page88#pwu20#ln271" gr:x="0" gr:y="120" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60 ent4#att64">
           <Selector id="sv5#area16#page42#alt9#page88#pwu20#su96" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv5#area16#page42#alt9#page88#pwu20#su96#kcond83" name="KeyCondition" predicate="in" implied="true"/>
           </Selector>
@@ -348,6 +349,10 @@
           <SortAttribute attribute="ent4#att60" order="ascending"/>
           <SortAttribute attribute="ent4#att53" order="ascending"/>
           <SortAttribute attribute="ent4#att59" order="ascending"/>
+          <Link id="sv5#area16#page42#alt9#page88#pwu20#ln271" name="Elimina loop" to="sv5#area16#opg51#seu33" type="normal" validate="true">
+            <LinkParameter id="sv5#area16#page42#alt9#page88#pwu20#ln271#par1014" name="oid_ProdottoOnline [oid]" source="data[].ent4#att14" target="sv5#area16#opg51#seu33#su203#rcond10.ent4#att14"/>
+            <LinkParameter id="sv5#area16#page42#alt9#page88#pwu20#ln271#par1015" name="oid_PASSING" source="data[].ent4#att14" passing="true"/>
+          </Link>
         </PowerIndexUnit>
         <ScrollerUnit id="sv5#area16#page42#alt9#page88#scu33" name="Scorri prodotti" linkOrder="sv5#area16#page42#alt9#page88#scu33#ln248" gr:x="5" gr:y="0" useCountQuery="false" entity="ent4" blockFactor="5">
           <Selector id="sv5#area16#page42#alt9#page88#scu33#su182" defaultPolicy="fill" booleanOperator="and">
@@ -369,4 +374,5 @@
       </ContentUnits>
     </Page>
   </Alternative>
+  <Link id="sv5#area16#page42#ln270" name="Check prodotti nuovi" to="sv5#area16#miu21" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

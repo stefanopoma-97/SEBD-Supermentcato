@@ -1,13 +1,16 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1485" gr:y="1180" id="sv5#area16#opg24" name="Nascondi prodotto" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1405" gr:y="1330" id="sv5#area16#opg24" name="Nascondi prodotto" transaction="true">
   <OperationUnits>
     <ModifyUnit gr:x="305" gr:y="0" id="sv5#area16#opg24#mfu23" name="Nascondi prodotto" entity="ent4">
       <Selector id="sv5#area16#opg24#mfu23#su159" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#opg24#mfu23#su159#kcond105" name="KeyCondition105" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="sv5#area16#opg24#mfu23#oln17" name="OKFlow17" to="sv5#area16#page42" automaticCoupling="true"/>
       <KOLink id="sv5#area16#opg24#mfu23#kln110" name="KOFlow110" to="sv5#area16#page59#mssu19">
         <LinkParameter id="sv5#area16#opg24#mfu23#kln110#par249" name="Errore durante l'occultazione del prodotto_Shown Messages" sourceValue="Errore durante l'occultazione del prodotto" target="sv5#area16#page59#mssu19.shownMessages"/>
       </KOLink>
+      <OKLink id="sv5#area16#opg24#mfu23#oln274" name="OKFlow274" to="sv5#area16#opg24#seu135">
+        <LinkParameter id="sv5#area16#opg24#mfu23#oln274#par1032" name="Input Value_PASSING_RoleCondition103 [oid]" sourceLinkParameter="sv5#area16#opg24#inn6#oln97#par1031" target="sv5#area16#opg24#seu135#su314#rcond103.ent4#att14"/>
+        <LinkParameter id="sv5#area16#opg24#mfu23#oln274#par1033" name="Input Value_PASSING" sourceLinkParameter="sv5#area16#opg24#inn6#oln97#par1031" passing="true"/>
+      </OKLink>
     </ModifyUnit>
     <SelectorUnit gr:x="0" gr:y="0" id="sv5#area16#opg24#seu99" name="prodotto" entity="ent4">
       <Selector id="sv5#area16#opg24#seu99#su166" defaultPolicy="fill" booleanOperator="and">
@@ -23,8 +26,56 @@
       <OKLink id="sv5#area16#opg24#inn6#oln97" name="OKFlow97" to="sv5#area16#opg24#mfu23">
         <LinkParameter id="sv5#area16#opg24#inn6#oln97#par954" name="Input Value_KeyCondition105 [oid]" source="inputValue" target="sv5#area16#opg24#mfu23#su159#kcond105.ent4#att14"/>
         <LinkParameter id="sv5#area16#opg24#inn6#oln97#par955" name="0_vendibile" sourceValue="0" target="sv5#area16#opg24#mfu23.ent4#att64"/>
+        <LinkParameter id="sv5#area16#opg24#inn6#oln97#par1031" name="Input Value_PASSING" source="inputValue" passing="true"/>
       </OKLink>
       <KOLink id="sv5#area16#opg24#inn6#kln56" name="KOFlow56" to="sv5#area16#page124#mssu48" automaticCoupling="true" gr:bendpoints="147,83,-218,-7"/>
     </IsNotNullUnit>
+    <SelectorUnit gr:x="295" gr:y="140" id="sv5#area16#opg24#seu135" name="prodotti online" entity="ent8">
+      <Selector id="sv5#area16#opg24#seu135#su314" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area16#opg24#seu135#su314#rcond103" name="RoleCondition103" predicate="in" implied="false" role="rel8#role16"/>
+      </Selector>
+      <OKLink id="sv5#area16#opg24#seu135#oln275" name="OKFlow275" to="sv5#area16#opg24#lpu18">
+        <LinkParameter id="sv5#area16#opg24#seu135#oln275#par1034" name="oid_Input Array" source="ent8#att31Array" target="sv5#area16#opg24#lpu18.array"/>
+        <LinkParameter id="sv5#area16#opg24#seu135#oln275#par1036" name="Input Value_PASSING" sourceLinkParameter="sv5#area16#opg24#mfu23#oln274#par1033" passing="true"/>
+      </OKLink>
+      <KOLink id="sv5#area16#opg24#seu135#kln213" name="KOFlow213" to="sv5#area16#page124#mssu48" automaticCoupling="true"/>
+    </SelectorUnit>
+    <LoopUnit gr:x="490" gr:y="155" id="sv5#area16#opg24#lpu18" name="Loop18">
+      <OKLink id="sv5#area16#opg24#lpu18#oln276" name="OKFlow276" to="sv5#area16#opg24#dlu24" code="next">
+        <LinkParameter id="sv5#area16#opg24#lpu18#oln276#par1035" name="Next Element_KeyCondition205 [oid]" source="next" target="sv5#area16#opg24#dlu24#su315#kcond205.ent8#att31"/>
+      </OKLink>
+      <OKLink id="sv5#area16#opg24#lpu18#oln278" name="OKFlow278" to="sv5#area16#opg24#seu136" code="end">
+        <LinkParameter id="sv5#area16#opg24#lpu18#oln278#par1037" name="Input Value_PASSING_RoleCondition108 [oid]" sourceLinkParameter="sv5#area16#opg24#seu135#oln275#par1036" target="sv5#area16#opg24#seu136#su316#rcond108.ent4#att14"/>
+      </OKLink>
+    </LoopUnit>
+    <DeleteUnit gr:x="620" gr:y="125" id="sv5#area16#opg24#dlu24" name="Delete24" entity="ent8">
+      <Selector id="sv5#area16#opg24#dlu24#su315" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg24#dlu24#su315#kcond205" name="KeyCondition205" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv5#area16#opg24#dlu24#oln277" name="OKFlow277" to="sv5#area16#opg24#lpu18" automaticCoupling="true" gr:bendpoints="-87,-30,63,-40"/>
+      <KOLink id="sv5#area16#opg24#dlu24#kln211" name="KOFlow211" to="sv5#area16#page124#mssu48" automaticCoupling="true"/>
+    </DeleteUnit>
+    <SelectorUnit gr:x="305" gr:y="260" id="sv5#area16#opg24#seu136" name="Promozioni" entity="ent6">
+      <Selector id="sv5#area16#opg24#seu136#su316" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area16#opg24#seu136#su316#rcond108" name="RoleCondition108" predicate="in" implied="false" role="rel6#role12"/>
+      </Selector>
+      <OKLink id="sv5#area16#opg24#seu136#oln279" name="OKFlow279" to="sv5#area16#opg24#lpu19">
+        <LinkParameter id="sv5#area16#opg24#seu136#oln279#par1038" name="oid_Input Array" source="ent6#att22Array" target="sv5#area16#opg24#lpu19.array"/>
+      </OKLink>
+      <KOLink id="sv5#area16#opg24#seu136#kln212" name="KOFlow212" to="sv5#area16#page124#mssu48" automaticCoupling="true"/>
+    </SelectorUnit>
+    <LoopUnit gr:x="490" gr:y="285" id="sv5#area16#opg24#lpu19" name="Loop19">
+      <OKLink id="sv5#area16#opg24#lpu19#oln280" name="OKFlow280" to="sv5#area16#opg24#dlu25" code="next">
+        <LinkParameter id="sv5#area16#opg24#lpu19#oln280#par1039" name="Next Element_KeyCondition206 [oid]" source="next" target="sv5#area16#opg24#dlu25#su317#kcond206.ent6#att22"/>
+      </OKLink>
+      <OKLink id="sv5#area16#opg24#lpu19#oln282" name="OKFlow282" to="sv5#area16#page42" automaticCoupling="true" code="end"/>
+    </LoopUnit>
+    <DeleteUnit gr:x="610" gr:y="290" id="sv5#area16#opg24#dlu25" name="promozioni" entity="ent6">
+      <Selector id="sv5#area16#opg24#dlu25#su317" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg24#dlu25#su317#kcond206" name="KeyCondition206" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv5#area16#opg24#dlu25#oln281" name="OKFlow281" to="sv5#area16#opg24#lpu19" automaticCoupling="true" gr:bendpoints="-74,1,56,26"/>
+      <KOLink id="sv5#area16#opg24#dlu25#kln214" name="KOFlow214" to="sv5#area16#page124#mssu48" automaticCoupling="true"/>
+    </DeleteUnit>
   </OperationUnits>
 </OperationGroup>

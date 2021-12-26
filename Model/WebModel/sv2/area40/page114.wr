@@ -206,6 +206,7 @@
         <PowerIndexUnit id="sv2#area40#page114#alt11#page84#pwu31" name="Lista Prodotti" linkOrder="sv2#area40#page114#alt11#page84#pwu31#ln280" gr:x="0" gr:y="0" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" sortable="true" checkable="false" useCountQuery="false">
           <Selector id="sv2#area40#page114#alt11#page84#pwu31#su196" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv2#area40#page114#alt11#page84#pwu31#su196#kcond134" name="KeyCondition7" predicate="in" implied="false"/>
+            <AttributesCondition id="sv2#area40#page114#alt11#page84#pwu31#su196#acond67" name="Vendibile" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64" value="1"/>
           </Selector>
           <Link id="sv2#area40#page114#alt11#page84#pwu31#ln280" name="Flow21" to="sv2#area40#page113#dau44" type="normal" automaticCoupling="true" validate="true"/>
           <SortAttribute attribute="ent4#att17" order="ascending"/>
@@ -217,6 +218,7 @@
         <PowerIndexUnit id="sv2#area40#page114#alt11#page85#pwu45" name="Lista Prodotti" linkOrder="sv2#area40#page114#alt11#page85#pwu45#ln285" gr:x="0" gr:y="0" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" sortable="true" checkable="false" useCountQuery="false">
           <Selector id="sv2#area40#page114#alt11#page85#pwu45#su197" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv2#area40#page114#alt11#page85#pwu45#su197#kcond135" name="KeyCondition7" predicate="in" implied="false"/>
+            <AttributesCondition id="sv2#area40#page114#alt11#page85#pwu45#su197#acond66" name="Vendibile" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64" value="1"/>
           </Selector>
           <Link id="sv2#area40#page114#alt11#page85#pwu45#ln285" name="Flow21" to="sv2#area40#page113#dau44" type="normal" automaticCoupling="true" validate="true"/>
           <SortAttribute attribute="ent4#att17" order="ascending"/>
