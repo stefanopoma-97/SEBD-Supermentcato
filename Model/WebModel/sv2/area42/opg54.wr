@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area42#opg54" name="Conferma spesa" transaction="true" gr:x="1645" gr:y="610">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area42#opg54" name="Conferma spesa" transaction="true" gr:x="1645" gr:y="675">
   <OperationUnits>
     <GetUnit id="sv2#area42#opg54#gtu30" name="Spesa attuale" gr:x="0" gr:y="20" contextParameters="ctx1">
       <Link id="sv2#area42#opg54#gtu30#ln385" name="Flow201" to="sv2#area42#opg54#seu138" type="transport" validate="true">

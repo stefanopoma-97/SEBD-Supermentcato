@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1570" gr:y="1065" id="sv2#area42#page87" name="Errore" linkOrder="sv2#area42#page87#ln289" ajaxEnabled="false" ignoreMasterPage="false" layout:pageLayout="WebRatio/Basic">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1570" gr:y="1130" id="sv2#area42#page87" name="Errore" linkOrder="sv2#area42#page87#ln289" ajaxEnabled="false" ignoreMasterPage="false" layout:pageLayout="WebRatio/Basic">
   <ContentUnits>
     <MultiMessageUnit id="sv2#area42#page87#mssu43" name="Messaggio" gr:x="0" gr:y="0"/>
   </ContentUnits>

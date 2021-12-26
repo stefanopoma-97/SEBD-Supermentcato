@@ -1,9 +1,9 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area37#page107" name="Pagina negozi" gr:x="30" gr:y="835">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area37#page107" name="Pagina negozi" gr:x="30" gr:y="825">
   <ContentUnits>
     <SelectorUnit id="sv2#area37#page107#seu116" name="Negozi" gr:x="325" gr:y="0" entity="ent3">
       <Link id="sv2#area37#page107#seu116#ln212" name="Flow45" to="sv2#area37#page107#alt8#page60#pwu43" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <EntryUnit id="sv2#area37#page107#enu34" name="Cerca" linkOrder="sv2#area37#page107#enu34#ln169 sv2#area37#page107#enu34#ln288" gr:x="355" gr:y="475">
+    <EntryUnit id="sv2#area37#page107#enu34" name="Cerca" linkOrder="sv2#area37#page107#enu34#ln169 sv2#area37#page107#enu34#ln288" gr:x="430" gr:y="465">
       <SelectionField id="sv2#area37#page107#enu34#sfld36" name="Citt&#224;" type="string"/>
       <Link id="sv2#area37#page107#enu34#ln169" name="Reset" to="sv2#area37#page107#alt8#page60" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="88,-99,-257,152"/>
       <MultiSelectionField id="sv2#area37#page107#enu34#msfld11" name="Negozio nuovo" type="string"/>
@@ -15,7 +15,7 @@
         <LinkParameter id="sv2#area37#page107#enu34#ln288#par841" name="Orario_PASSING" source="sv2#area37#page107#enu34#msfld12" passing="true"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit id="sv2#area37#page107#seu117" name="Citt&#224; con negozi" gr:x="115" gr:y="450" entity="ent1">
+    <SelectorUnit id="sv2#area37#page107#seu117" name="Citt&#224; con negozi" gr:x="140" gr:y="435" entity="ent1">
       <Selector id="sv2#area37#page107#seu117#su267" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area37#page107#seu117#su267#rcond104" name="NegoziIndirizzoCitt&#224;" role="rel2#role3.rel1#role2" predicate="in" implied="false"/>
       </Selector>

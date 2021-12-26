@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area37#page106" name="Pagina dettaglio negozio" gr:x="0" gr:y="210">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area37#page106" name="Pagina dettaglio negozio" gr:x="0" gr:y="200">
   <ContentUnits>
     <DataUnit id="sv2#area37#page106#dau43" name="Dettagli negozio" gr:x="0" gr:y="0" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13">
       <Selector id="sv2#area37#page106#dau43#su261" defaultPolicy="fill" booleanOperator="and">

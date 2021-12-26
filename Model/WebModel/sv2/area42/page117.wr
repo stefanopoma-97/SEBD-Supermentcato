@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area42#page117" name="Pagina prodotto online" linkOrder="sv2#area42#page117#ln411" ajaxEnabled="true" gr:x="30" gr:y="370">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area42#page117" name="Pagina prodotto online" linkOrder="sv2#area42#page117#ln411" ajaxEnabled="true" gr:x="30" gr:y="435">
   <ContentUnits>
     <DataUnit id="sv2#area42#page117#dau45" name="Dettagli prodotto" linkOrder="sv2#area42#page117#dau45#ln399 sv2#area42#page117#dau45#ln400 sv2#area42#page117#dau45#ln402" ajaxTooltipEnabled="false" ajaxTooltipElement="row" computationMode="execute" ajaxEnableExpandedLinks="false" gr:x="0" gr:y="5" entity="ent8" displayAttributes="rel8#role15.ent4#att15 rel8#role15.ent4#att17 rel8#role15.ent4#att16 rel8#role15.ent4#att18 rel8#role15.ent4#att60 rel8#role15.ent4#att59 rel7#role13.ent3#att9">
       <Selector id="sv2#area42#page117#dau45#su296" defaultPolicy="fill" booleanOperator="and">
@@ -27,7 +27,7 @@
         <LinkParameter id="sv2#area42#page117#dau45#ln402#par585" name="Prodotto onlineToProdotto.prezzo_PASSING" source="data.rel8#role15$ent4#att17" passing="true"/>
       </Link>
     </DataUnit>
-    <TimeUnit id="sv2#area42#page117#tmu19" name="data attuale" gr:x="350" gr:y="0">
+    <TimeUnit id="sv2#area42#page117#tmu19" name="data attuale" gr:x="280" gr:y="210">
       <Link id="sv2#area42#page117#tmu19#ln403" name="Flow231" to="sv2#area42#page117#seu144" type="transport" validate="true">
         <LinkParameter id="sv2#area42#page117#tmu19#ln403#par586" name="Current/Input Date_Non scaduta" source="currentDate" target="sv2#area42#page117#seu144#su297#acond51"/>
       </Link>
@@ -44,7 +44,7 @@
         <LinkParameter id="sv2#area42#page117#seu144#ln405#par587" name="sconto_PASSING" source="ent6#att23Array" passing="true"/>
       </Link>
     </SelectorUnit>
-    <DataUnit id="sv2#area42#page117#dau46" name="Promozione attiva" gr:x="355" gr:y="85" entity="ent6" displayAttributes="ent6#att24 ent6#att23 ent6#att26">
+    <DataUnit id="sv2#area42#page117#dau46" name="Promozione attiva" gr:x="400" gr:y="270" entity="ent6" displayAttributes="ent6#att24 ent6#att23 ent6#att26">
       <Selector id="sv2#area42#page117#dau46#su298" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area42#page117#dau46#su298#kcond176" name="KeyCondition90" predicate="in" implied="false"/>
       </Selector>

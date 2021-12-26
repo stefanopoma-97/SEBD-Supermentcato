@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area42#opg55" name="Calcola totale" transaction="true" gr:x="10" gr:y="100">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area42#opg55" name="Calcola totale" transaction="true" gr:x="5" gr:y="110">
   <OperationUnits>
     <SelectorUnit id="sv2#area42#opg55#seu145" name="Promozione" gr:x="115" gr:y="0" entity="ent6" distinctAttributes="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26 ent6#att39 ent6#att41" displayAll="true">
       <Selector id="sv2#area42#opg55#seu145#su301" defaultPolicy="fill" booleanOperator="and">
