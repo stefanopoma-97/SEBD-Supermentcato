@@ -10,7 +10,9 @@
         <LinkParameter id="sv5#area16#page42#enu20#ln294#par734" name="Fascia di prezzo_PASSING" source="sv5#area16#page42#enu20#sfld19" passing="true"/>
         <LinkParameter id="sv5#area16#page42#enu20#ln294#par736" name="Nazione_PASSING" source="sv5#area16#page42#enu20#sfld23" passing="true"/>
         <LinkParameter id="sv5#area16#page42#enu20#ln294#par753" name="Nuovi/Tutti_Switch" source="sv5#area16#page42#enu20#fld67" target="sv5#area16#opg36#switch1.switch"/>
+        <LinkParameter id="sv5#area16#page42#enu20#ln294#par359" name="Vendibili/Nascosti_PASSING" source="sv5#area16#page42#enu20#fld68" passing="true"/>
       </Link>
+      <Field id="sv5#area16#page42#enu20#fld68" name="Vendibili/Nascosti" type="boolean" modifiable="true"/>
     </EntryUnit>
     <SelectorUnit gr:x="5" gr:y="195" id="sv5#area16#page42#seu1" name="Categorie" entity="ent5">
       <SortAttribute attribute="ent5#att20" order="ascending"/>
@@ -65,10 +67,11 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area16#page42#enu20">
           <layout:Link link="sv5#area16#page42#enu20#ln294"/>
-          <layout:Field field="sv5#area16#page42#enu20#fld67"/>
           <layout:Field field="sv5#area16#page42#enu20#sfld18"/>
           <layout:Field field="sv5#area16#page42#enu20#sfld19"/>
           <layout:Field field="sv5#area16#page42#enu20#sfld23"/>
+          <layout:Field field="sv5#area16#page42#enu20#fld67"/>
+          <layout:Field field="sv5#area16#page42#enu20#fld68"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -119,12 +122,6 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area16#page42#alt9#page81#pwu11">
-          <layout:Attribute attribute="ent4#att15"/>
-          <layout:Attribute attribute="ent4#att53"/>
-          <layout:Attribute attribute="ent4#att17"/>
-          <layout:Attribute attribute="ent4#att18"/>
-          <layout:Attribute attribute="ent4#att59"/>
-          <layout:Attribute attribute="ent4#att60"/>
           <layout:Link link="sv5#area16#page42#alt9#page81#pwu11#ln33"/>
           <layout:Link link="sv5#area16#page42#alt9#page81#pwu11#ln100"/>
           <layout:Link link="sv5#area16#page42#alt9#page81#pwu11#ln141"/>
@@ -135,6 +132,13 @@
           <layout:Link link="sv5#area16#page42#alt9#page81#pwu11ent4#att60"/>
           <layout:Link link="sv5#area16#page42#alt9#page81#pwu11ent4#att53"/>
           <layout:Link link="sv5#area16#page42#alt9#page81#pwu11ent4#att59"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att53"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att59"/>
+          <layout:Attribute attribute="ent4#att60"/>
+          <layout:Attribute attribute="ent4#att64"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -185,12 +189,6 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area16#page42#alt9#page88#pwu20">
-          <layout:Attribute attribute="ent4#att15"/>
-          <layout:Attribute attribute="ent4#att53"/>
-          <layout:Attribute attribute="ent4#att17"/>
-          <layout:Attribute attribute="ent4#att18"/>
-          <layout:Attribute attribute="ent4#att59"/>
-          <layout:Attribute attribute="ent4#att60"/>
           <layout:Link link="sv5#area16#page42#alt9#page88#pwu20#ln131"/>
           <layout:Link link="sv5#area16#page42#alt9#page88#pwu20#ln142"/>
           <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att15"/>
@@ -198,6 +196,13 @@
           <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att60"/>
           <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att53"/>
           <layout:Link link="sv5#area16#page42#alt9#page88#pwu20ent4#att59"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att53"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att59"/>
+          <layout:Attribute attribute="ent4#att60"/>
+          <layout:Attribute attribute="ent4#att64"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -296,7 +301,7 @@
   <Alternative gr:x="0" gr:y="395" id="sv5#area16#page42#alt9" name="Liste" defaultPage="sv5#area16#page42#alt9#page81">
     <Page gr:x="0" gr:y="0" id="sv5#area16#page42#alt9#page81" name="Elenco prodotti">
       <ContentUnits>
-        <PowerIndexUnit id="sv5#area16#page42#alt9#page81#pwu11" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page81#pwu11#ln33 sv5#area16#page42#alt9#page81#pwu11#ln100 sv5#area16#page42#alt9#page81#pwu11#ln141 sv5#area16#page42#alt9#page81#pwu11#ln194 sv5#area16#page42#alt9#page81#pwu11#ln225" gr:x="0" gr:y="105" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60">
+        <PowerIndexUnit id="sv5#area16#page42#alt9#page81#pwu11" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page81#pwu11#ln33 sv5#area16#page42#alt9#page81#pwu11#ln100 sv5#area16#page42#alt9#page81#pwu11#ln141 sv5#area16#page42#alt9#page81#pwu11#ln194 sv5#area16#page42#alt9#page81#pwu11#ln225" gr:x="0" gr:y="105" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60 ent4#att64">
           <Selector id="sv5#area16#page42#alt9#page81#pwu11#su60" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv5#area16#page42#alt9#page81#pwu11#su60#kcond58" name="KeyCondition" predicate="in" implied="true"/>
             <AttributesCondition id="sv5#area16#page42#alt9#page81#pwu11#su60#acond20" name="InVendita" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64" value="1"/>
@@ -329,10 +334,9 @@
     </Page>
     <Page gr:x="210" gr:y="0" id="sv5#area16#page42#alt9#page88" name="Elenco prodotti">
       <ContentUnits>
-        <PowerIndexUnit id="sv5#area16#page42#alt9#page88#pwu20" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page88#pwu20#ln131 sv5#area16#page42#alt9#page88#pwu20#ln142" gr:x="0" gr:y="120" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60">
+        <PowerIndexUnit id="sv5#area16#page42#alt9#page88#pwu20" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page88#pwu20#ln131 sv5#area16#page42#alt9#page88#pwu20#ln142" gr:x="0" gr:y="120" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60 ent4#att64">
           <Selector id="sv5#area16#page42#alt9#page88#pwu20#su96" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv5#area16#page42#alt9#page88#pwu20#su96#kcond83" name="KeyCondition" predicate="in" implied="true"/>
-            <AttributesCondition id="sv5#area16#page42#alt9#page88#pwu20#su96#acond21" name="InVendita" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64" value="1"/>
           </Selector>
           <Link id="sv5#area16#page42#alt9#page88#pwu20#ln131" name="Dettagli" to="sv5#area16#page44#dau17" type="normal" automaticCoupling="true" validate="true"/>
           <Link id="sv5#area16#page42#alt9#page88#pwu20#ln142" name="Nascondi" to="sv5#area16#opg24#mfu23" type="normal" validate="true">
