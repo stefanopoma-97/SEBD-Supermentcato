@@ -7,7 +7,7 @@
         <RelationshipRoleCondition id="sv5#area18#opg25#seu89#su215#rcond83" name="Orario to negozio" predicate="in" implied="true" role="rel19#role37"/>
       </Selector>
       <KOLink id="sv5#area18#opg25#seu89#kln7" name="KOFlow162" to="sv5#area18#page92#mssu31" automaticCoupling="true"/>
-      <OKLink id="sv5#area18#opg25#seu89#oln125" name="OKFlow125" to="sv5#area18#page61#alt12#page91#scu13" automaticCoupling="true"/>
+      <OKLink id="sv5#area18#opg25#seu89#oln125" name="OKFlow125" to="sv5#area18#page61#alt12#page123#scu32" automaticCoupling="true"/>
     </SelectorUnit>
     <IsNotNullUnit id="sv5#area18#opg25#inn3" name="Is Not Null13" gr:x="0" gr:y="55">
       <KOLink id="sv5#area18#opg25#inn3#kln23" name="KOFlow84" to="sv5#area18#opg25#inn4">
