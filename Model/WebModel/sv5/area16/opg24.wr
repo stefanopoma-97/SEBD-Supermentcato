@@ -1,6 +1,6 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1025" gr:y="1165" id="sv5#area16#opg24" name="Nascondi prodotto" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="835" gr:y="1180" id="sv5#area16#opg24" name="Nascondi prodotto" transaction="true">
   <OperationUnits>
-    <ModifyUnit gr:x="0" gr:y="0" id="sv5#area16#opg24#mfu23" name="Nascondi prodotto" entity="ent4">
+    <ModifyUnit gr:x="305" gr:y="0" id="sv5#area16#opg24#mfu23" name="Nascondi prodotto" entity="ent4">
       <Selector id="sv5#area16#opg24#mfu23#su159" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#opg24#mfu23#su159#kcond105" name="KeyCondition105" predicate="in" implied="false"/>
       </Selector>
@@ -9,5 +9,22 @@
         <LinkParameter id="sv5#area16#opg24#mfu23#kln110#par249" name="Errore durante l'occultazione del prodotto_Shown Messages" sourceValue="Errore durante l'occultazione del prodotto" target="sv5#area16#page59#mssu19.shownMessages"/>
       </KOLink>
     </ModifyUnit>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv5#area16#opg24#seu99" name="prodotto" entity="ent4">
+      <Selector id="sv5#area16#opg24#seu99#su166" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area16#opg24#seu99#su166#kcond195" name="KeyCondition195" predicate="in" implied="false"/>
+        <AttributesCondition id="sv5#area16#opg24#seu99#su166#acond58" name="vendibile" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64" value="1"/>
+      </Selector>
+      <KOLink id="sv5#area16#opg24#seu99#kln45" name="KOFlow45" to="sv5#area16#page59#mssu19" automaticCoupling="true"/>
+      <OKLink id="sv5#area16#opg24#seu99#oln100" name="OKFlow100" to="sv5#area16#opg24#inn6">
+        <LinkParameter id="sv5#area16#opg24#seu99#oln100#par937" name="oid_Input" source="ent4#att14Array" target="sv5#area16#opg24#inn6.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <IsNotNullUnit gr:x="160" gr:y="30" id="sv5#area16#opg24#inn6" name="Is Not Null6">
+      <OKLink id="sv5#area16#opg24#inn6#oln97" name="OKFlow97" to="sv5#area16#opg24#mfu23">
+        <LinkParameter id="sv5#area16#opg24#inn6#oln97#par954" name="Input Value_KeyCondition105 [oid]" source="inputValue" target="sv5#area16#opg24#mfu23#su159#kcond105.ent4#att14"/>
+        <LinkParameter id="sv5#area16#opg24#inn6#oln97#par955" name="0_vendibile" sourceValue="0" target="sv5#area16#opg24#mfu23.ent4#att64"/>
+      </OKLink>
+      <KOLink id="sv5#area16#opg24#inn6#kln56" name="KOFlow56" to="sv5#area16#page124#mssu48" automaticCoupling="true" gr:bendpoints="147,83,-218,-7"/>
+    </IsNotNullUnit>
   </OperationUnits>
 </OperationGroup>

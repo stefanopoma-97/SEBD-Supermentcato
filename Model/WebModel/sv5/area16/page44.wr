@@ -12,9 +12,9 @@
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par222" name="nome_Nome" source="data.ent4#att15" target="sv5#area16#page47#enu13#fld35_slot"/>
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par223" name="prezzo_Prezzo" source="data.ent4#att17" target="sv5#area16#page47#enu13#fld37_slot"/>
       </Link>
-      <Link id="sv5#area16#page44#dau17#ln134" name="Nascondi" to="sv5#area16#opg24#mfu23" type="normal" validate="true">
-        <LinkParameter id="sv5#area16#page44#dau17#ln134#par243" name="oid_KeyCondition105 [oid]" source="data.ent4#att14" target="sv5#area16#opg24#mfu23#su159#kcond105.ent4#att14"/>
-        <LinkParameter id="sv5#area16#page44#dau17#ln134#par248" name="0_vendibile" sourceValue="0" target="sv5#area16#opg24#mfu23.ent4#att64"/>
+      <Link id="sv5#area16#page44#dau17#ln134" name="Nascondi" to="sv5#area16#opg24#seu99" type="normal" validate="true">
+        <LinkParameter id="sv5#area16#page44#dau17#ln134#par894" name="oid_KeyCondition195 [oid]" source="data.ent4#att14" target="sv5#area16#opg24#seu99#su166#kcond195.ent4#att14"/>
+        <LinkParameter id="sv5#area16#page44#dau17#ln134#par935" name="oid_PASSING" source="data.ent4#att14" passing="true"/>
       </Link>
     </DataUnit>
   </ContentUnits>
