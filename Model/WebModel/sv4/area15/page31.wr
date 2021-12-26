@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="30" gr:y="5" id="sv4#area15#page31" name="Prodotti online" linkOrder="sv4#area15#page31#ln127">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="30" gr:y="25" id="sv4#area15#page31" name="Prodotti online" linkOrder="sv4#area15#page31#ln127">
   <ContentUnits>
     <SelectorUnit id="sv4#area15#page31#seu43" name="Seleziona prodotti online del negozio" gr:x="160" gr:y="0" entity="ent8">
       <Selector id="sv4#area15#page31#seu43#su62" defaultPolicy="fill" booleanOperator="and">

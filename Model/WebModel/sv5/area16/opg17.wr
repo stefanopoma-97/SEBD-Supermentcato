@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="185" gr:y="715" id="sv5#area16#opg17" name="Modifica prodotto" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="835" gr:y="715" id="sv5#area16#opg17" name="Modifica prodotto" transaction="true">
   <OperationUnits>
     <ModifyUnit gr:x="375" gr:y="10" id="sv5#area16#opg17#mfu3" name="Modifica prodotto" entity="ent4">
       <Selector id="sv5#area16#opg17#mfu3#su120" defaultPolicy="fill" booleanOperator="and">

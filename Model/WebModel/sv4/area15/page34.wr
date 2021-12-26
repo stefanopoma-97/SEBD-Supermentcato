@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1115" gr:y="0" id="sv4#area15#page34" name="Crea prodotto online">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="15" id="sv4#area15#page34#enu11" name="Inserisci dati prodotto online" linkOrder="sv4#area15#page34#enu11#ln42">
+    <EntryUnit gr:x="0" gr:y="35" id="sv4#area15#page34#enu11" name="Inserisci dati prodotto online" linkOrder="sv4#area15#page34#enu11#ln42">
       <SelectionField id="sv4#area15#page34#enu11#sfld11" name="Prodotti" type="string">
         <VRules>
           <MandatoryValidationRule id="sv4#area15#page34#enu11#sfld11#mnd86" name="Mandatory22"/>
@@ -11,7 +11,7 @@
         <LinkParameter id="sv4#area15#page34#enu11#ln42#par951" name="oid_PASSING" sourceLinkParameter="sv4#area15#page34#seu45#ln120#par950" passing="true"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit id="sv4#area15#page34#seu45" name="Seleziona prodotti non online" gr:x="275" gr:y="0" entity="ent4">
+    <SelectorUnit id="sv4#area15#page34#seu45" name="Seleziona prodotti non online" gr:x="270" gr:y="0" entity="ent4">
       <Link id="sv4#area15#page34#seu45#ln120" name="Flow120" to="sv4#area15#page34#enu11" type="transport" validate="true">
         <LinkParameter id="sv4#area15#page34#seu45#ln120#par18" name="nome_Prodotti [label]" source="ent4#att15Array" target="sv4#area15#page34#enu11#sfld11_label"/>
         <LinkParameter id="sv4#area15#page34#seu45#ln120#par19" name="oid_Prodotti [output]" source="ent4#att14Array" target="sv4#area15#page34#enu11#sfld11_output"/>
@@ -19,15 +19,15 @@
       </Link>
       <Selector id="sv4#area15#page34#seu45#su67" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area15#page34#seu45#su67#rcond27" name="ProdottoOnlineProdotto" predicate="notIn" implied="false" role="rel8#role15"/>
-        <KeyCondition id="sv4#area15#page34#seu45#su67#kcond116" name="Prodotti nascosti" predicate="notIn" implied="false"/>
+        <AttributesCondition id="sv4#area15#page34#seu45#su67#acond59" name="AttCondition59" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64" value="1"/>
       </Selector>
     </SelectorUnit>
-    <GetUnit id="sv4#area15#page34#gtu11" name="Get Info Responsabile" gr:x="665" gr:y="0" contextParameters="UserCtxParam">
+    <GetUnit id="sv4#area15#page34#gtu11" name="Get Info Responsabile" gr:x="560" gr:y="30" contextParameters="UserCtxParam">
       <Link id="sv4#area15#page34#gtu11#ln60" name="Flow40" to="sv4#area15#page34#seu6" type="transport" validate="true">
         <LinkParameter id="sv4#area15#page34#gtu11#ln60#par77" name="UserCtxParam.oid_NegozioResponsabile [oid]" source="sv4#area15#page34#gtu11.UserCtxParam" target="sv4#area15#page34#seu6#su66#rcond24.userOID"/>
       </Link>
     </GetUnit>
-    <SelectorUnit id="sv4#area15#page34#seu6" name="Seleziona negozio del responsabile" gr:x="590" gr:y="140" entity="ent3">
+    <SelectorUnit id="sv4#area15#page34#seu6" name="Seleziona negozio del responsabile" gr:x="500" gr:y="200" entity="ent3">
       <Selector id="sv4#area15#page34#seu6#su66" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area15#page34#seu6#su66#rcond24" name="NegozioResponsabile" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
@@ -36,7 +36,7 @@
         <LinkParameter id="sv4#area15#page34#seu6#ln250#par947" name="oid_PASSING" source="ent3#att8Array" passing="true"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="405" gr:y="145" id="sv4#area15#page34#seu10" name="Seleziona prodotti online" entity="ent8">
+    <SelectorUnit gr:x="285" gr:y="190" id="sv4#area15#page34#seu10" name="Seleziona prodotti online" entity="ent8">
       <Link id="sv4#area15#page34#seu10#ln64" name="Flow64" to="sv4#area15#page34#seu45" type="transport" validate="true">
         <LinkParameter id="sv4#area15#page34#seu10#ln64#par948" name="oid_ProdottoOnlineProdotto [oid]" source="ent8#att31Array" target="sv4#area15#page34#seu45#su67#rcond27.ent8#att31"/>
         <LinkParameter id="sv4#area15#page34#seu10#ln64#par949" name="oid_PASSING" sourceLinkParameter="sv4#area15#page34#seu6#ln250#par947" passing="true"/>
@@ -44,12 +44,6 @@
       <Selector id="sv4#area15#page34#seu10#su272" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area15#page34#seu10#su272#rcond73" name="ProdottoOnlineNegozio" predicate="in" implied="false" role="rel7#role14"/>
       </Selector>
-    </SelectorUnit>
-    <SelectorUnit gr:x="240" gr:y="180" id="sv4#area15#page34#seu98" name="prodotti nascosti" entity="ent4">
-      <Selector id="sv4#area15#page34#seu98#su165" defaultPolicy="fill" booleanOperator="and">
-        <AttributesCondition id="sv4#area15#page34#seu98#su165#acond57" name="nascosto" predicate="eq" booleanOperator="or" implied="false" value="0" attributes="ent4#att64"/>
-      </Selector>
-      <Link id="sv4#area15#page34#seu98#ln227" name="Flow227" to="sv4#area15#page34#seu45" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
