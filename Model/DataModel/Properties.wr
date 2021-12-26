@@ -46,7 +46,7 @@
       <db:JoinColumn attribute="moduleOID" name="module_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="890" gr:y="240" id="ent1" name="Citt&#224;" duration="persistent" attributeOrder="ent1#att1 ent1#att2 ent1#att3 ent1#att4" db:database="db1" db:table="citta">
+  <Entity gr:x="905" gr:y="210" id="ent1" name="Citt&#224;" duration="persistent" attributeOrder="ent1#att1 ent1#att2 ent1#att3 ent1#att4" db:database="db1" db:table="citta">
     <Attribute id="ent1#att1" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent1#att4" name="nazione" type="string" db:column="nazione"/>
     <Attribute id="ent1#att3" name="provincia" type="string" db:column="provincia"/>
@@ -121,7 +121,7 @@
       <db:JoinColumn attribute="ent5#att19" name="categoria_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="855" gr:y="385" id="ent6" name="Promozione" duration="persistent" attributeOrder="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26 ent6#att39 ent6#att41" db:database="db1" db:table="promozione">
+  <Entity gr:x="870" gr:y="385" id="ent6" name="Promozione" duration="persistent" attributeOrder="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26 ent6#att39 ent6#att41" db:database="db1" db:table="promozione">
     <Attribute id="ent6#att22" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent6#att24" name="scadenza" type="date" key="false" db:column="scadenza"/>
     <Attribute id="ent6#att23" name="sconto" type="decimal" key="false" db:column="sconto"/>
@@ -231,7 +231,7 @@
       <db:JoinColumn attribute="ent3#att8" name="negozio_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="1205" gr:y="740" id="ent11" name="Prodotto nuovo" duration="persistent" db:database="db1" db:table="prodotto_nuovo">
+  <Entity gr:x="1210" gr:y="810" id="ent11" name="Prodotto nuovo" duration="persistent" db:database="db1" db:table="prodotto_nuovo">
     <Generalization superEntity="ent4">
       <db:JoinColumn attribute="ent4#att14" name="prodotto_oid"/>
     </Generalization>
@@ -260,7 +260,7 @@
       <db:JoinColumn attribute="userOID" name="user_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="70" gr:y="400" id="ent14" name="Dipendente" duration="persistent" attributeOrder="ent14#att54" db:database="db1" db:table="dipendente">
+  <Entity gr:x="35" gr:y="470" id="ent14" name="Dipendente" duration="persistent" attributeOrder="ent14#att54" db:database="db1" db:table="dipendente">
     <Generalization superEntity="ent12">
       <db:JoinColumn attribute="userOID" name="responsabile_oid"/>
     </Generalization>
@@ -313,7 +313,7 @@
       <db:JoinColumn attribute="ent19#att44" name="nazione_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="260" gr:y="490" id="ent20" name="Orario" duration="persistent" attributeOrder="ent20#att43 ent20#att46 ent20#att47 ent20#att48" db:database="db1" db:table="orario">
+  <Entity gr:x="265" gr:y="550" id="ent20" name="Orario" duration="persistent" attributeOrder="ent20#att43 ent20#att46 ent20#att47 ent20#att48" db:database="db1" db:table="orario">
     <Attribute id="ent20#att43" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent20#att48" name="ora fine" type="time" db:column="ora_fine"/>
     <Attribute id="ent20#att47" name="ora inizio" type="time" db:column="ora_inizio"/>
@@ -327,6 +327,5 @@
       <db:JoinColumn attribute="ent3#att8" name="negozio_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="supermercati" type="MySQL" username="admin" password="YWRtaW4=" url="jdbc:mysql://localhost:3306/supermercati" cryptedPassword="true">
-  </db:Database>
+  <db:Database id="db1" name="supermercati" type="MySQL" username="admin" password="YWRtaW4=" url="jdbc:mysql://localhost:3306/supermercati" cryptedPassword="true"/>
 </DataModel>

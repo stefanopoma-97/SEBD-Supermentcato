@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5#area18#opg25" name="Filtra" transaction="true" gr:x="0" gr:y="0">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5#area18#opg25" name="Filtra" transaction="true" gr:x="10" gr:y="0">
   <OperationUnits>
     <SelectorUnit id="sv5#area18#opg25#seu89" name="Filtro" gr:x="435" gr:y="0" entity="ent3">
       <Selector id="sv5#area18#opg25#seu89#su215" defaultPolicy="fill" booleanOperator="and">
@@ -14,7 +14,7 @@
         <LinkParameter id="sv5#area18#opg25#inn3#kln23#par412" name="Orario_PASSING_Input" sourceLinkParameter="sv5#area18#page61#enu27#ln293#par672" target="sv5#area18#opg25#inn4.isnotnull"/>
         <LinkParameter id="sv5#area18#opg25#inn3#kln23#par754" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#page61#enu27#ln293#par670" passing="true"/>
       </KOLink>
-      <OKLink id="sv5#area18#opg25#inn3#oln71" name="OKFlow148" to="sv5#area18#opg25#inn22" gr:bendpoints="30,85,-160,-25">
+      <OKLink id="sv5#area18#opg25#inn3#oln71" name="OKFlow148" to="sv5#area18#opg25#inn22" gr:bendpoints="56,98,-109,-92">
         <LinkParameter id="sv5#area18#opg25#inn3#oln71#par425" name="Orario_PASSING_Input" sourceLinkParameter="sv5#area18#page61#enu27#ln293#par672" target="sv5#area18#opg25#inn22.isnotnull"/>
         <LinkParameter id="sv5#area18#opg25#inn3#oln71#par757" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#page61#enu27#ln293#par670" passing="true"/>
         <LinkParameter id="sv5#area18#opg25#inn3#oln71#par758" name="Negozio nuovo_PASSING" sourceLinkParameter="sv5#area18#page61#enu27#ln293#par671" passing="true"/>
@@ -35,7 +35,7 @@
         <LinkParameter id="sv5#area18#opg25#inn4#oln103#par788" name="Citt&#224;_PASSING_Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#opg25#inn3#kln23#par754" target="sv5#area18#opg25#miu16.mov1#opm5#icu5#icp7"/>
       </OKLink>
     </IsNotNullUnit>
-    <IsNotNullUnit id="sv5#area18#opg25#inn22" name="Is Not Null Orario" gr:x="145" gr:y="245">
+    <IsNotNullUnit id="sv5#area18#opg25#inn22" name="Is Not Null Orario" gr:x="90" gr:y="240">
       <KOLink id="sv5#area18#opg25#inn22#kln26" name="KOFlow94" to="sv5#area18#opg25#seu91">
         <LinkParameter id="sv5#area18#opg25#inn22#kln26#par780" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#opg25#inn3#oln71#par757" passing="true"/>
       </KOLink>

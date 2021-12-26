@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="100" gr:y="535" id="sv5#area18#page61" name="Negozi" linkOrder="sv5#area18#page61#ln143">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="535" id="sv5#area18#page61" name="Negozi" linkOrder="sv5#area18#page61#ln143">
   <ContentUnits>
-    <SelectorUnit id="sv5#area18#page61#seu87" name="Citt&#224; con negozi" gr:x="0" gr:y="145" entity="ent1">
+    <SelectorUnit id="sv5#area18#page61#seu87" name="Citt&#224; con negozi" gr:x="0" gr:y="155" entity="ent1">
       <Selector id="sv5#area18#page61#seu87#su214" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv5#area18#page61#seu87#su214#rcond81" name="NegoziIndirizzoCitt&#224;" role="rel2#role3.rel1#role2" predicate="in" implied="false"/>
       </Selector>
@@ -13,7 +13,7 @@
         <LinkParameter id="sv5#area18#page61#seu87#ln290#par411" name="Aperto_Orario [output]" target="sv5#area18#page61#enu27#msfld15_output" sourceValue="Aperto"/>
       </Link>
     </SelectorUnit>
-    <EntryUnit id="sv5#area18#page61#enu27" name="Cerca" gr:x="60" gr:y="45" linkOrder="sv5#area18#page61#enu27#ln293">
+    <EntryUnit id="sv5#area18#page61#enu27" name="Cerca" gr:x="105" gr:y="45" linkOrder="sv5#area18#page61#enu27#ln293 sv5#area18#page61#enu27#ln227">
       <SelectionField id="sv5#area18#page61#enu27#sfld27" name="Citt&#224;" type="string"/>
       <MultiSelectionField id="sv5#area18#page61#enu27#msfld14" name="Negozio nuovo" type="string"/>
       <MultiSelectionField id="sv5#area18#page61#enu27#msfld15" name="Orario" type="string"/>
@@ -23,10 +23,14 @@
         <LinkParameter id="sv5#area18#page61#enu27#ln293#par671" name="Negozio nuovo_PASSING" source="sv5#area18#page61#enu27#msfld14" passing="true"/>
         <LinkParameter id="sv5#area18#page61#enu27#ln293#par672" name="Orario_PASSING" source="sv5#area18#page61#enu27#msfld15" passing="true"/>
       </Link>
+      <Link id="sv5#area18#page61#enu27#ln227" name="Reset" to="sv5#area18#page61#alt12#page90" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
-    <SelectorUnit id="sv5#area18#page61#seu88" name="Negozi" gr:x="60" gr:y="270" entity="ent3">
+    <SelectorUnit id="sv5#area18#page61#seu88" name="Negozi" gr:x="40" gr:y="315" entity="ent3">
       <Link id="sv5#area18#page61#seu88#ln291" name="Flow30" to="sv5#area18#page61#seu87" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
+    <ScrollerUnit id="sv5#area18#page61#scu39" name="Scorri negozi" linkOrder="sv5#area18#page61#scu39#ln194" gr:x="240" gr:y="285" useCountQuery="false" blockFactor="5" entity="ent3">
+      <Link id="sv5#area18#page61#scu39#ln194" name="Flow141" to="sv5#area18#page61#alt12#page90#pwu30" type="automatic" automaticCoupling="true" validate="true"/>
+    </ScrollerUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -137,15 +141,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv5#area18#page61#alt12#page90#scu12">
-          <layout:Link link="sv5#area18#page61#alt12#page90#scu12First"/>
-          <layout:Link link="sv5#area18#page61#alt12#page90#scu12Previous"/>
-          <layout:Link link="sv5#area18#page61#alt12#page90#scu12Block"/>
-          <layout:Link link="sv5#area18#page61#alt12#page90#scu12Next"/>
-          <layout:Link link="sv5#area18#page61#alt12#page90#scu12Last"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -282,6 +278,29 @@
           <layout:Field field="sv5#area18#page61#enu27#msfld14"/>
           <layout:Field field="sv5#area18#page61#enu27#msfld15"/>
           <layout:Link link="sv5#area18#page61#enu27#ln293"/>
+          <layout:Link link="sv5#area18#page61#enu27#ln227"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area18#page61#scu39">
+          <layout:Link link="sv5#area18#page61#scu39First"/>
+          <layout:Link link="sv5#area18#page61#scu39Previous"/>
+          <layout:Link link="sv5#area18#page61#scu39Block"/>
+          <layout:Link link="sv5#area18#page61#scu39Next"/>
+          <layout:Link link="sv5#area18#page61#scu39Last"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -298,10 +317,10 @@
     </layout:Row>
   </layout:Grid>
   <Link id="sv5#area18#page61#ln143" name="Crea negozio" to="sv5#area18#page63#enu14" automaticCoupling="true" type="normal" validate="true"/>
-  <Alternative gr:x="280" gr:y="0" id="sv5#area18#page61#alt12" name="Elenco negozi" defaultPage="sv5#area18#page61#alt12#page90">
-    <Page gr:x="0" gr:y="160" id="sv5#area18#page61#alt12#page90" name="Page 90">
+  <Alternative gr:x="385" gr:y="0" id="sv5#area18#page61#alt12" name="Elenco negozi" defaultPage="sv5#area18#page61#alt12#page90">
+    <Page gr:x="20" gr:y="190" id="sv5#area18#page61#alt12#page90" name="Page 90">
       <ContentUnits>
-        <PowerIndexUnit id="sv5#area18#page61#alt12#page90#pwu30" name="Elenco negozi" linkOrder="sv5#area18#page61#alt12#page90#pwu30#ln228 sv5#area18#page61#alt12#page90#pwu30#ln231 sv5#area18#page61#alt12#page90#pwu30#ln229" gr:x="160" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
+        <PowerIndexUnit id="sv5#area18#page61#alt12#page90#pwu30" name="Elenco negozi base" linkOrder="sv5#area18#page61#alt12#page90#pwu30#ln228 sv5#area18#page61#alt12#page90#pwu30#ln231 sv5#area18#page61#alt12#page90#pwu30#ln229" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
           <Link id="sv5#area18#page61#alt12#page90#pwu30#ln228" name="Dettagli" to="sv5#area18#page62#dau22" type="normal" automaticCoupling="true" validate="true"/>
           <Link id="sv5#area18#page61#alt12#page90#pwu30#ln229" name="Elimina" to="sv5#area18#opg20#dlu2" type="normal" automaticCoupling="true" validate="true"/>
           <Link id="sv5#area18#page61#alt12#page90#pwu30#ln231" name="Modifica" to="sv5#area18#page65#seu50" type="normal" validate="true">
@@ -321,9 +340,6 @@
           <SortAttribute attribute="ent3#att11" order="descending"/>
           <SortAttribute attribute="ent3#att42" order="descending"/>
         </PowerIndexUnit>
-        <ScrollerUnit id="sv5#area18#page61#alt12#page90#scu12" name="Scorri negozi" linkOrder="sv5#area18#page61#alt12#page90#scu12#ln232" gr:x="0" gr:y="5" useCountQuery="false" blockFactor="5" entity="ent3">
-          <Link id="sv5#area18#page61#alt12#page90#scu12#ln232" name="Flow141" to="sv5#area18#page61#alt12#page90#pwu30" type="automatic" automaticCoupling="true" validate="true"/>
-        </ScrollerUnit>
       </ContentUnits>
     </Page>
     <Page gr:x="0" gr:y="0" id="sv5#area18#page61#alt12#page91" name="Elenco aggiornato">

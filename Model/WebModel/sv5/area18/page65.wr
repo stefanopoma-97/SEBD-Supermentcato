@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="950" gr:y="600" id="sv5#area18#page65" name="Modifica negozio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="960" gr:y="600" id="sv5#area18#page65" name="Modifica negozio">
   <ContentUnits>
     <EntryUnit gr:x="195" gr:y="120" id="sv5#area18#page65#enu15" name="Modifica negozio" entity="ent3" linkOrder="sv5#area18#page65#enu15#ln189">
       <Field id="sv5#area18#page65#enu15#fld44" name="Nome" type="string" modifiable="true" attribute="ent3#att9" preloaded="true">

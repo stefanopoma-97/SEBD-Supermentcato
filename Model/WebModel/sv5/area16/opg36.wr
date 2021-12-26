@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1695" gr:y="320" id="sv5#area16#opg36" name="Filtra prodotti" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1810" gr:y="325" id="sv5#area16#opg36" name="Filtra prodotti" transaction="true">
   <OperationUnits>
     <SwitchUnit gr:x="15" gr:y="0" id="sv5#area16#opg36#switch1" name="Nuovo?">
       <Case value="true"/>
@@ -36,7 +36,7 @@
         <AttributesCondition id="sv5#area16#opg36#seu95#su216#acond29" name="in vendita" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64"/>
       </Selector>
       <OKLink id="sv5#area16#opg36#seu95#oln126" name="OKFlow8" to="sv5#area16#page42#alt9#page88#scu33">
-        <LinkParameter id="sv5#area16#opg36#seu95#oln126#par724" name="oid_KeyCondition2 [oid]" source="ent4#att14Array" target="sv5#area16#page42#alt9#page88#scu33#su182#kcond160.ent4#att14"/>
+        <LinkParameter id="sv5#area16#opg36#seu95#oln126#par252" name="oid_KeyCondition2 [oid]" source="ent4#att14Array" target="sv5#area16#page42#alt9#page88#scu33#su182#kcond160.ent4#att14"/>
       </OKLink>
     </SelectorUnit>
     <SwitchUnit gr:x="15" gr:y="135" id="sv5#area16#opg36#switch2" name="vendibile?">
@@ -50,6 +50,9 @@
       </OKLink>
       <OKLink id="sv5#area16#opg36#switch2#oln56" name="OKFlow41" to="sv5#area16#opg36#seu95" code="false" gr:bendpoints="-8,78,-28,-127">
         <LinkParameter id="sv5#area16#opg36#switch2#oln56#par820" name="0_in vendita" sourceValue="0" target="sv5#area16#opg36#seu95#su216#acond29"/>
+        <LinkParameter id="sv5#area16#opg36#switch2#oln56#par243" name="Categoria_PASSING_ProdottoCategoria [oid]" sourceLinkParameter="sv5#area16#opg36#switch1#oln74#par365" target="sv5#area16#opg36#seu95#su216#rcond87.ent5#att19"/>
+        <LinkParameter id="sv5#area16#opg36#switch2#oln56#par248" name="Fascia di prezzo_PASSING_ProdottoFasciaPrezzo [oid]" sourceLinkParameter="sv5#area16#opg36#switch1#oln74#par374" target="sv5#area16#opg36#seu95#su216#rcond86.ent15#att30"/>
+        <LinkParameter id="sv5#area16#opg36#switch2#oln56#par250" name="Nazione_PASSING_ProdottoNazione [oid]" sourceLinkParameter="sv5#area16#opg36#switch1#oln74#par375" target="sv5#area16#opg36#seu95#su216#rcond85.ent19#att44"/>
       </OKLink>
     </SwitchUnit>
     <SwitchUnit id="sv5#area16#opg36#switch3" name="vendibile?" gr:x="205" gr:y="155">

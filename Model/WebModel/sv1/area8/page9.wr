@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="330" id="sv1#area8#page9" name="Pagina Elenco prodotti">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="70" gr:y="355" id="sv1#area8#page9" name="Pagina Elenco prodotti">
   <ContentUnits>
-    <EntryUnit gr:x="255" gr:y="440" id="sv1#area8#page9#enu3" name="Cerca" linkOrder="sv1#area8#page9#enu3#ln166 sv1#area8#page9#enu3#ln276">
+    <EntryUnit gr:x="240" gr:y="550" id="sv1#area8#page9#enu3" name="Cerca" linkOrder="sv1#area8#page9#enu3#ln166 sv1#area8#page9#enu3#ln276">
       <SelectionField id="sv1#area8#page9#enu3#sfld1" name="Categoria" type="string"/>
       <SelectionField id="sv1#area8#page9#enu3#sfld2" name="Fascia di prezzo" type="string"/>
       <SelectionField id="sv1#area8#page9#enu3#sfld10" name="Nazione" type="string"/>
@@ -13,17 +13,17 @@
       </Link>
       <MultiSelectionField id="sv1#area8#page9#enu3#msfld2" name="Prodotti nuovi" type="string"/>
     </EntryUnit>
-    <SelectorUnit gr:x="220" gr:y="35" id="sv1#area8#page9#seu7" name="Tutti i prodotti" entity="ent4">
+    <SelectorUnit gr:x="360" gr:y="35" id="sv1#area8#page9#seu7" name="Tutti i prodotti" entity="ent4">
       <Link id="sv1#area8#page9#seu7#ln41" name="Flow41" to="sv1#area8#page9#seu14" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv1#area8#page9#seu7#ln144" name="Flow15" to="sv1#area8#page9#alt3#page51#pwu39" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="50" gr:y="510" id="sv1#area8#page9#seu8" name="Categorie" entity="ent5">
+    <SelectorUnit gr:x="30" gr:y="590" id="sv1#area8#page9#seu8" name="Categorie" entity="ent5">
       <Link id="sv1#area8#page9#seu8#ln27" name="Flow27" to="sv1#area8#page9#enu3" type="transport" validate="true">
         <LinkParameter id="sv1#area8#page9#seu8#ln27#par10" name="nome_Categoria [label]" source="ent5#att20Array" target="sv1#area8#page9#enu3#sfld1_label"/>
         <LinkParameter id="sv1#area8#page9#seu8#ln27#par11" name="oid_Categoria [output]" source="ent5#att19Array" target="sv1#area8#page9#enu3#sfld1_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="35" gr:y="420" id="sv1#area8#page9#seu9" name="Fasce di prezzo" entity="ent15">
+    <SelectorUnit gr:x="20" gr:y="475" id="sv1#area8#page9#seu9" name="Fasce di prezzo" entity="ent15">
       <Link id="sv1#area8#page9#seu9#ln28" name="Flow28" to="sv1#area8#page9#enu3" type="transport" validate="true">
         <LinkParameter id="sv1#area8#page9#seu9#ln28#par12" name="fascia_Fascia di prezzo [label]" source="ent15#att32Array" target="sv1#area8#page9#enu3#sfld2_label"/>
         <LinkParameter id="sv1#area8#page9#seu9#ln28#par13" name="oid_Fascia di prezzo [output]" source="ent15#att30Array" target="sv1#area8#page9#enu3#sfld2_output"/>
@@ -31,7 +31,7 @@
         <LinkParameter id="sv1#area8#page9#seu9#ln28#par647" name="Nuovo_Prodotti nuovi [output]" sourceValue="Nuovo" target="sv1#area8#page9#enu3#msfld2_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="210" gr:y="160" id="sv1#area8#page9#seu14" name="Nazioni" entity="ent19">
+    <SelectorUnit gr:x="340" gr:y="145" id="sv1#area8#page9#seu14" name="Nazioni" entity="ent19">
       <Selector id="sv1#area8#page9#seu14#su57" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area8#page9#seu14#su57#rcond11" name="Prodotti to Nazione" role="rel18#role35" predicate="in" implied="false"/>
       </Selector>
@@ -213,7 +213,7 @@
         </PowerIndexUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="30" gr:y="185" id="sv1#area8#page9#alt3#page52" name="Lista filtrata">
+    <Page gr:x="15" gr:y="205" id="sv1#area8#page9#alt3#page52" name="Lista filtrata">
       <ContentUnits>
         <PowerIndexUnit id="sv1#area8#page9#alt3#page52#pwu40" name="Lista Prodotti" linkOrder="sv1#area8#page9#alt3#page52#pwu40#ln148" gr:x="0" gr:y="0" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" sortable="true" checkable="false" useCountQuery="false">
           <Selector id="sv1#area8#page9#alt3#page52#pwu40#su92" defaultPolicy="fill" booleanOperator="and">

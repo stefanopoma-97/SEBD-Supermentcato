@@ -1,10 +1,10 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1180" gr:y="155" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104 sv5#area16#page42#ln270">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1185" gr:y="0" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104 sv5#area16#page42#ln270">
   <ContentUnits>
-    <EntryUnit gr:x="195" gr:y="315" id="sv5#area16#page42#enu20" name="Filtra i prodotti" linkOrder="sv5#area16#page42#enu20#ln294">
+    <EntryUnit gr:x="230" gr:y="150" id="sv5#area16#page42#enu20" name="Filtra i prodotti" linkOrder="sv5#area16#page42#enu20#ln294">
       <SelectionField id="sv5#area16#page42#enu20#sfld18" type="string" name="Categoria"/>
       <SelectionField id="sv5#area16#page42#enu20#sfld19" name="Fascia di prezzo" type="string"/>
       <SelectionField id="sv5#area16#page42#enu20#sfld23" name="Nazione" type="string"/>
-      <Field id="sv5#area16#page42#enu20#fld67" name="Nuovi/Tutti" type="boolean" modifiable="true"/>
+      <Field id="sv5#area16#page42#enu20#fld67" name="Nuovi/Tutti" type="boolean" modifiable="true" preloaded="true"/>
       <Link id="sv5#area16#page42#enu20#ln294" name="Filtra" to="sv5#area16#opg36#switch1" type="normal" validate="true">
         <LinkParameter id="sv5#area16#page42#enu20#ln294#par726" name="Categoria_PASSING" source="sv5#area16#page42#enu20#sfld18" passing="true"/>
         <LinkParameter id="sv5#area16#page42#enu20#ln294#par734" name="Fascia di prezzo_PASSING" source="sv5#area16#page42#enu20#sfld19" passing="true"/>
@@ -12,27 +12,33 @@
         <LinkParameter id="sv5#area16#page42#enu20#ln294#par753" name="Nuovi/Tutti_Switch" source="sv5#area16#page42#enu20#fld67" target="sv5#area16#opg36#switch1.switch"/>
         <LinkParameter id="sv5#area16#page42#enu20#ln294#par359" name="Vendibili/Nascosti_PASSING" source="sv5#area16#page42#enu20#fld68" passing="true"/>
       </Link>
-      <Field id="sv5#area16#page42#enu20#fld68" name="Vendibili/Nascosti" type="boolean" modifiable="true"/>
+      <Field id="sv5#area16#page42#enu20#fld68" name="Vendibili/Nascosti" type="boolean" modifiable="true" preloaded="true"/>
     </EntryUnit>
-    <SelectorUnit gr:x="5" gr:y="195" id="sv5#area16#page42#seu1" name="Categorie" entity="ent5">
+    <SelectorUnit gr:x="20" gr:y="0" id="sv5#area16#page42#seu1" name="Categorie" entity="ent5">
       <SortAttribute attribute="ent5#att20" order="ascending"/>
       <Link id="sv5#area16#page42#seu1#ln221" name="Flow221" to="sv5#area16#page42#enu20" type="transport" validate="true">
         <LinkParameter id="sv5#area16#page42#seu1#ln221#par117" name="nome_ [label]" source="ent5#att20Array" target="sv5#area16#page42#enu20#sfld18_label"/>
         <LinkParameter id="sv5#area16#page42#seu1#ln221#par118" name="oid_ [output]" source="ent5#att19Array" target="sv5#area16#page42#enu20#sfld18_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="205" gr:y="195" id="sv5#area16#page42#seu2" name="Fascia Prezzo" entity="ent15">
+    <SelectorUnit gr:x="175" gr:y="15" id="sv5#area16#page42#seu2" name="Fascia Prezzo" entity="ent15">
       <Link id="sv5#area16#page42#seu2#ln222" name="Flow222" to="sv5#area16#page42#enu20" type="transport" validate="true">
         <LinkParameter id="sv5#area16#page42#seu2#ln222#par119" name="fascia_Fascia di prezzo [label]" source="ent15#att32Array" target="sv5#area16#page42#enu20#sfld19_label"/>
         <LinkParameter id="sv5#area16#page42#seu2#ln222#par122" name="oid_Fascia di prezzo [output]" source="ent15#att30Array" target="sv5#area16#page42#enu20#sfld19_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="10" gr:y="305" id="sv5#area16#page42#seu24" name="Nazione" entity="ent19">
+    <SelectorUnit gr:x="25" gr:y="120" id="sv5#area16#page42#seu24" name="Nazione" entity="ent19">
       <Link id="sv5#area16#page42#seu24#ln224" name="Flow224" to="sv5#area16#page42#enu20" type="transport" validate="true">
         <LinkParameter id="sv5#area16#page42#seu24#ln224#par123" name="nome_Nazione [label]" source="ent19#att45Array" target="sv5#area16#page42#enu20#sfld23_label"/>
         <LinkParameter id="sv5#area16#page42#seu24#ln224#par125" name="oid_Nazione [output]" source="ent19#att44Array" target="sv5#area16#page42#enu20#sfld23_output"/>
+        <LinkParameter id="sv5#area16#page42#seu24#ln224#par256" name="false_Nuovi/Tutti" sourceValue="false" target="sv5#area16#page42#enu20#fld67_slot"/>
+        <LinkParameter id="sv5#area16#page42#seu24#ln224#par281" name="true_Vendibili/Nascosti" sourceValue="true" target="sv5#area16#page42#enu20#fld68_slot"/>
       </Link>
     </SelectorUnit>
+    <ScrollerUnit id="sv5#area16#page42#scu42" name="Scorri prodotti" linkOrder="sv5#area16#page42#scu42#ln226" gr:x="85" gr:y="245" useCountQuery="false" entity="ent4" blockFactor="5">
+      <Selector id="sv5#area16#page42#scu42#su165" defaultPolicy="fill" booleanOperator="and"/>
+      <Link id="sv5#area16#page42#scu42#ln226" name="Flow131" to="sv5#area16#page42#alt9#page81#pwu11" type="automatic" automaticCoupling="true" validate="true"/>
+    </ScrollerUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -217,15 +223,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv5#area16#page42#alt9#page81#scu32">
-          <layout:Link link="sv5#area16#page42#alt9#page81#scu32First"/>
-          <layout:Link link="sv5#area16#page42#alt9#page81#scu32Previous"/>
-          <layout:Link link="sv5#area16#page42#alt9#page81#scu32Block"/>
-          <layout:Link link="sv5#area16#page42#alt9#page81#scu32Next"/>
-          <layout:Link link="sv5#area16#page42#alt9#page81#scu32Last"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -262,27 +260,28 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv5#area16#page42#alt13#page123">
-          <layout:Grid containerType="grid">
-            <layout:Row>
-              <layout:Cell colspan="12">
-                <layout:Unit unitId="sv5#area16#page42#alt13#page123#mdu1"/>
-              </layout:Cell>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-            </layout:Row>
-          </layout:Grid>
-        </layout:SubPage>
+        <layout:Unit unitId="sv5#area16#page42#scu42">
+          <layout:Link link="sv5#area16#page42#scu42First"/>
+          <layout:Link link="sv5#area16#page42#scu42Previous"/>
+          <layout:Link link="sv5#area16#page42#scu42Block"/>
+          <layout:Link link="sv5#area16#page42#scu42Next"/>
+          <layout:Link link="sv5#area16#page42#scu42Last"/>
+        </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -297,10 +296,10 @@
     </layout:Row>
   </layout:Grid>
   <Link id="sv5#area16#page42#ln104" name="Crea prodotto" to="sv5#area16#page45#enu12" automaticCoupling="true" type="normal" validate="true"/>
-  <Alternative gr:x="0" gr:y="395" id="sv5#area16#page42#alt9" name="Liste" defaultPage="sv5#area16#page42#alt9#page81">
-    <Page gr:x="0" gr:y="0" id="sv5#area16#page42#alt9#page81" name="Elenco prodotti">
+  <Alternative gr:x="0" gr:y="410" id="sv5#area16#page42#alt9" name="Liste" defaultPage="sv5#area16#page42#alt9#page81">
+    <Page gr:x="0" gr:y="10" id="sv5#area16#page42#alt9#page81" name="Elenco prodotti">
       <ContentUnits>
-        <PowerIndexUnit id="sv5#area16#page42#alt9#page81#pwu11" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page81#pwu11#ln33 sv5#area16#page42#alt9#page81#pwu11#ln141 sv5#area16#page42#alt9#page81#pwu11#ln296" gr:x="0" gr:y="105" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60 ent4#att64">
+        <PowerIndexUnit id="sv5#area16#page42#alt9#page81#pwu11" name="Elenco prodotti base" linkOrder="sv5#area16#page42#alt9#page81#pwu11#ln33 sv5#area16#page42#alt9#page81#pwu11#ln141 sv5#area16#page42#alt9#page81#pwu11#ln296" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60 ent4#att64">
           <Selector id="sv5#area16#page42#alt9#page81#pwu11#su60" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv5#area16#page42#alt9#page81#pwu11#su60#kcond58" name="KeyCondition" predicate="in" implied="true"/>
             <AttributesCondition id="sv5#area16#page42#alt9#page81#pwu11#su60#acond20" name="InVendita" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64" value="1"/>
@@ -320,15 +319,11 @@
             <LinkParameter id="sv5#area16#page42#alt9#page81#pwu11#ln296#par1143" name="oid_RigheConProdotto [oid]" source="data[].ent4#att14" target="sv5#area16#miu22.mov1#opm10#icu10#icp10"/>
           </Link>
         </PowerIndexUnit>
-        <ScrollerUnit id="sv5#area16#page42#alt9#page81#scu32" name="Scorri prodotti" linkOrder="sv5#area16#page42#alt9#page81#scu32#ln239" gr:x="5" gr:y="0" useCountQuery="false" entity="ent4" blockFactor="5">
-          <Selector id="sv5#area16#page42#alt9#page81#scu32#su102" defaultPolicy="fill" booleanOperator="and"/>
-          <Link id="sv5#area16#page42#alt9#page81#scu32#ln239" name="Flow131" to="sv5#area16#page42#alt9#page81#pwu11" type="automatic" automaticCoupling="true" validate="true"/>
-        </ScrollerUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="210" gr:y="0" id="sv5#area16#page42#alt9#page88" name="Elenco prodotti">
+    <Page gr:x="270" gr:y="0" id="sv5#area16#page42#alt9#page88" name="Elenco prodotti">
       <ContentUnits>
-        <PowerIndexUnit id="sv5#area16#page42#alt9#page88#pwu20" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page88#pwu20#ln131 sv5#area16#page42#alt9#page88#pwu20#ln142 sv5#area16#page42#alt9#page88#pwu20#ln271" gr:x="0" gr:y="120" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60 ent4#att64">
+        <PowerIndexUnit id="sv5#area16#page42#alt9#page88#pwu20" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page88#pwu20#ln131 sv5#area16#page42#alt9#page88#pwu20#ln142 sv5#area16#page42#alt9#page88#pwu20#ln271" gr:x="0" gr:y="165" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60 ent4#att64">
           <Selector id="sv5#area16#page42#alt9#page88#pwu20#su96" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv5#area16#page42#alt9#page88#pwu20#su96#kcond83" name="KeyCondition" predicate="in" implied="true"/>
           </Selector>
@@ -347,23 +342,12 @@
             <LinkParameter id="sv5#area16#page42#alt9#page88#pwu20#ln271#par1063" name="oid_RigheConProdotto [oid]" source="data[].ent4#att14" target="sv5#area16#miu22.mov1#opm10#icu10#icp10"/>
           </Link>
         </PowerIndexUnit>
-        <ScrollerUnit id="sv5#area16#page42#alt9#page88#scu33" name="Scorri prodotti" linkOrder="sv5#area16#page42#alt9#page88#scu33#ln248" gr:x="5" gr:y="0" useCountQuery="false" entity="ent4" blockFactor="5">
+        <ScrollerUnit id="sv5#area16#page42#alt9#page88#scu33" name="Scorri prodotti" linkOrder="sv5#area16#page42#alt9#page88#scu33#ln248" gr:x="0" gr:y="0" useCountQuery="false" entity="ent4" blockFactor="5">
           <Selector id="sv5#area16#page42#alt9#page88#scu33#su182" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv5#area16#page42#alt9#page88#scu33#su182#kcond160" name="KeyCondition2" predicate="in" implied="false"/>
           </Selector>
           <Link id="sv5#area16#page42#alt9#page88#scu33#ln248" name="Flow131" to="sv5#area16#page42#alt9#page88#pwu20" type="automatic" automaticCoupling="true" validate="true"/>
         </ScrollerUnit>
-      </ContentUnits>
-    </Page>
-  </Alternative>
-  <Alternative gr:x="280" gr:y="0" id="sv5#area16#page42#alt13" name="Alternative13" defaultPage="sv5#area16#page42#alt13#page123">
-    <Page gr:x="0" gr:y="0" id="sv5#area16#page42#alt13#page123" name="Page 123">
-      <ContentUnits>
-        <MultiDataUnit gr:x="0" gr:y="0" id="sv5#area16#page42#alt13#page123#mdu1" name="MultipleDetails1" entity="ent7">
-          <Selector id="sv5#area16#page42#alt13#page123#mdu1#su268" defaultPolicy="fill" booleanOperator="and">
-            <KeyCondition id="sv5#area16#page42#alt13#page123#mdu1#su268#kcond194" name="KeyCondition194" predicate="in" implied="false"/>
-          </Selector>
-        </MultiDataUnit>
       </ContentUnits>
     </Page>
   </Alternative>
