@@ -283,7 +283,28 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv5#area16#page42#alt9#page89">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv5#area16#page42#alt9#page89#mssu51"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -323,7 +344,7 @@
         </PowerIndexUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="270" gr:y="0" id="sv5#area16#page42#alt9#page88" name="Elenco prodotti">
+    <Page gr:x="215" gr:y="0" id="sv5#area16#page42#alt9#page88" name="Elenco prodotti">
       <ContentUnits>
         <PowerIndexUnit id="sv5#area16#page42#alt9#page88#pwu20" name="Elenco prodotti" linkOrder="sv5#area16#page42#alt9#page88#pwu20#ln131 sv5#area16#page42#alt9#page88#pwu20#ln142 sv5#area16#page42#alt9#page88#pwu20#ln271" gr:x="0" gr:y="165" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att53 ent4#att17 ent4#att18 ent4#att59 ent4#att60 ent4#att64">
           <Selector id="sv5#area16#page42#alt9#page88#pwu20#su96" defaultPolicy="fill" booleanOperator="and">
@@ -344,12 +365,17 @@
             <LinkParameter id="sv5#area16#page42#alt9#page88#pwu20#ln271#par1063" name="oid_RigheConProdotto [oid]" source="data[].ent4#att14" target="sv5#area16#miu22.mov1#opm10#icu10#icp10"/>
           </Link>
         </PowerIndexUnit>
-        <ScrollerUnit id="sv5#area16#page42#alt9#page88#scu33" name="Scorri prodotti" linkOrder="sv5#area16#page42#alt9#page88#scu33#ln248" gr:x="0" gr:y="0" useCountQuery="false" entity="ent4" blockFactor="5">
+        <ScrollerUnit id="sv5#area16#page42#alt9#page88#scu33" name="Scorri prodotti" gr:x="0" gr:y="0" useCountQuery="false" entity="ent4" blockFactor="5" linkOrder="sv5#area16#page42#alt9#page88#scu33#ln248">
           <Selector id="sv5#area16#page42#alt9#page88#scu33#su182" defaultPolicy="fill" booleanOperator="and">
-            <KeyCondition id="sv5#area16#page42#alt9#page88#scu33#su182#kcond160" name="KeyCondition2" predicate="in" implied="false"/>
+            <KeyCondition id="sv5#area16#page42#alt9#page88#scu33#su182#kcond160" name="KeyCondition2" predicate="in" implied="true"/>
           </Selector>
           <Link id="sv5#area16#page42#alt9#page88#scu33#ln248" name="Flow131" to="sv5#area16#page42#alt9#page88#pwu20" type="automatic" automaticCoupling="true" validate="true"/>
         </ScrollerUnit>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="5" gr:y="195" id="sv5#area16#page42#alt9#page89" name="Errore ricerca">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv5#area16#page42#alt9#page89#mssu51" name="Errore ricerca"/>
       </ContentUnits>
     </Page>
   </Alternative>

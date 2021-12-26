@@ -1,6 +1,6 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1810" gr:y="325" id="sv5#area16#opg36" name="Filtra prodotti" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1680" gr:y="325" id="sv5#area16#opg36" name="Filtra prodotti" transaction="true">
   <OperationUnits>
-    <SwitchUnit gr:x="15" gr:y="0" id="sv5#area16#opg36#switch1" name="Nuovo?">
+    <SwitchUnit gr:x="145" gr:y="0" id="sv5#area16#opg36#switch1" name="Nuovo?">
       <Case value="true"/>
       <Case value="false"/>
       <OKLink id="sv5#area16#opg36#switch1#oln54" name="OKFlow54" to="sv5#area16#opg36#seu13" code="true">
@@ -16,7 +16,7 @@
         <LinkParameter id="sv5#area16#opg36#switch1#oln74#par375" name="Nazione_PASSING" sourceLinkParameter="sv5#area16#page42#enu20#ln294#par736" passing="true"/>
       </OKLink>
     </SwitchUnit>
-    <SelectorUnit gr:x="180" gr:y="30" id="sv5#area16#opg36#seu13" name="Prodotti Nuovi" entity="ent11">
+    <SelectorUnit gr:x="310" gr:y="30" id="sv5#area16#opg36#seu13" name="Prodotti Nuovi" entity="ent11">
       <SortAttribute attribute="ent4#att15" order="ascending"/>
       <SortAttribute attribute="ent4#att17" order="ascending"/>
       <OKLink id="sv5#area16#opg36#seu13#oln55" name="OKFlow55" to="sv5#area16#opg36#switch3">
@@ -27,7 +27,7 @@
         <LinkParameter id="sv5#area16#opg36#seu13#oln55#par882" name="oid_PASSING" source="ent4#att14Array" passing="true"/>
       </OKLink>
     </SelectorUnit>
-    <SelectorUnit id="sv5#area16#opg36#seu95" name="Filtro" gr:x="0" gr:y="290" entity="ent4">
+    <SelectorUnit id="sv5#area16#opg36#seu95" name="Filtro" gr:x="130" gr:y="290" entity="ent4">
       <Selector id="sv5#area16#opg36#seu95#su216" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv5#area16#opg36#seu95#su216#rcond85" name="ProdottoNazione" predicate="in" implied="true" role="rel18#role36"/>
         <RelationshipRoleCondition id="sv5#area16#opg36#seu95#su216#rcond86" name="ProdottoFasciaPrezzo" predicate="in" implied="true" role="rel11#role21"/>
@@ -35,11 +35,11 @@
         <KeyCondition id="sv5#area16#opg36#seu95#su216#kcond184" name="KeyCondition184" predicate="in" implied="true"/>
         <AttributesCondition id="sv5#area16#opg36#seu95#su216#acond29" name="in vendita" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64"/>
       </Selector>
-      <OKLink id="sv5#area16#opg36#seu95#oln126" name="OKFlow8" to="sv5#area16#page42#alt9#page88#scu33">
-        <LinkParameter id="sv5#area16#opg36#seu95#oln126#par252" name="oid_KeyCondition2 [oid]" source="ent4#att14Array" target="sv5#area16#page42#alt9#page88#scu33#su182#kcond160.ent4#att14"/>
+      <OKLink id="sv5#area16#opg36#seu95#oln126" name="OKFlow8" to="sv5#area16#opg36#inn7">
+        <LinkParameter id="sv5#area16#opg36#seu95#oln126#par325" name="oid_Input" source="ent4#att14Array" target="sv5#area16#opg36#inn7.isnotnull"/>
       </OKLink>
     </SelectorUnit>
-    <SwitchUnit gr:x="15" gr:y="135" id="sv5#area16#opg36#switch2" name="vendibile?">
+    <SwitchUnit gr:x="145" gr:y="135" id="sv5#area16#opg36#switch2" name="vendibile?">
       <Case value="true"/>
       <Case value="false"/>
       <OKLink id="sv5#area16#opg36#switch2#oln41" name="OKFlow41" to="sv5#area16#opg36#seu95" code="true" gr:bendpoints="44,76,24,-130">
@@ -55,7 +55,7 @@
         <LinkParameter id="sv5#area16#opg36#switch2#oln56#par250" name="Nazione_PASSING_ProdottoNazione [oid]" sourceLinkParameter="sv5#area16#opg36#switch1#oln74#par375" target="sv5#area16#opg36#seu95#su216#rcond85.ent19#att44"/>
       </OKLink>
     </SwitchUnit>
-    <SwitchUnit id="sv5#area16#opg36#switch3" name="vendibile?" gr:x="205" gr:y="155">
+    <SwitchUnit id="sv5#area16#opg36#switch3" name="vendibile?" gr:x="335" gr:y="155">
       <Case value="true"/>
       <Case value="false"/>
       <OKLink id="sv5#area16#opg36#switch3#oln69" name="OKFlow41" to="sv5#area16#opg36#seu95" code="true">
@@ -73,5 +73,13 @@
         <LinkParameter id="sv5#area16#opg36#switch3#oln72#par891" name="Nazione_PASSING_ProdottoNazione [oid]" sourceLinkParameter="sv5#area16#opg36#seu13#oln55#par864" target="sv5#area16#opg36#seu95#su216#rcond85.ent19#att44"/>
       </OKLink>
     </SwitchUnit>
+    <IsNotNullUnit gr:x="0" gr:y="220" id="sv5#area16#opg36#inn7" name="Is Not Null7">
+      <OKLink id="sv5#area16#opg36#inn7#oln4" name="OKFlow4" to="sv5#area16#page42#alt9#page88#scu33">
+        <LinkParameter id="sv5#area16#opg36#inn7#oln4#par324" name="Input Value_KeyCondition2 [oid]" source="inputValue" target="sv5#area16#page42#alt9#page88#scu33#su182#kcond160.ent4#att14"/>
+      </OKLink>
+      <KOLink id="sv5#area16#opg36#inn7#kln30" name="KOFlow30" to="sv5#area16#page42#alt9#page89#mssu51">
+        <LinkParameter id="sv5#area16#opg36#inn7#kln30#par326" name="Non sono presenti prodotti che soddifano i criteri scelti_Shown Messages" sourceValue="Non sono presenti prodotti che soddifano i criteri scelti" target="sv5#area16#page42#alt9#page89#mssu51.shownMessages"/>
+      </KOLink>
+    </IsNotNullUnit>
   </OperationUnits>
 </OperationGroup>
