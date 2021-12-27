@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5#area18#opg25" name="Filtra" transaction="true" gr:x="10" gr:y="0">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5#area18#opg25" name="Filtra" transaction="true" gr:x="0" gr:y="0">
   <OperationUnits>
     <SelectorUnit id="sv5#area18#opg25#seu89" name="Filtro" gr:x="435" gr:y="0" entity="ent3">
       <Selector id="sv5#area18#opg25#seu89#su215" defaultPolicy="fill" booleanOperator="and">

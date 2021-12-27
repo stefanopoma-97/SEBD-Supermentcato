@@ -1,6 +1,6 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="350" gr:y="40" id="sv1#area11#opg13" name="Creazione" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="355" gr:y="0" id="sv1#area11#opg13" name="Creazione" transaction="true">
   <OperationUnits>
-    <CreateUnit gr:x="0" gr:y="5" id="sv1#area11#opg13#cru1" name="Crea utente" entity="ent13" skipBlankRecords="false">
+    <CreateUnit gr:x="0" gr:y="15" id="sv1#area11#opg13#cru1" name="Crea utente" entity="ent13" skipBlankRecords="false">
       <OKLink id="sv1#area11#opg13#cru1#oln26" name="OKFlow26" to="sv1#area11#opg13#cnu2">
         <LinkParameter id="sv1#area11#opg13#cru1#oln26#par156" name="oid_KeyCondition23 [oid] [Utente esterno registrato] [Source]" source="userOIDArray" target="sv1#area11#opg13#cnu2#su28#kcond23.userOID"/>
         <LinkParameter id="sv1#area11#opg13#cru1#oln26#par157" name="Negozio_PASSING_KeyCondition24 [oid] [Negozio] [Target]" sourceLinkParameter="sv1#area11#page18#enu6#ln78#par104" target="sv1#area11#opg13#cnu2#su30#kcond24.ent3#att8"/>
@@ -13,7 +13,7 @@
         <LinkParameter id="sv1#area11#opg13#cru1#kln20#par154" name="Errore creazione utente_Shown Messages" sourceValue="Errore creazione utente" target="sv1#area11#page19#mssu12.shownMessages"/>
       </KOLink>
     </CreateUnit>
-    <ConnectUnit gr:x="180" gr:y="0" id="sv1#area11#opg13#cnu2" name="Utente Negozio" relationship="rel15#role30">
+    <ConnectUnit gr:x="210" gr:y="0" id="sv1#area11#opg13#cnu2" name="Utente Negozio" relationship="rel15#role30">
       <SourceSelector id="sv1#area11#opg13#cnu2#su28" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area11#opg13#cnu2#su28#kcond23" name="KeyCondition23" predicate="in" implied="false"/>
       </SourceSelector>
@@ -30,7 +30,7 @@
         <LinkParameter id="sv1#area11#opg13#cnu2#oln27#par177" name="Via_PASSING_via" sourceLinkParameter="sv1#area11#opg13#cru1#oln26#par171" target="sv1#area11#opg13#cru4.ent2#att6"/>
       </OKLink>
     </ConnectUnit>
-    <CreateUnit gr:x="390" gr:y="0" id="sv1#area11#opg13#cru4" name="Crea indirizzo" entity="ent2">
+    <CreateUnit gr:x="440" gr:y="15" id="sv1#area11#opg13#cru4" name="Crea indirizzo" entity="ent2">
       <KOLink id="sv1#area11#opg13#cru4#kln22" name="KOFlow22" to="sv1#area11#page19#mssu12">
         <LinkParameter id="sv1#area11#opg13#cru4#kln22#par182" name="Errore creazione indirizzo_Shown Messages" sourceValue="Errore creazione indirizzo" target="sv1#area11#page19#mssu12.shownMessages"/>
       </KOLink>
@@ -39,7 +39,7 @@
         <LinkParameter id="sv1#area11#opg13#cru4#oln28#par178" name="oid_PASSING_KeyCondition25 [oid] [Utente esterno registrato] [Source]" sourceLinkParameter="sv1#area11#opg13#cnu2#oln27#par173" target="sv1#area11#opg13#cnu3#su40#kcond25.userOID"/>
       </OKLink>
     </CreateUnit>
-    <ConnectUnit gr:x="505" gr:y="0" id="sv1#area11#opg13#cnu3" name="Indirizzo Utente" relationship="rel3#role5">
+    <ConnectUnit gr:x="615" gr:y="0" id="sv1#area11#opg13#cnu3" name="Indirizzo Utente" relationship="rel3#role5">
       <SourceSelector id="sv1#area11#opg13#cnu3#su40" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area11#opg13#cnu3#su40#kcond25" name="KeyCondition25" predicate="in" implied="false"/>
       </SourceSelector>

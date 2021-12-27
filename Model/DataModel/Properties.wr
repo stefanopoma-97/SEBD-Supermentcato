@@ -46,7 +46,7 @@
       <db:JoinColumn attribute="moduleOID" name="module_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="905" gr:y="210" id="ent1" name="Citt&#224;" duration="persistent" attributeOrder="ent1#att1 ent1#att2 ent1#att3 ent1#att4" db:database="db1" db:table="citta">
+  <Entity gr:x="905" gr:y="240" id="ent1" name="Citt&#224;" duration="persistent" attributeOrder="ent1#att1 ent1#att2 ent1#att3 ent1#att4" db:database="db1" db:table="citta">
     <Attribute id="ent1#att1" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent1#att4" name="nazione" type="string" db:column="nazione"/>
     <Attribute id="ent1#att3" name="provincia" type="string" db:column="provincia"/>
@@ -108,7 +108,7 @@
       <Property id="ent4#att64#prop1" name="DefaultVendibile" value="1"/>
     </Attribute>
   </Entity>
-  <Entity gr:x="1385" gr:y="340" id="ent5" name="Categoria" duration="persistent" attributeOrder="ent5#att19 ent5#att20 ent5#att21" db:database="db1" db:table="categoria">
+  <Entity gr:x="1395" gr:y="350" id="ent5" name="Categoria" duration="persistent" attributeOrder="ent5#att19 ent5#att20 ent5#att21" db:database="db1" db:table="categoria">
     <Attribute id="ent5#att19" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent5#att21" name="descrizione" type="string" db:column="descrizione"/>
     <Attribute id="ent5#att20" name="nome" type="string" db:column="nome"/>
@@ -231,7 +231,7 @@
       <db:JoinColumn attribute="ent3#att8" name="negozio_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="1210" gr:y="810" id="ent11" name="Prodotto nuovo" duration="persistent" db:database="db1" db:table="prodotto_nuovo">
+  <Entity gr:x="1200" gr:y="745" id="ent11" name="Prodotto nuovo" duration="persistent" db:database="db1" db:table="prodotto_nuovo">
     <Generalization superEntity="ent4">
       <db:JoinColumn attribute="ent4#att14" name="prodotto_oid"/>
     </Generalization>
@@ -260,7 +260,7 @@
       <db:JoinColumn attribute="userOID" name="user_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="35" gr:y="470" id="ent14" name="Dipendente" duration="persistent" attributeOrder="ent14#att54" db:database="db1" db:table="dipendente">
+  <Entity gr:x="70" gr:y="470" id="ent14" name="Dipendente" duration="persistent" attributeOrder="ent14#att54" db:database="db1" db:table="dipendente">
     <Generalization superEntity="ent12">
       <db:JoinColumn attribute="userOID" name="responsabile_oid"/>
     </Generalization>
@@ -301,7 +301,7 @@
       <db:JoinColumn attribute="ent3#att8" name="negozio_oid"/>
     </Generalization>
   </Entity>
-  <Entity gr:x="1430" gr:y="545" id="ent19" name="Nazione" duration="persistent" attributeOrder="ent19#att44 ent19#att45" db:database="db1" db:table="nazione">
+  <Entity gr:x="1430" gr:y="555" id="ent19" name="Nazione" duration="persistent" attributeOrder="ent19#att44 ent19#att45" db:database="db1" db:table="nazione">
     <Attribute id="ent19#att44" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent19#att45" name="nome" type="string" db:column="nome"/>
   </Entity>
