@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv5#area26#page73" name="Dettagli categoria">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="5" id="sv5#area26#page73" name="Dettagli categoria">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv5#area26#page73#dau29" name="Dettagli categoria" entity="ent5" displayAttributes="ent5#att20 ent5#att21" linkOrder="sv5#area26#page73#dau29#ln234 sv5#area26#page73#dau29#ln247">
+    <DataUnit gr:x="0" gr:y="135" id="sv5#area26#page73#dau29" name="Dettagli categoria" entity="ent5" displayAttributes="ent5#att20 ent5#att21" linkOrder="sv5#area26#page73#dau29#ln234 sv5#area26#page73#dau29#ln247">
       <Selector id="sv5#area26#page73#dau29#su152" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area26#page73#dau29#su152#kcond97" name="KeyCondition97" predicate="in" implied="false"/>
       </Selector>
@@ -14,7 +14,7 @@
       </Link>
       <Link id="sv5#area26#page73#dau29#ln235" name="Flow235" to="sv5#area26#page73#pwu10" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
-    <PowerIndexUnit gr:x="250" gr:y="0" id="sv5#area26#page73#pwu10" name="Prodotti" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att53 ent4#att60">
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv5#area26#page73#pwu10" name="Prodotti" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att53 ent4#att60">
       <Selector id="sv5#area26#page73#pwu10#su162" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv5#area26#page73#pwu10#su162#rcond50" name="CategoriaProdotti" predicate="in" implied="false" role="rel4#role8"/>
       </Selector>

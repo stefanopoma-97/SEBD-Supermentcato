@@ -1,13 +1,6 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1145" gr:y="395" id="sv5#area26" name="Categorie" landmark="true" defaultPage="sv5#area26#page70">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1155" gr:y="500" id="sv5#area26" name="Categorie" landmark="true" defaultPage="sv5#area26#page70">
   <OperationUnits>
-    <ModuleInstanceUnit gr:x="845" gr:y="625" id="sv5#area26#miu19" moduleId="mov1#opm9">
-      <OKLink id="sv5#area26#miu19#oln152" to="sv5#area26#page71#mssu18" name="OKFlow78" gr:bendpoints="0,-20" codeRef="mov1#opm9#okcu11">
-        <LinkParameter id="sv5#area26#miu19#oln152#par551" name="Ci sono prodotti associati alla categoria. Impossibile eliminare la categoria_Shown Messages" target="sv5#area26#page71#mssu18.shownMessages" source="mov1#opm9#okcu11#ocp13"/>
-      </OKLink>
-      <OKLink id="sv5#area26#miu19#oln147" to="sv5#area26#page70" name="OKFlow4" codeRef="mov1#opm9#okcu10"/>
-      <KOLink id="sv5#area26#miu19#kln121" to="sv5#area26#page71#mssu18" name="KOFlow57"/>
-    </ModuleInstanceUnit>
-    <ModuleInstanceUnit id="sv5#area26#miu20" gr:x="20" gr:y="540" moduleId="mov1#opm9">
+    <ModuleInstanceUnit id="sv5#area26#miu20" gr:x="270" gr:y="385" moduleId="mov1#opm9">
       <OKLink id="sv5#area26#miu20#oln208" name="OKFlow78" to="sv5#area26#page71#mssu18" codeRef="mov1#opm9#okcu11" gr:bendpoints="0,-20">
         <LinkParameter id="sv5#area26#miu20#oln208#par796" name="Ci sono prodotti associati alla categoria. Impossibile eliminare la categoria_Shown Messages" source="mov1#opm9#okcu11#ocp13" target="sv5#area26#page71#mssu18.shownMessages"/>
       </OKLink>

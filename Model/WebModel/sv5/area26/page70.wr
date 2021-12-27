@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="620" gr:y="40" id="sv5#area26#page70" name="Categorie" linkOrder="sv5#area26#page70#ln203">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="335" gr:y="0" id="sv5#area26#page70" name="Categorie" linkOrder="sv5#area26#page70#ln203">
   <ContentUnits>
     <ScrollerUnit gr:x="0" gr:y="0" id="sv5#area26#page70#scu14" name="Scorri categorie" useCountQuery="false" entity="ent5" blockFactor="5" linkOrder="sv5#area26#page70#scu14#ln199">
       <Link id="sv5#area26#page70#scu14#ln199" name="Flow199" to="sv5#area26#page70#pwu27" automaticCoupling="true" type="automatic" validate="true"/>
@@ -13,10 +13,7 @@
       <Selector id="sv5#area26#page70#pwu27#su229" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area26#page70#pwu27#su229#kcond20" name="KeyCondition20" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv5#area26#page70#pwu27#ln230" name="Elimina" to="sv5#area26#miu19" type="normal" validate="true">
-        <LinkParameter id="sv5#area26#page70#pwu27#ln230#par381" name="oid_CategoriaProdotti [oid]" source="data[].ent5#att19" target="sv5#area26#miu19.mov1#opm9#icu9#icp11"/>
-        <LinkParameter id="sv5#area26#page70#pwu27#ln230#par383" name="oid_PASSING" source="data[].ent5#att19" target="sv5#area26#miu19.mov1#opm9#icu9#icp13"/>
-      </Link>
+      <Link id="sv5#area26#page70#pwu27#ln230" name="Elimina" to="sv5#area26#miu20" type="normal" validate="true"/>
     </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
