@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="740" gr:y="820" id="sv5#area18#page62" name="Dettagli negozio">
   <ContentUnits>
-    <DataUnit gr:x="5" gr:y="0" id="sv5#area18#page62#dau22" name="Dettagli negozio" entity="ent3" linkOrder="sv5#area18#page62#dau22#ln181 sv5#area18#page62#dau22#ln175" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
+    <DataUnit gr:x="5" gr:y="0" id="sv5#area18#page62#dau22" name="Dettagli negozio" entity="ent3" linkOrder="sv5#area18#page62#dau22#ln357 sv5#area18#page62#dau22#ln175" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
       <Selector id="sv5#area18#page62#dau22#su136" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area18#page62#dau22#su136#kcond84" name="KeyCondition84" predicate="in" implied="false"/>
       </Selector>
@@ -8,10 +8,10 @@
         <LinkParameter id="sv5#area18#page62#dau22#ln175#par278" name="oid_PASSING" source="data.ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp15"/>
         <LinkParameter id="sv5#area18#page62#dau22#ln175#par352" name="oid_OnlineNegozio [oid]" source="data.ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp14"/>
       </Link>
-      <Link id="sv5#area18#page62#dau22#ln181" name="Modifica" to="sv5#area18#miu19" type="normal" validate="true">
-        <LinkParameter id="sv5#area18#page62#dau22#ln181#par1345" name="oid_id_negozio" source="data.ent3#att8" target="sv5#area18#miu19.mov1#hym1#icu14#icp32"/>
-      </Link>
       <Link id="sv5#area18#page62#dau22#ln192" name="Flow192" to="sv5#area18#page62#dau24" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv5#area18#page62#dau22#ln357" name="Modifica" to="sv5#area18#page128#seu83" type="normal" validate="true">
+        <LinkParameter id="sv5#area18#page62#dau22#ln357#par296" name="oid_Max Results" source="data.ent3#att8" target="sv5#area18#page128#seu83.maxResults"/>
+      </Link>
     </DataUnit>
     <DataUnit gr:x="0" gr:y="120" id="sv5#area18#page62#dau24" name="Dettagli indirizzo" entity="ent2" displayAttributes="ent2#att6 ent2#att7">
       <Selector id="sv5#area18#page62#dau24#su146" defaultPolicy="fill" booleanOperator="and">
@@ -29,7 +29,7 @@
           <layout:Attribute attribute="ent3#att13"/>
           <layout:Attribute attribute="ent3#att58"/>
           <layout:Attribute attribute="ent3#att42"/>
-          <layout:Link link="sv5#area18#page62#dau22#ln181"/>
+          <layout:Link link="sv5#area18#page62#dau22#ln357"/>
           <layout:Link link="sv5#area18#page62#dau22#ln175"/>
         </layout:Unit>
       </layout:Cell>

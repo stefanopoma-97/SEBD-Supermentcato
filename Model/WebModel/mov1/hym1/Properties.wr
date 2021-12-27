@@ -1,13 +1,5 @@
 <HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="2833" id="mov1#hym1" name="Modifica negozio">
   <OperationUnits>
-    <OKCollectorUnit gr:x="1165" gr:y="60" id="mov1#hym1#okcu15" name="OK Port15">
-      <OutputCollectorParameter id="mov1#hym1#okcu15#ocp26" name="Via"/>
-      <OutputCollectorParameter id="mov1#hym1#okcu15#ocp27" name="Numero"/>
-      <OutputCollectorParameter id="mov1#hym1#okcu15#ocp28" name="Key [oid]"/>
-      <OutputCollectorParameter id="mov1#hym1#okcu15#ocp29" name="Citt&#224;"/>
-      <OutputCollectorParameter id="mov1#hym1#okcu15#ocp30" name="Negozio Object"/>
-      <OutputCollectorParameter id="mov1#hym1#okcu15#ocp31" name="oid_PASSING"/>
-    </OKCollectorUnit>
     <InputCollectorUnit gr:x="-50" gr:y="265" id="mov1#hym1#icu14" linkOrder="mov1#hym1#icu14#ln448">
       <InputCollectorParameter id="mov1#hym1#icu14#icp32" name="id_negozio"/>
       <Link id="mov1#hym1#icu14#ln448" name="Flow448" to="mov1#hym1#page126#seu156" type="transport" validate="true">
@@ -15,5 +7,13 @@
       </Link>
     </InputCollectorUnit>
     <KOCollectorUnit gr:x="1200" gr:y="350" id="mov1#hym1#kocu26" name="KO Port26"/>
+    <OKCollectorUnit gr:x="1240" gr:y="190" id="mov1#hym1#okcu16" name="OK Port16">
+      <OutputCollectorParameter id="mov1#hym1#okcu16#ocp32" name="negozio_nome"/>
+      <OutputCollectorParameter id="mov1#hym1#okcu16#ocp33" name="indirizzo_via"/>
+      <OutputCollectorParameter id="mov1#hym1#okcu16#ocp34" name="indirizzo_numero"/>
+      <OutputCollectorParameter id="mov1#hym1#okcu16#ocp35" name="citta_id"/>
+      <OutputCollectorParameter id="mov1#hym1#okcu16#ocp36" name="negozio_fondazione"/>
+      <OutputCollectorParameter id="mov1#hym1#okcu16#ocp37" name="negozio_massimo_ordini"/>
+    </OKCollectorUnit>
   </OperationUnits>
 </HybridModule>

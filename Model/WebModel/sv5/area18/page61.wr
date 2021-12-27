@@ -98,7 +98,6 @@
           <layout:Attribute attribute="ent3#att58"/>
           <layout:Attribute attribute="ent3#att42"/>
           <layout:Link link="sv5#area18#page61#alt12#page90#pwu30#ln228"/>
-          <layout:Link link="sv5#area18#page61#alt12#page90#pwu30#ln231"/>
           <layout:Link link="sv5#area18#page61#alt12#page90#pwu30#ln229"/>
           <layout:Link link="sv5#area18#page61#alt12#page90#pwu30ent3#att9"/>
           <layout:Link link="sv5#area18#page61#alt12#page90#pwu30ent3#att12"/>
@@ -156,7 +155,6 @@
                   <layout:Attribute attribute="ent3#att58"/>
                   <layout:Attribute attribute="ent3#att42"/>
                   <layout:Link link="sv5#area18#page61#alt12#page123#pwu47#ln100"/>
-                  <layout:Link link="sv5#area18#page61#alt12#page123#pwu47#ln225"/>
                   <layout:Link link="sv5#area18#page61#alt12#page123#pwu47#ln239"/>
                   <layout:Link link="sv5#area18#page61#alt12#page123#pwu47ent3#att9"/>
                   <layout:Link link="sv5#area18#page61#alt12#page123#pwu47ent3#att58"/>
@@ -455,14 +453,11 @@
   <Alternative gr:x="275" gr:y="0" id="sv5#area18#page61#alt12" name="Elenco negozi" defaultPage="sv5#area18#page61#alt12#page90">
     <Page gr:x="75" gr:y="175" id="sv5#area18#page61#alt12#page90" name="Elenco completo">
       <ContentUnits>
-        <PowerIndexUnit id="sv5#area18#page61#alt12#page90#pwu30" name="Elenco negozi completo" linkOrder="sv5#area18#page61#alt12#page90#pwu30#ln228 sv5#area18#page61#alt12#page90#pwu30#ln231 sv5#area18#page61#alt12#page90#pwu30#ln229" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
+        <PowerIndexUnit id="sv5#area18#page61#alt12#page90#pwu30" name="Elenco negozi completo" linkOrder="sv5#area18#page61#alt12#page90#pwu30#ln228 sv5#area18#page61#alt12#page90#pwu30#ln229" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
           <Link id="sv5#area18#page61#alt12#page90#pwu30#ln228" name="Dettagli" to="sv5#area18#page62#dau22" type="normal" automaticCoupling="true" validate="true"/>
           <Link id="sv5#area18#page61#alt12#page90#pwu30#ln229" name="Elimina" to="sv5#area18#miu17" type="normal" validate="true">
             <LinkParameter id="sv5#area18#page61#alt12#page90#pwu30#ln229#par381" name="oid_OnlineNegozio [oid]" source="data[].ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp14"/>
             <LinkParameter id="sv5#area18#page61#alt12#page90#pwu30#ln229#par383" name="oid_PASSING" source="data[].ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp16"/>
-          </Link>
-          <Link id="sv5#area18#page61#alt12#page90#pwu30#ln231" name="Modifica" to="sv5#area18#miu19" type="normal" validate="true">
-            <LinkParameter id="sv5#area18#page61#alt12#page90#pwu30#ln231#par1346" name="oid_id_negozio" source="data[].ent3#att8" target="sv5#area18#miu19.mov1#hym1#icu14#icp32"/>
           </Link>
           <Selector id="sv5#area18#page61#alt12#page90#pwu30#su218" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv5#area18#page61#alt12#page90#pwu30#su218#kcond186" name="KeyCondition186" predicate="in" implied="false"/>
@@ -478,16 +473,13 @@
     </Page>
     <Page gr:x="0" gr:y="0" id="sv5#area18#page61#alt12#page123" name="Elenco filtrato">
       <ContentUnits>
-        <PowerIndexUnit gr:x="135" gr:y="0" id="sv5#area18#page61#alt12#page123#pwu47" name="Elenco negozi filtrati" sortable="true" checkable="false" useCountQuery="false" entity="ent3" linkOrder="sv5#area18#page61#alt12#page123#pwu47#ln100 sv5#area18#page61#alt12#page123#pwu47#ln225 sv5#area18#page61#alt12#page123#pwu47#ln239" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
+        <PowerIndexUnit gr:x="135" gr:y="0" id="sv5#area18#page61#alt12#page123#pwu47" name="Elenco negozi filtrati" sortable="true" checkable="false" useCountQuery="false" entity="ent3" linkOrder="sv5#area18#page61#alt12#page123#pwu47#ln100 sv5#area18#page61#alt12#page123#pwu47#ln239" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
           <Selector id="sv5#area18#page61#alt12#page123#pwu47#su102" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv5#area18#page61#alt12#page123#pwu47#su102#kcond116" name="KeyCondition116" predicate="in" implied="false"/>
           </Selector>
           <Link id="sv5#area18#page61#alt12#page123#pwu47#ln100" name="Elimina" to="sv5#area18#miu17" type="normal" validate="true">
             <LinkParameter id="sv5#area18#page61#alt12#page123#pwu47#ln100#par393" name="oid_OnlineNegozio [oid]" source="data[].ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp14"/>
             <LinkParameter id="sv5#area18#page61#alt12#page123#pwu47#ln100#par394" name="oid_PASSING" source="data[].ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp17"/>
-          </Link>
-          <Link id="sv5#area18#page61#alt12#page123#pwu47#ln225" name="Modifica" to="sv5#area18#miu19" type="normal" validate="true">
-            <LinkParameter id="sv5#area18#page61#alt12#page123#pwu47#ln225#par1347" name="oid_id_negozio" source="data[].ent3#att8" target="sv5#area18#miu19.mov1#hym1#icu14#icp32"/>
           </Link>
           <Link id="sv5#area18#page61#alt12#page123#pwu47#ln239" name="Dettagli" to="sv5#area18#page62#dau22" type="normal" automaticCoupling="true" validate="true"/>
           <SortAttribute attribute="ent3#att9" order="ascending"/>

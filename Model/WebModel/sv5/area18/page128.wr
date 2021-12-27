@@ -1,0 +1,336 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area18#page128" name="Modifica negozio" gr:x="930" gr:y="45">
+  <ContentUnits>
+    <EntryUnit id="sv5#area18#page128#enu26" name="Modifica negozio" gr:x="240" gr:y="175" entity="ent3" fieldOrder="sv5#area18#page128#enu26#fld111 sv5#area18#page128#enu26#fld112 sv5#area18#page128#enu26#fld113 sv5#area18#page128#enu26#fld133 sv5#area18#page128#enu26#fld134 sv5#area18#page128#enu26#sfld26 sv5#area18#page128#enu26#fld146 sv5#area18#page128#enu26#fld147 sv5#area18#page128#enu26#fld135 sv5#area18#page128#enu26#fld136 sv5#area18#page128#enu26#fld140 sv5#area18#page128#enu26#fld143 sv5#area18#page128#enu26#fld141 sv5#area18#page128#enu26#fld139 sv5#area18#page128#enu26#fld137 sv5#area18#page128#enu26#fld145 sv5#area18#page128#enu26#fld148 sv5#area18#page128#enu26#fld138 sv5#area18#page128#enu26#fld144 sv5#area18#page128#enu26#fld142" linkOrder="sv5#area18#page128#enu26#ln441">
+      <Field id="sv5#area18#page128#enu26#fld111" name="Nome" type="string" modifiable="true" attribute="ent3#att9" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld111#mnd133" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld112" name="Numero massimo di ordini giornalieri" type="integer" modifiable="true" attribute="ent3#att11" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld112#mnd134" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld113" name="Fondazione" type="date" modifiable="true" attribute="ent3#att12" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld113#mnd135" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld133" name="Via" type="string" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld133#mnd136" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld134" name="Numero" type="integer" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld134#mnd137" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <SelectionField id="sv5#area18#page128#enu26#sfld26" name="Citt&#224;" type="string">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#sfld26#mnd138" name="Mandatory22"/>
+        </VRules>
+      </SelectionField>
+      <Field id="sv5#area18#page128#enu26#fld135" name="Martedi inizio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld135#mnd139" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld136" name="Martedi fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld136#mnd140" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld137" name="Venerdi inizio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld137#mnd141" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld138" name="Sabato fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld138#mnd142" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld139" name="Giovedi fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld139#mnd143" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld140" name="Mercoledi inizio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld140#mnd144" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld141" name="Giovedi inzio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld141#mnd145" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld142" name="Domenica fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld142#mnd146" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld143" name="Mercoledi fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld143#mnd147" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld144" name="Domenica inizio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld144#mnd148" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld145" name="Venerdi fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld145#mnd149" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld146" name="Lunedi inzio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld146#mnd150" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld147" name="Lunedi fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld147#mnd151" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="sv5#area18#page128#enu26#fld148" name="Sabato inizio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv5#area18#page128#enu26#fld148#mnd152" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Link id="sv5#area18#page128#enu26#ln441" name="Applica modifiche" to="sv5#area18#opg21#mfu5" type="normal" validate="true">
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par876" name="Key [oid]_KeyCondition91 [oid]" source="key.ent3#att8" target="sv5#area18#opg21#mfu5#su143#kcond91.ent3#att8"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par878" name="Negozio Object_Negozio Object" source="entityBean" target="sv5#area18#opg21#mfu5.entityBeans"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par883" name="Citt&#224;_PASSING" source="sv5#area18#page128#enu26#sfld26" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par884" name="Domenica fine_PASSING" source="sv5#area18#page128#enu26#fld142" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par889" name="Domenica inizio_PASSING" source="sv5#area18#page128#enu26#fld144" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par892" name="Giovedi fine_PASSING" source="sv5#area18#page128#enu26#fld139" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par893" name="Lunedi fine_PASSING" source="sv5#area18#page128#enu26#fld147" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par895" name="Lunedi inzio_PASSING" source="sv5#area18#page128#enu26#fld146" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par896" name="Martedi fine_PASSING" source="sv5#area18#page128#enu26#fld136" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par1146" name="Martedi inizio_PASSING" source="sv5#area18#page128#enu26#fld135" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par1147" name="Mercoledi fine_PASSING" source="sv5#area18#page128#enu26#fld143" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par1148" name="Mercoledi inizio_PASSING" source="sv5#area18#page128#enu26#fld140" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par1253" name="Numero_PASSING" source="sv5#area18#page128#enu26#fld134" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par1254" name="Sabato fine_PASSING" source="sv5#area18#page128#enu26#fld138" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par1255" name="Sabato inizio_PASSING" source="sv5#area18#page128#enu26#fld148" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par1256" name="Venerdi fine_PASSING" source="sv5#area18#page128#enu26#fld145" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par1257" name="Venerdi inizio_PASSING" source="sv5#area18#page128#enu26#fld137" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par1258" name="Via_PASSING" source="sv5#area18#page128#enu26#fld133" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par1275" name="oid_PASSING" sourceLinkParameter="sv5#area18#page128#seu81#ln351#par289" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par1284" name="Key [oid]_PASSING" source="key.ent3#att8" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#enu26#ln441#par1290" name="Giovedi inzio_PASSING" source="sv5#area18#page128#enu26#fld141" passing="true"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit id="sv5#area18#page128#seu58" name="Seleziona citt&#224;" gr:x="502" gr:y="450" entity="ent1">
+      <Link id="sv5#area18#page128#seu58#ln350" name="Flow182" to="sv5#area18#page128#enu26" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu58#ln350#par279" name="nome_Citt&#224; [label]" source="ent1#att2Array" target="sv5#area18#page128#enu26#sfld26_label"/>
+        <LinkParameter id="sv5#area18#page128#seu58#ln350#par282" name="oid_Citt&#224; [output]" source="ent1#att1Array" target="sv5#area18#page128#enu26#sfld26_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv5#area18#page128#seu81" name="Seleziona indirizzo" gr:x="145" gr:y="445" entity="ent2">
+      <Selector id="sv5#area18#page128#seu81#su144" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area18#page128#seu81#su144#rcond33" name="IndirizzoNegozio" predicate="in" implied="false" role="rel2#role3"/>
+      </Selector>
+      <Link id="sv5#area18#page128#seu81#ln351" name="Flow184" to="sv5#area18#page128#enu26" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu81#ln351#par283" name="numero_Numero" source="ent2#att7Array" target="sv5#area18#page128#enu26#fld134_slot"/>
+        <LinkParameter id="sv5#area18#page128#seu81#ln351#par288" name="via_Via" source="ent2#att6Array" target="sv5#area18#page128#enu26#fld133_slot"/>
+        <LinkParameter id="sv5#area18#page128#seu81#ln351#par289" name="oid_PASSING" source="ent2#att5Array" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#seu81#ln351#par290" name="IndirizzoToCitt&#224;.oid_Citt&#224; - Preselection" source="rel1#role2_ent1#att1Array" target="sv5#area18#page128#enu26#sfld26_presel"/>
+        <LinkParameter id="sv5#area18#page128#seu81#ln351#par291" name="nome_PASSING_Nome" sourceLinkParameter="sv5#area18#page128#seu83#ln355#par294" target="sv5#area18#page128#enu26#fld111_slot"/>
+        <LinkParameter id="sv5#area18#page128#seu81#ln351#par292" name="massimo ordini giornalieri_PASSING_Numero massimo di ordini giornalieri" sourceLinkParameter="sv5#area18#page128#seu83#ln355#par295" target="sv5#area18#page128#enu26#fld112_slot"/>
+        <LinkParameter id="sv5#area18#page128#seu81#ln351#par1280" name="fondazione_PASSING_Fondazione" sourceLinkParameter="sv5#area18#page128#seu83#ln355#par1279" target="sv5#area18#page128#enu26#fld113_slot"/>
+        <LinkParameter id="sv5#area18#page128#seu81#ln351#par1289" name="oid_PASSING_Key Condition [oid]" sourceLinkParameter="sv5#area18#page128#seu83#ln355#par1288" target="sv5#area18#page128#enu26.ent3#att8"/>
+      </Link>
+      <Link id="sv5#area18#page128#seu81#ln353" name="Flow195" to="sv5#area18#page128#dau36" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <DataUnit id="sv5#area18#page128#dau36" name="Dettagli indirizzo" gr:x="330" gr:y="445" entity="ent2" displayAttributes="ent2#att6 ent2#att7">
+      <Selector id="sv5#area18#page128#dau36#su149" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#page128#dau36#su149#kcond96" name="KeyCondition96" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <SelectorUnit id="sv5#area18#page128#seu83" name="Negozio" gr:x="30" gr:y="450" entity="ent3">
+      <Link id="sv5#area18#page128#seu83#ln355" name="Flow451" to="sv5#area18#page128#seu81" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu83#ln355#par293" name="oid_IndirizzoNegozio [oid]" source="ent3#att8Array" target="sv5#area18#page128#seu81#su144#rcond33.ent3#att8"/>
+        <LinkParameter id="sv5#area18#page128#seu83#ln355#par294" name="nome_PASSING" source="ent3#att9Array" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#seu83#ln355#par295" name="massimo ordini giornalieri_PASSING" source="ent3#att11Array" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#seu83#ln355#par1279" name="fondazione_PASSING" source="ent3#att12Array" passing="true"/>
+        <LinkParameter id="sv5#area18#page128#seu83#ln355#par1288" name="oid_PASSING" source="ent3#att8Array" passing="true"/>
+      </Link>
+      <Link id="sv5#area18#page128#seu83#ln358" name="Flow358" to="sv5#area18#page128#seu84" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu83#ln358#par319" name="oid_OrarioNegozio [oid]" source="ent3#att8Array" target="sv5#area18#page128#seu84#su207#rcond52.ent3#att8"/>
+        <LinkParameter id="sv5#area18#page128#seu83#ln358#par320" name="oid_PASSING" source="ent3#att8Array" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="10" gr:y="293" id="sv5#area18#page128#seu84" name="Orario lunedi" entity="ent20">
+      <Selector id="sv5#area18#page128#seu84#su207" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area18#page128#seu84#su207#rcond52" name="OrarioNegozio" role="rel19#role38" predicate="in" implied="false"/>
+        <AttributesCondition id="sv5#area18#page128#seu84#su207#acond62" name="Lunedi" predicate="eq" booleanOperator="or" implied="false" attributes="ent20#att46" value="Luned&#236;"/>
+      </Selector>
+      <Link id="sv5#area18#page128#seu84#ln369" name="Flow369" to="sv5#area18#page128#enu26" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu84#ln369#par297" name="ora fine_Lunedi fine" source="ent20#att48Array" target="sv5#area18#page128#enu26#fld147_slot"/>
+        <LinkParameter id="sv5#area18#page128#seu84#ln369#par298" name="ora inizio_Lunedi inzio" source="ent20#att47Array" target="sv5#area18#page128#enu26#fld146_slot"/>
+      </Link>
+      <Link id="sv5#area18#page128#seu84#ln424" name="Flow424" to="sv5#area18#page128#seu85" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu84#ln424#par322" name="oid_PASSING_OrarioNegozio [oid]" sourceLinkParameter="sv5#area18#page128#seu83#ln358#par320" target="sv5#area18#page128#seu85#su208#rcond74.ent3#att8"/>
+        <LinkParameter id="sv5#area18#page128#seu84#ln424#par327" name="oid_PASSING" sourceLinkParameter="sv5#area18#page128#seu83#ln358#par320" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv5#area18#page128#seu85" name="Orario marted&#236;" gr:x="10" gr:y="158" entity="ent20">
+      <Selector id="sv5#area18#page128#seu85#su208" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area18#page128#seu85#su208#rcond74" name="OrarioNegozio" role="rel19#role38" predicate="in" implied="false"/>
+        <AttributesCondition id="sv5#area18#page128#seu85#su208#acond63" name="Marted&#236;" predicate="eq" booleanOperator="or" implied="false" attributes="ent20#att46" value="Marted&#236;"/>
+      </Selector>
+      <Link id="sv5#area18#page128#seu85#ln378" name="Flow369" to="sv5#area18#page128#enu26" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu85#ln378#par746" name="ora fine_Martedi fine" source="ent20#att48Array" target="sv5#area18#page128#enu26#fld136_slot"/>
+        <LinkParameter id="sv5#area18#page128#seu85#ln378#par749" name="ora inizio_Martedi inizio" source="ent20#att47Array" target="sv5#area18#page128#enu26#fld135_slot"/>
+      </Link>
+      <Link id="sv5#area18#page128#seu85#ln425" name="Flow425" to="sv5#area18#page128#seu86" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu85#ln425#par329" name="oid_PASSING_OrarioNegozio [oid]" sourceLinkParameter="sv5#area18#page128#seu84#ln424#par327" target="sv5#area18#page128#seu86#su334#rcond78.ent3#att8"/>
+        <LinkParameter id="sv5#area18#page128#seu85#ln425#par331" name="oid_PASSING" sourceLinkParameter="sv5#area18#page128#seu84#ln424#par327" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv5#area18#page128#seu86" name="Orario mercoled&#236;" gr:x="0" gr:y="3" entity="ent20">
+      <Selector id="sv5#area18#page128#seu86#su334" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area18#page128#seu86#su334#rcond78" name="OrarioNegozio" role="rel19#role38" predicate="in" implied="false"/>
+        <AttributesCondition id="sv5#area18#page128#seu86#su334#acond74" name="Mercoled&#236;" predicate="eq" booleanOperator="or" implied="false" attributes="ent20#att46" value="Mercoled&#236;"/>
+      </Selector>
+      <Link id="sv5#area18#page128#seu86#ln388" name="Flow369" to="sv5#area18#page128#enu26" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu86#ln388#par797" name="ora fine_Mercoledi fine" source="ent20#att48Array" target="sv5#area18#page128#enu26#fld143_slot"/>
+        <LinkParameter id="sv5#area18#page128#seu86#ln388#par819" name="ora inizio_Mercoledi inizio" source="ent20#att47Array" target="sv5#area18#page128#enu26#fld140_slot"/>
+      </Link>
+      <Link id="sv5#area18#page128#seu86#ln426" name="Flow426" to="sv5#area18#page128#seu96" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu86#ln426#par332" name="oid_PASSING_OrarioNegozio [oid]" sourceLinkParameter="sv5#area18#page128#seu85#ln425#par331" target="sv5#area18#page128#seu96#su335#rcond79.ent3#att8"/>
+        <LinkParameter id="sv5#area18#page128#seu86#ln426#par333" name="oid_PASSING" sourceLinkParameter="sv5#area18#page128#seu85#ln425#par331" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv5#area18#page128#seu96" name="Orario giovedi" gr:x="260" gr:y="3" entity="ent20">
+      <Selector id="sv5#area18#page128#seu96#su335" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area18#page128#seu96#su335#rcond79" name="OrarioNegozio" role="rel19#role38" predicate="in" implied="false"/>
+        <AttributesCondition id="sv5#area18#page128#seu96#su335#acond76" name="Gioved&#236;" predicate="eq" booleanOperator="or" implied="false" attributes="ent20#att46" value="Gioved&#236;"/>
+      </Selector>
+      <Link id="sv5#area18#page128#seu96#ln397" name="Flow369" to="sv5#area18#page128#enu26" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu96#ln397#par851" name="ora fine_Giovedi fine" source="ent20#att48Array" target="sv5#area18#page128#enu26#fld139_slot"/>
+        <LinkParameter id="sv5#area18#page128#seu96#ln397#par852" name="ora inizio_Giovedi inzio" source="ent20#att47Array" target="sv5#area18#page128#enu26#fld141_slot"/>
+      </Link>
+      <Link id="sv5#area18#page128#seu96#ln427" name="Flow427" to="sv5#area18#page128#seu100" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu96#ln427#par395" name="oid_PASSING_OrarioNegozio [oid]" sourceLinkParameter="sv5#area18#page128#seu86#ln426#par333" target="sv5#area18#page128#seu100#su336#rcond80.ent3#att8"/>
+        <LinkParameter id="sv5#area18#page128#seu96#ln427#par396" name="oid_PASSING" sourceLinkParameter="sv5#area18#page128#seu86#ln426#par333" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv5#area18#page128#seu100" name="Orario venerdi" gr:x="502" gr:y="3" entity="ent20">
+      <Selector id="sv5#area18#page128#seu100#su336" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area18#page128#seu100#su336#rcond80" name="OrarioNegozio" role="rel19#role38" predicate="in" implied="false"/>
+        <AttributesCondition id="sv5#area18#page128#seu100#su336#acond77" name="Venerd&#236;" predicate="eq" booleanOperator="or" implied="false" attributes="ent20#att46" value="Venerd&#236;"/>
+      </Selector>
+      <Link id="sv5#area18#page128#seu100#ln420" name="Flow369" to="sv5#area18#page128#enu26" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu100#ln420#par870" name="ora fine_Venerdi fine" source="ent20#att48Array" target="sv5#area18#page128#enu26#fld145_slot"/>
+        <LinkParameter id="sv5#area18#page128#seu100#ln420#par871" name="ora inizio_Venerdi inizio" source="ent20#att47Array" target="sv5#area18#page128#enu26#fld137_slot"/>
+      </Link>
+      <Link id="sv5#area18#page128#seu100#ln428" name="Flow428" to="sv5#area18#page128#seu103" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu100#ln428#par397" name="oid_PASSING_OrarioNegozio [oid]" sourceLinkParameter="sv5#area18#page128#seu96#ln427#par396" target="sv5#area18#page128#seu103#su337#rcond100.ent3#att8"/>
+        <LinkParameter id="sv5#area18#page128#seu100#ln428#par398" name="oid_PASSING" sourceLinkParameter="sv5#area18#page128#seu96#ln427#par396" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv5#area18#page128#seu103" name="Orario sabato" gr:x="502" gr:y="158" entity="ent20">
+      <Selector id="sv5#area18#page128#seu103#su337" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area18#page128#seu103#su337#rcond100" name="OrarioNegozio" role="rel19#role38" predicate="in" implied="false"/>
+        <AttributesCondition id="sv5#area18#page128#seu103#su337#acond78" name="Sabato" predicate="eq" booleanOperator="or" implied="false" attributes="ent20#att46" value="Sabato"/>
+      </Selector>
+      <Link id="sv5#area18#page128#seu103#ln422" name="Flow369" to="sv5#area18#page128#enu26" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu103#ln422#par872" name="ora fine_Sabato fine" source="ent20#att48Array" target="sv5#area18#page128#enu26#fld138_slot"/>
+        <LinkParameter id="sv5#area18#page128#seu103#ln422#par873" name="ora inizio_Sabato inizio" source="ent20#att47Array" target="sv5#area18#page128#enu26#fld148_slot"/>
+      </Link>
+      <Link id="sv5#area18#page128#seu103#ln440" name="Flow428" to="sv5#area18#page128#seu104" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu103#ln440#par581" name="oid_PASSING_OrarioNegozio [oid]" sourceLinkParameter="sv5#area18#page128#seu100#ln428#par398" target="sv5#area18#page128#seu104#su338#rcond131.ent3#att8"/>
+        <LinkParameter id="sv5#area18#page128#seu103#ln440#par708" name="oid_PASSING" sourceLinkParameter="sv5#area18#page128#seu100#ln428#par398" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv5#area18#page128#seu104" name="Orario domenica" gr:x="492" gr:y="293" entity="ent20">
+      <Selector id="sv5#area18#page128#seu104#su338" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area18#page128#seu104#su338#rcond131" name="OrarioNegozio" role="rel19#role38" predicate="in" implied="false"/>
+        <AttributesCondition id="sv5#area18#page128#seu104#su338#acond79" name="Domenica" predicate="eq" booleanOperator="or" implied="false" attributes="ent20#att46" value="Domenica"/>
+      </Selector>
+      <Link id="sv5#area18#page128#seu104#ln430" name="Flow369" to="sv5#area18#page128#enu26" type="transport" validate="true">
+        <LinkParameter id="sv5#area18#page128#seu104#ln430#par874" name="ora fine_Domenica fine" source="ent20#att48Array" target="sv5#area18#page128#enu26#fld142_slot"/>
+        <LinkParameter id="sv5#area18#page128#seu104#ln430#par875" name="ora inizio_Domenica inizio" source="ent20#att47Array" target="sv5#area18#page128#enu26#fld144_slot"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area18#page128#enu26">
+          <layout:Field field="sv5#area18#page128#enu26#fld111"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld112"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld113"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld133"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld134"/>
+          <layout:Field field="sv5#area18#page128#enu26#sfld26"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld146"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld147"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld135"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld136"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld140"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld143"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld141"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld139"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld137"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld145"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld148"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld138"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld144"/>
+          <layout:Field field="sv5#area18#page128#enu26#fld142"/>
+          <layout:Link link="sv5#area18#page128#enu26#ln441"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area18#page128#dau36">
+          <layout:Attribute attribute="ent2#att6"/>
+          <layout:Attribute attribute="ent2#att7"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

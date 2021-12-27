@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="mov1#hym1#page126" name="Modifica negozio" gr:x="245" gr:y="95">
   <ContentUnits>
-    <EntryUnit id="mov1#hym1#page126#enu41" name="Modifica negozio" gr:x="645" gr:y="140" entity="ent3">
+    <EntryUnit id="mov1#hym1#page126#enu41" name="Modifica negozio" gr:x="645" gr:y="140" entity="ent3" linkOrder="mov1#hym1#page126#enu41#ln145">
       <Field id="mov1#hym1#page126#enu41#fld114" name="Nome" type="string" modifiable="true" attribute="ent3#att9" preloaded="true">
         <VRules>
           <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld114#mnd113" name="Mandatory22"/>
@@ -101,6 +101,7 @@
           <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld132#mnd132" name="Mandatory12"/>
         </VRules>
       </Field>
+      <Link id="mov1#hym1#page126#enu41#ln145" name="Applica modifiche" to="mov1#hym1#okcu16" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
     <SelectorUnit id="mov1#hym1#page126#seu97" name="Seleziona citt&#224;" gr:x="660" gr:y="10" entity="ent1">
       <Link id="mov1#hym1#page126#seu97#ln436" name="Flow182" to="mov1#hym1#page126#enu41" type="transport" validate="true">
@@ -159,6 +160,7 @@
           <layout:Field field="mov1#hym1#page126#enu41#fld130"/>
           <layout:Field field="mov1#hym1#page126#enu41#fld131"/>
           <layout:Field field="mov1#hym1#page126#enu41#fld132"/>
+          <layout:Link link="mov1#hym1#page126#enu41#ln145"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
