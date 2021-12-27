@@ -39,6 +39,9 @@
     </ScrollerUnit>
     <ScrollerUnit gr:x="235" gr:y="130" id="sv5#area5#page5#scu34" name="Scorri prodotti" useCountQuery="false" entity="ent4" blockFactor="5" linkOrder="sv5#area5#page5#scu34#ln219">
       <Link id="sv5#area5#page5#scu34#ln219" name="Flow219" to="sv5#area5#page5#pwu18" automaticCoupling="true" type="automatic" validate="true"/>
+      <Selector id="sv5#area5#page5#scu34#su348" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv5#area5#page5#scu34#su348#acond88" name="Vendibile" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64" value="true"/>
+      </Selector>
     </ScrollerUnit>
     <ScrollerUnit gr:x="375" gr:y="130" id="sv5#area5#page5#scu35" name="Scorri categorie" useCountQuery="false" entity="ent5" blockFactor="5" linkOrder="sv5#area5#page5#scu35#ln220">
       <Link id="sv5#area5#page5#scu35#ln220" name="Flow220" to="sv5#area5#page5#pwu19" automaticCoupling="true" type="automatic" validate="true"/>

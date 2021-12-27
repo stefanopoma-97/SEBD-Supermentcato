@@ -1,6 +1,6 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1325" gr:y="245" id="sv5#area16#opg36" name="Filtra prodotti" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1310" gr:y="280" id="sv5#area16#opg36" name="Filtra prodotti" transaction="true">
   <OperationUnits>
-    <SwitchUnit gr:x="145" gr:y="0" id="sv5#area16#opg36#switch1" name="Nuovo?">
+    <SwitchUnit gr:x="35" gr:y="10" id="sv5#area16#opg36#switch1" name="Nuovo?">
       <Case value="true"/>
       <Case value="false"/>
       <OKLink id="sv5#area16#opg36#switch1#oln54" name="OKFlow54" to="sv5#area16#opg36#seu13" code="true">
@@ -16,7 +16,7 @@
         <LinkParameter id="sv5#area16#opg36#switch1#oln74#par375" name="Nazione_PASSING" sourceLinkParameter="sv5#area16#page42#enu20#ln294#par736" passing="true"/>
       </OKLink>
     </SwitchUnit>
-    <SelectorUnit gr:x="310" gr:y="30" id="sv5#area16#opg36#seu13" name="Prodotti Nuovi" entity="ent11">
+    <SelectorUnit gr:x="145" gr:y="0" id="sv5#area16#opg36#seu13" name="Prodotti Nuovi" entity="ent11">
       <SortAttribute attribute="ent4#att15" order="ascending"/>
       <SortAttribute attribute="ent4#att17" order="ascending"/>
       <OKLink id="sv5#area16#opg36#seu13#oln55" name="OKFlow55" to="sv5#area16#opg36#switch3">
@@ -27,7 +27,7 @@
         <LinkParameter id="sv5#area16#opg36#seu13#oln55#par882" name="oid_PASSING" source="ent4#att14Array" passing="true"/>
       </OKLink>
     </SelectorUnit>
-    <SelectorUnit id="sv5#area16#opg36#seu95" name="Filtro" gr:x="130" gr:y="290" entity="ent4">
+    <SelectorUnit id="sv5#area16#opg36#seu95" name="Filtro" gr:x="205" gr:y="140" entity="ent4">
       <Selector id="sv5#area16#opg36#seu95#su216" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv5#area16#opg36#seu95#su216#rcond85" name="ProdottoNazione" predicate="in" implied="true" role="rel18#role36"/>
         <RelationshipRoleCondition id="sv5#area16#opg36#seu95#su216#rcond86" name="ProdottoFasciaPrezzo" predicate="in" implied="true" role="rel11#role21"/>
@@ -39,33 +39,33 @@
         <LinkParameter id="sv5#area16#opg36#seu95#oln126#par325" name="oid_Input" source="ent4#att14Array" target="sv5#area16#opg36#inn7.isnotnull"/>
       </OKLink>
     </SelectorUnit>
-    <SwitchUnit gr:x="145" gr:y="135" id="sv5#area16#opg36#switch2" name="vendibile?">
+    <SwitchUnit gr:x="25" gr:y="110" id="sv5#area16#opg36#switch2" name="vendibile?">
       <Case value="true"/>
       <Case value="false"/>
-      <OKLink id="sv5#area16#opg36#switch2#oln41" name="OKFlow41" to="sv5#area16#opg36#seu95" code="true" gr:bendpoints="44,76,24,-130">
+      <OKLink id="sv5#area16#opg36#switch2#oln41" name="OKFlow41" to="sv5#area16#opg36#seu95" code="true">
         <LinkParameter id="sv5#area16#opg36#switch2#oln41#par378" name="Categoria_PASSING_ProdottoCategoria [oid]" sourceLinkParameter="sv5#area16#opg36#switch1#oln74#par365" target="sv5#area16#opg36#seu95#su216#rcond87.ent5#att19"/>
         <LinkParameter id="sv5#area16#opg36#switch2#oln41#par384" name="Fascia di prezzo_PASSING_ProdottoFasciaPrezzo [oid]" sourceLinkParameter="sv5#area16#opg36#switch1#oln74#par374" target="sv5#area16#opg36#seu95#su216#rcond86.ent15#att30"/>
         <LinkParameter id="sv5#area16#opg36#switch2#oln41#par385" name="Nazione_PASSING_ProdottoNazione [oid]" sourceLinkParameter="sv5#area16#opg36#switch1#oln74#par375" target="sv5#area16#opg36#seu95#su216#rcond85.ent19#att44"/>
         <LinkParameter id="sv5#area16#opg36#switch2#oln41#par823" name="1_in vendita" sourceValue="1" target="sv5#area16#opg36#seu95#su216#acond29"/>
       </OKLink>
-      <OKLink id="sv5#area16#opg36#switch2#oln56" name="OKFlow41" to="sv5#area16#opg36#seu95" code="false" gr:bendpoints="-8,78,-28,-127">
+      <OKLink id="sv5#area16#opg36#switch2#oln56" name="OKFlow41" to="sv5#area16#opg36#seu95" code="false" gr:bendpoints="105,0,-111,-76">
         <LinkParameter id="sv5#area16#opg36#switch2#oln56#par820" name="0_in vendita" sourceValue="0" target="sv5#area16#opg36#seu95#su216#acond29"/>
         <LinkParameter id="sv5#area16#opg36#switch2#oln56#par243" name="Categoria_PASSING_ProdottoCategoria [oid]" sourceLinkParameter="sv5#area16#opg36#switch1#oln74#par365" target="sv5#area16#opg36#seu95#su216#rcond87.ent5#att19"/>
         <LinkParameter id="sv5#area16#opg36#switch2#oln56#par248" name="Fascia di prezzo_PASSING_ProdottoFasciaPrezzo [oid]" sourceLinkParameter="sv5#area16#opg36#switch1#oln74#par374" target="sv5#area16#opg36#seu95#su216#rcond86.ent15#att30"/>
         <LinkParameter id="sv5#area16#opg36#switch2#oln56#par250" name="Nazione_PASSING_ProdottoNazione [oid]" sourceLinkParameter="sv5#area16#opg36#switch1#oln74#par375" target="sv5#area16#opg36#seu95#su216#rcond85.ent19#att44"/>
       </OKLink>
     </SwitchUnit>
-    <SwitchUnit id="sv5#area16#opg36#switch3" name="vendibile?" gr:x="335" gr:y="155">
+    <SwitchUnit id="sv5#area16#opg36#switch3" name="vendibile?" gr:x="310" gr:y="10">
       <Case value="true"/>
       <Case value="false"/>
-      <OKLink id="sv5#area16#opg36#switch3#oln69" name="OKFlow41" to="sv5#area16#opg36#seu95" code="true">
+      <OKLink id="sv5#area16#opg36#switch3#oln69" name="OKFlow41" to="sv5#area16#opg36#seu95" code="true" gr:bendpoints="-73,65,-3,-110">
         <LinkParameter id="sv5#area16#opg36#switch3#oln69#par877" name="1_in vendita" sourceValue="1" target="sv5#area16#opg36#seu95#su216#acond29"/>
         <LinkParameter id="sv5#area16#opg36#switch3#oln69#par879" name="Categoria_PASSING_ProdottoCategoria [oid]" sourceLinkParameter="sv5#area16#opg36#seu13#oln55#par827" target="sv5#area16#opg36#seu95#su216#rcond87.ent5#att19"/>
         <LinkParameter id="sv5#area16#opg36#switch3#oln69#par880" name="Fascia di prezzo_PASSING_ProdottoFasciaPrezzo [oid]" sourceLinkParameter="sv5#area16#opg36#seu13#oln55#par853" target="sv5#area16#opg36#seu95#su216#rcond86.ent15#att30"/>
         <LinkParameter id="sv5#area16#opg36#switch3#oln69#par881" name="Nazione_PASSING_ProdottoNazione [oid]" sourceLinkParameter="sv5#area16#opg36#seu13#oln55#par864" target="sv5#area16#opg36#seu95#su216#rcond85.ent19#att44"/>
         <LinkParameter id="sv5#area16#opg36#switch3#oln69#par885" name="oid_PASSING_KeyCondition184 [oid]" sourceLinkParameter="sv5#area16#opg36#seu13#oln55#par882" target="sv5#area16#opg36#seu95#su216#kcond184.ent4#att14"/>
       </OKLink>
-      <OKLink id="sv5#area16#opg36#switch3#oln72" name="OKFlow41" to="sv5#area16#opg36#seu95" code="false" gr:bendpoints="-13,114,157,-72">
+      <OKLink id="sv5#area16#opg36#switch3#oln72" name="OKFlow41" to="sv5#area16#opg36#seu95" code="false" gr:bendpoints="7,69,77,-107">
         <LinkParameter id="sv5#area16#opg36#switch3#oln72#par886" name="0_in vendita" sourceValue="0" target="sv5#area16#opg36#seu95#su216#acond29"/>
         <LinkParameter id="sv5#area16#opg36#switch3#oln72#par887" name="oid_PASSING_KeyCondition184 [oid]" sourceLinkParameter="sv5#area16#opg36#seu13#oln55#par882" target="sv5#area16#opg36#seu95#su216#kcond184.ent4#att14"/>
         <LinkParameter id="sv5#area16#opg36#switch3#oln72#par888" name="Categoria_PASSING_ProdottoCategoria [oid]" sourceLinkParameter="sv5#area16#opg36#seu13#oln55#par827" target="sv5#area16#opg36#seu95#su216#rcond87.ent5#att19"/>
@@ -73,7 +73,7 @@
         <LinkParameter id="sv5#area16#opg36#switch3#oln72#par891" name="Nazione_PASSING_ProdottoNazione [oid]" sourceLinkParameter="sv5#area16#opg36#seu13#oln55#par864" target="sv5#area16#opg36#seu95#su216#rcond85.ent19#att44"/>
       </OKLink>
     </SwitchUnit>
-    <IsNotNullUnit gr:x="0" gr:y="220" id="sv5#area16#opg36#inn7" name="Is Not Null7">
+    <IsNotNullUnit gr:x="0" gr:y="185" id="sv5#area16#opg36#inn7" name="Is Not Null7">
       <OKLink id="sv5#area16#opg36#inn7#oln4" name="OKFlow4" to="sv5#area16#page42#alt9#page88#scu33">
         <LinkParameter id="sv5#area16#opg36#inn7#oln4#par324" name="Input Value_KeyCondition2 [oid]" source="inputValue" target="sv5#area16#page42#alt9#page88#scu33#su182#kcond160.ent4#att14"/>
       </OKLink>

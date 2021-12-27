@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1125" gr:y="990" id="sv5#area18#opg21" name="Modifica negozio" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1155" gr:y="685" id="sv5#area18#opg21" name="Modifica negozio" transaction="true">
   <OperationUnits>
     <ModifyUnit gr:x="55" gr:y="0" id="sv5#area18#opg21#mfu5" name="Modifica negozio" entity="ent3">
       <Selector id="sv5#area18#opg21#mfu5#su143" defaultPolicy="fill" booleanOperator="and">
@@ -193,7 +193,7 @@
         <RelationshipRoleCondition id="sv5#area18#opg21#mfu32#su347#rcond139" name="OrarioNegozio" role="rel19#role38" predicate="in" implied="false"/>
         <AttributesCondition id="sv5#area18#opg21#mfu32#su347#acond87" name="Domenica" predicate="eq" booleanOperator="or" implied="false" attributes="ent20#att46" value="Domenica"/>
       </Selector>
-      <OKLink id="sv5#area18#opg21#mfu32#oln79" name="OKFlow79" to="sv5#area18#page62#dau22" gr:bendpoints="-216,-444,158,121">
+      <OKLink id="sv5#area18#opg21#mfu32#oln79" name="OKFlow79" to="sv5#area18#page62#dau22">
         <LinkParameter id="sv5#area18#opg21#mfu32#oln79#par1416" name="Key [oid]_PASSING_KeyCondition84 [oid]" sourceLinkParameter="sv5#area18#opg21#mfu31#oln78#par1415" target="sv5#area18#page62#dau22#su136#kcond84.ent3#att8"/>
       </OKLink>
     </ModifyUnit>

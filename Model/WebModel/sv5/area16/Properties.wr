@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="575" gr:y="-1705" id="sv5#area16" name="Gestione prodotti" landmark="true" defaultPage="sv5#area16#page42">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1095" gr:y="-1715" id="sv5#area16" name="Gestione prodotti" landmark="true" defaultPage="sv5#area16#page42">
   <OperationUnits>
     <ModuleInstanceUnit gr:x="1320" gr:y="120" id="sv5#area16#miu21" action="true" moduleId="mov1#opm8">
       <OKLink id="sv5#area16#miu21#oln264" name="OKFlow264" to="sv5#area16#page42" automaticCoupling="true" gr:bendpoints="-75,148,380,-302"/>
