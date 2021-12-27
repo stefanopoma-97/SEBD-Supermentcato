@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="270" gr:y="280" id="sv4#area22#page68" name="Modifica informazioni negozio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="520" gr:y="340" id="sv4#area22#page68" name="Modifica informazioni negozio">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv4#area22#page68#enu18" name="Modifica massimo ordini" entity="ent3" linkOrder="sv4#area22#page68#enu18#ln12">
       <Field id="sv4#area22#page68#enu18#fld66" name="Numero massimo di ordini giornalieri" type="integer" modifiable="true" attribute="ent3#att11">
