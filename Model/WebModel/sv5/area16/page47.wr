@@ -44,7 +44,7 @@
         <LinkParameter id="sv5#area16#page47#enu13#ln116#par226" name="Nazione_PASSING" source="sv5#area16#page47#enu13#sfld15" passing="true"/>
         <LinkParameter id="sv5#area16#page47#enu13#ln116#par228" name="Current/Input Date_PASSING_data inserimento" sourceLinkParameter="sv5#area16#page47#tmu8#ln118#par227" target="sv5#area16#opg17#mfu3.ent4#att18"/>
         <LinkParameter id="sv5#area16#page47#enu13#ln116#par229" name="Key [oid]_KeyCondition71 [oid]" source="key.ent4#att14" target="sv5#area16#opg17#mfu3#su120#kcond71.ent4#att14"/>
-        <LinkParameter id="sv5#area16#page47#enu13#ln116#par1427" name="Vendibile_vendibile" source="sv5#area16#page47#enu13#sfld20" target="sv5#area16#opg17#mfu3.ent4#att64"/>
+        <LinkParameter id="sv5#area16#page47#enu13#ln116#par1427" name="Vendibile_vendibile" source="sv5#area16#page47#enu13#fld149" target="sv5#area16#opg17#mfu3.ent4#att64"/>
       </Link>
       <Field id="sv5#area16#page47#enu13#fld149" name="Vendibile" type="boolean" modifiable="true" attribute="ent4#att64" preloaded="true"/>
     </EntryUnit>
