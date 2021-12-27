@@ -1,10 +1,10 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="965" gr:y="975" id="sv5#area16#page44" name="Dettagli prodotto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="620" gr:y="900" id="sv5#area16#page44" name="Dettagli prodotto">
   <ContentUnits>
-    <DataUnit gr:x="5" gr:y="0" id="sv5#area16#page44#dau17" name="Dettagli prodotto" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60 ent4#att64" linkOrder="sv5#area16#page44#dau17#ln107 sv5#area16#page44#dau17#ln134 sv5#area16#page44#dau17#ln287 sv5#area16#page44#dau17#ln295 sv5#area16#page44#dau17#ln301">
+    <DataUnit gr:x="0" gr:y="0" id="sv5#area16#page44#dau17" name="Dettagli prodotto" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60 ent4#att64" linkOrder="sv5#area16#page44#dau17#ln107 sv5#area16#page44#dau17#ln134 sv5#area16#page44#dau17#ln287 sv5#area16#page44#dau17#ln295 sv5#area16#page44#dau17#ln301">
       <Selector id="sv5#area16#page44#dau17#su61" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#page44#dau17#su61#kcond33" name="KeyCondition33" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv5#area16#page44#dau17#ln107" name="Modifica" to="sv5#area16#page47#enu13" type="normal" validate="true">
+      <Link id="sv5#area16#page44#dau17#ln107" name="Modifica" to="sv5#area16#page47#enu13" type="normal" validate="true" gr:bendpoints="0,-534,325,251">
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par210" name="ProdottoToCategoria.oid_Categoria - Preselection" source="data.rel4#role7_ent5#att19" target="sv5#area16#page47#enu13#sfld16_presel"/>
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par215" name="ProdottoToFascia prezzo.oid_Fascia di prezzo - Preselection" source="data.rel11#role22_ent15#att30" target="sv5#area16#page47#enu13#sfld14_presel"/>
         <LinkParameter id="sv5#area16#page44#dau17#ln107#par216" name="ProdottoToNazione.oid_Nazione - Preselection" source="data.rel18#role35_ent19#att44" target="sv5#area16#page47#enu13#sfld15_presel"/>
@@ -22,20 +22,20 @@
       <Link id="sv5#area16#page44#dau17#ln282" name="Flow282" to="sv5#area16#page44#seu148" type="transport" validate="true">
         <LinkParameter id="sv5#area16#page44#dau17#ln282#par255" name="oid_KeyCondition99 [oid]" source="data.ent4#att14" target="sv5#area16#page44#seu148#su200#kcond99.ent4#att14"/>
       </Link>
-      <Link id="sv5#area16#page44#dau17#ln287" name="indietro" to="sv5#area16" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv5#area16#page44#dau17#ln287" name="indietro" to="sv5#area16" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-722,68,-736,38"/>
       <Link id="sv5#area16#page44#dau17#ln295" name="Elimina" to="sv5#area16#miu22" type="normal" validate="true">
         <LinkParameter id="sv5#area16#page44#dau17#ln295#par1140" name="oid_oid_PASSING" source="data.ent4#att14" target="sv5#area16#miu22.mov1#opm10#icu10#icp9"/>
         <LinkParameter id="sv5#area16#page44#dau17#ln295#par1141" name="oid_RigheConProdotto [oid]" source="data.ent4#att14" target="sv5#area16#miu22.mov1#opm10#icu10#icp10"/>
       </Link>
       <Link id="sv5#area16#page44#dau17#ln301" name="Rendi vendibile" to="sv5#area16#opg37#seu155" automaticCoupling="true" type="normal" validate="true"/>
     </DataUnit>
-    <SelectorUnit gr:x="0" gr:y="160" id="sv5#area16#page44#seu148" name="prodotto nuovo" entity="ent11">
+    <SelectorUnit gr:x="180" gr:y="0" id="sv5#area16#page44#seu148" name="prodotto nuovo" entity="ent11">
       <Link id="sv5#area16#page44#seu148#ln286" name="Flow286" to="sv5#area16#page44#dau34" automaticCoupling="true" type="transport" validate="true"/>
       <Selector id="sv5#area16#page44#seu148#su200" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#page44#seu148#su200#kcond99" name="KeyCondition99" predicate="in" implied="false"/>
       </Selector>
     </SelectorUnit>
-    <DataUnit gr:x="200" gr:y="125" id="sv5#area16#page44#dau34" name="Nuovo" entity="ent11" displayAttributes="ent4#att15 ent4#att18">
+    <DataUnit gr:x="360" gr:y="0" id="sv5#area16#page44#dau34" name="Nuovo" entity="ent11" displayAttributes="ent4#att15 ent4#att18">
       <Selector id="sv5#area16#page44#dau34#su319" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#page44#dau34#su319#kcond207" name="KeyCondition207" predicate="in" implied="false"/>
       </Selector>

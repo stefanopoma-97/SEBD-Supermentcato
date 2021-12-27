@@ -1,10 +1,10 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="550" gr:y="-1865" id="sv5#area16" name="Gestione prodotti" landmark="true" defaultPage="sv5#area16#page42">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="575" gr:y="-1705" id="sv5#area16" name="Gestione prodotti" landmark="true" defaultPage="sv5#area16#page42">
   <OperationUnits>
-    <ModuleInstanceUnit gr:x="1780" gr:y="50" id="sv5#area16#miu21" action="true" moduleId="mov1#opm8">
+    <ModuleInstanceUnit gr:x="1320" gr:y="120" id="sv5#area16#miu21" action="true" moduleId="mov1#opm8">
       <OKLink id="sv5#area16#miu21#oln264" name="OKFlow264" to="sv5#area16#page42" automaticCoupling="true" gr:bendpoints="-75,148,380,-302"/>
       <KOLink id="sv5#area16#miu21#kln206" name="KOFlow206" to="sv5#area16#page125" automaticCoupling="true"/>
     </ModuleInstanceUnit>
-    <ModuleInstanceUnit gr:x="60" gr:y="1290" id="sv5#area16#miu22" moduleId="mov1#opm10">
+    <ModuleInstanceUnit gr:x="310" gr:y="800" id="sv5#area16#miu22" moduleId="mov1#opm10">
       <KOLink id="sv5#area16#miu22#kln225" to="sv5#area16#page122#mssu47" name="KOFlow151" gr:bendpoints="0,-180" codeRef="mov1#opm10#kocu23">
         <LinkParameter id="sv5#area16#miu22#kln225#par1093" name="Errore durante eliminazione riga d'ordine_Shown Messages" target="sv5#area16#page122#mssu47.shownMessages" source="mov1#opm10#kocu23#ocp20"/>
       </KOLink>

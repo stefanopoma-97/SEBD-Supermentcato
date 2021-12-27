@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1805" gr:y="960" id="sv5#area16#opg16" name="Crea prodotto" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1450" gr:y="920" id="sv5#area16#opg16" name="Crea prodotto" transaction="true">
   <OperationUnits>
     <CreateUnit gr:x="75" gr:y="435" id="sv5#area16#opg16#cru7" name="Crea prodotto" entity="ent11">
       <OKLink id="sv5#area16#opg16#cru7#oln30" name="OKFlow30" to="sv5#area16#opg16#cnu8">
@@ -7,7 +7,7 @@
         <LinkParameter id="sv5#area16#opg16#cru7#oln30#par201" name="Fascia di prezzo_PASSING" sourceLinkParameter="sv5#area16#page45#enu12#ln106#par197" passing="true"/>
         <LinkParameter id="sv5#area16#opg16#cru7#oln30#par202" name="Nazione_PASSING" sourceLinkParameter="sv5#area16#page45#enu12#ln106#par198" passing="true"/>
       </OKLink>
-      <KOLink id="sv5#area16#opg16#cru7#kln40" name="KOFlow40" to="sv5#area16#page59#mssu19">
+      <KOLink id="sv5#area16#opg16#cru7#kln40" name="KOFlow40" to="sv5#area16#page59#mssu19" gr:bendpoints="-130,-60,105,215">
         <LinkParameter id="sv5#area16#opg16#cru7#kln40#par244" name="Errore nella creazione del prodotto_Shown Messages" sourceValue="Errore nella creazione del prodotto" target="sv5#area16#page59#mssu19.shownMessages"/>
       </KOLink>
     </CreateUnit>

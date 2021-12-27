@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1680" gr:y="325" id="sv5#area16#opg36" name="Filtra prodotti" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1325" gr:y="245" id="sv5#area16#opg36" name="Filtra prodotti" transaction="true">
   <OperationUnits>
     <SwitchUnit gr:x="145" gr:y="0" id="sv5#area16#opg36#switch1" name="Nuovo?">
       <Case value="true"/>
@@ -77,7 +77,7 @@
       <OKLink id="sv5#area16#opg36#inn7#oln4" name="OKFlow4" to="sv5#area16#page42#alt9#page88#scu33">
         <LinkParameter id="sv5#area16#opg36#inn7#oln4#par324" name="Input Value_KeyCondition2 [oid]" source="inputValue" target="sv5#area16#page42#alt9#page88#scu33#su182#kcond160.ent4#att14"/>
       </OKLink>
-      <KOLink id="sv5#area16#opg36#inn7#kln30" name="KOFlow30" to="sv5#area16#page42#alt9#page89#mssu51">
+      <KOLink id="sv5#area16#opg36#inn7#kln30" name="KOFlow30" to="sv5#area16#page42#alt9#page89#mssu51" gr:bendpoints="-99,60,336,-100;-340,59,95,-101">
         <LinkParameter id="sv5#area16#opg36#inn7#kln30#par326" name="Non sono presenti prodotti che soddifano i criteri scelti_Shown Messages" sourceValue="Non sono presenti prodotti che soddifano i criteri scelti" target="sv5#area16#page42#alt9#page89#mssu51.shownMessages"/>
       </KOLink>
     </IsNotNullUnit>
