@@ -8,10 +8,12 @@
         <LinkParameter id="sv2#area40#page114#enu35#ln377#par802" name="Categoria_PASSING" source="sv2#area40#page114#enu35#sfld37" passing="true"/>
         <LinkParameter id="sv2#area40#page114#enu35#ln377#par803" name="Fascia di prezzo_PASSING" source="sv2#area40#page114#enu35#sfld38" passing="true"/>
         <LinkParameter id="sv2#area40#page114#enu35#ln377#par804" name="Nazione_PASSING" source="sv2#area40#page114#enu35#sfld39" passing="true"/>
+        <LinkParameter id="sv2#area40#page114#enu35#ln377#par335" name="nome_PASSING" source="sv2#area40#page114#enu35#fld71" passing="true"/>
       </Link>
       <SelectionField id="sv2#area40#page114#enu35#sfld39" name="Nazione" type="string"/>
       <Link id="sv2#area40#page114#enu35#ln168" name="Reset" to="sv2#area40#page114#alt11#page84" automaticCoupling="true" type="normal" validate="true"/>
       <MultiSelectionField id="sv2#area40#page114#enu35#msfld10" name="Prodotti nuovi" type="string"/>
+      <Field id="sv2#area40#page114#enu35#fld71" name="nome" type="string" modifiable="true"/>
     </EntryUnit>
     <SelectorUnit id="sv2#area40#page114#seu131" name="Tutti i prodotti" gr:x="350" gr:y="10" entity="ent4">
       <Link id="sv2#area40#page114#seu131#ln379" name="Flow55" to="sv2#area40#page114#seu134" type="transport" automaticCoupling="true" validate="true"/>
@@ -65,6 +67,7 @@
           <layout:Field field="sv2#area40#page114#enu35#sfld38"/>
           <layout:Field field="sv2#area40#page114#enu35#sfld39"/>
           <layout:Field field="sv2#area40#page114#enu35#msfld10"/>
+          <layout:Field field="sv2#area40#page114#enu35#fld71"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

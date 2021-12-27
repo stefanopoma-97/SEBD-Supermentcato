@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="70" gr:y="355" id="sv1#area8#page9" name="Pagina Elenco prodotti">
   <ContentUnits>
-    <EntryUnit gr:x="240" gr:y="550" id="sv1#area8#page9#enu3" name="Cerca" linkOrder="sv1#area8#page9#enu3#ln166 sv1#area8#page9#enu3#ln276">
+    <EntryUnit gr:x="300" gr:y="550" id="sv1#area8#page9#enu3" name="Cerca" linkOrder="sv1#area8#page9#enu3#ln166 sv1#area8#page9#enu3#ln276">
       <SelectionField id="sv1#area8#page9#enu3#sfld1" name="Categoria" type="string"/>
       <SelectionField id="sv1#area8#page9#enu3#sfld2" name="Fascia di prezzo" type="string"/>
       <SelectionField id="sv1#area8#page9#enu3#sfld10" name="Nazione" type="string"/>
@@ -10,8 +10,10 @@
         <LinkParameter id="sv1#area8#page9#enu3#ln276#par649" name="Fascia di prezzo_PASSING" source="sv1#area8#page9#enu3#sfld2" passing="true"/>
         <LinkParameter id="sv1#area8#page9#enu3#ln276#par651" name="Nazione_PASSING" source="sv1#area8#page9#enu3#sfld10" passing="true"/>
         <LinkParameter id="sv1#area8#page9#enu3#ln276#par709" name="Prodotti nuovi_Input" source="sv1#area8#page9#enu3#msfld2" target="sv1#area8#opg27#inn12.isnotnull"/>
+        <LinkParameter id="sv1#area8#page9#enu3#ln276#par76" name="Nome_PASSING" source="sv1#area8#page9#enu3#fld70" passing="true"/>
       </Link>
       <MultiSelectionField id="sv1#area8#page9#enu3#msfld2" name="Prodotti nuovi" type="string"/>
+      <Field id="sv1#area8#page9#enu3#fld70" name="Nome" type="string" modifiable="true"/>
     </EntryUnit>
     <SelectorUnit gr:x="360" gr:y="35" id="sv1#area8#page9#seu7" name="Tutti i prodotti" entity="ent4">
       <Link id="sv1#area8#page9#seu7#ln41" name="Flow41" to="sv1#area8#page9#seu14" automaticCoupling="true" type="transport" validate="true"/>
@@ -65,6 +67,7 @@
           <layout:Field field="sv1#area8#page9#enu3#sfld2"/>
           <layout:Field field="sv1#area8#page9#enu3#sfld10"/>
           <layout:Field field="sv1#area8#page9#enu3#msfld2"/>
+          <layout:Field field="sv1#area8#page9#enu3#fld70"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

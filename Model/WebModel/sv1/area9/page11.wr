@@ -1,12 +1,12 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="195" gr:y="205" id="sv1#area9#page11" name="Pagina Promozioni">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="355" gr:y="205" id="sv1#area9#page11" name="Pagina Promozioni">
   <ContentUnits>
-    <SelectorUnit gr:x="240" gr:y="35" id="sv1#area9#page11#seu16" name="Promozioni attive" entity="ent6">
+    <SelectorUnit gr:x="325" gr:y="5" id="sv1#area9#page11#seu16" name="Promozioni attive" entity="ent6">
       <Selector id="sv1#area9#page11#seu16#su15" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv1#area9#page11#seu16#su15#acond1" name="Non scaduta" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
       </Selector>
       <Link id="sv1#area9#page11#seu16#ln319" name="Flow6" to="sv1#area9#page11#alt4#page93#pwu34" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <EntryUnit gr:x="5" gr:y="410" id="sv1#area9#page11#enu4" name="Cerca" linkOrder="sv1#area9#page11#enu4#ln29 sv1#area9#page11#enu4#ln165">
+    <EntryUnit gr:x="30" gr:y="460" id="sv1#area9#page11#enu4" name="Cerca" linkOrder="sv1#area9#page11#enu4#ln29 sv1#area9#page11#enu4#ln165">
       <SelectionField id="sv1#area9#page11#enu4#sfld4" name="Negozio" type="string"/>
       <Field id="sv1#area9#page11#enu4#fld6" name="Negozio (parola chiave)" type="string" modifiable="true"/>
       <Field id="sv1#area9#page11#enu4#fld7" name="Prodotto" type="string" modifiable="true"/>
@@ -22,7 +22,7 @@
       <MultiSelectionField id="sv1#area9#page11#enu4#msfld4" name="Valida online" type="string"/>
       <Link id="sv1#area9#page11#enu4#ln165" name="Reset" to="sv1#area9#page11#alt4#page93" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
-    <SelectorUnit gr:x="125" gr:y="485" id="sv1#area9#page11#seu20" name="Negozi" entity="ent3">
+    <SelectorUnit gr:x="180" gr:y="515" id="sv1#area9#page11#seu20" name="Negozi" entity="ent3">
       <Link id="sv1#area9#page11#seu20#ln46" name="Flow46" to="sv1#area9#page11#enu4" type="transport" validate="true">
         <LinkParameter id="sv1#area9#page11#seu20#ln46#par21" name="nome_Negozio [label]" source="ent3#att9Array" target="sv1#area9#page11#enu4#sfld4_label"/>
         <LinkParameter id="sv1#area9#page11#seu20#ln46#par22" name="oid_Negozio [output]" source="ent3#att8Array" target="sv1#area9#page11#enu4#sfld4_output"/>
@@ -32,12 +32,12 @@
         <LinkParameter id="sv1#area9#page11#seu20#ln46#par32" name="1_Valida online [output]" sourceValue="1" target="sv1#area9#page11#enu4#msfld4_output"/>
       </Link>
     </SelectorUnit>
-    <TimeUnit gr:x="255" gr:y="185" id="sv1#area9#page11#tmu1" name="Data corrente">
+    <TimeUnit gr:x="335" gr:y="185" id="sv1#area9#page11#tmu1" name="Data corrente">
       <Link id="sv1#area9#page11#tmu1#ln25" name="Flow25" to="sv1#area9#page11#seu16" type="transport" validate="true">
         <LinkParameter id="sv1#area9#page11#tmu1#ln25#par3" name="Current/Input Date_Non scaduta" source="currentDate" target="sv1#area9#page11#seu16#su15#acond1"/>
       </Link>
     </TimeUnit>
-    <TimeUnit gr:x="120" gr:y="410" id="sv1#area9#page11#tmu2" name="Data corrente">
+    <TimeUnit gr:x="215" gr:y="410" id="sv1#area9#page11#tmu2" name="Data corrente">
       <Link id="sv1#area9#page11#tmu2#ln4" name="Flow4" to="sv1#area9#page11#enu4" type="transport" validate="true">
         <LinkParameter id="sv1#area9#page11#tmu2#ln4#par1" name="Current/Input Date_PASSING" source="currentDate" passing="true"/>
       </Link>
