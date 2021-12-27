@@ -1,27 +1,56 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="220" gr:y="1265" id="sv5#area18#opg19" name="Crea negozio" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="5" gr:y="1290" id="sv5#area18#opg19" name="Crea negozio" transaction="true">
   <OperationUnits>
-    <CreateUnit gr:x="0" gr:y="15" id="sv5#area18#opg19#cru8" name="Crea negozio" entity="ent18">
+    <CreateUnit gr:x="25" gr:y="15" id="sv5#area18#opg19#cru8" name="Crea negozio" entity="ent18">
       <OKLink id="sv5#area18#opg19#cru8#oln42" name="OKFlow42" to="sv5#area18#opg19#cru9">
-        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par262" name="Numero_PASSING_numero" sourceLinkParameter="sv5#area18#page63#enu14#ln145#par259" target="sv5#area18#opg19#cru9.ent2#att7"/>
-        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par263" name="Via_PASSING_via" sourceLinkParameter="sv5#area18#page63#enu14#ln145#par260" target="sv5#area18#opg19#cru9.ent2#att6"/>
         <LinkParameter id="sv5#area18#opg19#cru8#oln42#par264" name="oid_PASSING" source="ent3#att8Array" passing="true"/>
-        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par270" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln145#par269" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par912" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par898" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par913" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par899" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par914" name="Giovedi fine_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par900" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par915" name="Giovedi inzio_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par901" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par916" name="Lunedi fine_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par902" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par917" name="Lunedi inzio_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par903" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par918" name="Martedi fine_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par904" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par919" name="Martedi inizio_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par905" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par920" name="Mercoledi fine_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par906" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par921" name="Mercoledi inizio_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par907" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par922" name="Sabato fine_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par908" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par925" name="Sabato inizio_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par909" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par926" name="Venerdi fine_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par910" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par927" name="Venerdi inizio_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par911" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par1026" name="Numero_PASSING_numero" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par1024" target="sv5#area18#opg19#cru9.ent2#att7"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par1027" name="Via_PASSING_via" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par1025" target="sv5#area18#opg19#cru9.ent2#att6"/>
+        <LinkParameter id="sv5#area18#opg19#cru8#oln42#par1028" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#page63#enu14#ln384#par1023" passing="true"/>
       </OKLink>
       <KOLink id="sv5#area18#opg19#cru8#kln46" name="KOFlow46" to="sv5#area18#page64#mssu22">
         <LinkParameter id="sv5#area18#opg19#cru8#kln46#par257" name="Errore nella creazione del negozio_Shown Messages" sourceValue="Errore nella creazione del negozio" target="sv5#area18#page64#mssu22.shownMessages"/>
       </KOLink>
     </CreateUnit>
-    <CreateUnit gr:x="145" gr:y="15" id="sv5#area18#opg19#cru9" name="Crea indirizzo" entity="ent2">
+    <CreateUnit gr:x="250" gr:y="15" id="sv5#area18#opg19#cru9" name="Crea indirizzo" entity="ent2">
       <OKLink id="sv5#area18#opg19#cru9#oln44" name="OKFlow44" to="sv5#area18#opg19#cnu11">
         <LinkParameter id="sv5#area18#opg19#cru9#oln44#par265" name="oid_KeyCondition86 [oid] [Indirizzo] [Source]" source="ent2#att5Array" target="sv5#area18#opg19#cnu11#su138#kcond86.ent2#att5"/>
         <LinkParameter id="sv5#area18#opg19#cru9#oln44#par266" name="oid_PASSING_KeyCondition87 [oid] [Negozio] [Target]" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par264" target="sv5#area18#opg19#cnu11#su139#kcond87.ent3#att8"/>
-        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par271" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par270" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par928" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par912" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par929" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par913" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par930" name="Giovedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par914" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par931" name="Giovedi inzio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par915" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par932" name="Lunedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par916" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par956" name="Lunedi inzio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par917" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par957" name="Martedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par918" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par958" name="Martedi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par919" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par959" name="Mercoledi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par920" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par960" name="Mercoledi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par921" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par961" name="Sabato fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par922" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par962" name="Sabato inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par925" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par963" name="Venerdi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par926" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par964" name="Venerdi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par927" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par1029" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par1028" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru9#oln44#par1074" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cru8#oln42#par264" passing="true"/>
       </OKLink>
       <KOLink id="sv5#area18#opg19#cru9#kln48" name="KOFlow48" to="sv5#area18#page64#mssu22">
         <LinkParameter id="sv5#area18#opg19#cru9#kln48#par274" name="Errore creazione indirizzo_Shown Messages" sourceValue="Errore creazione indirizzo" target="sv5#area18#page64#mssu22.shownMessages"/>
       </KOLink>
     </CreateUnit>
-    <ConnectUnit gr:x="305" gr:y="0" id="sv5#area18#opg19#cnu11" name="Connetti indirizzo a negozio" relationship="rel2#role4">
+    <ConnectUnit gr:x="420" gr:y="0" id="sv5#area18#opg19#cnu11" name="Connetti indirizzo a negozio" relationship="rel2#role4">
       <SourceSelector id="sv5#area18#opg19#cnu11#su138" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area18#opg19#cnu11#su138#kcond86" name="KeyCondition86" predicate="in" implied="false"/>
       </SourceSelector>
@@ -30,23 +59,268 @@
       </TargetSelector>
       <OKLink id="sv5#area18#opg19#cnu11#oln45" name="OKFlow45" to="sv5#area18#opg19#cnu12">
         <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par272" name="Source oid [Indirizzo]_KeyCondition88 [oid] [Indirizzo] [Source]" source="sourceent2#att5" target="sv5#area18#opg19#cnu12#su140#kcond88.ent2#att5"/>
-        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par273" name="Citt&#224;_PASSING_KeyCondition89 [oid] [Citt&#224;] [Target]" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par271" target="sv5#area18#opg19#cnu12#su141#kcond89.ent1#att1"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par965" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par928" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par966" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par929" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par967" name="Giovedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par930" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par968" name="Giovedi inzio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par931" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par969" name="Lunedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par932" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par970" name="Lunedi inzio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par956" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par1014" name="Martedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par957" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par1016" name="Martedi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par958" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par1017" name="Mercoledi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par959" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par1018" name="Mercoledi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par960" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par1019" name="Sabato fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par961" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par1020" name="Sabato inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par962" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par1021" name="Venerdi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par963" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par1022" name="Venerdi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par964" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par1030" name="Citt&#224;_PASSING_KeyCondition89 [oid] [Citt&#224;] [Target]" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par1029" target="sv5#area18#opg19#cnu12#su141#kcond89.ent1#att1"/>
+        <LinkParameter id="sv5#area18#opg19#cnu11#oln45#par1076" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cru9#oln44#par1074" passing="true"/>
       </OKLink>
       <KOLink id="sv5#area18#opg19#cnu11#kln49" name="KOFlow49" to="sv5#area18#page64#mssu22">
         <LinkParameter id="sv5#area18#opg19#cnu11#kln49#par275" name="Errore connessione tra indirizzo e negozio_Shown Messages" sourceValue="Errore connessione tra indirizzo e negozio" target="sv5#area18#page64#mssu22.shownMessages"/>
       </KOLink>
     </ConnectUnit>
-    <ConnectUnit gr:x="550" gr:y="0" id="sv5#area18#opg19#cnu12" name="Connetti indirizzo a citt&#224;" relationship="rel1#role2">
+    <ConnectUnit gr:x="685" gr:y="0" id="sv5#area18#opg19#cnu12" name="Connetti indirizzo a citt&#224;" relationship="rel1#role2">
       <SourceSelector id="sv5#area18#opg19#cnu12#su140" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area18#opg19#cnu12#su140#kcond88" name="KeyCondition88" predicate="in" implied="false"/>
       </SourceSelector>
       <TargetSelector id="sv5#area18#opg19#cnu12#su141" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area18#opg19#cnu12#su141#kcond89" name="KeyCondition89" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv5#area18#opg19#cnu12#oln46" name="OKFlow46" to="sv5#area18#page61" automaticCoupling="true"/>
       <KOLink id="sv5#area18#opg19#cnu12#kln50" name="KOFlow50" to="sv5#area18#page64#mssu22">
         <LinkParameter id="sv5#area18#opg19#cnu12#kln50#par276" name="Errore connessione indirizzo e citt&#224;_Shown Messages" sourceValue="Errore connessione indirizzo e citt&#224;" target="sv5#area18#page64#mssu22.shownMessages"/>
       </KOLink>
+      <OKLink id="sv5#area18#opg19#cnu12#oln206" name="OKFlow206" to="sv5#area18#opg19#cru12">
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1040" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par965" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1041" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par966" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1042" name="Giovedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par967" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1043" name="Giovedi inzio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par968" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1044" name="Martedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par1014" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1045" name="Martedi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par1016" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1064" name="Mercoledi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par1017" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1065" name="Mercoledi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par1018" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1066" name="Sabato fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par1019" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1067" name="Sabato inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par1020" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1068" name="Venerdi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par1021" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1069" name="Venerdi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par1022" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1070" name="Lunedi fine_PASSING_ora fine" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par969" target="sv5#area18#opg19#cru12.ent20#att48"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1071" name="Lunedi inzio_PASSING_ora inizio" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par970" target="sv5#area18#opg19#cru12.ent20#att47"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1078" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu11#oln45#par1076" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu12#oln206#par1165" name="Luned&#236;_giorno" sourceValue="Luned&#236;" target="sv5#area18#opg19#cru12.ent20#att46"/>
+      </OKLink>
     </ConnectUnit>
+    <CreateUnit gr:x="715" gr:y="150" id="sv5#area18#opg19#cru12" name="Crea orario lunedi" entity="ent20">
+      <OKLink id="sv5#area18#opg19#cru12#oln207" name="OKFlow207" to="sv5#area18#opg19#cnu18">
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1080" name="oid_KeyCondition185 [oid] [Orario] [Source]" source="ent20#att43Array" target="sv5#area18#opg19#cnu18#su227#kcond185.ent20#att43"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1082" name="oid_PASSING_KeyCondition187 [oid] [Negozio] [Target]" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1078" target="sv5#area18#opg19#cnu18#su228#kcond187.ent3#att8"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1084" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1040" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1086" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1041" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1088" name="Giovedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1042" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1090" name="Giovedi inzio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1043" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1092" name="Martedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1044" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1094" name="Martedi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1045" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1096" name="Mercoledi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1064" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1097" name="Mercoledi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1065" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1098" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1078" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1099" name="Sabato fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1066" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1100" name="Sabato inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1067" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1101" name="Venerdi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1068" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru12#oln207#par1102" name="Venerdi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu12#oln206#par1069" passing="true"/>
+      </OKLink>
+    </CreateUnit>
+    <ConnectUnit gr:x="460" gr:y="135" id="sv5#area18#opg19#cnu18" name="Connetti orario" relationship="rel19#role37">
+      <SourceSelector id="sv5#area18#opg19#cnu18#su227" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu18#su227#kcond185" name="KeyCondition185" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area18#opg19#cnu18#su228" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu18#su228#kcond187" name="KeyCondition187" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area18#opg19#cnu18#oln211" name="OKFlow211" to="sv5#area18#opg19#cru13">
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1103" name="Marted&#236;_giorno" sourceValue="Marted&#236;" target="sv5#area18#opg19#cru13.ent20#att46"/>
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1104" name="Martedi fine_PASSING_ora fine" sourceLinkParameter="sv5#area18#opg19#cru12#oln207#par1092" target="sv5#area18#opg19#cru13.ent20#att48"/>
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1105" name="Martedi inizio_PASSING_ora inizio" sourceLinkParameter="sv5#area18#opg19#cru12#oln207#par1094" target="sv5#area18#opg19#cru13.ent20#att47"/>
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1106" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru12#oln207#par1084" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1144" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru12#oln207#par1086" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1156" name="Giovedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru12#oln207#par1088" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1157" name="Giovedi inzio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru12#oln207#par1090" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1158" name="Mercoledi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru12#oln207#par1096" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1159" name="Mercoledi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru12#oln207#par1097" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1160" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cru12#oln207#par1098" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1161" name="Sabato fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru12#oln207#par1099" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1162" name="Sabato inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru12#oln207#par1100" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1163" name="Venerdi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru12#oln207#par1101" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu18#oln211#par1164" name="Venerdi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru12#oln207#par1102" passing="true"/>
+      </OKLink>
+    </ConnectUnit>
+    <ConnectUnit id="sv5#area18#opg19#cnu19" name="Connetti orario" gr:x="15" gr:y="135" relationship="rel19#role37">
+      <SourceSelector id="sv5#area18#opg19#cnu19#su230" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu19#su230#kcond192" name="KeyCondition185" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area18#opg19#cnu19#su257" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu19#su257#kcond193" name="KeyCondition187" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area18#opg19#cnu19#oln213" name="OKFlow213" to="sv5#area18#opg19#cru14">
+        <LinkParameter id="sv5#area18#opg19#cnu19#oln213#par1179" name="Mercoled&#236;_giorno" sourceValue="Mercoled&#236;" target="sv5#area18#opg19#cru14.ent20#att46"/>
+        <LinkParameter id="sv5#area18#opg19#cnu19#oln213#par1180" name="Mercoledi fine_PASSING_ora fine" sourceLinkParameter="sv5#area18#opg19#cru13#oln212#par1172" target="sv5#area18#opg19#cru14.ent20#att48"/>
+        <LinkParameter id="sv5#area18#opg19#cnu19#oln213#par1181" name="Mercoledi inizio_PASSING_ora inizio" sourceLinkParameter="sv5#area18#opg19#cru13#oln212#par1173" target="sv5#area18#opg19#cru14.ent20#att47"/>
+        <LinkParameter id="sv5#area18#opg19#cnu19#oln213#par1182" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru13#oln212#par1168" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu19#oln213#par1183" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru13#oln212#par1169" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu19#oln213#par1184" name="Giovedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru13#oln212#par1170" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu19#oln213#par1185" name="Giovedi inzio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru13#oln212#par1171" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu19#oln213#par1186" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cru13#oln212#par1174" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu19#oln213#par1187" name="Sabato fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru13#oln212#par1175" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu19#oln213#par1188" name="Sabato inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru13#oln212#par1176" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu19#oln213#par1189" name="Venerdi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru13#oln212#par1177" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu19#oln213#par1190" name="Venerdi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru13#oln212#par1178" passing="true"/>
+      </OKLink>
+    </ConnectUnit>
+    <CreateUnit id="sv5#area18#opg19#cru13" name="Crea orario martedi" gr:x="230" gr:y="150" entity="ent20">
+      <OKLink id="sv5#area18#opg19#cru13#oln212" name="OKFlow212" to="sv5#area18#opg19#cnu19">
+        <LinkParameter id="sv5#area18#opg19#cru13#oln212#par1166" name="oid_KeyCondition185 [oid] [Orario] [Source]" source="ent20#att43Array" target="sv5#area18#opg19#cnu19#su230#kcond192.ent20#att43"/>
+        <LinkParameter id="sv5#area18#opg19#cru13#oln212#par1167" name="oid_PASSING_KeyCondition187 [oid] [Negozio] [Target]" sourceLinkParameter="sv5#area18#opg19#cnu18#oln211#par1160" target="sv5#area18#opg19#cnu19#su257#kcond193.ent3#att8"/>
+        <LinkParameter id="sv5#area18#opg19#cru13#oln212#par1168" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu18#oln211#par1106" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru13#oln212#par1169" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu18#oln211#par1144" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru13#oln212#par1170" name="Giovedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu18#oln211#par1156" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru13#oln212#par1171" name="Giovedi inzio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu18#oln211#par1157" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru13#oln212#par1172" name="Mercoledi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu18#oln211#par1158" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru13#oln212#par1173" name="Mercoledi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu18#oln211#par1159" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru13#oln212#par1174" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu18#oln211#par1160" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru13#oln212#par1175" name="Sabato fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu18#oln211#par1161" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru13#oln212#par1176" name="Sabato inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu18#oln211#par1162" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru13#oln212#par1177" name="Venerdi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu18#oln211#par1163" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru13#oln212#par1178" name="Venerdi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu18#oln211#par1164" passing="true"/>
+      </OKLink>
+    </CreateUnit>
+    <ConnectUnit id="sv5#area18#opg19#cnu20" name="Connetti orario mercoledi" gr:x="225" gr:y="270" relationship="rel19#role37">
+      <SourceSelector id="sv5#area18#opg19#cnu20#su262" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu20#su262#kcond194" name="KeyCondition185" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area18#opg19#cnu20#su266" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu20#su266#kcond196" name="KeyCondition187" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area18#opg19#cnu20#oln215" name="OKFlow215" to="sv5#area18#opg19#cru19">
+        <LinkParameter id="sv5#area18#opg19#cnu20#oln215#par1202" name="Gioved&#236;_giorno" sourceValue="Gioved&#236;" target="sv5#area18#opg19#cru19.ent20#att46"/>
+        <LinkParameter id="sv5#area18#opg19#cnu20#oln215#par1203" name="Giovedi fine_PASSING_ora fine" sourceLinkParameter="sv5#area18#opg19#cru14#oln214#par1195" target="sv5#area18#opg19#cru19.ent20#att48"/>
+        <LinkParameter id="sv5#area18#opg19#cnu20#oln215#par1204" name="Giovedi inzio_PASSING_ora inizio" sourceLinkParameter="sv5#area18#opg19#cru14#oln214#par1196" target="sv5#area18#opg19#cru19.ent20#att47"/>
+        <LinkParameter id="sv5#area18#opg19#cnu20#oln215#par1205" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru14#oln214#par1193" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu20#oln215#par1206" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru14#oln214#par1194" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu20#oln215#par1207" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cru14#oln214#par1197" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu20#oln215#par1208" name="Sabato fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru14#oln214#par1198" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu20#oln215#par1209" name="Sabato inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru14#oln214#par1199" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu20#oln215#par1210" name="Venerdi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru14#oln214#par1200" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu20#oln215#par1211" name="Venerdi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru14#oln214#par1201" passing="true"/>
+      </OKLink>
+    </ConnectUnit>
+    <CreateUnit id="sv5#area18#opg19#cru14" name="Crea orario mercoledi" gr:x="0" gr:y="285" entity="ent20">
+      <OKLink id="sv5#area18#opg19#cru14#oln214" name="OKFlow214" to="sv5#area18#opg19#cnu20">
+        <LinkParameter id="sv5#area18#opg19#cru14#oln214#par1191" name="oid_KeyCondition185 [oid] [Orario] [Source]" source="ent20#att43Array" target="sv5#area18#opg19#cnu20#su262#kcond194.ent20#att43"/>
+        <LinkParameter id="sv5#area18#opg19#cru14#oln214#par1192" name="oid_PASSING_KeyCondition187 [oid] [Negozio] [Target]" sourceLinkParameter="sv5#area18#opg19#cnu19#oln213#par1186" target="sv5#area18#opg19#cnu20#su266#kcond196.ent3#att8"/>
+        <LinkParameter id="sv5#area18#opg19#cru14#oln214#par1193" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu19#oln213#par1182" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru14#oln214#par1194" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu19#oln213#par1183" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru14#oln214#par1195" name="Giovedi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu19#oln213#par1184" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru14#oln214#par1196" name="Giovedi inzio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu19#oln213#par1185" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru14#oln214#par1197" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu19#oln213#par1186" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru14#oln214#par1198" name="Sabato fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu19#oln213#par1187" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru14#oln214#par1199" name="Sabato inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu19#oln213#par1188" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru14#oln214#par1200" name="Venerdi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu19#oln213#par1189" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru14#oln214#par1201" name="Venerdi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu19#oln213#par1190" passing="true"/>
+      </OKLink>
+    </CreateUnit>
+    <ConnectUnit id="sv5#area18#opg19#cnu21" name="Connetti orario giovedi" gr:x="690" gr:y="270" relationship="rel19#role37">
+      <SourceSelector id="sv5#area18#opg19#cnu21#su268" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu21#su268#kcond197" name="KeyCondition185" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area18#opg19#cnu21#su277" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu21#su277#kcond203" name="KeyCondition187" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area18#opg19#cnu21#oln217" name="OKFlow217" to="sv5#area18#opg19#cru21">
+        <LinkParameter id="sv5#area18#opg19#cnu21#oln217#par1221" name="Venerd&#236;_giorno" sourceValue="Venerd&#236;" target="sv5#area18#opg19#cru21.ent20#att46"/>
+        <LinkParameter id="sv5#area18#opg19#cnu21#oln217#par1222" name="Venerdi fine_PASSING_ora fine" sourceLinkParameter="sv5#area18#opg19#cru19#oln216#par1219" target="sv5#area18#opg19#cru21.ent20#att48"/>
+        <LinkParameter id="sv5#area18#opg19#cnu21#oln217#par1223" name="Venerdi inizio_PASSING_ora inizio" sourceLinkParameter="sv5#area18#opg19#cru19#oln216#par1220" target="sv5#area18#opg19#cru21.ent20#att47"/>
+        <LinkParameter id="sv5#area18#opg19#cnu21#oln217#par1224" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru19#oln216#par1214" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu21#oln217#par1225" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru19#oln216#par1215" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu21#oln217#par1226" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cru19#oln216#par1216" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu21#oln217#par1227" name="Sabato fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru19#oln216#par1217" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu21#oln217#par1228" name="Sabato inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru19#oln216#par1218" passing="true"/>
+      </OKLink>
+    </ConnectUnit>
+    <CreateUnit id="sv5#area18#opg19#cru19" name="Crea orario giovedi" gr:x="465" gr:y="285" entity="ent20">
+      <OKLink id="sv5#area18#opg19#cru19#oln216" name="OKFlow216" to="sv5#area18#opg19#cnu21">
+        <LinkParameter id="sv5#area18#opg19#cru19#oln216#par1212" name="oid_KeyCondition185 [oid] [Orario] [Source]" source="ent20#att43Array" target="sv5#area18#opg19#cnu21#su268#kcond197.ent20#att43"/>
+        <LinkParameter id="sv5#area18#opg19#cru19#oln216#par1213" name="oid_PASSING_KeyCondition187 [oid] [Negozio] [Target]" sourceLinkParameter="sv5#area18#opg19#cnu20#oln215#par1207" target="sv5#area18#opg19#cnu21#su277#kcond203.ent3#att8"/>
+        <LinkParameter id="sv5#area18#opg19#cru19#oln216#par1214" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu20#oln215#par1205" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru19#oln216#par1215" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu20#oln215#par1206" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru19#oln216#par1216" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu20#oln215#par1207" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru19#oln216#par1217" name="Sabato fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu20#oln215#par1208" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru19#oln216#par1218" name="Sabato inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu20#oln215#par1209" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru19#oln216#par1219" name="Venerdi fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu20#oln215#par1210" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru19#oln216#par1220" name="Venerdi inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu20#oln215#par1211" passing="true"/>
+      </OKLink>
+    </CreateUnit>
+    <ConnectUnit id="sv5#area18#opg19#cnu22" name="Connetti orario" gr:x="25" gr:y="395" relationship="rel19#role37">
+      <SourceSelector id="sv5#area18#opg19#cnu22#su285" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu22#su285#kcond204" name="KeyCondition185" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area18#opg19#cnu22#su310" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu22#su310#kcond215" name="KeyCondition187" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area18#opg19#cnu22#oln228" name="OKFlow228" to="sv5#area18#opg19#cru22">
+        <LinkParameter id="sv5#area18#opg19#cnu22#oln228#par1247" name="Domenica_giorno" sourceValue="Domenica" target="sv5#area18#opg19#cru22.ent20#att46"/>
+        <LinkParameter id="sv5#area18#opg19#cnu22#oln228#par1248" name="Domenica fine_PASSING_ora fine" sourceLinkParameter="sv5#area18#opg19#cru20#oln220#par1244" target="sv5#area18#opg19#cru22.ent20#att48"/>
+        <LinkParameter id="sv5#area18#opg19#cnu22#oln228#par1249" name="Domenica inizio_PASSING_ora inizio" sourceLinkParameter="sv5#area18#opg19#cru20#oln220#par1245" target="sv5#area18#opg19#cru22.ent20#att47"/>
+        <LinkParameter id="sv5#area18#opg19#cnu22#oln228#par1250" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cru20#oln220#par1246" passing="true"/>
+      </OKLink>
+    </ConnectUnit>
+    <CreateUnit id="sv5#area18#opg19#cru20" name="Crea orario sabato" gr:x="245" gr:y="410" entity="ent20">
+      <OKLink id="sv5#area18#opg19#cru20#oln220" name="OKFlow220" to="sv5#area18#opg19#cnu22">
+        <LinkParameter id="sv5#area18#opg19#cru20#oln220#par1242" name="oid_KeyCondition185 [oid] [Orario] [Source]" source="ent20#att43Array" target="sv5#area18#opg19#cnu22#su285#kcond204.ent20#att43"/>
+        <LinkParameter id="sv5#area18#opg19#cru20#oln220#par1243" name="oid_PASSING_KeyCondition187 [oid] [Negozio] [Target]" sourceLinkParameter="sv5#area18#opg19#cnu23#oln219#par1241" target="sv5#area18#opg19#cnu22#su310#kcond215.ent3#att8"/>
+        <LinkParameter id="sv5#area18#opg19#cru20#oln220#par1244" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu23#oln219#par1239" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru20#oln220#par1245" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu23#oln219#par1240" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru20#oln220#par1246" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu23#oln219#par1241" passing="true"/>
+      </OKLink>
+    </CreateUnit>
+    <ConnectUnit id="sv5#area18#opg19#cnu23" name="Connetti orario" gr:x="460" gr:y="395" relationship="rel19#role37">
+      <SourceSelector id="sv5#area18#opg19#cnu23#su311" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu23#su311#kcond216" name="KeyCondition185" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area18#opg19#cnu23#su312" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu23#su312#kcond217" name="KeyCondition187" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area18#opg19#cnu23#oln219" name="OKFlow219" to="sv5#area18#opg19#cru20">
+        <LinkParameter id="sv5#area18#opg19#cnu23#oln219#par1236" name="Sabato_giorno" sourceValue="Sabato" target="sv5#area18#opg19#cru20.ent20#att46"/>
+        <LinkParameter id="sv5#area18#opg19#cnu23#oln219#par1237" name="Sabato fine_PASSING_ora fine" sourceLinkParameter="sv5#area18#opg19#cru21#oln218#par1234" target="sv5#area18#opg19#cru20.ent20#att48"/>
+        <LinkParameter id="sv5#area18#opg19#cnu23#oln219#par1238" name="Sabato inizio_PASSING_ora inizio" sourceLinkParameter="sv5#area18#opg19#cru21#oln218#par1235" target="sv5#area18#opg19#cru20.ent20#att47"/>
+        <LinkParameter id="sv5#area18#opg19#cnu23#oln219#par1239" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cru21#oln218#par1231" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu23#oln219#par1240" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cru21#oln218#par1232" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cnu23#oln219#par1241" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cru21#oln218#par1233" passing="true"/>
+      </OKLink>
+    </ConnectUnit>
+    <CreateUnit id="sv5#area18#opg19#cru21" name="Crea orario venerdi" gr:x="705" gr:y="410" entity="ent20">
+      <OKLink id="sv5#area18#opg19#cru21#oln218" name="OKFlow218" to="sv5#area18#opg19#cnu23">
+        <LinkParameter id="sv5#area18#opg19#cru21#oln218#par1229" name="oid_KeyCondition185 [oid] [Orario] [Source]" source="ent20#att43Array" target="sv5#area18#opg19#cnu23#su311#kcond216.ent20#att43"/>
+        <LinkParameter id="sv5#area18#opg19#cru21#oln218#par1230" name="oid_PASSING_KeyCondition187 [oid] [Negozio] [Target]" sourceLinkParameter="sv5#area18#opg19#cnu21#oln217#par1226" target="sv5#area18#opg19#cnu23#su312#kcond217.ent3#att8"/>
+        <LinkParameter id="sv5#area18#opg19#cru21#oln218#par1231" name="Domenica fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu21#oln217#par1224" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru21#oln218#par1232" name="Domenica inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu21#oln217#par1225" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru21#oln218#par1233" name="oid_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu21#oln217#par1226" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru21#oln218#par1234" name="Sabato fine_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu21#oln217#par1227" passing="true"/>
+        <LinkParameter id="sv5#area18#opg19#cru21#oln218#par1235" name="Sabato inizio_PASSING" sourceLinkParameter="sv5#area18#opg19#cnu21#oln217#par1228" passing="true"/>
+      </OKLink>
+    </CreateUnit>
+    <ConnectUnit id="sv5#area18#opg19#cnu24" name="Connetti orario domenica" gr:x="220" gr:y="535" relationship="rel19#role37">
+      <SourceSelector id="sv5#area18#opg19#cnu24#su313" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu24#su313#kcond218" name="KeyCondition185" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv5#area18#opg19#cnu24#su318" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area18#opg19#cnu24#su318#kcond219" name="KeyCondition187" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv5#area18#opg19#cnu24#oln204" name="OKFlow46" to="sv5#area18#page61" automaticCoupling="true" gr:bendpoints="616,2,596,1152;614,-608,594,542"/>
+    </ConnectUnit>
+    <CreateUnit id="sv5#area18#opg19#cru22" name="Crea orario" gr:x="40" gr:y="550" entity="ent20">
+      <OKLink id="sv5#area18#opg19#cru22#oln229" name="OKFlow229" to="sv5#area18#opg19#cnu24">
+        <LinkParameter id="sv5#area18#opg19#cru22#oln229#par1251" name="oid_KeyCondition185 [oid] [Orario] [Source]" source="ent20#att43Array" target="sv5#area18#opg19#cnu24#su313#kcond218.ent20#att43"/>
+        <LinkParameter id="sv5#area18#opg19#cru22#oln229#par1252" name="oid_PASSING_KeyCondition187 [oid] [Negozio] [Target]" sourceLinkParameter="sv5#area18#opg19#cnu22#oln228#par1250" target="sv5#area18#opg19#cnu24#su318#kcond219.ent3#att8"/>
+      </OKLink>
+    </CreateUnit>
   </OperationUnits>
 </OperationGroup>

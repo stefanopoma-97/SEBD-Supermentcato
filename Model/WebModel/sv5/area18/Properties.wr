@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-900" gr:y="-1305" id="sv5#area18" name="Gestione negozi" landmark="true" defaultPage="sv5#area18#page61">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-840" gr:y="-1855" id="sv5#area18" name="Gestione negozi" landmark="true" defaultPage="sv5#area18#page61">
   <OperationUnits>
     <ModuleInstanceUnit gr:x="935" gr:y="350" id="sv5#area18#miu17" moduleId="mov1#opm11">
       <KOLink id="sv5#area18#miu17#kln114" to="sv5#area18#page66#mssu23" name="KOFlow51">

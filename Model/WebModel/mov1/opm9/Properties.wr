@@ -8,10 +8,10 @@
         <LinkParameter id="mov1#opm9#icu9#oln144#par549" source="mov1#opm9#icu9#icp13" name="oid_PASSING" passing="true"/>
       </OKLink>
     </InputCollectorUnit>
-    <OKCollectorUnit gr:x="700" gr:y="600" id="mov1#opm9#okcu11" name="OK Port11">
+    <OKCollectorUnit gr:x="680" gr:y="75" id="mov1#opm9#okcu11" name="OK Port11">
       <OutputCollectorParameter id="mov1#opm9#okcu11#ocp13" name="Ci sono prodotti associati alla categoria. Impossibile eliminare la categoria_Shown Messages"/>
     </OKCollectorUnit>
-    <KOCollectorUnit gr:x="700" gr:y="300" id="mov1#opm9#kocu13" name="KO Port13"/>
-    <OKCollectorUnit gr:x="700" gr:y="0" id="mov1#opm9#okcu10" name="OK Port10"/>
+    <KOCollectorUnit gr:x="680" gr:y="305" id="mov1#opm9#kocu13" name="KO Port13"/>
+    <OKCollectorUnit gr:x="680" gr:y="185" id="mov1#opm9#okcu10" name="OK Port10"/>
   </OperationUnits>
 </OperationModule>
