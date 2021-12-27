@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="120" id="sv4#area15#page32" name="Dettagli prodotto online">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="25" id="sv4#area15#page32" name="Dettagli prodotto online">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv4#area15#page32#dau15" name="Dettagli prodotto online" entity="ent8" displayAttributes="rel8#role15.ent4#att15 rel8#role15.ent4#att16 rel8#role15.ent4#att17 rel8#role15.ent4#att18 rel8#role15.ent4#att53 rel8#role15.ent4#att59 rel8#role15.ent4#att60" linkOrder="sv4#area15#page32#dau15#ln322">
       <Selector id="sv4#area15#page32#dau15#su64" defaultPolicy="fill" booleanOperator="and">
@@ -89,11 +89,11 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Alternative gr:x="5" gr:y="190" id="sv4#area15#page32#alt13" name="promozione" defaultPage="sv4#area15#page32#alt13#page91">
+  <Alternative gr:x="5" gr:y="275" id="sv4#area15#page32#alt13" name="promozione" defaultPage="sv4#area15#page32#alt13#page91">
     <Page gr:x="0" gr:y="0" id="sv4#area15#page32#alt13#page91" name="promozione">
       <ContentUnits>
         <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area15#page32#alt13#page91#mssu46" name="Attenzione" linkOrder="sv4#area15#page32#alt13#page91#mssu46#ln323">
-          <Link id="sv4#area15#page32#alt13#page91#mssu46#ln323" name="Dettagli promozione" to="sv4#area14#page28#dau14" type="normal" validate="true">
+          <Link id="sv4#area15#page32#alt13#page91#mssu46#ln323" name="Dettagli promozione" to="sv4#area14#page28#dau14" type="normal" validate="true" gr:bendpoints="-2,810,-212,0">
             <LinkParameter id="sv4#area15#page32#alt13#page91#mssu46#ln323#par745" name="Input Value_PASSING_KeyCondition21 [oid]" sourceLinkParameter="sv4#area15#opg4#inn21#oln53#par744" target="sv4#area14#page28#dau14#su55#kcond21.ent6#att22"/>
           </Link>
         </MultiMessageUnit>

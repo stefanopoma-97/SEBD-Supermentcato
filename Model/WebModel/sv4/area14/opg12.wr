@@ -1,11 +1,11 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="290" id="sv4#area14#opg12" name="Elimina promozione" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="355" id="sv4#area14#opg12" name="Elimina promozione" transaction="true">
   <OperationUnits>
     <DeleteUnit id="sv4#area14#opg12#dlu4" name="Elimina promozione" gr:x="0" gr:y="0" entity="ent6">
       <Selector id="sv4#area14#opg12#dlu4#su76" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area14#opg12#dlu4#su76#kcond45" name="KeyCondition33" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv4#area14#opg12#dlu4#oln20" name="OKFlow20" to="sv4#area14#page27" automaticCoupling="true"/>
-      <KOLink id="sv4#area14#opg12#dlu4#kln15" name="KOFlow15" to="sv4#area14#page35#mssu14" gr:bendpoints="70,-132,-795,3">
+      <KOLink id="sv4#area14#opg12#dlu4#kln15" name="KOFlow15" to="sv4#area14#page35#mssu14" gr:bendpoints="68,-206,-798,0">
         <LinkParameter id="sv4#area14#opg12#dlu4#kln15#par89" name="Errore durante l'eliminazione della promozione_Shown Messages" sourceValue="Errore durante l'eliminazione della promozione" target="sv4#area14#page35#mssu14.shownMessages"/>
       </KOLink>
     </DeleteUnit>

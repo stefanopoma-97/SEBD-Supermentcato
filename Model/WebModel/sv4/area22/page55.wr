@@ -13,7 +13,7 @@
       <Link id="sv4#area22#page55#dau21#ln36" name="Flow36" to="sv4#area22#page55#scu13" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv4#area22#page55#dau21#ln272" name="Flow272" to="sv4#area22#page55#seu52" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
-    <PowerIndexUnit gr:x="250" gr:y="375" id="sv4#area22#page55#pwu46" name="Elenco dipendenti" sortable="true" checkable="false" useCountQuery="false" entity="ent14" displayAttributes="ent12#att51 ent12#att52 userName email ent14#att54">
+    <PowerIndexUnit gr:x="250" gr:y="355" id="sv4#area22#page55#pwu46" name="Elenco dipendenti" sortable="true" checkable="false" useCountQuery="false" entity="ent14" displayAttributes="ent12#att51 ent12#att52 userName email ent14#att54">
       <Selector id="sv4#area22#page55#pwu46#su201" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area22#page55#pwu46#su201#kcond165" name="KeyCondition165" predicate="in" implied="false"/>
       </Selector>
@@ -22,7 +22,7 @@
       <SortAttribute attribute="ent14#att54" order="ascending"/>
       <SortAttribute attribute="userName" order="ascending"/>
     </PowerIndexUnit>
-    <PowerIndexUnit gr:x="85" gr:y="380" id="sv4#area22#page55#pwu48" name="Elenco spese" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att35 ent9#att36 ent9#att63">
+    <PowerIndexUnit gr:x="60" gr:y="355" id="sv4#area22#page55#pwu48" name="Elenco spese online" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att35 ent9#att36 ent9#att63">
       <SortAttribute attribute="ent9#att35" order="descending"/>
       <SortAttribute attribute="ent9#att36" order="descending"/>
       <SortAttribute attribute="ent9#att63" order="descending"/>
@@ -30,7 +30,7 @@
         <KeyCondition id="sv4#area22#page55#pwu48#su203#kcond124" name="KeyCondition124" predicate="in" implied="false"/>
       </Selector>
     </PowerIndexUnit>
-    <SelectorUnit gr:x="0" gr:y="110" id="sv4#area22#page55#seu52" name="Spese non consegnate" entity="ent9">
+    <SelectorUnit gr:x="0" gr:y="100" id="sv4#area22#page55#seu52" name="Spese non consegnate" entity="ent9">
       <Link id="sv4#area22#page55#seu52#ln277" name="Flow277" to="sv4#area22#page55#scu12" automaticCoupling="true" type="transport" validate="true"/>
       <Selector id="sv4#area22#page55#seu52#su202" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv4#area22#page55#seu52#su202#acond57" name="NonCosegnate" predicate="eq" booleanOperator="or" implied="false" attributes="rel12#role23.ent10#att38" value="In attesa"/>
@@ -38,10 +38,10 @@
         <AttributesCondition id="sv4#area22#page55#seu52#su202#acond70" name="PronteSpedizione" predicate="eq" booleanOperator="or" implied="false" attributes="rel12#role23.ent10#att38" value="Pronto per la spedizione"/>
       </Selector>
     </SelectorUnit>
-    <ScrollerUnit gr:x="85" gr:y="265" id="sv4#area22#page55#scu12" name="Scorri spese" useCountQuery="false" linkOrder="sv4#area22#page55#scu12#ln279" entity="ent9" blockFactor="5">
+    <ScrollerUnit gr:x="80" gr:y="240" id="sv4#area22#page55#scu12" name="Scorri spese" useCountQuery="false" linkOrder="sv4#area22#page55#scu12#ln279" entity="ent9" blockFactor="5">
       <Link id="sv4#area22#page55#scu12#ln279" name="Flow279" to="sv4#area22#page55#pwu48" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
-    <ScrollerUnit gr:x="250" gr:y="260" id="sv4#area22#page55#scu13" name="Scorri dipendenti" useCountQuery="false" entity="ent14" linkOrder="sv4#area22#page55#scu13#ln329" blockFactor="5">
+    <ScrollerUnit gr:x="250" gr:y="235" id="sv4#area22#page55#scu13" name="Scorri dipendenti" useCountQuery="false" entity="ent14" linkOrder="sv4#area22#page55#scu13#ln329" blockFactor="5">
       <Link id="sv4#area22#page55#scu13#ln329" name="Flow329" to="sv4#area22#page55#pwu46" automaticCoupling="true" type="automatic" validate="true"/>
       <Selector id="sv4#area22#page55#scu13#su204" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area22#page55#scu13#su204#rcond47" name="NegozioDipendente" predicate="in" implied="false" role="rel14#role28"/>
