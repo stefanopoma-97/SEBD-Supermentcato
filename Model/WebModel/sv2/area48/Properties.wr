@@ -1,0 +1,18 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area48" name="Area Negozi" defaultPage="sv2#area48#page176" landmark="true" gr:x="2055" gr:y="1705">
+  <OperationUnits>
+    <ModuleInstanceUnit id="sv2#area48#miu28" gr:x="445" gr:y="0" action="true" moduleId="mov1#opm6">
+      <KOLink id="sv2#area48#miu28#kln173" name="KOFlow7" to="sv2#area48#page175#mssu72" gr:bendpoints="249,68,-11,-202">
+        <LinkParameter id="sv2#area48#miu28#kln173#par1629" name="Chiuso_Shown Messages" target="sv2#area48#page175#mssu72.shownMessages" sourceValue="Chiuso"/>
+      </KOLink>
+      <OKLink id="sv2#area48#miu28#oln233" name="OKFlow51" to="sv2#area48#page175#mssu72">
+        <LinkParameter id="sv2#area48#miu28#oln233#par1630" name="Aperto_Shown Messages" target="sv2#area48#page175#mssu72.shownMessages" sourceValue="Aperto"/>
+      </OKLink>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit id="sv2#area48#miu29" gr:x="645" gr:y="1015" action="true" moduleId="mov1#opm13">
+      <KOLink id="sv2#area48#miu29#kln174" name="KOFlow209" to="sv2#area48#page179#mssu73" automaticCoupling="true"/>
+      <OKLink id="sv2#area48#miu29#oln234" name="OKFlow235" to="sv2#area48#page176#alt23#page178#pwu69">
+        <LinkParameter id="sv2#area48#miu29#oln234#par1631" name="oid_KeyCondition15 [oid]" source="mov1#opm13#okcu15#ocp26" target="sv2#area48#page176#alt23#page178#pwu69#su444#kcond272.ent3#att8"/>
+      </OKLink>
+    </ModuleInstanceUnit>
+  </OperationUnits>
+</Area>

@@ -1,0 +1,139 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area23#page65" name="Pagina di registrazione" gr:x="0" gr:y="15">
+  <ContentUnits>
+    <MultiMessageUnit id="sv1#area23#page65#mssu50" name="Messaggio" gr:x="25" gr:y="125">
+      <Message xml:space="preserve">Inserisci tutti i campi richiesti</Message>
+    </MultiMessageUnit>
+    <EntryUnit id="sv1#area23#page65#enu15" name="Creazione utente" linkOrder="sv1#area23#page65#enu15#ln181" gr:x="135" gr:y="10" fieldOrder="sv1#area23#page65#enu15#fld46 sv1#area23#page65#enu15#fld47 sv1#area23#page65#enu15#fld44 sv1#area23#page65#enu15#fld45 sv1#area23#page65#enu15#fld48 sv1#area23#page65#enu15#sfld22 sv1#area23#page65#enu15#fld70 sv1#area23#page65#enu15#fld72 sv1#area23#page65#enu15#sfld28">
+      <Field id="sv1#area23#page65#enu15#fld44" name="Nome" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area23#page65#enu15#fld44#mnd13" name="Mandatory13"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area23#page65#enu15#fld45" name="Cognome" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area23#page65#enu15#fld45#mnd14" name="Mandatory13"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area23#page65#enu15#fld46" name="UserName" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area23#page65#enu15#fld46#mnd15" name="Mandatory13"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area23#page65#enu15#fld47" name="Password" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area23#page65#enu15#fld47#mnd16" name="Mandatory13"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area23#page65#enu15#fld48" name="Email" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area23#page65#enu15#fld48#mnd17" name="Mandatory13"/>
+        </VRules>
+      </Field>
+      <SelectionField id="sv1#area23#page65#enu15#sfld22" name="Negozio preferito" type="string">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area23#page65#enu15#sfld22#mnd18" name="Mandatory13"/>
+        </VRules>
+      </SelectionField>
+      <Field id="sv1#area23#page65#enu15#fld70" name="Via" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area23#page65#enu15#fld70#mnd19" name="Mandatory13"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area23#page65#enu15#fld72" name="Numero" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area23#page65#enu15#fld72#mnd20" name="Mandatory13"/>
+        </VRules>
+      </Field>
+      <SelectionField id="sv1#area23#page65#enu15#sfld28" name="Citt&#224;" type="string">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area23#page65#enu15#sfld28#mnd21" name="Mandatory13"/>
+        </VRules>
+      </SelectionField>
+      <Link id="sv1#area23#page65#enu15#ln181" name="Flow78" to="sv1#area23#opg20#cru23" type="normal" validate="true">
+        <LinkParameter id="sv1#area23#page65#enu15#ln181#par234" name="Citt&#224;_PASSING" source="sv1#area23#page65#enu15#sfld28" passing="true"/>
+        <LinkParameter id="sv1#area23#page65#enu15#ln181#par235" name="Numero_PASSING" source="sv1#area23#page65#enu15#fld72" passing="true"/>
+        <LinkParameter id="sv1#area23#page65#enu15#ln181#par236" name="Via_PASSING" source="sv1#area23#page65#enu15#fld70" passing="true"/>
+        <LinkParameter id="sv1#area23#page65#enu15#ln181#par238" name="Cognome_cognome" source="sv1#area23#page65#enu15#fld45" target="sv1#area23#opg20#cru23.ent13#att50"/>
+        <LinkParameter id="sv1#area23#page65#enu15#ln181#par249" name="Email_email" source="sv1#area23#page65#enu15#fld48" target="sv1#area23#opg20#cru23.email"/>
+        <LinkParameter id="sv1#area23#page65#enu15#ln181#par251" name="Nome_nome" source="sv1#area23#page65#enu15#fld44" target="sv1#area23#opg20#cru23.ent13#att49"/>
+        <LinkParameter id="sv1#area23#page65#enu15#ln181#par258" name="Password_password" source="sv1#area23#page65#enu15#fld47" target="sv1#area23#opg20#cru23.password"/>
+        <LinkParameter id="sv1#area23#page65#enu15#ln181#par259" name="UserName_userName" source="sv1#area23#page65#enu15#fld46" target="sv1#area23#opg20#cru23.userName"/>
+        <LinkParameter id="sv1#area23#page65#enu15#ln181#par260" name="Negozio preferito_PASSING" source="sv1#area23#page65#enu15#sfld22" passing="true"/>
+        <LinkParameter id="sv1#area23#page65#enu15#ln181#par262" name="2_Group.oid(defaultGroup)" target="sv1#area23#opg20#cru23.User2DefaultGroup.groupOID" sourceValue="2"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit id="sv1#area23#page65#seu49" name="Negozi" gr:x="0" gr:y="0" entity="ent3">
+      <Link id="sv1#area23#page65#seu49#ln182" name="Flow75" to="sv1#area23#page65#enu15" type="transport" validate="true">
+        <LinkParameter id="sv1#area23#page65#seu49#ln182#par263" name="nome_Negozio preferito [label]" source="ent3#att9Array" target="sv1#area23#page65#enu15#sfld22_label"/>
+        <LinkParameter id="sv1#area23#page65#seu49#ln182#par269" name="oid_Negozio preferito [output]" source="ent3#att8Array" target="sv1#area23#page65#enu15#sfld22_output"/>
+        <LinkParameter id="sv1#area23#page65#seu49#ln182#par270" name="nome_Negozio preferito - Preselection" target="sv1#area23#page65#enu15#sfld22_presel" sourceValue="1"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv1#area23#page65#seu50" name="Citt&#224;" gr:x="175" gr:y="130" entity="ent1">
+      <Link id="sv1#area23#page65#seu50#ln183" name="Flow76" to="sv1#area23#page65#enu15" type="transport" validate="true">
+        <LinkParameter id="sv1#area23#page65#seu50#ln183#par271" name="nome_Citt&#224; [label]" source="ent1#att2Array" target="sv1#area23#page65#enu15#sfld28_label"/>
+        <LinkParameter id="sv1#area23#page65#seu50#ln183#par273" name="oid_Citt&#224; [output]" source="ent1#att1Array" target="sv1#area23#page65#enu15#sfld28_output"/>
+        <LinkParameter id="sv1#area23#page65#seu50#ln183#par277" name="nome_Citt&#224; - Preselection" target="sv1#area23#page65#enu15#sfld28_presel" sourceValue="1"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area23#page65#mssu50"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area23#page65#enu15">
+          <layout:Field field="sv1#area23#page65#enu15#fld46"/>
+          <layout:Field field="sv1#area23#page65#enu15#fld47"/>
+          <layout:Field field="sv1#area23#page65#enu15#fld44"/>
+          <layout:Field field="sv1#area23#page65#enu15#fld45"/>
+          <layout:Field field="sv1#area23#page65#enu15#fld48"/>
+          <layout:Field field="sv1#area23#page65#enu15#sfld22"/>
+          <layout:Field field="sv1#area23#page65#enu15#fld70"/>
+          <layout:Field field="sv1#area23#page65#enu15#fld72"/>
+          <layout:Field field="sv1#area23#page65#enu15#sfld28"/>
+          <layout:Link link="sv1#area23#page65#enu15#ln181"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

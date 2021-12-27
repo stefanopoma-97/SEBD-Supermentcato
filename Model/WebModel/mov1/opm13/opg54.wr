@@ -1,0 +1,151 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm13#opg54" name="Filtra" transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <SelectorUnit id="mov1#opm13#opg54#seu202" name="Filtro" gr:x="935" gr:y="55" entity="ent3">
+      <Selector id="mov1#opm13#opg54#seu202#su465" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm13#opg54#seu202#su465#rcond187" name="Citt&#224;IndirizzoNegozio" predicate="in" implied="true" role="rel1#role1.rel2#role4"/>
+        <KeyCondition id="mov1#opm13#opg54#seu202#su465#kcond284" name="Negozi nuovi" predicate="in" implied="true"/>
+        <RelationshipRoleCondition id="mov1#opm13#opg54#seu202#su465#rcond188" name="Orario to negozio" predicate="in" implied="true" role="rel19#role37"/>
+        <RelationshipRoleCondition id="mov1#opm13#opg54#seu202#su465#rcond189" name="con promo" predicate="in" implied="true" role="rel5#role9"/>
+      </Selector>
+      <KOLink id="mov1#opm13#opg54#seu202#kln209" name="KOFlow10" to="mov1#opm13#kocu27" gr:bendpoints="0,-20"/>
+      <OKLink id="mov1#opm13#opg54#seu202#oln291" name="OKFlow9" to="mov1#opm13#okcu15">
+        <LinkParameter id="mov1#opm13#opg54#seu202#oln291#par1701" name="oid_KeyCondition15 [oid]" source="ent3#att8Array" target="mov1#opm13#okcu15#ocp26"/>
+      </OKLink>
+    </SelectorUnit>
+    <IsNotNullUnit id="mov1#opm13#opg54#inn36" name="Is Not Null nuovo" gr:x="0" gr:y="225">
+      <KOLink id="mov1#opm13#opg54#inn36#kln210" name="KOFlow84" to="mov1#opm13#opg54#inn37">
+        <LinkParameter id="mov1#opm13#opg54#inn36#kln210#par1702" name="Orario_PASSING_Input" sourceLinkParameter="mov1#opm13#icu11#oln284#par1699" target="mov1#opm13#opg54#inn37.isnotnull"/>
+        <LinkParameter id="mov1#opm13#opg54#inn36#kln210#par1703" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm13#icu11#oln284#par1698" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#inn36#kln210#par1704" name="Negozi con promozioni_PASSING" sourceLinkParameter="mov1#opm13#icu11#oln284#par1700" passing="true"/>
+      </KOLink>
+      <OKLink id="mov1#opm13#opg54#inn36#oln315" name="OKFlow148" to="mov1#opm13#opg54#inn38">
+        <LinkParameter id="mov1#opm13#opg54#inn36#oln315#par1705" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm13#icu11#oln284#par1698" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#inn36#oln315#par1706" name="Orario_PASSING_Input" sourceLinkParameter="mov1#opm13#icu11#oln284#par1699" target="mov1#opm13#opg54#inn38.isnotnull"/>
+        <LinkParameter id="mov1#opm13#opg54#inn36#oln315#par1707" name="Negozi con promozioni_PASSING" sourceLinkParameter="mov1#opm13#icu11#oln284#par1700" passing="true"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <SelectorUnit id="mov1#opm13#opg54#seu203" name="Negozi nuovi" gr:x="445" gr:y="425" entity="ent18">
+      <OKLink id="mov1#opm13#opg54#seu203#oln316" name="OKFlow149" to="mov1#opm13#opg54#inn41">
+        <LinkParameter id="mov1#opm13#opg54#seu203#oln316#par1708" name="Negozi con promozioni_PASSING_Input" sourceLinkParameter="mov1#opm13#opg54#inn38#kln227#par1718" target="mov1#opm13#opg54#inn41.isnotnull"/>
+        <LinkParameter id="mov1#opm13#opg54#seu203#oln316#par1709" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm13#opg54#inn38#kln227#par1717" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#seu203#oln316#par1710" name="oid_PASSING" source="ent3#att8Array" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm13#opg54#seu203#kln214" name="KOFlow86" to="mov1#opm13#kocu27" gr:bendpoints="0,-60"/>
+    </SelectorUnit>
+    <IsNotNullUnit id="mov1#opm13#opg54#inn37" name="Is Not Null Orario" gr:x="250" gr:y="60">
+      <KOLink id="mov1#opm13#opg54#inn37#kln215" name="KOFlow86" to="mov1#opm13#opg54#inn39">
+        <LinkParameter id="mov1#opm13#opg54#inn37#kln215#par1711" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm13#opg54#inn36#kln210#par1703" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#inn37#kln215#par1712" name="Negozi con promozioni_PASSING" sourceLinkParameter="mov1#opm13#opg54#inn36#kln210#par1704" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#inn37#kln215#par1713" name="Negozi con promozioni_PASSING_Input" sourceLinkParameter="mov1#opm13#opg54#inn36#kln210#par1704" target="mov1#opm13#opg54#inn39.isnotnull"/>
+      </KOLink>
+      <OKLink id="mov1#opm13#opg54#inn37#oln317" name="OKFlow178" to="mov1#opm13#opg54#miu37">
+        <LinkParameter id="mov1#opm13#opg54#inn37#oln317#par1714" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm13#opg54#inn36#kln210#par1703" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#inn37#oln317#par1715" name="Citt&#224;_PASSING_Citt&#224;_PASSING" sourceLinkParameter="mov1#opm13#opg54#inn36#kln210#par1703" target="mov1#opm13#opg54#miu37.mov1#opm5#icu5#icp7"/>
+        <LinkParameter id="mov1#opm13#opg54#inn37#oln317#par1716" name="Negozi con promozioni_PASSING" sourceLinkParameter="mov1#opm13#opg54#inn36#kln210#par1704" passing="true"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <IsNotNullUnit id="mov1#opm13#opg54#inn38" name="Is Not Null Orario" gr:x="205" gr:y="430">
+      <KOLink id="mov1#opm13#opg54#inn38#kln227" name="KOFlow94" to="mov1#opm13#opg54#seu203">
+        <LinkParameter id="mov1#opm13#opg54#inn38#kln227#par1717" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm13#opg54#inn36#oln315#par1705" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#inn38#kln227#par1718" name="Negozi con promozioni_PASSING" sourceLinkParameter="mov1#opm13#opg54#inn36#oln315#par1707" passing="true"/>
+      </KOLink>
+      <OKLink id="mov1#opm13#opg54#inn38#oln318" name="OKFlow169" to="mov1#opm13#opg54#miu36">
+        <LinkParameter id="mov1#opm13#opg54#inn38#oln318#par1719" name="Citt&#224;_PASSING_Citt&#224;_PASSING" sourceLinkParameter="mov1#opm13#opg54#inn36#oln315#par1705" target="mov1#opm13#opg54#miu36.mov1#opm5#icu5#icp7"/>
+        <LinkParameter id="mov1#opm13#opg54#inn38#oln318#par1720" name="Negozi con promozioni_PASSING" sourceLinkParameter="mov1#opm13#opg54#inn36#oln315#par1707" passing="true"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <SelectorUnit id="mov1#opm13#opg54#seu204" name="Negozi nuovi" gr:x="515" gr:y="655" entity="ent18">
+      <OKLink id="mov1#opm13#opg54#seu204#oln319" name="OKFlow149" to="mov1#opm13#opg54#inn42">
+        <LinkParameter id="mov1#opm13#opg54#seu204#oln319#par1721" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm13#opg54#miu36#oln320#par1725" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#seu204#oln319#par1722" name="oid_PASSING" source="ent3#att8Array" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#seu204#oln319#par1723" name="oid_PASSING" sourceLinkParameter="mov1#opm13#opg54#miu36#oln320#par1724" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm13#opg54#seu204#kln228" name="KOFlow86" to="mov1#opm13#kocu27" gr:bendpoints="0,80"/>
+    </SelectorUnit>
+    <ModuleInstanceUnit id="mov1#opm13#opg54#miu36" gr:x="175" gr:y="665" moduleId="mov1#opm5">
+      <OKLink id="mov1#opm13#opg54#miu36#oln320" name="OKFlow131" to="mov1#opm13#opg54#seu204">
+        <LinkParameter id="mov1#opm13#opg54#miu36#oln320#par1724" name="oid_PASSING" source="mov1#opm5#okcu5#ocp8" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#miu36#oln320#par1725" name="Citt&#224;_PASSING" source="mov1#opm5#okcu5#ocp7" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#miu36#oln320#par1726" name="Negozi con promozioni_PASSING" sourceLinkParameter="mov1#opm13#opg54#inn38#oln318#par1720" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm13#opg54#miu36#kln229" name="KOFlow113" to="mov1#opm13#kocu27" gr:bendpoints="0,-100"/>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit id="mov1#opm13#opg54#miu37" gr:x="230" gr:y="165" moduleId="mov1#opm5">
+      <OKLink id="mov1#opm13#opg54#miu37#oln321" name="OKFlow131" to="mov1#opm13#opg54#inn40">
+        <LinkParameter id="mov1#opm13#opg54#miu37#oln321#par1727" name="oid_PASSING" source="mov1#opm5#okcu5#ocp8" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#miu37#oln321#par1728" name="Citt&#224;_PASSING" source="mov1#opm5#okcu5#ocp7" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#miu37#oln321#par1729" name="Negozi con promozioni_PASSING_Input" sourceLinkParameter="mov1#opm13#opg54#inn37#oln317#par1716" target="mov1#opm13#opg54#inn40.isnotnull"/>
+      </OKLink>
+      <KOLink id="mov1#opm13#opg54#miu37#kln230" name="KOFlow113" to="mov1#opm13#kocu27" gr:bendpoints="0,40"/>
+    </ModuleInstanceUnit>
+    <IsNotNullUnit id="mov1#opm13#opg54#inn39" name="Is Not Null promo" gr:x="480" gr:y="0">
+      <KOLink id="mov1#opm13#opg54#inn39#kln231" name="KOFlow120" to="mov1#opm13#opg54#seu202">
+        <LinkParameter id="mov1#opm13#opg54#inn39#kln231#par1730" name="Citt&#224;_PASSING_Citt&#224;IndirizzoNegozio [oid]" sourceLinkParameter="mov1#opm13#opg54#inn37#kln215#par1711" target="mov1#opm13#opg54#seu202#su465#rcond187.ent1#att1"/>
+      </KOLink>
+      <OKLink id="mov1#opm13#opg54#inn39#oln322" name="OKFlow129" to="mov1#opm13#opg54#miu38">
+        <LinkParameter id="mov1#opm13#opg54#inn39#oln322#par1731" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm13#opg54#inn37#kln215#par1711" passing="true"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <ModuleInstanceUnit id="mov1#opm13#opg54#miu38" gr:x="600" gr:y="90" moduleId="mov1#opm15">
+      <OKLink id="mov1#opm13#opg54#miu38#oln323" name="OKFlow131" to="mov1#opm13#opg54#seu202">
+        <LinkParameter id="mov1#opm13#opg54#miu38#oln323#par1732" name="oid_con promo [oid]" source="mov1#opm15#okcu18#ocp28" target="mov1#opm13#opg54#seu202#su465#rcond189.ent6#att22"/>
+        <LinkParameter id="mov1#opm13#opg54#miu38#oln323#par1733" name="Citt&#224;_PASSING_Citt&#224;IndirizzoNegozio [oid]" sourceLinkParameter="mov1#opm13#opg54#inn39#oln322#par1731" target="mov1#opm13#opg54#seu202#su465#rcond187.ent1#att1"/>
+      </OKLink>
+      <KOLink id="mov1#opm13#opg54#miu38#kln232" name="KOFlow131" to="mov1#opm13#kocu27"/>
+    </ModuleInstanceUnit>
+    <IsNotNullUnit id="mov1#opm13#opg54#inn40" name="Is Not Null31" gr:x="495" gr:y="170">
+      <KOLink id="mov1#opm13#opg54#inn40#kln233" name="KOFlow171" to="mov1#opm13#opg54#seu202">
+        <LinkParameter id="mov1#opm13#opg54#inn40#kln233#par1734" name="Citt&#224;_PASSING_Citt&#224;IndirizzoNegozio [oid]" sourceLinkParameter="mov1#opm13#opg54#miu37#oln321#par1728" target="mov1#opm13#opg54#seu202#su465#rcond187.ent1#att1"/>
+        <LinkParameter id="mov1#opm13#opg54#inn40#kln233#par1735" name="oid_PASSING_Orario to negozio [oid]" sourceLinkParameter="mov1#opm13#opg54#miu37#oln321#par1727" target="mov1#opm13#opg54#seu202#su465#rcond188.ent20#att43"/>
+      </KOLink>
+      <OKLink id="mov1#opm13#opg54#inn40#oln324" name="OKFlow199" to="mov1#opm13#opg54#miu39">
+        <LinkParameter id="mov1#opm13#opg54#inn40#oln324#par1736" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm13#opg54#miu37#oln321#par1728" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#inn40#oln324#par1737" name="oid_PASSING" sourceLinkParameter="mov1#opm13#opg54#miu37#oln321#par1727" passing="true"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <ModuleInstanceUnit id="mov1#opm13#opg54#miu39" gr:x="575" gr:y="265" action="true" moduleId="mov1#opm15">
+      <OKLink id="mov1#opm13#opg54#miu39#oln325" name="OKFlow200" to="mov1#opm13#opg54#seu202">
+        <LinkParameter id="mov1#opm13#opg54#miu39#oln325#par1738" name="Citt&#224;_PASSING_Citt&#224;IndirizzoNegozio [oid]" sourceLinkParameter="mov1#opm13#opg54#inn40#oln324#par1736" target="mov1#opm13#opg54#seu202#su465#rcond187.ent1#att1"/>
+        <LinkParameter id="mov1#opm13#opg54#miu39#oln325#par1739" name="oid_con promo [oid]" source="mov1#opm15#okcu18#ocp28" target="mov1#opm13#opg54#seu202#su465#rcond189.ent6#att22"/>
+        <LinkParameter id="mov1#opm13#opg54#miu39#oln325#par1740" name="oid_PASSING_Orario to negozio [oid]" sourceLinkParameter="mov1#opm13#opg54#inn40#oln324#par1737" target="mov1#opm13#opg54#seu202#su465#rcond188.ent20#att43"/>
+      </OKLink>
+    </ModuleInstanceUnit>
+    <IsNotNullUnit id="mov1#opm13#opg54#inn41" name="Is Not Null32" gr:x="605" gr:y="425">
+      <KOLink id="mov1#opm13#opg54#inn41#kln234" name="KOFlow172" to="mov1#opm13#opg54#seu202">
+        <LinkParameter id="mov1#opm13#opg54#inn41#kln234#par1741" name="Citt&#224;_PASSING_Citt&#224;IndirizzoNegozio [oid]" sourceLinkParameter="mov1#opm13#opg54#seu203#oln316#par1709" target="mov1#opm13#opg54#seu202#su465#rcond187.ent1#att1"/>
+        <LinkParameter id="mov1#opm13#opg54#inn41#kln234#par1742" name="oid_PASSING_Negozi nuovi [oid]" sourceLinkParameter="mov1#opm13#opg54#seu203#oln316#par1710" target="mov1#opm13#opg54#seu202#su465#kcond284.ent3#att8"/>
+      </KOLink>
+      <OKLink id="mov1#opm13#opg54#inn41#oln326" name="OKFlow201" to="mov1#opm13#opg54#miu40">
+        <LinkParameter id="mov1#opm13#opg54#inn41#oln326#par1743" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm13#opg54#seu203#oln316#par1709" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#inn41#oln326#par1744" name="oid_PASSING" sourceLinkParameter="mov1#opm13#opg54#seu203#oln316#par1710" passing="true"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <ModuleInstanceUnit id="mov1#opm13#opg54#miu40" gr:x="655" gr:y="515" action="true" moduleId="mov1#opm15">
+      <OKLink id="mov1#opm13#opg54#miu40#oln327" name="OKFlow202" to="mov1#opm13#opg54#seu202">
+        <LinkParameter id="mov1#opm13#opg54#miu40#oln327#par1745" name="Citt&#224;_PASSING_Citt&#224;IndirizzoNegozio [oid]" sourceLinkParameter="mov1#opm13#opg54#inn41#oln326#par1743" target="mov1#opm13#opg54#seu202#su465#rcond187.ent1#att1"/>
+        <LinkParameter id="mov1#opm13#opg54#miu40#oln327#par1746" name="oid_con promo [oid]" source="mov1#opm15#okcu18#ocp28" target="mov1#opm13#opg54#seu202#su465#rcond189.ent6#att22"/>
+        <LinkParameter id="mov1#opm13#opg54#miu40#oln327#par1747" name="oid_PASSING_Negozi nuovi [oid]" sourceLinkParameter="mov1#opm13#opg54#inn41#oln326#par1744" target="mov1#opm13#opg54#seu202#su465#kcond284.ent3#att8"/>
+      </OKLink>
+    </ModuleInstanceUnit>
+    <IsNotNullUnit id="mov1#opm13#opg54#inn42" name="Is Not Null33" gr:x="705" gr:y="640">
+      <KOLink id="mov1#opm13#opg54#inn42#kln235" name="KOFlow173" to="mov1#opm13#opg54#seu202" gr:bendpoints="197,-243,-83,302">
+        <LinkParameter id="mov1#opm13#opg54#inn42#kln235#par1748" name="Citt&#224;_PASSING_Citt&#224;IndirizzoNegozio [oid]" sourceLinkParameter="mov1#opm13#opg54#seu204#oln319#par1721" target="mov1#opm13#opg54#seu202#su465#rcond187.ent1#att1"/>
+        <LinkParameter id="mov1#opm13#opg54#inn42#kln235#par1749" name="oid_PASSING_Negozi nuovi [oid]" sourceLinkParameter="mov1#opm13#opg54#seu204#oln319#par1722" target="mov1#opm13#opg54#seu202#su465#kcond284.ent3#att8"/>
+        <LinkParameter id="mov1#opm13#opg54#inn42#kln235#par1750" name="oid_PASSING_Orario to negozio [oid]" sourceLinkParameter="mov1#opm13#opg54#seu204#oln319#par1723" target="mov1#opm13#opg54#seu202#su465#rcond188.ent20#att43"/>
+      </KOLink>
+      <OKLink id="mov1#opm13#opg54#inn42#oln328" name="OKFlow203" to="mov1#opm13#opg54#miu41">
+        <LinkParameter id="mov1#opm13#opg54#inn42#oln328#par1751" name="Citt&#224;_PASSING" sourceLinkParameter="mov1#opm13#opg54#seu204#oln319#par1721" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#inn42#oln328#par1752" name="oid_PASSING" sourceLinkParameter="mov1#opm13#opg54#seu204#oln319#par1722" passing="true"/>
+        <LinkParameter id="mov1#opm13#opg54#inn42#oln328#par1753" name="oid_PASSING" sourceLinkParameter="mov1#opm13#opg54#seu204#oln319#par1723" passing="true"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <ModuleInstanceUnit id="mov1#opm13#opg54#miu41" gr:x="825" gr:y="710" action="true" moduleId="mov1#opm15">
+      <OKLink id="mov1#opm13#opg54#miu41#oln329" name="OKFlow204" to="mov1#opm13#opg54#seu202">
+        <LinkParameter id="mov1#opm13#opg54#miu41#oln329#par1754" name="Citt&#224;_PASSING_Citt&#224;IndirizzoNegozio [oid]" sourceLinkParameter="mov1#opm13#opg54#inn42#oln328#par1751" target="mov1#opm13#opg54#seu202#su465#rcond187.ent1#att1"/>
+        <LinkParameter id="mov1#opm13#opg54#miu41#oln329#par1755" name="oid_con promo [oid]" source="mov1#opm15#okcu18#ocp28" target="mov1#opm13#opg54#seu202#su465#rcond189.ent6#att22"/>
+        <LinkParameter id="mov1#opm13#opg54#miu41#oln329#par1756" name="oid_PASSING_Negozi nuovi [oid]" sourceLinkParameter="mov1#opm13#opg54#inn42#oln328#par1752" target="mov1#opm13#opg54#seu202#su465#kcond284.ent3#att8"/>
+        <LinkParameter id="mov1#opm13#opg54#miu41#oln329#par1757" name="oid_PASSING_Orario to negozio [oid]" sourceLinkParameter="mov1#opm13#opg54#inn42#oln328#par1753" target="mov1#opm13#opg54#seu202#su465#rcond188.ent20#att43"/>
+      </OKLink>
+    </ModuleInstanceUnit>
+  </OperationUnits>
+</OperationGroup>

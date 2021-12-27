@@ -1,0 +1,10 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1#area31" name="Area Prodotti" defaultPage="sv1#area31#page144" landmark="true" gr:x="2285" gr:y="0">
+  <OperationUnits>
+    <ModuleInstanceUnit id="sv1#area31#miu24" gr:x="850" gr:y="740" moduleId="mov1#opm14">
+      <OKLink id="sv1#area31#miu24#oln147" name="Flow35" to="sv1#area31#page144#alt17#page146#scu55">
+        <LinkParameter id="sv1#area31#miu24#oln147#par773" name="oid_KeyCondition182 [oid]" source="mov1#opm14#okcu17#ocp27" target="sv1#area31#page144#alt17#page146#scu55#su377#kcond232.ent4#att14"/>
+      </OKLink>
+      <KOLink id="sv1#area31#miu24#kln122" name="KOFlow85" to="sv1#area31#page147#mssu61"/>
+    </ModuleInstanceUnit>
+  </OperationUnits>
+</Area>

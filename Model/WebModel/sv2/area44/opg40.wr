@@ -1,0 +1,58 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area44#opg40" name="Calcola totale" transaction="true" gr:x="5" gr:y="110">
+  <OperationUnits>
+    <SelectorUnit id="sv2#area44#opg40#seu168" name="Promozione" gr:x="115" gr:y="0" entity="ent6" distinctAttributes="ent6#att22 ent6#att23 ent6#att24 ent6#att25 ent6#att26 ent6#att39 ent6#att41" displayAll="true">
+      <Selector id="sv2#area44#opg40#seu168#su390" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#area44#opg40#seu168#su390#acond108" name="Online" attributes="ent6#att26" predicate="eq" booleanOperator="or" value="1" implied="false"/>
+        <AttributesCondition id="sv2#area44#opg40#seu168#su390#acond109" name="Non scaduta" attributes="ent6#att24" predicate="gteq" booleanOperator="or" implied="false"/>
+        <RelationshipRoleCondition id="sv2#area44#opg40#seu168#su390#rcond149" name="Negozio" role="rel5#role10" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv2#area44#opg40#seu168#su390#rcond150" name="Prodotto" role="rel6#role12" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area44#opg40#seu168#oln152" name="OKFlow63" to="sv2#area44#opg40#inn26">
+        <LinkParameter id="sv2#area44#opg40#seu168#oln152#par1419" name="sconto_Input" source="ent6#att23Array" target="sv2#area44#opg40#inn26.isnotnull"/>
+        <LinkParameter id="sv2#area44#opg40#seu168#oln152#par1420" name="sconto_PASSING" source="ent6#att23Array" passing="true"/>
+        <LinkParameter id="sv2#area44#opg40#seu168#oln152#par1421" name="Prodotto onlineToProdotto.prezzo_PASSING" sourceLinkParameter="sv2#area44#opg40#tmu31#oln156#par1425" passing="true"/>
+      </OKLink>
+      <KOLink id="sv2#area44#opg40#seu168#kln129" name="KOFlow68" to="sv2#area44#page155" automaticCoupling="true"/>
+    </SelectorUnit>
+    <TimeUnit id="sv2#area44#opg40#tmu31" name="data attuale" gr:x="0" gr:y="5">
+      <OKLink id="sv2#area44#opg40#tmu31#oln156" name="OKFlow64" to="sv2#area44#opg40#seu168">
+        <LinkParameter id="sv2#area44#opg40#tmu31#oln156#par1422" name="Prodotto onlineToNegozio.oid_PASSING_Negozio [oid]" sourceLinkParameter="sv2#area44#page161#dau53#ln523#par1470" target="sv2#area44#opg40#seu168#su390#rcond149.ent3#att8"/>
+        <LinkParameter id="sv2#area44#opg40#tmu31#oln156#par1423" name="Current/Input Date_Non scaduta" source="currentDate" target="sv2#area44#opg40#seu168#su390#acond109"/>
+        <LinkParameter id="sv2#area44#opg40#tmu31#oln156#par1424" name="Prodotto onlineToProdotto.oid_PASSING_Prodotto [oid]" sourceLinkParameter="sv2#area44#page161#dau53#ln523#par1471" target="sv2#area44#opg40#seu168#su390#rcond150.ent4#att14"/>
+        <LinkParameter id="sv2#area44#opg40#tmu31#oln156#par1425" name="Prodotto onlineToProdotto.prezzo_PASSING" sourceLinkParameter="sv2#area44#page161#dau53#ln523#par1472" passing="true"/>
+      </OKLink>
+      <KOLink id="sv2#area44#opg40#tmu31#kln130" name="KOFlow63" to="sv2#area44#page155" automaticCoupling="true"/>
+    </TimeUnit>
+    <IsNotNullUnit id="sv2#area44#opg40#inn26" name="Is Not Null2" gr:x="285" gr:y="30">
+      <OKLink id="sv2#area44#opg40#inn26#oln157" name="OKFlow69" to="sv2#area44#opg40#mathu3">
+        <LinkParameter id="sv2#area44#opg40#inn26#oln157#par1426" name="Prodotto onlineToProdotto.prezzo_PASSING_Prezzo" sourceLinkParameter="sv2#area44#opg40#seu168#oln152#par1421" target="sv2#area44#opg40#mathu3#mathv4"/>
+        <LinkParameter id="sv2#area44#opg40#inn26#oln157#par1427" name="Input Value_Promozione" source="inputValue" target="sv2#area44#opg40#mathu3#mathv5"/>
+      </OKLink>
+      <KOLink id="sv2#area44#opg40#inn26#kln136" name="KOFlow72" to="sv2#area44#opg40#mathu4">
+        <LinkParameter id="sv2#area44#opg40#inn26#kln136#par1428" name="Prodotto onlineToProdotto.prezzo_PASSING_Prezzo" sourceLinkParameter="sv2#area44#opg40#seu168#oln152#par1421" target="sv2#area44#opg40#mathu4#mathv6"/>
+      </KOLink>
+    </IsNotNullUnit>
+    <MathUnit id="sv2#area44#opg40#mathu3" name="Calcola totale" customDescriptor="true" gr:x="455" gr:y="5" resultType="decimal" defaultExpression="Prezzo - (Prezzo*(Promozione/100))">
+      <MathVariable id="sv2#area44#opg40#mathu3#mathv4" name="Prezzo"/>
+      <MathVariable id="sv2#area44#opg40#mathu3#mathv5" name="Promozione"/>
+      <KOLink id="sv2#area44#opg40#mathu3#kln139" name="KOFlow70" to="sv2#area44#page155" automaticCoupling="true"/>
+      <OKLink id="sv2#area44#opg40#mathu3#oln160" name="OKFlow70" to="sv2#area44#page161#alt21#page163#mssu66" gr:bendpoints="51,232,241,-198">
+        <LinkParameter id="sv2#area44#opg40#mathu3#oln160#par1429" name="Result_Shown Messages" source="result" target="sv2#area44#page161#alt21#page163#mssu66.shownMessages"/>
+      </OKLink>
+      <Link id="sv2#area44#opg40#mathu3#ln503" name="Flow252" to="sv2#area44#opg40#stu3" type="transport" validate="true">
+        <LinkParameter id="sv2#area44#opg40#mathu3#ln503#par1430" name="Result_Totale riga ordine" source="result" target="sv2#area44#opg40#stu3.ctx2"/>
+      </Link>
+    </MathUnit>
+    <MathUnit id="sv2#area44#opg40#mathu4" name="Calcola totale" customDescriptor="true" gr:x="445" gr:y="120" resultType="decimal" defaultExpression="Prezzo">
+      <MathVariable id="sv2#area44#opg40#mathu4#mathv6" name="Prezzo"/>
+      <KOLink id="sv2#area44#opg40#mathu4#kln142" name="KOFlow70" to="sv2#area44#page155" automaticCoupling="true"/>
+      <OKLink id="sv2#area44#opg40#mathu4#oln161" name="OKFlow71" to="sv2#area44#page161#alt21#page163#mssu66">
+        <LinkParameter id="sv2#area44#opg40#mathu4#oln161#par1431" name="Result_Shown Messages" source="result" target="sv2#area44#page161#alt21#page163#mssu66.shownMessages"/>
+      </OKLink>
+      <Link id="sv2#area44#opg40#mathu4#ln504" name="Flow253" to="sv2#area44#opg40#stu3" type="transport" validate="true">
+        <LinkParameter id="sv2#area44#opg40#mathu4#ln504#par1432" name="Result_Totale riga ordine" source="result" target="sv2#area44#opg40#stu3.ctx2"/>
+      </Link>
+    </MathUnit>
+    <SetUnit id="sv2#area44#opg40#stu3" name="totale riga ordine" gr:x="690" gr:y="75" contextParameters="ctx2"/>
+  </OperationUnits>
+</OperationGroup>

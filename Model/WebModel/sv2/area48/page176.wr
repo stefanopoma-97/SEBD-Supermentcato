@@ -1,0 +1,214 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area48#page176" name="Pagina negozi" gr:x="30" gr:y="825">
+  <ContentUnits>
+    <SelectorUnit id="sv2#area48#page176#seu196" name="Negozi" gr:x="325" gr:y="0" entity="ent3">
+      <Link id="sv2#area48#page176#seu196#ln598" name="Flow45" to="sv2#area48#page176#alt23#page177#pwu68" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <EntryUnit id="sv2#area48#page176#enu46" name="Cerca" linkOrder="sv2#area48#page176#enu46#ln599 sv2#area48#page176#enu46#ln600" gr:x="430" gr:y="465">
+      <SelectionField id="sv2#area48#page176#enu46#sfld57" name="Citt&#224;" type="string"/>
+      <Link id="sv2#area48#page176#enu46#ln599" name="Reset" to="sv2#area48#page176#alt23#page177" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="88,-99,-257,152"/>
+      <MultiSelectionField id="sv2#area48#page176#enu46#msfld28" name="Negozio nuovo" type="string"/>
+      <MultiSelectionField id="sv2#area48#page176#enu46#msfld29" name="Orario" type="string"/>
+      <MultiSelectionField id="sv2#area48#page176#enu46#msfld30" name="Negozi con promozioni" type="string"/>
+      <Link id="sv2#area48#page176#enu46#ln600" name="Flow347" to="sv2#area48#miu29" type="normal" validate="true">
+        <LinkParameter id="sv2#area48#page176#enu46#ln600#par1838" name="Citt&#224;_Citt&#224;_PASSING" source="sv2#area48#page176#enu46#sfld57" target="sv2#area48#miu29.mov1#opm13#icu11#icp15"/>
+        <LinkParameter id="sv2#area48#page176#enu46#ln600#par1839" name="Negozio nuovo_Input" source="sv2#area48#page176#enu46#msfld28" target="sv2#area48#miu29.mov1#opm13#icu11#icp17"/>
+        <LinkParameter id="sv2#area48#page176#enu46#ln600#par1840" name="Negozi con promozioni_Negozi con promozioni_PASSING" source="sv2#area48#page176#enu46#msfld30" target="sv2#area48#miu29.mov1#opm13#icu11#icp14"/>
+        <LinkParameter id="sv2#area48#page176#enu46#ln600#par1841" name="Orario_Orario_PASSING" source="sv2#area48#page176#enu46#msfld29" target="sv2#area48#miu29.mov1#opm13#icu11#icp16"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit id="sv2#area48#page176#seu197" name="Citt&#224; con negozi" gr:x="140" gr:y="435" entity="ent1">
+      <Selector id="sv2#area48#page176#seu197#su442" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area48#page176#seu197#su442#rcond177" name="NegoziIndirizzoCitt&#224;" role="rel2#role3.rel1#role2" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area48#page176#seu197#ln601" name="Flow31" to="sv2#area48#page176#enu46" type="transport" validate="true">
+        <LinkParameter id="sv2#area48#page176#seu197#ln601#par1644" name="nome_Citt&#224; [label]" source="ent1#att2Array" target="sv2#area48#page176#enu46#sfld57_label"/>
+        <LinkParameter id="sv2#area48#page176#seu197#ln601#par1645" name="oid_Citt&#224; [output]" source="ent1#att1Array" target="sv2#area48#page176#enu46#sfld57_output"/>
+        <LinkParameter id="sv2#area48#page176#seu197#ln601#par1646" name="Nuovo_Negozio nuovo [label]" target="sv2#area48#page176#enu46#msfld28_label" sourceValue="Nuovo"/>
+        <LinkParameter id="sv2#area48#page176#seu197#ln601#par1647" name="Nuovo_Negozio nuovo [output]" target="sv2#area48#page176#enu46#msfld28_output" sourceValue="Nuovo"/>
+        <LinkParameter id="sv2#area48#page176#seu197#ln601#par1648" name="Aperto_Orario [label]" target="sv2#area48#page176#enu46#msfld29_label" sourceValue="Aperto"/>
+        <LinkParameter id="sv2#area48#page176#seu197#ln601#par1649" name="Aperto_Orario [output]" target="sv2#area48#page176#enu46#msfld29_output" sourceValue="Aperto"/>
+        <LinkParameter id="sv2#area48#page176#seu197#ln601#par1650" name="_Negozi con promozioni - Preselection" target="sv2#area48#page176#enu46#msfld30_presel" blank="true"/>
+        <LinkParameter id="sv2#area48#page176#seu197#ln601#par1651" name="Con Promozioni_Negozi con promozioni [label]" target="sv2#area48#page176#enu46#msfld30_label" sourceValue="Con Promozioni"/>
+        <LinkParameter id="sv2#area48#page176#seu197#ln601#par1652" name="Con Promozioni_Negozi con promozioni [output]" target="sv2#area48#page176#enu46#msfld30_output" sourceValue="Con Promozioni"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv2#area48#page176#seu198" name="Negozi" gr:x="15" gr:y="465" entity="ent3">
+      <Link id="sv2#area48#page176#seu198#ln602" name="Flow30" to="sv2#area48#page176#seu197" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area48#page176#enu46">
+          <layout:Field field="sv2#area48#page176#enu46#sfld57"/>
+          <layout:Field field="sv2#area48#page176#enu46#msfld28"/>
+          <layout:Field field="sv2#area48#page176#enu46#msfld29"/>
+          <layout:Field field="sv2#area48#page176#enu46#msfld30"/>
+          <layout:Link link="sv2#area48#page176#enu46#ln599"/>
+          <layout:Link link="sv2#area48#page176#enu46#ln600"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#area48#page176#alt23#page177">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area48#page176#alt23#page177#pwu68">
+          <layout:Attribute attribute="ent3#att9"/>
+          <layout:Attribute attribute="ent3#att12"/>
+          <layout:Attribute attribute="ent3#att13"/>
+          <layout:Attribute attribute="rel2#role3.ent2#att6"/>
+          <layout:Link link="sv2#area48#page176#alt23#page177#pwu68#ln603"/>
+          <layout:Link link="sv2#area48#page176#alt23#page177#pwu68ent3#att12"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#area48#page176#alt23#page178">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area48#page176#alt23#page178#pwu69">
+          <layout:Attribute attribute="ent3#att9"/>
+          <layout:Attribute attribute="ent3#att12"/>
+          <layout:Attribute attribute="ent3#att13"/>
+          <layout:Attribute attribute="rel2#role3.ent2#att6"/>
+          <layout:Link link="sv2#area48#page176#alt23#page178#pwu69#ln604"/>
+          <layout:Link link="sv2#area48#page176#alt23#page178#pwu69ent3#att12"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative id="sv2#area48#page176#alt23" name="Liste" defaultPage="sv2#area48#page176#alt23#page177" gr:x="0" gr:y="10">
+    <Page id="sv2#area48#page176#alt23#page177" name="Lista principale" gr:x="0" gr:y="0">
+      <ContentUnits>
+        <PowerIndexUnit id="sv2#area48#page176#alt23#page177#pwu68" name="Lista Negozi" linkOrder="sv2#area48#page176#alt23#page177#pwu68#ln603" gr:x="0" gr:y="0" entity="ent3" displayAttributes="ent3#att9 ent3#att12 ent3#att13 rel2#role3.ent2#att6" sortable="true" checkable="false" useCountQuery="false">
+          <Selector id="sv2#area48#page176#alt23#page177#pwu68#su443" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="sv2#area48#page176#alt23#page177#pwu68#su443#kcond271" name="KeyCondition15" predicate="in" implied="false"/>
+          </Selector>
+          <Link id="sv2#area48#page176#alt23#page177#pwu68#ln603" name="Flow42" to="sv2#area48#page175#dau59" type="normal" automaticCoupling="true" validate="true"/>
+          <SortAttribute attribute="ent3#att12" order="descending"/>
+        </PowerIndexUnit>
+      </ContentUnits>
+    </Page>
+    <Page id="sv2#area48#page176#alt23#page178" name="Lista filtrata" gr:x="25" gr:y="180">
+      <ContentUnits>
+        <PowerIndexUnit id="sv2#area48#page176#alt23#page178#pwu69" name="Lista Negozi" linkOrder="sv2#area48#page176#alt23#page178#pwu69#ln604" gr:x="0" gr:y="0" entity="ent3" displayAttributes="ent3#att9 ent3#att12 ent3#att13 rel2#role3.ent2#att6" sortable="true" checkable="false" useCountQuery="false">
+          <Selector id="sv2#area48#page176#alt23#page178#pwu69#su444" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="sv2#area48#page176#alt23#page178#pwu69#su444#kcond272" name="KeyCondition15" predicate="in" implied="false"/>
+          </Selector>
+          <Link id="sv2#area48#page176#alt23#page178#pwu69#ln604" name="Flow42" to="sv2#area48#page175#dau59" type="normal" automaticCoupling="true" validate="true"/>
+          <SortAttribute attribute="ent3#att12" order="descending"/>
+        </PowerIndexUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

@@ -1,273 +1,269 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Warnings> 
-  <Warning xpath="id('sv2#area42#page116#seu143#ln395#par573')" rootXPath="id('sv2')" key="UNUSED_PASSING_PARAMETER" label="oid_PASSING"> 
-    <Message>The passing parameter 'oid_PASSING' is declared but never used</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv2#area42#page116#seu143#ln395#par573'</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv2#area42#page117#dau45#ln398#par576')" rootXPath="id('sv2')" key="UNUSED_PASSING_PARAMETER" label="Prodotto onlineToProdotto.prezzo_PASSING"> 
+  <Warning xpath="id('sv2#area44#page161#dau53#ln519#par1463')" rootXPath="id('sv2')" key="UNUSED_PASSING_PARAMETER" label="Prodotto onlineToProdotto.prezzo_PASSING"> 
     <Message>The passing parameter 'Prodotto onlineToProdotto.prezzo_PASSING' is declared but never used</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv2#area42#page117#dau45#ln398#par576'</Resolution> 
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv2#area44#page161#dau53#ln519#par1463'</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area34#opg41#dlu7#oln85')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow55"> 
+  <Warning xpath="id('sv2#area48#page175#pwu67#ln595#par1636')" rootXPath="id('sv2')" key="UNUSED_PASSING_PARAMETER" label="oid_PASSING"> 
+    <Message>The passing parameter 'oid_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv2#area48#page175#pwu67#ln595#par1636'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv2#area44#opg40#seu168#oln152#par1420')" rootXPath="id('sv2')" key="UNUSED_PASSING_PARAMETER" label="sconto_PASSING"> 
+    <Message>The passing parameter 'sconto_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv2#area44#opg40#seu168#oln152#par1420'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv2#area50#opg53#dlu7#oln272')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow55"> 
     <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow55'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area34#opg41#dlu8#oln86')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow67"> 
+  <Warning xpath="id('sv2#area50#opg53#dlu8#oln273')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow67"> 
     <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow67'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area42#opg55#seu145#oln113#par594')" rootXPath="id('sv2')" key="UNUSED_PASSING_PARAMETER" label="sconto_PASSING"> 
-    <Message>The passing parameter 'sconto_PASSING' is declared but never used</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv2#area42#opg55#seu145#oln113#par594'</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv2#area34#miu8#kln142')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow142"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow142'</Message>  
+  <Warning xpath="id('sv2#area43#miu25#kln126')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow255"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow255'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area34#miu9#kln143')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow143"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow143'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv2#area34#opg42#mfu11#kln74')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow62"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow62'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv2#area34#opg42#cru15#kln75')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow64"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow64'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv2#area34#opg42#cnu16#kln76')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow65"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow65'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv2#area34#opg42#inn10#kln144')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow144"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow144'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv2#area34#opg41#seu106#kln71')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow66"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow66'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv2#area34#opg41#dlu7#kln72')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow61"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow61'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv2#area34#opg41#dlu8#kln73')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow69"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow69'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv2#area34#opg43#dlu9#kln77')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow61"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow61'</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
-  </Warning>  
-  <Warning xpath="id('sv2#area35#opg44#mfu12#kln78')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow34"> 
+  <Warning xpath="id('sv2#area47#opg50#mfu35#kln169')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow34"> 
     <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow34'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area35#opg44#rcnu5#kln79')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow37"> 
+  <Warning xpath="id('sv2#area47#opg50#rcnu7#kln170')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow37"> 
     <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow37'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area35#opg44#rcnu6#kln80')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow39"> 
+  <Warning xpath="id('sv2#area47#opg50#rcnu8#kln171')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow39"> 
     <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow39'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area35#opg44#mfu13#kln81')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow38"> 
+  <Warning xpath="id('sv2#area47#opg50#mfu36#kln172')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow38"> 
     <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow38'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area37#opg25#tmu15#kln23')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow23"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow23'</Message>  
+  <Warning xpath="id('sv2#area48#miu29#kln174')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow209"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow209'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area37#opg25#scu32#kln24')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow24"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow24'</Message>  
+  <Warning xpath="id('sv2#area50#miu34#kln186')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow142"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow142'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area37#opg25#seu53#kln25')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow25"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow25'</Message>  
+  <Warning xpath="id('sv2#area50#miu35#kln187')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow143"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow143'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area37#opg25#seu54#kln26')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow26"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow26'</Message>  
+  <Warning xpath="id('sv2#area50#opg51#dlu5#kln188')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow61"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow61'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area37#opg46#seu115#kln83')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow10"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow10'</Message>  
+  <Warning xpath="id('sv2#area50#opg52#mfu37#kln189')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow62"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow62'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area37#opg49#seu119#kln87')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow7"> 
-    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow7'</Message>  
+  <Warning xpath="id('sv2#area50#opg52#cru28#kln190')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow64"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow64'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area34#opg42#seu64')" rootXPath="id('sv2')" error="false" label="Righe" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'Righe'</Message> 
+  <Warning xpath="id('sv2#area50#opg52#cnu27#kln191')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow65"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow65'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area37#opg24#seu33')" rootXPath="id('sv2')" error="false" label="aperto" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'aperto'</Message> 
+  <Warning xpath="id('sv2#area50#opg52#inn35#kln192')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow144"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow144'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area37#opg24#tmu14')" rootXPath="id('sv2')" error="false" label="Orario" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'Orario'</Message> 
+  <Warning xpath="id('sv2#area50#opg53#seu200#kln193')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow66"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow66'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area40#seu130')" rootXPath="id('sv2')" error="false" label="Filtri ricerca" key="NO_OUTGOING_OK_LINKS"> 
-    <Message>No outgoing OK flow(s) for the operation 'Filtri ricerca'</Message> 
+  <Warning xpath="id('sv2#area50#opg53#dlu7#kln207')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow61"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow61'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area40#seu130')" rootXPath="id('sv2')" error="false" label="Filtri ricerca" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'Filtri ricerca'</Message> 
+  <Warning xpath="id('sv2#area50#opg53#dlu8#kln208')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow69"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow69'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area41#lou1')" rootXPath="id('sv2')" error="false" label="Esci" key="NO_OUTGOING_KO_LINKS"> 
+  <Warning xpath="id('sv2#area33#lou5')" rootXPath="id('sv2')" error="false" label="Esci" key="NO_OUTGOING_KO_LINKS"> 
     <Message>No outgoing KO flow(s) for the operation 'Esci'</Message> 
   </Warning>  
-  <Warning xpath="id('sv2#area42#opg56#seu65')" rootXPath="id('sv2')" error="false" label="Riga con questo prodotto" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'Riga con questo prodotto'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv2#area42#opg56#mfu22')" rootXPath="id('sv2')" error="false" label="Modifica riga" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'Modifica riga'</Message> 
-  </Warning>  
-  <Warning xpath="id('sv2#area42#opg56#scu47')" rootXPath="id('sv2')" error="false" label="nuova quantita" key="NO_OUTGOING_KO_LINKS"> 
-    <Message>No outgoing KO flow(s) for the operation 'nuova quantita'</Message> 
-  </Warning>  
-  <Warning error="true" xpath="id('sv2#area42#opg55#seu145#su301#acond52')" rootXPath="id('sv2')" key="" label="Online"> 
+  <Warning error="true" xpath="id('sv2#area44#opg40#seu168#su390#acond108')" rootXPath="id('sv2')" key="" label="Online"> 
     <Message>Invalid value '1' specified for the condition 'Online': 'true' or 'false' must be specified</Message> 
   </Warning>  
-  <Warning xpath="id('sv2#area42#opg55#mathu1')" rootXPath="id('sv2')" error="false" label="Calcola totale" key="CHECKED_CUSTOM_DESCR"> 
+  <Warning xpath="id('sv2#area44#opg40#mathu3')" rootXPath="id('sv2')" error="false" label="Calcola totale" key="CHECKED_CUSTOM_DESCR"> 
     <Message>The operation unit 'Calcola totale' has the 'Custom Descriptor' property set but no custom descriptor could be found</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="customDescriptor" value="">Remove the 'Custom Descriptor' property</Resolution> 
   </Warning>
-  <Warning xpath="id('sv2#area42#opg55#mathu2')" rootXPath="id('sv2')" error="false" label="Calcola totale" key="CHECKED_CUSTOM_DESCR"> 
+  <Warning xpath="id('sv2#area44#opg40#mathu4')" rootXPath="id('sv2')" error="false" label="Calcola totale" key="CHECKED_CUSTOM_DESCR"> 
     <Message>The operation unit 'Calcola totale' has the 'Custom Descriptor' property set but no custom descriptor could be found</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="customDescriptor" value="">Remove the 'Custom Descriptor' property</Resolution> 
   </Warning>  
-  <Warning xpath="id('sv2#area42#opg54#mfu14')" rootXPath="id('sv2')" error="false" label="Spesa" key="NO_OUTGOING_KO_LINKS"> 
+  <Warning xpath="id('sv2#area44#opg41#mfu33')" rootXPath="id('sv2')" error="false" label="Spesa" key="NO_OUTGOING_KO_LINKS"> 
     <Message>No outgoing KO flow(s) for the operation 'Spesa'</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area34#page98#pwu13')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Spese consegnate"> 
-    <Message>Sorting attribute are unspecified for the component 'Spese consegnate'</Message> 
+  <Warning xpath="id('sv2#area44#opg43#inn32')" rootXPath="id('sv2')" error="true" label="Is Not Null online" key="UNCHECKED_EMPTY_AS_NULL_FLAG"> 
+    <Message>There is a binding between the MultiSelectionField 'Prodotto nuovo' and the 'Is Not Null online' but the flag 'Empty String As Null' is not checked</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="emptyStringAsNull" value="true">Check the 'Empty String As Null' flag</Resolution> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area34#page98#pwu14')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Spese"> 
-    <Message>Sorting attribute are unspecified for the component 'Spese'</Message> 
+  <Warning xpath="id('sv2#area44#opg44#seu181')" rootXPath="id('sv2')" error="false" label="Riga con questo prodotto" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Riga con questo prodotto'</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area34#page98#pwu15')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Spese da confermare"> 
-    <Message>Sorting attribute are unspecified for the component 'Spese da confermare'</Message> 
+  <Warning error="true" xpath="id('sv2#area44#opg44#seu181#su408#acond115')" rootXPath="id('sv2')" key="UNSPECIFIED_ATTRIBUTES_CONDITION" label="Id prodotto"> 
+    <Message>The attributes for the condition 'Id prodotto' are unspecified</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area34#page99#pwu22')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Righe d'ordine"> 
-    <Message>Sorting attribute are unspecified for the component 'Righe d'ordine'</Message> 
+  <Warning xpath="id('sv2#area44#opg44#mfu34')" rootXPath="id('sv2')" error="false" label="Modifica riga" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Modifica riga'</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area34#page96#pwu9')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Righe d'ordine"> 
-    <Message>Sorting attribute are unspecified for the component 'Righe d'ordine'</Message> 
+  <Warning xpath="id('sv2#area44#opg44#scu59')" rootXPath="id('sv2')" error="false" label="nuova quantita" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'nuova quantita'</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area37#page106#inu16')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Promozioni attive"> 
-    <Message>Sorting attribute are unspecified for the component 'Promozioni attive'</Message> 
+  <Warning xpath="id('sv2#area48#miu28#kln173')" rootXPath="id('sv2')" label="KOFlow7" error="true" key="UNDEFINED_COLLECTOR_CODE"> 
+    <Message>The port code property of the flow 'KOFlow7' is not defined.</Message> 
+  </Warning>
+  <Warning xpath="id('sv2#area48#miu28')" rootXPath="id('sv2')" label="sv2#area48#miu28" key="CODE_NEVER_USED"> 
+    <Message>The code 'KO Port9' is never used by the module 'sv2#area48#miu28'</Message> 
+  </Warning>
+  <Warning xpath="id('sv2#area48#miu28')" rootXPath="id('sv2')" label="sv2#area48#miu28" key="CODE_NEVER_USED"> 
+    <Message>The code 'KO Port10' is never used by the module 'sv2#area48#miu28'</Message> 
   </Warning>  
-  <Warning error="true" xpath="id('sv2#area37#page106#inu16#su263#acond46')" rootXPath="id('sv2')" key="" label="Valida in negozio"> 
-    <Message>Invalid value '1' specified for the condition 'Valida in negozio': 'true' or 'false' must be specified</Message> 
+  <Warning xpath="id('sv2#area50#opg52#seu199')" rootXPath="id('sv2')" error="false" label="Righe" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Righe'</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area37#page106#scu19')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Scroll prodotti venduti online"> 
-    <Message>Sorting attribute are unspecified for the component 'Scroll prodotti venduti online'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area37#page106#pwu25')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Prodottti venduti online"> 
-    <Message>Sorting attribute are unspecified for the component 'Prodottti venduti online'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area37#page106#pwu35')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Orario"> 
-    <Message>Sorting attribute are unspecified for the component 'Orario'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area37#page106#pwu36')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Orario oggi"> 
-    <Message>Sorting attribute are unspecified for the component 'Orario oggi'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area39#page111#inu20')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista Negozi nuovi"> 
-    <Message>Sorting attribute are unspecified for the component 'Lista Negozi nuovi'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area39#page111#scu20')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Scroller Categorie"> 
-    <Message>Sorting attribute are unspecified for the component 'Scroller Categorie'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area39#page111#inu23')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Spese in arrivo oggi"> 
-    <Message>Sorting attribute are unspecified for the component 'Spese in arrivo oggi'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area39#page111#scu8')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Spese in spedizione oggi"> 
-    <Message>Sorting attribute are unspecified for the component 'Spese in spedizione oggi'</Message> 
-  </Warning>  
-  <Warning error="true" xpath="id('sv2#area39#page111#scu8')" rootXPath="id('sv2')" key="" label="Spese in spedizione oggi"> 
-    <Message>The block factor for the component 'Spese in spedizione oggi' has not been specified</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area39#page111#scu26')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Scroller prodotti nuovi"> 
-    <Message>Sorting attribute are unspecified for the component 'Scroller prodotti nuovi'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area39#page111#scu30')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Promozioni attive"> 
-    <Message>Sorting attribute are unspecified for the component 'Promozioni attive'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area39#page111#scu31')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Negozi nuovi"> 
-    <Message>Sorting attribute are unspecified for the component 'Negozi nuovi'</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area40#page113#inu21')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Promozioni attive in negozio"> 
+  <Warning error="false" xpath="id('sv2#area43#page150#inu12')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Promozioni attive in negozio"> 
     <Message>Sorting attribute are unspecified for the component 'Promozioni attive in negozio'</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area40#page113#inu22')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Promozioni attive online"> 
+  <Warning error="false" xpath="id('sv2#area43#page150#inu13')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Promozioni attive online"> 
     <Message>Sorting attribute are unspecified for the component 'Promozioni attive online'</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area40#page113#scu21')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Scroll promozioni online"> 
+  <Warning error="false" xpath="id('sv2#area43#page150#scu56')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Scroll promozioni online"> 
     <Message>Sorting attribute are unspecified for the component 'Scroll promozioni online'</Message> 
   </Warning>  
-  <Warning error="true" xpath="id('sv2#area40#page113#scu21#su281#acond47')" rootXPath="id('sv2')" key="" label="valida online"> 
+  <Warning error="true" xpath="id('sv2#area43#page150#scu56#su381#acond104')" rootXPath="id('sv2')" key="" label="valida online"> 
     <Message>Invalid value '1' specified for the condition 'valida online': 'true' or 'false' must be specified</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area40#page113#scu22')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Scroll promozioni offline"> 
+  <Warning error="false" xpath="id('sv2#area43#page150#scu57')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Scroll promozioni offline"> 
     <Message>Sorting attribute are unspecified for the component 'Scroll promozioni offline'</Message> 
   </Warning>  
-  <Warning error="true" xpath="id('sv2#area40#page113#scu22#su282#acond48')" rootXPath="id('sv2')" key="" label="valida online"> 
+  <Warning error="true" xpath="id('sv2#area43#page150#scu57#su382#acond105')" rootXPath="id('sv2')" key="" label="valida online"> 
     <Message>Invalid value '1' specified for the condition 'valida online': 'true' or 'false' must be specified</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area40#page113#scu23')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Scroll prodotto online"> 
+  <Warning error="false" xpath="id('sv2#area43#page150#scu58')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Scroll prodotto online"> 
     <Message>Sorting attribute are unspecified for the component 'Scroll prodotto online'</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area40#page113#pwu29')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Dove viene venduto online"> 
+  <Warning error="false" xpath="id('sv2#area43#page150#pwu57')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Dove viene venduto online"> 
     <Message>Sorting attribute are unspecified for the component 'Dove viene venduto online'</Message> 
   </Warning>  
-  <Warning error="true" xpath="id('sv2#area42#page117#seu144#su297#acond50')" rootXPath="id('sv2')" key="" label="Online"> 
+  <Warning error="true" xpath="id('sv2#area43#page151#alt18#page152#pwu58#su388#acond106')" rootXPath="id('sv2')" key="" label="Vendibile"> 
+    <Message>Invalid value '1' specified for the condition 'Vendibile': 'true' or 'false' must be specified</Message> 
+  </Warning>  
+  <Warning error="true" xpath="id('sv2#area43#page151#alt18#page153#pwu59#su389#acond107')" rootXPath="id('sv2')" key="" label="Vendibile"> 
+    <Message>Invalid value '1' specified for the condition 'Vendibile': 'true' or 'false' must be specified</Message> 
+  </Warning>  
+  <Warning error="true" xpath="id('sv2#area44#page158#alt19#page159#pwu60#su394#acond110')" rootXPath="id('sv2')" key="" label="vendibile"> 
+    <Message>Invalid value '1' specified for the condition 'vendibile': 'true' or 'false' must be specified</Message> 
+  </Warning>  
+  <Warning error="true" xpath="id('sv2#area44#page158#alt19#page160#pwu61#su395#acond111')" rootXPath="id('sv2')" key="" label="vendibile"> 
+    <Message>Invalid value '1' specified for the condition 'vendibile': 'true' or 'false' must be specified</Message> 
+  </Warning>  
+  <Warning error="true" xpath="id('sv2#area44#page161#seu176#su400#acond112')" rootXPath="id('sv2')" key="" label="Online"> 
     <Message>Invalid value '1' specified for the condition 'Online': 'true' or 'false' must be specified</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area42#page117#alt5#page118#pwu32')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Righe d'ordine"> 
+  <Warning error="false" xpath="id('sv2#area44#page161#alt20#page162#pwu62')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Righe d'ordine"> 
     <Message>Sorting attribute are unspecified for the component 'Righe d'ordine'</Message> 
   </Warning>  
-  <Warning xpath="id('sv2#area35#page101')" rootXPath="id('sv2')" label="Modifica profilo"> 
-    <Message>Security Warning: the public page 'Modifica profilo' shows information about the user</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="protected" value="true">Protect the page</Resolution> 
+  <Warning error="true" xpath="id('sv2#area45#page165#inu15#su412#acond116')" rootXPath="id('sv2')" key="" label="Vendibile"> 
+    <Message>Invalid value '1' specified for the condition 'Vendibile': 'true' or 'false' must be specified</Message> 
   </Warning>  
-  <Warning xpath="id('sv2#area35#page100')" rootXPath="id('sv2')" label="Dettagli Profilo"> 
-    <Message>Security Warning: the public page 'Dettagli Profilo' shows information about the user</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="protected" value="true">Protect the page</Resolution> 
+  <Warning error="false" xpath="id('sv2#area45#page165#inu17')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista Negozi nuovi"> 
+    <Message>Sorting attribute are unspecified for the component 'Lista Negozi nuovi'</Message> 
   </Warning>  
-  <Warning xpath="id('sv2#area34#page98')" rootXPath="id('sv2')" label="Spese"> 
-    <Message>Security Warning: the public page 'Spese' shows information about the user</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="protected" value="true">Protect the page</Resolution> 
+  <Warning error="false" xpath="id('sv2#area45#page165#scu60')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Scroller Categorie"> 
+    <Message>Sorting attribute are unspecified for the component 'Scroller Categorie'</Message> 
   </Warning>  
-  <Warning xpath="id('sv2#area39#page111')" rootXPath="id('sv2')" label="Home"> 
+  <Warning error="false" xpath="id('sv2#area45#page165#inu18')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Spese in arrivo oggi"> 
+    <Message>Sorting attribute are unspecified for the component 'Spese in arrivo oggi'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area45#page165#scu61')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Spese in spedizione oggi"> 
+    <Message>Sorting attribute are unspecified for the component 'Spese in spedizione oggi'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area45#page165#scu63')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Scroller prodotti nuovi"> 
+    <Message>Sorting attribute are unspecified for the component 'Scroller prodotti nuovi'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area45#page165#scu64')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Promozioni attive"> 
+    <Message>Sorting attribute are unspecified for the component 'Promozioni attive'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area45#page165#scu65')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Negozi nuovi"> 
+    <Message>Sorting attribute are unspecified for the component 'Negozi nuovi'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area48#page175#inu19')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Promozioni attive"> 
+    <Message>Sorting attribute are unspecified for the component 'Promozioni attive'</Message> 
+  </Warning>  
+  <Warning error="true" xpath="id('sv2#area48#page175#inu19#su437#acond128')" rootXPath="id('sv2')" key="" label="Valida in negozio"> 
+    <Message>Invalid value '1' specified for the condition 'Valida in negozio': 'true' or 'false' must be specified</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area48#page175#scu66')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Scroll prodotti venduti online"> 
+    <Message>Sorting attribute are unspecified for the component 'Scroll prodotti venduti online'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area48#page175#pwu65')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Prodottti venduti online"> 
+    <Message>Sorting attribute are unspecified for the component 'Prodottti venduti online'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area48#page175#pwu66')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Orario"> 
+    <Message>Sorting attribute are unspecified for the component 'Orario'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area48#page175#pwu67')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Orario oggi"> 
+    <Message>Sorting attribute are unspecified for the component 'Orario oggi'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area50#page182#pwu70')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Righe d'ordine"> 
+    <Message>Sorting attribute are unspecified for the component 'Righe d'ordine'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area50#page183#pwu71')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Righe d'ordine"> 
+    <Message>Sorting attribute are unspecified for the component 'Righe d'ordine'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area50#page186#pwu72')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Spese consegnate"> 
+    <Message>Sorting attribute are unspecified for the component 'Spese consegnate'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area50#page186#pwu73')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Spese"> 
+    <Message>Sorting attribute are unspecified for the component 'Spese'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area50#page186#pwu74')" rootXPath="id('sv2')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Spese da confermare"> 
+    <Message>Sorting attribute are unspecified for the component 'Spese da confermare'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv2#area45#page165')" rootXPath="id('sv2')" label="Home"> 
     <Message>Security Warning: the public page 'Home' shows information about the user</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="protected" value="true">Protect the page</Resolution> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area37#page107')" rootXPath="id('sv2')" key="" label="Pagina negozi"> 
+  <Warning xpath="id('sv2#area47#page174')" rootXPath="id('sv2')" label="Dettagli Profilo"> 
+    <Message>Security Warning: the public page 'Dettagli Profilo' shows information about the user</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="protected" value="true">Protect the page</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv2#area47#page173')" rootXPath="id('sv2')" label="Modifica profilo"> 
+    <Message>Security Warning: the public page 'Modifica profilo' shows information about the user</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="protected" value="true">Protect the page</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv2#area50#page186')" rootXPath="id('sv2')" label="Spese"> 
+    <Message>Security Warning: the public page 'Spese' shows information about the user</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="protected" value="true">Protect the page</Resolution> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area48#page176')" rootXPath="id('sv2')" key="" label="Pagina negozi"> 
     <Message>Security Warning: the page 'Pagina negozi' is public but no captcha field is configured on its form component</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area35#page101')" rootXPath="id('sv2')" key="" label="Modifica profilo"> 
-    <Message>Security Warning: the page 'Modifica profilo' is public but no captcha field is configured on its form component</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area34#page96')" rootXPath="id('sv2')" key="" label="Conferma spesa"> 
-    <Message>Security Warning: the page 'Conferma spesa' is public but no captcha field is configured on its form component</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area40#page114')" rootXPath="id('sv2')" key="" label="Pagina Elenco prodotti"> 
-    <Message>Security Warning: the page 'Pagina Elenco prodotti' is public but no captcha field is configured on its form component</Message> 
-  </Warning>  
-  <Warning error="false" xpath="id('sv2#area42#page117')" rootXPath="id('sv2')" key="" label="Pagina prodotto online"> 
+  <Warning error="false" xpath="id('sv2#area44#page161')" rootXPath="id('sv2')" key="" label="Pagina prodotto online"> 
     <Message>Security Warning: the page 'Pagina prodotto online' is public but no captcha field is configured on its form component</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area42#page116')" rootXPath="id('sv2')" key="" label="Pagina Elenco prodotti online"> 
-    <Message>Security Warning: the page 'Pagina Elenco prodotti online' is public but no captcha field is configured on its form component</Message> 
+  <Warning error="false" xpath="id('sv2#area50#page183')" rootXPath="id('sv2')" key="" label="Conferma spesa"> 
+    <Message>Security Warning: the page 'Conferma spesa' is public but no captcha field is configured on its form component</Message> 
   </Warning>  
-  <Warning error="false" xpath="id('sv2#area36#page103')" rootXPath="id('sv2')" key="" label="Pagina Promozioni"> 
+  <Warning error="false" xpath="id('sv2#area47#page173')" rootXPath="id('sv2')" key="" label="Modifica profilo"> 
+    <Message>Security Warning: the page 'Modifica profilo' is public but no captcha field is configured on its form component</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area46#page168')" rootXPath="id('sv2')" key="" label="Pagina Promozioni"> 
     <Message>Security Warning: the page 'Pagina Promozioni' is public but no captcha field is configured on its form component</Message> 
   </Warning>  
-  <Warning xpath="/WebProject" rootXPath="/WebProject" key="DUPLICATED_IDS" label="WebProject"> 
-    <Message>The following elements have duplicated final ids: Dettagli, Errore, Fascia di prezzo, Flow103, IndirizzoNegozio, Info, Nazione, OKFlow30, OKFlow30, Prodotti to Nazione</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.RemoveIdsDuplicationResolutionGenerator">Change ids</Resolution> 
+  <Warning error="false" xpath="id('sv2#area43#page151')" rootXPath="id('sv2')" key="" label="Pagina Elenco prodotti"> 
+    <Message>Security Warning: the page 'Pagina Elenco prodotti' is public but no captcha field is configured on its form component</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv2#area44#page158')" rootXPath="id('sv2')" key="" label="Pagina Elenco prodotti online"> 
+    <Message>Security Warning: the page 'Pagina Elenco prodotti online' is public but no captcha field is configured on its form component</Message> 
   </Warning> 
 </Warnings>

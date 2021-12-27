@@ -1,0 +1,187 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area50#page182" name="Dettaglio spesa" gr:x="1090" gr:y="0">
+  <ContentUnits>
+    <DataUnit id="sv2#area50#page182#dau60" name="Spesa" linkOrder="sv2#area50#page182#dau60#ln606 sv2#area50#page182#dau60#ln609" gr:x="140" gr:y="0" entity="ent9" displayAttributes="ent9#att35 ent9#att36 rel12#role23.ent10#att38 rel13#role26.userName rel17#role33.ent3#att9">
+      <Selector id="sv2#area50#page182#dau60#su445" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area50#page182#dau60#su445#kcond273" name="KeyCondition103" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area50#page182#dau60#ln605" name="Flow233" to="sv2#area50#page182#pwu70" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area50#page182#dau60#ln606" name="Calcola totale" to="sv2#area50#miu30" type="normal" validate="true">
+        <LinkParameter id="sv2#area50#page182#dau60#ln606#par1665" name="oid_RoleCondition39 [oid]" source="data.ent9#att33" target="sv2#area50#miu30.mov1#opm1#icu1#icp1"/>
+      </Link>
+      <Link id="sv2#area50#page182#dau60#ln607" name="Flow149" to="sv2#area50#page182#dau61" type="transport" validate="true">
+        <LinkParameter id="sv2#area50#page182#dau60#ln607#par1666" name="SpesaToNegozio.oid_KeyCondition41 [oid]" source="data.rel17#role33_ent3#att8" target="sv2#area50#page182#dau61#su447#kcond274.ent3#att8"/>
+      </Link>
+      <Link id="sv2#area50#page182#dau60#ln608" name="Flow223" to="sv2#area50#page182#dau62" type="transport" validate="true">
+        <LinkParameter id="sv2#area50#page182#dau60#ln608#par1667" name="SpesaToUser.oid_User to Indirizzo [oid]" source="data.rel13#role26_userOID" target="sv2#area50#page182#dau62#su448#rcond179.userOID"/>
+      </Link>
+      <Link id="sv2#area50#page182#dau60#ln609" name="Risparmio" to="sv2#area50#miu32" type="normal" validate="true">
+        <LinkParameter id="sv2#area50#page182#dau60#ln609#par1668" name="oid_RoleCondition39 [oid]" source="data.ent9#att33" target="sv2#area50#miu32.mov1#opm2#icu2#icp2"/>
+      </Link>
+    </DataUnit>
+    <PowerIndexUnit id="sv2#area50#page182#pwu70" name="Righe d'ordine" gr:x="310" gr:y="5" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att40 ent7#att29 ent7#att10 ent7#att62 rel9#role17.ent4#att15">
+      <Selector id="sv2#area50#page182#pwu70#su446" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area50#page182#pwu70#su446#rcond178" name="RoleCondition63" predicate="in" implied="false" role="rel10#role20"/>
+      </Selector>
+    </PowerIndexUnit>
+    <MultiMessageUnit id="sv2#area50#page182#mssu76" name="Totale" gr:x="360" gr:y="145"/>
+    <DataUnit id="sv2#area50#page182#dau61" name="Negozio scelto" gr:x="0" gr:y="155" entity="ent3" displayAttributes="ent3#att13 ent3#att12 ent3#att9">
+      <Selector id="sv2#area50#page182#dau61#su447" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area50#page182#dau61#su447#kcond274" name="KeyCondition41" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <DataUnit id="sv2#area50#page182#dau62" name="Indirizzo di spedizione" gr:x="170" gr:y="250" entity="ent2" displayAttributes="ent2#att7 ent2#att6 rel1#role2.ent1#att2">
+      <Selector id="sv2#area50#page182#dau62#su448" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area50#page182#dau62#su448#rcond179" name="User to Indirizzo" predicate="in" implied="false" role="rel3#role5"/>
+      </Selector>
+    </DataUnit>
+    <MultiMessageUnit id="sv2#area50#page182#mssu77" name="Hai risparmiato" gr:x="435" gr:y="235"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area50#page182#dau60">
+          <layout:Attribute attribute="ent9#att35"/>
+          <layout:Attribute attribute="ent9#att36"/>
+          <layout:Attribute attribute="rel12#role23.ent10#att38"/>
+          <layout:Attribute attribute="rel13#role26.userName"/>
+          <layout:Attribute attribute="rel17#role33.ent3#att9"/>
+          <layout:Link link="sv2#area50#page182#dau60#ln606"/>
+          <layout:Link link="sv2#area50#page182#dau60#ln609"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area50#page182#mssu76"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area50#page182#mssu77"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area50#page182#pwu70">
+          <layout:Attribute attribute="ent7#att40"/>
+          <layout:Attribute attribute="ent7#att29"/>
+          <layout:Attribute attribute="ent7#att10"/>
+          <layout:Attribute attribute="ent7#att62"/>
+          <layout:Attribute attribute="rel9#role17.ent4#att15"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area50#page182#dau61">
+          <layout:Attribute attribute="ent3#att13"/>
+          <layout:Attribute attribute="ent3#att12"/>
+          <layout:Attribute attribute="ent3#att9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area50#page182#dau62">
+          <layout:Attribute attribute="ent2#att7"/>
+          <layout:Attribute attribute="ent2#att6"/>
+          <layout:Attribute attribute="rel1#role2.ent1#att2"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

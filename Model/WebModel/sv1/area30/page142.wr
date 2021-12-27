@@ -1,0 +1,42 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area30#page142" name="Pagina dettaglio promozione" gr:x="615" gr:y="0">
+  <ContentUnits>
+    <DataUnit id="sv1#area30#page142#dau48" name="Dettaglio Promozione" linkOrder="sv1#area30#page142#dau48#ln460 sv1#area30#page142#dau48#ln461" gr:x="0" gr:y="0" entity="ent6" displayAttributes="ent6#att23 ent6#att24 ent6#att25 ent6#att26 ent6#att39 ent6#att41">
+      <Selector id="sv1#area30#page142#dau48#su364" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area30#page142#dau48#su364#kcond224" name="KeyCondition12" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area30#page142#dau48#ln460" name="Vai al negozio" to="sv1#area29#page134#dau37" type="normal" validate="true">
+        <LinkParameter id="sv1#area30#page142#dau48#ln460#par770" name="PromozioneToNegozio.oid_KeyCondition14 [oid]" source="data.rel5#role9_ent3#att8" target="sv1#area29#page134#dau37#su354#kcond179.ent3#att8"/>
+      </Link>
+      <Link id="sv1#area30#page142#dau48#ln461" name="Vai al prodotto" to="sv1#area31#page143#dau49" type="normal" validate="true">
+        <LinkParameter id="sv1#area30#page142#dau48#ln461#par771" name="PromozioneToProdotto.oid_KeyCondition6 [oid]" source="data.rel6#role11_ent4#att14" target="sv1#area31#page143#dau49#su366#kcond225.ent4#att14"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area30#page142#dau48">
+          <layout:Attribute attribute="ent6#att23"/>
+          <layout:Attribute attribute="ent6#att24"/>
+          <layout:Attribute attribute="ent6#att25"/>
+          <layout:Attribute attribute="ent6#att26"/>
+          <layout:Attribute attribute="ent6#att39"/>
+          <layout:Attribute attribute="ent6#att41"/>
+          <layout:Link link="sv1#area30#page142#dau48#ln460"/>
+          <layout:Link link="sv1#area30#page142#dau48#ln461"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

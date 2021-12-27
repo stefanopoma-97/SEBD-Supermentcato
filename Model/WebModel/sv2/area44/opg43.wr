@@ -1,0 +1,57 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area44#opg43" name="Filtri" transaction="true" gr:x="40" gr:y="2375">
+  <OperationUnits>
+    <SelectorUnit id="sv2#area44#opg43#seu177" name="Filtri ricerca" gr:x="290" gr:y="0" entity="ent8">
+      <Selector id="sv2#area44#opg43#seu177#su405" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area44#opg43#seu177#su405#rcond158" name="Da categoria a prodotti" predicate="in" implied="true" role="rel4#role8.rel8#role16"/>
+        <RelationshipRoleCondition id="sv2#area44#opg43#seu177#su405#rcond159" name="Da fascia a prodotti" predicate="in" implied="true" role="rel11#role21.rel8#role16"/>
+        <RelationshipRoleCondition id="sv2#area44#opg43#seu177#su405#rcond160" name="Nazione to Prodotto" predicate="in" implied="true" role="rel18#role36.rel8#role16"/>
+        <AttributesCondition id="sv2#area44#opg43#seu177#su405#acond114" name="Nome" predicate="contains" booleanOperator="or" implied="true" attributes="rel8#role15.ent4#att15"/>
+        <RelationshipRoleCondition id="sv2#area44#opg43#seu177#su405#rcond161" name="Negozio to Prodotto Online" predicate="in" implied="false" role="rel7#role14"/>
+        <KeyCondition id="sv2#area44#opg43#seu177#su405#kcond249" name="prodotti nuovi" predicate="in" implied="true"/>
+      </Selector>
+      <KOLink id="sv2#area44#opg43#seu177#kln147" name="KOFlow46" to="sv2#area44#page157" automaticCoupling="true"/>
+      <OKLink id="sv2#area44#opg43#seu177#oln167" name="Flow35" to="sv2#area44#page158#alt19#page160#pwu61" automaticCoupling="true" gr:bendpoints="475,-101,-420,-71"/>
+    </SelectorUnit>
+    <SelectorUnit id="sv2#area44#opg43#seu178" name="Prodotti nuovi" gr:x="15" gr:y="235" entity="ent11">
+      <OKLink id="sv2#area44#opg43#seu178#oln169" name="OKFlow39" to="sv2#area44#opg43#seu179">
+        <LinkParameter id="sv2#area44#opg43#seu178#oln169#par1483" name="oid_Prodotto to Prodotto online [oid]" source="ent4#att14Array" target="sv2#area44#opg43#seu179#su406#rcond162.ent4#att14"/>
+        <LinkParameter id="sv2#area44#opg43#seu178#oln169#par1484" name="Categoria_PASSING" sourceLinkParameter="sv2#area44#opg43#inn32#oln172#par1495" passing="true"/>
+        <LinkParameter id="sv2#area44#opg43#seu178#oln169#par1485" name="Fascia di prezzo_PASSING" sourceLinkParameter="sv2#area44#opg43#inn32#oln172#par1496" passing="true"/>
+        <LinkParameter id="sv2#area44#opg43#seu178#oln169#par1486" name="Nazione_PASSING" sourceLinkParameter="sv2#area44#opg43#inn32#oln172#par1497" passing="true"/>
+        <LinkParameter id="sv2#area44#opg43#seu178#oln169#par1487" name="Nome_PASSING" sourceLinkParameter="sv2#area44#opg43#inn32#oln172#par1498" passing="true"/>
+        <LinkParameter id="sv2#area44#opg43#seu178#oln169#par1488" name="oid_PASSING" sourceLinkParameter="sv2#area44#opg43#inn32#oln172#par1499" passing="true"/>
+      </OKLink>
+      <KOLink id="sv2#area44#opg43#seu178#kln148" name="KOFlow45" to="sv2#area44#page157" automaticCoupling="true"/>
+    </SelectorUnit>
+    <SelectorUnit id="sv2#area44#opg43#seu179" name="Prodotti online nuovi" gr:x="195" gr:y="230" entity="ent8">
+      <Selector id="sv2#area44#opg43#seu179#su406" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area44#opg43#seu179#su406#rcond162" name="Prodotto to Prodotto online" predicate="in" implied="false" role="rel8#role16"/>
+      </Selector>
+      <KOLink id="sv2#area44#opg43#seu179#kln151" name="KOFlow44" to="sv2#area44#page157" automaticCoupling="true"/>
+      <OKLink id="sv2#area44#opg43#seu179#oln170" name="OKFlow135" to="sv2#area44#opg43#seu177">
+        <LinkParameter id="sv2#area44#opg43#seu179#oln170#par1489" name="oid_prodotti nuovi [oid]" source="ent8#att31Array" target="sv2#area44#opg43#seu177#su405#kcond249.ent8#att31"/>
+        <LinkParameter id="sv2#area44#opg43#seu179#oln170#par1490" name="Categoria_PASSING_Da categoria a prodotti [oid]" sourceLinkParameter="sv2#area44#opg43#seu178#oln169#par1484" target="sv2#area44#opg43#seu177#su405#rcond158.ent5#att19"/>
+        <LinkParameter id="sv2#area44#opg43#seu179#oln170#par1491" name="Fascia di prezzo_PASSING_Da fascia a prodotti [oid]" sourceLinkParameter="sv2#area44#opg43#seu178#oln169#par1485" target="sv2#area44#opg43#seu177#su405#rcond159.ent15#att30"/>
+        <LinkParameter id="sv2#area44#opg43#seu179#oln170#par1492" name="Nazione_PASSING_Nazione to Prodotto [oid]" sourceLinkParameter="sv2#area44#opg43#seu178#oln169#par1486" target="sv2#area44#opg43#seu177#su405#rcond160.ent19#att44"/>
+        <LinkParameter id="sv2#area44#opg43#seu179#oln170#par1493" name="oid_PASSING_Negozio to Prodotto Online [oid]" sourceLinkParameter="sv2#area44#opg43#seu178#oln169#par1488" target="sv2#area44#opg43#seu177#su405#rcond161.ent3#att8"/>
+        <LinkParameter id="sv2#area44#opg43#seu179#oln170#par1494" name="Nome_PASSING_Nome" sourceLinkParameter="sv2#area44#opg43#seu178#oln169#par1487" target="sv2#area44#opg43#seu177#su405#acond114"/>
+      </OKLink>
+    </SelectorUnit>
+    <IsNotNullUnit id="sv2#area44#opg43#inn32" name="Is Not Null online" gr:x="0" gr:y="10">
+      <OKLink id="sv2#area44#opg43#inn32#oln172" name="OKFlow132" to="sv2#area44#opg43#seu178">
+        <LinkParameter id="sv2#area44#opg43#inn32#oln172#par1495" name="Categoria_PASSING" sourceLinkParameter="sv2#area44#page158#enu42#ln505#par1433" passing="true"/>
+        <LinkParameter id="sv2#area44#opg43#inn32#oln172#par1496" name="Fascia di prezzo_PASSING" sourceLinkParameter="sv2#area44#page158#enu42#ln505#par1434" passing="true"/>
+        <LinkParameter id="sv2#area44#opg43#inn32#oln172#par1497" name="Nazione_PASSING" sourceLinkParameter="sv2#area44#page158#enu42#ln505#par1435" passing="true"/>
+        <LinkParameter id="sv2#area44#opg43#inn32#oln172#par1498" name="Nome_PASSING" sourceLinkParameter="sv2#area44#page158#enu42#ln505#par1436" passing="true"/>
+        <LinkParameter id="sv2#area44#opg43#inn32#oln172#par1499" name="oid_PASSING" sourceLinkParameter="sv2#area44#page158#enu42#ln505#par1437" passing="true"/>
+      </OKLink>
+      <KOLink id="sv2#area44#opg43#inn32#kln155" name="KOFlow60" to="sv2#area44#opg43#seu177">
+        <LinkParameter id="sv2#area44#opg43#inn32#kln155#par1500" name="Categoria_PASSING_Da categoria a prodotti [oid]" sourceLinkParameter="sv2#area44#page158#enu42#ln505#par1433" target="sv2#area44#opg43#seu177#su405#rcond158.ent5#att19"/>
+        <LinkParameter id="sv2#area44#opg43#inn32#kln155#par1501" name="Fascia di prezzo_PASSING_Da fascia a prodotti [oid]" sourceLinkParameter="sv2#area44#page158#enu42#ln505#par1434" target="sv2#area44#opg43#seu177#su405#rcond159.ent15#att30"/>
+        <LinkParameter id="sv2#area44#opg43#inn32#kln155#par1502" name="Nazione_PASSING_Nazione to Prodotto [oid]" sourceLinkParameter="sv2#area44#page158#enu42#ln505#par1435" target="sv2#area44#opg43#seu177#su405#rcond160.ent19#att44"/>
+        <LinkParameter id="sv2#area44#opg43#inn32#kln155#par1503" name="oid_PASSING_Negozio to Prodotto Online [oid]" sourceLinkParameter="sv2#area44#page158#enu42#ln505#par1437" target="sv2#area44#opg43#seu177#su405#rcond161.ent3#att8"/>
+        <LinkParameter id="sv2#area44#opg43#inn32#kln155#par1504" name="Nome_PASSING_Nome" sourceLinkParameter="sv2#area44#page158#enu42#ln505#par1436" target="sv2#area44#opg43#seu177#su405#acond114"/>
+      </KOLink>
+    </IsNotNullUnit>
+  </OperationUnits>
+</OperationGroup>
