@@ -1,6 +1,6 @@
 <Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-840" gr:y="-1855" id="sv5#area18" name="Gestione negozi" landmark="true" defaultPage="sv5#area18#page61">
   <OperationUnits>
-    <ModuleInstanceUnit gr:x="935" gr:y="350" id="sv5#area18#miu17" moduleId="mov1#opm11">
+    <ModuleInstanceUnit gr:x="725" gr:y="360" id="sv5#area18#miu17" moduleId="mov1#opm11">
       <KOLink id="sv5#area18#miu17#kln114" to="sv5#area18#page66#mssu23" name="KOFlow51">
         <LinkParameter id="sv5#area18#miu17#kln114#par869" name="Errore durante l'eliminazione del negozio o dell'indirizzo_Shown Messages" sourceValue="Errore durante l'eliminazione del negozio o dell'indirizzo" target="sv5#area18#page66#mssu23.shownMessages"/>
       </KOLink>
@@ -11,6 +11,16 @@
         <LinkParameter id="sv5#area18#miu17#oln130#par614" name="Errore: sono presenti promozioni associate al negozio_Shown Messages" target="sv5#area18#page66#mssu23.shownMessages" source="mov1#opm11#okcu12#ocp25"/>
       </OKLink>
       <OKLink id="sv5#area18#miu17#oln132" to="sv5#area18#page61" name="OKFlow47" codeRef="mov1#opm11#okcu14"/>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="1035" gr:y="715" id="sv5#area18#miu19" moduleId="mov1#hym1">
+      <OKLink id="sv5#area18#miu19#oln234" to="sv5#area18#opg21#mfu5" validate="true" name="Applica modifiche">
+        <LinkParameter id="sv5#area18#miu19#oln234#par1282" name="oid_PASSING" passing="true" source="mov1#hym1#okcu15#ocp31"/>
+        <LinkParameter id="sv5#area18#miu19#oln234#par1283" source="mov1#hym1#okcu15#ocp27" name="Numero_PASSING" passing="true"/>
+        <LinkParameter id="sv5#area18#miu19#oln234#par1284" source="mov1#hym1#okcu15#ocp26" name="Via_PASSING" passing="true"/>
+        <LinkParameter id="sv5#area18#miu19#oln234#par1285" source="mov1#hym1#okcu15#ocp30" name="Negozio Object_Negozio Object" target="sv5#area18#opg21#mfu5.entityBeans"/>
+        <LinkParameter id="sv5#area18#miu19#oln234#par1286" source="mov1#hym1#okcu15#ocp29" name="Citt&#224;_PASSING" passing="true"/>
+        <LinkParameter id="sv5#area18#miu19#oln234#par1287" source="mov1#hym1#okcu15#ocp28" name="Key [oid]_KeyCondition91 [oid]" target="sv5#area18#opg21#mfu5#su143#kcond91.ent3#att8"/>
+      </OKLink>
     </ModuleInstanceUnit>
   </OperationUnits>
 </Area>

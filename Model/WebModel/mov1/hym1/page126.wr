@@ -1,0 +1,210 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="mov1#hym1#page126" name="Modifica negozio" gr:x="245" gr:y="95">
+  <ContentUnits>
+    <EntryUnit id="mov1#hym1#page126#enu41" name="Modifica negozio" gr:x="645" gr:y="140" entity="ent3">
+      <Field id="mov1#hym1#page126#enu41#fld114" name="Nome" type="string" modifiable="true" attribute="ent3#att9" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld114#mnd113" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld115" name="Numero massimo di ordini giornalieri" type="integer" modifiable="true" attribute="ent3#att11" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld115#mnd114" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld116" name="Fondazione" type="date" modifiable="true" attribute="ent3#att12" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld116#mnd115" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld117" name="Via" type="string" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld117#mnd116" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld118" name="Numero" type="integer" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld118#mnd117" name="Mandatory22"/>
+        </VRules>
+      </Field>
+      <SelectionField id="mov1#hym1#page126#enu41#sfld24" name="Citt&#224;" type="string">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#sfld24#mnd118" name="Mandatory22"/>
+        </VRules>
+      </SelectionField>
+      <Field id="mov1#hym1#page126#enu41#fld119" name="Martedi inizio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld119#mnd119" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld120" name="Martedi fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld120#mnd120" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld121" name="Venerdi inizio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld121#mnd121" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld122" name="Sabato fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld122#mnd122" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld123" name="Giovedi fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld123#mnd123" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld124" name="Mercoledi inizio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld124#mnd124" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld125" name="Giovedi inzio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld125#mnd125" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld126" name="Domenica fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld126#mnd126" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld127" name="Mercoledi fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld127#mnd127" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld128" name="Domenica inizio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld128#mnd128" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld129" name="Venerdi fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld129#mnd129" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld130" name="Lunedi inzio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld130#mnd130" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld131" name="Lunedi fine" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld131#mnd131" name="Mandatory12"/>
+        </VRules>
+      </Field>
+      <Field id="mov1#hym1#page126#enu41#fld132" name="Sabato inizio" type="time" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="mov1#hym1#page126#enu41#fld132#mnd132" name="Mandatory12"/>
+        </VRules>
+      </Field>
+    </EntryUnit>
+    <SelectorUnit id="mov1#hym1#page126#seu97" name="Seleziona citt&#224;" gr:x="660" gr:y="10" entity="ent1">
+      <Link id="mov1#hym1#page126#seu97#ln436" name="Flow182" to="mov1#hym1#page126#enu41" type="transport" validate="true">
+        <LinkParameter id="mov1#hym1#page126#seu97#ln436#par1294" name="nome_Citt&#224; [label]" source="ent1#att2Array" target="mov1#hym1#page126#enu41#sfld24_label"/>
+        <LinkParameter id="mov1#hym1#page126#seu97#ln436#par1295" name="oid_Citt&#224; [output]" source="ent1#att1Array" target="mov1#hym1#page126#enu41#sfld24_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="mov1#hym1#page126#seu98" name="Seleziona indirizzo" gr:x="125" gr:y="130" entity="ent2">
+      <Selector id="mov1#hym1#page126#seu98#su340" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#hym1#page126#seu98#su340#rcond133" name="IndirizzoNegozio" predicate="in" implied="false" role="rel2#role3"/>
+      </Selector>
+      <Link id="mov1#hym1#page126#seu98#ln437" name="Flow184" to="mov1#hym1#page126#enu41" type="transport" validate="true">
+        <LinkParameter id="mov1#hym1#page126#seu98#ln437#par1299" name="numero_Numero" source="ent2#att7Array" target="mov1#hym1#page126#enu41#fld118_slot"/>
+        <LinkParameter id="mov1#hym1#page126#seu98#ln437#par1301" name="via_Via" source="ent2#att6Array" target="mov1#hym1#page126#enu41#fld117_slot"/>
+        <LinkParameter id="mov1#hym1#page126#seu98#ln437#par1302" name="oid_PASSING" source="ent2#att5Array" passing="true"/>
+        <LinkParameter id="mov1#hym1#page126#seu98#ln437#par1303" name="IndirizzoToCitt&#224;.oid_Citt&#224; - Preselection" source="rel1#role2_ent1#att1Array" target="mov1#hym1#page126#enu41#sfld24_presel"/>
+        <LinkParameter id="mov1#hym1#page126#seu98#ln437#par1351" name="nome_PASSING_Nome" sourceLinkParameter="mov1#hym1#page126#seu156#ln451#par1350" target="mov1#hym1#page126#enu41#fld114_slot"/>
+        <LinkParameter id="mov1#hym1#page126#seu98#ln437#par1353" name="massimo ordini giornalieri_PASSING_Numero massimo di ordini giornalieri" sourceLinkParameter="mov1#hym1#page126#seu156#ln451#par1352" target="mov1#hym1#page126#enu41#fld115_slot"/>
+      </Link>
+      <Link id="mov1#hym1#page126#seu98#ln438" name="Flow195" to="mov1#hym1#page126#dau35" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <DataUnit id="mov1#hym1#page126#dau35" name="Dettagli indirizzo" gr:x="130" gr:y="0" entity="ent2" displayAttributes="ent2#att6 ent2#att7">
+      <Selector id="mov1#hym1#page126#dau35#su341" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#hym1#page126#dau35#su341#kcond220" name="KeyCondition96" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <SelectorUnit gr:x="0" gr:y="135" id="mov1#hym1#page126#seu156" name="Negozio" entity="ent3">
+      <Link id="mov1#hym1#page126#seu156#ln451" name="Flow451" to="mov1#hym1#page126#seu98" type="transport" validate="true">
+        <LinkParameter id="mov1#hym1#page126#seu156#ln451#par1349" name="oid_IndirizzoNegozio [oid]" source="ent3#att8Array" target="mov1#hym1#page126#seu98#su340#rcond133.ent3#att8"/>
+        <LinkParameter id="mov1#hym1#page126#seu156#ln451#par1350" name="nome_PASSING" source="ent3#att9Array" passing="true"/>
+        <LinkParameter id="mov1#hym1#page126#seu156#ln451#par1352" name="massimo ordini giornalieri_PASSING" source="ent3#att11Array" passing="true"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov1#hym1#page126#enu41">
+          <layout:Field field="mov1#hym1#page126#enu41#fld114"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld115"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld116"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld117"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld118"/>
+          <layout:Field field="mov1#hym1#page126#enu41#sfld24"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld119"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld120"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld121"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld122"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld123"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld124"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld125"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld126"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld127"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld128"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld129"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld130"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld131"/>
+          <layout:Field field="mov1#hym1#page126#enu41#fld132"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov1#hym1#page126#dau35">
+          <layout:Attribute attribute="ent2#att6"/>
+          <layout:Attribute attribute="ent2#att7"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,14 +1,14 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1125" gr:y="990" id="sv5#area18#opg21" name="Modifica negozio" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1150" gr:y="990" id="sv5#area18#opg21" name="Modifica negozio" transaction="true">
   <OperationUnits>
     <ModifyUnit gr:x="30" gr:y="0" id="sv5#area18#opg21#mfu5" name="Modifica negozio" entity="ent3">
       <Selector id="sv5#area18#opg21#mfu5#su143" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area18#opg21#mfu5#su143#kcond91" name="KeyCondition91" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv5#area18#opg21#mfu5#oln48" name="OKFlow48" to="sv5#area18#opg21#mfu7">
-        <LinkParameter id="sv5#area18#opg21#mfu5#oln48#par304" name="oid_PASSING_KeyCondition92 [oid]" sourceLinkParameter="sv5#area18#page65#enu15#ln189#par302" target="sv5#area18#opg21#mfu7#su145#kcond92.ent2#att5"/>
-        <LinkParameter id="sv5#area18#opg21#mfu5#oln48#par305" name="Numero_PASSING_numero" sourceLinkParameter="sv5#area18#page65#enu15#ln189#par301" target="sv5#area18#opg21#mfu7.ent2#att7"/>
-        <LinkParameter id="sv5#area18#opg21#mfu5#oln48#par306" name="Via_PASSING_via" sourceLinkParameter="sv5#area18#page65#enu15#ln189#par303" target="sv5#area18#opg21#mfu7.ent2#att6"/>
-        <LinkParameter id="sv5#area18#opg21#mfu5#oln48#par310" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#page65#enu15#ln189#par309" passing="true"/>
+        <LinkParameter id="sv5#area18#opg21#mfu5#oln48#par304" name="oid_PASSING_KeyCondition92 [oid]" sourceLinkParameter="sv5#area18#miu19#oln234#par1282" target="sv5#area18#opg21#mfu7#su145#kcond92.ent2#att5"/>
+        <LinkParameter id="sv5#area18#opg21#mfu5#oln48#par305" name="Numero_PASSING_numero" sourceLinkParameter="sv5#area18#miu19#oln234#par1283" target="sv5#area18#opg21#mfu7.ent2#att7"/>
+        <LinkParameter id="sv5#area18#opg21#mfu5#oln48#par306" name="Via_PASSING_via" sourceLinkParameter="sv5#area18#miu19#oln234#par1284" target="sv5#area18#opg21#mfu7.ent2#att6"/>
+        <LinkParameter id="sv5#area18#opg21#mfu5#oln48#par310" name="Citt&#224;_PASSING" sourceLinkParameter="sv5#area18#miu19#oln234#par1286" passing="true"/>
       </OKLink>
       <KOLink id="sv5#area18#opg21#mfu5#kln52" name="KOFlow52" to="sv5#area18#page64#mssu22">
         <LinkParameter id="sv5#area18#opg21#mfu5#kln52#par308" name="Errore durante la modifica del negozio_Shown Messages" sourceValue="Errore durante la modifica del negozio" target="sv5#area18#page64#mssu22.shownMessages"/>

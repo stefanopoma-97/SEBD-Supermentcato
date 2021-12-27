@@ -461,12 +461,8 @@
             <LinkParameter id="sv5#area18#page61#alt12#page90#pwu30#ln229#par381" name="oid_OnlineNegozio [oid]" source="data[].ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp14"/>
             <LinkParameter id="sv5#area18#page61#alt12#page90#pwu30#ln229#par383" name="oid_PASSING" source="data[].ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp16"/>
           </Link>
-          <Link id="sv5#area18#page61#alt12#page90#pwu30#ln231" name="Modifica" to="sv5#area18#page65#seu50" type="normal" validate="true">
-            <LinkParameter id="sv5#area18#page61#alt12#page90#pwu30#ln231#par314" name="oid_IndirizzoNegozio [oid]" source="data[].ent3#att8" target="sv5#area18#page65#seu50#su144#rcond33.ent3#att8"/>
-            <LinkParameter id="sv5#area18#page61#alt12#page90#pwu30#ln231#par315" name="fondazione_PASSING" source="data[].ent3#att12" passing="true"/>
-            <LinkParameter id="sv5#area18#page61#alt12#page90#pwu30#ln231#par316" name="massimo ordini giornalieri_PASSING" source="data[].ent3#att11" passing="true"/>
-            <LinkParameter id="sv5#area18#page61#alt12#page90#pwu30#ln231#par317" name="nome_PASSING" source="data[].ent3#att9" passing="true"/>
-            <LinkParameter id="sv5#area18#page61#alt12#page90#pwu30#ln231#par322" name="oid_PASSING" source="data[].ent3#att8" passing="true"/>
+          <Link id="sv5#area18#page61#alt12#page90#pwu30#ln231" name="Modifica" to="sv5#area18#miu19" type="normal" validate="true">
+            <LinkParameter id="sv5#area18#page61#alt12#page90#pwu30#ln231#par1346" name="oid_id_negozio" source="data[].ent3#att8" target="sv5#area18#miu19.mov1#hym1#icu14#icp32"/>
           </Link>
           <Selector id="sv5#area18#page61#alt12#page90#pwu30#su218" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv5#area18#page61#alt12#page90#pwu30#su218#kcond186" name="KeyCondition186" predicate="in" implied="false"/>
@@ -490,12 +486,8 @@
             <LinkParameter id="sv5#area18#page61#alt12#page123#pwu47#ln100#par393" name="oid_OnlineNegozio [oid]" source="data[].ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp14"/>
             <LinkParameter id="sv5#area18#page61#alt12#page123#pwu47#ln100#par394" name="oid_PASSING" source="data[].ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp17"/>
           </Link>
-          <Link id="sv5#area18#page61#alt12#page123#pwu47#ln225" name="Modifica" to="sv5#area18#page65#seu50" type="normal" validate="true">
-            <LinkParameter id="sv5#area18#page61#alt12#page123#pwu47#ln225#par327" name="oid_IndirizzoNegozio [oid]" source="data[].ent3#att8" target="sv5#area18#page65#seu50#su144#rcond33.ent3#att8"/>
-            <LinkParameter id="sv5#area18#page61#alt12#page123#pwu47#ln225#par329" name="fondazione_PASSING" source="data[].ent3#att12" passing="true"/>
-            <LinkParameter id="sv5#area18#page61#alt12#page123#pwu47#ln225#par331" name="massimo ordini giornalieri_PASSING" source="data[].ent3#att11" passing="true"/>
-            <LinkParameter id="sv5#area18#page61#alt12#page123#pwu47#ln225#par332" name="nome_PASSING" source="data[].ent3#att9" passing="true"/>
-            <LinkParameter id="sv5#area18#page61#alt12#page123#pwu47#ln225#par333" name="oid_PASSING" source="data[].ent3#att8" passing="true"/>
+          <Link id="sv5#area18#page61#alt12#page123#pwu47#ln225" name="Modifica" to="sv5#area18#miu19" type="normal" validate="true">
+            <LinkParameter id="sv5#area18#page61#alt12#page123#pwu47#ln225#par1347" name="oid_id_negozio" source="data[].ent3#att8" target="sv5#area18#miu19.mov1#hym1#icu14#icp32"/>
           </Link>
           <Link id="sv5#area18#page61#alt12#page123#pwu47#ln239" name="Dettagli" to="sv5#area18#page62#dau22" type="normal" automaticCoupling="true" validate="true"/>
           <SortAttribute attribute="ent3#att9" order="ascending"/>

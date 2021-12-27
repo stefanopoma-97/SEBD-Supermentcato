@@ -8,12 +8,8 @@
         <LinkParameter id="sv5#area18#page62#dau22#ln175#par278" name="oid_PASSING" source="data.ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp15"/>
         <LinkParameter id="sv5#area18#page62#dau22#ln175#par352" name="oid_OnlineNegozio [oid]" source="data.ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp14"/>
       </Link>
-      <Link id="sv5#area18#page62#dau22#ln181" name="Modifica" to="sv5#area18#page65#seu50" type="normal" validate="true">
-        <LinkParameter id="sv5#area18#page62#dau22#ln181#par288" name="fondazione_PASSING" source="data.ent3#att12" passing="true"/>
-        <LinkParameter id="sv5#area18#page62#dau22#ln181#par289" name="massimo ordini giornalieri_PASSING" source="data.ent3#att11" passing="true"/>
-        <LinkParameter id="sv5#area18#page62#dau22#ln181#par290" name="nome_PASSING" source="data.ent3#att9" passing="true"/>
-        <LinkParameter id="sv5#area18#page62#dau22#ln181#par291" name="oid_PASSING" source="data.ent3#att8" passing="true"/>
-        <LinkParameter id="sv5#area18#page62#dau22#ln181#par320" name="oid_IndirizzoNegozio [oid]" source="data.ent3#att8" target="sv5#area18#page65#seu50#su144#rcond33.ent3#att8"/>
+      <Link id="sv5#area18#page62#dau22#ln181" name="Modifica" to="sv5#area18#miu19" type="normal" validate="true">
+        <LinkParameter id="sv5#area18#page62#dau22#ln181#par1345" name="oid_id_negozio" source="data.ent3#att8" target="sv5#area18#miu19.mov1#hym1#icu14#icp32"/>
       </Link>
       <Link id="sv5#area18#page62#dau22#ln192" name="Flow192" to="sv5#area18#page62#dau24" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
