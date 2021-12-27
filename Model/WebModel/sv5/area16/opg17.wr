@@ -52,9 +52,7 @@
       <TargetSelector id="sv5#area16#opg17#rcnu3#su134" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#opg17#rcnu3#su134#kcond81" name="KeyCondition81" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv5#area16#opg17#rcnu3#oln40" name="OKFlow40" to="sv5#area16#page44#dau17">
-        <LinkParameter id="sv5#area16#opg17#rcnu3#oln40#par236" name="Source oid [Prodotto]_KeyCondition33 [oid]" source="sourceent4#att14" target="sv5#area16#page44#dau17#su61#kcond33.ent4#att14"/>
-      </OKLink>
+      <OKLink id="sv5#area16#opg17#rcnu3#oln40" name="OKFlow40" to="sv5#area16#page44#dau17"/>
       <KOLink id="sv5#area16#opg17#rcnu3#kln39" name="KOFlow39" to="sv5#area16#page58#mssu16">
         <LinkParameter id="sv5#area16#opg17#rcnu3#kln39#par242" name="Errore nella riconessione con la nazione_Shown Messages" sourceValue="Errore nella riconessione con la nazione" target="sv5#area16#page58#mssu16.shownMessages"/>
       </KOLink>
