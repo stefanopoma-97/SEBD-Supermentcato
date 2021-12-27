@@ -130,7 +130,7 @@
         <LinkParameter id="mov1#opm10#opg31#lpu24#oln308#par1126" name="Next Element_SpesaToRighe [oid]" source="next" target="mov1#opm10#opg31#seu154#su329#rcond128.ent9#att33"/>
         <LinkParameter id="mov1#opm10#opg31#lpu24#oln308#par1127" name="Next Element_PASSING" source="next" passing="true"/>
       </OKLink>
-      <OKLink id="mov1#opm10#opg31#lpu24#oln311" to="mov1#opm10#okcu9" code="end" name="OKFlow242" gr:bendpoints="162,-130,-548,-85"/>
+      <OKLink id="mov1#opm10#opg31#lpu24#oln311" to="mov1#opm10#okcu9" code="end" name="OKFlow242" gr:bendpoints="178,-130,-457,0"/>
     </LoopUnit>
     <DeleteUnit id="mov1#opm10#opg31#dlu30" name="Cancella stato" gr:x="830" gr:y="215" entity="ent10">
       <Selector id="mov1#opm10#opg31#dlu30#su330" defaultPolicy="fill" booleanOperator="and">

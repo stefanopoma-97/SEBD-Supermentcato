@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="830" gr:y="165" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104 sv5#area16#page42#ln270">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="830" gr:y="120" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104 sv5#area16#page42#ln270">
   <ContentUnits>
     <EntryUnit gr:x="235" gr:y="125" id="sv5#area16#page42#enu20" name="Filtra i prodotti" linkOrder="sv5#area16#page42#enu20#ln294 sv5#area16#page42#enu20#ln232">
       <SelectionField id="sv5#area16#page42#enu20#sfld18" type="string" name="Categoria"/>
@@ -318,7 +318,7 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv5#area16#page42#ln104" name="Crea prodotto" to="sv5#area16#page45#enu12" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="353,1100,-202,-170"/>
+  <Link id="sv5#area16#page42#ln104" name="Crea prodotto" to="sv5#area16#page45#enu12" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="367,1020,-189,-164"/>
   <Alternative gr:x="0" gr:y="215" id="sv5#area16#page42#alt9" name="Liste" defaultPage="sv5#area16#page42#alt9#page81">
     <Page gr:x="0" gr:y="0" id="sv5#area16#page42#alt9#page81" name="Elenco prodotti">
       <ContentUnits>

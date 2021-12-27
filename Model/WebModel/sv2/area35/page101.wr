@@ -1,0 +1,166 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area35#page101" name="Modifica profilo" linkOrder="sv2#area35#page101#ln327" gr:x="20" gr:y="360">
+  <ContentUnits>
+    <GetUnit id="sv2#area35#page101#gtu25" name="Info utente" gr:x="0" gr:y="0" contextParameters="UserCtxParam">
+      <Link id="sv2#area35#page101#gtu25#ln313" name="Flow125" to="sv2#area35#page101#seu107" type="transport" validate="true">
+        <LinkParameter id="sv2#area35#page101#gtu25#ln313#par472" name="UserCtxParam.oid_KeyCondition80 [oid]" source="sv2#area35#page101#gtu25.UserCtxParam" target="sv2#area35#page101#seu107#su248#kcond149.userOID"/>
+      </Link>
+      <Link id="sv2#area35#page101#gtu25#ln314" name="Flow145" to="sv2#area35#page101#seu110" type="transport" validate="true" gr:bendpoints="-64,194,-144,-80">
+        <LinkParameter id="sv2#area35#page101#gtu25#ln314#par473" name="UserCtxParam.oid_RoleCondition64 [oid]" source="sv2#area35#page101#gtu25.UserCtxParam" target="sv2#area35#page101#seu110#su249#rcond96.userOID"/>
+      </Link>
+    </GetUnit>
+    <SelectorUnit id="sv2#area35#page101#seu107" name="Utente" gr:x="145" gr:y="0" entity="ent13">
+      <Link id="sv2#area35#page101#seu107#ln315" name="Flow130" to="sv2#area35#page101#enu32" type="transport" validate="true">
+        <LinkParameter id="sv2#area35#page101#seu107#ln315#par474" name="cognome_Cognome" source="ent13#att50Array" target="sv2#area35#page101#enu32#fld78_slot"/>
+        <LinkParameter id="sv2#area35#page101#seu107#ln315#par475" name="defaultGroup.oid_Email" source="emailArray" target="sv2#area35#page101#enu32#fld81_slot"/>
+        <LinkParameter id="sv2#area35#page101#seu107#ln315#par476" name="Utente esterno registratoToNegozio.oid_Negozio preferito - Preselection" source="rel15#role30_ent3#att8Array" target="sv2#area35#page101#enu32#sfld33_presel"/>
+        <LinkParameter id="sv2#area35#page101#seu107#ln315#par477" name="nome_Nome" source="ent13#att49Array" target="sv2#area35#page101#enu32#fld77_slot"/>
+        <LinkParameter id="sv2#area35#page101#seu107#ln315#par478" name="password_Password" source="passwordArray" target="sv2#area35#page101#enu32#fld80_slot"/>
+        <LinkParameter id="sv2#area35#page101#seu107#ln315#par479" name="userName_UserName" source="userNameArray" target="sv2#area35#page101#enu32#fld79_slot"/>
+        <LinkParameter id="sv2#area35#page101#seu107#ln315#par480" name="UserToIndirizzo.oid_PASSING" source="rel3#role5_ent2#att5Array" passing="true"/>
+      </Link>
+      <Selector id="sv2#area35#page101#seu107#su248" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area35#page101#seu107#su248#kcond149" name="KeyCondition80" predicate="in" implied="false"/>
+      </Selector>
+    </SelectorUnit>
+    <EntryUnit id="sv2#area35#page101#enu32" name="Modifica profilo" linkOrder="sv2#area35#page101#enu32#ln316" gr:x="450" gr:y="50" fieldOrder="sv2#area35#page101#enu32#fld79 sv2#area35#page101#enu32#fld80 sv2#area35#page101#enu32#fld77 sv2#area35#page101#enu32#fld78 sv2#area35#page101#enu32#fld81 sv2#area35#page101#enu32#sfld33 sv2#area35#page101#enu32#fld82 sv2#area35#page101#enu32#fld83 sv2#area35#page101#enu32#sfld34">
+      <Field id="sv2#area35#page101#enu32#fld77" name="Nome" type="string" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv2#area35#page101#enu32#fld77#mnd1" name="Mandatory3"/>
+        </VRules>
+      </Field>
+      <Field id="sv2#area35#page101#enu32#fld78" name="Cognome" type="string" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv2#area35#page101#enu32#fld78#mnd2" name="Mandatory3"/>
+        </VRules>
+      </Field>
+      <Field id="sv2#area35#page101#enu32#fld79" name="UserName" type="string" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv2#area35#page101#enu32#fld79#mnd3" name="Mandatory3"/>
+        </VRules>
+      </Field>
+      <Field id="sv2#area35#page101#enu32#fld80" name="Password" type="string" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv2#area35#page101#enu32#fld80#mnd4" name="Mandatory3"/>
+        </VRules>
+      </Field>
+      <Field id="sv2#area35#page101#enu32#fld81" name="Email" type="string" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv2#area35#page101#enu32#fld81#mnd5" name="Mandatory3"/>
+        </VRules>
+      </Field>
+      <SelectionField id="sv2#area35#page101#enu32#sfld33" name="Negozio preferito" type="string">
+        <VRules>
+          <MandatoryValidationRule id="sv2#area35#page101#enu32#sfld33#mnd6" name="Mandatory3"/>
+        </VRules>
+      </SelectionField>
+      <Field id="sv2#area35#page101#enu32#fld82" name="Via" type="string" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv2#area35#page101#enu32#fld82#mnd7" name="Mandatory3"/>
+        </VRules>
+      </Field>
+      <Field id="sv2#area35#page101#enu32#fld83" name="Numero" type="string" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv2#area35#page101#enu32#fld83#mnd8" name="Mandatory3"/>
+        </VRules>
+      </Field>
+      <SelectionField id="sv2#area35#page101#enu32#sfld34" name="Citt&#224;" type="string">
+        <VRules>
+          <MandatoryValidationRule id="sv2#area35#page101#enu32#sfld34#mnd9" name="Mandatory3"/>
+        </VRules>
+      </SelectionField>
+      <Link id="sv2#area35#page101#enu32#ln316" name="Flow176" to="sv2#area35#opg44#mfu12" type="normal" validate="true">
+        <LinkParameter id="sv2#area35#page101#enu32#ln316#par481" name="Cognome_cognome" source="sv2#area35#page101#enu32#fld78" target="sv2#area35#opg44#mfu12.ent13#att50"/>
+        <LinkParameter id="sv2#area35#page101#enu32#ln316#par482" name="Email_email" source="sv2#area35#page101#enu32#fld81" target="sv2#area35#opg44#mfu12.email"/>
+        <LinkParameter id="sv2#area35#page101#enu32#ln316#par483" name="2_Group.oid(defaultGroup)" target="sv2#area35#opg44#mfu12.User2DefaultGroup.groupOID" sourceValue="2"/>
+        <LinkParameter id="sv2#area35#page101#enu32#ln316#par484" name="Nome_nome" source="sv2#area35#page101#enu32#fld77" target="sv2#area35#opg44#mfu12.ent13#att49"/>
+        <LinkParameter id="sv2#area35#page101#enu32#ln316#par485" name="Password_password" source="sv2#area35#page101#enu32#fld80" target="sv2#area35#opg44#mfu12.password"/>
+        <LinkParameter id="sv2#area35#page101#enu32#ln316#par486" name="UserName_userName" source="sv2#area35#page101#enu32#fld79" target="sv2#area35#opg44#mfu12.userName"/>
+        <LinkParameter id="sv2#area35#page101#enu32#ln316#par487" name="Citt&#224;_PASSING" source="sv2#area35#page101#enu32#sfld34" passing="true"/>
+        <LinkParameter id="sv2#area35#page101#enu32#ln316#par488" name="Numero_PASSING" source="sv2#area35#page101#enu32#fld83" passing="true"/>
+        <LinkParameter id="sv2#area35#page101#enu32#ln316#par489" name="Via_PASSING" source="sv2#area35#page101#enu32#fld82" passing="true"/>
+        <LinkParameter id="sv2#area35#page101#enu32#ln316#par490" name="Negozio preferito_PASSING" source="sv2#area35#page101#enu32#sfld33" passing="true"/>
+        <LinkParameter id="sv2#area35#page101#enu32#ln316#par491" name="UserToIndirizzo.oid_PASSING" sourceLinkParameter="sv2#area35#page101#seu107#ln315#par480" passing="true"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit id="sv2#area35#page101#seu108" name="Citt&#224;" gr:x="165" gr:y="135" entity="ent1">
+      <Link id="sv2#area35#page101#seu108#ln317" name="Flow131" to="sv2#area35#page101#enu32" type="transport" validate="true">
+        <LinkParameter id="sv2#area35#page101#seu108#ln317#par492" name="nome_Citt&#224; [label]" source="ent1#att2Array" target="sv2#area35#page101#enu32#sfld34_label"/>
+        <LinkParameter id="sv2#area35#page101#seu108#ln317#par493" name="oid_Citt&#224; [output]" source="ent1#att1Array" target="sv2#area35#page101#enu32#sfld34_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv2#area35#page101#seu109" name="Negozi" gr:x="275" gr:y="135" entity="ent3">
+      <Link id="sv2#area35#page101#seu109#ln325" name="Flow142" to="sv2#area35#page101#enu32" type="transport" validate="true">
+        <LinkParameter id="sv2#area35#page101#seu109#ln325#par494" name="nome_Negozio preferito [label]" source="ent3#att9Array" target="sv2#area35#page101#enu32#sfld33_label"/>
+        <LinkParameter id="sv2#area35#page101#seu109#ln325#par497" name="oid_Negozio preferito [output]" source="ent3#att8Array" target="sv2#area35#page101#enu32#sfld33_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv2#area35#page101#seu110" name="Indirizzo" gr:x="0" gr:y="115" entity="ent2">
+      <Selector id="sv2#area35#page101#seu110#su249" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area35#page101#seu110#su249#rcond96" name="RoleCondition64" predicate="in" implied="false" role="rel3#role5"/>
+      </Selector>
+      <Link id="sv2#area35#page101#seu110#ln326" name="Flow175" to="sv2#area35#page101#enu32" type="transport" validate="true">
+        <LinkParameter id="sv2#area35#page101#seu110#ln326#par498" name="IndirizzoToCitt&#224;.oid_Citt&#224; - Preselection" source="rel1#role2_ent1#att1Array" target="sv2#area35#page101#enu32#sfld34_presel"/>
+        <LinkParameter id="sv2#area35#page101#seu110#ln326#par499" name="numero_Numero" source="ent2#att7Array" target="sv2#area35#page101#enu32#fld83_slot"/>
+        <LinkParameter id="sv2#area35#page101#seu110#ln326#par500" name="via_Via" source="ent2#att6Array" target="sv2#area35#page101#enu32#fld82_slot"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area35#page101#enu32">
+          <layout:Field field="sv2#area35#page101#enu32#fld79"/>
+          <layout:Field field="sv2#area35#page101#enu32#fld80"/>
+          <layout:Field field="sv2#area35#page101#enu32#fld77"/>
+          <layout:Field field="sv2#area35#page101#enu32#fld78"/>
+          <layout:Field field="sv2#area35#page101#enu32#fld81"/>
+          <layout:Field field="sv2#area35#page101#enu32#sfld33"/>
+          <layout:Field field="sv2#area35#page101#enu32#fld82"/>
+          <layout:Field field="sv2#area35#page101#enu32#fld83"/>
+          <layout:Field field="sv2#area35#page101#enu32#sfld34"/>
+          <layout:Link link="sv2#area35#page101#enu32#ln316"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv2#area35#page101#ln327" name="Annulla" to="sv2#area35#page100" type="normal" automaticCoupling="true" validate="true"/>
+</Page>

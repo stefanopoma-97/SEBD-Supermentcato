@@ -1,0 +1,29 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="95" gr:y="1745" id="sv2#area34#page82" name="Errore" ajaxEnabled="false" ignoreMasterPage="false" layout:pageLayout="WebRatio/Basic">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area34#page82#mssu32" name="Errore" linkOrder="sv2#area34#page82#mssu32#ln259">
+      <Message xml:space="preserve">Hai eliminato tutte le righe d'ordine della spesa. Non &#232; possibile confermare la spesa.
+Puoi tornare nella sezione "Prodotti online" per aggiungere nuove righe d'ordine.</Message>
+      <Link id="sv2#area34#page82#mssu32#ln259" name="Prodotti online" to="sv2#area42" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area34#page82#mssu32">
+          <layout:Link link="sv2#area34#page82#mssu32#ln259"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

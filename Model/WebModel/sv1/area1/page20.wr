@@ -1,0 +1,26 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="350" gr:y="0" id="sv1#area1#page20" name="Informazioni azienda" landmark="true">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv1#area1#page20#mssu1" name="Informazioni azienda">
+      <Message xml:space="preserve">Informazioni azienda
+...</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page20#mssu1"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
