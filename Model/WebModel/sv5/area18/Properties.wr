@@ -1,3 +1,16 @@
 <Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-900" gr:y="-1305" id="sv5#area18" name="Gestione negozi" landmark="true" defaultPage="sv5#area18#page61">
-  <OperationUnits/>
+  <OperationUnits>
+    <ModuleInstanceUnit gr:x="935" gr:y="350" id="sv5#area18#miu17" moduleId="mov1#opm11">
+      <KOLink id="sv5#area18#miu17#kln114" to="sv5#area18#page66#mssu23" name="KOFlow51">
+        <LinkParameter id="sv5#area18#miu17#kln114#par869" name="Errore durante l'eliminazione del negozio o dell'indirizzo_Shown Messages" sourceValue="Errore durante l'eliminazione del negozio o dell'indirizzo" target="sv5#area18#page66#mssu23.shownMessages"/>
+      </KOLink>
+      <OKLink id="sv5#area18#miu17#oln131" to="sv5#area18#page66#mssu23" name="OKFlow77" gr:bendpoints="96,-74,86,106" codeRef="mov1#opm11#okcu13">
+        <LinkParameter id="sv5#area18#miu17#oln131#par724" name="Errore: sono presenti prodotti online associati al negozio_Shown Messages" target="sv5#area18#page66#mssu23.shownMessages" source="mov1#opm11#okcu13#ocp24"/>
+      </OKLink>
+      <OKLink id="sv5#area18#miu17#oln130" to="sv5#area18#page66#mssu23" name="OKFlow79" gr:bendpoints="46,-91,36,89" codeRef="mov1#opm11#okcu12">
+        <LinkParameter id="sv5#area18#miu17#oln130#par614" name="Errore: sono presenti promozioni associate al negozio_Shown Messages" target="sv5#area18#page66#mssu23.shownMessages" source="mov1#opm11#okcu12#ocp25"/>
+      </OKLink>
+      <OKLink id="sv5#area18#miu17#oln132" to="sv5#area18#page61" name="OKFlow47" codeRef="mov1#opm11#okcu14"/>
+    </ModuleInstanceUnit>
+  </OperationUnits>
 </Area>

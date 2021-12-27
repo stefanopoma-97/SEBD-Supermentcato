@@ -1,12 +1,12 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="740" gr:y="865" id="sv5#area18#page62" name="Dettagli negozio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="740" gr:y="820" id="sv5#area18#page62" name="Dettagli negozio">
   <ContentUnits>
     <DataUnit gr:x="5" gr:y="0" id="sv5#area18#page62#dau22" name="Dettagli negozio" entity="ent3" linkOrder="sv5#area18#page62#dau22#ln175 sv5#area18#page62#dau22#ln181" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att13 ent3#att58 ent3#att42">
       <Selector id="sv5#area18#page62#dau22#su136" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area18#page62#dau22#su136#kcond84" name="KeyCondition84" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv5#area18#page62#dau22#ln175" name="Elimina" to="sv5#area18#opg20#dlu2" type="normal" validate="true">
-        <LinkParameter id="sv5#area18#page62#dau22#ln175#par277" name="oid_KeyCondition85 [oid]" source="data.ent3#att8" target="sv5#area18#opg20#dlu2#su137#kcond85.ent3#att8"/>
-        <LinkParameter id="sv5#area18#page62#dau22#ln175#par278" name="oid_PASSING" source="data.ent3#att8" passing="true"/>
+      <Link id="sv5#area18#page62#dau22#ln175" name="Elimina" to="sv5#area18#miu17" type="normal" validate="true" gr:bendpoints="106,-420,-108,140">
+        <LinkParameter id="sv5#area18#page62#dau22#ln175#par278" name="oid_PASSING" source="data.ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp15"/>
+        <LinkParameter id="sv5#area18#page62#dau22#ln175#par352" name="oid_OnlineNegozio [oid]" source="data.ent3#att8" target="sv5#area18#miu17.mov1#opm11#icu11#icp14"/>
       </Link>
       <Link id="sv5#area18#page62#dau22#ln181" name="Modifica" to="sv5#area18#page65#seu50" type="normal" validate="true">
         <LinkParameter id="sv5#area18#page62#dau22#ln181#par288" name="fondazione_PASSING" source="data.ent3#att12" passing="true"/>

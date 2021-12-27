@@ -1,0 +1,19 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="3224" id="mov1#opm11" name="Elimina negozio">
+  <OperationUnits>
+    <OKCollectorUnit gr:x="965" gr:y="900" id="mov1#opm11#okcu14" name="OK Port14"/>
+    <OKCollectorUnit gr:x="965" gr:y="600" id="mov1#opm11#okcu13" name="OK Port13">
+      <OutputCollectorParameter id="mov1#opm11#okcu13#ocp24" name="Errore: sono presenti prodotti online associati al negozio_Shown Messages"/>
+    </OKCollectorUnit>
+    <KOCollectorUnit gr:x="965" gr:y="5" id="mov1#opm11#kocu25" name="KO Port25"/>
+    <OKCollectorUnit gr:x="965" gr:y="300" id="mov1#opm11#okcu12" name="OK Port12">
+      <OutputCollectorParameter id="mov1#opm11#okcu12#ocp25" name="Errore: sono presenti promozioni associate al negozio_Shown Messages"/>
+    </OKCollectorUnit>
+    <InputCollectorUnit gr:x="5" gr:y="175" id="mov1#opm11#icu12" linkOrder="mov1#opm11#icu12#ln347">
+      <InputCollectorParameter id="mov1#opm11#icu12#icp18" name="id_negozio"/>
+      <Link id="mov1#opm11#icu12#ln347" name="Flow347" to="mov1#opm11#opg48#seu60" type="transport" validate="true">
+        <LinkParameter id="mov1#opm11#icu12#ln347#par857" name="id_negozio_OnlineNegozio [oid]" source="mov1#opm11#icu12#icp18" target="mov1#opm11#opg48#seu60#su211#rcond76.ent3#att8"/>
+        <LinkParameter id="mov1#opm11#icu12#ln347#par858" name="id_negozio_PASSING" source="mov1#opm11#icu12#icp18" passing="true"/>
+      </Link>
+    </InputCollectorUnit>
+  </OperationUnits>
+</OperationModule>

@@ -1,0 +1,56 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm11#opg48" name="Elimina negozio" transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <DeleteUnit id="mov1#opm11#opg48#dlu1" name="Elimina negozio" gr:x="345" gr:y="0" entity="ent3">
+      <Selector id="mov1#opm11#opg48#dlu1#su209" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm11#opg48#dlu1#su209#kcond183" name="KeyCondition85" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm11#opg48#dlu1#oln168" name="OKFlow43" to="mov1#opm11#opg48#dlu10">
+        <LinkParameter id="mov1#opm11#opg48#dlu1#oln168#par868" name="id_negozio_PASSING_IndirizzoNegozio [oid]" sourceLinkParameter="mov1#opm11#opg48#inn31#kln121#par867" target="mov1#opm11#opg48#dlu10#su210#rcond75.ent3#att8"/>
+      </OKLink>
+      <KOLink id="mov1#opm11#opg48#dlu1#kln131" to="mov1#opm11#kocu25" name="KOFlow47" gr:bendpoints="0,-20"/>
+    </DeleteUnit>
+    <DeleteUnit id="mov1#opm11#opg48#dlu10" name="Elimina indirizzo" gr:x="20" gr:y="0" entity="ent2">
+      <Selector id="mov1#opm11#opg48#dlu10#su210" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm11#opg48#dlu10#su210#rcond75" name="IndirizzoNegozio" predicate="in" implied="false" role="rel2#role3"/>
+      </Selector>
+      <OKLink id="mov1#opm11#opg48#dlu10#oln201" to="mov1#opm11#okcu14" name="OKFlow47"/>
+      <KOLink id="mov1#opm11#opg48#dlu10#kln132" to="mov1#opm11#kocu25" name="KOFlow51" gr:bendpoints="284,-87,-391,-52"/>
+    </DeleteUnit>
+    <SelectorUnit id="mov1#opm11#opg48#seu60" name="Prodotti Online" gr:x="0" gr:y="215" entity="ent8">
+      <Selector id="mov1#opm11#opg48#seu60#su211" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm11#opg48#seu60#su211#rcond76" name="OnlineNegozio" predicate="in" implied="false" role="rel7#role14"/>
+      </Selector>
+      <OKLink id="mov1#opm11#opg48#seu60#oln199" name="OKFlow39" to="mov1#opm11#opg48#inn30">
+        <LinkParameter id="mov1#opm11#opg48#seu60#oln199#par750" name="oid_Input" source="ent8#att31Array" target="mov1#opm11#opg48#inn30.isnotnull"/>
+        <LinkParameter id="mov1#opm11#opg48#seu60#oln199#par859" name="id_negozio_PASSING" sourceLinkParameter="mov1#opm11#icu12#ln347#par858" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit id="mov1#opm11#opg48#seu69" name="Promozioni" gr:x="335" gr:y="215" entity="ent6">
+      <Selector id="mov1#opm11#opg48#seu69#su217" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm11#opg48#seu69#su217#rcond77" name="PromoNegozio" predicate="in" implied="false" role="rel5#role10"/>
+      </Selector>
+      <OKLink id="mov1#opm11#opg48#seu69#oln200" name="OKFlow78" to="mov1#opm11#opg48#inn31">
+        <LinkParameter id="mov1#opm11#opg48#seu69#oln200#par863" name="oid_Input" source="ent6#att22Array" target="mov1#opm11#opg48#inn31.isnotnull"/>
+        <LinkParameter id="mov1#opm11#opg48#seu69#oln200#par865" name="id_negozio_PASSING" sourceLinkParameter="mov1#opm11#opg48#inn30#kln120#par861" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <IsNotNullUnit id="mov1#opm11#opg48#inn30" name="Is Not Null" gr:x="195" gr:y="230">
+      <KOLink id="mov1#opm11#opg48#inn30#kln120" name="KOFlow111" to="mov1#opm11#opg48#seu69">
+        <LinkParameter id="mov1#opm11#opg48#inn30#kln120#par860" name="id_negozio_PASSING_PromoNegozio [oid]" sourceLinkParameter="mov1#opm11#opg48#seu60#oln199#par859" target="mov1#opm11#opg48#seu69#su217#rcond77.ent3#att8"/>
+        <LinkParameter id="mov1#opm11#opg48#inn30#kln120#par861" name="id_negozio_PASSING" sourceLinkParameter="mov1#opm11#opg48#seu60#oln199#par859" passing="true"/>
+      </KOLink>
+      <OKLink id="mov1#opm11#opg48#inn30#oln202" to="mov1#opm11#okcu13" name="OKFlow77">
+        <LinkParameter id="mov1#opm11#opg48#inn30#oln202#par855" sourceValue="Errore: sono presenti prodotti online associati al negozio" name="Errore: sono presenti prodotti online associati al negozio_Shown Messages" target="mov1#opm11#okcu13#ocp24"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <IsNotNullUnit id="mov1#opm11#opg48#inn31" name="Is Not Null29" gr:x="355" gr:y="125">
+      <KOLink id="mov1#opm11#opg48#inn31#kln121" name="KOFlow112" to="mov1#opm11#opg48#dlu1">
+        <LinkParameter id="mov1#opm11#opg48#inn31#kln121#par866" name="id_negozio_PASSING_KeyCondition85 [oid]" sourceLinkParameter="mov1#opm11#opg48#seu69#oln200#par865" target="mov1#opm11#opg48#dlu1#su209#kcond183.ent3#att8"/>
+        <LinkParameter id="mov1#opm11#opg48#inn31#kln121#par867" name="id_negozio_PASSING" sourceLinkParameter="mov1#opm11#opg48#seu69#oln200#par865" passing="true"/>
+      </KOLink>
+      <OKLink id="mov1#opm11#opg48#inn31#oln203" to="mov1#opm11#okcu12" name="OKFlow79">
+        <LinkParameter id="mov1#opm11#opg48#inn31#oln203#par856" sourceValue="Errore: sono presenti promozioni associate al negozio" name="Errore: sono presenti promozioni associate al negozio_Shown Messages" target="mov1#opm11#okcu12#ocp25"/>
+      </OKLink>
+    </IsNotNullUnit>
+  </OperationUnits>
+</OperationGroup>
