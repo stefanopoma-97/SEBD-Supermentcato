@@ -3,7 +3,7 @@
     <ScrollerUnit gr:x="0" gr:y="0" id="sv5#area17#page36#scu7" name="Scorri dipendenti" useCountQuery="false" entity="ent14" blockFactor="5">
       <Link id="sv5#area17#page36#scu7#ln66" name="Flow66" to="sv5#area17#page36#pwu12" automaticCoupling="true" type="transport" validate="true"/>
     </ScrollerUnit>
-    <PowerIndexUnit gr:x="0" gr:y="110" id="sv5#area17#page36#pwu12" name="Elenco dipendenti" sortable="true" checkable="false" useCountQuery="false" entity="ent14" displayAttributes="ent12#att51 ent12#att52 email ent12#att57" linkOrder="sv5#area17#page36#pwu12#ln119 sv5#area17#page36#pwu12#ln126 sv5#area17#page36#pwu12#ln125">
+    <PowerIndexUnit gr:x="0" gr:y="110" id="sv5#area17#page36#pwu12" name="Elenco dipendenti" sortable="true" checkable="false" useCountQuery="false" entity="ent14" displayAttributes="ent12#att51 ent12#att52 email ent12#att57 ent14#att54" linkOrder="sv5#area17#page36#pwu12#ln119 sv5#area17#page36#pwu12#ln126 sv5#area17#page36#pwu12#ln125">
       <Selector id="sv5#area17#page36#pwu12#su82" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area17#page36#pwu12#su82#kcond49" name="KeyCondition49" predicate="in" implied="false"/>
         <AttributesCondition id="sv5#area17#page36#pwu12#su82#acond16" name="NonLicenziato" predicate="eq" booleanOperator="or" implied="false" attributes="ent12#att34" value="0"/>
@@ -21,6 +21,11 @@
         <LinkParameter id="sv5#area17#page36#pwu12#ln125#par20" name="oid_KeyCondition2 [oid]" source="data[].userOID" target="sv5#area17#opg14#mfu16#su10#kcond2.userOID"/>
         <LinkParameter id="sv5#area17#page36#pwu12#ln125#par56" name="true_licenziato" sourceValue="1" target="sv5#area17#opg14#mfu16.ent12#att34"/>
       </Link>
+      <SortAttribute attribute="ent12#att34" order="descending"/>
+      <SortAttribute attribute="ent12#att57" order="ascending"/>
+      <SortAttribute attribute="ent12#att51" order="ascending"/>
+      <SortAttribute attribute="ent12#att52" order="ascending"/>
+      <SortAttribute attribute="ent14#att54" order="descending"/>
     </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -53,9 +58,14 @@
           <layout:Attribute attribute="ent12#att52"/>
           <layout:Attribute attribute="email"/>
           <layout:Attribute attribute="ent12#att57"/>
+          <layout:Attribute attribute="ent14#att54"/>
           <layout:Link link="sv5#area17#page36#pwu12#ln119"/>
           <layout:Link link="sv5#area17#page36#pwu12#ln126"/>
           <layout:Link link="sv5#area17#page36#pwu12#ln125"/>
+          <layout:Link link="sv5#area17#page36#pwu12ent12#att57"/>
+          <layout:Link link="sv5#area17#page36#pwu12ent12#att51"/>
+          <layout:Link link="sv5#area17#page36#pwu12ent12#att52"/>
+          <layout:Link link="sv5#area17#page36#pwu12ent14#att54"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

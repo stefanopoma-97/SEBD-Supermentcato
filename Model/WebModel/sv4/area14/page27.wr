@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="235" gr:y="280" id="sv4#area14#page27" name="Promozioni" linkOrder="sv4#area14#page27#ln82">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="235" gr:y="280" id="sv4#area14#page27" name="Promozioni" linkOrder="sv4#area14#page27#ln6">
   <ContentUnits>
     <SelectorUnit id="sv4#area14#page27#seu35" name="Seleziona Negozio del responsabile" gr:x="450" gr:y="10" entity="ent3">
       <Selector id="sv4#area14#page27#seu35#su52" defaultPolicy="fill" booleanOperator="and">
@@ -123,5 +123,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv4#area14#page27#ln82" name="Crea promozione" to="sv4#area14#opg20#tmu25" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv4#area14#page27#ln6" name="Crea promozione" to="sv4#area14#page29#enu8" type="normal" automaticCoupling="true" validate="true"/>
 </Page>

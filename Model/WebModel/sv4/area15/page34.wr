@@ -18,7 +18,7 @@
         <LinkParameter id="sv4#area15#page34#seu45#ln120#par950" name="oid_PASSING" sourceLinkParameter="sv4#area15#page34#seu10#ln64#par949" passing="true"/>
       </Link>
       <Selector id="sv4#area15#page34#seu45#su67" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv4#area15#page34#seu45#su67#rcond27" name="ProdottoOnlineProdotto" predicate="notIn" implied="false" role="rel8#role15"/>
+        <RelationshipRoleCondition id="sv4#area15#page34#seu45#su67#rcond27" name="ProdottoOnlineProdotto" predicate="notIn" implied="true" role="rel8#role15"/>
         <AttributesCondition id="sv4#area15#page34#seu45#su67#acond59" name="AttCondition59" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64" value="1"/>
       </Selector>
     </SelectorUnit>

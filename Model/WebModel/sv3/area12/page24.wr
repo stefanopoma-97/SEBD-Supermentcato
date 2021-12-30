@@ -11,17 +11,11 @@
       <Selector id="sv3#area12#page24#seu28#su35" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area12#page24#seu28#su35#rcond13" name="Stato_ordine-spesa" predicate="in" implied="false" role="rel12#role23"/>
       </Selector>
-      <Link id="sv3#area12#page24#seu28#ln57" name="Flow57" to="sv3#area12#page24#dau8" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv3#area12#page24#seu28#ln198" name="Flow198" to="sv3#area12#opg7#mfu4" type="transport" validate="true">
         <LinkParameter id="sv3#area12#page24#seu28#ln198#par159" name="oid_KeyCondition64 [oid]" source="ent10#att37Array" target="sv3#area12#opg7#mfu4#su113#kcond65.ent10#att37"/>
         <LinkParameter id="sv3#area12#page24#seu28#ln198#par160" name="Stato 2_stato" sourceValue="Pronto per la spedizione" target="sv3#area12#opg7#mfu4.ent10#att38"/>
       </Link>
     </SelectorUnit>
-    <DataUnit gr:x="230" gr:y="140" id="sv3#area12#page24#dau8" name="Dettagli Stato ordine" entity="ent10" displayAll="true">
-      <Selector id="sv3#area12#page24#dau8#su36" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#area12#page24#dau8#su36#kcond19" name="KeyCondition19" predicate="in" implied="false"/>
-      </Selector>
-    </DataUnit>
     <SelectorUnit gr:x="0" gr:y="140" id="sv3#area12#page24#seu36" name="Seleziona Riga d'ordine" entity="ent7">
       <Selector id="sv3#area12#page24#seu36#su45" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area12#page24#seu36#su45#rcond15" name="RigheSpesa" predicate="in" implied="false" role="rel10#role20"/>
@@ -61,13 +55,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv3#area12#page24#dau8">
-          <layout:Attribute attribute="ent10#att38"/>
-          <layout:Attribute attribute="ent10#att55"/>
-          <layout:Attribute attribute="ent10#att56"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

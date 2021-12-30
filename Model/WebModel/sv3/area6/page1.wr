@@ -13,12 +13,12 @@
         <LinkParameter id="sv3#area6#page1#gtu5#ln92#par151" name="UserCtxParam.oid_NegozioDipendente [oid]" source="sv3#area6#page1#gtu5.UserCtxParam" target="sv3#area6#page1#seu39#su50#rcond26.userOID"/>
       </Link>
     </GetUnit>
-    <DataUnit gr:x="195" gr:y="125" id="sv3#area6#page1#dau9" name="Dettagli negozio" entity="ent3" displayAll="true">
+    <DataUnit gr:x="195" gr:y="125" id="sv3#area6#page1#dau9" name="Dettagli negozio" entity="ent3" displayAttributes="ent3#att9 ent3#att58 ent3#att12 ent3#att42 ent3#att11">
       <Selector id="sv3#area6#page1#dau9#su48" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area6#page1#dau9#su48#kcond31" name="Negozio" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <DataUnit gr:x="0" gr:y="240" id="sv3#area6#page1#dau10" name="Indirizzo negozio" entity="ent2" displayAll="true">
+    <DataUnit gr:x="0" gr:y="240" id="sv3#area6#page1#dau10" name="Indirizzo negozio" entity="ent2" displayAttributes="ent2#att6 ent2#att7 rel1#role2.ent1#att2">
       <Selector id="sv3#area6#page1#dau10#su49" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area6#page1#dau10#su49#rcond45" name="NegozioToIndirizzo" predicate="in" implied="false" role="rel2#role3"/>
       </Selector>
@@ -57,12 +57,11 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv3#area6#page1#dau9">
-          <layout:Attribute attribute="ent3#att12"/>
-          <layout:Attribute attribute="ent3#att11"/>
           <layout:Attribute attribute="ent3#att9"/>
-          <layout:Attribute attribute="ent3#att13"/>
           <layout:Attribute attribute="ent3#att58"/>
+          <layout:Attribute attribute="ent3#att12"/>
           <layout:Attribute attribute="ent3#att42"/>
+          <layout:Attribute attribute="ent3#att11"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -80,8 +79,9 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv3#area6#page1#dau10">
-          <layout:Attribute attribute="ent2#att7"/>
           <layout:Attribute attribute="ent2#att6"/>
+          <layout:Attribute attribute="ent2#att7"/>
+          <layout:Attribute attribute="rel1#role2.ent1#att2"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
