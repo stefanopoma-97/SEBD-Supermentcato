@@ -1,0 +1,26 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm14" name="Promozioni attive" gr:x="0" gr:y="0">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm14#icu13" gr:x="0" gr:y="160">
+      <OKLink id="mov1#opm14#icu13#oln230" name="OKFlow129" to="mov1#opm14#tmu26"/>
+    </InputCollectorUnit>
+    <KOCollectorUnit id="mov1#opm14#kocu27" name="KO Port25" gr:x="795" gr:y="0"/>
+    <OKCollectorUnit id="mov1#opm14#okcu15" name="OK Port12" gr:x="795" gr:y="300">
+      <OutputCollectorParameter id="mov1#opm14#okcu15#ocp26" name="oid"/>
+    </OKCollectorUnit>
+    <SelectorUnit id="mov1#opm14#seu77" name="promo" gr:x="395" gr:y="0" entity="ent6">
+      <Selector id="mov1#opm14#seu77#su351" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="mov1#opm14#seu77#su351#acond89" name="scadenza" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
+      </Selector>
+      <KOLink id="mov1#opm14#seu77#kln115" name="KOFlow131" to="mov1#opm14#kocu27"/>
+      <OKLink id="mov1#opm14#seu77#oln231" name="OKFlow131" to="mov1#opm14#okcu15">
+        <LinkParameter id="mov1#opm14#seu77#oln231#par300" name="oid_con promo [oid]" source="ent6#att22Array" target="mov1#opm14#okcu15#ocp26"/>
+      </OKLink>
+    </SelectorUnit>
+    <TimeUnit id="mov1#opm14#tmu26" name="oggi" gr:x="300" gr:y="20">
+      <OKLink id="mov1#opm14#tmu26#oln232" name="OKFlow130" to="mov1#opm14#seu77">
+        <LinkParameter id="mov1#opm14#tmu26#oln232#par301" name="Current/Input Date_scadenza" source="currentDate" target="mov1#opm14#seu77#su351#acond89"/>
+      </OKLink>
+      <KOLink id="mov1#opm14#tmu26#kln116" name="KOFlow121" to="mov1#opm14#kocu27" gr:bendpoints="0,-20"/>
+    </TimeUnit>
+  </OperationUnits>
+</OperationModule>

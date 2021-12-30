@@ -3,16 +3,17 @@
     <SelectorUnit id="sv2#area37#page107#seu116" name="Negozi" gr:x="325" gr:y="0" entity="ent3">
       <Link id="sv2#area37#page107#seu116#ln212" name="Flow45" to="sv2#area37#page107#alt8#page60#pwu43" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <EntryUnit id="sv2#area37#page107#enu34" name="Cerca" linkOrder="sv2#area37#page107#enu34#ln169 sv2#area37#page107#enu34#ln288" gr:x="430" gr:y="465">
+    <EntryUnit id="sv2#area37#page107#enu34" name="Cerca" linkOrder="sv2#area37#page107#enu34#ln169 sv2#area37#page107#enu34#ln276" gr:x="430" gr:y="465">
       <SelectionField id="sv2#area37#page107#enu34#sfld36" name="Citt&#224;" type="string"/>
       <Link id="sv2#area37#page107#enu34#ln169" name="Reset" to="sv2#area37#page107#alt8#page60" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="88,-99,-257,152"/>
       <MultiSelectionField id="sv2#area37#page107#enu34#msfld11" name="Negozio nuovo" type="string"/>
       <MultiSelectionField id="sv2#area37#page107#enu34#msfld12" name="Orario" type="string"/>
-      <Link id="sv2#area37#page107#enu34#ln288" name="Cerca" to="sv2#area37#opg47#inn18" type="normal" validate="true">
-        <LinkParameter id="sv2#area37#page107#enu34#ln288#par838" name="Negozio nuovo_Input" source="sv2#area37#page107#enu34#msfld11" target="sv2#area37#opg47#inn18.isnotnull"/>
-        <LinkParameter id="sv2#area37#page107#enu34#ln288#par839" name="Citt&#224;_PASSING" source="sv2#area37#page107#enu34#sfld36" passing="true"/>
-        <LinkParameter id="sv2#area37#page107#enu34#ln288#par840" name="Negozio nuovo_PASSING" source="sv2#area37#page107#enu34#msfld11" passing="true"/>
-        <LinkParameter id="sv2#area37#page107#enu34#ln288#par841" name="Orario_PASSING" source="sv2#area37#page107#enu34#msfld12" passing="true"/>
+      <MultiSelectionField id="sv2#area37#page107#enu34#msfld19" name="Negozi con promozioni" type="string"/>
+      <Link id="sv2#area37#page107#enu34#ln276" name="Cerca" to="sv2#area37#miu34" type="normal" validate="true">
+        <LinkParameter id="sv2#area37#page107#enu34#ln276#par1530" name="Citt&#224;_Citt&#224;_PASSING" source="sv2#area37#page107#enu34#sfld36" target="sv2#area37#miu34.mov1#opm16#icu16#icp23"/>
+        <LinkParameter id="sv2#area37#page107#enu34#ln276#par1531" name="Negozio nuovo_Input" source="sv2#area37#page107#enu34#msfld11" target="sv2#area37#miu34.mov1#opm16#icu16#icp25"/>
+        <LinkParameter id="sv2#area37#page107#enu34#ln276#par1532" name="Negozi con promozioni_Negozi con promozioni_PASSING" source="sv2#area37#page107#enu34#msfld19" target="sv2#area37#miu34.mov1#opm16#icu16#icp22"/>
+        <LinkParameter id="sv2#area37#page107#enu34#ln276#par1533" name="Orario_Orario_PASSING" source="sv2#area37#page107#enu34#msfld12" target="sv2#area37#miu34.mov1#opm16#icu16#icp24"/>
       </Link>
     </EntryUnit>
     <SelectorUnit id="sv2#area37#page107#seu117" name="Citt&#224; con negozi" gr:x="140" gr:y="435" entity="ent1">
@@ -26,6 +27,8 @@
         <LinkParameter id="sv2#area37#page107#seu117#ln348#par815" name="Nuovo_Negozio nuovo [output]" sourceValue="Nuovo" target="sv2#area37#page107#enu34#msfld11_output"/>
         <LinkParameter id="sv2#area37#page107#seu117#ln348#par816" name="Aperto_Orario [label]" sourceValue="Aperto" target="sv2#area37#page107#enu34#msfld12_label"/>
         <LinkParameter id="sv2#area37#page107#seu117#ln348#par817" name="Aperto_Orario [output]" sourceValue="Aperto" target="sv2#area37#page107#enu34#msfld12_output"/>
+        <LinkParameter id="sv2#area37#page107#seu117#ln348#par1522" name="Con promzioni_Negozi con promozioni [label]" sourceValue="Con promzioni" target="sv2#area37#page107#enu34#msfld19_label"/>
+        <LinkParameter id="sv2#area37#page107#seu117#ln348#par1523" name="Con promzioni_Negozi con promozioni [output]" sourceValue="Con promzioni" target="sv2#area37#page107#enu34#msfld19_output"/>
       </Link>
     </SelectorUnit>
     <SelectorUnit id="sv2#area37#page107#seu118" name="Negozi" gr:x="15" gr:y="465" entity="ent3">
@@ -53,8 +56,9 @@
           <layout:Field field="sv2#area37#page107#enu34#sfld36"/>
           <layout:Field field="sv2#area37#page107#enu34#msfld11"/>
           <layout:Field field="sv2#area37#page107#enu34#msfld12"/>
+          <layout:Field field="sv2#area37#page107#enu34#msfld19"/>
           <layout:Link link="sv2#area37#page107#enu34#ln169"/>
-          <layout:Link link="sv2#area37#page107#enu34#ln288"/>
+          <layout:Link link="sv2#area37#page107#enu34#ln276"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

@@ -1,39 +1,43 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area40#page114" name="Pagina Elenco prodotti" gr:x="15" gr:y="435">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area40#page114" name="Pagina Elenco prodotti" gr:x="0" gr:y="430">
   <ContentUnits>
-    <EntryUnit id="sv2#area40#page114#enu35" name="Cerca" linkOrder="sv2#area40#page114#enu35#ln377 sv2#area40#page114#enu35#ln168" gr:x="305" gr:y="335">
+    <EntryUnit id="sv2#area40#page114#enu35" name="Cerca" linkOrder="sv2#area40#page114#enu35#ln168 sv2#area40#page114#enu35#ln231" gr:x="395" gr:y="340">
       <SelectionField id="sv2#area40#page114#enu35#sfld37" name="Categoria" type="string"/>
       <SelectionField id="sv2#area40#page114#enu35#sfld38" name="Fascia di prezzo" type="string"/>
-      <Link id="sv2#area40#page114#enu35#ln377" name="Filtra" to="sv2#area40#opg40#inn17" type="normal" validate="true">
-        <LinkParameter id="sv2#area40#page114#enu35#ln377#par801" name="Prodotti nuovi_Input" source="sv2#area40#page114#enu35#msfld10" target="sv2#area40#opg40#inn17.isnotnull"/>
-        <LinkParameter id="sv2#area40#page114#enu35#ln377#par802" name="Categoria_PASSING" source="sv2#area40#page114#enu35#sfld37" passing="true"/>
-        <LinkParameter id="sv2#area40#page114#enu35#ln377#par803" name="Fascia di prezzo_PASSING" source="sv2#area40#page114#enu35#sfld38" passing="true"/>
-        <LinkParameter id="sv2#area40#page114#enu35#ln377#par804" name="Nazione_PASSING" source="sv2#area40#page114#enu35#sfld39" passing="true"/>
-        <LinkParameter id="sv2#area40#page114#enu35#ln377#par335" name="nome_PASSING" source="sv2#area40#page114#enu35#fld71" passing="true"/>
-      </Link>
       <SelectionField id="sv2#area40#page114#enu35#sfld39" name="Nazione" type="string"/>
       <Link id="sv2#area40#page114#enu35#ln168" name="Reset" to="sv2#area40#page114#alt11#page84" automaticCoupling="true" type="normal" validate="true"/>
       <MultiSelectionField id="sv2#area40#page114#enu35#msfld10" name="Prodotti nuovi" type="string"/>
       <Field id="sv2#area40#page114#enu35#fld71" name="nome" type="string" modifiable="true"/>
+      <MultiSelectionField id="sv2#area40#page114#enu35#msfld17" name="Prodotti in promozione" type="string"/>
+      <Link id="sv2#area40#page114#enu35#ln231" name="Cerca" to="sv2#area40#miu32" type="normal" validate="true">
+        <LinkParameter id="sv2#area40#page114#enu35#ln231#par1511" name="Categoria_Categoria_PASSING" source="sv2#area40#page114#enu35#sfld37" target="sv2#area40#miu32.mov1#opm15#icu15#icp16"/>
+        <LinkParameter id="sv2#area40#page114#enu35#ln231#par1512" name="Fascia di prezzo_Fascia di prezzo_PASSING" source="sv2#area40#page114#enu35#sfld38" target="sv2#area40#miu32.mov1#opm15#icu15#icp15"/>
+        <LinkParameter id="sv2#area40#page114#enu35#ln231#par1513" name="Prodotti nuovi_Input" source="sv2#area40#page114#enu35#msfld10" target="sv2#area40#miu32.mov1#opm15#icu15#icp19"/>
+        <LinkParameter id="sv2#area40#page114#enu35#ln231#par1514" name="Nazione_Nazione_PASSING" source="sv2#area40#page114#enu35#sfld39" target="sv2#area40#miu32.mov1#opm15#icu15#icp21"/>
+        <LinkParameter id="sv2#area40#page114#enu35#ln231#par1515" name="nome_Nome_PASSING" source="sv2#area40#page114#enu35#fld71" target="sv2#area40#miu32.mov1#opm15#icu15#icp20"/>
+        <LinkParameter id="sv2#area40#page114#enu35#ln231#par1516" name="Prodotti in promozione_Prodotti in promozione_PASSING" source="sv2#area40#page114#enu35#msfld17" target="sv2#area40#miu32.mov1#opm15#icu15#icp17"/>
+      </Link>
     </EntryUnit>
-    <SelectorUnit id="sv2#area40#page114#seu131" name="Tutti i prodotti" gr:x="350" gr:y="10" entity="ent4">
+    <SelectorUnit id="sv2#area40#page114#seu131" name="Tutti i prodotti" gr:x="440" gr:y="15" entity="ent4">
       <Link id="sv2#area40#page114#seu131#ln379" name="Flow55" to="sv2#area40#page114#seu134" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv2#area40#page114#seu131#ln281" name="Flow15" to="sv2#area40#page114#alt11#page84#pwu31" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <SelectorUnit id="sv2#area40#page114#seu132" name="Categorie" gr:x="10" gr:y="235" entity="ent5">
+    <SelectorUnit id="sv2#area40#page114#seu132" name="Categorie" gr:x="100" gr:y="240" entity="ent5">
       <Link id="sv2#area40#page114#seu132#ln380" name="Flow27" to="sv2#area40#page114#enu35" type="transport" validate="true">
         <LinkParameter id="sv2#area40#page114#seu132#ln380#par552" name="nome_Categoria [label]" source="ent5#att20Array" target="sv2#area40#page114#enu35#sfld37_label"/>
         <LinkParameter id="sv2#area40#page114#seu132#ln380#par553" name="oid_Categoria [output]" source="ent5#att19Array" target="sv2#area40#page114#enu35#sfld37_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit id="sv2#area40#page114#seu133" name="Fasce di prezzo" gr:x="0" gr:y="340" entity="ent15">
+    <SelectorUnit id="sv2#area40#page114#seu133" name="Fasce di prezzo" gr:x="90" gr:y="345" entity="ent15">
       <Link id="sv2#area40#page114#seu133#ln381" name="Flow28" to="sv2#area40#page114#enu35" type="transport" validate="true">
         <LinkParameter id="sv2#area40#page114#seu133#ln381#par554" name="fascia_Fascia di prezzo [label]" source="ent15#att32Array" target="sv2#area40#page114#enu35#sfld38_label"/>
         <LinkParameter id="sv2#area40#page114#seu133#ln381#par555" name="oid_Fascia di prezzo [output]" source="ent15#att30Array" target="sv2#area40#page114#enu35#sfld38_output"/>
         <LinkParameter id="sv2#area40#page114#seu133#ln381#par799" name="Nuovo_Prodotti nuovi - Preselection" sourceValue="Nuovo" target="sv2#area40#page114#enu35#msfld10_presel"/>
         <LinkParameter id="sv2#area40#page114#seu133#ln381#par800" name="Nuovo_Prodotti nuovi [label]" sourceValue="Nuovo" target="sv2#area40#page114#enu35#msfld10_label"/>
+        <LinkParameter id="sv2#area40#page114#seu133#ln381#par1509" name="In promozione_Prodotti in promozione [label]" sourceValue="In promozione" target="sv2#area40#page114#enu35#msfld17_label"/>
+        <LinkParameter id="sv2#area40#page114#seu133#ln381#par1510" name="In promozione_Prodotti in promozione [output]" sourceValue="In promozione" target="sv2#area40#page114#enu35#msfld17_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit id="sv2#area40#page114#seu134" name="Nazioni" gr:x="350" gr:y="110" entity="ent19">
+    <SelectorUnit id="sv2#area40#page114#seu134" name="Nazioni" gr:x="440" gr:y="115" entity="ent19">
       <Selector id="sv2#area40#page114#seu134#su286" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area40#page114#seu134#su286#rcond114" name="Prodotti to Nazione" role="rel18#role35" predicate="in" implied="false"/>
       </Selector>
@@ -61,13 +65,14 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area40#page114#enu35">
-          <layout:Link link="sv2#area40#page114#enu35#ln377"/>
-          <layout:Link link="sv2#area40#page114#enu35#ln168"/>
           <layout:Field field="sv2#area40#page114#enu35#sfld37"/>
           <layout:Field field="sv2#area40#page114#enu35#sfld38"/>
           <layout:Field field="sv2#area40#page114#enu35#sfld39"/>
           <layout:Field field="sv2#area40#page114#enu35#msfld10"/>
           <layout:Field field="sv2#area40#page114#enu35#fld71"/>
+          <layout:Field field="sv2#area40#page114#enu35#msfld17"/>
+          <layout:Link link="sv2#area40#page114#enu35#ln168"/>
+          <layout:Link link="sv2#area40#page114#enu35#ln231"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -204,7 +209,7 @@
     </layout:Row>
   </layout:Grid>
   <Alternative gr:x="0" gr:y="0" id="sv2#area40#page114#alt11" name="Liste" defaultPage="sv2#area40#page114#alt11#page84">
-    <Page gr:x="0" gr:y="5" id="sv2#area40#page114#alt11#page84" name="Lista">
+    <Page gr:x="0" gr:y="0" id="sv2#area40#page114#alt11#page84" name="Lista">
       <ContentUnits>
         <PowerIndexUnit id="sv2#area40#page114#alt11#page84#pwu31" name="Lista Prodotti" linkOrder="sv2#area40#page114#alt11#page84#pwu31#ln280" gr:x="0" gr:y="0" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" sortable="true" checkable="false" useCountQuery="false">
           <Selector id="sv2#area40#page114#alt11#page84#pwu31#su196" defaultPolicy="fill" booleanOperator="and">
@@ -216,7 +221,7 @@
         </PowerIndexUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="150" gr:y="0" id="sv2#area40#page114#alt11#page85" name="Lista filtrata">
+    <Page gr:x="240" gr:y="0" id="sv2#area40#page114#alt11#page85" name="Lista filtrata">
       <ContentUnits>
         <PowerIndexUnit id="sv2#area40#page114#alt11#page85#pwu45" name="Lista Prodotti" linkOrder="sv2#area40#page114#alt11#page85#pwu45#ln285" gr:x="0" gr:y="0" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60" sortable="true" checkable="false" useCountQuery="false">
           <Selector id="sv2#area40#page114#alt11#page85#pwu45#su197" defaultPolicy="fill" booleanOperator="and">

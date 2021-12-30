@@ -1,0 +1,20 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm16" name="Filtra negozi" gr:x="0" gr:y="100">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm16#icu16" gr:x="0" gr:y="150">
+      <InputCollectorParameter id="mov1#opm16#icu16#icp22" name="Negozi con promozioni_PASSING"/>
+      <InputCollectorParameter id="mov1#opm16#icu16#icp23" name="Citt&#224;_PASSING"/>
+      <InputCollectorParameter id="mov1#opm16#icu16#icp24" name="Orario_PASSING"/>
+      <InputCollectorParameter id="mov1#opm16#icu16#icp25" name="Input"/>
+      <OKLink id="mov1#opm16#icu16#oln245" name="Cerca" to="mov1#opm16#opg57#inn34">
+        <LinkParameter id="mov1#opm16#icu16#oln245#par1437" name="Negozio nuovo_Input" source="mov1#opm16#icu16#icp25" target="mov1#opm16#opg57#inn34.isnotnull"/>
+        <LinkParameter id="mov1#opm16#icu16#oln245#par1438" name="Citt&#224;_PASSING" source="mov1#opm16#icu16#icp23" passing="true"/>
+        <LinkParameter id="mov1#opm16#icu16#oln245#par1439" name="Orario_PASSING" source="mov1#opm16#icu16#icp24" passing="true"/>
+        <LinkParameter id="mov1#opm16#icu16#oln245#par1442" name="Negozi con promozioni_PASSING" source="mov1#opm16#icu16#icp22" passing="true"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <KOCollectorUnit id="mov1#opm16#kocu29" name="KO Port26" gr:x="1580" gr:y="510"/>
+    <OKCollectorUnit id="mov1#opm16#okcu18" name="OK Port13" gr:x="1580" gr:y="290">
+      <OutputCollectorParameter id="mov1#opm16#okcu18#ocp28" name="oid"/>
+    </OKCollectorUnit>
+  </OperationUnits>
+</OperationModule>

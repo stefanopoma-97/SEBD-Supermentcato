@@ -9,5 +9,11 @@
         <LinkParameter id="sv1#area10#miu11#kln147#par779" name="Chiuso_Shown Messages" target="sv1#area10#page13#mssu49.shownMessages" sourceValue="Chiuso"/>
       </KOLink>
     </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="650" gr:y="710" id="sv1#area10#miu33" action="true" moduleId="mov1#opm16">
+      <KOLink id="sv1#area10#miu33#kln192" name="KOFlow192" to="sv1#area10#page22#mssu30" automaticCoupling="true"/>
+      <OKLink id="sv1#area10#miu33#oln321" name="OKFlow321" to="sv1#area10#page12#alt2#page50#pwu37">
+        <LinkParameter id="sv1#area10#miu33#oln321#par1524" name="oid_KeyCondition15 [oid]" source="mov1#opm16#okcu18#ocp28" target="sv1#area10#page12#alt2#page50#pwu37#su70#kcond93.ent3#att8"/>
+      </OKLink>
+    </ModuleInstanceUnit>
   </OperationUnits>
 </Area>

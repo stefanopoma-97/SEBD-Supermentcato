@@ -1,0 +1,24 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm15" name="Filtro prodotti" gr:x="0" gr:y="200">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm15#icu15" gr:x="0" gr:y="150">
+      <InputCollectorParameter id="mov1#opm15#icu15#icp15" name="Fascia di prezzo_PASSING"/>
+      <InputCollectorParameter id="mov1#opm15#icu15#icp16" name="Categoria_PASSING"/>
+      <InputCollectorParameter id="mov1#opm15#icu15#icp17" name="Prodotti in promozione_PASSING"/>
+      <InputCollectorParameter id="mov1#opm15#icu15#icp19" name="Input"/>
+      <InputCollectorParameter id="mov1#opm15#icu15#icp20" name="Nome_PASSING"/>
+      <InputCollectorParameter id="mov1#opm15#icu15#icp21" name="Nazione_PASSING"/>
+      <OKLink id="mov1#opm15#icu15#oln233" name="Filtra" to="mov1#opm15#opg51#inn29">
+        <LinkParameter id="mov1#opm15#icu15#oln233#par302" name="Prodotti in promozione_PASSING" source="mov1#opm15#icu15#icp17" passing="true"/>
+        <LinkParameter id="mov1#opm15#icu15#oln233#par303" name="Nazione_PASSING" source="mov1#opm15#icu15#icp21" passing="true"/>
+        <LinkParameter id="mov1#opm15#icu15#oln233#par304" name="Nome_PASSING" source="mov1#opm15#icu15#icp20" passing="true"/>
+        <LinkParameter id="mov1#opm15#icu15#oln233#par305" name="Fascia di prezzo_PASSING" source="mov1#opm15#icu15#icp15" passing="true"/>
+        <LinkParameter id="mov1#opm15#icu15#oln233#par306" name="Categoria_PASSING" source="mov1#opm15#icu15#icp16" passing="true"/>
+        <LinkParameter id="mov1#opm15#icu15#oln233#par309" name="Prodotti nuovi_Input" source="mov1#opm15#icu15#icp19" target="mov1#opm15#opg51#inn29.isnotnull"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <KOCollectorUnit id="mov1#opm15#kocu28" name="KO Port27" gr:x="1135" gr:y="0"/>
+    <OKCollectorUnit id="mov1#opm15#okcu17" name="OK Port14" gr:x="1135" gr:y="130">
+      <OutputCollectorParameter id="mov1#opm15#okcu17#ocp27" name="oid"/>
+    </OKCollectorUnit>
+  </OperationUnits>
+</OperationModule>

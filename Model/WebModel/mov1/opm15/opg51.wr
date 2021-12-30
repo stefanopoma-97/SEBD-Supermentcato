@@ -1,0 +1,130 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm15#opg51" name="Filtri" transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <SelectorUnit id="mov1#opm15#opg51#seu94" name="Filtri ricerca" gr:x="0" gr:y="0" entity="ent4">
+      <Selector id="mov1#opm15#opg51#seu94#su352" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm15#opg51#seu94#su352#rcond88" name="Da categoria a prodotti" predicate="in" implied="true" role="rel4#role8"/>
+        <RelationshipRoleCondition id="mov1#opm15#opg51#seu94#su352#rcond140" name="Da fascia a prodotti" predicate="in" implied="true" role="rel11#role21"/>
+        <KeyCondition id="mov1#opm15#opg51#seu94#su352#kcond222" name="Prodotti nuovi" predicate="in" implied="true"/>
+        <RelationshipRoleCondition id="mov1#opm15#opg51#seu94#su352#rcond141" name="Nazione to Prodotto" predicate="in" implied="true" role="rel18#role36"/>
+        <AttributesCondition id="mov1#opm15#opg51#seu94#su352#acond90" name="nome" predicate="contains" booleanOperator="or" implied="true" attributes="ent4#att15"/>
+        <RelationshipRoleCondition id="mov1#opm15#opg51#seu94#su352#rcond142" name="promo to prodotto" predicate="in" implied="true" role="rel6#role11"/>
+      </Selector>
+      <OKLink id="mov1#opm15#opg51#seu94#oln234" name="Flow35" to="mov1#opm15#okcu17">
+        <LinkParameter id="mov1#opm15#opg51#seu94#oln234#par310" name="oid_KeyCondition182 [oid]" source="ent4#att14Array" target="mov1#opm15#okcu17#ocp27"/>
+        <LinkParameter id="mov1#opm15#opg51#seu94#oln234#par312" name="oid_current oid" source="ent4#att14Array" target="mov1#opm15#okcu17#ocp27"/>
+      </OKLink>
+      <KOLink id="mov1#opm15#opg51#seu94#kln151" name="KOFlow85" to="mov1#opm15#kocu28"/>
+    </SelectorUnit>
+    <IsNotNullUnit id="mov1#opm15#opg51#inn29" name="Is Not Null12" gr:x="35" gr:y="420">
+      <KOLink id="mov1#opm15#opg51#inn29#kln168" name="KOFlow69" to="mov1#opm15#opg51#inn32">
+        <LinkParameter id="mov1#opm15#opg51#inn29#kln168#par314" name="Categoria_PASSING" sourceLinkParameter="mov1#opm15#icu15#oln233#par306" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn29#kln168#par315" name="Fascia di prezzo_PASSING" sourceLinkParameter="mov1#opm15#icu15#oln233#par305" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn29#kln168#par316" name="Nazione_PASSING" sourceLinkParameter="mov1#opm15#icu15#oln233#par303" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn29#kln168#par317" name="Nome_PASSING" sourceLinkParameter="mov1#opm15#icu15#oln233#par304" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn29#kln168#par413" name="Prodotti in promozione_PASSING" sourceLinkParameter="mov1#opm15#icu15#oln233#par302" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn29#kln168#par427" name="Prodotti in promozione_PASSING_Input" sourceLinkParameter="mov1#opm15#icu15#oln233#par302" target="mov1#opm15#opg51#inn32.isnotnull"/>
+      </KOLink>
+      <OKLink id="mov1#opm15#opg51#inn29#oln235" name="OKFlow145" to="mov1#opm15#opg51#seu128">
+        <LinkParameter id="mov1#opm15#opg51#inn29#oln235#par452" name="Categoria_PASSING" sourceLinkParameter="mov1#opm15#icu15#oln233#par306" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn29#oln235#par550" name="Fascia di prezzo_PASSING" sourceLinkParameter="mov1#opm15#icu15#oln233#par305" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn29#oln235#par551" name="Nazione_PASSING" sourceLinkParameter="mov1#opm15#icu15#oln233#par303" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn29#oln235#par588" name="Nome_PASSING" sourceLinkParameter="mov1#opm15#icu15#oln233#par304" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn29#oln235#par614" name="Prodotti in promozione_PASSING" sourceLinkParameter="mov1#opm15#icu15#oln233#par302" passing="true"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <SelectorUnit id="mov1#opm15#opg51#seu128" name="Prodotti nuovi" gr:x="495" gr:y="445" entity="ent11">
+      <OKLink id="mov1#opm15#opg51#seu128#oln236" name="OKFlow146" to="mov1#opm15#opg51#inn33">
+        <LinkParameter id="mov1#opm15#opg51#seu128#oln236#par724" name="Prodotti in promozione_PASSING_Input" sourceLinkParameter="mov1#opm15#opg51#inn29#oln235#par614" target="mov1#opm15#opg51#inn33.isnotnull"/>
+        <LinkParameter id="mov1#opm15#opg51#seu128#oln236#par869" name="Categoria_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn29#oln235#par452" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#seu128#oln236#par1145" name="Fascia di prezzo_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn29#oln235#par550" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#seu128#oln236#par1149" name="Nazione_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn29#oln235#par551" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#seu128#oln236#par1150" name="Nome_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn29#oln235#par588" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#seu128#oln236#par1151" name="oid_PASSING" source="ent4#att14Array" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#seu128#oln236#par1270" name="Prodotti in promozione_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn29#oln235#par614" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm15#opg51#seu128#kln169" name="KOFlow84" to="mov1#opm15#kocu28" gr:bendpoints="0,-100"/>
+    </SelectorUnit>
+    <IsNotNullUnit id="mov1#opm15#opg51#inn32" name="Is Not Null in promo" gr:x="5" gr:y="240">
+      <KOLink id="mov1#opm15#opg51#inn32#kln170" name="KOFlow45" to="mov1#opm15#opg51#seu94">
+        <LinkParameter id="mov1#opm15#opg51#inn32#kln170#par1281" name="Categoria_PASSING_Da categoria a prodotti [oid]" sourceLinkParameter="mov1#opm15#opg51#inn29#kln168#par314" target="mov1#opm15#opg51#seu94#su352#rcond88.ent5#att19"/>
+        <LinkParameter id="mov1#opm15#opg51#inn32#kln170#par1282" name="Fascia di prezzo_PASSING_Da fascia a prodotti [oid]" sourceLinkParameter="mov1#opm15#opg51#inn29#kln168#par315" target="mov1#opm15#opg51#seu94#su352#rcond140.ent15#att30"/>
+        <LinkParameter id="mov1#opm15#opg51#inn32#kln170#par1287" name="Nazione_PASSING_Nazione to Prodotto [oid]" sourceLinkParameter="mov1#opm15#opg51#inn29#kln168#par316" target="mov1#opm15#opg51#seu94#su352#rcond141.ent19#att44"/>
+        <LinkParameter id="mov1#opm15#opg51#inn32#kln170#par1291" name="Nome_PASSING_nome" sourceLinkParameter="mov1#opm15#opg51#inn29#kln168#par317" target="mov1#opm15#opg51#seu94#su352#acond90"/>
+      </KOLink>
+      <OKLink id="mov1#opm15#opg51#inn32#oln237" name="OKFlow77" to="mov1#opm15#opg51#tmu27">
+        <LinkParameter id="mov1#opm15#opg51#inn32#oln237#par1326" name="Categoria_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn29#kln168#par314" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn32#oln237#par1327" name="Fascia di prezzo_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn29#kln168#par315" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn32#oln237#par1328" name="Nazione_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn29#kln168#par316" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn32#oln237#par1330" name="Nome_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn29#kln168#par317" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn32#oln237#par1331" name="Prodotti in promozione_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn29#kln168#par413" passing="true"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <SelectorUnit id="mov1#opm15#opg51#seu130" name="in promo" gr:x="260" gr:y="220" entity="ent6">
+      <Selector id="mov1#opm15#opg51#seu130#su353" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="mov1#opm15#opg51#seu130#su353#acond91" name="scadenza" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
+      </Selector>
+      <OKLink id="mov1#opm15#opg51#seu130#oln238" name="OKFlow78" to="mov1#opm15#opg51#seu94">
+        <LinkParameter id="mov1#opm15#opg51#seu130#oln238#par1332" name="Categoria_PASSING_Da categoria a prodotti [oid]" sourceLinkParameter="mov1#opm15#opg51#tmu27#oln240#par1338" target="mov1#opm15#opg51#seu94#su352#rcond88.ent5#att19"/>
+        <LinkParameter id="mov1#opm15#opg51#seu130#oln238#par1333" name="Fascia di prezzo_PASSING_Da fascia a prodotti [oid]" sourceLinkParameter="mov1#opm15#opg51#tmu27#oln240#par1339" target="mov1#opm15#opg51#seu94#su352#rcond140.ent15#att30"/>
+        <LinkParameter id="mov1#opm15#opg51#seu130#oln238#par1334" name="Nazione_PASSING_Nazione to Prodotto [oid]" sourceLinkParameter="mov1#opm15#opg51#tmu27#oln240#par1340" target="mov1#opm15#opg51#seu94#su352#rcond141.ent19#att44"/>
+        <LinkParameter id="mov1#opm15#opg51#seu130#oln238#par1335" name="Nome_PASSING_nome" sourceLinkParameter="mov1#opm15#opg51#tmu27#oln240#par1341" target="mov1#opm15#opg51#seu94#su352#acond90"/>
+        <LinkParameter id="mov1#opm15#opg51#seu130#oln238#par1336" name="oid_promo to prodotto [oid]" source="ent6#att22Array" target="mov1#opm15#opg51#seu94#su352#rcond142.ent6#att22"/>
+      </OKLink>
+      <KOLink id="mov1#opm15#opg51#seu130#kln171" name="KOFlow111" to="mov1#opm15#kocu28" gr:bendpoints="0,40"/>
+    </SelectorUnit>
+    <TimeUnit id="mov1#opm15#opg51#tmu27" name="Time25" gr:x="165" gr:y="235">
+      <OKLink id="mov1#opm15#opg51#tmu27#oln240" name="OKFlow39" to="mov1#opm15#opg51#seu130">
+        <LinkParameter id="mov1#opm15#opg51#tmu27#oln240#par1337" name="Current/Input Date_scadenza" source="currentDate" target="mov1#opm15#opg51#seu130#su353#acond91"/>
+        <LinkParameter id="mov1#opm15#opg51#tmu27#oln240#par1338" name="Categoria_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn32#oln237#par1326" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#tmu27#oln240#par1339" name="Fascia di prezzo_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn32#oln237#par1327" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#tmu27#oln240#par1340" name="Nazione_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn32#oln237#par1328" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#tmu27#oln240#par1341" name="Nome_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn32#oln237#par1330" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#tmu27#oln240#par1342" name="Prodotti in promozione_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn32#oln237#par1331" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm15#opg51#tmu27#kln172" name="KOFlow112" to="mov1#opm15#kocu28" gr:bendpoints="0,-20"/>
+    </TimeUnit>
+    <IsNotNullUnit id="mov1#opm15#opg51#inn33" name="Is Not Null in promo" gr:x="480" gr:y="270">
+      <KOLink id="mov1#opm15#opg51#inn33#kln173" name="KOFlow45" to="mov1#opm15#opg51#seu94">
+        <LinkParameter id="mov1#opm15#opg51#inn33#kln173#par1343" name="Categoria_PASSING_Da categoria a prodotti [oid]" sourceLinkParameter="mov1#opm15#opg51#seu128#oln236#par869" target="mov1#opm15#opg51#seu94#su352#rcond88.ent5#att19"/>
+        <LinkParameter id="mov1#opm15#opg51#inn33#kln173#par1344" name="Fascia di prezzo_PASSING_Da fascia a prodotti [oid]" sourceLinkParameter="mov1#opm15#opg51#seu128#oln236#par1145" target="mov1#opm15#opg51#seu94#su352#rcond140.ent15#att30"/>
+        <LinkParameter id="mov1#opm15#opg51#inn33#kln173#par1345" name="Nazione_PASSING_Nazione to Prodotto [oid]" sourceLinkParameter="mov1#opm15#opg51#seu128#oln236#par1149" target="mov1#opm15#opg51#seu94#su352#rcond141.ent19#att44"/>
+        <LinkParameter id="mov1#opm15#opg51#inn33#kln173#par1346" name="Nome_PASSING_nome" sourceLinkParameter="mov1#opm15#opg51#seu128#oln236#par1150" target="mov1#opm15#opg51#seu94#su352#acond90"/>
+        <LinkParameter id="mov1#opm15#opg51#inn33#kln173#par1347" name="oid_PASSING_Prodotti nuovi [oid]" sourceLinkParameter="mov1#opm15#opg51#seu128#oln236#par1151" target="mov1#opm15#opg51#seu94#su352#kcond222.ent4#att14"/>
+      </KOLink>
+      <OKLink id="mov1#opm15#opg51#inn33#oln241" name="OKFlow77" to="mov1#opm15#opg51#tmu28">
+        <LinkParameter id="mov1#opm15#opg51#inn33#oln241#par1348" name="Categoria_PASSING" sourceLinkParameter="mov1#opm15#opg51#seu128#oln236#par869" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn33#oln241#par1354" name="Fascia di prezzo_PASSING" sourceLinkParameter="mov1#opm15#opg51#seu128#oln236#par1145" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn33#oln241#par1355" name="Nazione_PASSING" sourceLinkParameter="mov1#opm15#opg51#seu128#oln236#par1149" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn33#oln241#par1356" name="Nome_PASSING" sourceLinkParameter="mov1#opm15#opg51#seu128#oln236#par1150" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn33#oln241#par1357" name="oid_PASSING" sourceLinkParameter="mov1#opm15#opg51#seu128#oln236#par1151" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#inn33#oln241#par1358" name="Prodotti in promozione_PASSING" sourceLinkParameter="mov1#opm15#opg51#seu128#oln236#par1270" passing="true"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <SelectorUnit id="mov1#opm15#opg51#seu147" name="in promo" gr:x="745" gr:y="250" entity="ent6">
+      <Selector id="mov1#opm15#opg51#seu147#su354" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="mov1#opm15#opg51#seu147#su354#acond92" name="scadenza" predicate="gteq" booleanOperator="or" implied="false" attributes="ent6#att24"/>
+      </Selector>
+      <OKLink id="mov1#opm15#opg51#seu147#oln242" name="OKFlow78" to="mov1#opm15#opg51#seu94">
+        <LinkParameter id="mov1#opm15#opg51#seu147#oln242#par1420" name="oid_promo to prodotto [oid]" source="ent6#att22Array" target="mov1#opm15#opg51#seu94#su352#rcond142.ent6#att22"/>
+        <LinkParameter id="mov1#opm15#opg51#seu147#oln242#par1423" name="Categoria_PASSING_Da categoria a prodotti [oid]" sourceLinkParameter="mov1#opm15#opg51#tmu28#oln244#par1431" target="mov1#opm15#opg51#seu94#su352#rcond88.ent5#att19"/>
+        <LinkParameter id="mov1#opm15#opg51#seu147#oln242#par1425" name="Fascia di prezzo_PASSING_Da fascia a prodotti [oid]" sourceLinkParameter="mov1#opm15#opg51#tmu28#oln244#par1432" target="mov1#opm15#opg51#seu94#su352#rcond140.ent15#att30"/>
+        <LinkParameter id="mov1#opm15#opg51#seu147#oln242#par1426" name="Nazione_PASSING_Nazione to Prodotto [oid]" sourceLinkParameter="mov1#opm15#opg51#tmu28#oln244#par1433" target="mov1#opm15#opg51#seu94#su352#rcond141.ent19#att44"/>
+        <LinkParameter id="mov1#opm15#opg51#seu147#oln242#par1428" name="Nome_PASSING_nome" sourceLinkParameter="mov1#opm15#opg51#tmu28#oln244#par1434" target="mov1#opm15#opg51#seu94#su352#acond90"/>
+        <LinkParameter id="mov1#opm15#opg51#seu147#oln242#par1429" name="oid_PASSING_Prodotti nuovi [oid]" sourceLinkParameter="mov1#opm15#opg51#tmu28#oln244#par1435" target="mov1#opm15#opg51#seu94#su352#kcond222.ent4#att14"/>
+      </OKLink>
+      <KOLink id="mov1#opm15#opg51#seu147#kln174" name="KOFlow111" to="mov1#opm15#kocu28" gr:bendpoints="0,-60"/>
+    </SelectorUnit>
+    <TimeUnit id="mov1#opm15#opg51#tmu28" name="Time25" gr:x="650" gr:y="275">
+      <OKLink id="mov1#opm15#opg51#tmu28#oln244" name="OKFlow39" to="mov1#opm15#opg51#seu147">
+        <LinkParameter id="mov1#opm15#opg51#tmu28#oln244#par1430" name="Current/Input Date_scadenza" source="currentDate" target="mov1#opm15#opg51#seu147#su354#acond92"/>
+        <LinkParameter id="mov1#opm15#opg51#tmu28#oln244#par1431" name="Categoria_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn33#oln241#par1348" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#tmu28#oln244#par1432" name="Fascia di prezzo_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn33#oln241#par1354" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#tmu28#oln244#par1433" name="Nazione_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn33#oln241#par1355" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#tmu28#oln244#par1434" name="Nome_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn33#oln241#par1356" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#tmu28#oln244#par1435" name="oid_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn33#oln241#par1357" passing="true"/>
+        <LinkParameter id="mov1#opm15#opg51#tmu28#oln244#par1436" name="Prodotti in promozione_PASSING" sourceLinkParameter="mov1#opm15#opg51#inn33#oln241#par1358" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm15#opg51#tmu28#kln176" name="KOFlow112" to="mov1#opm15#kocu28" gr:bendpoints="0,80"/>
+    </TimeUnit>
+  </OperationUnits>
+</OperationGroup>
