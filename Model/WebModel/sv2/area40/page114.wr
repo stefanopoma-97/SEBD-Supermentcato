@@ -216,7 +216,7 @@
             <KeyCondition id="sv2#area40#page114#alt11#page84#pwu31#su196#kcond134" name="KeyCondition7" predicate="in" implied="false"/>
             <AttributesCondition id="sv2#area40#page114#alt11#page84#pwu31#su196#acond67" name="Vendibile" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64" value="1"/>
           </Selector>
-          <Link id="sv2#area40#page114#alt11#page84#pwu31#ln280" name="Flow21" to="sv2#area40#page113#dau44" type="normal" automaticCoupling="true" validate="true"/>
+          <Link id="sv2#area40#page114#alt11#page84#pwu31#ln280" name="Dettagli" to="sv2#area40#page113#dau44" type="normal" automaticCoupling="true" validate="true"/>
           <SortAttribute attribute="ent4#att17" order="ascending"/>
         </PowerIndexUnit>
       </ContentUnits>

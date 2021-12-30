@@ -193,7 +193,7 @@
           <Selector id="sv2#area37#page107#alt8#page60#pwu43#su107" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv2#area37#page107#alt8#page60#pwu43#su107#kcond111" name="KeyCondition15" predicate="in" implied="false"/>
           </Selector>
-          <Link id="sv2#area37#page107#alt8#page60#pwu43#ln210" name="Flow42" to="sv2#area37#page106#dau43" type="normal" automaticCoupling="true" validate="true"/>
+          <Link id="sv2#area37#page107#alt8#page60#pwu43#ln210" name="Detagli" to="sv2#area37#page106#dau43" type="normal" automaticCoupling="true" validate="true"/>
           <SortAttribute attribute="ent3#att12" order="descending"/>
         </PowerIndexUnit>
       </ContentUnits>

@@ -2,7 +2,9 @@
   <OperationUnits>
     <SelectorUnit id="sv2#area39#seu120" name="Prodotto nuovo" gr:x="555" gr:y="470" entity="ent11" distinctAttributes="ent4#att59 ent4#att18 ent4#att16 ent4#att53 ent4#att27 ent4#att60 ent4#att15 ent4#att14 ent4#att17">
       <KOLink id="sv2#area39#seu120#kln88" name="KOFlow1" to="sv2#area39#page112" automaticCoupling="true"/>
-      <OKLink id="sv2#area39#seu120#oln186" name="OKFlow3" to="sv2#area40#page114#alt11#page85#pwu45"/>
+      <OKLink id="sv2#area39#seu120#oln186" name="OKFlow3" to="sv2#area40#page114#alt11#page85#pwu45">
+        <LinkParameter id="sv2#area39#seu120#oln186#par1551" name="oid_KeyCondition7 [oid]" source="ent4#att14Array" target="sv2#area40#page114#alt11#page85#pwu45#su197#kcond135.ent4#att14"/>
+      </OKLink>
     </SelectorUnit>
     <SelectorUnit id="sv2#area39#seu121" name="Da categoria a prodotto" gr:x="520" gr:y="250" entity="ent4">
       <Selector id="sv2#area39#seu121#su269" defaultPolicy="fill" booleanOperator="and">

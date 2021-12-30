@@ -1,0 +1,24 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="1126" id="mov1#opm17" name="Filtra promozioni">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#opm17#icu17" name="Input Port">
+      <InputCollectorParameter id="mov1#opm17#icu17#icp26" name="Valida online"/>
+      <InputCollectorParameter id="mov1#opm17#icu17#icp27" name="negozio parola chiave"/>
+      <InputCollectorParameter id="mov1#opm17#icu17#icp28" name="prodotto parola chiave"/>
+      <InputCollectorParameter id="mov1#opm17#icu17#icp29" name="Non Scaduta"/>
+      <InputCollectorParameter id="mov1#opm17#icu17#icp30" name="Valida in negozio"/>
+      <InputCollectorParameter id="mov1#opm17#icu17#icp31" name="Da negozi a promozioni [oid]"/>
+      <OKLink id="mov1#opm17#icu17#oln323" to="mov1#opm17#opg58#seu160" validate="true" name="Filtra">
+        <LinkParameter id="mov1#opm17#icu17#oln323#par1536" source="mov1#opm17#icu17#icp28" name="Prodotto_prodotto parola chiave" target="mov1#opm17#opg58#seu160#su356#acond94"/>
+        <LinkParameter id="mov1#opm17#icu17#oln323#par1537" name="Current/Input Date_PASSING_Non Scaduta" target="mov1#opm17#opg58#seu160#su356#acond95" source="mov1#opm17#icu17#icp29"/>
+        <LinkParameter id="mov1#opm17#icu17#oln323#par1534" source="mov1#opm17#icu17#icp31" name="Negozio_Da negozi a promozioni [oid]" target="mov1#opm17#opg58#seu160#su356#rcond146.ent3#att8"/>
+        <LinkParameter id="mov1#opm17#icu17#oln323#par1535" source="mov1#opm17#icu17#icp27" name="Negozio (parola chiave)_negozio parola chiave" target="mov1#opm17#opg58#seu160#su356#acond93"/>
+        <LinkParameter id="mov1#opm17#icu17#oln323#par1539" source="mov1#opm17#icu17#icp26" name="Valida online_Valida online" target="mov1#opm17#opg58#seu160#su356#acond97"/>
+        <LinkParameter id="mov1#opm17#icu17#oln323#par1538" source="mov1#opm17#icu17#icp30" name="Valida in negozio_Valida in negozio" target="mov1#opm17#opg58#seu160#su356#acond96"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <KOCollectorUnit gr:x="700" gr:y="300" id="mov1#opm17#kocu30" name="KO Port30"/>
+    <OKCollectorUnit gr:x="700" gr:y="0" id="mov1#opm17#okcu19" name="OK Port19">
+      <OutputCollectorParameter id="mov1#opm17#okcu19#ocp29" name="oid"/>
+    </OKCollectorUnit>
+  </OperationUnits>
+</OperationModule>

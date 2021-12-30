@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="210" gr:y="160" id="sv1#area9#page11" name="Pagina Promozioni">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="230" gr:y="160" id="sv1#area9#page11" name="Pagina Promozioni">
   <ContentUnits>
     <SelectorUnit gr:x="545" gr:y="75" id="sv1#area9#page11#seu16" name="Promozioni attive" entity="ent6">
       <Selector id="sv1#area9#page11#seu16#su15" defaultPolicy="fill" booleanOperator="and">
@@ -10,13 +10,13 @@
       <SelectionField id="sv1#area9#page11#enu4#sfld4" name="Negozio" type="string"/>
       <Field id="sv1#area9#page11#enu4#fld6" name="Negozio (parola chiave)" type="string" modifiable="true"/>
       <Field id="sv1#area9#page11#enu4#fld7" name="Prodotto" type="string" modifiable="true"/>
-      <Link id="sv1#area9#page11#enu4#ln29" name="Filtra" to="sv1#area9#opg2#seu21" type="normal" validate="true">
-        <LinkParameter id="sv1#area9#page11#enu4#ln29#par7" name="Negozio_Da negozi a promozioni [oid]" source="sv1#area9#page11#enu4#sfld4" target="sv1#area9#opg2#seu21#su20#rcond6.ent3#att8"/>
-        <LinkParameter id="sv1#area9#page11#enu4#ln29#par8" name="Negozio (parola chiave)_negozio parola chiave" source="sv1#area9#page11#enu4#fld6" target="sv1#area9#opg2#seu21#su20#acond4"/>
-        <LinkParameter id="sv1#area9#page11#enu4#ln29#par9" name="Prodotto_prodotto parola chiave" source="sv1#area9#page11#enu4#fld7" target="sv1#area9#opg2#seu21#su20#acond5"/>
-        <LinkParameter id="sv1#area9#page11#enu4#ln29#par4" name="Current/Input Date_PASSING_Non Scaduta" sourceLinkParameter="sv1#area9#page11#tmu2#ln4#par1" target="sv1#area9#opg2#seu21#su20#acond6"/>
-        <LinkParameter id="sv1#area9#page11#enu4#ln29#par28" name="Valida in negozio_Valida in negozio" source="sv1#area9#page11#enu4#msfld3" target="sv1#area9#opg2#seu21#su20#acond8"/>
-        <LinkParameter id="sv1#area9#page11#enu4#ln29#par34" name="Valida online_Valida online" source="sv1#area9#page11#enu4#msfld4" target="sv1#area9#opg2#seu21#su20#acond11"/>
+      <Link id="sv1#area9#page11#enu4#ln29" name="Filtra" to="sv1#area9#miu35" type="normal" validate="true">
+        <LinkParameter id="sv1#area9#page11#enu4#ln29#par7" name="Negozio_Da negozi a promozioni [oid]" source="sv1#area9#page11#enu4#sfld4" target="sv1#area9#miu35.mov1#opm17#icu17#icp31"/>
+        <LinkParameter id="sv1#area9#page11#enu4#ln29#par8" name="Negozio (parola chiave)_negozio parola chiave" source="sv1#area9#page11#enu4#fld6" target="sv1#area9#miu35.mov1#opm17#icu17#icp27"/>
+        <LinkParameter id="sv1#area9#page11#enu4#ln29#par9" name="Prodotto_prodotto parola chiave" source="sv1#area9#page11#enu4#fld7" target="sv1#area9#miu35.mov1#opm17#icu17#icp28"/>
+        <LinkParameter id="sv1#area9#page11#enu4#ln29#par4" name="Current/Input Date_PASSING_Non Scaduta" sourceLinkParameter="sv1#area9#page11#tmu2#ln4#par1" target="sv1#area9#miu35.mov1#opm17#icu17#icp29"/>
+        <LinkParameter id="sv1#area9#page11#enu4#ln29#par28" name="Valida in negozio_Valida in negozio" source="sv1#area9#page11#enu4#msfld3" target="sv1#area9#miu35.mov1#opm17#icu17#icp30"/>
+        <LinkParameter id="sv1#area9#page11#enu4#ln29#par34" name="Valida online_Valida online" source="sv1#area9#page11#enu4#msfld4" target="sv1#area9#miu35.mov1#opm17#icu17#icp26"/>
       </Link>
       <MultiSelectionField id="sv1#area9#page11#enu4#msfld3" name="Valida in negozio" type="string"/>
       <MultiSelectionField id="sv1#area9#page11#enu4#msfld4" name="Valida online" type="string"/>
