@@ -6,8 +6,8 @@
       </Selector>
       <Link id="sv1#area8#page8#dau2#ln20" name="Flow19" to="sv1#area8#page8#scu3" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv1#area8#page8#dau2#ln69" name="Flow19" to="sv1#area8#page8#scu4" type="transport" automaticCoupling="true" validate="true"/>
-      <Link id="sv1#area8#page8#dau2#ln187" name="Flow187" to="sv1#area8#page8#seu77" type="transport" validate="true">
-        <LinkParameter id="sv1#area8#page8#dau2#ln187#par147" name="oid_KeyCondition62 [oid]" source="data.ent4#att14" target="sv1#area8#page8#seu77#su109#kcond62.ent4#att14"/>
+      <Link id="sv1#area8#page8#dau2#ln187" name="Flow187" to="sv1#area8#page8#miu19" type="transport" validate="true" gr:bendpoints="-24,-115,-174,40">
+        <LinkParameter id="sv1#area8#page8#dau2#ln187#par147" name="oid_KeyCondition62 [oid]" source="data.ent4#att14" target="mov1#ctm1#icu11#icp14"/>
       </Link>
     </DataUnit>
     <IndexUnit gr:x="455" gr:y="280" id="sv1#area8#page8#inu7" name="Promozioni attive in negozio" entity="ent6" displayAttributes="ent6#att23 ent6#att24 ent6#att39 ent6#att41" linkOrder="sv1#area8#page8#inu7#ln196">
@@ -37,17 +37,7 @@
       </Selector>
       <Link id="sv1#area8#page8#scu4#ln70" name="Flow70" to="sv1#area8#page8#inu7" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
-    <SelectorUnit gr:x="15" gr:y="0" id="sv1#area8#page8#seu77" name="&#232; nuovo" entity="ent11">
-      <Selector id="sv1#area8#page8#seu77#su109" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv1#area8#page8#seu77#su109#kcond62" name="KeyCondition62" predicate="in" implied="false"/>
-      </Selector>
-      <Link id="sv1#area8#page8#seu77#ln188" name="Flow188" to="sv1#area8#page8#dau23" automaticCoupling="true" type="transport" validate="true"/>
-    </SelectorUnit>
-    <DataUnit gr:x="160" gr:y="0" id="sv1#area8#page8#dau23" name="Prodotto nuovo" entity="ent11" displayAttributes="ent4#att18 ent4#att15">
-      <Selector id="sv1#area8#page8#dau23#su110" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv1#area8#page8#dau23#su110#kcond63" name="KeyCondition63" predicate="in" implied="false"/>
-      </Selector>
-    </DataUnit>
+    <ModuleInstanceUnit gr:x="67" gr:y="0" id="sv1#area8#page8#miu19" moduleId="mov1#ctm1"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -73,12 +63,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area8#page8#dau23">
-          <layout:Attribute attribute="ent4#att18"/>
-          <layout:Attribute attribute="ent4#att15"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -180,7 +165,9 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area8#page8#miu19"/>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

@@ -28,9 +28,5 @@
       <KOLink id="sv1#area7#seu19#kln3" name="KOFlow3" to="sv1#area7#page6#mssu28" automaticCoupling="true" gr:bendpoints="-124,-104,-119,166"/>
       <OKLink id="sv1#area7#seu19#oln9" name="OKFlow6" to="sv1#area10#page12#alt2#page50#pwu37" automaticCoupling="true" gr:bendpoints="476,416,0,-708"/>
     </SelectorUnit>
-    <ModuleInstanceUnit gr:x="0" gr:y="515" id="sv1#area7#miu18" moduleId="mov1#opm8">
-      <KOLink id="sv1#area7#miu18#kln182" to="sv1#area7#page15#mssu9" name="KOFlow132"/>
-      <OKLink id="sv1#area7#miu18#oln244" to="sv1#area7#page7" code="end" name="OKFlow206"/>
-    </ModuleInstanceUnit>
   </OperationUnits>
 </Area>

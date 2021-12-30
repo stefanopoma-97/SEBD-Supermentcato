@@ -7,8 +7,8 @@
       <Link id="sv2#area40#page113#dau44#ln370" name="Flow19" to="sv2#area40#page113#scu21" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv2#area40#page113#dau44#ln371" name="Flow19" to="sv2#area40#page113#scu22" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv2#area40#page113#dau44#ln372" name="Flow19" to="sv2#area40#page113#scu23" type="transport" automaticCoupling="true" validate="true"/>
-      <Link id="sv2#area40#page113#dau44#ln164" name="Flow164" to="sv2#area40#page113#seu51" type="transport" validate="true">
-        <LinkParameter id="sv2#area40#page113#dau44#ln164#par190" name="oid_KeyCondition62 [oid]" source="data.ent4#att14" target="sv2#area40#page113#seu51#su98#kcond60.ent4#att14"/>
+      <Link id="sv2#area40#page113#dau44#ln164" name="Flow164" to="sv2#area40#page113#miu23" type="transport" validate="true">
+        <LinkParameter id="sv2#area40#page113#dau44#ln164#par238" name="oid_KeyCondition62 [oid]" source="data.ent4#att14" target="mov1#ctm1#icu11#icp14"/>
       </Link>
     </DataUnit>
     <IndexUnit id="sv2#area40#page113#inu21" name="Promozioni attive in negozio" gr:x="555" gr:y="125" entity="ent6" displayAttributes="ent6#att23 ent6#att24 ent6#att39 ent6#att41" linkOrder="sv2#area40#page113#inu21#ln179">
@@ -53,17 +53,7 @@
         <LinkParameter id="sv2#area40#page113#pwu29#ln376#par548" name="oid_KeyCondition14 [oid]" source="data[].ent8#att31" target="sv2#area37#page106#dau43#su261#kcond158.ent3#att8"/>
       </Link>
     </PowerIndexUnit>
-    <DataUnit id="sv2#area40#page113#dau20" name="Prodotto nuovo" gr:x="130" gr:y="170" entity="ent11" displayAttributes="ent4#att18 ent4#att15">
-      <Selector id="sv2#area40#page113#dau20#su97" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#area40#page113#dau20#su97#kcond59" name="KeyCondition63" predicate="in" implied="false"/>
-      </Selector>
-    </DataUnit>
-    <SelectorUnit id="sv2#area40#page113#seu51" name="&#232; nuovo" gr:x="0" gr:y="165" entity="ent11">
-      <Selector id="sv2#area40#page113#seu51#su98" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#area40#page113#seu51#su98#kcond60" name="KeyCondition62" predicate="in" implied="false"/>
-      </Selector>
-      <Link id="sv2#area40#page113#seu51#ln163" name="Flow188" to="sv2#area40#page113#dau20" type="transport" automaticCoupling="true" validate="true"/>
-    </SelectorUnit>
+    <ModuleInstanceUnit gr:x="5" gr:y="195" id="sv2#area40#page113#miu23" moduleId="mov1#ctm1" action="false"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -89,12 +79,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv2#area40#page113#dau20">
-          <layout:Attribute attribute="ent4#att18"/>
-          <layout:Attribute attribute="ent4#att15"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -238,7 +223,9 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area40#page113#miu23"/>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
