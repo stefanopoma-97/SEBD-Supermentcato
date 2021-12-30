@@ -14,6 +14,7 @@
         <KeyCondition id="sv5#area26#page70#pwu27#su229#kcond20" name="KeyCondition20" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv5#area26#page70#pwu27#ln230" name="Elimina" to="sv5#area26#miu20" type="normal" validate="true"/>
+      <SortAttribute attribute="ent5#att20" order="ascending"/>
     </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -46,6 +47,7 @@
           <layout:Link link="sv5#area26#page70#pwu27#ln205"/>
           <layout:Link link="sv5#area26#page70#pwu27#ln252"/>
           <layout:Link link="sv5#area26#page70#pwu27#ln230"/>
+          <layout:Link link="sv5#area26#page70#pwu27ent5#att20"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

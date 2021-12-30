@@ -5,7 +5,7 @@
         <LinkParameter id="sv4#area22#page55#gtu6#ln17#par286" name="UserCtxParam.oid_NegozioResponsabile [oid]" source="sv4#area22#page55#gtu6.UserCtxParam" target="sv4#area22#page55#dau21#su155#rcond40.userOID"/>
       </Link>
     </GetUnit>
-    <DataUnit gr:x="255" gr:y="0" id="sv4#area22#page55#dau21" name="Dettagli negozio" entity="ent3" linkOrder="sv4#area22#page55#dau21#ln206" displayAttributes="ent3#att13 ent3#att12 ent3#att11 ent3#att9 ent3#att42">
+    <DataUnit gr:x="255" gr:y="0" id="sv4#area22#page55#dau21" name="Dettagli negozio" entity="ent3" linkOrder="sv4#area22#page55#dau21#ln206" displayAttributes="ent3#att9 ent3#att12 ent3#att13 ent3#att58 ent3#att42 ent3#att11">
       <Selector id="sv4#area22#page55#dau21#su155" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area22#page55#dau21#su155#rcond40" name="NegozioResponsabile" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
@@ -53,11 +53,12 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area22#page55#dau21">
           <layout:Link link="sv4#area22#page55#dau21#ln206"/>
-          <layout:Attribute attribute="ent3#att13"/>
-          <layout:Attribute attribute="ent3#att12"/>
-          <layout:Attribute attribute="ent3#att11"/>
           <layout:Attribute attribute="ent3#att9"/>
+          <layout:Attribute attribute="ent3#att12"/>
+          <layout:Attribute attribute="ent3#att13"/>
+          <layout:Attribute attribute="ent3#att58"/>
           <layout:Attribute attribute="ent3#att42"/>
+          <layout:Attribute attribute="ent3#att11"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

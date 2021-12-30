@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="620" gr:y="855" id="sv5#area16#page44" name="Dettagli prodotto">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv5#area16#page44#dau17" name="Dettagli prodotto" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60 ent4#att64" linkOrder="sv5#area16#page44#dau17#ln107 sv5#area16#page44#dau17#ln134 sv5#area16#page44#dau17#ln287 sv5#area16#page44#dau17#ln295 sv5#area16#page44#dau17#ln301">
+    <DataUnit gr:x="0" gr:y="0" id="sv5#area16#page44#dau17" name="Dettagli prodotto" entity="ent4" displayAttributes="ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att27 ent4#att53 ent4#att59 ent4#att60 ent4#att64" linkOrder="sv5#area16#page44#dau17#ln107 sv5#area16#page44#dau17#ln134 sv5#area16#page44#dau17#ln295 sv5#area16#page44#dau17#ln301">
       <Selector id="sv5#area16#page44#dau17#su61" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#page44#dau17#su61#kcond33" name="KeyCondition33" predicate="in" implied="false"/>
       </Selector>
@@ -21,7 +21,6 @@
       <Link id="sv5#area16#page44#dau17#ln282" name="Flow282" to="sv5#area16#page44#seu148" type="transport" validate="true">
         <LinkParameter id="sv5#area16#page44#dau17#ln282#par255" name="oid_KeyCondition99 [oid]" source="data.ent4#att14" target="sv5#area16#page44#seu148#su200#kcond99.ent4#att14"/>
       </Link>
-      <Link id="sv5#area16#page44#dau17#ln287" name="indietro" to="sv5#area16" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-722,68,-736,38"/>
       <Link id="sv5#area16#page44#dau17#ln295" name="Elimina" to="sv5#area16#miu22" type="normal" validate="true">
         <LinkParameter id="sv5#area16#page44#dau17#ln295#par1140" name="oid_oid_PASSING" source="data.ent4#att14" target="sv5#area16#miu22.mov1#opm10#icu10#icp9"/>
         <LinkParameter id="sv5#area16#page44#dau17#ln295#par1141" name="oid_RigheConProdotto [oid]" source="data.ent4#att14" target="sv5#area16#miu22.mov1#opm10#icu10#icp10"/>
@@ -55,7 +54,6 @@
           <layout:Attribute attribute="ent4#att64"/>
           <layout:Link link="sv5#area16#page44#dau17#ln107"/>
           <layout:Link link="sv5#area16#page44#dau17#ln134"/>
-          <layout:Link link="sv5#area16#page44#dau17#ln287"/>
           <layout:Link link="sv5#area16#page44#dau17#ln295"/>
           <layout:Link link="sv5#area16#page44#dau17#ln301"/>
         </layout:Unit>

@@ -20,12 +20,12 @@
       <Link id="sv4#area13#page26#seu27#ln65" name="Flow65" to="sv4#area13#page26#dau11" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv4#area13#page26#seu27#ln68" name="Flow68" to="sv4#area13#page26#dau13" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <DataUnit gr:x="265" gr:y="120" id="sv4#area13#page26#dau11" name="Dettagli negozio" entity="ent3" displayAttributes="ent3#att9 ent3#att11 ent3#att12 ent3#att58 ent3#att42 ent3#att13">
+    <DataUnit gr:x="265" gr:y="120" id="sv4#area13#page26#dau11" name="Dettagli negozio" entity="ent3" displayAttributes="ent3#att9 ent3#att12 ent3#att58 ent3#att42 ent3#att11">
       <Selector id="sv4#area13#page26#dau11#su33" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area13#page26#dau11#su33#kcond11" name="KeyCondition11" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <DataUnit gr:x="490" gr:y="0" id="sv4#area13#page26#dau13" name="Indirizzo negozio" entity="ent2" displayAttributes="ent2#att6 ent2#att7">
+    <DataUnit gr:x="490" gr:y="0" id="sv4#area13#page26#dau13" name="Indirizzo negozio" entity="ent2" displayAttributes="ent2#att6 ent2#att7 rel1#role2.ent1#att2">
       <Selector id="sv4#area13#page26#dau13#su42" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area13#page26#dau13#su42#rcond25" name="IndirizzoNegozio" predicate="in" implied="false" role="rel2#role3"/>
       </Selector>
@@ -57,11 +57,10 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area13#page26#dau11">
           <layout:Attribute attribute="ent3#att9"/>
-          <layout:Attribute attribute="ent3#att11"/>
           <layout:Attribute attribute="ent3#att12"/>
           <layout:Attribute attribute="ent3#att58"/>
           <layout:Attribute attribute="ent3#att42"/>
-          <layout:Attribute attribute="ent3#att13"/>
+          <layout:Attribute attribute="ent3#att11"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -81,6 +80,7 @@
         <layout:Unit unitId="sv4#area13#page26#dau13">
           <layout:Attribute attribute="ent2#att6"/>
           <layout:Attribute attribute="ent2#att7"/>
+          <layout:Attribute attribute="rel1#role2.ent1#att2"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
