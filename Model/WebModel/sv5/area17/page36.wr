@@ -23,8 +23,6 @@
       </Link>
       <SortAttribute attribute="ent12#att34" order="descending"/>
       <SortAttribute attribute="ent12#att57" order="ascending"/>
-      <SortAttribute attribute="userName" order="ascending"/>
-      <SortAttribute attribute="email" order="ascending"/>
       <SortAttribute attribute="ent12#att51" order="ascending"/>
       <SortAttribute attribute="ent12#att52" order="ascending"/>
       <SortAttribute attribute="ent14#att54" order="descending"/>
@@ -65,7 +63,6 @@
           <layout:Link link="sv5#area17#page36#pwu12#ln126"/>
           <layout:Link link="sv5#area17#page36#pwu12#ln125"/>
           <layout:Link link="sv5#area17#page36#pwu12ent12#att57"/>
-          <layout:Link link="sv5#area17#page36#pwu12email"/>
           <layout:Link link="sv5#area17#page36#pwu12ent12#att51"/>
           <layout:Link link="sv5#area17#page36#pwu12ent12#att52"/>
           <layout:Link link="sv5#area17#page36#pwu12ent14#att54"/>
@@ -98,5 +95,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv5#area17#page36#ln121" name="Aggiungi dipendente" to="sv5#area17#page40#enu7" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv5#area17#page36#ln121" name="Crea dipendente" to="sv5#area17#page40#enu7" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

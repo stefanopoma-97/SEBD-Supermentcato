@@ -24,6 +24,10 @@
         <KeyCondition id="sv5#area27#page76#pwu28#su177#kcond113" name="KeyCondition113" predicate="in" implied="false"/>
         <AttributesCondition id="sv5#area27#page76#pwu28#su177#acond17" name="NonLicenziato" predicate="eq" booleanOperator="or" implied="false" attributes="ent12#att34" value="0"/>
       </Selector>
+      <SortAttribute attribute="ent12#att34" order="descending"/>
+      <SortAttribute attribute="ent12#att57" order="ascending"/>
+      <SortAttribute attribute="ent12#att51" order="ascending"/>
+      <SortAttribute attribute="ent12#att52" order="ascending"/>
     </PowerIndexUnit>
     <SelectorUnit gr:x="0" gr:y="0" id="sv5#area27#page76#seu90" name="Seleziona dipendenti" entity="ent14">
       <Link id="sv5#area27#page76#seu90#ln275" name="Flow275" to="sv5#area27#page76#scu15" automaticCoupling="true" type="transport" validate="true"/>
@@ -55,13 +59,16 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv5#area27#page76#pwu28">
-          <layout:Link link="sv5#area27#page76#pwu28#ln262"/>
-          <layout:Link link="sv5#area27#page76#pwu28#ln266"/>
-          <layout:Link link="sv5#area27#page76#pwu28#ln269"/>
           <layout:Attribute attribute="userName"/>
           <layout:Attribute attribute="ent12#att51"/>
           <layout:Attribute attribute="ent12#att52"/>
           <layout:Attribute attribute="ent12#att57"/>
+          <layout:Link link="sv5#area27#page76#pwu28#ln262"/>
+          <layout:Link link="sv5#area27#page76#pwu28#ln266"/>
+          <layout:Link link="sv5#area27#page76#pwu28#ln269"/>
+          <layout:Link link="sv5#area27#page76#pwu28ent12#att57"/>
+          <layout:Link link="sv5#area27#page76#pwu28ent12#att51"/>
+          <layout:Link link="sv5#area27#page76#pwu28ent12#att52"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

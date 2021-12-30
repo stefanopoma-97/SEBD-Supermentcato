@@ -36,7 +36,7 @@
         <LinkParameter id="sv5#area16#page42#seu24#ln224#par281" name="true_Vendibili/Nascosti" sourceValue="true" target="sv5#area16#page42#enu20#fld68_slot"/>
       </Link>
     </SelectorUnit>
-    <ScrollerUnit id="sv5#area16#page42#scu42" name="Scorri prodotti" linkOrder="sv5#area16#page42#scu42#ln226" gr:x="70" gr:y="110" useCountQuery="false" entity="ent4" blockFactor="5">
+    <ScrollerUnit id="sv5#area16#page42#scu42" name="Scorri prodotti" linkOrder="sv5#area16#page42#scu42#ln226" gr:x="95" gr:y="110" useCountQuery="false" entity="ent4" blockFactor="5">
       <Selector id="sv5#area16#page42#scu42#su165" defaultPolicy="fill" booleanOperator="and"/>
       <Link id="sv5#area16#page42#scu42#ln226" name="Flow131" to="sv5#area16#page42#alt9#page81#pwu11" type="automatic" automaticCoupling="true" validate="true"/>
     </ScrollerUnit>
