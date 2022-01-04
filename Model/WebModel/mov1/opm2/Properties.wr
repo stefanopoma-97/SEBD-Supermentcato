@@ -6,7 +6,7 @@
         <LinkParameter id="mov1#opm2#icu2#oln133#par401" name="oid_RoleCondition39 [oid]" source="mov1#opm2#icu2#icp2" target="mov1#opm2#opg38#seu62#su176#rcond60.ent9#att33"/>
       </OKLink>
     </InputCollectorUnit>
-    <KOCollectorUnit gr:x="700" gr:y="300" id="mov1#opm2#kocu3" name="KO Port3">
+    <KOCollectorUnit gr:x="700" gr:y="300" id="mov1#opm2#kocu3" name="Ritorno 0">
       <OutputCollectorParameter id="mov1#opm2#kocu3#ocp3" name="$$NULL$$_Shown Messages"/>
     </KOCollectorUnit>
     <KOCollectorUnit gr:x="700" gr:y="600" id="mov1#opm2#kocu4" name="KO Port4">
