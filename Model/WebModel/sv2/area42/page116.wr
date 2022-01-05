@@ -168,14 +168,15 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area42#page116#alt10#page72#pwu23">
-          <layout:Attribute attribute="rel8#role15.ent4#att15"/>
-          <layout:Attribute attribute="rel8#role15.ent4#att59"/>
-          <layout:Attribute attribute="rel8#role15.ent4#att17"/>
-          <layout:Attribute attribute="rel8#role15.ent4#att53"/>
           <layout:Link link="sv2#area42#page116#alt10#page72#pwu23#ln242"/>
           <layout:Link link="sv2#area42#page116#alt10#page72#pwu23rel8#role15$ent4#att59"/>
           <layout:Link link="sv2#area42#page116#alt10#page72#pwu23rel8#role15$ent4#att15"/>
           <layout:Link link="sv2#area42#page116#alt10#page72#pwu23rel8#role15$ent4#att17"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att15"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att59"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att17"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att53"/>
+          <layout:Attribute attribute="rel8#role15.rel18#role35.ent19#att45"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -193,14 +194,15 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area42#page116#alt10#page83#pwu26">
-          <layout:Attribute attribute="rel8#role15.ent4#att15"/>
-          <layout:Attribute attribute="rel8#role15.ent4#att59"/>
-          <layout:Attribute attribute="rel8#role15.ent4#att17"/>
-          <layout:Attribute attribute="rel8#role15.ent4#att53"/>
           <layout:Link link="sv2#area42#page116#alt10#page83#pwu26#ln249"/>
           <layout:Link link="sv2#area42#page116#alt10#page83#pwu26rel8#role15$ent4#att59"/>
           <layout:Link link="sv2#area42#page116#alt10#page83#pwu26rel8#role15$ent4#att15"/>
           <layout:Link link="sv2#area42#page116#alt10#page83#pwu26rel8#role15$ent4#att17"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att15"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att59"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att17"/>
+          <layout:Attribute attribute="rel8#role15.ent4#att53"/>
+          <layout:Attribute attribute="rel8#role15.rel18#role35.ent19#att45"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -219,7 +221,7 @@
   <Alternative gr:x="0" gr:y="0" id="sv2#area42#page116#alt10" name="Liste" defaultPage="sv2#area42#page116#alt10#page72">
     <Page gr:x="0" gr:y="0" id="sv2#area42#page116#alt10#page72" name="Lista">
       <ContentUnits>
-        <PowerIndexUnit id="sv2#area42#page116#alt10#page72#pwu23" name="Lista Prodotti online del tuo negozio preferito" linkOrder="sv2#area42#page116#alt10#page72#pwu23#ln242" gr:x="0" gr:y="0" entity="ent8" sortable="true" checkable="false" useCountQuery="false" displayAttributes="rel8#role15.ent4#att15 rel8#role15.ent4#att59 rel8#role15.ent4#att17 rel8#role15.ent4#att53">
+        <PowerIndexUnit id="sv2#area42#page116#alt10#page72#pwu23" name="Lista Prodotti online del tuo negozio preferito" linkOrder="sv2#area42#page116#alt10#page72#pwu23#ln242" gr:x="0" gr:y="0" entity="ent8" sortable="true" checkable="false" useCountQuery="false" displayAttributes="rel8#role15.ent4#att15 rel8#role15.ent4#att59 rel8#role15.ent4#att17 rel8#role15.ent4#att53 rel8#role15.rel18#role35.ent19#att45">
           <Selector id="sv2#area42#page116#alt10#page72#pwu23#su184" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv2#area42#page116#alt10#page72#pwu23#su184#kcond125" name="KeyCondition7" predicate="in" implied="false"/>
             <AttributesCondition id="sv2#area42#page116#alt10#page72#pwu23#su184#acond68" name="vendibile" predicate="eq" booleanOperator="or" implied="false" attributes="rel8#role15.ent4#att64" value="1"/>
@@ -233,7 +235,7 @@
     </Page>
     <Page gr:x="0" gr:y="170" id="sv2#area42#page116#alt10#page83" name="Lista filtrata">
       <ContentUnits>
-        <PowerIndexUnit id="sv2#area42#page116#alt10#page83#pwu26" name="Lista Prodotti online del tuo negozio preferito" linkOrder="sv2#area42#page116#alt10#page83#pwu26#ln249" gr:x="0" gr:y="0" entity="ent8" sortable="true" checkable="false" useCountQuery="false" displayAttributes="rel8#role15.ent4#att15 rel8#role15.ent4#att59 rel8#role15.ent4#att17 rel8#role15.ent4#att53">
+        <PowerIndexUnit id="sv2#area42#page116#alt10#page83#pwu26" name="Lista Prodotti online del tuo negozio preferito" linkOrder="sv2#area42#page116#alt10#page83#pwu26#ln249" gr:x="0" gr:y="0" entity="ent8" sortable="true" checkable="false" useCountQuery="false" displayAttributes="rel8#role15.ent4#att15 rel8#role15.ent4#att59 rel8#role15.ent4#att17 rel8#role15.ent4#att53 rel8#role15.rel18#role35.ent19#att45">
           <Selector id="sv2#area42#page116#alt10#page83#pwu26#su185" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv2#area42#page116#alt10#page83#pwu26#su185#kcond129" name="KeyCondition7" predicate="in" implied="false"/>
             <AttributesCondition id="sv2#area42#page116#alt10#page83#pwu26#su185#acond69" name="vendibile" predicate="eq" booleanOperator="or" implied="false" attributes="rel8#role15.ent4#att64" value="1"/>

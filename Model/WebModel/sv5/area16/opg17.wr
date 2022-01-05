@@ -1,6 +1,6 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="305" id="sv5#area16#opg17" name="Modifica prodotto" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="1305" id="sv5#area16#opg17" name="Modifica prodotto" transaction="true">
   <OperationUnits>
-    <ModifyUnit gr:x="290" gr:y="15" id="sv5#area16#opg17#mfu3" name="Modifica prodotto" entity="ent4">
+    <ModifyUnit gr:x="340" gr:y="15" id="sv5#area16#opg17#mfu3" name="Modifica prodotto" entity="ent4">
       <Selector id="sv5#area16#opg17#mfu3#su120" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#opg17#mfu3#su120#kcond71" name="KeyCondition71" predicate="in" implied="false"/>
       </Selector>
@@ -14,7 +14,7 @@
         <LinkParameter id="sv5#area16#opg17#mfu3#kln34#par239" name="Errore nella modifica del prodotto_Shown Messages" sourceValue="Errore nella modifica del prodotto" target="sv5#area16#page58#mssu16.shownMessages"/>
       </KOLink>
     </ModifyUnit>
-    <ReconnectUnit gr:x="0" gr:y="180" id="sv5#area16#opg17#rcnu1" name="Riconnetti prodotto a fascia prezzo" relationship="rel11#role22">
+    <ReconnectUnit gr:x="0" gr:y="190" id="sv5#area16#opg17#rcnu1" name="Riconnetti prodotto a fascia prezzo" relationship="rel11#role22">
       <SourceSelector id="sv5#area16#opg17#rcnu1#su122" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#opg17#rcnu1#su122#kcond76" name="KeyCondition76" predicate="in" implied="false"/>
       </SourceSelector>
@@ -29,7 +29,7 @@
         <LinkParameter id="sv5#area16#opg17#rcnu1#kln38#par241" name="Errore nella riconessione con la fascia di prezzo_Shown Messages" sourceValue="Errore nella riconessione con la fascia di prezzo" target="sv5#area16#page58#mssu16.shownMessages"/>
       </KOLink>
     </ReconnectUnit>
-    <ReconnectUnit gr:x="10" gr:y="0" id="sv5#area16#opg17#rcnu2" name="Riconnetti prodotto a categoria" relationship="rel4#role7">
+    <ReconnectUnit gr:x="60" gr:y="0" id="sv5#area16#opg17#rcnu2" name="Riconnetti prodotto a categoria" relationship="rel4#role7">
       <SourceSelector id="sv5#area16#opg17#rcnu2#su125" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#opg17#rcnu2#su125#kcond78" name="KeyCondition78" predicate="in" implied="false"/>
       </SourceSelector>
@@ -45,14 +45,16 @@
         <LinkParameter id="sv5#area16#opg17#rcnu2#oln96#par234" name="Source oid [Prodotto]_KeyCondition76 [oid] [Prodotto] [ConnectSource]" source="sourceent4#att14" target="sv5#area16#opg17#rcnu1#su122#kcond76.ent4#att14"/>
       </OKLink>
     </ReconnectUnit>
-    <ReconnectUnit gr:x="290" gr:y="185" id="sv5#area16#opg17#rcnu3" name="Riconetti prodotto a nazione" relationship="rel18#role35">
+    <ReconnectUnit gr:x="350" gr:y="210" id="sv5#area16#opg17#rcnu3" name="Riconetti prodotto a nazione" relationship="rel18#role35">
       <SourceSelector id="sv5#area16#opg17#rcnu3#su133" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#opg17#rcnu3#su133#kcond80" name="KeyCondition80" predicate="in" implied="false"/>
       </SourceSelector>
       <TargetSelector id="sv5#area16#opg17#rcnu3#su134" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area16#opg17#rcnu3#su134#kcond81" name="KeyCondition81" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv5#area16#opg17#rcnu3#oln40" name="OKFlow40" to="sv5#area16#page44#dau17"/>
+      <OKLink id="sv5#area16#opg17#rcnu3#oln40" name="OKFlow40" to="sv5#area16#page44#dau17">
+        <LinkParameter id="sv5#area16#opg17#rcnu3#oln40#par249" name="Source oid [Prodotto]_KeyCondition33 [oid]" source="sourceent4#att14" target="sv5#area16#page44#dau17#su61#kcond33.ent4#att14"/>
+      </OKLink>
       <KOLink id="sv5#area16#opg17#rcnu3#kln39" name="KOFlow39" to="sv5#area16#page58#mssu16">
         <LinkParameter id="sv5#area16#opg17#rcnu3#kln39#par242" name="Errore nella riconessione con la nazione_Shown Messages" sourceValue="Errore nella riconessione con la nazione" target="sv5#area16#page58#mssu16.shownMessages"/>
       </KOLink>

@@ -3,7 +3,13 @@
     <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#opm8#icu8" name="Input Port">
       <OKLink id="mov1#opm8#icu8#oln243" to="mov1#opm8#opg18#seu115" validate="true" name="Flow292"/>
     </InputCollectorUnit>
-    <KOCollectorUnit gr:x="1430" gr:y="300" id="mov1#opm8#kocu12" name="KO Port12"/>
+    <KOCollectorUnit gr:x="1430" gr:y="300" id="mov1#opm8#kocu12" name="KO Port12">
+      <OutputCollectorParameter id="mov1#opm8#kocu12#ocp30" name="Output Port Parameter30"/>
+    </KOCollectorUnit>
     <OKCollectorUnit gr:x="1430" gr:y="70" id="mov1#opm8#okcu8" name="OK Port8"/>
+    <OKCollectorUnit gr:x="1450" gr:y="560" id="mov1#opm8#okcu20" name="valori">
+      <OutputCollectorParameter id="mov1#opm8#okcu20#ocp31" name="prodotto online"/>
+      <OutputCollectorParameter id="mov1#opm8#okcu20#ocp38" name="oid passato"/>
+    </OKCollectorUnit>
   </OperationUnits>
 </OperationModule>

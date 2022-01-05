@@ -1,9 +1,9 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area5#page5" name="Home" gr:x="0" gr:y="0" landmark="true">
   <ContentUnits>
-    <MultiMessageUnit id="sv5#area5#page5#mssu5" name="Benvenuto" gr:x="0" gr:y="15">
+    <MultiMessageUnit id="sv5#area5#page5#mssu5" name="Benvenuto" gr:x="0" gr:y="50">
       <Message xml:space="preserve">Home del dirigente</Message>
     </MultiMessageUnit>
-    <PowerIndexUnit gr:x="105" gr:y="0" id="sv5#area5#page5#pwu17" name="Elenco negozi" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att9 ent3#att13 ent3#att42" linkOrder="sv5#area5#page5#pwu17#ln7">
+    <PowerIndexUnit gr:x="140" gr:y="0" id="sv5#area5#page5#pwu17" name="Elenco negozi" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att9 ent3#att13 ent3#att42" linkOrder="sv5#area5#page5#pwu17#ln7">
       <SortAttribute attribute="ent3#att9" order="ascending"/>
       <SortAttribute attribute="ent3#att11" order="ascending"/>
       <SortAttribute attribute="ent3#att12" order="descending"/>
@@ -14,7 +14,7 @@
         <KeyCondition id="sv5#area5#page5#pwu17#su156#kcond114" name="KeyCondition114" predicate="in" implied="false"/>
       </Selector>
     </PowerIndexUnit>
-    <PowerIndexUnit gr:x="230" gr:y="0" id="sv5#area5#page5#pwu18" name="Elenco prodotti" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att18 ent4#att53 ent4#att59" linkOrder="sv5#area5#page5#pwu18#ln130">
+    <PowerIndexUnit gr:x="265" gr:y="0" id="sv5#area5#page5#pwu18" name="Elenco prodotti" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att15 ent4#att18 ent4#att53 ent4#att59" linkOrder="sv5#area5#page5#pwu18#ln130">
       <SortAttribute attribute="ent4#att15" order="ascending"/>
       <SortAttribute attribute="ent4#att17" order="ascending"/>
       <SortAttribute attribute="ent4#att53" order="ascending"/>
@@ -26,7 +26,7 @@
         <KeyCondition id="sv5#area5#page5#pwu18#su157#kcond115" name="KeyCondition115" predicate="in" implied="false"/>
       </Selector>
     </PowerIndexUnit>
-    <PowerIndexUnit gr:x="375" gr:y="0" id="sv5#area5#page5#pwu19" name="Elenco categorie" sortable="true" checkable="false" useCountQuery="false" entity="ent5" displayAttributes="ent5#att20 ent5#att21" linkOrder="sv5#area5#page5#pwu19#ln253">
+    <PowerIndexUnit gr:x="410" gr:y="0" id="sv5#area5#page5#pwu19" name="Elenco categorie" sortable="true" checkable="false" useCountQuery="false" entity="ent5" displayAttributes="ent5#att20 ent5#att21" linkOrder="sv5#area5#page5#pwu19#ln253">
       <SortAttribute attribute="ent5#att20" order="ascending"/>
       <SortAttribute attribute="ent5#att21" order="ascending"/>
       <Link id="sv5#area5#page5#pwu19#ln253" name="Dettagli" to="sv5#area26#page73#dau29" automaticCoupling="true" type="normal" validate="true"/>
@@ -34,16 +34,16 @@
         <KeyCondition id="sv5#area5#page5#pwu19#su158#kcond117" name="KeyCondition117" predicate="in" implied="false"/>
       </Selector>
     </PowerIndexUnit>
-    <ScrollerUnit gr:x="105" gr:y="130" id="sv5#area5#page5#scu16" name="Scorri negozi" useCountQuery="false" entity="ent3" blockFactor="5" linkOrder="sv5#area5#page5#scu16#ln218">
+    <ScrollerUnit gr:x="140" gr:y="130" id="sv5#area5#page5#scu16" name="Scorri negozi" useCountQuery="false" entity="ent3" blockFactor="5" linkOrder="sv5#area5#page5#scu16#ln218">
       <Link id="sv5#area5#page5#scu16#ln218" name="Flow218" to="sv5#area5#page5#pwu17" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
-    <ScrollerUnit gr:x="235" gr:y="130" id="sv5#area5#page5#scu34" name="Scorri prodotti" useCountQuery="false" entity="ent4" blockFactor="5" linkOrder="sv5#area5#page5#scu34#ln219">
+    <ScrollerUnit gr:x="270" gr:y="130" id="sv5#area5#page5#scu34" name="Scorri prodotti" useCountQuery="false" entity="ent4" blockFactor="5" linkOrder="sv5#area5#page5#scu34#ln219">
       <Link id="sv5#area5#page5#scu34#ln219" name="Flow219" to="sv5#area5#page5#pwu18" automaticCoupling="true" type="automatic" validate="true"/>
       <Selector id="sv5#area5#page5#scu34#su348" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv5#area5#page5#scu34#su348#acond88" name="Vendibile" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att64" value="true"/>
       </Selector>
     </ScrollerUnit>
-    <ScrollerUnit gr:x="375" gr:y="130" id="sv5#area5#page5#scu35" name="Scorri categorie" useCountQuery="false" entity="ent5" blockFactor="5" linkOrder="sv5#area5#page5#scu35#ln220">
+    <ScrollerUnit gr:x="410" gr:y="130" id="sv5#area5#page5#scu35" name="Scorri categorie" useCountQuery="false" entity="ent5" blockFactor="5" linkOrder="sv5#area5#page5#scu35#ln220">
       <Link id="sv5#area5#page5#scu35#ln220" name="Flow220" to="sv5#area5#page5#pwu19" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
   </ContentUnits>

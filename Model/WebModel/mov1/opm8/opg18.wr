@@ -1,18 +1,20 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm8#opg18" name="Check prodotti nuovi" transaction="true" gr:x="300" gr:y="0">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm8#opg18" name="Check prodotti nuovi" transaction="true" gr:x="205" gr:y="0">
   <OperationUnits>
-    <SelectorUnit id="mov1#opm8#opg18#seu115" name="prodotti nuovi" gr:x="0" gr:y="15" entity="ent11">
+    <SelectorUnit id="mov1#opm8#opg18#seu115" name="prodotti nuovi" gr:x="0" gr:y="25" entity="ent11">
       <OKLink id="mov1#opm8#opg18#seu115#oln246" name="OKFlow199" to="mov1#opm8#opg18#lpu13">
         <LinkParameter id="mov1#opm8#opg18#seu115#oln246#par971" name="oid_Input Array" source="ent4#att14Array" target="mov1#opm8#opg18#lpu13.array"/>
       </OKLink>
-      <KOLink id="mov1#opm8#opg18#seu115#kln195" to="mov1#opm8#kocu12" name="KOFlow116" gr:bendpoints="0,-60"/>
+      <KOLink id="mov1#opm8#opg18#seu115#kln195" to="mov1#opm8#kocu12" name="KOFlow116" gr:bendpoints="0,-60">
+        <LinkParameter id="mov1#opm8#opg18#seu115#kln195#par258" name="seleziono prodotto nuovo_Output Port Parameter30" sourceValue="seleziono prodotti nuovo" target="mov1#opm8#kocu12#ocp30"/>
+      </KOLink>
     </SelectorUnit>
-    <LoopUnit id="mov1#opm8#opg18#lpu13" name="Loop2" gr:x="140" gr:y="30">
+    <LoopUnit id="mov1#opm8#opg18#lpu13" name="Loop2" gr:x="190" gr:y="35">
       <OKLink id="mov1#opm8#opg18#lpu13#oln247" name="OKFlow200" to="mov1#opm8#opg18#seu119" code="next">
         <LinkParameter id="mov1#opm8#opg18#lpu13#oln247#par972" name="Next Element_KeyCondition156 [oid]" source="next" target="mov1#opm8#opg18#seu119#su287#kcond198.ent4#att14"/>
       </OKLink>
       <OKLink id="mov1#opm8#opg18#lpu13#oln263" to="mov1#opm8#okcu8" code="end" name="OKFlow206" gr:bendpoints="483,-112,-567,-127"/>
     </LoopUnit>
-    <SelectorUnit id="mov1#opm8#opg18#seu119" name="Prodotto nuovo" gr:x="270" gr:y="0" entity="ent11">
+    <SelectorUnit id="mov1#opm8#opg18#seu119" name="Prodotto nuovo" gr:x="405" gr:y="0" entity="ent11">
       <Selector id="mov1#opm8#opg18#seu119#su287" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov1#opm8#opg18#seu119#su287#kcond198" name="KeyCondition156" predicate="in" implied="false"/>
       </Selector>
@@ -20,9 +22,11 @@
         <LinkParameter id="mov1#opm8#opg18#seu119#oln248#par973" name="data inserimento_PASSING" source="ent4#att18Array" passing="true"/>
         <LinkParameter id="mov1#opm8#opg18#seu119#oln248#par974" name="oid_PASSING" source="ent4#att14Array" passing="true"/>
       </OKLink>
-      <KOLink id="mov1#opm8#opg18#seu119#kln196" to="mov1#opm8#kocu12" name="KOFlow120" gr:bendpoints="0,40"/>
+      <KOLink id="mov1#opm8#opg18#seu119#kln196" to="mov1#opm8#kocu12" name="KOFlow120" gr:bendpoints="0,40">
+        <LinkParameter id="mov1#opm8#opg18#seu119#kln196#par259" name="seleziono prodotto nuovo_Output Port Parameter30" sourceValue="seleziono prodotto nuovo" target="mov1#opm8#kocu12#ocp30"/>
+      </KOLink>
     </SelectorUnit>
-    <ScriptUnit id="mov1#opm8#opg18#scu29" name="Non &#232; nuovo" gr:x="515" gr:y="15">
+    <ScriptUnit id="mov1#opm8#opg18#scu29" name="Non &#232; nuovo" gr:x="820" gr:y="5">
       <ScriptUnitText xml:space="preserve">#input Date inserimento, Date oggi
 #output boolean risultato
 
@@ -36,23 +40,27 @@ return [ "risultato": risultato ]</ScriptUnitText>
         <LinkParameter id="mov1#opm8#opg18#scu29#oln249#par975" name="risultato_Input" source="result(risultato)" target="mov1#opm8#opg18#inn23.isnotnull"/>
         <LinkParameter id="mov1#opm8#opg18#scu29#oln249#par976" name="oid_PASSING" sourceLinkParameter="mov1#opm8#opg18#tmu14#oln250#par979" passing="true"/>
       </OKLink>
-      <KOLink id="mov1#opm8#opg18#scu29#kln197" to="mov1#opm8#kocu12" name="KOFlow132"/>
+      <KOLink id="mov1#opm8#opg18#scu29#kln197" to="mov1#opm8#kocu12" name="KOFlow132">
+        <LinkParameter id="mov1#opm8#opg18#scu29#kln197#par262" name="non &#232; nuovo_Output Port Parameter30" sourceValue="non &#232; nuovo" target="mov1#opm8#kocu12#ocp30"/>
+      </KOLink>
     </ScriptUnit>
-    <TimeUnit id="mov1#opm8#opg18#tmu14" name="Oggi" gr:x="410" gr:y="15">
+    <TimeUnit id="mov1#opm8#opg18#tmu14" name="Oggi" gr:x="680" gr:y="5">
       <OKLink id="mov1#opm8#opg18#tmu14#oln250" name="OKFlow202" to="mov1#opm8#opg18#scu29">
         <LinkParameter id="mov1#opm8#opg18#tmu14#oln250#par977" name="data inserimento_PASSING_inserimento" sourceLinkParameter="mov1#opm8#opg18#seu119#oln248#par973" target="mov1#opm8#opg18#scu29.inserimento"/>
         <LinkParameter id="mov1#opm8#opg18#tmu14#oln250#par978" name="Current/Input Date_oggi" source="currentDate" target="mov1#opm8#opg18#scu29.oggi"/>
         <LinkParameter id="mov1#opm8#opg18#tmu14#oln250#par979" name="oid_PASSING" sourceLinkParameter="mov1#opm8#opg18#seu119#oln248#par974" passing="true"/>
       </OKLink>
-      <KOLink id="mov1#opm8#opg18#tmu14#kln198" to="mov1#opm8#kocu12" name="KOFlow131" gr:bendpoints="0,-20"/>
+      <KOLink id="mov1#opm8#opg18#tmu14#kln198" to="mov1#opm8#kocu12" name="KOFlow131" gr:bendpoints="0,-20">
+        <LinkParameter id="mov1#opm8#opg18#tmu14#kln198#par260" name="data oggi_Output Port Parameter30" sourceValue="data oggi" target="mov1#opm8#kocu12#ocp30"/>
+      </KOLink>
     </TimeUnit>
-    <IsNotNullUnit id="mov1#opm8#opg18#inn23" name="Is Not Null21" gr:x="710" gr:y="15">
+    <IsNotNullUnit id="mov1#opm8#opg18#inn23" name="Is Not Null21" gr:x="1020" gr:y="45">
       <OKLink id="mov1#opm8#opg18#inn23#oln251" name="OKFlow204" to="mov1#opm8#opg18#seu125">
         <LinkParameter id="mov1#opm8#opg18#inn23#oln251#par980" name="oid_PASSING_KeyCondition165 [oid]" sourceLinkParameter="mov1#opm8#opg18#scu29#oln249#par976" target="mov1#opm8#opg18#seu125#su293#kcond199.ent4#att14"/>
       </OKLink>
       <KOLink id="mov1#opm8#opg18#inn23#kln194" name="KOFlow168" to="mov1#opm8#opg18#lpu13" automaticCoupling="true" gr:bendpoints="-267,95,238,80;-382,80,123,65"/>
     </IsNotNullUnit>
-    <SelectorUnit id="mov1#opm8#opg18#seu125" name="prodotto nuovo" gr:x="480" gr:y="100" entity="ent4">
+    <SelectorUnit id="mov1#opm8#opg18#seu125" name="prodotto nuovo" gr:x="480" gr:y="170" entity="ent4">
       <Selector id="mov1#opm8#opg18#seu125#su293" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov1#opm8#opg18#seu125#su293#kcond199" name="KeyCondition165" predicate="in" implied="false"/>
       </Selector>
@@ -72,9 +80,11 @@ return [ "risultato": risultato ]</ScriptUnitText>
         <LinkParameter id="mov1#opm8#opg18#seu125#oln252#par993" name="oid_KeyCondition179 [oid]" source="ent4#att14Array" target="mov1#opm8#opg18#dlu21#su303#kcond200.ent4#att14"/>
         <LinkParameter id="mov1#opm8#opg18#seu125#oln252#par1056" name="vendibile_PASSING" source="ent4#att64Array" passing="true"/>
       </OKLink>
-      <KOLink id="mov1#opm8#opg18#seu125#kln199" to="mov1#opm8#kocu12" name="KOFlow174" gr:bendpoints="0,80"/>
+      <KOLink id="mov1#opm8#opg18#seu125#kln199" to="mov1#opm8#kocu12" name="KOFlow174" gr:bendpoints="0,80">
+        <LinkParameter id="mov1#opm8#opg18#seu125#kln199#par263" name="seleziono prodotto nuovo 2_Output Port Parameter30" sourceValue="seleziono prodotto nuovo 2" target="mov1#opm8#kocu12#ocp30"/>
+      </KOLink>
     </SelectorUnit>
-    <DeleteUnit id="mov1#opm8#opg18#dlu21" name="Cancella prodotto nuovo" gr:x="695" gr:y="225" entity="ent11">
+    <DeleteUnit id="mov1#opm8#opg18#dlu21" name="Cancella prodotto nuovo" gr:x="685" gr:y="175" entity="ent11">
       <Selector id="mov1#opm8#opg18#dlu21#su303" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov1#opm8#opg18#dlu21#su303#kcond200" name="KeyCondition179" predicate="in" implied="false"/>
       </Selector>
@@ -91,41 +101,49 @@ return [ "risultato": risultato ]</ScriptUnitText>
         <LinkParameter id="mov1#opm8#opg18#dlu21#oln253#par1003" name="oid_PASSING" sourceLinkParameter="mov1#opm8#opg18#seu125#oln252#par988" passing="true"/>
         <LinkParameter id="mov1#opm8#opg18#dlu21#oln253#par1057" name="vendibile_PASSING_vendibile" sourceLinkParameter="mov1#opm8#opg18#seu125#oln252#par1056" target="mov1#opm8#opg18#cru10.ent4#att64"/>
       </OKLink>
-      <KOLink id="mov1#opm8#opg18#dlu21#kln200" to="mov1#opm8#kocu12" name="KOFlow176" gr:bendpoints="0,-100"/>
+      <KOLink id="mov1#opm8#opg18#dlu21#kln200" to="mov1#opm8#kocu12" name="KOFlow176" gr:bendpoints="0,-100">
+        <LinkParameter id="mov1#opm8#opg18#dlu21#kln200#par269" name="cancello prodotot nuovo_Output Port Parameter30" sourceValue="cancello prodotot nuovo" target="mov1#opm8#kocu12#ocp30"/>
+      </KOLink>
     </DeleteUnit>
-    <CreateUnit id="mov1#opm8#opg18#cru10" name="Crea" gr:x="505" gr:y="365" entity="ent4">
+    <CreateUnit id="mov1#opm8#opg18#cru10" name="Crea" gr:x="515" gr:y="310" entity="ent4">
       <OKLink id="mov1#opm8#opg18#cru10#oln254" name="OKFlow212" to="mov1#opm8#opg18#seu126">
         <LinkParameter id="mov1#opm8#opg18#cru10#oln254#par1004" name="oid_PASSING" sourceLinkParameter="mov1#opm8#opg18#dlu21#oln253#par1003" passing="true"/>
       </OKLink>
-      <KOLink id="mov1#opm8#opg18#cru10#kln201" to="mov1#opm8#kocu12" name="KOFlow177" gr:bendpoints="0,120"/>
+      <KOLink id="mov1#opm8#opg18#cru10#kln201" to="mov1#opm8#kocu12" name="KOFlow177" gr:bendpoints="0,120">
+        <LinkParameter id="mov1#opm8#opg18#cru10#kln201#par270" name="creo_Output Port Parameter30" sourceValue="creo" target="mov1#opm8#kocu12#ocp30"/>
+      </KOLink>
     </CreateUnit>
-    <SelectorUnit id="mov1#opm8#opg18#seu126" name="Prodotti online" gr:x="435" gr:y="490" entity="ent8">
+    <SelectorUnit id="mov1#opm8#opg18#seu126" name="Prodotti online" gr:x="415" gr:y="460" entity="ent8">
       <Selector id="mov1#opm8#opg18#seu126#su304" defaultPolicy="fill" booleanOperator="and">
-        <AttributesCondition id="mov1#opm8#opg18#seu126#su304#acond60" name="riferimento a prodotto" predicate="null" booleanOperator="or" implied="false" attributes="ent8#att31 rel8#role15.ent4#att14"/>
+        <AttributesCondition id="mov1#opm8#opg18#seu126#su304#acond60" name="riferimento a prodotto" predicate="null" booleanOperator="or" implied="false" attributes="rel8#role15.ent4#att14"/>
       </Selector>
       <OKLink id="mov1#opm8#opg18#seu126#oln255" name="OKFlow213" to="mov1#opm8#opg18#lpu14">
         <LinkParameter id="mov1#opm8#opg18#seu126#oln255#par1005" name="oid_Input Array" source="ent8#att31Array" target="mov1#opm8#opg18#lpu14.array"/>
         <LinkParameter id="mov1#opm8#opg18#seu126#oln255#par1006" name="oid_PASSING" sourceLinkParameter="mov1#opm8#opg18#cru10#oln254#par1004" passing="true"/>
       </OKLink>
-      <KOLink id="mov1#opm8#opg18#seu126#kln202" to="mov1#opm8#kocu12" name="KOFlow178" gr:bendpoints="0,-140"/>
+      <KOLink id="mov1#opm8#opg18#seu126#kln202" to="mov1#opm8#kocu12" name="KOFlow178" gr:bendpoints="0,-140">
+        <LinkParameter id="mov1#opm8#opg18#seu126#kln202#par271" name="prodotti online_Output Port Parameter30" sourceValue="prodotti online" target="mov1#opm8#kocu12#ocp30"/>
+      </KOLink>
     </SelectorUnit>
-    <LoopUnit id="mov1#opm8#opg18#lpu14" name="Loop3" gr:x="710" gr:y="515">
+    <LoopUnit id="mov1#opm8#opg18#lpu14" name="Loop3" gr:x="810" gr:y="480">
       <OKLink id="mov1#opm8#opg18#lpu14#oln256" name="OKFlow214" to="mov1#opm8#opg18#mfu24" code="next">
-        <LinkParameter id="mov1#opm8#opg18#lpu14#oln256#par1007" name="Next Element_KeyCondition182 [oid]" source="next" target="mov1#opm8#opg18#mfu24#su307#kcond201.ent8#att31"/>
-        <LinkParameter id="mov1#opm8#opg18#lpu14#oln256#par1008" name="oid_PASSING_Prodotto.oid(Prodotto onlineToProdotto)" sourceLinkParameter="mov1#opm8#opg18#seu126#oln255#par1006" target="mov1#opm8#opg18#mfu24.rel8#role15.ent4#att14"/>
+        <LinkParameter id="mov1#opm8#opg18#lpu14#oln256#par341" name="Next Element_KeyCondition182 [oid]" source="next" target="mov1#opm8#opg18#mfu24#su307#kcond201.ent8#att31"/>
+        <LinkParameter id="mov1#opm8#opg18#lpu14#oln256#par424" name="oid_PASSING_Prodotto.oid(Prodotto onlineToProdotto)" sourceLinkParameter="mov1#opm8#opg18#seu126#oln255#par1006" target="mov1#opm8#opg18#mfu24.rel8#role15.ent4#att14"/>
       </OKLink>
       <OKLink id="mov1#opm8#opg18#lpu14#oln257" name="OKFlow216" to="mov1#opm8#opg18#seu127" code="end">
         <LinkParameter id="mov1#opm8#opg18#lpu14#oln257#par1009" name="oid_PASSING" sourceLinkParameter="mov1#opm8#opg18#seu126#oln255#par1006" passing="true"/>
       </OKLink>
     </LoopUnit>
-    <ModifyUnit id="mov1#opm8#opg18#mfu24" name="Update18" gr:x="825" gr:y="495" entity="ent8">
+    <ModifyUnit id="mov1#opm8#opg18#mfu24" name="Update18" gr:x="990" gr:y="420" entity="ent8">
       <Selector id="mov1#opm8#opg18#mfu24#su307" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov1#opm8#opg18#mfu24#su307#kcond201" name="KeyCondition182" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="mov1#opm8#opg18#mfu24#oln258" name="OKFlow215" to="mov1#opm8#opg18#lpu14" automaticCoupling="true" gr:bendpoints="-78,15,57,15"/>
-      <KOLink id="mov1#opm8#opg18#mfu24#kln203" to="mov1#opm8#kocu12" name="KOFlow179" gr:bendpoints="0,160"/>
+      <KOLink id="mov1#opm8#opg18#mfu24#kln203" to="mov1#opm8#kocu12" name="KOFlow179" gr:bendpoints="0,160">
+        <LinkParameter id="mov1#opm8#opg18#mfu24#kln203#par273" name="update online_Output Port Parameter30" sourceValue="update online" target="mov1#opm8#kocu12#ocp30"/>
+      </KOLink>
     </ModifyUnit>
-    <SelectorUnit id="mov1#opm8#opg18#seu127" name="Promozioni" gr:x="445" gr:y="620" entity="ent6">
+    <SelectorUnit id="mov1#opm8#opg18#seu127" name="Promozioni" gr:x="455" gr:y="615" entity="ent6">
       <Selector id="mov1#opm8#opg18#seu127#su308" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="mov1#opm8#opg18#seu127#su308#acond61" name="AttCondition56" predicate="null" booleanOperator="or" implied="false" attributes="rel6#role11.ent4#att14"/>
       </Selector>
@@ -133,9 +151,11 @@ return [ "risultato": risultato ]</ScriptUnitText>
         <LinkParameter id="mov1#opm8#opg18#seu127#oln259#par1010" name="oid_Input Array" source="ent6#att22Array" target="mov1#opm8#opg18#lpu15.array"/>
         <LinkParameter id="mov1#opm8#opg18#seu127#oln259#par1011" name="oid_PASSING" sourceLinkParameter="mov1#opm8#opg18#lpu14#oln257#par1009" passing="true"/>
       </OKLink>
-      <KOLink id="mov1#opm8#opg18#seu127#kln204" to="mov1#opm8#kocu12" name="KOFlow180" gr:bendpoints="0,-180"/>
+      <KOLink id="mov1#opm8#opg18#seu127#kln204" to="mov1#opm8#kocu12" name="KOFlow180" gr:bendpoints="0,-180">
+        <LinkParameter id="mov1#opm8#opg18#seu127#kln204#par287" name="promozioni_Output Port Parameter30" sourceValue="promozioni" target="mov1#opm8#kocu12#ocp30"/>
+      </KOLink>
     </SelectorUnit>
-    <LoopUnit id="mov1#opm8#opg18#lpu15" name="Loop4" gr:x="695" gr:y="645">
+    <LoopUnit id="mov1#opm8#opg18#lpu15" name="Loop4" gr:x="790" gr:y="640">
       <OKLink id="mov1#opm8#opg18#lpu15#oln260" name="OKFlow218" to="mov1#opm8#opg18#mfu25" code="next">
         <LinkParameter id="mov1#opm8#opg18#lpu15#oln260#par1012" name="Next Element_KeyCondition183 [oid]" source="next" target="mov1#opm8#opg18#mfu25#su309#kcond202.ent6#att22"/>
         <LinkParameter id="mov1#opm8#opg18#lpu15#oln260#par1013" name="oid_PASSING_Prodotto.oid(PromozioneToProdotto)" sourceLinkParameter="mov1#opm8#opg18#seu127#oln259#par1011" target="mov1#opm8#opg18#mfu25.rel6#role11.ent4#att14"/>
@@ -144,14 +164,16 @@ return [ "risultato": risultato ]</ScriptUnitText>
         <LinkParameter id="mov1#opm8#opg18#lpu15#oln261#par1058" name="oid_PASSING" sourceLinkParameter="mov1#opm8#opg18#seu127#oln259#par1011" passing="true"/>
       </OKLink>
     </LoopUnit>
-    <ModifyUnit id="mov1#opm8#opg18#mfu25" name="Update19" gr:x="815" gr:y="630" entity="ent6">
+    <ModifyUnit id="mov1#opm8#opg18#mfu25" name="Update19" gr:x="930" gr:y="605" entity="ent6">
       <Selector id="mov1#opm8#opg18#mfu25#su309" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov1#opm8#opg18#mfu25#su309#kcond202" name="KeyCondition183" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="mov1#opm8#opg18#mfu25#oln262" name="OKFlow219" to="mov1#opm8#opg18#lpu15" automaticCoupling="true" gr:bendpoints="-72,12,58,17"/>
-      <KOLink id="mov1#opm8#opg18#mfu25#kln205" to="mov1#opm8#kocu12" name="KOFlow181" gr:bendpoints="0,200"/>
+      <KOLink id="mov1#opm8#opg18#mfu25#kln205" to="mov1#opm8#kocu12" name="KOFlow181" gr:bendpoints="0,200">
+        <LinkParameter id="mov1#opm8#opg18#mfu25#kln205#par277" name="update promozioni_Output Port Parameter30" sourceValue="update promozioni" target="mov1#opm8#kocu12#ocp30"/>
+      </KOLink>
     </ModifyUnit>
-    <SelectorUnit gr:x="415" gr:y="740" id="mov1#opm8#opg18#seu149" name="Righe" entity="ent7">
+    <SelectorUnit gr:x="465" gr:y="765" id="mov1#opm8#opg18#seu149" name="Righe" entity="ent7">
       <Selector id="mov1#opm8#opg18#seu149#su320" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="mov1#opm8#opg18#seu149#su320#acond71" name="AttCondition71" predicate="null" booleanOperator="or" implied="false" attributes="rel9#role17.ent4#att14"/>
       </Selector>
@@ -159,19 +181,25 @@ return [ "risultato": risultato ]</ScriptUnitText>
         <LinkParameter id="mov1#opm8#opg18#seu149#oln285#par1059" name="oid_Input Array" source="ent7#att28Array" target="mov1#opm8#opg18#lpu20.array"/>
         <LinkParameter id="mov1#opm8#opg18#seu149#oln285#par1060" name="oid_PASSING" sourceLinkParameter="mov1#opm8#opg18#lpu15#oln261#par1058" passing="true"/>
       </OKLink>
+      <KOLink id="mov1#opm8#opg18#seu149#kln9" name="KOFlow9" to="mov1#opm8#kocu12">
+        <LinkParameter id="mov1#opm8#opg18#seu149#kln9#par299" name="righe_Output Port Parameter30" sourceValue="righe" target="mov1#opm8#kocu12#ocp30"/>
+      </KOLink>
     </SelectorUnit>
-    <LoopUnit gr:x="695" gr:y="785" id="mov1#opm8#opg18#lpu20" name="Loop20">
+    <LoopUnit gr:x="765" gr:y="795" id="mov1#opm8#opg18#lpu20" name="Loop20">
       <OKLink id="mov1#opm8#opg18#lpu20#oln286" name="OKFlow286" to="mov1#opm8#opg18#mfu26" code="next">
         <LinkParameter id="mov1#opm8#opg18#lpu20#oln286#par1061" name="oid_PASSING_Prodotto.oid(Riga ordineToProdotto)" sourceLinkParameter="mov1#opm8#opg18#seu149#oln285#par1060" target="mov1#opm8#opg18#mfu26.rel9#role17.ent4#att14"/>
         <LinkParameter id="mov1#opm8#opg18#lpu20#oln286#par1062" name="Next Element_KeyCondition208 [oid]" source="next" target="mov1#opm8#opg18#mfu26#su321#kcond208.ent7#att28"/>
       </OKLink>
-      <OKLink id="mov1#opm8#opg18#lpu20#oln288" name="OKFlow288" to="mov1#opm8#opg18#seu115" automaticCoupling="true" gr:bendpoints="-599,52,76,812" code="end"/>
+      <OKLink id="mov1#opm8#opg18#lpu20#oln288" name="OKFlow288" to="mov1#opm8#opg18#lpu13" automaticCoupling="true" gr:bendpoints="-599,52,76,812" code="end"/>
     </LoopUnit>
-    <ModifyUnit gr:x="830" gr:y="775" id="mov1#opm8#opg18#mfu26" name="Update26" entity="ent7">
+    <ModifyUnit gr:x="955" gr:y="770" id="mov1#opm8#opg18#mfu26" name="Update26" entity="ent7">
       <Selector id="mov1#opm8#opg18#mfu26#su321" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov1#opm8#opg18#mfu26#su321#kcond208" name="KeyCondition208" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="mov1#opm8#opg18#mfu26#oln287" name="OKFlow287" to="mov1#opm8#opg18#lpu20" automaticCoupling="true" gr:bendpoints="-94,9,66,19"/>
+      <KOLink id="mov1#opm8#opg18#mfu26#kln10" name="KOFlow10" to="mov1#opm8#kocu12">
+        <LinkParameter id="mov1#opm8#opg18#mfu26#kln10#par334" name="update righe_Output Port Parameter30" sourceValue="update righe" target="mov1#opm8#kocu12#ocp30"/>
+      </KOLink>
     </ModifyUnit>
   </OperationUnits>
 </OperationGroup>

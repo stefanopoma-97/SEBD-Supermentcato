@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="785" gr:y="120" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104 sv5#area16#page42#ln270">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="835" gr:y="1120" id="sv5#area16#page42" name="Prodotti" linkOrder="sv5#area16#page42#ln104 sv5#area16#page42#ln270">
   <ContentUnits>
     <EntryUnit gr:x="280" gr:y="125" id="sv5#area16#page42#enu20" name="Filtra i prodotti" linkOrder="sv5#area16#page42#enu20#ln294 sv5#area16#page42#enu20#ln232">
       <SelectionField id="sv5#area16#page42#enu20#sfld18" type="string" name="Categoria"/>
@@ -379,5 +379,5 @@
       </ContentUnits>
     </Page>
   </Alternative>
-  <Link id="sv5#area16#page42#ln270" name="Check prodotti nuovi" to="sv5#area16#miu21" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv5#area16#page42#ln270" name="Check prodotti nuovi" to="sv5#area16#opg2#seu42" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

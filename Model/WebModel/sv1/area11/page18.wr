@@ -49,7 +49,7 @@
           <MandatoryValidationRule id="sv1#area11#page18#enu6#sfld8#mnd13" name="Mandatory13"/>
         </VRules>
       </SelectionField>
-      <Link id="sv1#area11#page18#enu6#ln78" name="Flow78" to="sv1#area11#opg13#cru1" type="normal" validate="true">
+      <Link id="sv1#area11#page18#enu6#ln78" name="Registrati" to="sv1#area11#opg13#cru1" type="normal" validate="true">
         <LinkParameter id="sv1#area11#page18#enu6#ln78#par51" name="Citt&#224;_PASSING" source="sv1#area11#page18#enu6#sfld8" passing="true"/>
         <LinkParameter id="sv1#area11#page18#enu6#ln78#par52" name="Numero_PASSING" source="sv1#area11#page18#enu6#fld15" passing="true"/>
         <LinkParameter id="sv1#area11#page18#enu6#ln78#par53" name="Via_PASSING" source="sv1#area11#page18#enu6#fld14" passing="true"/>

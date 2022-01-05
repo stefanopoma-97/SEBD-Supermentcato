@@ -33,6 +33,7 @@
       <Link id="sv2#area34#page96#pwu9#ln256" name="+" to="sv2#area34#miu8" type="normal" validate="true">
         <LinkParameter id="sv2#area34#page96#pwu9#ln256#par675" name="oid_oid_PASSING" source="data[].ent7#att28" target="sv2#area34#miu8.mov1#opm4#icu4#icp5"/>
         <LinkParameter id="sv2#area34#page96#pwu9#ln256#par676" name="quantit&#224;_quantita" source="data[].ent7#att29" target="sv2#area34#miu8.mov1#opm4#icu4#icp6"/>
+        <LinkParameter id="sv2#area34#page96#pwu9#ln256#par76" name="oid_PASSING" source="data[].ent7#att28" passing="true"/>
       </Link>
       <Link id="sv2#area34#page96#pwu9#ln257" name="-" to="sv2#area34#miu9" type="normal" validate="true">
         <LinkParameter id="sv2#area34#page96#pwu9#ln257#par677" name="oid_oid_PASSING" source="data[].ent7#att28" target="sv2#area34#miu9.mov1#opm3#icu3#icp3"/>

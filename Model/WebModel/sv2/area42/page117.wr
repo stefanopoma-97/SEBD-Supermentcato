@@ -44,7 +44,7 @@
         <LinkParameter id="sv2#area42#page117#seu144#ln405#par587" name="sconto_PASSING" source="ent6#att23Array" passing="true"/>
       </Link>
     </SelectorUnit>
-    <DataUnit id="sv2#area42#page117#dau46" name="Promozione attiva" gr:x="400" gr:y="270" entity="ent6" displayAttributes="ent6#att24 ent6#att23 ent6#att26">
+    <DataUnit id="sv2#area42#page117#dau46" name="Promozione attiva" gr:x="400" gr:y="270" entity="ent6" displayAttributes="ent6#att24 ent6#att23">
       <Selector id="sv2#area42#page117#dau46#su298" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area42#page117#dau46#su298#kcond176" name="KeyCondition90" predicate="in" implied="false"/>
       </Selector>
@@ -97,7 +97,6 @@
         <layout:Unit unitId="sv2#area42#page117#dau46">
           <layout:Attribute attribute="ent6#att24"/>
           <layout:Attribute attribute="ent6#att23"/>
-          <layout:Attribute attribute="ent6#att26"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
