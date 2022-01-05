@@ -1,5 +1,5 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area41" name="Logout" defaultPage="sv2#area41#lou1" landmarks="sv2#area41#lou1" landmark="true" gr:x="2000" gr:y="1110">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area41" name="Logout" defaultPage="sv2#area41#lou1" landmarks="sv2#area41#lou1" landmark="true" gr:x="2020" gr:y="1115">
   <OperationUnits>
-    <LogoutUnit id="sv2#area41#lou1" name="Esci" landmark="true" gr:x="180" gr:y="0" siteView="sv1" invalidateSession="true"/>
+    <LogoutUnit id="sv2#area41#lou1" name="Esci" landmark="true" gr:x="0" gr:y="0" siteView="sv1" invalidateSession="true"/>
   </OperationUnits>
 </Area>
