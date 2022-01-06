@@ -217,8 +217,8 @@
                   <layout:Link link="sv2#area42#page117#alt5#page118#pwu32#ln407"/>
                   <layout:Link link="sv2#area42#page117#alt5#page118#pwu32#ln251"/>
                   <layout:Link link="sv2#area42#page117#alt5#page118#pwu32#ln255"/>
-                  <layout:Attribute attribute="ent7#att40"/>
                   <layout:Attribute attribute="ent7#att29"/>
+                  <layout:Attribute attribute="ent7#att61"/>
                   <layout:Attribute attribute="ent7#att10"/>
                   <layout:Attribute attribute="ent7#att62"/>
                   <layout:Attribute attribute="rel9#role17.ent4#att15"/>
@@ -329,7 +329,7 @@
   <Alternative id="sv2#area42#page117#alt5" name="Spesa" defaultPage="sv2#area42#page117#alt5#page118" gr:x="1060" gr:y="5">
     <Page id="sv2#area42#page117#alt5#page118" name="Spesa" gr:x="0" gr:y="0">
       <ContentUnits>
-        <PowerIndexUnit id="sv2#area42#page117#alt5#page118#pwu32" name="Righe d'ordine" linkOrder="sv2#area42#page117#alt5#page118#pwu32#ln407 sv2#area42#page117#alt5#page118#pwu32#ln251 sv2#area42#page117#alt5#page118#pwu32#ln255" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att40 ent7#att29 ent7#att10 ent7#att62 rel9#role17.ent4#att15">
+        <PowerIndexUnit id="sv2#area42#page117#alt5#page118#pwu32" name="Righe d'ordine" linkOrder="sv2#area42#page117#alt5#page118#pwu32#ln407 sv2#area42#page117#alt5#page118#pwu32#ln251 sv2#area42#page117#alt5#page118#pwu32#ln255" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att29 ent7#att61 ent7#att10 ent7#att62 rel9#role17.ent4#att15">
           <Selector id="sv2#area42#page117#alt5#page118#pwu32#su299" defaultPolicy="fill" booleanOperator="and">
             <RelationshipRoleCondition id="sv2#area42#page117#alt5#page118#pwu32#su299#rcond125" name="Spesa To Riga Ordine" predicate="in" implied="false" role="rel10#role20"/>
           </Selector>
