@@ -48,7 +48,7 @@
         <LinkParameter id="sv2#area34#page96#enu31#ln258#par682" name="oid_PASSING" sourceLinkParameter="sv2#area34#page96#dau38#ln298#par456" passing="true"/>
       </Link>
     </EntryUnit>
-    <DataUnit id="sv2#area34#page96#dau30" name="Indirizzo di spedizione" gr:x="175" gr:y="160" entity="ent2" displayAttributes="ent2#att7 ent2#att6 rel1#role2.ent1#att2">
+    <DataUnit id="sv2#area34#page96#dau30" name="Indirizzo di spedizione" gr:x="175" gr:y="160" entity="ent2" displayAttributes="ent2#att65 ent2#att6 ent2#att7">
       <Selector id="sv2#area34#page96#dau30#su167" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area34#page96#dau30#su167#rcond55" name="User to Indirizzo" predicate="in" implied="false" role="rel3#role5"/>
       </Selector>

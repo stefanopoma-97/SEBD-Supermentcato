@@ -29,7 +29,7 @@
         <KeyCondition id="sv2#area34#page99#dau27#su163#kcond41" name="KeyCondition41" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <DataUnit gr:x="170" gr:y="250" id="sv2#area34#page99#dau28" name="Indirizzo di spedizione" entity="ent2" displayAttributes="ent2#att7 ent2#att6 rel1#role2.ent1#att2">
+    <DataUnit gr:x="170" gr:y="250" id="sv2#area34#page99#dau28" name="Indirizzo di spedizione" entity="ent2" displayAttributes="ent2#att65 ent2#att6 ent2#att7">
       <Selector id="sv2#area34#page99#dau28#su164" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area34#page99#dau28#su164#rcond46" name="User to Indirizzo" predicate="in" implied="false" role="rel3#role5"/>
       </Selector>
@@ -152,9 +152,9 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area34#page99#dau28">
-          <layout:Attribute attribute="ent2#att7"/>
+          <layout:Attribute attribute="ent2#att65"/>
           <layout:Attribute attribute="ent2#att6"/>
-          <layout:Attribute attribute="rel1#role2.ent1#att2"/>
+          <layout:Attribute attribute="ent2#att7"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

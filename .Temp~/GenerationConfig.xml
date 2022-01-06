@@ -6,14 +6,14 @@
     <Property name="applicationServer">Tomcat</Property>
     <Property name="cloudDeploy">false</Property>
     <Property name="commonsLibDir">/home/tosti/Downloads/WebRatio_Platform_University_Student_Edition_7.2.18.Linux/WebRatio/plugins/com.webratio.commons.libs_7.2.18.201903231300/lib</Property>
-    <Property name="dbConfigPath">/tmp/WRDBConfig4668815374898051599.xml</Property>
+    <Property name="dbConfigPath">/tmp/WRDBConfig708595102930480037.xml</Property>
     <Property name="defaultEncoding"></Property>
     <Property name="deployCorePluginDir">/home/tosti/Downloads/WebRatio_Platform_University_Student_Edition_7.2.18.Linux/WebRatio/configuration/org.eclipse.osgi/bundles/49/1/.cp</Property>
     <Property name="derbySystemHome">/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/.metadata/.plugins/com.webratio.commons.db/derby</Property>
     <Property name="enterpriseProjectDir"></Property>
-    <Property name="eventSocketPort">36185</Property>
+    <Property name="eventSocketPort">38295</Property>
     <Property name="excludedProjects" type="list"></Property>
-    <Property name="generationTime">202201061133</Property>
+    <Property name="generationTime">202201061200</Property>
     <Property name="helpersPluginDir">/home/tosti/Downloads/WebRatio_Platform_University_Student_Edition_7.2.18.Linux/WebRatio/plugins/com.webratio.generator.helpers_7.2.18.201903231300</Property>
     <Property name="hostAlwaysAllowed">false</Property>
     <Property name="i18nBundleKeysFile" type="file"></Property>
@@ -25,7 +25,7 @@
     <Property name="phases">All</Property>
     <Property name="projectDir">/home/tosti/uni/anno5/sem1/sistemi_informativi_evoluti-big_data/webratio/SEBD-Supermentcato</Property>
     <Property name="projectName">SEBD-Supermentcato</Property>
-    <Property name="projectPath">/tmp/Project2628844667297979739.wr</Property>
+    <Property name="projectPath">/tmp/Project7439461659155884719.wr</Property>
     <Property name="projectType">WEBPROJECT</Property>
     <Property name="rootModuleName"></Property>
     <Property name="uiPluginDir">/home/tosti/Downloads/WebRatio_Platform_University_Student_Edition_7.2.18.Linux/WebRatio/plugins/com.webratio.ide.ui_7.2.18.201903231300</Property>
