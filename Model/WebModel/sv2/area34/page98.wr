@@ -13,14 +13,18 @@
       <Link id="sv2#area34#page98#seu105#ln304" name="Flow199" to="sv2#area34#page98#pwu14" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv2#area34#page98#seu105#ln305" name="Flow199" to="sv2#area34#page98#pwu15" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
-    <PowerIndexUnit id="sv2#area34#page98#pwu13" name="Spese consegnate" linkOrder="sv2#area34#page98#pwu13#ln306" gr:x="0" gr:y="155" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att35 ent9#att36 ent9#att63 rel12#role23.ent10#att38 rel13#role26.ent13#att49 rel17#role33.ent3#att9">
+    <PowerIndexUnit id="sv2#area34#page98#pwu13" name="Spese consegnate" linkOrder="sv2#area34#page98#pwu13#ln306" gr:x="0" gr:y="155" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="rel12#role23.ent10#att38 ent9#att35 ent9#att36 ent9#att66">
       <Selector id="sv2#area34#page98#pwu13#su234" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area34#page98#pwu13#su234#rcond90" name="User to Spesa" predicate="in" implied="false" role="rel13#role25"/>
         <AttributesCondition id="sv2#area34#page98#pwu13#su234#acond36" name="AttCondition18" predicate="eq" booleanOperator="or" implied="false" attributes="rel12#role23.ent10#att38" value="Consegnato"/>
       </Selector>
       <Link id="sv2#area34#page98#pwu13#ln306" name="Dettagli" to="sv2#area34#page99#dau39" type="normal" automaticCoupling="true" validate="true"/>
+      <SortAttribute attribute="rel12#role23.ent10#att38" order="ascending"/>
+      <SortAttribute attribute="ent9#att35" order="descending"/>
+      <SortAttribute attribute="ent9#att36" order="descending"/>
+      <SortAttribute attribute="ent9#att66" order="ascending"/>
     </PowerIndexUnit>
-    <PowerIndexUnit id="sv2#area34#page98#pwu14" name="Spese" linkOrder="sv2#area34#page98#pwu14#ln307" gr:x="270" gr:y="155" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="rel12#role23.ent10#att38 ent9#att35 ent9#att36 rel17#role33.ent3#att9">
+    <PowerIndexUnit id="sv2#area34#page98#pwu14" name="Spese" linkOrder="sv2#area34#page98#pwu14#ln307" gr:x="270" gr:y="155" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="rel12#role23.ent10#att38 ent9#att35 ent9#att36 ent9#att66">
       <Selector id="sv2#area34#page98#pwu14#su235" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area34#page98#pwu14#su235#rcond91" name="User to Spesa" predicate="in" implied="false" role="rel13#role25"/>
         <AttributesCondition id="sv2#area34#page98#pwu14#su235#acond37" name="AttCondition18" predicate="eq" booleanOperator="or" implied="false" attributes="rel12#role23.ent10#att38" value="In attesa|Preso in carico|Pronto per la spedizione|Spedito"/>
@@ -29,7 +33,7 @@
       <SortAttribute attribute="rel12#role23.ent10#att38" order="descending"/>
       <SortAttribute attribute="ent9#att35" order="descending"/>
       <SortAttribute attribute="ent9#att36" order="descending"/>
-      <SortAttribute attribute="rel17#role33.ent3#att9" order="ascending"/>
+      <SortAttribute attribute="ent9#att66" order="ascending"/>
     </PowerIndexUnit>
     <PowerIndexUnit id="sv2#area34#page98#pwu15" name="Spese da confermare" linkOrder="sv2#area34#page98#pwu15#ln308" gr:x="370" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att35 ent9#att36 ent9#att63 rel12#role23.ent10#att38 rel13#role26.ent13#att49 rel17#role33.ent3#att9">
       <Selector id="sv2#area34#page98#pwu15#su236" defaultPolicy="fill" booleanOperator="and">
@@ -43,13 +47,15 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area34#page98#pwu13">
+          <layout:Attribute attribute="rel12#role23.ent10#att38"/>
           <layout:Attribute attribute="ent9#att35"/>
           <layout:Attribute attribute="ent9#att36"/>
-          <layout:Attribute attribute="ent9#att63"/>
-          <layout:Attribute attribute="rel12#role23.ent10#att38"/>
-          <layout:Attribute attribute="rel13#role26.ent13#att49"/>
-          <layout:Attribute attribute="rel17#role33.ent3#att9"/>
+          <layout:Attribute attribute="ent9#att66"/>
           <layout:Link link="sv2#area34#page98#pwu13#ln306"/>
+          <layout:Link link="sv2#area34#page98#pwu13rel12#role23$ent10#att38"/>
+          <layout:Link link="sv2#area34#page98#pwu13ent9#att35"/>
+          <layout:Link link="sv2#area34#page98#pwu13ent9#att36"/>
+          <layout:Link link="sv2#area34#page98#pwu13ent9#att66"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -67,15 +73,15 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area34#page98#pwu14">
+          <layout:Attribute attribute="rel12#role23.ent10#att38"/>
+          <layout:Attribute attribute="ent9#att35"/>
+          <layout:Attribute attribute="ent9#att36"/>
+          <layout:Attribute attribute="ent9#att66"/>
           <layout:Link link="sv2#area34#page98#pwu14#ln307"/>
           <layout:Link link="sv2#area34#page98#pwu14rel12#role23$ent10#att38"/>
           <layout:Link link="sv2#area34#page98#pwu14ent9#att35"/>
           <layout:Link link="sv2#area34#page98#pwu14ent9#att36"/>
-          <layout:Link link="sv2#area34#page98#pwu14rel17#role33$ent3#att9"/>
-          <layout:Attribute attribute="rel12#role23.ent10#att38"/>
-          <layout:Attribute attribute="ent9#att35"/>
-          <layout:Attribute attribute="ent9#att36"/>
-          <layout:Attribute attribute="rel17#role33.ent3#att9"/>
+          <layout:Link link="sv2#area34#page98#pwu14ent9#att66"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

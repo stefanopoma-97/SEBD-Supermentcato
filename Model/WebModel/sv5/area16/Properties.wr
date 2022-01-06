@@ -1,6 +1,6 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1045" gr:y="-2745" id="sv5#area16" name="Gestione prodotti" landmark="true" defaultPage="sv5#area16#page42">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1030" gr:y="-2475" id="sv5#area16" name="Gestione prodotti" landmark="true" defaultPage="sv5#area16#page42">
   <OperationUnits>
-    <ModuleInstanceUnit gr:x="360" gr:y="1755" id="sv5#area16#miu22" moduleId="mov1#opm10">
+    <ModuleInstanceUnit gr:x="360" gr:y="1555" id="sv5#area16#miu22" moduleId="mov1#opm10">
       <KOLink id="sv5#area16#miu22#kln225" to="sv5#area16#page122#mssu47" name="KOFlow151" gr:bendpoints="0,-180" codeRef="mov1#opm10#kocu23">
         <LinkParameter id="sv5#area16#miu22#kln225#par1093" name="Errore durante eliminazione riga d'ordine_Shown Messages" target="sv5#area16#page122#mssu47.shownMessages" source="mov1#opm10#kocu23#ocp20"/>
       </KOLink>
