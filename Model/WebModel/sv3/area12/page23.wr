@@ -44,7 +44,7 @@
         <RelationshipRoleCondition id="sv3#area12#page23#seu82#su119#rcond51" name="StatoToDipendente" predicate="in" implied="false" role="rel16#role31"/>
       </Selector>
     </SelectorUnit>
-    <PowerIndexUnit gr:x="0" gr:y="265" id="sv3#area12#page23#pwu16" name="Lista Spese prese in carico" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att35 ent9#att36 rel12#role23.ent10#att38 rel12#role23.rel16#role32.ent12#att51 rel17#role33.ent3#att9" linkOrder="sv3#area12#page23#pwu16#ln211">
+    <PowerIndexUnit gr:x="0" gr:y="265" id="sv3#area12#page23#pwu16" name="Lista Spese prese in carico" sortable="true" checkable="false" useCountQuery="false" entity="ent9" displayAttributes="ent9#att35 ent9#att36 rel12#role23.ent10#att38 rel17#role33.ent3#att9" linkOrder="sv3#area12#page23#pwu16#ln211">
       <Link id="sv3#area12#page23#pwu16#ln211" name="Dettagli" to="sv3#area12#page24#dau7" automaticCoupling="true" type="normal" validate="true"/>
       <Selector id="sv3#area12#page23#pwu16#su131" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area12#page23#pwu16#su131#kcond75" name="KeyCondition75" predicate="in" implied="false"/>
@@ -102,7 +102,6 @@
           <layout:Attribute attribute="ent9#att35"/>
           <layout:Attribute attribute="ent9#att36"/>
           <layout:Attribute attribute="rel12#role23.ent10#att38"/>
-          <layout:Attribute attribute="rel12#role23.rel16#role32.ent12#att51"/>
           <layout:Attribute attribute="rel17#role33.ent3#att9"/>
         </layout:Unit>
       </layout:Cell>
