@@ -52,10 +52,11 @@
     <Attribute id="ent1#att3" name="provincia" type="string" db:column="provincia"/>
     <Attribute id="ent1#att2" name="nome" type="string" db:column="nome"/>
   </Entity>
-  <Entity gr:x="625" gr:y="250" id="ent2" name="Indirizzo" duration="persistent" attributeOrder="ent2#att5 ent2#att6 ent2#att7" db:database="db1" db:table="indirizzo">
+  <Entity gr:x="625" gr:y="250" id="ent2" name="Indirizzo" duration="persistent" attributeOrder="ent2#att5 ent2#att6 ent2#att7 ent2#att65" db:database="db1" db:table="indirizzo">
     <Attribute id="ent2#att5" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent2#att7" name="numero" type="integer" db:column="numero"/>
     <Attribute id="ent2#att6" name="via" type="string" db:column="via"/>
+    <Attribute id="ent2#att65" name="Citt&#224;" type="string" derivationQuery="simpleImported::Self.rel1#role2.ent1#att2"/>
   </Entity>
   <Relationship id="rel1" name="Citt&#224;_Indirizzo" sourceEntity="ent1" targetEntity="ent2" db:database="db1" db:table="indirizzo">
     <RelationshipRole1 id="rel1#role1" name="Citt&#224;ToIndirizzo" maxCard="N">

@@ -89,7 +89,7 @@
     <SelectorUnit gr:x="320" gr:y="35" id="sv2#area42#opg56#seu65" name="Riga con questo prodotto" entity="ent7">
       <Selector id="sv2#area42#opg56#seu65#su189" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area42#opg56#seu65#su189#rcond63" name="Spesa to Riga" predicate="in" implied="false" role="rel10#role20"/>
-        <AttributesCondition id="sv2#area42#opg56#seu65#su189#acond3" name="Id prodotto" predicate="eq" booleanOperator="or" implied="false" attributes="rel9#role17.ent8#att31"/>
+        <AttributesCondition id="sv2#area42#opg56#seu65#su189#acond3" name="Id prodotto" predicate="eq" booleanOperator="or" implied="false" attributes="rel9#role17.ent4#att14"/>
       </Selector>
       <OKLink id="sv2#area42#opg56#seu65#oln164" name="OKFlow164" to="sv2#area42#opg56#inn11">
         <LinkParameter id="sv2#area42#opg56#seu65#oln164#par689" name="oid_Input" source="ent7#att28Array" target="sv2#area42#opg56#inn11.isnotnull"/>

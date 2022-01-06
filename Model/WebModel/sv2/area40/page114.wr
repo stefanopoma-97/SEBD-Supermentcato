@@ -65,14 +65,14 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area40#page114#enu35">
+          <layout:Link link="sv2#area40#page114#enu35#ln168"/>
+          <layout:Link link="sv2#area40#page114#enu35#ln231"/>
+          <layout:Field field="sv2#area40#page114#enu35#fld71"/>
           <layout:Field field="sv2#area40#page114#enu35#sfld37"/>
           <layout:Field field="sv2#area40#page114#enu35#sfld38"/>
           <layout:Field field="sv2#area40#page114#enu35#sfld39"/>
           <layout:Field field="sv2#area40#page114#enu35#msfld10"/>
-          <layout:Field field="sv2#area40#page114#enu35#fld71"/>
           <layout:Field field="sv2#area40#page114#enu35#msfld17"/>
-          <layout:Link link="sv2#area40#page114#enu35#ln168"/>
-          <layout:Link link="sv2#area40#page114#enu35#ln231"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
